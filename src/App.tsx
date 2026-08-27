@@ -13,8 +13,9 @@ import {
 } from "recharts";
 import type { CompareRow, ComparisonData } from "./types";
 import { tr, tr0 } from "./types";
+import type { MatrixData } from "./matrixTypes";
 
-type Props = { data: ComparisonData };
+type Props = { data: ComparisonData; matrix: MatrixData };
 
 const LEGAL_REFS = [
   {
@@ -39,7 +40,7 @@ const LEGAL_REFS = [
   },
 ];
 
-export default function AppView({ data }: Props) {
+export default function AppView({ data, matrix }: Props) {
   const rows = data.rows.filter((r) => r.dhr?.net != null);
   const topNet = [...rows]
     .sort((a, b) => Math.abs(b.delta!.net) - Math.abs(a.delta!.net))
@@ -49,6 +50,12 @@ export default function AppView({ data }: Props) {
       full: r.name,
       dNet: Math.round(r.delta!.net),
     }));
+
+  const passCount = matrix.checkedItems.filter((c) => c.result === "pass").length;
+  const failCount = matrix.checkedItems.filter((c) => c.result === "fail").length;
+  const lucaPass = matrix.scenarios.filter((s) => s.luca === "pass").length;
+  const lucaFail = matrix.scenarios.filter((s) => s.luca === "fail").length;
+  const lucaPartial = matrix.scenarios.filter((s) => s.luca === "partial").length;
 
   const gvCompare = [
     {
@@ -117,6 +124,14 @@ export default function AppView({ data }: Props) {
             Üretim: {new Date(data.generatedAt).toLocaleString("tr-TR")} · Eşleşen{" "}
             {data.summary.matched} kişi
           </p>
+          <nav className="toc" aria-label="Bölümler">
+            <a href="#matrix">Matris</a>
+            <a href="#checks">Kontroller</a>
+            <a href="#correct">Doğrular</a>
+            <a href="#scenarios">32 senaryo</a>
+            <a href="#legal">GV yasal</a>
+            <a href="#people">Net karşılaştırma</a>
+          </nav>
         </div>
       </header>
 
@@ -142,6 +157,124 @@ export default function AppView({ data }: Props) {
           istisna fiilen 0 + yol matrahı). En büyük sapmalar: net ücret profili, FM/brüt ölçeği,
           yemek-yol ve BES.
         </p>
+      </section>
+
+      <section className="panel" id="matrix">
+        <h2>Test matrisi tasarımı</h2>
+        <p className="caption">
+          {matrix.environment} · {matrix.sourceOfTruth}
+        </p>
+        <p>{matrix.matrixDesign.notFullCombinatorial}</p>
+        <div className="cards three">
+          {matrix.matrixDesign.layers.map((l) => (
+            <article key={l.id} className="card">
+              <h3>
+                Grup {l.id} — {l.title}
+              </h3>
+              <p>{l.desc}</p>
+            </article>
+          ))}
+        </div>
+        <div className="stats compact">
+          <Stat label="Kontrol geçti" value={`${passCount}`} tone="ok" />
+          <Stat label="Kontrol fail" value={`${failCount}`} tone="bad" />
+          <Stat label="Luca senaryo OK" value={`${lucaPass}/32`} tone="ok" />
+          <Stat label="Luca fail / kısmi" value={`${lucaFail} / ${lucaPartial}`} tone="warn" />
+        </div>
+      </section>
+
+      <section className="panel" id="checks">
+        <h2>Kontrol edilenler</h2>
+        <p className="caption">Bordro / puantaj / kart doğrulama checklist’i</p>
+        <div className="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Kontrol</th>
+                <th>Sonuç</th>
+                <th>Not</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matrix.checkedItems.map((c) => (
+                <tr key={c.item} className={toneOf(c.result)}>
+                  <td className="left">{c.item}</td>
+                  <td>
+                    <Badge status={c.result} />
+                  </td>
+                  <td className="note left">{c.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="panel" id="correct">
+        <h2>Doğru çalışanlar</h2>
+        <ul className="ok-list">
+          {matrix.correctFindings.map((f) => (
+            <li key={f}>{f}</li>
+          ))}
+        </ul>
+        <h3>DHR’de tespit edilen yasal / hesap sorunları</h3>
+        <div className="cards bugs">
+          {matrix.dhrBugs.map((b) => (
+            <article key={b.id} className="card">
+              <h3>
+                <span className={`pill ${b.severity === "Yüksek" ? "bad" : "warn"}`}>{b.severity}</span>{" "}
+                {b.title}
+              </h3>
+              <p>{b.detail}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="panel" id="scenarios">
+        <h2>Test edilen tüm olasılıklar (32)</h2>
+        <p className="caption">
+          A = motor/profil · B = girdi · C = çapraz · DHR/Luca sütunları senaryo hazırlığı ve doğrulama
+          durumunu gösterir
+        </p>
+        <div className="table-scroll">
+          <table className="matrix-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>G</th>
+                <th>Çalışan</th>
+                <th>Senaryo</th>
+                <th>Profil</th>
+                <th>Kanun</th>
+                <th>Girdi</th>
+                <th>DHR</th>
+                <th>Luca</th>
+                <th>Hüküm</th>
+              </tr>
+            </thead>
+            <tbody>
+              {matrix.scenarios.map((s) => (
+                <tr key={s.n} className={toneOf(s.luca)}>
+                  <td>{s.n}</td>
+                  <td>{s.group}</td>
+                  <td className="left">{s.name}</td>
+                  <td className="left">{s.scenario}</td>
+                  <td className="left note">{s.profile}</td>
+                  <td>{s.law}</td>
+                  <td>{s.input}</td>
+                  <td>
+                    <Badge status={s.dhr} />
+                  </td>
+                  <td>
+                    <Badge status={s.luca} />
+                  </td>
+                  <td className="note left">{s.verdict}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section className="panel">
@@ -180,7 +313,7 @@ export default function AppView({ data }: Props) {
         </div>
       </section>
 
-      <section className="panel legal">
+      <section className="panel legal" id="legal">
         <h2>Gelir vergisi istisnası — yasal çerçeve</h2>
         <p>
           2026’da asgari ücret brüt <strong>33.030 TL</strong>. GV istisna tutarı yıl içinde asgari
@@ -255,7 +388,7 @@ export default function AppView({ data }: Props) {
         </ul>
       </section>
 
-      <section className="panel">
+      <section className="panel" id="people">
         <h2>Tüm çalışanlar</h2>
         <div className="table-scroll">
           <table>
@@ -301,6 +434,27 @@ function Stat({ label, value, tone }: { label: string; value: string; tone?: "ok
       <div className="stat-label">{label}</div>
     </div>
   );
+}
+
+function toneOf(s: string): "ok" | "bad" | "warn" | "" {
+  if (s === "pass") return "ok";
+  if (s === "fail") return "bad";
+  if (s === "partial" || s === "known") return "warn";
+  return "";
+}
+
+function Badge({ status }: { status: string }) {
+  const label =
+    status === "pass"
+      ? "OK"
+      : status === "fail"
+        ? "FAIL"
+        : status === "partial"
+          ? "KISMİ"
+          : status === "known"
+            ? "BİLİNEN"
+            : status;
+  return <span className={`badge ${toneOf(status)}`}>{label}</span>;
 }
 
 function RowLine({ r }: { r: CompareRow }) {
