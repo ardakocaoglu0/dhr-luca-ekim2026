@@ -473,3 +473,61 @@ nav.toc a:hover {
   border-color: var(--accent);
 }
 
+
+.person-pick {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.person-pick span {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.person-pick select {
+  flex: 1;
+  min-width: 220px;
+  max-width: 520px;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text);
+  font: inherit;
+}
+
+.kalem-table th:nth-child(1),
+.kalem-table td:nth-child(1),
+.kalem-table th:nth-child(2),
+.kalem-table td:nth-child(2) {
+  text-align: left;
+}
+
+.dig-oz {
+  margin-bottom: 0.75rem;
+  line-height: 1.45;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: 1rem;
+}
+
+.toc a {
+  font-size: 0.9rem;
+  color: #bae6fd;
+}

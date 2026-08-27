@@ -32,23 +32,25 @@
     { "item": "Nilay icra 1.200 / Vesile icra 800", "result": "pass", "note": "İyi PDF’de öz kesinti" },
     { "item": "Metin/Ufuk/Baran prim + Yasin ikramiye", "result": "pass", "note": "İyi PDF’de diğer kazanç" },
     { "item": "Hande kısmi 15 iş günü", "result": "pass", "note": "İyi PDF: 26 SSK / 15 normal gün" },
-    { "item": "Fazla mesai 12 saat (Kemal, Tamer, Ceren, Emre)", "result": "fail", "note": "Saat girilmiş; tutar ~12 TL veya 0 — bordroya yansımadı" },
-    { "item": "Pelin Oto.Kat.BES 1.740", "result": "fail", "note": "Puantaj/kartta girilmeli; PDF’de yok" },
-    { "item": "Okan masraf 750", "result": "partial", "note": "Luca puantaj kolonunda yok; elle eklenmeli" },
-    { "item": "Kanun 05746 / 15746 / 4691 kartları", "result": "fail", "note": "Excel aktarım taşımıyor; PDF’de 00000" },
-    { "item": "Emekli SGDP / stajyer / yabancı / engelli derecesi", "result": "fail", "note": "Kart alanları boş veya ayarlanmadı" },
+    { "item": "Fazla mesai 12 saat (Kemal, Tamer, Ceren, Emre)", "result": "pass", "note": "PDF(5): 4840 / 4040 / 4200,58 / 4320" },
+    { "item": "Pelin Oto.Kat.BES 1.740", "result": "partial", "note": "PDF(10): yalnız Pelin BES 2.001 (hedef 1.740)" },
+    { "item": "Okan masraf 750", "result": "fail", "note": "PDF’de masraf satırı yok" },
+    { "item": "Kanun 05746 / 15746 / 4691 kartları", "result": "partial", "note": "Personel listesinde var; bordro PDF hâlâ 00000 (05510 hariç)" },
+    { "item": "Emekli SGDP / stajyer / yabancı / engelli derecesi", "result": "fail", "note": "Kart alanları; PDF’den net doğrulanamıyor" },
     { "item": "DHR GV istisnası (yasal Ekim 5.615,10)", "result": "fail", "note": "Parametre ~4211; fiilen 0 uygulandı" },
-    { "item": "Luca GV istisnası Ekim güncelliği", "result": "partial", "note": "Luca ~4211 kullanıyor; yasal 5615,10 değil" },
-    { "item": "DHR yemek 5.500 + yol 3.200 kapsamı", "result": "known", "note": "Sistematik fark — Luca’da yok" },
-    { "item": "DHR otomatik BES %3 (çoğu kişi)", "result": "known", "note": "Luca’da yalnızca Pelin senaryosu hedeflendi" }
+    { "item": "Luca GV istisnası Ekim güncelliği", "result": "partial", "note": "Luca ~4211; yasal 5615,10 değil" },
+    { "item": "Yemek 5.500 + yol 3.200 (Luca)", "result": "pass", "note": "PDF(10): 31 kişi; gross çoğu satırda DHR ile hizalı (59.200)" },
+    { "item": "DHR otomatik BES %3 (çoğu kişi)", "result": "known", "note": "DHR 32/32 BES; Luca yalnız Pelin" }
   ],
   "correctFindings": [
     "Luca aritmetik tutarlı: SGK %14, GVM = brüt−%15, net formülü, damga istisnası ~250,70 bandı.",
     "05510 teşvik numarası PDF’ye yansıyor (4 kişi).",
     "Net ücret profili Luca’da net ödenen = hedef net (Vildan, Ceren).",
-    "Avans / icra / prim / ikramiye puantaj→bordro zinciri (iyi PDF) çalışıyor.",
-    "Kısmi gün (Hande) SSK gün ve kazanç orantılı düşüyor (iyi PDF).",
-    "Rıza geçmiş GV matrahı karttan uygulanabiliyor."
+    "Avans / icra / prim / ikramiye puantaj→bordro zinciri çalışıyor.",
+    "Kısmi gün (Hande) SSK gün ve kazanç orantılı düşüyor.",
+    "Rıza geçmiş GV matrahı karttan uygulanabiliyor.",
+    "PDF(5): FM tutarları (Kemal/Tamer/Ceren/Emre) bordroya yansıdı.",
+    "PDF(5): Yemek+yol bir grupta (Alper, Berna, Cemil, Ceren, Deniz, Dilek, Baran, Zeliha…) girildi."
   ],
   "dhrBugs": [
     {
@@ -93,21 +95,21 @@
     { "n": 14, "name": "Hande Orhan", "group": "A", "scenario": "Kısmi 15 gün", "profile": "Kısmi", "law": "00000", "input": "15 gün", "dhr": "pass", "luca": "pass", "verdict": "İyi PDF’de kısmi yansıdı (yeniden hesapta kaybolabilir)" },
     { "n": 15, "name": "Ilker Pamuk", "group": "A", "scenario": "Stajyer", "profile": "Stajyer", "law": "STAJ", "input": "—", "dhr": "fail", "luca": "partial", "verdict": "Luca GV=0; DHR GV+BES kesiyor" },
     { "n": 16, "name": "Jale Ruzgar", "group": "A", "scenario": "Yabancı", "profile": "Yabancı", "law": "YABANCI", "input": "—", "dhr": "pass", "luca": "partial", "verdict": "Özel sigorta kolu kartta net değil" },
-    { "n": 17, "name": "Kemal Sahinoglu", "group": "B", "scenario": "Hafta içi FM 12s", "profile": "Standart", "law": "00000", "input": "FM", "dhr": "pass", "luca": "fail", "verdict": "Saat var, tutar bordroya düşmedi" },
+    { "n": 17, "name": "Kemal Sahinoglu", "group": "B", "scenario": "Hafta içi FM 12s", "profile": "Standart", "law": "00000", "input": "FM", "dhr": "pass", "luca": "pass", "verdict": "PDF(5): FM 4.840; yemek/yol henüz yok" },
     { "n": 18, "name": "Leyla Tuncel", "group": "B", "scenario": "Maaş avansı 7200", "profile": "Standart", "law": "00000", "input": "Avans", "dhr": "fail", "luca": "pass", "verdict": "Luca kesti; DHR avans mahsubu yok" },
     { "n": 19, "name": "Metin Uslu", "group": "B", "scenario": "Prim 5000", "profile": "Standart", "law": "00000", "input": "Prim", "dhr": "pass", "luca": "pass", "verdict": "İyi PDF’de prim var" },
     { "n": 20, "name": "Nilay Varol", "group": "B", "scenario": "Kesinti 1200", "profile": "Standart", "law": "00000", "input": "Kesinti", "dhr": "pass", "luca": "pass", "verdict": "İyi PDF’de icra 1200" },
-    { "n": 21, "name": "Okan Yildizoglu", "group": "B", "scenario": "Masraf 750", "profile": "Standart", "law": "00000", "input": "Masraf", "dhr": "pass", "luca": "fail", "verdict": "Luca şablonda kolon yok" },
-    { "n": 22, "name": "Pelin Zengin", "group": "B", "scenario": "BES aktif %3", "profile": "Standart", "law": "00000", "input": "BES 1740", "dhr": "pass", "luca": "fail", "verdict": "Oto.Kat.BES girilmeli" },
+    { "n": 21, "name": "Okan Yildizoglu", "group": "B", "scenario": "Masraf 750", "profile": "Standart", "law": "00000", "input": "Masraf", "dhr": "pass", "luca": "fail", "verdict": "PDF(7): masraf yok" },
+    { "n": 22, "name": "Pelin Zengin", "group": "B", "scenario": "BES aktif %3", "profile": "Standart", "law": "00000", "input": "BES 1740", "dhr": "pass", "luca": "partial", "verdict": "PDF(7): BES 2.105 (hedef 1.740)" },
     { "n": 23, "name": "Riza Altunbas", "group": "B", "scenario": "Geçmiş GV 185k", "profile": "Standart", "law": "00000", "input": "CumTax", "dhr": "pass", "luca": "pass", "verdict": "Kart onaylandı" },
     { "n": 24, "name": "Selin Bayraktar", "group": "B", "scenario": "Asgari ücret civarı", "profile": "Standart", "law": "00000", "input": "Asgari", "dhr": "pass", "luca": "pass", "verdict": "Luca GV≈0; DHR hâlâ GV kesiyor" },
-    { "n": 25, "name": "Tamer Cakmak", "group": "C", "scenario": "5746 + FM", "profile": "5746 Lisans", "law": "05746", "input": "FM", "dhr": "pass", "luca": "fail", "verdict": "Kanun+FM tutarı eksik" },
+    { "n": 25, "name": "Tamer Cakmak", "group": "C", "scenario": "5746 + FM", "profile": "5746 Lisans", "law": "05746", "input": "FM", "dhr": "pass", "luca": "partial", "verdict": "PDF(5): FM 4.040 OK; kanun hâlâ 00000" },
     { "n": 26, "name": "Ufuk Demirel", "group": "C", "scenario": "Emekli + prim", "profile": "Emekli", "law": "SGDP", "input": "Prim 3500", "dhr": "pass", "luca": "partial", "verdict": "Prim iyi PDF’de; SGDP kartı eksik" },
     { "n": 27, "name": "Vesile Erkan", "group": "C", "scenario": "Engelli2 + kesinti", "profile": "Engelli 2", "law": "00000", "input": "Kesinti 800", "dhr": "pass", "luca": "partial", "verdict": "Kesinti OK; sakatlık kartı eksik" },
     { "n": 28, "name": "Yasin Firatin", "group": "C", "scenario": "Yönetici + ikramiye", "profile": "Yönetici", "law": "00000", "input": "İkramiye 10k", "dhr": "pass", "luca": "pass", "verdict": "İyi PDF’de ikramiye" },
     { "n": 29, "name": "Baran Sokmen", "group": "C", "scenario": "05510%2 + prim", "profile": "Standart", "law": "05510", "input": "Prim 4500", "dhr": "pass", "luca": "pass", "verdict": "Kanun+prim OK" },
-    { "n": 30, "name": "Ceren Toprak", "group": "C", "scenario": "Net + FM", "profile": "Standart", "law": "00000", "input": "NET+FM", "dhr": "pass", "luca": "partial", "verdict": "Net OK; FM tutarı yok" },
+    { "n": 30, "name": "Ceren Toprak", "group": "C", "scenario": "Net + FM", "profile": "Standart", "law": "00000", "input": "NET+FM", "dhr": "pass", "luca": "pass", "verdict": "PDF(5): FM 4.200,58 + yemek/yol" },
     { "n": 31, "name": "Deniz Ulusoy", "group": "A", "scenario": "5746-GV stopaj terkin", "profile": "5746 Lisans", "law": "5746_GV", "input": "—", "dhr": "pass", "luca": "fail", "verdict": "Luca’da GV terkin ayarı yok" },
-    { "n": 32, "name": "Emre Varlik", "group": "C", "scenario": "05510%5 + FM", "profile": "Standart", "law": "05510", "input": "FM", "dhr": "pass", "luca": "partial", "verdict": "Kanun OK; FM tutarı yok" }
+    { "n": 32, "name": "Emre Varlik", "group": "C", "scenario": "05510%5 + FM", "profile": "Standart", "law": "05510", "input": "FM", "dhr": "pass", "luca": "partial", "verdict": "PDF(5): FM 4.320 + kanun 05510; yemek/yol yok" }
   ]
 }

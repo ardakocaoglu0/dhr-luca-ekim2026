@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import {
   Bar,
   BarChart,
@@ -11,7 +12,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { CompareRow, ComparisonData } from "./types";
+import type { CompareRow, ComparisonData, LineItem } from "./types";
 import { tr, tr0 } from "./types";
 import type { MatrixData } from "./matrixTypes";
 
@@ -42,6 +43,13 @@ const LEGAL_REFS = [
 
 export default function AppView({ data, matrix }: Props) {
   const rows = data.rows.filter((r) => r.dhr?.net != null);
+  const [selectedTc, setSelectedTc] = useState(rows[0]?.tc ?? "");
+  const selected = useMemo(
+    () => rows.find((r) => r.tc === selectedTc) || rows[0],
+    [rows, selectedTc],
+  );
+  const kalemler = data.kalemler || [];
+
   const topNet = [...rows]
     .sort((a, b) => Math.abs(b.delta!.net) - Math.abs(a.delta!.net))
     .slice(0, 12)
@@ -90,11 +98,11 @@ export default function AppView({ data, matrix }: Props) {
   const drivers = [
     {
       title: "Kapsam farkı",
-      body: "DHR brüte yemek (5.500) + yol (3.200) ekler; Luca topKaz genelde maaş + prim/FM.",
+      body: `DHR’de yemek+yol neredeyse herkese; Luca PDF’de yalnızca ${data.summary.mealOnLuca ?? "?"} kişide yemek/yol görünüyor.`,
     },
     {
       title: "BES %3",
-      body: "DHR otomatik BES kesintisi uygular; Luca puantajında çoğu kişide yok.",
+      body: `DHR otomatik BES (toplam ${tr0(kalemler.find((k) => k.key === "bes")?.dhrSum)} TL); Luca’da BES satırı ${data.summary.besOnLuca ?? 0} kişi.`,
     },
     {
       title: "GV istisnası",
@@ -121,13 +129,14 @@ export default function AppView({ data, matrix }: Props) {
             </a>
           </div>
           <p className="meta">
-            Üretim: {new Date(data.generatedAt).toLocaleString("tr-TR")} · Eşleşen{" "}
-            {data.summary.matched} kişi
+            Üretim: {new Date(data.generatedAt).toLocaleString("tr-TR")} · Kaynak PDF:{" "}
+            {data.lucaPdfVersion || "bordro_d1_tech.pdf"} · Eşleşen {data.summary.matched} kişi
           </p>
           <nav className="toc" aria-label="Bölümler">
+            <a href="#kalemler">Kalemler</a>
+            <a href="#kisi-kalem">Kişi detay</a>
             <a href="#matrix">Matris</a>
             <a href="#checks">Kontroller</a>
-            <a href="#correct">Doğrular</a>
             <a href="#scenarios">32 senaryo</a>
             <a href="#legal">GV yasal</a>
             <a href="#people">Net karşılaştırma</a>
@@ -144,19 +153,130 @@ export default function AppView({ data, matrix }: Props) {
         />
         <Stat label="Ort. |ΔNet|" value={`${tr0(data.summary.avgAbsNetDelta)} TL`} tone="warn" />
         <Stat
-          label="Luca FM toplam saat"
-          value={data.summary.fmHoursTotalLuca != null ? String(data.summary.fmHoursTotalLuca) : "—"}
-          tone={data.summary.fmHoursTotalLuca === 0 ? "bad" : "ok"}
+          label="Luca’da FM / yemek"
+          value={`${data.summary.overtimeOnLuca ?? 0} / ${data.summary.mealOnLuca ?? 0}`}
+          tone={(data.summary.overtimeOnLuca ?? 0) >= 4 ? "ok" : "warn"}
         />
       </section>
 
       <section className="panel verdict">
         <h2>Hüküm</h2>
         <p>
-          Ham netler örtüşmüyor. Standart satırlarda tipik <strong>ΔGV ≈ +4.619 TL</strong> (DHR’de
-          istisna fiilen 0 + yol matrahı). En büyük sapmalar: net ücret profili, FM/brüt ölçeği,
-          yemek-yol ve BES.
+          PDF (10): yemek/yol brüt hizası iyileşti (Serra gross DHR=Luca 59.200). Ort. |ΔNet| ~4.2k
+          (önce ~6.1k). Kalan ana sürücüler: DHR otomatik BES + GV istisnası ≈0; kanun PDF’de hâlâ
+          00000; Pelin BES 2.001; Okan masraf yok.
         </p>
+      </section>
+
+      <section className="panel" id="kalemler">
+        <h2>Kalem kalem — DHR × Luca (toplam)</h2>
+        <p className="caption">
+          32 kişinin kalem toplamları. Δ = DHR − Luca. Eşleşen = |Δ| ≤ 0,05 TL olan kişi sayısı.
+        </p>
+        <div className="table-scroll">
+          <table className="kalem-table">
+            <thead>
+              <tr>
+                <th>Kalem</th>
+                <th>Grup</th>
+                <th>DHR toplam</th>
+                <th>Luca toplam</th>
+                <th>Δ (DHR−Luca)</th>
+                <th>Değeri olan</th>
+                <th>Eşleşen</th>
+              </tr>
+            </thead>
+            <tbody>
+              {kalemler.map((k) => (
+                <tr key={k.key} className={Math.abs(k.deltaSum) > 1000 ? "warn" : Math.abs(k.deltaSum) < 1 ? "ok" : ""}>
+                  <td className="left">{k.label}</td>
+                  <td className="note">{groupLabel(k.group)}</td>
+                  <td>{tr(k.dhrSum)}</td>
+                  <td>{tr(k.lucaSum)}</td>
+                  <td className={deltaClass(k.deltaSum)}>
+                    {k.deltaSum > 0 ? "+" : ""}
+                    {tr(k.deltaSum)}
+                  </td>
+                  <td>{k.peopleWithValue}</td>
+                  <td>
+                    {k.matchCount}/{k.compared}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section className="panel" id="kisi-kalem">
+        <h2>Kişi bazlı kalem tablosu</h2>
+        <p className="caption">Çalışan seç → her kalemde DHR, Luca ve fark yan yana</p>
+        <label className="person-pick">
+          <span>Çalışan</span>
+          <select value={selected?.tc || ""} onChange={(e) => setSelectedTc(e.target.value)}>
+            {rows.map((r) => (
+              <option key={r.tc} value={r.tc}>
+                #{r.n} {r.name} — {r.note || r.profile}
+              </option>
+            ))}
+          </select>
+        </label>
+        {selected && (
+          <>
+            <div className="stats compact">
+              <Stat label="DHR net" value={`${tr(selected.dhr!.net)} TL`} />
+              <Stat label="Luca net" value={`${tr(selected.luca.net)} TL`} />
+              <Stat
+                label="ΔNet"
+                value={`${selected.delta!.net > 0 ? "+" : ""}${tr(selected.delta!.net)}`}
+                tone={Math.abs(selected.delta!.net) > 2000 ? "bad" : Math.abs(selected.delta!.net) > 500 ? "warn" : "ok"}
+              />
+              <Stat
+                label="Luca kanun"
+                value={selected.luca.kanun || "—"}
+                tone={
+                  selected.lucaKanunExpected &&
+                  selected.luca.kanun &&
+                  !String(selected.lucaKanunExpected).includes(String(selected.luca.kanun))
+                    ? "bad"
+                    : "ok"
+                }
+              />
+            </div>
+            {(selected.luca.digText || selected.luca.ozText) && (
+              <p className="caption dig-oz">
+                {selected.luca.digText ? (
+                  <>
+                    <strong>Luca dig:</strong> {selected.luca.digText}{" "}
+                  </>
+                ) : null}
+                {selected.luca.ozText ? (
+                  <>
+                    <strong>Öz kesinti:</strong> {selected.luca.ozText}
+                  </>
+                ) : null}
+              </p>
+            )}
+            <div className="table-scroll">
+              <table className="kalem-table">
+                <thead>
+                  <tr>
+                    <th>Kalem</th>
+                    <th>DHR</th>
+                    <th>Luca</th>
+                    <th>Δ</th>
+                    <th>Durum</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {(selected.lineItems || []).map((item) => (
+                    <LineItemRow key={item.key} item={item} />
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
       </section>
 
       <section className="panel" id="matrix">
@@ -403,12 +523,14 @@ export default function AppView({ data, matrix }: Props) {
                 <th>ΔGV</th>
                 <th>DHR Brüt</th>
                 <th>Luca Top</th>
-                <th>BES</th>
+                <th>DHR BES</th>
+                <th>Luca FM</th>
+                <th>Luca Yemek</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((r) => (
-                <RowLine key={r.tc} r={r} />
+                <RowLine key={r.tc} r={r} onSelect={() => setSelectedTc(r.tc)} />
               ))}
             </tbody>
           </table>
@@ -424,6 +546,42 @@ export default function AppView({ data, matrix }: Props) {
         </p>
       </footer>
     </div>
+  );
+}
+
+function groupLabel(g: string): string {
+  if (g === "kazanc") return "Kazanç";
+  if (g === "kesinti") return "Kesinti";
+  if (g === "ozet") return "Özet";
+  return g;
+}
+
+function deltaClass(n: number | null | undefined): string {
+  if (n == null || Math.abs(n) < 0.05) return "";
+  return n > 0 ? "pos" : "neg";
+}
+
+function LineItemRow({ item }: { item: LineItem }) {
+  const hideZero =
+    (item.dhr == null || item.dhr === 0) && (item.luca == null || item.luca === 0) && item.key !== "net";
+  if (hideZero && item.key !== "gross" && item.key !== "salary" && item.key !== "gv" && item.key !== "sgk" && item.key !== "damga") {
+    // still show structural rows; skip pure empty extras
+    if (["masraf", "prim", "ikramiye", "overtime", "advance", "kesinti", "meal", "transport", "bes", "unemployment"].includes(item.key)) {
+      // show anyway for transparency of 0 vs 0 match — keep visible
+    }
+  }
+  return (
+    <tr className={item.match ? "ok" : "warn"}>
+      <td className="left">{item.label}</td>
+      <td>{tr(item.dhr)}</td>
+      <td>{tr(item.luca)}</td>
+      <td className={deltaClass(item.delta)}>
+        {item.delta == null ? "—" : `${item.delta > 0 ? "+" : ""}${tr(item.delta)}`}
+      </td>
+      <td>
+        <span className={`badge ${item.match ? "ok" : "bad"}`}>{item.match ? "OK" : "FARK"}</span>
+      </td>
+    </tr>
   );
 }
 
@@ -457,13 +615,17 @@ function Badge({ status }: { status: string }) {
   return <span className={`badge ${toneOf(status)}`}>{label}</span>;
 }
 
-function RowLine({ r }: { r: CompareRow }) {
+function RowLine({ r, onSelect }: { r: CompareRow; onSelect: () => void }) {
   const d = r.delta!;
   const tone = Math.abs(d.net) > 4000 ? "bad" : Math.abs(d.net) > 1500 ? "warn" : "ok";
   return (
-    <tr className={tone}>
+    <tr className={tone} onClick={onSelect} style={{ cursor: "pointer" }} title="Kalem detayına git">
       <td>{r.n ?? "—"}</td>
-      <td>{r.name}</td>
+      <td>
+        <a href="#kisi-kalem" onClick={onSelect}>
+          {r.name}
+        </a>
+      </td>
       <td className="note">{r.note || r.profile}</td>
       <td>{tr(r.dhr!.net)}</td>
       <td>{tr(r.luca.net)}</td>
@@ -471,10 +633,15 @@ function RowLine({ r }: { r: CompareRow }) {
         {d.net > 0 ? "+" : ""}
         {tr(d.net)}
       </td>
-      <td>{d.gv > 0 ? "+" : ""}{tr(d.gv)}</td>
+      <td>
+        {d.gv > 0 ? "+" : ""}
+        {tr(d.gv)}
+      </td>
       <td>{tr0(r.dhr!.gross)}</td>
-      <td>{tr0(r.luca.topKaz)}</td>
+      <td>{tr0(r.luca.topKaz ?? r.luca.gross)}</td>
       <td>{tr0(r.dhr!.bes)}</td>
+      <td>{tr0(r.luca.overtime)}</td>
+      <td>{tr0(r.luca.meal)}</td>
     </tr>
   );
 }

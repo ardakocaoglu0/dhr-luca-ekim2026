@@ -1,19 +1,283 @@
 {
-  "generatedAt": "2026-08-27T16:15:07.574Z",
+  "generatedAt": "2026-08-27T20:03:20.141Z",
   "period": "Ekim 2026",
-  "unit": "İnsan Kaynakları — dhrtest vs Luca",
+  "unit": "Insan Kaynaklari — dhrtest vs Luca",
+  "lucaPdfVersion": "bordro_d1_tech (10).pdf",
   "sources": {
-    "lucaPdf": "public/downloads/bordro_d1_tech.pdf",
-    "dhrExcel": "public/downloads/Payroll_Ekim_2026.xlsx"
+    "lucaPdf": "downloads/bordro_d1_tech.pdf",
+    "dhrExcel": "downloads/Payroll_Ekim_2026.xlsx"
   },
   "summary": {
     "lucaCount": 32,
     "dhrCount": 32,
     "matched": 32,
     "netWithin100": 0,
-    "avgAbsNetDelta": 3218.71,
-    "fmHoursTotalLuca": 0
+    "avgAbsNetDelta": 4230.27,
+    "fmHoursTotalLuca": 0,
+    "mealOnLuca": 31,
+    "overtimeOnLuca": 4,
+    "besOnLuca": 1
   },
+  "lineDefs": [
+    {
+      "key": "salary",
+      "label": "Temel maas / ucret",
+      "group": "kazanc"
+    },
+    {
+      "key": "meal",
+      "label": "Yemek yardimi",
+      "group": "kazanc"
+    },
+    {
+      "key": "transport",
+      "label": "Yol yardimi",
+      "group": "kazanc"
+    },
+    {
+      "key": "overtime",
+      "label": "Fazla mesai",
+      "group": "kazanc"
+    },
+    {
+      "key": "prim",
+      "label": "Prim",
+      "group": "kazanc"
+    },
+    {
+      "key": "ikramiye",
+      "label": "Ikramiye",
+      "group": "kazanc"
+    },
+    {
+      "key": "masraf",
+      "label": "Masraf",
+      "group": "kazanc"
+    },
+    {
+      "key": "gross",
+      "label": "Toplam kazanc",
+      "group": "ozet"
+    },
+    {
+      "key": "sgk",
+      "label": "SGK isci",
+      "group": "kesinti"
+    },
+    {
+      "key": "unemployment",
+      "label": "Issizlik isci",
+      "group": "kesinti"
+    },
+    {
+      "key": "gv",
+      "label": "Gelir vergisi",
+      "group": "kesinti"
+    },
+    {
+      "key": "damga",
+      "label": "Damga vergisi",
+      "group": "kesinti"
+    },
+    {
+      "key": "bes",
+      "label": "BES kesintisi",
+      "group": "kesinti"
+    },
+    {
+      "key": "advance",
+      "label": "Avans",
+      "group": "kesinti"
+    },
+    {
+      "key": "kesinti",
+      "label": "Diger kesinti (icra vb.)",
+      "group": "kesinti"
+    },
+    {
+      "key": "net",
+      "label": "Net odenen",
+      "group": "ozet"
+    }
+  ],
+  "kalemler": [
+    {
+      "key": "salary",
+      "label": "Temel maas / ucret",
+      "group": "kazanc",
+      "dhrSum": 1655690.04,
+      "lucaSum": 1622508,
+      "deltaSum": 33182.04,
+      "peopleWithValue": 32,
+      "matchCount": 30,
+      "compared": 32
+    },
+    {
+      "key": "meal",
+      "label": "Yemek yardimi",
+      "group": "kazanc",
+      "dhrSum": 174845.26,
+      "lucaSum": 170500,
+      "deltaSum": 4345.26,
+      "peopleWithValue": 31,
+      "matchCount": 30,
+      "compared": 32
+    },
+    {
+      "key": "transport",
+      "label": "Yol yardimi",
+      "group": "kazanc",
+      "dhrSum": 101728.15,
+      "lucaSum": 99200,
+      "deltaSum": 2528.15,
+      "peopleWithValue": 31,
+      "matchCount": 30,
+      "compared": 32
+    },
+    {
+      "key": "overtime",
+      "label": "Fazla mesai",
+      "group": "kazanc",
+      "dhrSum": 17894.29,
+      "lucaSum": 17400.58,
+      "deltaSum": 493.71,
+      "peopleWithValue": 4,
+      "matchCount": 31,
+      "compared": 32
+    },
+    {
+      "key": "prim",
+      "label": "Prim",
+      "group": "kazanc",
+      "dhrSum": 13000,
+      "lucaSum": 13000,
+      "deltaSum": 0,
+      "peopleWithValue": 3,
+      "matchCount": 32,
+      "compared": 32
+    },
+    {
+      "key": "ikramiye",
+      "label": "Ikramiye",
+      "group": "kazanc",
+      "dhrSum": 10000,
+      "lucaSum": 10000,
+      "deltaSum": 0,
+      "peopleWithValue": 1,
+      "matchCount": 32,
+      "compared": 32
+    },
+    {
+      "key": "masraf",
+      "label": "Masraf",
+      "group": "kazanc",
+      "dhrSum": 750,
+      "lucaSum": 0,
+      "deltaSum": 750,
+      "peopleWithValue": 1,
+      "matchCount": 31,
+      "compared": 32
+    },
+    {
+      "key": "gross",
+      "label": "Toplam kazanc",
+      "group": "ozet",
+      "dhrSum": 1974897.74,
+      "lucaSum": 1958679.53,
+      "deltaSum": 16218.21,
+      "peopleWithValue": 32,
+      "matchCount": 23,
+      "compared": 32
+    },
+    {
+      "key": "sgk",
+      "label": "SGK isci",
+      "group": "kesinti",
+      "dhrSum": 252064.08,
+      "lucaSum": 274215.13,
+      "deltaSum": -22151.05,
+      "peopleWithValue": 32,
+      "matchCount": 1,
+      "compared": 32
+    },
+    {
+      "key": "unemployment",
+      "label": "Issizlik isci",
+      "group": "kesinti",
+      "dhrSum": 18004.58,
+      "lucaSum": 0,
+      "deltaSum": 18004.58,
+      "peopleWithValue": 32,
+      "matchCount": 0,
+      "compared": 0
+    },
+    {
+      "key": "gv",
+      "label": "Gelir vergisi",
+      "group": "kesinti",
+      "dhrSum": 232015.62,
+      "lucaSum": 116885.41,
+      "deltaSum": 115130.21,
+      "peopleWithValue": 32,
+      "matchCount": 0,
+      "compared": 32
+    },
+    {
+      "key": "damga",
+      "label": "Damga vergisi",
+      "group": "kesinti",
+      "dhrSum": 5799.36,
+      "lucaSum": 5888.99,
+      "deltaSum": -89.63,
+      "peopleWithValue": 31,
+      "matchCount": 1,
+      "compared": 32
+    },
+    {
+      "key": "bes",
+      "label": "BES kesintisi",
+      "group": "kesinti",
+      "dhrSum": 54013.73,
+      "lucaSum": 2001,
+      "deltaSum": 52012.73,
+      "peopleWithValue": 32,
+      "matchCount": 0,
+      "compared": 32
+    },
+    {
+      "key": "advance",
+      "label": "Avans",
+      "group": "kesinti",
+      "dhrSum": 0,
+      "lucaSum": 7200,
+      "deltaSum": -7200,
+      "peopleWithValue": 1,
+      "matchCount": 31,
+      "compared": 32
+    },
+    {
+      "key": "kesinti",
+      "label": "Diger kesinti (icra vb.)",
+      "group": "kesinti",
+      "dhrSum": 2000,
+      "lucaSum": 2000,
+      "deltaSum": 0,
+      "peopleWithValue": 2,
+      "matchCount": 32,
+      "compared": 32
+    },
+    {
+      "key": "net",
+      "label": "Net odenen",
+      "group": "ozet",
+      "dhrSum": 1411260.37,
+      "lucaSum": 1530902.2,
+      "deltaSum": -119641.83,
+      "peopleWithValue": 32,
+      "matchCount": 0,
+      "compared": 32
+    }
+  ],
   "rows": [
     {
       "n": 1,
@@ -21,40 +285,208 @@
       "tc": "43039686920",
       "note": "Standart brüt",
       "profile": "Standart",
+      "input": "none",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Serra Bindal",
-        "tc": "43039686920",
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 59200,
+        "net": 46784.7,
+        "gv": 3336.67,
+        "sgk": 8288,
+        "unemployment": null,
+        "damga": 198.63,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 50500,
-        "gs": "G",
+        "topKaz": 59200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 50500,
-        "digKaz": 0,
-        "sskMat": 50500,
-        "sskIsci": 7070,
-        "gv": 2227.42,
-        "damga": 132.6,
-        "ozKes": 0,
-        "net": 40564.98,
-        "digText": "-- 23 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 59200,
         "net": 42530.37,
         "gv": 6846.75,
         "sgk": 7518,
+        "unemployment": 537,
         "damga": 156.88,
-        "bes": 1611,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1611
       },
       "delta": {
-        "net": 1965.39,
-        "gv": 4619.33,
-        "damga": 24.28
-      }
+        "net": -4254.33,
+        "gv": 3510.08,
+        "damga": -41.75,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1611
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 50500,
+          "luca": 50500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 59200,
+          "luca": 59200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7518,
+          "luca": 8288,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 537,
+          "luca": null,
+          "delta": 537,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6846.75,
+          "luca": 3336.67,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 156.88,
+          "luca": 198.63,
+          "delta": -41.75,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1611,
+          "luca": 0,
+          "delta": 1611,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 42530.37,
+          "luca": 46784.7,
+          "delta": -4254.33,
+          "match": false
+        }
+      ]
     },
     {
       "n": 2,
@@ -62,40 +494,208 @@
       "tc": "43041015862",
       "note": "05510 %2",
       "profile": "Standart",
+      "input": "none",
       "lucaKanunExpected": "05510",
       "luca": {
-        "name": "Tolga Civelek",
-        "tc": "43041015862",
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 61700,
+        "net": 48571.98,
+        "gv": 3655.42,
+        "sgk": 8638,
+        "unemployment": null,
+        "damga": 217.6,
+        "bes": 0,
         "kanun": "05510",
         "ucret": 53000,
-        "gs": "G",
+        "topKaz": 61700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 53000,
-        "digKaz": 0,
-        "sskMat": 53000,
-        "sskIsci": 7420,
-        "gv": 2546.17,
-        "damga": 151.57,
-        "ozKes": 0,
-        "net": 42352.26,
-        "digText": "-- 25 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 61700,
         "net": 44242.64,
         "gv": 7165.5,
         "sgk": 7868,
+        "unemployment": 562,
         "damga": 175.86,
-        "bes": 1686,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1686
       },
       "delta": {
-        "net": 1890.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": -4329.34,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1686
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 53000,
+          "luca": 53000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 61700,
+          "luca": 61700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7868,
+          "luca": 8638,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 562,
+          "luca": null,
+          "delta": 562,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7165.5,
+          "luca": 3655.42,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 175.86,
+          "luca": 217.6,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1686,
+          "luca": 0,
+          "delta": 1686,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 44242.64,
+          "luca": 48571.98,
+          "delta": -4329.34,
+          "match": false
+        }
+      ]
     },
     {
       "n": 3,
@@ -103,40 +703,208 @@
       "tc": "43042344756",
       "note": "05510 %5",
       "profile": "Standart",
+      "input": "none",
       "lucaKanunExpected": "05510",
       "luca": {
-        "name": "Umut Dagdelen",
-        "tc": "43042344756",
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 64200,
+        "net": 50359.25,
+        "gv": 3974.17,
+        "sgk": 8988,
+        "unemployment": null,
+        "damga": 236.58,
+        "bes": 0,
         "kanun": "05510",
         "ucret": 55500,
-        "gs": "G",
+        "topKaz": 64200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 55500,
-        "digKaz": 0,
-        "sskMat": 55500,
-        "sskIsci": 7770,
-        "gv": 2864.92,
-        "damga": 170.55,
-        "ozKes": 0,
-        "net": 44139.53,
-        "digText": "-- 27 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 64200,
         "net": 45954.92,
         "gv": 7484.25,
         "sgk": 8218,
+        "unemployment": 587,
         "damga": 194.83,
-        "bes": 1761,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1761
       },
       "delta": {
-        "net": 1815.39,
-        "gv": 4619.33,
-        "damga": 24.28
-      }
+        "net": -4404.33,
+        "gv": 3510.08,
+        "damga": -41.75,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1761
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 55500,
+          "luca": 55500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 64200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8218,
+          "luca": 8988,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 587,
+          "luca": null,
+          "delta": 587,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7484.25,
+          "luca": 3974.17,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 236.58,
+          "delta": -41.75,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1761,
+          "luca": 0,
+          "delta": 1761,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 45954.92,
+          "luca": 50359.25,
+          "delta": -4404.33,
+          "match": false
+        }
+      ]
     },
     {
       "n": 4,
@@ -144,40 +912,208 @@
       "tc": "43043673640",
       "note": "Net ücret",
       "profile": "Standart",
+      "input": "none",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Vildan Ertem",
-        "tc": "43043673640",
+        "salary": 42000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 61207.27,
+        "net": 48219.72,
+        "gv": 3592.6,
+        "sgk": 8569.02,
+        "unemployment": null,
+        "damga": 213.86,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 42000,
-        "gs": "G",
+        "topKaz": 61207.27,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 52507.27,
-        "digKaz": 0,
-        "sskMat": 52507.27,
-        "sskIsci": 7351.02,
-        "gv": 2483.35,
-        "damga": 147.83,
-        "ozKes": 0,
-        "net": 42000,
-        "digText": "-- 29 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 N"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 58503.44,
+        "meal": 7661.16,
+        "transport": 4457.4,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 70622,
         "net": 50700,
         "gv": 8162.81,
         "sgk": 8963.08,
+        "unemployment": 640.22,
         "damga": 235.23,
-        "bes": 1920.66,
-        "meal": 7661.16,
-        "transport": 4457.4
+        "bes": 1920.66
       },
       "delta": {
-        "net": 8700,
-        "gv": 5679.46,
-        "damga": 87.4
-      }
+        "net": 2480.28,
+        "gv": 4570.21,
+        "damga": 21.37,
+        "gross": 9414.73,
+        "meal": 2161.16,
+        "transport": 1257.4,
+        "overtime": 0,
+        "bes": 1920.66
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 58503.44,
+          "luca": 42000,
+          "delta": 16503.44,
+          "match": false
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 7661.16,
+          "luca": 5500,
+          "delta": 2161.16,
+          "match": false
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 4457.4,
+          "luca": 3200,
+          "delta": 1257.4,
+          "match": false
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 70622,
+          "luca": 61207.27,
+          "delta": 9414.73,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8963.08,
+          "luca": 8569.02,
+          "delta": 394.06,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 640.22,
+          "luca": null,
+          "delta": 640.22,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 8162.81,
+          "luca": 3592.6,
+          "delta": 4570.21,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 235.23,
+          "luca": 213.86,
+          "delta": 21.37,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1920.66,
+          "luca": 0,
+          "delta": 1920.66,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 50700,
+          "luca": 48219.72,
+          "delta": 2480.28,
+          "match": false
+        }
+      ]
     },
     {
       "n": 5,
@@ -185,40 +1121,208 @@
       "tc": "43045002592",
       "note": "5746 Lisans",
       "profile": "5746 Lisans / Diğer Personel",
+      "input": "none",
       "lucaKanunExpected": "05746",
       "luca": {
-        "name": "Yagiz Findik",
-        "tc": "43045002592",
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 69200,
+        "net": 54208.33,
+        "gv": 4611.67,
+        "sgk": 9688,
+        "unemployment": null,
+        "damga": 0,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 60500,
-        "gs": "G",
+        "topKaz": 69200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 60500,
-        "digKaz": 0,
-        "sskMat": 60500,
-        "sskIsci": 8470,
-        "gv": 3502.42,
-        "damga": 0,
-        "ozKes": 0,
-        "net": 47922.58,
-        "digText": "-- 30 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 69200,
         "net": 49379.47,
         "gv": 8121.75,
         "sgk": 8918,
+        "unemployment": 637,
         "damga": 232.78,
-        "bes": 1911,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1911
       },
       "delta": {
-        "net": 1456.89,
-        "gv": 4619.33,
-        "damga": 232.78
-      }
+        "net": -4828.86,
+        "gv": 3510.08,
+        "damga": 232.78,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1911
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 60500,
+          "luca": 60500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 69200,
+          "luca": 69200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8918,
+          "luca": 9688,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 637,
+          "luca": null,
+          "delta": 637,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 8121.75,
+          "luca": 4611.67,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 232.78,
+          "luca": 0,
+          "delta": 232.78,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1911,
+          "luca": 0,
+          "delta": 1911,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 49379.47,
+          "luca": 54208.33,
+          "delta": -4828.86,
+          "match": false
+        }
+      ]
     },
     {
       "n": 6,
@@ -226,40 +1330,208 @@
       "tc": "43046331486",
       "note": "5746 YL",
       "profile": "5746 Yüksek Lisans / Temel Bilimler Lisans",
+      "input": "none",
       "lucaKanunExpected": "15746",
       "luca": {
-        "name": "Zeliha Gurbuz",
-        "tc": "43046331486",
+        "salary": 48000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 56700,
+        "net": 45177.08,
+        "gv": 3017.92,
+        "sgk": 7938,
+        "unemployment": null,
+        "damga": 0,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 48000,
-        "gs": "G",
+        "topKaz": 56700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 48000,
-        "digKaz": 0,
-        "sskMat": 48000,
-        "sskIsci": 6720,
-        "gv": 1908.67,
-        "damga": 0,
-        "ozKes": 0,
-        "net": 38891.33,
-        "digText": "TOPLAM 960 0 1.643.522,54 0,00 1.643.522,54 0,00 1.665.574,54 365.349,75",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 48.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 48000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 56700,
         "net": 40818.09,
         "gv": 6528,
         "sgk": 7168,
+        "unemployment": 512,
         "damga": 137.91,
-        "bes": 1536,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1536
       },
       "delta": {
-        "net": 1926.76,
-        "gv": 4619.33,
-        "damga": 137.91
-      }
+        "net": -4358.99,
+        "gv": 3510.08,
+        "damga": 137.91,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1536
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 48000,
+          "luca": 48000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 56700,
+          "luca": 56700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7168,
+          "luca": 7938,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 512,
+          "luca": null,
+          "delta": 512,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6528,
+          "luca": 3017.92,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 137.91,
+          "luca": 0,
+          "delta": 137.91,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1536,
+          "luca": 0,
+          "delta": 1536,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 40818.09,
+          "luca": 45177.08,
+          "delta": -4358.99,
+          "match": false
+        }
+      ]
     },
     {
       "n": 7,
@@ -267,40 +1539,208 @@
       "tc": "43047660370",
       "note": "Doktora+4691",
       "profile": "5746 Doktora / Temel Bilimler Yüksek Lisans",
+      "input": "none",
       "lucaKanunExpected": "05746+4691",
       "luca": {
-        "name": "Alper Hancer",
-        "tc": "43047660370",
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 59200,
+        "net": 46983.33,
+        "gv": 3336.67,
+        "sgk": 8288,
+        "unemployment": null,
+        "damga": 0,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 50500,
-        "gs": "G",
+        "topKaz": 59200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 50500,
-        "digKaz": 0,
-        "sskMat": 50500,
-        "sskIsci": 7070,
-        "gv": 2227.42,
-        "damga": 0,
-        "ozKes": 0,
-        "net": 40697.58,
-        "digText": "-- 1 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 59200,
         "net": 42530.37,
         "gv": 6846.75,
         "sgk": 7518,
+        "unemployment": 537,
         "damga": 156.88,
-        "bes": 1611,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1611
       },
       "delta": {
-        "net": 1832.79,
-        "gv": 4619.33,
-        "damga": 156.88
-      }
+        "net": -4452.96,
+        "gv": 3510.08,
+        "damga": 156.88,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1611
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 50500,
+          "luca": 50500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 59200,
+          "luca": 59200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7518,
+          "luca": 8288,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 537,
+          "luca": null,
+          "delta": 537,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6846.75,
+          "luca": 3336.67,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 156.88,
+          "luca": 0,
+          "delta": 156.88,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1611,
+          "luca": 0,
+          "delta": 1611,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 42530.37,
+          "luca": 46983.33,
+          "delta": -4452.96,
+          "match": false
+        }
+      ]
     },
     {
       "n": 8,
@@ -308,40 +1748,208 @@
       "tc": "43048989296",
       "note": "Ar-Ge+4691",
       "profile": "Ar-Ge Personeli",
+      "input": "none",
       "lucaKanunExpected": "05746+4691",
       "luca": {
-        "name": "Berna Isikli",
-        "tc": "43048989296",
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 61700,
+        "net": 48789.58,
+        "gv": 3655.42,
+        "sgk": 8638,
+        "unemployment": null,
+        "damga": 0,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 53000,
-        "gs": "G",
+        "topKaz": 61700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 53000,
-        "digKaz": 0,
-        "sskMat": 53000,
-        "sskIsci": 7420,
-        "gv": 2546.17,
-        "damga": 0,
-        "ozKes": 0,
-        "net": 42503.83,
-        "digText": "-- 3 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 61700,
         "net": 44242.64,
         "gv": 7165.5,
         "sgk": 7868,
+        "unemployment": 562,
         "damga": 175.86,
-        "bes": 1686,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1686
       },
       "delta": {
-        "net": 1738.81,
-        "gv": 4619.33,
-        "damga": 175.86
-      }
+        "net": -4546.94,
+        "gv": 3510.08,
+        "damga": 175.86,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1686
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 53000,
+          "luca": 53000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 61700,
+          "luca": 61700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7868,
+          "luca": 8638,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 562,
+          "luca": null,
+          "delta": 562,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7165.5,
+          "luca": 3655.42,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 175.86,
+          "luca": 0,
+          "delta": 175.86,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1686,
+          "luca": 0,
+          "delta": 1686,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 44242.64,
+          "luca": 48789.58,
+          "delta": -4546.94,
+          "match": false
+        }
+      ]
     },
     {
       "n": 9,
@@ -349,40 +1957,208 @@
       "tc": "43050318138",
       "note": "Destek+4691",
       "profile": "Destek Personeli",
+      "input": "none",
       "lucaKanunExpected": "4691",
       "luca": {
-        "name": "Cemil Jaleoglu",
-        "tc": "43050318138",
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 64200,
+        "net": 50359.25,
+        "gv": 3974.17,
+        "sgk": 8988,
+        "unemployment": null,
+        "damga": 236.58,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 55500,
-        "gs": "G",
+        "topKaz": 64200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 55500,
-        "digKaz": 0,
-        "sskMat": 55500,
-        "sskIsci": 7770,
-        "gv": 2864.92,
-        "damga": 170.55,
-        "ozKes": 0,
-        "net": 44139.53,
-        "digText": "-- 4 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 64200,
         "net": 45954.92,
         "gv": 7484.25,
         "sgk": 8218,
+        "unemployment": 587,
         "damga": 194.83,
-        "bes": 1761,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1761
       },
       "delta": {
-        "net": 1815.39,
-        "gv": 4619.33,
-        "damga": 24.28
-      }
+        "net": -4404.33,
+        "gv": 3510.08,
+        "damga": -41.75,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1761
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 55500,
+          "luca": 55500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 64200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8218,
+          "luca": 8988,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 587,
+          "luca": null,
+          "delta": 587,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7484.25,
+          "luca": 3974.17,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 236.58,
+          "delta": -41.75,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1761,
+          "luca": 0,
+          "delta": 1761,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 45954.92,
+          "luca": 50359.25,
+          "delta": -4404.33,
+          "match": false
+        }
+      ]
     },
     {
       "n": 10,
@@ -390,40 +2166,208 @@
       "tc": "43051647022",
       "note": "Emekli SGDP",
       "profile": "Emekli",
+      "input": "none",
       "lucaKanunExpected": "SGDP",
       "luca": {
-        "name": "Dilek Kartal",
-        "tc": "43051647022",
+        "salary": 42000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 50700,
+        "net": 40707.97,
+        "gv": 2252.92,
+        "sgk": 7098,
+        "unemployment": null,
+        "damga": 134.11,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 42000,
-        "gs": "G",
+        "topKaz": 50700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 42000,
-        "digKaz": 0,
-        "sskMat": 42000,
-        "sskIsci": 5880,
-        "gv": 1143.67,
-        "damga": 68.08,
-        "ozKes": 0,
-        "net": 34488.25,
-        "digText": "-- 7 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 42000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 50700,
         "net": 36708.63,
         "gv": 5763,
         "sgk": 6328,
+        "unemployment": 452,
         "damga": 92.37,
-        "bes": 1356,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1356
       },
       "delta": {
-        "net": 2220.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": -3999.34,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1356
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 42000,
+          "luca": 42000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 50700,
+          "luca": 50700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 6328,
+          "luca": 7098,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 452,
+          "luca": null,
+          "delta": 452,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 5763,
+          "luca": 2252.92,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 92.37,
+          "luca": 134.11,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1356,
+          "luca": 0,
+          "delta": 1356,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 36708.63,
+          "luca": 40707.97,
+          "delta": -3999.34,
+          "match": false
+        }
+      ]
     },
     {
       "n": 11,
@@ -431,40 +2375,208 @@
       "tc": "43052975926",
       "note": "Engelli 1",
       "profile": "Engelli 1. Derece",
+      "input": "none",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Ersin Lale",
-        "tc": "43052975926",
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 69200,
+        "net": 53933.8,
+        "gv": 4611.67,
+        "sgk": 9688,
+        "unemployment": null,
+        "damga": 274.53,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 60500,
-        "gs": "G",
+        "topKaz": 69200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 60500,
-        "digKaz": 0,
-        "sskMat": 60500,
-        "sskIsci": 8470,
-        "gv": 3502.42,
-        "damga": 208.5,
-        "ozKes": 0,
-        "net": 47714.08,
-        "digText": "-- 9 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 69200,
         "net": 49379.47,
         "gv": 8121.75,
         "sgk": 8918,
+        "unemployment": 637,
         "damga": 232.78,
-        "bes": 1911,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1911
       },
       "delta": {
-        "net": 1665.39,
-        "gv": 4619.33,
-        "damga": 24.28
-      }
+        "net": -4554.33,
+        "gv": 3510.08,
+        "damga": -41.75,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1911
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 60500,
+          "luca": 60500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 69200,
+          "luca": 69200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8918,
+          "luca": 9688,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 637,
+          "luca": null,
+          "delta": 637,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 8121.75,
+          "luca": 4611.67,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 232.78,
+          "luca": 274.53,
+          "delta": -41.75,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1911,
+          "luca": 0,
+          "delta": 1911,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 49379.47,
+          "luca": 53933.8,
+          "delta": -4554.33,
+          "match": false
+        }
+      ]
     },
     {
       "n": 12,
@@ -472,40 +2584,208 @@
       "tc": "43054304878",
       "note": "Engelli 2",
       "profile": "Engelli 2. Derece",
+      "input": "none",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Fulya Mercan",
-        "tc": "43054304878",
+        "salary": 48000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 56700,
+        "net": 44997.43,
+        "gv": 3017.92,
+        "sgk": 7938,
+        "unemployment": null,
+        "damga": 179.65,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 48000,
-        "gs": "G",
+        "topKaz": 56700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 48000,
-        "digKaz": 0,
-        "sskMat": 48000,
-        "sskIsci": 6720,
-        "gv": 1908.67,
-        "damga": 113.62,
-        "ozKes": 0,
-        "net": 38777.71,
-        "digText": "-- 10 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 48.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 48000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 56700,
         "net": 40818.09,
         "gv": 6528,
         "sgk": 7168,
+        "unemployment": 512,
         "damga": 137.91,
-        "bes": 1536,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1536
       },
       "delta": {
-        "net": 2040.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": -4179.34,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1536
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 48000,
+          "luca": 48000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 56700,
+          "luca": 56700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7168,
+          "luca": 7938,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 512,
+          "luca": null,
+          "delta": 512,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6528,
+          "luca": 3017.92,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 137.91,
+          "luca": 179.65,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1536,
+          "luca": 0,
+          "delta": 1536,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 40818.09,
+          "luca": 44997.43,
+          "delta": -4179.34,
+          "match": false
+        }
+      ]
     },
     {
       "n": 13,
@@ -513,40 +2793,208 @@
       "tc": "43055633762",
       "note": "Engelli 3",
       "profile": "Engelli 3. Derece",
+      "input": "none",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Gokhan Narin",
-        "tc": "43055633762",
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 60476.08,
+        "net": 47696.99,
+        "gv": 3499.37,
+        "sgk": 8466.65,
+        "unemployment": null,
+        "damga": 208.31,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 50500,
-        "gs": "G",
+        "topKaz": 60476.08,
+        "digKaz": 9976.08,
         "tgun": 30,
-        "topKaz": 50500,
-        "digKaz": 0,
-        "sskMat": 50500,
-        "sskIsci": 7070,
-        "gv": 2227.42,
-        "damga": 132.6,
-        "ozKes": 0,
-        "net": 40564.98,
-        "digText": "-- 11 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 59200,
         "net": 42530.37,
         "gv": 6846.75,
         "sgk": 7518,
+        "unemployment": 537,
         "damga": 156.88,
-        "bes": 1611,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1611
       },
       "delta": {
-        "net": 1965.39,
-        "gv": 4619.33,
-        "damga": 24.28
-      }
+        "net": -5166.62,
+        "gv": 3347.38,
+        "damga": -51.43,
+        "gross": -1276.08,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1611
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 50500,
+          "luca": 50500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 59200,
+          "luca": 60476.08,
+          "delta": -1276.08,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7518,
+          "luca": 8466.65,
+          "delta": -948.65,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 537,
+          "luca": null,
+          "delta": 537,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6846.75,
+          "luca": 3499.37,
+          "delta": 3347.38,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 156.88,
+          "luca": 208.31,
+          "delta": -51.43,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1611,
+          "luca": 0,
+          "delta": 1611,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 42530.37,
+          "luca": 47696.99,
+          "delta": -5166.62,
+          "match": false
+        }
+      ]
     },
     {
       "n": 14,
@@ -554,40 +3002,208 @@
       "tc": "43056962656",
       "note": "Kısmi 15 gün",
       "profile": "Kısmi Süreli",
+      "input": "none",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Hande Orhan",
-        "tc": "43056962656",
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 54633.33,
+        "net": 43519.94,
+        "gv": 2754.42,
+        "sgk": 7648.67,
+        "unemployment": null,
+        "damga": 163.97,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 53000,
-        "gs": "G",
-        "tgun": 30,
-        "topKaz": 53000,
-        "digKaz": 0,
-        "sskMat": 53000,
-        "sskIsci": 7420,
-        "gv": 2546.17,
-        "damga": 151.57,
-        "ozKes": 0,
-        "net": 42352.26,
-        "digText": "-- 12 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+        "topKaz": 54633.33,
+        "digKaz": 8700,
+        "tgun": 26,
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 61700,
         "net": 44242.64,
         "gv": 7165.5,
         "sgk": 7868,
+        "unemployment": 562,
         "damga": 175.86,
-        "bes": 1686,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1686
       },
       "delta": {
-        "net": 1890.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": 722.7,
+        "gv": 4411.08,
+        "damga": 11.89,
+        "gross": 7066.67,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1686
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 53000,
+          "luca": 53000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 61700,
+          "luca": 54633.33,
+          "delta": 7066.67,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7868,
+          "luca": 7648.67,
+          "delta": 219.33,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 562,
+          "luca": null,
+          "delta": 562,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7165.5,
+          "luca": 2754.42,
+          "delta": 4411.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 175.86,
+          "luca": 163.97,
+          "delta": 11.89,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1686,
+          "luca": 0,
+          "delta": 1686,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 44242.64,
+          "luca": 43519.94,
+          "delta": 722.7,
+          "match": false
+        }
+      ]
     },
     {
       "n": 15,
@@ -595,40 +3211,208 @@
       "tc": "43058291518",
       "note": "Stajyer",
       "profile": "Stajyer",
+      "input": "none",
       "lucaKanunExpected": "STAJ",
       "luca": {
-        "name": "Ilker Pamuk",
-        "tc": "43058291518",
+        "salary": 18000,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 18000,
+        "net": 15300,
+        "gv": 0,
+        "sgk": 2520,
+        "unemployment": null,
+        "damga": 0,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 18000,
-        "gs": "G",
-        "tgun": 30,
         "topKaz": 18000,
         "digKaz": 0,
-        "sskMat": 33030,
-        "sskIsci": 2520,
-        "gv": 0,
-        "damga": 0,
-        "ozKes": 0,
-        "net": 15300,
-        "digText": "-- 13 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 18.000,00 B"
+        "tgun": 30,
+        "digText": "",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 18000,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 18000,
         "net": 12465,
         "gv": 2295,
         "sgk": 2520,
+        "unemployment": 180,
         "damga": 0,
-        "bes": 540,
-        "meal": 0,
-        "transport": 0
+        "bes": 540
       },
       "delta": {
         "net": -2835,
         "gv": 2295,
-        "damga": 0
-      }
+        "damga": 0,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 540
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 18000,
+          "luca": 18000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 18000,
+          "luca": 18000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 2520,
+          "luca": 2520,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 180,
+          "luca": null,
+          "delta": 180,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2295,
+          "luca": 0,
+          "delta": 2295,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 540,
+          "luca": 0,
+          "delta": 540,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 12465,
+          "luca": 15300,
+          "delta": -2835,
+          "match": false
+        }
+      ]
     },
     {
       "n": 16,
@@ -636,40 +3420,208 @@
       "tc": "43059620492",
       "note": "Yabancı",
       "profile": "Yabancı Uyruklu",
+      "input": "none",
       "lucaKanunExpected": "YABANCI",
       "luca": {
-        "name": "Jale Ruzgar",
-        "tc": "43059620492",
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 66700,
+        "net": 52146.53,
+        "gv": 4292.92,
+        "sgk": 9338,
+        "unemployment": null,
+        "damga": 255.55,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 58000,
-        "gs": "G",
+        "topKaz": 66700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 58000,
-        "digKaz": 0,
-        "sskMat": 58000,
-        "sskIsci": 8120,
-        "gv": 3183.67,
-        "damga": 189.52,
-        "ozKes": 0,
-        "net": 45926.81,
-        "digText": "-- 14 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 66700,
         "net": 47667.19,
         "gv": 7803,
         "sgk": 8568,
+        "unemployment": 612,
         "damga": 213.81,
-        "bes": 1836,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1836
       },
       "delta": {
-        "net": 1740.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": -4479.34,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1836
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 58000,
+          "luca": 58000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 66700,
+          "luca": 66700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8568,
+          "luca": 9338,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 612,
+          "luca": null,
+          "delta": 612,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7803,
+          "luca": 4292.92,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 213.81,
+          "luca": 255.55,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1836,
+          "luca": 0,
+          "delta": 1836,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 47667.19,
+          "luca": 52146.53,
+          "delta": -4479.34,
+          "match": false
+        }
+      ]
     },
     {
       "n": 17,
@@ -677,40 +3629,208 @@
       "tc": "43060949308",
       "note": "Hafta içi FM",
       "profile": "Standart",
+      "input": "overtime",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Kemal Sahinoglu",
-        "tc": "43060949308",
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 4840,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 74040,
+        "net": 57393.97,
+        "gv": 5228.77,
+        "sgk": 10365.6,
+        "unemployment": null,
+        "damga": 311.26,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 60500,
-        "gs": "G",
+        "topKaz": 74040,
+        "digKaz": 13540,
         "tgun": 30,
-        "topKaz": 60500,
-        "digKaz": 0,
-        "sskMat": 60500,
-        "sskIsci": 8470,
-        "gv": 3502.42,
-        "damga": 208.5,
-        "ozKes": 0,
-        "net": 47714.08,
-        "digText": "-- 15 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+        "digText": "Fazla Mesai (12S): 4.840,00 B Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 4840,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 74040,
         "net": 52694.43,
         "gv": 8738.85,
         "sgk": 9595.6,
+        "unemployment": 685.4,
         "damga": 269.52,
-        "bes": 2056.2,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 2056.2
       },
       "delta": {
-        "net": 4980.35,
-        "gv": 5236.43,
-        "damga": 61.02
-      }
+        "net": -4699.54,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 2056.2
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 60500,
+          "luca": 60500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 4840,
+          "luca": 4840,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 74040,
+          "luca": 74040,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 9595.6,
+          "luca": 10365.6,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 685.4,
+          "luca": null,
+          "delta": 685.4,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 8738.85,
+          "luca": 5228.77,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 269.52,
+          "luca": 311.26,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 2056.2,
+          "luca": 0,
+          "delta": 2056.2,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 52694.43,
+          "luca": 57393.97,
+          "delta": -4699.54,
+          "match": false
+        }
+      ]
     },
     {
       "n": 18,
@@ -718,40 +3838,208 @@
       "tc": "43062278260",
       "note": "Maaş avansı",
       "profile": "Standart",
+      "input": "advance",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Leyla Tuncel",
-        "tc": "43062278260",
+        "salary": 48000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 7200,
+        "gross": 56700,
+        "net": 37797.43,
+        "gv": 3017.92,
+        "sgk": 7938,
+        "unemployment": null,
+        "damga": 179.65,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 48000,
-        "gs": "G",
+        "topKaz": 56700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 48000,
-        "digKaz": 0,
-        "sskMat": 48000,
-        "sskIsci": 6720,
-        "gv": 1908.67,
-        "damga": 113.62,
-        "ozKes": 0,
-        "net": 38777.71,
-        "digText": "-- 16 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 48.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "Avans: 7.200,00 N",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 48000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 56700,
         "net": 40818.09,
         "gv": 6528,
         "sgk": 7168,
+        "unemployment": 512,
         "damga": 137.91,
-        "bes": 1536,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1536
       },
       "delta": {
-        "net": 2040.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": 3020.66,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1536
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 48000,
+          "luca": 48000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 56700,
+          "luca": 56700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7168,
+          "luca": 7938,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 512,
+          "luca": null,
+          "delta": 512,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6528,
+          "luca": 3017.92,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 137.91,
+          "luca": 179.65,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1536,
+          "luca": 0,
+          "delta": 1536,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 7200,
+          "delta": -7200,
+          "match": false
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 40818.09,
+          "luca": 37797.43,
+          "delta": 3020.66,
+          "match": false
+        }
+      ]
     },
     {
       "n": 19,
@@ -759,40 +4047,208 @@
       "tc": "43063607144",
       "note": "Prim",
       "profile": "Standart",
+      "input": "prim",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Metin Uslu",
-        "tc": "43063607144",
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 5000,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 66193.88,
+        "net": 51784.7,
+        "gv": 4228.39,
+        "sgk": 9267.14,
+        "unemployment": null,
+        "damga": 251.71,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 50500,
-        "gs": "G",
+        "topKaz": 66193.88,
+        "digKaz": 15693.88,
         "tgun": 30,
-        "topKaz": 50500,
-        "digKaz": 0,
-        "sskMat": 50500,
-        "sskIsci": 7070,
-        "gv": 2227.42,
-        "damga": 132.6,
-        "ozKes": 0,
-        "net": 40564.98,
-        "digText": "-- 17 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N Prim: 5.000,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 5000,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 64200,
         "net": 45954.92,
         "gv": 7484.25,
         "sgk": 8218,
+        "unemployment": 587,
         "damga": 194.83,
-        "bes": 1761,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1761
       },
       "delta": {
-        "net": 5389.94,
-        "gv": 5256.83,
-        "damga": 62.23
-      }
+        "net": -5829.78,
+        "gv": 3255.86,
+        "damga": -56.88,
+        "gross": -1993.88,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1761
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 50500,
+          "luca": 50500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 5000,
+          "luca": 5000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 66193.88,
+          "delta": -1993.88,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8218,
+          "luca": 9267.14,
+          "delta": -1049.14,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 587,
+          "luca": null,
+          "delta": 587,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7484.25,
+          "luca": 4228.39,
+          "delta": 3255.86,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 251.71,
+          "delta": -56.88,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1761,
+          "luca": 0,
+          "delta": 1761,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 45954.92,
+          "luca": 51784.7,
+          "delta": -5829.78,
+          "match": false
+        }
+      ]
     },
     {
       "n": 20,
@@ -800,40 +4256,208 @@
       "tc": "43064936038",
       "note": "Genel kesinti",
       "profile": "Standart",
+      "input": "kesinti",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Nilay Varol",
-        "tc": "43064936038",
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 1200,
+        "advance": 0,
+        "gross": 61700,
+        "net": 47371.98,
+        "gv": 3655.42,
+        "sgk": 8638,
+        "unemployment": null,
+        "damga": 217.6,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 53000,
-        "gs": "G",
+        "topKaz": 61700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 53000,
-        "digKaz": 0,
-        "sskMat": 53000,
-        "sskIsci": 7420,
-        "gv": 2546.17,
-        "damga": 151.57,
-        "ozKes": 0,
-        "net": 42352.26,
-        "digText": "-- 18 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "icra: 1.200,00 N",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 53000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 1200,
+        "advance": 0,
         "gross": 61700,
         "net": 44242.64,
         "gv": 7165.5,
         "sgk": 7868,
+        "unemployment": 562,
         "damga": 175.86,
-        "bes": 1686,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1686
       },
       "delta": {
-        "net": 1890.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": -3129.34,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1686
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 53000,
+          "luca": 53000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 61700,
+          "luca": 61700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7868,
+          "luca": 8638,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 562,
+          "luca": null,
+          "delta": 562,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7165.5,
+          "luca": 3655.42,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 175.86,
+          "luca": 217.6,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1686,
+          "luca": 0,
+          "delta": 1686,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 1200,
+          "luca": 1200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 44242.64,
+          "luca": 47371.98,
+          "delta": -3129.34,
+          "match": false
+        }
+      ]
     },
     {
       "n": 21,
@@ -841,40 +4465,208 @@
       "tc": "43066264900",
       "note": "Masraf ödeme talebi",
       "profile": "Standart",
+      "input": "masraf",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Okan Yildizoglu",
-        "tc": "43066264900",
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 64200,
+        "net": 50359.25,
+        "gv": 3974.17,
+        "sgk": 8988,
+        "unemployment": null,
+        "damga": 236.58,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 55500,
-        "gs": "G",
+        "topKaz": 64200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 55500,
-        "digKaz": 0,
-        "sskMat": 55500,
-        "sskIsci": 7770,
-        "gv": 2864.92,
-        "damga": 170.55,
-        "ozKes": 0,
-        "net": 44139.53,
-        "digText": "-- 19 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 750,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 64200,
         "net": 45954.92,
         "gv": 7484.25,
         "sgk": 8218,
+        "unemployment": 587,
         "damga": 194.83,
-        "bes": 1761,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1761
       },
       "delta": {
-        "net": 1815.39,
-        "gv": 4619.33,
-        "damga": 24.28
-      }
+        "net": -4404.33,
+        "gv": 3510.08,
+        "damga": -41.75,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1761
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 55500,
+          "luca": 55500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 750,
+          "luca": 0,
+          "delta": 750,
+          "match": false
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 64200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8218,
+          "luca": 8988,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 587,
+          "luca": null,
+          "delta": 587,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7484.25,
+          "luca": 3974.17,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 236.58,
+          "delta": -41.75,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1761,
+          "luca": 0,
+          "delta": 1761,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 45954.92,
+          "luca": 50359.25,
+          "delta": -4404.33,
+          "match": false
+        }
+      ]
     },
     {
       "n": 22,
@@ -882,40 +4674,208 @@
       "tc": "43067593894",
       "note": "BES aktif",
       "profile": "Standart",
+      "input": "bes",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Pelin Zengin",
-        "tc": "43067593894",
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 66700,
+        "net": 50145.53,
+        "gv": 4292.92,
+        "sgk": 9338,
+        "unemployment": null,
+        "damga": 255.55,
+        "bes": 2001,
         "kanun": "00000",
         "ucret": 58000,
-        "gs": "G",
+        "topKaz": 66700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 58000,
-        "digKaz": 0,
-        "sskMat": 58000,
-        "sskIsci": 8120,
-        "gv": 3183.67,
-        "damga": 189.52,
-        "ozKes": 0,
-        "net": 45926.81,
-        "digText": "-- 20 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "Oto.Kat.BES: 2.001,00 N",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 68440,
         "net": 47653.99,
         "gv": 7803,
         "sgk": 8568,
+        "unemployment": 612,
         "damga": 227.01,
-        "bes": 1836,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1836
       },
       "delta": {
-        "net": 1727.18,
-        "gv": 4619.33,
-        "damga": 37.49
-      }
+        "net": -2491.54,
+        "gv": 3510.08,
+        "damga": -28.54,
+        "gross": 1740,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": -165
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 58000,
+          "luca": 58000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 68440,
+          "luca": 66700,
+          "delta": 1740,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8568,
+          "luca": 9338,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 612,
+          "luca": null,
+          "delta": 612,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7803,
+          "luca": 4292.92,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 227.01,
+          "luca": 255.55,
+          "delta": -28.54,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1836,
+          "luca": 2001,
+          "delta": -165,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 47653.99,
+          "luca": 50145.53,
+          "delta": -2491.54,
+          "match": false
+        }
+      ]
     },
     {
       "n": 23,
@@ -923,40 +4883,208 @@
       "tc": "43068922778",
       "note": "Geçmiş GV matrahı",
       "profile": "Standart",
+      "input": "cumTax",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Riza Altunbas",
-        "tc": "43068922778",
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 69200,
+        "net": 53933.8,
+        "gv": 4611.67,
+        "sgk": 9688,
+        "unemployment": null,
+        "damga": 274.53,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 60500,
-        "gs": "G",
+        "topKaz": 69200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 60500,
-        "digKaz": 0,
-        "sskMat": 60500,
-        "sskIsci": 8470,
-        "gv": 3502.42,
-        "damga": 208.5,
-        "ozKes": 0,
-        "net": 47714.08,
-        "digText": "-- 21 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 60500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 69200,
         "net": 46922.22,
         "gv": 10579,
         "sgk": 8918,
+        "unemployment": 637,
         "damga": 232.78,
-        "bes": 1911,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1911
       },
       "delta": {
-        "net": -791.86,
-        "gv": 7076.58,
-        "damga": 24.28
-      }
+        "net": -7011.58,
+        "gv": 5967.33,
+        "damga": -41.75,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1911
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 60500,
+          "luca": 60500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 69200,
+          "luca": 69200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8918,
+          "luca": 9688,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 637,
+          "luca": null,
+          "delta": 637,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 10579,
+          "luca": 4611.67,
+          "delta": 5967.33,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 232.78,
+          "luca": 274.53,
+          "delta": -41.75,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1911,
+          "luca": 0,
+          "delta": 1911,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 46922.22,
+          "luca": 53933.8,
+          "delta": -7011.58,
+          "match": false
+        }
+      ]
     },
     {
       "n": 24,
@@ -964,40 +5092,208 @@
       "tc": "43070251620",
       "note": "Asgari ücret civarı",
       "profile": "Standart",
+      "input": "minWage",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Selin Bayraktar",
-        "tc": "43070251620",
+        "salary": 26008,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 34708,
+        "net": 29275.13,
+        "gv": 213.94,
+        "sgk": 4859.12,
+        "unemployment": null,
+        "damga": 12.73,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 26008,
-        "gs": "G",
+        "topKaz": 34708,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 26008,
-        "digKaz": 0,
-        "sskMat": 33030,
-        "sskIsci": 3641.12,
-        "gv": 0,
-        "damga": 0,
-        "ozKes": 0,
-        "net": 22106.8,
-        "digText": "-- 22 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 26.008,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 26008,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 34708,
         "net": 25726.54,
         "gv": 3724.02,
         "sgk": 4089.12,
+        "unemployment": 292.08,
         "damga": 0,
-        "bes": 876.24,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 876.24
       },
       "delta": {
-        "net": 3619.74,
-        "gv": 3724.02,
-        "damga": 0
-      }
+        "net": -3548.59,
+        "gv": 3510.08,
+        "damga": -12.73,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 876.24
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 26008,
+          "luca": 26008,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 34708,
+          "luca": 34708,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 4089.12,
+          "luca": 4859.12,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 292.08,
+          "luca": null,
+          "delta": 292.08,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3724.02,
+          "luca": 213.94,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 12.73,
+          "delta": -12.73,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 876.24,
+          "luca": 0,
+          "delta": 876.24,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 25726.54,
+          "luca": 29275.13,
+          "delta": -3548.59,
+          "match": false
+        }
+      ]
     },
     {
       "n": 25,
@@ -1005,40 +5301,208 @@
       "tc": "43071580514",
       "note": "5746+FM",
       "profile": "5746 Lisans / Diğer Personel",
+      "input": "overtime",
       "lucaKanunExpected": "05746",
       "luca": {
-        "name": "Tamer Cakmak",
-        "tc": "43071580514",
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 4040,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 63240,
+        "net": 49871.57,
+        "gv": 3851.77,
+        "sgk": 8853.6,
+        "unemployment": null,
+        "damga": 30.66,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 50500,
-        "gs": "G",
+        "topKaz": 63240,
+        "digKaz": 12740,
         "tgun": 30,
-        "topKaz": 50500,
-        "digKaz": 0,
-        "sskMat": 50500,
-        "sskIsci": 7070,
-        "gv": 2227.42,
-        "damga": 0,
-        "ozKes": 0,
-        "net": 40697.58,
-        "digText": "-- 24 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+        "digText": "Fazla Mesai (12S): 4.040,00 B Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 50500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 4040,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 63240,
         "net": 45297.4,
         "gv": 7361.85,
         "sgk": 8083.6,
+        "unemployment": 577.4,
         "damga": 187.55,
-        "bes": 1732.2,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1732.2
       },
       "delta": {
-        "net": 4599.82,
-        "gv": 5134.43,
-        "damga": 187.55
-      }
+        "net": -4574.17,
+        "gv": 3510.08,
+        "damga": 156.89,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1732.2
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 50500,
+          "luca": 50500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 4040,
+          "luca": 4040,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 63240,
+          "luca": 63240,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8083.6,
+          "luca": 8853.6,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 577.4,
+          "luca": null,
+          "delta": 577.4,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7361.85,
+          "luca": 3851.77,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 187.55,
+          "luca": 30.66,
+          "delta": 156.89,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1732.2,
+          "luca": 0,
+          "delta": 1732.2,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 45297.4,
+          "luca": 49871.57,
+          "delta": -4574.17,
+          "match": false
+        }
+      ]
     },
     {
       "n": 26,
@@ -1046,40 +5510,208 @@
       "tc": "43072909420",
       "note": "Emekli+prim",
       "profile": "Emekli",
+      "input": "prim",
       "lucaKanunExpected": "SGDP",
       "luca": {
-        "name": "Ufuk Demirel",
-        "tc": "43072909420",
+        "salary": 42000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 3500,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 55595.72,
+        "net": 44207.97,
+        "gv": 2877.12,
+        "sgk": 7783.4,
+        "unemployment": null,
+        "damga": 171.27,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 42000,
-        "gs": "G",
+        "topKaz": 55595.72,
+        "digKaz": 13595.72,
         "tgun": 30,
-        "topKaz": 42000,
-        "digKaz": 0,
-        "sskMat": 42000,
-        "sskIsci": 5880,
-        "gv": 1143.67,
-        "damga": 68.08,
-        "ozKes": 0,
-        "net": 34488.25,
-        "digText": "-- 26 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N Prim: 3.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 42000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 3500,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 54200,
         "net": 39105.82,
         "gv": 6209.25,
         "sgk": 6818,
+        "unemployment": 487,
         "damga": 118.93,
-        "bes": 1461,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1461
       },
       "delta": {
-        "net": 4617.57,
-        "gv": 5065.58,
-        "damga": 50.85
-      }
+        "net": -5102.15,
+        "gv": 3332.13,
+        "damga": -52.34,
+        "gross": -1395.72,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1461
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 42000,
+          "luca": 42000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 3500,
+          "luca": 3500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 54200,
+          "luca": 55595.72,
+          "delta": -1395.72,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 6818,
+          "luca": 7783.4,
+          "delta": -965.4,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 487,
+          "luca": null,
+          "delta": 487,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6209.25,
+          "luca": 2877.12,
+          "delta": 3332.13,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 118.93,
+          "luca": 171.27,
+          "delta": -52.34,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1461,
+          "luca": 0,
+          "delta": 1461,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 39105.82,
+          "luca": 44207.97,
+          "delta": -5102.15,
+          "match": false
+        }
+      ]
     },
     {
       "n": 27,
@@ -1087,40 +5719,208 @@
       "tc": "43074238382",
       "note": "Engelli2+kesinti",
       "profile": "Engelli 2. Derece",
+      "input": "kesinti",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Vesile Erkan",
-        "tc": "43074238382",
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 800,
+        "advance": 0,
+        "gross": 64200,
+        "net": 49559.25,
+        "gv": 3974.17,
+        "sgk": 8988,
+        "unemployment": null,
+        "damga": 236.58,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 55500,
-        "gs": "G",
+        "topKaz": 64200,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 55500,
-        "digKaz": 0,
-        "sskMat": 55500,
-        "sskIsci": 7770,
-        "gv": 2864.92,
-        "damga": 170.55,
-        "ozKes": 0,
-        "net": 44139.53,
-        "digText": "-- 28 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "icra: 800,00 N",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 55500,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 800,
+        "advance": 0,
         "gross": 64200,
         "net": 45954.92,
         "gv": 7484.25,
         "sgk": 8218,
+        "unemployment": 587,
         "damga": 194.83,
-        "bes": 1761,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1761
       },
       "delta": {
-        "net": 1815.39,
-        "gv": 4619.33,
-        "damga": 24.28
-      }
+        "net": -3604.33,
+        "gv": 3510.08,
+        "damga": -41.75,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1761
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 55500,
+          "luca": 55500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 64200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8218,
+          "luca": 8988,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 587,
+          "luca": null,
+          "delta": 587,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7484.25,
+          "luca": 3974.17,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 236.58,
+          "delta": -41.75,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1761,
+          "luca": 0,
+          "delta": 1761,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 800,
+          "luca": 800,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 45954.92,
+          "luca": 49559.25,
+          "delta": -3604.33,
+          "match": false
+        }
+      ]
     },
     {
       "n": 28,
@@ -1128,40 +5928,208 @@
       "tc": "43075567276",
       "note": "Yönetici+ikramiye",
       "profile": "Yönetici / İdari Personel",
+      "input": "ikramiye",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Yasin Firatin",
-        "tc": "43075567276",
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 10000,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 80687.78,
+        "net": 62146.53,
+        "gv": 6076.36,
+        "sgk": 11296.29,
+        "unemployment": null,
+        "damga": 361.72,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 58000,
-        "gs": "G",
+        "topKaz": 80687.78,
+        "digKaz": 22687.78,
         "tgun": 30,
-        "topKaz": 58000,
-        "digKaz": 0,
-        "sskMat": 58000,
-        "sskIsci": 8120,
-        "gv": 3183.67,
-        "damga": 189.52,
-        "ozKes": 0,
-        "net": 45926.81,
-        "digText": "-- 31 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N İkramiye: 10.000,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 10000,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 76700,
         "net": 54516.29,
         "gv": 9078,
         "sgk": 9968,
+        "unemployment": 712,
         "damga": 289.71,
-        "bes": 2136,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 2136
       },
       "delta": {
-        "net": 8589.48,
-        "gv": 5894.33,
-        "damga": 100.19
-      }
+        "net": -7630.24,
+        "gv": 3001.64,
+        "damga": -72.01,
+        "gross": -3987.78,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 2136
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 58000,
+          "luca": 58000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 10000,
+          "luca": 10000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 76700,
+          "luca": 80687.78,
+          "delta": -3987.78,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 9968,
+          "luca": 11296.29,
+          "delta": -1328.29,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 712,
+          "luca": null,
+          "delta": 712,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 9078,
+          "luca": 6076.36,
+          "delta": 3001.64,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 289.71,
+          "luca": 361.72,
+          "delta": -72.01,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 2136,
+          "luca": 0,
+          "delta": 2136,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 54516.29,
+          "luca": 62146.53,
+          "delta": -7630.24,
+          "match": false
+        }
+      ]
     },
     {
       "n": 29,
@@ -1169,40 +6137,208 @@
       "tc": "43213896152",
       "note": "05510%2 + prim (çapraz)",
       "profile": "Standart",
+      "input": "prim",
       "lucaKanunExpected": "05510",
       "luca": {
-        "name": "Baran Sokmen",
-        "tc": "43213896152",
+        "salary": 52000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 4500,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 66994.51,
+        "net": 52357.07,
+        "gv": 4330.47,
+        "sgk": 9379.23,
+        "unemployment": null,
+        "damga": 257.79,
+        "bes": 0,
         "kanun": "05510",
         "ucret": 52000,
-        "gs": "G",
+        "topKaz": 66994.51,
+        "digKaz": 14994.51,
         "tgun": 30,
-        "topKaz": 52000,
-        "digKaz": 0,
-        "sskMat": 52000,
-        "sskIsci": 7280,
-        "gv": 2418.67,
-        "damga": 143.98,
-        "ozKes": 0,
-        "net": 41637.35,
-        "digText": "-- 2 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 52.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N Prim: 4.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 52000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 4500,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 65200,
         "net": 46639.83,
         "gv": 7611.75,
         "sgk": 8358,
+        "unemployment": 597,
         "damga": 202.42,
-        "bes": 1791,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1791
       },
       "delta": {
-        "net": 5002.48,
-        "gv": 5193.08,
-        "damga": 58.44
-      }
+        "net": -5717.24,
+        "gv": 3281.28,
+        "damga": -55.37,
+        "gross": -1794.51,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1791
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 52000,
+          "luca": 52000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 4500,
+          "luca": 4500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 65200,
+          "luca": 66994.51,
+          "delta": -1794.51,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8358,
+          "luca": 9379.23,
+          "delta": -1021.23,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 597,
+          "luca": null,
+          "delta": 597,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7611.75,
+          "luca": 4330.47,
+          "delta": 3281.28,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 202.42,
+          "luca": 257.79,
+          "delta": -55.37,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1791,
+          "luca": 0,
+          "delta": 1791,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 46639.83,
+          "luca": 52357.07,
+          "delta": -5717.24,
+          "match": false
+        }
+      ]
     },
     {
       "n": 30,
@@ -1210,40 +6346,208 @@
       "tc": "43215225004",
       "note": "Net + FM (çapraz)",
       "profile": "Standart",
+      "input": "overtime",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Ceren Toprak",
-        "tc": "43215225004",
+        "salary": 42000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 4200.58,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 67082.96,
+        "net": 52420.31,
+        "gv": 4341.75,
+        "sgk": 9391.61,
+        "unemployment": null,
+        "damga": 258.46,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 42000,
-        "gs": "G",
+        "topKaz": 67082.96,
+        "digKaz": 14575.69,
         "tgun": 30,
-        "topKaz": 52507.27,
-        "digKaz": 0,
-        "sskMat": 52507.27,
-        "sskIsci": 7351.02,
-        "gv": 2483.35,
-        "damga": 147.83,
-        "ozKes": 0,
-        "net": 42000,
-        "digText": "-- 5 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 N"
+        "digText": "Fazla Mesai (12S): 4.200,58 N Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 58678.6,
+        "meal": 7684.1,
+        "transport": 4470.75,
+        "overtime": 4694.29,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 75527.74,
         "net": 54060,
         "gv": 8788.29,
         "sgk": 9649.88,
+        "unemployment": 689.28,
         "damga": 272.46,
-        "bes": 2067.83,
-        "meal": 7684.1,
-        "transport": 4470.75
+        "bes": 2067.83
       },
       "delta": {
-        "net": 12060,
-        "gv": 6304.94,
-        "damga": 124.63
-      }
+        "net": 1639.69,
+        "gv": 4446.54,
+        "damga": 14,
+        "gross": 8444.78,
+        "meal": 2184.1,
+        "transport": 1270.75,
+        "overtime": 493.71,
+        "bes": 2067.83
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 58678.6,
+          "luca": 42000,
+          "delta": 16678.6,
+          "match": false
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 7684.1,
+          "luca": 5500,
+          "delta": 2184.1,
+          "match": false
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 4470.75,
+          "luca": 3200,
+          "delta": 1270.75,
+          "match": false
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 4694.29,
+          "luca": 4200.58,
+          "delta": 493.71,
+          "match": false
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 75527.74,
+          "luca": 67082.96,
+          "delta": 8444.78,
+          "match": false
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 9649.88,
+          "luca": 9391.61,
+          "delta": 258.27,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 689.28,
+          "luca": null,
+          "delta": 689.28,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 8788.29,
+          "luca": 4341.75,
+          "delta": 4446.54,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 272.46,
+          "luca": 258.46,
+          "delta": 14,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 2067.83,
+          "luca": 0,
+          "delta": 2067.83,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 54060,
+          "luca": 52420.31,
+          "delta": 1639.69,
+          "match": false
+        }
+      ]
     },
     {
       "n": 31,
@@ -1251,40 +6555,208 @@
       "tc": "43216553908",
       "note": "5746-GV stopaj terkin (saf)",
       "profile": "5746 Lisans / Diğer Personel",
+      "input": "none",
       "lucaKanunExpected": "00000",
       "luca": {
-        "name": "Deniz Ulusoy",
-        "tc": "43216553908",
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 66700,
+        "net": 52146.53,
+        "gv": 4292.92,
+        "sgk": 9338,
+        "unemployment": null,
+        "damga": 255.55,
+        "bes": 0,
         "kanun": "00000",
         "ucret": 58000,
-        "gs": "G",
+        "topKaz": 66700,
+        "digKaz": 8700,
         "tgun": 30,
-        "topKaz": 58000,
-        "digKaz": 0,
-        "sskMat": 58000,
-        "sskIsci": 8120,
-        "gv": 3183.67,
-        "damga": 189.52,
-        "ozKes": 0,
-        "net": 45926.81,
-        "digText": "-- 6 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+        "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 58000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 0,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 66700,
         "net": 47667.19,
         "gv": 7803,
         "sgk": 8568,
+        "unemployment": 612,
         "damga": 213.81,
-        "bes": 1836,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1836
       },
       "delta": {
-        "net": 1740.38,
-        "gv": 4619.33,
-        "damga": 24.29
-      }
+        "net": -4479.34,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1836
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 58000,
+          "luca": 58000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 66700,
+          "luca": 66700,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8568,
+          "luca": 9338,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 612,
+          "luca": null,
+          "delta": 612,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7803,
+          "luca": 4292.92,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 213.81,
+          "luca": 255.55,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1836,
+          "luca": 0,
+          "delta": 1836,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 47667.19,
+          "luca": 52146.53,
+          "delta": -4479.34,
+          "match": false
+        }
+      ]
     },
     {
       "n": 32,
@@ -1292,40 +6764,208 @@
       "tc": "43217882892",
       "note": "05510%5 + FM (çapraz)",
       "profile": "Standart",
+      "input": "overtime",
       "lucaKanunExpected": "05510",
       "luca": {
-        "name": "Emre Varlik",
-        "tc": "43217882892",
+        "salary": 54000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 4320,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
+        "gross": 67020,
+        "net": 52375.3,
+        "gv": 4333.72,
+        "sgk": 9382.8,
+        "unemployment": null,
+        "damga": 257.98,
+        "bes": 0,
         "kanun": "05510",
         "ucret": 54000,
-        "gs": "G",
+        "topKaz": 67020,
+        "digKaz": 13020,
         "tgun": 30,
-        "topKaz": 54000,
-        "digKaz": 0,
-        "sskMat": 54000,
-        "sskIsci": 7560,
-        "gv": 2673.67,
-        "damga": 159.16,
-        "ozKes": 0,
-        "net": 43067.17,
-        "digText": "-- 8 of 34 --",
-        "ozText": "Normal Kazançlar: Normal Gün (30G): 54.000,00 B"
+        "digText": "Fazla Mesai (12S): 4.320,00 B Yol: 3.200,00 N Yemek: 5.500,00 N",
+        "ozText": "",
+        "gs": "G"
       },
       "dhr": {
+        "salary": 54000,
+        "meal": 5500,
+        "transport": 3200,
+        "overtime": 4320,
+        "prim": 0,
+        "ikramiye": 0,
+        "masraf": 0,
+        "kesinti": 0,
+        "advance": 0,
         "gross": 67020,
         "net": 47886.36,
         "gv": 7843.8,
         "sgk": 8612.8,
+        "unemployment": 615.2,
         "damga": 216.24,
-        "bes": 1845.6,
-        "meal": 5500,
-        "transport": 3200
+        "bes": 1845.6
       },
       "delta": {
-        "net": 4819.19,
-        "gv": 5170.13,
-        "damga": 57.08
-      }
+        "net": -4488.94,
+        "gv": 3510.08,
+        "damga": -41.74,
+        "gross": 0,
+        "meal": 0,
+        "transport": 0,
+        "overtime": 0,
+        "bes": 1845.6
+      },
+      "lineItems": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 54000,
+          "luca": 54000,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 5500,
+          "luca": 5500,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3200,
+          "luca": 3200,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 4320,
+          "luca": 4320,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "prim",
+          "label": "Prim",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "ikramiye",
+          "label": "Ikramiye",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 67020,
+          "luca": 67020,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8612.8,
+          "luca": 9382.8,
+          "delta": -770,
+          "match": false
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 615.2,
+          "luca": null,
+          "delta": 615.2,
+          "match": false
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 7843.8,
+          "luca": 4333.72,
+          "delta": 3510.08,
+          "match": false
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 216.24,
+          "luca": 257.98,
+          "delta": -41.74,
+          "match": false
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1845.6,
+          "luca": 0,
+          "delta": 1845.6,
+          "match": false
+        },
+        {
+          "key": "advance",
+          "label": "Avans",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 0,
+          "delta": 0,
+          "match": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 47886.36,
+          "luca": 52375.3,
+          "delta": -4488.94,
+          "match": false
+        }
+      ]
     }
   ],
   "legal": {
@@ -1336,7 +6976,7 @@
         "rate": 15
       },
       {
-        "month": "Şubat",
+        "month": "Subat",
         "exempt": 4211.33,
         "rate": 15
       },
@@ -1351,7 +6991,7 @@
         "rate": 15
       },
       {
-        "month": "Mayıs",
+        "month": "Mayis",
         "exempt": 4211.33,
         "rate": 15
       },
@@ -1366,12 +7006,12 @@
         "rate": 15
       },
       {
-        "month": "Ağustos",
+        "month": "Agustos",
         "exempt": 5615.1,
         "rate": 15
       },
       {
-        "month": "Eylül",
+        "month": "Eylul",
         "exempt": 5615.1,
         "rate": 15
       },
@@ -1381,12 +7021,12 @@
         "rate": 15
       },
       {
-        "month": "Kasım",
+        "month": "Kasim",
         "exempt": 5615.1,
         "rate": 15
       },
       {
-        "month": "Aralık",
+        "month": "Aralik",
         "exempt": 5615.1,
         "rate": 15
       }
