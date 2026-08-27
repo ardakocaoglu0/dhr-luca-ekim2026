@@ -1,0 +1,1404 @@
+{
+  "generatedAt": "2026-08-27T15:58:25.932Z",
+  "period": "Ekim 2026",
+  "unit": "İnsan Kaynakları — dhrtest vs Luca",
+  "sources": {
+    "lucaPdf": "public/downloads/bordro_d1_tech.pdf",
+    "dhrExcel": "public/downloads/Payroll_Ekim_2026.xlsx"
+  },
+  "summary": {
+    "lucaCount": 32,
+    "dhrCount": 32,
+    "matched": 32,
+    "netWithin100": 0,
+    "avgAbsNetDelta": 3218.71,
+    "fmHoursTotalLuca": 0
+  },
+  "rows": [
+    {
+      "n": 1,
+      "name": "Serra Bindal",
+      "tc": "43039686920",
+      "note": "Standart brüt",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Serra Bindal",
+        "tc": "43039686920",
+        "kanun": "00000",
+        "ucret": 50500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 50500,
+        "digKaz": 0,
+        "sskMat": 50500,
+        "sskIsci": 7070,
+        "gv": 2227.42,
+        "damga": 132.6,
+        "ozKes": 0,
+        "net": 40564.98,
+        "digText": "-- 23 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+      },
+      "dhr": {
+        "gross": 59200,
+        "net": 42530.37,
+        "gv": 6846.75,
+        "sgk": 7518,
+        "damga": 156.88,
+        "bes": 1611,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1965.39,
+        "gv": 4619.33,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 2,
+      "name": "Tolga Civelek",
+      "tc": "43041015862",
+      "note": "05510 %2",
+      "profile": "Standart",
+      "lucaKanunExpected": "05510",
+      "luca": {
+        "name": "Tolga Civelek",
+        "tc": "43041015862",
+        "kanun": "05510",
+        "ucret": 53000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 53000,
+        "digKaz": 0,
+        "sskMat": 53000,
+        "sskIsci": 7420,
+        "gv": 2546.17,
+        "damga": 151.57,
+        "ozKes": 0,
+        "net": 42352.26,
+        "digText": "-- 25 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+      },
+      "dhr": {
+        "gross": 61700,
+        "net": 44242.64,
+        "gv": 7165.5,
+        "sgk": 7868,
+        "damga": 175.86,
+        "bes": 1686,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1890.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 3,
+      "name": "Umut Dagdelen",
+      "tc": "43042344756",
+      "note": "05510 %5",
+      "profile": "Standart",
+      "lucaKanunExpected": "05510",
+      "luca": {
+        "name": "Umut Dagdelen",
+        "tc": "43042344756",
+        "kanun": "05510",
+        "ucret": 55500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 55500,
+        "digKaz": 0,
+        "sskMat": 55500,
+        "sskIsci": 7770,
+        "gv": 2864.92,
+        "damga": 170.55,
+        "ozKes": 0,
+        "net": 44139.53,
+        "digText": "-- 27 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+      },
+      "dhr": {
+        "gross": 64200,
+        "net": 45954.92,
+        "gv": 7484.25,
+        "sgk": 8218,
+        "damga": 194.83,
+        "bes": 1761,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1815.39,
+        "gv": 4619.33,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 4,
+      "name": "Vildan Ertem",
+      "tc": "43043673640",
+      "note": "Net ücret",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Vildan Ertem",
+        "tc": "43043673640",
+        "kanun": "00000",
+        "ucret": 42000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 52507.27,
+        "digKaz": 0,
+        "sskMat": 52507.27,
+        "sskIsci": 7351.02,
+        "gv": 2483.35,
+        "damga": 147.83,
+        "ozKes": 0,
+        "net": 42000,
+        "digText": "-- 29 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 N"
+      },
+      "dhr": {
+        "gross": 70622,
+        "net": 50700,
+        "gv": 8162.81,
+        "sgk": 8963.08,
+        "damga": 235.23,
+        "bes": 1920.66,
+        "meal": 7661.16,
+        "transport": 4457.4
+      },
+      "delta": {
+        "net": 8700,
+        "gv": 5679.46,
+        "damga": 87.4
+      }
+    },
+    {
+      "n": 5,
+      "name": "Yagiz Findik",
+      "tc": "43045002592",
+      "note": "5746 Lisans",
+      "profile": "5746 Lisans / Diğer Personel",
+      "lucaKanunExpected": "05746",
+      "luca": {
+        "name": "Yagiz Findik",
+        "tc": "43045002592",
+        "kanun": "00000",
+        "ucret": 60500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 60500,
+        "digKaz": 0,
+        "sskMat": 60500,
+        "sskIsci": 8470,
+        "gv": 3502.42,
+        "damga": 0,
+        "ozKes": 0,
+        "net": 47922.58,
+        "digText": "-- 30 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+      },
+      "dhr": {
+        "gross": 69200,
+        "net": 49379.47,
+        "gv": 8121.75,
+        "sgk": 8918,
+        "damga": 232.78,
+        "bes": 1911,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1456.89,
+        "gv": 4619.33,
+        "damga": 232.78
+      }
+    },
+    {
+      "n": 6,
+      "name": "Zeliha Gurbuz",
+      "tc": "43046331486",
+      "note": "5746 YL",
+      "profile": "5746 Yüksek Lisans / Temel Bilimler Lisans",
+      "lucaKanunExpected": "15746",
+      "luca": {
+        "name": "Zeliha Gurbuz",
+        "tc": "43046331486",
+        "kanun": "00000",
+        "ucret": 48000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 48000,
+        "digKaz": 0,
+        "sskMat": 48000,
+        "sskIsci": 6720,
+        "gv": 1908.67,
+        "damga": 0,
+        "ozKes": 0,
+        "net": 38891.33,
+        "digText": "TOPLAM 960 0 1.643.522,54 0,00 1.643.522,54 0,00 1.665.574,54 365.349,75",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 48.000,00 B"
+      },
+      "dhr": {
+        "gross": 56700,
+        "net": 40818.09,
+        "gv": 6528,
+        "sgk": 7168,
+        "damga": 137.91,
+        "bes": 1536,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1926.76,
+        "gv": 4619.33,
+        "damga": 137.91
+      }
+    },
+    {
+      "n": 7,
+      "name": "Alper Hancer",
+      "tc": "43047660370",
+      "note": "Doktora+4691",
+      "profile": "5746 Doktora / Temel Bilimler Yüksek Lisans",
+      "lucaKanunExpected": "05746+4691",
+      "luca": {
+        "name": "Alper Hancer",
+        "tc": "43047660370",
+        "kanun": "00000",
+        "ucret": 50500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 50500,
+        "digKaz": 0,
+        "sskMat": 50500,
+        "sskIsci": 7070,
+        "gv": 2227.42,
+        "damga": 0,
+        "ozKes": 0,
+        "net": 40697.58,
+        "digText": "-- 1 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+      },
+      "dhr": {
+        "gross": 59200,
+        "net": 42530.37,
+        "gv": 6846.75,
+        "sgk": 7518,
+        "damga": 156.88,
+        "bes": 1611,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1832.79,
+        "gv": 4619.33,
+        "damga": 156.88
+      }
+    },
+    {
+      "n": 8,
+      "name": "Berna Isikli",
+      "tc": "43048989296",
+      "note": "Ar-Ge+4691",
+      "profile": "Ar-Ge Personeli",
+      "lucaKanunExpected": "05746+4691",
+      "luca": {
+        "name": "Berna Isikli",
+        "tc": "43048989296",
+        "kanun": "00000",
+        "ucret": 53000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 53000,
+        "digKaz": 0,
+        "sskMat": 53000,
+        "sskIsci": 7420,
+        "gv": 2546.17,
+        "damga": 0,
+        "ozKes": 0,
+        "net": 42503.83,
+        "digText": "-- 3 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+      },
+      "dhr": {
+        "gross": 61700,
+        "net": 44242.64,
+        "gv": 7165.5,
+        "sgk": 7868,
+        "damga": 175.86,
+        "bes": 1686,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1738.81,
+        "gv": 4619.33,
+        "damga": 175.86
+      }
+    },
+    {
+      "n": 9,
+      "name": "Cemil Jaleoglu",
+      "tc": "43050318138",
+      "note": "Destek+4691",
+      "profile": "Destek Personeli",
+      "lucaKanunExpected": "4691",
+      "luca": {
+        "name": "Cemil Jaleoglu",
+        "tc": "43050318138",
+        "kanun": "00000",
+        "ucret": 55500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 55500,
+        "digKaz": 0,
+        "sskMat": 55500,
+        "sskIsci": 7770,
+        "gv": 2864.92,
+        "damga": 170.55,
+        "ozKes": 0,
+        "net": 44139.53,
+        "digText": "-- 4 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+      },
+      "dhr": {
+        "gross": 64200,
+        "net": 45954.92,
+        "gv": 7484.25,
+        "sgk": 8218,
+        "damga": 194.83,
+        "bes": 1761,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1815.39,
+        "gv": 4619.33,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 10,
+      "name": "Dilek Kartal",
+      "tc": "43051647022",
+      "note": "Emekli SGDP",
+      "profile": "Emekli",
+      "lucaKanunExpected": "SGDP",
+      "luca": {
+        "name": "Dilek Kartal",
+        "tc": "43051647022",
+        "kanun": "00000",
+        "ucret": 42000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 42000,
+        "digKaz": 0,
+        "sskMat": 42000,
+        "sskIsci": 5880,
+        "gv": 1143.67,
+        "damga": 68.08,
+        "ozKes": 0,
+        "net": 34488.25,
+        "digText": "-- 7 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 B"
+      },
+      "dhr": {
+        "gross": 50700,
+        "net": 36708.63,
+        "gv": 5763,
+        "sgk": 6328,
+        "damga": 92.37,
+        "bes": 1356,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 2220.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 11,
+      "name": "Ersin Lale",
+      "tc": "43052975926",
+      "note": "Engelli 1",
+      "profile": "Engelli 1. Derece",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Ersin Lale",
+        "tc": "43052975926",
+        "kanun": "00000",
+        "ucret": 60500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 60500,
+        "digKaz": 0,
+        "sskMat": 60500,
+        "sskIsci": 8470,
+        "gv": 3502.42,
+        "damga": 208.5,
+        "ozKes": 0,
+        "net": 47714.08,
+        "digText": "-- 9 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+      },
+      "dhr": {
+        "gross": 69200,
+        "net": 49379.47,
+        "gv": 8121.75,
+        "sgk": 8918,
+        "damga": 232.78,
+        "bes": 1911,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1665.39,
+        "gv": 4619.33,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 12,
+      "name": "Fulya Mercan",
+      "tc": "43054304878",
+      "note": "Engelli 2",
+      "profile": "Engelli 2. Derece",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Fulya Mercan",
+        "tc": "43054304878",
+        "kanun": "00000",
+        "ucret": 48000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 48000,
+        "digKaz": 0,
+        "sskMat": 48000,
+        "sskIsci": 6720,
+        "gv": 1908.67,
+        "damga": 113.62,
+        "ozKes": 0,
+        "net": 38777.71,
+        "digText": "-- 10 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 48.000,00 B"
+      },
+      "dhr": {
+        "gross": 56700,
+        "net": 40818.09,
+        "gv": 6528,
+        "sgk": 7168,
+        "damga": 137.91,
+        "bes": 1536,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 2040.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 13,
+      "name": "Gokhan Narin",
+      "tc": "43055633762",
+      "note": "Engelli 3",
+      "profile": "Engelli 3. Derece",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Gokhan Narin",
+        "tc": "43055633762",
+        "kanun": "00000",
+        "ucret": 50500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 50500,
+        "digKaz": 0,
+        "sskMat": 50500,
+        "sskIsci": 7070,
+        "gv": 2227.42,
+        "damga": 132.6,
+        "ozKes": 0,
+        "net": 40564.98,
+        "digText": "-- 11 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+      },
+      "dhr": {
+        "gross": 59200,
+        "net": 42530.37,
+        "gv": 6846.75,
+        "sgk": 7518,
+        "damga": 156.88,
+        "bes": 1611,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1965.39,
+        "gv": 4619.33,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 14,
+      "name": "Hande Orhan",
+      "tc": "43056962656",
+      "note": "Kısmi 15 gün",
+      "profile": "Kısmi Süreli",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Hande Orhan",
+        "tc": "43056962656",
+        "kanun": "00000",
+        "ucret": 53000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 53000,
+        "digKaz": 0,
+        "sskMat": 53000,
+        "sskIsci": 7420,
+        "gv": 2546.17,
+        "damga": 151.57,
+        "ozKes": 0,
+        "net": 42352.26,
+        "digText": "-- 12 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+      },
+      "dhr": {
+        "gross": 61700,
+        "net": 44242.64,
+        "gv": 7165.5,
+        "sgk": 7868,
+        "damga": 175.86,
+        "bes": 1686,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1890.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 15,
+      "name": "Ilker Pamuk",
+      "tc": "43058291518",
+      "note": "Stajyer",
+      "profile": "Stajyer",
+      "lucaKanunExpected": "STAJ",
+      "luca": {
+        "name": "Ilker Pamuk",
+        "tc": "43058291518",
+        "kanun": "00000",
+        "ucret": 18000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 18000,
+        "digKaz": 0,
+        "sskMat": 33030,
+        "sskIsci": 2520,
+        "gv": 0,
+        "damga": 0,
+        "ozKes": 0,
+        "net": 15300,
+        "digText": "-- 13 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 18.000,00 B"
+      },
+      "dhr": {
+        "gross": 18000,
+        "net": 12465,
+        "gv": 2295,
+        "sgk": 2520,
+        "damga": 0,
+        "bes": 540,
+        "meal": 0,
+        "transport": 0
+      },
+      "delta": {
+        "net": -2835,
+        "gv": 2295,
+        "damga": 0
+      }
+    },
+    {
+      "n": 16,
+      "name": "Jale Ruzgar",
+      "tc": "43059620492",
+      "note": "Yabancı",
+      "profile": "Yabancı Uyruklu",
+      "lucaKanunExpected": "YABANCI",
+      "luca": {
+        "name": "Jale Ruzgar",
+        "tc": "43059620492",
+        "kanun": "00000",
+        "ucret": 58000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 58000,
+        "digKaz": 0,
+        "sskMat": 58000,
+        "sskIsci": 8120,
+        "gv": 3183.67,
+        "damga": 189.52,
+        "ozKes": 0,
+        "net": 45926.81,
+        "digText": "-- 14 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+      },
+      "dhr": {
+        "gross": 66700,
+        "net": 47667.19,
+        "gv": 7803,
+        "sgk": 8568,
+        "damga": 213.81,
+        "bes": 1836,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1740.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 17,
+      "name": "Kemal Sahinoglu",
+      "tc": "43060949308",
+      "note": "Hafta içi FM",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Kemal Sahinoglu",
+        "tc": "43060949308",
+        "kanun": "00000",
+        "ucret": 60500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 60500,
+        "digKaz": 0,
+        "sskMat": 60500,
+        "sskIsci": 8470,
+        "gv": 3502.42,
+        "damga": 208.5,
+        "ozKes": 0,
+        "net": 47714.08,
+        "digText": "-- 15 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+      },
+      "dhr": {
+        "gross": 74040,
+        "net": 52694.43,
+        "gv": 8738.85,
+        "sgk": 9595.6,
+        "damga": 269.52,
+        "bes": 2056.2,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 4980.35,
+        "gv": 5236.43,
+        "damga": 61.02
+      }
+    },
+    {
+      "n": 18,
+      "name": "Leyla Tuncel",
+      "tc": "43062278260",
+      "note": "Maaş avansı",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Leyla Tuncel",
+        "tc": "43062278260",
+        "kanun": "00000",
+        "ucret": 48000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 48000,
+        "digKaz": 0,
+        "sskMat": 48000,
+        "sskIsci": 6720,
+        "gv": 1908.67,
+        "damga": 113.62,
+        "ozKes": 0,
+        "net": 38777.71,
+        "digText": "-- 16 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 48.000,00 B"
+      },
+      "dhr": {
+        "gross": 56700,
+        "net": 40818.09,
+        "gv": 6528,
+        "sgk": 7168,
+        "damga": 137.91,
+        "bes": 1536,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 2040.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 19,
+      "name": "Metin Uslu",
+      "tc": "43063607144",
+      "note": "Prim",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Metin Uslu",
+        "tc": "43063607144",
+        "kanun": "00000",
+        "ucret": 50500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 50500,
+        "digKaz": 0,
+        "sskMat": 50500,
+        "sskIsci": 7070,
+        "gv": 2227.42,
+        "damga": 132.6,
+        "ozKes": 0,
+        "net": 40564.98,
+        "digText": "-- 17 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+      },
+      "dhr": {
+        "gross": 64200,
+        "net": 45954.92,
+        "gv": 7484.25,
+        "sgk": 8218,
+        "damga": 194.83,
+        "bes": 1761,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 5389.94,
+        "gv": 5256.83,
+        "damga": 62.23
+      }
+    },
+    {
+      "n": 20,
+      "name": "Nilay Varol",
+      "tc": "43064936038",
+      "note": "Genel kesinti",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Nilay Varol",
+        "tc": "43064936038",
+        "kanun": "00000",
+        "ucret": 53000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 53000,
+        "digKaz": 0,
+        "sskMat": 53000,
+        "sskIsci": 7420,
+        "gv": 2546.17,
+        "damga": 151.57,
+        "ozKes": 0,
+        "net": 42352.26,
+        "digText": "-- 18 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 53.000,00 B"
+      },
+      "dhr": {
+        "gross": 61700,
+        "net": 44242.64,
+        "gv": 7165.5,
+        "sgk": 7868,
+        "damga": 175.86,
+        "bes": 1686,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1890.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 21,
+      "name": "Okan Yildizoglu",
+      "tc": "43066264900",
+      "note": "Masraf ödeme talebi",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Okan Yildizoglu",
+        "tc": "43066264900",
+        "kanun": "00000",
+        "ucret": 55500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 55500,
+        "digKaz": 0,
+        "sskMat": 55500,
+        "sskIsci": 7770,
+        "gv": 2864.92,
+        "damga": 170.55,
+        "ozKes": 0,
+        "net": 44139.53,
+        "digText": "-- 19 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+      },
+      "dhr": {
+        "gross": 64200,
+        "net": 45954.92,
+        "gv": 7484.25,
+        "sgk": 8218,
+        "damga": 194.83,
+        "bes": 1761,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1815.39,
+        "gv": 4619.33,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 22,
+      "name": "Pelin Zengin",
+      "tc": "43067593894",
+      "note": "BES aktif",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Pelin Zengin",
+        "tc": "43067593894",
+        "kanun": "00000",
+        "ucret": 58000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 58000,
+        "digKaz": 0,
+        "sskMat": 58000,
+        "sskIsci": 8120,
+        "gv": 3183.67,
+        "damga": 189.52,
+        "ozKes": 0,
+        "net": 45926.81,
+        "digText": "-- 20 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+      },
+      "dhr": {
+        "gross": 68440,
+        "net": 47653.99,
+        "gv": 7803,
+        "sgk": 8568,
+        "damga": 227.01,
+        "bes": 1836,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1727.18,
+        "gv": 4619.33,
+        "damga": 37.49
+      }
+    },
+    {
+      "n": 23,
+      "name": "Riza Altunbas",
+      "tc": "43068922778",
+      "note": "Geçmiş GV matrahı",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Riza Altunbas",
+        "tc": "43068922778",
+        "kanun": "00000",
+        "ucret": 60500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 60500,
+        "digKaz": 0,
+        "sskMat": 60500,
+        "sskIsci": 8470,
+        "gv": 3502.42,
+        "damga": 208.5,
+        "ozKes": 0,
+        "net": 47714.08,
+        "digText": "-- 21 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 60.500,00 B"
+      },
+      "dhr": {
+        "gross": 69200,
+        "net": 46922.22,
+        "gv": 10579,
+        "sgk": 8918,
+        "damga": 232.78,
+        "bes": 1911,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": -791.86,
+        "gv": 7076.58,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 24,
+      "name": "Selin Bayraktar",
+      "tc": "43070251620",
+      "note": "Asgari ücret civarı",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Selin Bayraktar",
+        "tc": "43070251620",
+        "kanun": "00000",
+        "ucret": 26008,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 26008,
+        "digKaz": 0,
+        "sskMat": 33030,
+        "sskIsci": 3641.12,
+        "gv": 0,
+        "damga": 0,
+        "ozKes": 0,
+        "net": 22106.8,
+        "digText": "-- 22 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 26.008,00 B"
+      },
+      "dhr": {
+        "gross": 34708,
+        "net": 25726.54,
+        "gv": 3724.02,
+        "sgk": 4089.12,
+        "damga": 0,
+        "bes": 876.24,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 3619.74,
+        "gv": 3724.02,
+        "damga": 0
+      }
+    },
+    {
+      "n": 25,
+      "name": "Tamer Cakmak",
+      "tc": "43071580514",
+      "note": "5746+FM",
+      "profile": "5746 Lisans / Diğer Personel",
+      "lucaKanunExpected": "05746",
+      "luca": {
+        "name": "Tamer Cakmak",
+        "tc": "43071580514",
+        "kanun": "00000",
+        "ucret": 50500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 50500,
+        "digKaz": 0,
+        "sskMat": 50500,
+        "sskIsci": 7070,
+        "gv": 2227.42,
+        "damga": 0,
+        "ozKes": 0,
+        "net": 40697.58,
+        "digText": "-- 24 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 50.500,00 B"
+      },
+      "dhr": {
+        "gross": 63240,
+        "net": 45297.4,
+        "gv": 7361.85,
+        "sgk": 8083.6,
+        "damga": 187.55,
+        "bes": 1732.2,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 4599.82,
+        "gv": 5134.43,
+        "damga": 187.55
+      }
+    },
+    {
+      "n": 26,
+      "name": "Ufuk Demirel",
+      "tc": "43072909420",
+      "note": "Emekli+prim",
+      "profile": "Emekli",
+      "lucaKanunExpected": "SGDP",
+      "luca": {
+        "name": "Ufuk Demirel",
+        "tc": "43072909420",
+        "kanun": "00000",
+        "ucret": 42000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 42000,
+        "digKaz": 0,
+        "sskMat": 42000,
+        "sskIsci": 5880,
+        "gv": 1143.67,
+        "damga": 68.08,
+        "ozKes": 0,
+        "net": 34488.25,
+        "digText": "-- 26 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 B"
+      },
+      "dhr": {
+        "gross": 54200,
+        "net": 39105.82,
+        "gv": 6209.25,
+        "sgk": 6818,
+        "damga": 118.93,
+        "bes": 1461,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 4617.57,
+        "gv": 5065.58,
+        "damga": 50.85
+      }
+    },
+    {
+      "n": 27,
+      "name": "Vesile Erkan",
+      "tc": "43074238382",
+      "note": "Engelli2+kesinti",
+      "profile": "Engelli 2. Derece",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Vesile Erkan",
+        "tc": "43074238382",
+        "kanun": "00000",
+        "ucret": 55500,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 55500,
+        "digKaz": 0,
+        "sskMat": 55500,
+        "sskIsci": 7770,
+        "gv": 2864.92,
+        "damga": 170.55,
+        "ozKes": 0,
+        "net": 44139.53,
+        "digText": "-- 28 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 55.500,00 B"
+      },
+      "dhr": {
+        "gross": 64200,
+        "net": 45954.92,
+        "gv": 7484.25,
+        "sgk": 8218,
+        "damga": 194.83,
+        "bes": 1761,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1815.39,
+        "gv": 4619.33,
+        "damga": 24.28
+      }
+    },
+    {
+      "n": 28,
+      "name": "Yasin Firatin",
+      "tc": "43075567276",
+      "note": "Yönetici+ikramiye",
+      "profile": "Yönetici / İdari Personel",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Yasin Firatin",
+        "tc": "43075567276",
+        "kanun": "00000",
+        "ucret": 58000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 58000,
+        "digKaz": 0,
+        "sskMat": 58000,
+        "sskIsci": 8120,
+        "gv": 3183.67,
+        "damga": 189.52,
+        "ozKes": 0,
+        "net": 45926.81,
+        "digText": "-- 31 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+      },
+      "dhr": {
+        "gross": 76700,
+        "net": 54516.29,
+        "gv": 9078,
+        "sgk": 9968,
+        "damga": 289.71,
+        "bes": 2136,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 8589.48,
+        "gv": 5894.33,
+        "damga": 100.19
+      }
+    },
+    {
+      "n": 29,
+      "name": "Baran Sokmen",
+      "tc": "43213896152",
+      "note": "05510%2 + prim (çapraz)",
+      "profile": "Standart",
+      "lucaKanunExpected": "05510",
+      "luca": {
+        "name": "Baran Sokmen",
+        "tc": "43213896152",
+        "kanun": "05510",
+        "ucret": 52000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 52000,
+        "digKaz": 0,
+        "sskMat": 52000,
+        "sskIsci": 7280,
+        "gv": 2418.67,
+        "damga": 143.98,
+        "ozKes": 0,
+        "net": 41637.35,
+        "digText": "-- 2 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 52.000,00 B"
+      },
+      "dhr": {
+        "gross": 65200,
+        "net": 46639.83,
+        "gv": 7611.75,
+        "sgk": 8358,
+        "damga": 202.42,
+        "bes": 1791,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 5002.48,
+        "gv": 5193.08,
+        "damga": 58.44
+      }
+    },
+    {
+      "n": 30,
+      "name": "Ceren Toprak",
+      "tc": "43215225004",
+      "note": "Net + FM (çapraz)",
+      "profile": "Standart",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Ceren Toprak",
+        "tc": "43215225004",
+        "kanun": "00000",
+        "ucret": 42000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 52507.27,
+        "digKaz": 0,
+        "sskMat": 52507.27,
+        "sskIsci": 7351.02,
+        "gv": 2483.35,
+        "damga": 147.83,
+        "ozKes": 0,
+        "net": 42000,
+        "digText": "-- 5 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 42.000,00 N"
+      },
+      "dhr": {
+        "gross": 75527.74,
+        "net": 54060,
+        "gv": 8788.29,
+        "sgk": 9649.88,
+        "damga": 272.46,
+        "bes": 2067.83,
+        "meal": 7684.1,
+        "transport": 4470.75
+      },
+      "delta": {
+        "net": 12060,
+        "gv": 6304.94,
+        "damga": 124.63
+      }
+    },
+    {
+      "n": 31,
+      "name": "Deniz Ulusoy",
+      "tc": "43216553908",
+      "note": "5746-GV stopaj terkin (saf)",
+      "profile": "5746 Lisans / Diğer Personel",
+      "lucaKanunExpected": "00000",
+      "luca": {
+        "name": "Deniz Ulusoy",
+        "tc": "43216553908",
+        "kanun": "00000",
+        "ucret": 58000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 58000,
+        "digKaz": 0,
+        "sskMat": 58000,
+        "sskIsci": 8120,
+        "gv": 3183.67,
+        "damga": 189.52,
+        "ozKes": 0,
+        "net": 45926.81,
+        "digText": "-- 6 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 58.000,00 B"
+      },
+      "dhr": {
+        "gross": 66700,
+        "net": 47667.19,
+        "gv": 7803,
+        "sgk": 8568,
+        "damga": 213.81,
+        "bes": 1836,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 1740.38,
+        "gv": 4619.33,
+        "damga": 24.29
+      }
+    },
+    {
+      "n": 32,
+      "name": "Emre Varlik",
+      "tc": "43217882892",
+      "note": "05510%5 + FM (çapraz)",
+      "profile": "Standart",
+      "lucaKanunExpected": "05510",
+      "luca": {
+        "name": "Emre Varlik",
+        "tc": "43217882892",
+        "kanun": "05510",
+        "ucret": 54000,
+        "gs": "G",
+        "tgun": 30,
+        "topKaz": 54000,
+        "digKaz": 0,
+        "sskMat": 54000,
+        "sskIsci": 7560,
+        "gv": 2673.67,
+        "damga": 159.16,
+        "ozKes": 0,
+        "net": 43067.17,
+        "digText": "-- 8 of 34 --",
+        "ozText": "Normal Kazançlar: Normal Gün (30G): 54.000,00 B"
+      },
+      "dhr": {
+        "gross": 67020,
+        "net": 47886.36,
+        "gv": 7843.8,
+        "sgk": 8612.8,
+        "damga": 216.24,
+        "bes": 1845.6,
+        "meal": 5500,
+        "transport": 3200
+      },
+      "delta": {
+        "net": 4819.19,
+        "gv": 5170.13,
+        "damga": 57.08
+      }
+    }
+  ],
+  "legal": {
+    "gvMonthly2026": [
+      {
+        "month": "Ocak",
+        "exempt": 4211.33,
+        "rate": 15
+      },
+      {
+        "month": "Şubat",
+        "exempt": 4211.33,
+        "rate": 15
+      },
+      {
+        "month": "Mart",
+        "exempt": 4211.33,
+        "rate": 15
+      },
+      {
+        "month": "Nisan",
+        "exempt": 4211.33,
+        "rate": 15
+      },
+      {
+        "month": "Mayıs",
+        "exempt": 4211.33,
+        "rate": 15
+      },
+      {
+        "month": "Haziran",
+        "exempt": 4211.33,
+        "rate": 15
+      },
+      {
+        "month": "Temmuz",
+        "exempt": 4537.75,
+        "rate": 15
+      },
+      {
+        "month": "Ağustos",
+        "exempt": 5615.1,
+        "rate": 15
+      },
+      {
+        "month": "Eylül",
+        "exempt": 5615.1,
+        "rate": 15
+      },
+      {
+        "month": "Ekim",
+        "exempt": 5615.1,
+        "rate": 15
+      },
+      {
+        "month": "Kasım",
+        "exempt": 5615.1,
+        "rate": 15
+      },
+      {
+        "month": "Aralık",
+        "exempt": 5615.1,
+        "rate": 15
+      }
+    ],
+    "dhrObserved": {
+      "exemptApplied": 0,
+      "paramFormulaValue": 4211.33,
+      "allMonthsSame": true
+    },
+    "lucaObserved": {
+      "exemptApplied": 4211.33,
+      "octoberLegal": 5615.1
+    }
+  }
+}

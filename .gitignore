@@ -1,0 +1,7 @@
+# build output
+dist
+node_modules
+
+# local
+.DS_Store
+*.local
