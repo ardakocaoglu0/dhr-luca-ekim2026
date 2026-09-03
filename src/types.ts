@@ -85,11 +85,23 @@ export type CompareRow = {
   lineItems?: LineItem[];
 };
 
+export type ComparisonUi = {
+  title: string;
+  lead: string;
+  verdict: string;
+  deltaChartCaption?: string;
+  gvCompareTitle?: string;
+  footer?: string;
+  gvBullets?: string[];
+  drivers?: { title: string; body: string }[];
+};
+
 export type ComparisonData = {
   generatedAt: string;
   period: string;
   unit: string;
   lucaPdfVersion?: string;
+  ui?: ComparisonUi;
   sources: { lucaPdf: string; dhrExcel: string };
   summary: {
     lucaCount: number;

@@ -1,12 +1,11 @@
 import { useState } from "react";
 import AppView from "./App";
-import OcakView from "./OcakView";
-import raw from "./data/comparison.json";
-import matrix from "./data/matrix.json";
-import ocakRaw from "./data/ocak_comparison.json";
+import ocak from "./data/comparison.json";
+import ocakMatrix from "./data/matrix.json";
+import ekim from "./data/ekim_comparison.json";
+import ekimMatrix from "./data/ekim_matrix.json";
 import type { ComparisonData } from "./types";
 import type { MatrixData } from "./matrixTypes";
-import type { OcakData } from "./ocakTypes";
 
 type Tab = "ekim" | "ocak";
 
@@ -14,20 +13,20 @@ export default function App() {
   const [tab, setTab] = useState<Tab>("ocak");
 
   return (
-    <div className="page">
+    <>
       <nav className="tab-bar">
         <button className={tab === "ekim" ? "active" : ""} onClick={() => setTab("ekim")}>
           Ekim 2026 — DHR vs Luca
         </button>
         <button className={tab === "ocak" ? "active" : ""} onClick={() => setTab("ocak")}>
-          Ocak 2026 — DHR UI Bordro &amp; Bug Raporu
+          Ocak 2026 — DHR vs Luca (Ekim PDF)
         </button>
       </nav>
       {tab === "ekim" ? (
-        <AppView data={raw as ComparisonData} matrix={matrix as MatrixData} />
+        <AppView data={ekim as ComparisonData} matrix={ekimMatrix as MatrixData} />
       ) : (
-        <OcakView data={ocakRaw as OcakData} />
+        <AppView data={ocak as ComparisonData} matrix={ocakMatrix as MatrixData} />
       )}
-    </div>
+    </>
   );
 }

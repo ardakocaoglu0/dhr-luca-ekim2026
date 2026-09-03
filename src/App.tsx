@@ -65,11 +65,13 @@ export default function AppView({ data, matrix }: Props) {
   const lucaFail = matrix.scenarios.filter((s) => s.luca === "fail").length;
   const lucaPartial = matrix.scenarios.filter((s) => s.luca === "partial").length;
 
+  const ui = data.ui;
+  const gvApplied = data.legal.dhrObserved.exemptApplied;
   const gvCompare = [
     {
       label: "DHR uyguladığı",
-      value: data.legal.dhrObserved.exemptApplied,
-      fill: "#22c55e",
+      value: gvApplied,
+      fill: gvApplied > 0 ? "#22c55e" : "#ef4444",
     },
     {
       label: "DHR parametre",
@@ -91,11 +93,11 @@ export default function AppView({ data, matrix }: Props) {
   const gvMonthly = data.legal.gvMonthly2026.map((m) => ({
     month: m.month,
     istisna: m.exempt,
-      dhrParam: 4211.33,
-      dhrApplied: data.legal.dhrObserved.exemptApplied,
+    dhrParam: data.legal.dhrObserved.paramFormulaValue,
+    dhrApplied: gvApplied,
   }));
 
-  const drivers = [
+  const drivers = ui?.drivers || [
     {
       title: "Kapsam farkı",
       body: `DHR’de yemek+yol neredeyse herkese; Luca PDF’de yalnızca ${data.summary.mealOnLuca ?? "?"} kişide yemek/yol görünüyor.`,
@@ -106,7 +108,7 @@ export default function AppView({ data, matrix }: Props) {
     },
     {
       title: "GV istisnası",
-      body: "Ocak UI’da istisna 4.211,33 TL uygulanıyor (yasal Ocak bandı). Luca Ekim PDF hâlâ ~4.211; yasal Ekim 5.615 TL.",
+      body: "DHR ve Luca istisna değerlerini yukarıdaki yasal grafiklerle karşılaştırın.",
     },
   ];
 
@@ -115,10 +117,10 @@ export default function AppView({ data, matrix }: Props) {
       <header className="hero">
         <div className="hero-inner">
           <p className="eyebrow">dhrtest × Luca · İnsan Kaynakları</p>
-          <h1>DHR × Luca — Ocak 2026 (UI) vs Ekim Luca</h1>
+          <h1>{ui?.title || "DHR × Luca — Bordro Karşılaştırması"}</h1>
           <p className="lead">
-            32 kişilik test matrisi. DHR rakamları Ocak 2026 UI; Luca referans Ekim PDF. Hande kısmi
-            uygulandı; tek açık DHR bug Okan masraf. GV/BES/stajyer/4691 düzeltmeleri listeden çıktı.
+            {ui?.lead ||
+              "32 kişilik test matrisi: kanun/teşvik profilleri, ek kazanç ve kesintiler."}
           </p>
           <div className="hero-actions">
             <a className="btn primary" href={data.sources.lucaPdf} download>
@@ -161,11 +163,7 @@ export default function AppView({ data, matrix }: Props) {
 
       <section className="panel verdict">
         <h2>Hüküm</h2>
-        <p>
-          Ocak UI: GV istisnası 4.211,33 (32/32), BES yalnız Pelin, Hande kısmi puantajdan uygulandı,
-          Alper/Berna/Cemil 4691 çalışıyor. Tek açık DHR bug: Okan masraf 750 (PPV orphan). Luca
-          tarafında kanun/PDF sapmaları duruyor.
-        </p>
+        <p>{ui?.verdict}</p>
       </section>
 
       <section className="panel" id="kalemler">
@@ -429,7 +427,9 @@ export default function AppView({ data, matrix }: Props) {
 
       <section className="panel">
         <h2>En büyük |ΔNet| (TL)</h2>
-        <p className="caption">Pozitif = DHR net daha yüksek · Kaynak: Ekim 2026 karşılaştırma</p>
+        <p className="caption">
+          {ui?.deltaChartCaption || "Pozitif = DHR net daha yüksek"}
+        </p>
         <div className="chart-wrap">
           <ResponsiveContainer width="100%" height={280}>
             <BarChart data={topNet} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
@@ -480,7 +480,7 @@ export default function AppView({ data, matrix }: Props) {
           </div>
 
           <div>
-            <h3>Ekim 2026 — istisna karşılaştırması</h3>
+            <h3>{ui?.gvCompareTitle || "İstisna karşılaştırması"}</h3>
             <p className="caption">TL · %15 dilim etkisi ≈ istisna × 0,15</p>
             <div className="chart-wrap">
               <ResponsiveContainer width="100%" height={260}>
@@ -498,17 +498,9 @@ export default function AppView({ data, matrix }: Props) {
               </ResponsiveContainer>
             </div>
             <ul className="legal-bullets">
-              <li>
-                <strong>DHR Ocak:</strong> İstisna 4.211,33 TL fiilen uygulandı (yasal Ocak bandı).
-              </li>
-              <li>
-                <strong>Luca:</strong> ~4.211 TL uygular — yasal Ekim değeri 5.615,10 değil.
-              </li>
-              <li>
-                Ekim’de yasal istisna ile Luca arası fark:{" "}
-                <strong>{tr(5615.1 - 4211.33)} TL</strong> → net etki ~{" "}
-                <strong>{tr((5615.1 - 4211.33) * 0.15)} TL/kişi</strong>.
-              </li>
+              {(ui?.gvBullets || []).map((b) => (
+                <li key={b}>{b}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -557,7 +549,7 @@ export default function AppView({ data, matrix }: Props) {
 
       <footer className="footer">
         <p>
-          D1-Tech · dhrtest İK birimi · Ocak 2026 dönem ID 67d5ddbc-5000-48b3-abac-b89e429cf5c2
+          {ui?.footer || `${data.unit} · ${data.period}`}
         </p>
         <p className="footer-note">
           Bu site bilgilendirme amaçlıdır. Bordro kararı için Luca + mevzuat birlikte değerlendirilmelidir.
