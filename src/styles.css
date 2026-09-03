@@ -126,10 +126,12 @@ code {
 }
 
 .stat {
-  background: var(--surface);
+  background: var(--surface2);
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 1rem;
+  padding: 0.9rem 1rem 1rem;
+  min-height: 4.5rem;
+  overflow: hidden;
 }
 
 .stat-value {
@@ -186,9 +188,14 @@ code {
 }
 
 .caption {
-  margin: -0.25rem 0 0.75rem;
+  margin: 0 0 0.75rem;
   font-size: 0.85rem;
   color: var(--muted);
+  line-height: 1.45;
+}
+
+.panel h2 + .caption {
+  margin-top: -0.15rem;
 }
 
 .cards.three {
@@ -351,8 +358,8 @@ tr.bad td {
 }
 
 .stats.compact {
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
 }
 
 .badge {
@@ -512,8 +519,13 @@ nav.toc a:hover {
 }
 
 .dig-oz {
-  margin-bottom: 0.75rem;
-  line-height: 1.45;
+  display: block;
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.9rem;
+  line-height: 1.5;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 a {

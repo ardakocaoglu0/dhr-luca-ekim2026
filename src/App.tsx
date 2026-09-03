@@ -208,7 +208,9 @@ export default function AppView({ data, matrix }: Props) {
 
       <section className="panel" id="kisi-kalem">
         <h2>Kişi bazlı kalem tablosu</h2>
-        <p className="caption">Çalışan seç → her kalemde DHR, Luca ve fark yan yana</p>
+        <p className="caption">
+          {ui?.personCaption || "Çalışan seç → her kalemde DHR, Luca ve fark yan yana."}
+        </p>
         <label className="person-pick">
           <span>Çalışan</span>
           <select value={selected?.tc || ""} onChange={(e) => setSelectedTc(e.target.value)}>
@@ -245,9 +247,10 @@ export default function AppView({ data, matrix }: Props) {
               <p className="caption dig-oz">
                 {selected.luca.digText ? (
                   <>
-                    <strong>Luca dig:</strong> {selected.luca.digText}{" "}
+                    <strong>Luca diğer kazanç:</strong> {selected.luca.digText}
                   </>
                 ) : null}
+                {selected.luca.digText && selected.luca.ozText ? " · " : null}
                 {selected.luca.ozText ? (
                   <>
                     <strong>Öz kesinti:</strong> {selected.luca.ozText}

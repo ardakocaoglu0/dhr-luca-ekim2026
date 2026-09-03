@@ -7048,6 +7048,7 @@
     "deltaChartCaption": "Pozitif = DHR net daha yüksek · Kaynak: DHR Ocak UI × Luca Ekim PDF",
     "gvCompareTitle": "İstisna karşılaştırması (Luca hâlâ Ekim PDF)",
     "footer": "D1-Tech · dhrtest İK birimi · Ocak 2026 dönem ID 67d5ddbc-5000-48b3-abac-b89e429cf5c2",
+    "personCaption": "Çalışan seç → her kalemde DHR, Luca ve fark yan yana. Şu an DHR Ocak UI × Luca Ekim PDF; net/GV/SGK FARK’ları dönem farkıdır. Ocak Luca gelince Luca kolonu güncellenir.",
     "gvBullets": [
       "DHR Ocak: İstisna 4.211,33 TL fiilen uygulandı (yasal Ocak bandı).",
       "Luca (Ekim PDF): ~4.211 TL uygular — yasal Ekim değeri 5.615,10 değil.",

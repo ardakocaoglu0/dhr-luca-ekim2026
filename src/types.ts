@@ -92,6 +92,7 @@ export type ComparisonUi = {
   deltaChartCaption?: string;
   gvCompareTitle?: string;
   footer?: string;
+  personCaption?: string;
   gvBullets?: string[];
   drivers?: { title: string; body: string }[];
 };
