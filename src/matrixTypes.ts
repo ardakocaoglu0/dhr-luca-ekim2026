@@ -11,6 +11,7 @@ export type MatrixData = {
   checkedItems: { item: string; result: MatrixStatus; note: string }[];
   correctFindings: string[];
   dhrBugs: { id: string; title: string; severity: string; detail: string }[];
+  warnings?: { id: string; title: string; detail: string; severity?: string }[];
   scenarios: {
     n: number;
     name: string;

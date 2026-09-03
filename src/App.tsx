@@ -69,7 +69,7 @@ export default function AppView({ data, matrix }: Props) {
     {
       label: "DHR uyguladığı",
       value: data.legal.dhrObserved.exemptApplied,
-      fill: "#ef4444",
+      fill: "#22c55e",
     },
     {
       label: "DHR parametre",
@@ -91,8 +91,8 @@ export default function AppView({ data, matrix }: Props) {
   const gvMonthly = data.legal.gvMonthly2026.map((m) => ({
     month: m.month,
     istisna: m.exempt,
-    dhrParam: 4211.33,
-    dhrApplied: 0,
+      dhrParam: 4211.33,
+      dhrApplied: data.legal.dhrObserved.exemptApplied,
   }));
 
   const drivers = [
@@ -102,11 +102,11 @@ export default function AppView({ data, matrix }: Props) {
     },
     {
       title: "BES %3",
-      body: `DHR otomatik BES (toplam ${tr0(kalemler.find((k) => k.key === "bes")?.dhrSum)} TL); Luca’da BES satırı ${data.summary.besOnLuca ?? 0} kişi.`,
+      body: `DHR BES (toplam ${tr0(kalemler.find((k) => k.key === "bes")?.dhrSum)} TL); Luca’da BES satırı ${data.summary.besOnLuca ?? 0} kişi.`,
     },
     {
       title: "GV istisnası",
-      body: "DHR parametrede formül var ama fiilen 0; Luca ~4.211 TL; yasal Ekim 5.615 TL.",
+      body: "Ocak UI’da istisna 4.211,33 TL uygulanıyor (yasal Ocak bandı). Luca Ekim PDF hâlâ ~4.211; yasal Ekim 5.615 TL.",
     },
   ];
 
@@ -115,10 +115,10 @@ export default function AppView({ data, matrix }: Props) {
       <header className="hero">
         <div className="hero-inner">
           <p className="eyebrow">dhrtest × Luca · İnsan Kaynakları</p>
-          <h1>DHR × Luca — Ekim 2026 Bordro Karşılaştırması</h1>
+          <h1>DHR × Luca — Ocak 2026 (UI) vs Ekim Luca</h1>
           <p className="lead">
-            32 kişilik test matrisi: kanun/teşvik profilleri, ek kazanç ve kesintiler. Luca referans;
-            DHR sapmaları yasal kaynaklarla birlikte görselleştirildi.
+            32 kişilik test matrisi. DHR rakamları Ocak 2026 UI; Luca referans Ekim PDF. Hande kısmi
+            uygulandı; tek açık DHR bug Okan masraf. GV/BES/stajyer/4691 düzeltmeleri listeden çıktı.
           </p>
           <div className="hero-actions">
             <a className="btn primary" href={data.sources.lucaPdf} download>
@@ -162,9 +162,9 @@ export default function AppView({ data, matrix }: Props) {
       <section className="panel verdict">
         <h2>Hüküm</h2>
         <p>
-          PDF (10): yemek/yol brüt hizası iyileşti (Serra gross DHR=Luca 59.200). Ort. |ΔNet| ~4.2k
-          (önce ~6.1k). Kalan ana sürücüler: DHR otomatik BES + GV istisnası ≈0; kanun PDF’de hâlâ
-          00000; Pelin BES 2.001; Okan masraf yok.
+          Ocak UI: GV istisnası 4.211,33 (32/32), BES yalnız Pelin, Hande kısmi puantajdan uygulandı,
+          Alper/Berna/Cemil 4691 çalışıyor. Tek açık DHR bug: Okan masraf 750 (PPV orphan). Luca
+          tarafında kanun/PDF sapmaları duruyor.
         </p>
       </section>
 
@@ -349,6 +349,24 @@ export default function AppView({ data, matrix }: Props) {
             </article>
           ))}
         </div>
+        {matrix.warnings && matrix.warnings.length > 0 && (
+          <>
+            <h3>Uyarılar</h3>
+            <div className="cards bugs">
+              {matrix.warnings.map((w) => (
+                <article key={w.id} className="card">
+                  <h3>
+                    <span className={`pill ${w.severity === "error" ? "bad" : w.severity === "info" ? "ok" : "warn"}`}>
+                      {(w.severity || "warn").toUpperCase()}
+                    </span>{" "}
+                    {w.title}
+                  </h3>
+                  <p>{w.detail}</p>
+                </article>
+              ))}
+            </div>
+          </>
+        )}
       </section>
 
       <section className="panel" id="scenarios">
@@ -481,7 +499,7 @@ export default function AppView({ data, matrix }: Props) {
             </div>
             <ul className="legal-bullets">
               <li>
-                <strong>DHR bug:</strong> Parametre tüm aylara 4.211,33 yazar ama hesapta istisna ≈ 0.
+                <strong>DHR Ocak:</strong> İstisna 4.211,33 TL fiilen uygulandı (yasal Ocak bandı).
               </li>
               <li>
                 <strong>Luca:</strong> ~4.211 TL uygular — yasal Ekim değeri 5.615,10 değil.
@@ -539,7 +557,7 @@ export default function AppView({ data, matrix }: Props) {
 
       <footer className="footer">
         <p>
-          D1-Tech · dhrtest İK birimi · Ekim 2026 dönem ID 9d85c4e1-d469-4f35-8eb4-4f1cd6dabe2a
+          D1-Tech · dhrtest İK birimi · Ocak 2026 dönem ID 67d5ddbc-5000-48b3-abac-b89e429cf5c2
         </p>
         <p className="footer-note">
           Bu site bilgilendirme amaçlıdır. Bordro kararı için Luca + mevzuat birlikte değerlendirilmelidir.
