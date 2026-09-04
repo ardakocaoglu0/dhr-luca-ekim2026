@@ -19,7 +19,7 @@ export default function App() {
           Ekim 2026 — DHR vs Luca
         </button>
         <button className={tab === "ocak" ? "active" : ""} onClick={() => setTab("ocak")}>
-          Ocak 2026 — DHR vs Luca (Ekim PDF)
+          Ocak 2026 — DHR vs Luca
         </button>
       </nav>
       {tab === "ekim" ? (

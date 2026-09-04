@@ -1,7 +1,7 @@
 {
-  "period": "Ocak 2026 · dhrtest UI",
+  "period": "Ocak 2026 · dhrtest UI × Luca PDF(11)",
   "environment": "dhrtest.d1-tech.com.tr · İnsan Kaynakları · dönem 67d5ddbc",
-  "sourceOfTruth": "DHR UI (Ocak 2026) · Luca Ekim PDF referans",
+  "sourceOfTruth": "DHR UI (Ocak 2026) · Luca Ocak PDF bordro_d1_tech (11)",
   "matrixDesign": {
     "layers": [
       {
