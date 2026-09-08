@@ -518,6 +518,78 @@ nav.toc a:hover {
   text-align: left;
 }
 
+.mismatch-table td {
+  vertical-align: top;
+}
+
+.mismatch-table td .note {
+  margin-top: 0.15rem;
+  font-size: 0.78rem;
+}
+
+.mismatch-table td:nth-child(2) {
+  width: 17rem;
+}
+
+.causes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+  max-width: 16rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  min-width: 22rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: rgba(148, 163, 184, 0.06);
+  font-size: 0.74rem;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.chip.input {
+  border-color: rgba(239, 68, 68, 0.55);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.chip b {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.chip .chip-vals {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.chip em {
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+}
+
+.cause-pill {
+  display: inline-block;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.15rem 0.45rem;
+  cursor: help;
+  white-space: normal;
+  line-height: 1.35;
+}
+
 .dig-oz {
   display: block;
   margin: 0 0 1rem;

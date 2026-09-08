@@ -85,6 +85,43 @@ export type CompareRow = {
   lineItems?: LineItem[];
 };
 
+export type MismatchCause = {
+  id: string;
+  short?: string;
+  title: string;
+  detail: string;
+};
+
+export type MismatchItem = {
+  key: string;
+  label: string;
+  group: string;
+  dhr: number | null;
+  luca: number | null;
+  delta: number | null;
+  derived: boolean;
+};
+
+export type MismatchRow = {
+  n?: number;
+  name: string;
+  note: string;
+  netDelta: number | null;
+  severity: "high" | "medium" | "low" | string;
+  inputMismatchCount: number;
+  items: MismatchItem[];
+  causes: MismatchCause[];
+};
+
+export type MismatchSummary = {
+  totalCompared: number;
+  mismatchCount: number;
+  fullMatchCount: number;
+  netWithin100: number;
+  causeTally: (MismatchCause & { count: number })[];
+  normalizations: string[];
+};
+
 export type ComparisonUi = {
   title: string;
   lead: string;
@@ -117,6 +154,8 @@ export type ComparisonData = {
   };
   lineDefs?: { key: string; label: string; group: string }[];
   kalemler?: KalemAgg[];
+  mismatches?: MismatchRow[];
+  mismatchSummary?: MismatchSummary;
   rows: CompareRow[];
   legal: {
     gvMonthly2026: { month: string; exempt: number; rate: number }[];

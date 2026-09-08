@@ -12,7 +12,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import type { CompareRow, ComparisonData, LineItem } from "./types";
+import type { CompareRow, ComparisonData, LineItem, MismatchRow } from "./types";
 import { tr, tr0 } from "./types";
 import type { MatrixData } from "./matrixTypes";
 
@@ -49,6 +49,17 @@ export default function AppView({ data, matrix }: Props) {
     [rows, selectedTc],
   );
   const kalemler = data.kalemler || [];
+
+  const mismatches = data.mismatches || [];
+  const mismatchSummary = data.mismatchSummary;
+  const [causeFilter, setCauseFilter] = useState("all");
+  const visibleMismatches = useMemo(
+    () =>
+      causeFilter === "all"
+        ? mismatches
+        : mismatches.filter((m) => m.causes.some((c) => c.id === causeFilter)),
+    [mismatches, causeFilter],
+  );
 
   const topNet = [...rows]
     .sort((a, b) => Math.abs(b.delta!.net) - Math.abs(a.delta!.net))
@@ -135,6 +146,7 @@ export default function AppView({ data, matrix }: Props) {
             {data.lucaPdfVersion || "bordro_d1_tech.pdf"} · Eşleşen {data.summary.matched} kişi
           </p>
           <nav className="toc" aria-label="Bölümler">
+            {mismatches.length > 0 && <a href="#uyusmayan">Uyuşmayanlar</a>}
             <a href="#kalemler">Kalemler</a>
             <a href="#kisi-kalem">Kişi detay</a>
             <a href="#matrix">Matris</a>
@@ -165,6 +177,96 @@ export default function AppView({ data, matrix }: Props) {
         <h2>Hüküm</h2>
         <p>{ui?.verdict}</p>
       </section>
+
+      {mismatches.length > 0 && mismatchSummary && (
+        <section className="panel" id="uyusmayan">
+          <h2>Uyuşmayan çalışanlar — hangi değerler tutmuyor</h2>
+          <p className="caption">
+            Her satırda o çalışanın DHR ile Luca arasında farklı çıkan kalemleri{" "}
+            <strong>DHR / Luca (Δ)</strong> biçiminde görürsünüz. Koyu çerçeveli etiketler{" "}
+            <em>girdi</em> farkı (elle veya puantajdan gelen kalem), soluk etiketler bu girdilerden
+            türeyen <em>sonuç</em> farkı (SGK, vergi, brüt, net).
+          </p>
+          <div className="stats compact">
+            <Stat
+              label="Uyuşmayan kişi"
+              value={`${mismatchSummary.mismatchCount}/${mismatchSummary.totalCompared}`}
+              tone={mismatchSummary.mismatchCount > 0 ? "bad" : "ok"}
+            />
+            <Stat
+              label="Tam eşleşen kişi"
+              value={String(mismatchSummary.fullMatchCount)}
+              tone={mismatchSummary.fullMatchCount > 0 ? "ok" : "bad"}
+            />
+            <Stat
+              label="Net ±100 TL içinde"
+              value={String(mismatchSummary.netWithin100)}
+              tone={mismatchSummary.netWithin100 > 0 ? "warn" : "bad"}
+            />
+            <Stat
+              label="Farklı sebep sayısı"
+              value={String(mismatchSummary.causeTally.length)}
+              tone="warn"
+            />
+          </div>
+          <label className="person-pick">
+            <span>Sebebe göre filtrele</span>
+            <select value={causeFilter} onChange={(e) => setCauseFilter(e.target.value)}>
+              <option value="all">Tümü ({mismatches.length} kişi)</option>
+              {mismatchSummary.causeTally.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.title} ({c.count} kişi)
+                </option>
+              ))}
+            </select>
+          </label>
+          <div className="table-scroll">
+            <table className="kalem-table mismatch-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Çalışan ve fark sebebi</th>
+                  <th>ΔNet</th>
+                  <th>Uyuşmayan kalemler — DHR / Luca (Δ)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {visibleMismatches.map((m) => (
+                  <MismatchRowLine key={m.name} m={m} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Fark sebepleri ve düzeltme</h3>
+          <div className="cards bugs">
+            {mismatchSummary.causeTally.map((c) => (
+              <article key={c.id} className="card">
+                <h3>
+                  <span className={`pill ${c.count >= 10 ? "bad" : "warn"}`}>{c.count} kişi</span>{" "}
+                  {c.title}
+                </h3>
+                <p>{c.detail}</p>
+              </article>
+            ))}
+          </div>
+
+          {mismatchSummary.normalizations.length > 0 && (
+            <>
+              <h3>Kaynak verisi normalizasyonu</h3>
+              <p className="caption">
+                Aşağıdaki kalemler gerçekte uyuşuyor; yalnızca kaynak dosyalarda farklı yere
+                yazıldığı için fark gibi görünüyordu. Karşılaştırmada düzeltildi.
+              </p>
+              <ul className="ok-list">
+                {mismatchSummary.normalizations.map((s) => (
+                  <li key={s}>{s}</li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      )}
 
       <section className="panel" id="kalemler">
         <h2>Kalem kalem — DHR × Luca (toplam)</h2>
@@ -593,6 +695,45 @@ function LineItemRow({ item }: { item: LineItem }) {
       </td>
       <td>
         <span className={`badge ${item.match ? "ok" : "bad"}`}>{item.match ? "OK" : "FARK"}</span>
+      </td>
+    </tr>
+  );
+}
+
+function MismatchRowLine({ m }: { m: MismatchRow }) {
+  const net = m.netDelta ?? 0;
+  const tone = m.severity === "high" ? "bad" : m.severity === "medium" ? "warn" : "";
+  return (
+    <tr className={tone}>
+      <td>{m.n ?? "—"}</td>
+      <td className="left">
+        <strong>{m.name}</strong>
+        <div className="note">{m.note}</div>
+        <div className="causes">
+          {m.causes.map((c) => (
+            <span key={c.id} className="pill warn cause-pill" title={`${c.title} — ${c.detail}`}>
+              {c.short || c.title}
+            </span>
+          ))}
+        </div>
+      </td>
+      <td className={deltaClass(net)}>
+        {Math.abs(net) < 0.05 ? "0,00" : `${net > 0 ? "+" : ""}${tr(net)}`}
+      </td>
+      <td className="left">
+        <div className="chips">
+          {m.items.map((i) => (
+            <span key={i.key} className={`chip ${i.derived ? "" : "input"}`}>
+              <b>{i.label}</b>
+              <span className="chip-vals">
+                {tr(i.dhr)} / {tr(i.luca)}
+              </span>
+              <em className={deltaClass(i.delta)}>
+                {i.delta == null ? "—" : `${i.delta > 0 ? "+" : ""}${tr(i.delta)}`}
+              </em>
+            </span>
+          ))}
+        </div>
       </td>
     </tr>
   );

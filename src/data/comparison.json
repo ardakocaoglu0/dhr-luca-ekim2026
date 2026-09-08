@@ -109,8 +109,8 @@
       "lucaSum": 1622508,
       "deltaSum": 6013.89,
       "peopleWithValue": 32,
-      "matchCount": 29,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 29
     },
     {
       "key": "meal",
@@ -120,8 +120,8 @@
       "lucaSum": 170500,
       "deltaSum": 2638.33,
       "peopleWithValue": 31,
-      "matchCount": 30,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 30
     },
     {
       "key": "transport",
@@ -131,8 +131,8 @@
       "lucaSum": 99200,
       "deltaSum": 1535.02,
       "peopleWithValue": 31,
-      "matchCount": 30,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 30
     },
     {
       "key": "overtime",
@@ -142,30 +142,30 @@
       "lucaSum": 16560,
       "deltaSum": 823.02,
       "peopleWithValue": 4,
-      "matchCount": 31,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 31
     },
     {
       "key": "prim",
       "label": "Prim",
       "group": "kazanc",
-      "dhrSum": 0,
+      "dhrSum": 13000,
       "lucaSum": 13000,
-      "deltaSum": -13000,
+      "deltaSum": 0,
       "peopleWithValue": 3,
-      "matchCount": 29,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 32
     },
     {
       "key": "ikramiye",
       "label": "Ikramiye",
       "group": "kazanc",
-      "dhrSum": 0,
+      "dhrSum": 10000,
       "lucaSum": 10000,
-      "deltaSum": -10000,
+      "deltaSum": 0,
       "peopleWithValue": 1,
-      "matchCount": 31,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 32
     },
     {
       "key": "masraf",
@@ -175,8 +175,8 @@
       "lucaSum": 750,
       "deltaSum": -750,
       "peopleWithValue": 1,
-      "matchCount": 31,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 31
     },
     {
       "key": "gross",
@@ -186,8 +186,8 @@
       "lucaSum": 2057799.98,
       "deltaSum": -113281.72,
       "peopleWithValue": 32,
-      "matchCount": 1,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 1
     },
     {
       "key": "sgk",
@@ -197,19 +197,19 @@
       "lucaSum": 278367.34,
       "deltaSum": -21464.23,
       "peopleWithValue": 32,
-      "matchCount": 0,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 0
     },
     {
       "key": "unemployment",
       "label": "Issizlik isci",
       "group": "kesinti",
       "dhrSum": 18350.23,
-      "lucaSum": 0,
-      "deltaSum": 18350.23,
+      "lucaSum": 19289.57,
+      "deltaSum": -939.34,
       "peopleWithValue": 32,
-      "matchCount": 0,
-      "compared": 0
+      "compared": 32,
+      "matchCount": 0
     },
     {
       "key": "gv",
@@ -219,8 +219,8 @@
       "lucaSum": 126420.17,
       "deltaSum": -40793.63,
       "peopleWithValue": 31,
-      "matchCount": 1,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 1
     },
     {
       "key": "damga",
@@ -230,8 +230,8 @@
       "lucaSum": 5987.73,
       "deltaSum": -946.52,
       "peopleWithValue": 28,
-      "matchCount": 4,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 4
     },
     {
       "key": "bes",
@@ -241,8 +241,8 @@
       "lucaSum": 2105,
       "deltaSum": -208.28,
       "peopleWithValue": 1,
-      "matchCount": 31,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 31
     },
     {
       "key": "advance",
@@ -252,8 +252,8 @@
       "lucaSum": 7200,
       "deltaSum": 0,
       "peopleWithValue": 1,
-      "matchCount": 32,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 32
     },
     {
       "key": "kesinti",
@@ -263,8 +263,8 @@
       "lucaSum": 2000,
       "deltaSum": 1740,
       "peopleWithValue": 3,
-      "matchCount": 31,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 31
     },
     {
       "key": "net",
@@ -274,8 +274,8 @@
       "lucaSum": 1616430.17,
       "deltaSum": -50669.72,
       "peopleWithValue": 32,
-      "matchCount": 2,
-      "compared": 32
+      "compared": 32,
+      "matchCount": 2
     }
   ],
   "rows": [
@@ -301,7 +301,7 @@
         "net": 49264.98,
         "gv": 3779.01,
         "sgk": 8773.71,
-        "unemployment": null,
+        "unemployment": 626.69,
         "damga": 224.96,
         "bes": 0,
         "kanun": "00000",
@@ -311,7 +311,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 50500,
@@ -428,8 +429,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 557.24,
-          "luca": null,
-          "delta": 557.24,
+          "luca": 626.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -486,7 +487,8 @@
           "delta": -1170.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 2,
@@ -510,7 +512,7 @@
         "net": 51052.25,
         "gv": 4097.76,
         "sgk": 9123.71,
-        "unemployment": null,
+        "unemployment": 651.69,
         "damga": 243.94,
         "bes": 0,
         "kanun": "05510",
@@ -520,7 +522,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 53000,
@@ -637,8 +640,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 582.24,
-          "luca": null,
-          "delta": 582.24,
+          "luca": 651.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -695,7 +698,8 @@
           "delta": -1170.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 3,
@@ -719,7 +723,7 @@
         "net": 52839.53,
         "gv": 4416.51,
         "sgk": 9473.71,
-        "unemployment": null,
+        "unemployment": 676.69,
         "damga": 262.91,
         "bes": 0,
         "kanun": "05510",
@@ -729,7 +733,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 55500,
@@ -846,8 +851,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 607.24,
-          "luca": null,
-          "delta": 607.24,
+          "luca": 676.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -904,7 +909,8 @@
           "delta": -1170.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 4,
@@ -928,7 +934,7 @@
         "net": 50700,
         "gv": 4034.94,
         "sgk": 9054.73,
-        "unemployment": null,
+        "unemployment": 646.77,
         "damga": 240.2,
         "bes": 0,
         "kanun": "00000",
@@ -938,7 +944,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 51859.52,
@@ -1055,8 +1062,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 591.26,
-          "luca": null,
-          "delta": 591.26,
+          "luca": 646.77,
+          "delta": -55.51,
           "match": false
         },
         {
@@ -1113,7 +1120,8 @@
           "delta": 0,
           "match": true
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 5,
@@ -1137,7 +1145,7 @@
         "net": 56622.58,
         "gv": 5037.71,
         "sgk": 10155.81,
-        "unemployment": null,
+        "unemployment": 725.42,
         "damga": 0,
         "bes": 0,
         "kanun": "00000",
@@ -1147,7 +1155,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 60500,
@@ -1264,8 +1273,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 657.24,
-          "luca": null,
-          "delta": 657.24,
+          "luca": 725.42,
+          "delta": -68.18,
           "match": false
         },
         {
@@ -1322,7 +1331,8 @@
           "delta": -1378.84,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 6,
@@ -1346,7 +1356,7 @@
         "net": 47591.33,
         "gv": 3443.96,
         "sgk": 8405.81,
-        "unemployment": null,
+        "unemployment": 600.42,
         "damga": 0,
         "bes": 0,
         "kanun": "00000",
@@ -1356,7 +1366,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 48000,
@@ -1473,8 +1484,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 532.24,
-          "luca": null,
-          "delta": 532.24,
+          "luca": 600.42,
+          "delta": -68.18,
           "match": false
         },
         {
@@ -1531,7 +1542,8 @@
           "delta": -1283.97,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 7,
@@ -1555,7 +1567,7 @@
         "net": 47871.33,
         "gv": 3493.38,
         "sgk": 8460.07,
-        "unemployment": null,
+        "unemployment": 604.29,
         "damga": 0,
         "bes": 0,
         "kanun": "00000",
@@ -1565,7 +1577,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 50500,
@@ -1682,8 +1695,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 557.24,
-          "luca": null,
-          "delta": 557.24,
+          "luca": 604.29,
+          "delta": -47.05,
           "match": false
         },
         {
@@ -1740,7 +1753,8 @@
           "delta": 2970.07,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 8,
@@ -1764,7 +1778,7 @@
         "net": 51203.83,
         "gv": 4081.46,
         "sgk": 9105.81,
-        "unemployment": null,
+        "unemployment": 650.42,
         "damga": 0,
         "bes": 0,
         "kanun": "00000",
@@ -1774,7 +1788,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 53000,
@@ -1891,8 +1906,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 582.24,
-          "luca": null,
-          "delta": 582.24,
+          "luca": 650.42,
+          "delta": -68.18,
           "match": false
         },
         {
@@ -1949,7 +1964,8 @@
           "delta": 1762.57,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 9,
@@ -1973,7 +1989,7 @@
         "net": 53010.08,
         "gv": 4400.21,
         "sgk": 9455.81,
-        "unemployment": null,
+        "unemployment": 675.42,
         "damga": 0,
         "bes": 0,
         "kanun": "00000",
@@ -1983,7 +1999,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 55500,
@@ -2100,8 +2117,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 607.24,
-          "luca": null,
-          "delta": 607.24,
+          "luca": 675.42,
+          "delta": -68.18,
           "match": false
         },
         {
@@ -2158,7 +2175,8 @@
           "delta": 2081.32,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 10,
@@ -2182,7 +2200,7 @@
         "net": 45865.75,
         "gv": 3166.43,
         "sgk": 3987.98,
-        "unemployment": null,
+        "unemployment": 0,
         "damga": 152.88,
         "bes": 0,
         "kanun": "00000",
@@ -2192,7 +2210,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 42000,
@@ -2309,7 +2328,7 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 472.24,
-          "luca": null,
+          "luca": 0,
           "delta": 472.24,
           "match": false
         },
@@ -2367,7 +2386,8 @@
           "delta": -3847.85,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 11,
@@ -2391,7 +2411,7 @@
         "net": 58214.08,
         "gv": 3254.01,
         "sgk": 10173.71,
-        "unemployment": null,
+        "unemployment": 726.69,
         "damga": 300.86,
         "bes": 0,
         "kanun": "00000",
@@ -2401,7 +2421,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 60500,
@@ -2518,8 +2539,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 657.24,
-          "luca": null,
-          "delta": 657.24,
+          "luca": 726.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -2576,7 +2597,8 @@
           "delta": -2970.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 12,
@@ -2600,7 +2622,7 @@
         "net": 48527.7,
         "gv": 2410.26,
         "sgk": 8423.71,
-        "unemployment": null,
+        "unemployment": 601.69,
         "damga": 205.99,
         "bes": 0,
         "kanun": "00000",
@@ -2610,7 +2632,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 48000,
@@ -2727,8 +2750,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 532.24,
-          "luca": null,
-          "delta": 532.24,
+          "luca": 601.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -2785,7 +2808,8 @@
           "delta": -2220.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 13,
@@ -2809,7 +2833,7 @@
         "net": 49714.98,
         "gv": 3329.01,
         "sgk": 8773.71,
-        "unemployment": null,
+        "unemployment": 626.69,
         "damga": 224.96,
         "bes": 0,
         "kanun": "00000",
@@ -2819,7 +2843,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 50500,
@@ -2936,8 +2961,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 557.24,
-          "luca": null,
-          "delta": 557.24,
+          "luca": 626.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -2994,7 +3019,8 @@
           "delta": -1620.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 14,
@@ -3018,7 +3044,7 @@
         "net": 46000.21,
         "gv": 3196.76,
         "sgk": 8134.38,
-        "unemployment": null,
+        "unemployment": 581.03,
         "damga": 190.3,
         "bes": 0,
         "kanun": "00000",
@@ -3028,7 +3054,8 @@
         "tgun": 26,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 38866.67,
@@ -3145,8 +3172,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 440.91,
-          "luca": null,
-          "delta": 440.91,
+          "luca": 581.03,
+          "delta": -140.12,
           "match": false
         },
         {
@@ -3203,7 +3230,8 @@
           "delta": -6222.36,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 15,
@@ -3227,7 +3255,7 @@
         "net": 18000,
         "gv": 0,
         "sgk": 0,
-        "unemployment": null,
+        "unemployment": 0,
         "damga": 0,
         "bes": 0,
         "kanun": "00000",
@@ -3237,7 +3265,8 @@
         "tgun": 30,
         "digText": "",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 18000,
@@ -3354,7 +3383,7 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 180,
-          "luca": null,
+          "luca": 0,
           "delta": 180,
           "match": false
         },
@@ -3412,7 +3441,8 @@
           "delta": -2700,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 16,
@@ -3436,7 +3466,7 @@
         "net": 54626.8,
         "gv": 4735.26,
         "sgk": 9823.71,
-        "unemployment": null,
+        "unemployment": 701.69,
         "damga": 281.89,
         "bes": 0,
         "kanun": "00000",
@@ -3446,7 +3476,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 58000,
@@ -3563,8 +3594,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 632.24,
-          "luca": null,
-          "delta": 632.24,
+          "luca": 701.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -3621,7 +3652,8 @@
           "delta": -1170.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 17,
@@ -3645,7 +3677,7 @@
         "net": 59874.24,
         "gv": 5671.11,
         "sgk": 10851.31,
-        "unemployment": null,
+        "unemployment": 775.09,
         "damga": 337.6,
         "bes": 0,
         "kanun": "00000",
@@ -3655,7 +3687,8 @@
         "tgun": 30,
         "digText": "Fazla Mesai (12S): 4.840,00 B Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 60500,
@@ -3772,8 +3805,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 705.64,
-          "luca": null,
-          "delta": 705.64,
+          "luca": 775.09,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -3830,7 +3863,8 @@
           "delta": -1170.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 18,
@@ -3854,7 +3888,7 @@
         "net": 40277.7,
         "gv": 3460.26,
         "sgk": 8423.71,
-        "unemployment": null,
+        "unemployment": 601.69,
         "damga": 205.99,
         "bes": 0,
         "kanun": "00000",
@@ -3864,7 +3898,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "Avans: 7.200,00 N",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 48000,
@@ -3981,8 +4016,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 532.24,
-          "luca": null,
-          "delta": 532.24,
+          "luca": 601.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -4039,7 +4074,8 @@
           "delta": -1170.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 19,
@@ -4063,7 +4099,7 @@
         "net": 54264.98,
         "gv": 4670.73,
         "sgk": 9752.85,
-        "unemployment": null,
+        "unemployment": 696.63,
         "damga": 278.04,
         "bes": 0,
         "kanun": "00000",
@@ -4073,14 +4109,15 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N Prim: 5.000,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 50500,
         "meal": 5500,
         "transport": 3200,
         "overtime": 0,
-        "prim": 0,
+        "prim": 5000,
         "ikramiye": 0,
         "masraf": 0,
         "kesinti": 0,
@@ -4091,7 +4128,8 @@
         "sgk": 8501.36,
         "unemployment": 607.24,
         "damga": 194.83,
-        "bes": 0
+        "bes": 0,
+        "primDerived": true
       },
       "delta": {
         "net": -2595.79,
@@ -4144,10 +4182,10 @@
           "key": "prim",
           "label": "Prim",
           "group": "kazanc",
-          "dhr": 0,
+          "dhr": 5000,
           "luca": 5000,
-          "delta": -5000,
-          "match": false
+          "delta": 0,
+          "match": true
         },
         {
           "key": "ikramiye",
@@ -4190,8 +4228,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 607.24,
-          "luca": null,
-          "delta": 607.24,
+          "luca": 696.63,
+          "delta": -89.39,
           "match": false
         },
         {
@@ -4248,7 +4286,8 @@
           "delta": -2595.79,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 20,
@@ -4272,7 +4311,7 @@
         "net": 49852.25,
         "gv": 4097.76,
         "sgk": 9123.71,
-        "unemployment": null,
+        "unemployment": 651.69,
         "damga": 243.94,
         "bes": 0,
         "kanun": "00000",
@@ -4282,7 +4321,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "icra: 1.200,00 N",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 53000,
@@ -4399,8 +4439,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 582.24,
-          "luca": null,
-          "delta": 582.24,
+          "luca": 651.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -4457,7 +4497,8 @@
           "delta": -1170.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 21,
@@ -4481,7 +4522,7 @@
         "net": 53375.71,
         "gv": 4512.14,
         "sgk": 9578.71,
-        "unemployment": null,
+        "unemployment": 684.19,
         "damga": 268.6,
         "bes": 0,
         "kanun": "00000",
@@ -4491,7 +4532,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N Masraf: 750,00 B",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 55500,
@@ -4608,8 +4650,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 607.24,
-          "luca": null,
-          "delta": 607.24,
+          "luca": 684.19,
+          "delta": -76.95,
           "match": false
         },
         {
@@ -4666,7 +4708,8 @@
           "delta": -1706.52,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 22,
@@ -4690,7 +4733,7 @@
         "net": 52521.8,
         "gv": 4735.26,
         "sgk": 9823.71,
-        "unemployment": null,
+        "unemployment": 701.69,
         "damga": 281.89,
         "bes": 2105,
         "kanun": "00000",
@@ -4700,7 +4743,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "Oto.Kat.BES: 2.105,00 N",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 58000,
@@ -4817,8 +4861,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 632.24,
-          "luca": null,
-          "delta": 632.24,
+          "luca": 701.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -4875,7 +4919,8 @@
           "delta": -975.26,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 1740
     },
     {
       "n": 23,
@@ -4899,7 +4944,7 @@
         "net": 56414.08,
         "gv": 5054.01,
         "sgk": 10173.71,
-        "unemployment": null,
+        "unemployment": 726.69,
         "damga": 300.86,
         "bes": 0,
         "kanun": "00000",
@@ -4909,7 +4954,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 60500,
@@ -5026,8 +5072,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 657.24,
-          "luca": null,
-          "delta": 657.24,
+          "luca": 726.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -5084,7 +5130,8 @@
           "delta": -3612.41,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 24,
@@ -5108,7 +5155,7 @@
         "net": 30806.81,
         "gv": 487.11,
         "sgk": 5159.07,
-        "unemployment": null,
+        "unemployment": 368.5,
         "damga": 29,
         "bes": 0,
         "kanun": "00000",
@@ -5118,7 +5165,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 26008,
@@ -5235,8 +5283,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 312.32,
-          "luca": null,
-          "delta": 312.32,
+          "luca": 368.5,
+          "delta": -56.18,
           "match": false
         },
         {
@@ -5293,7 +5341,8 @@
           "delta": -783.61,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 25,
@@ -5317,7 +5366,7 @@
         "net": 52285.82,
         "gv": 4277.81,
         "sgk": 9321.41,
-        "unemployment": null,
+        "unemployment": 665.82,
         "damga": 30.66,
         "bes": 0,
         "kanun": "00000",
@@ -5327,7 +5376,8 @@
         "tgun": 30,
         "digText": "Fazla Mesai (12S): 4.040,00 B Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 50500,
@@ -5444,8 +5494,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 597.64,
-          "luca": null,
-          "delta": 597.64,
+          "luca": 665.82,
+          "delta": -68.18,
           "match": false
         },
         {
@@ -5502,7 +5552,8 @@
           "delta": -1302.95,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 26,
@@ -5526,7 +5577,7 @@
         "net": 49365.75,
         "gv": 3790.1,
         "sgk": 4325.1,
-        "unemployment": null,
+        "unemployment": 0,
         "damga": 187,
         "bes": 0,
         "kanun": "00000",
@@ -5536,14 +5587,15 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N Prim: 3.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 42000,
         "meal": 5500,
         "transport": 3200,
         "overtime": 0,
-        "prim": 0,
+        "prim": 3500,
         "ikramiye": 0,
         "masraf": 0,
         "kesinti": 0,
@@ -5554,7 +5606,8 @@
         "sgk": 7101.36,
         "unemployment": 507.24,
         "damga": 118.93,
-        "bes": 0
+        "bes": 0,
+        "primDerived": true
       },
       "delta": {
         "net": -4845.66,
@@ -5607,10 +5660,10 @@
           "key": "prim",
           "label": "Prim",
           "group": "kazanc",
-          "dhr": 0,
+          "dhr": 3500,
           "luca": 3500,
-          "delta": -3500,
-          "match": false
+          "delta": 0,
+          "match": true
         },
         {
           "key": "ikramiye",
@@ -5653,7 +5706,7 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 507.24,
-          "luca": null,
+          "luca": 0,
           "delta": 507.24,
           "match": false
         },
@@ -5711,7 +5764,8 @@
           "delta": -4845.66,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 27,
@@ -5735,7 +5789,7 @@
         "net": 53089.53,
         "gv": 3366.51,
         "sgk": 9473.71,
-        "unemployment": null,
+        "unemployment": 676.69,
         "damga": 262.91,
         "bes": 0,
         "kanun": "00000",
@@ -5745,7 +5799,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "icra: 800,00 N",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 55500,
@@ -5862,8 +5917,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 607.24,
-          "luca": null,
-          "delta": 607.24,
+          "luca": 676.69,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -5920,7 +5975,8 @@
           "delta": -2220.34,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 28,
@@ -5944,7 +6000,7 @@
         "net": 64626.81,
         "gv": 6518.7,
         "sgk": 11782,
-        "unemployment": null,
+        "unemployment": 841.57,
         "damga": 388.05,
         "bes": 0,
         "kanun": "00000",
@@ -5954,7 +6010,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N İkramiye: 10.000,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 58000,
@@ -5962,7 +6019,7 @@
         "transport": 3200,
         "overtime": 0,
         "prim": 0,
-        "ikramiye": 0,
+        "ikramiye": 10000,
         "masraf": 0,
         "kesinti": 0,
         "advance": 0,
@@ -5972,7 +6029,8 @@
         "sgk": 10251.36,
         "unemployment": 732.24,
         "damga": 289.71,
-        "bes": 0
+        "bes": 0,
+        "ikramiyeDerived": true
       },
       "delta": {
         "net": -4021.25,
@@ -6034,10 +6092,10 @@
           "key": "ikramiye",
           "label": "Ikramiye",
           "group": "kazanc",
-          "dhr": 0,
+          "dhr": 10000,
           "luca": 10000,
-          "delta": -10000,
-          "match": false
+          "delta": 0,
+          "match": true
         },
         {
           "key": "masraf",
@@ -6071,8 +6129,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 732.24,
-          "luca": null,
-          "delta": 732.24,
+          "luca": 841.57,
+          "delta": -109.33,
           "match": false
         },
         {
@@ -6129,7 +6187,8 @@
           "delta": -4021.25,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 29,
@@ -6153,7 +6212,7 @@
         "net": 54837.35,
         "gv": 4772.81,
         "sgk": 9864.94,
-        "unemployment": null,
+        "unemployment": 704.64,
         "damga": 284.12,
         "bes": 0,
         "kanun": "05510",
@@ -6163,14 +6222,15 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N Prim: 4.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 52000,
         "meal": 5500,
         "transport": 3200,
         "overtime": 0,
-        "prim": 0,
+        "prim": 4500,
         "ikramiye": 0,
         "masraf": 0,
         "kesinti": 0,
@@ -6181,7 +6241,8 @@
         "sgk": 8641.36,
         "unemployment": 617.24,
         "damga": 202.42,
-        "bes": 0
+        "bes": 0,
+        "primDerived": true
       },
       "delta": {
         "net": -2453.25,
@@ -6234,10 +6295,10 @@
           "key": "prim",
           "label": "Prim",
           "group": "kazanc",
-          "dhr": 0,
+          "dhr": 4500,
           "luca": 4500,
-          "delta": -4500,
-          "match": false
+          "delta": 0,
+          "match": true
         },
         {
           "key": "ikramiye",
@@ -6280,8 +6341,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 617.24,
-          "luca": null,
-          "delta": 617.24,
+          "luca": 704.64,
+          "delta": -87.4,
           "match": false
         },
         {
@@ -6338,7 +6399,8 @@
           "delta": -2453.25,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 30,
@@ -6362,7 +6424,7 @@
         "net": 54060,
         "gv": 4634.17,
         "sgk": 9712.71,
-        "unemployment": null,
+        "unemployment": 693.77,
         "damga": 275.87,
         "bes": 0,
         "kanun": "00000",
@@ -6372,7 +6434,8 @@
         "tgun": 30,
         "digText": "Fazla Mesai (12S): 3.360,00 N Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 52287.7,
@@ -6489,8 +6552,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 638.26,
-          "luca": null,
-          "delta": 638.26,
+          "luca": 693.77,
+          "delta": -55.51,
           "match": false
         },
         {
@@ -6547,7 +6610,8 @@
           "delta": 0,
           "match": true
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 31,
@@ -6571,7 +6635,7 @@
         "net": 54816.33,
         "gv": 4718.96,
         "sgk": 9805.81,
-        "unemployment": null,
+        "unemployment": 700.42,
         "damga": 0,
         "bes": 0,
         "kanun": "00000",
@@ -6581,7 +6645,8 @@
         "tgun": 30,
         "digText": "Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 58000,
@@ -6698,8 +6763,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 632.24,
-          "luca": null,
-          "delta": 632.24,
+          "luca": 700.42,
+          "delta": -68.18,
           "match": false
         },
         {
@@ -6756,7 +6821,8 @@
           "delta": -1359.87,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     },
     {
       "n": 32,
@@ -6780,7 +6846,7 @@
         "net": 54855.58,
         "gv": 4776.06,
         "sgk": 9868.51,
-        "unemployment": null,
+        "unemployment": 704.89,
         "damga": 284.31,
         "bes": 0,
         "kanun": "05510",
@@ -6790,7 +6856,8 @@
         "tgun": 30,
         "digText": "Fazla Mesai (12S): 4.320,00 B Yol: 3.200,00 N Yemek: 5.500,00 N",
         "ozText": "",
-        "gs": "G"
+        "gs": "G",
+        "unemploymentDerived": true
       },
       "dhr": {
         "salary": 54000,
@@ -6907,8 +6974,8 @@
           "label": "Issizlik isci",
           "group": "kesinti",
           "dhr": 635.44,
-          "luca": null,
-          "delta": 635.44,
+          "luca": 704.89,
+          "delta": -69.45,
           "match": false
         },
         {
@@ -6965,7 +7032,8 @@
           "delta": -1170.35,
           "match": false
         }
-      ]
+      ],
+      "dhrUnlabelledGross": 0
     }
   ],
   "legal": {
@@ -7067,6 +7135,2752 @@
         "title": "Kanun / 4691",
         "body": "Alper/Berna/Cemil’de DHR 4691 çalışıyor; Luca PDF kanun çoğu 00000."
       }
+    ]
+  },
+  "mismatches": [
+    {
+      "n": 14,
+      "name": "Hande Orhan",
+      "note": "Kısmi 15 gün (Ocak: puantaj eksik 4 / worked 26)",
+      "netDelta": -6222.36,
+      "severity": "high",
+      "inputMismatchCount": 1,
+      "items": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 38866.67,
+          "luca": 53000,
+          "delta": -14133.33,
+          "derived": false
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 47566.67,
+          "luca": 58102.68,
+          "delta": -10536.01,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 6172.69,
+          "luca": 8134.38,
+          "delta": -1961.69,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 440.91,
+          "luca": 581.03,
+          "delta": -140.12,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 1106.63,
+          "luca": 3196.76,
+          "delta": -2090.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 68.59,
+          "luca": 190.3,
+          "delta": -121.71,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 39777.85,
+          "luca": 46000.21,
+          "delta": -6222.36,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "EKSIK-GUN",
+          "short": "Eksik gün girilmemiş",
+          "title": "Kısmi istihdam eksik günü Luca'da girilmemiş",
+          "detail": "DHR 26 gün çalışma / 4 gün eksik (kısmi istihdam) ile hesaplıyor, Luca 30 gün tam ücret veriyor. Düzeltme: Luca puantajında eksik gün ve nedenini girin."
+        }
+      ]
+    },
+    {
+      "n": 26,
+      "name": "Ufuk Demirel",
+      "note": "Emekli+prim",
+      "netDelta": -4845.66,
+      "severity": "high",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 54200,
+          "luca": 57667.95,
+          "delta": -3467.95,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7101.36,
+          "luca": 4325.1,
+          "delta": 2776.26,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 507.24,
+          "luca": 0,
+          "delta": 507.24,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 1952.38,
+          "luca": 3790.1,
+          "delta": -1837.72,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 118.93,
+          "luca": 187,
+          "delta": -68.07,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 44520.09,
+          "luca": 49365.75,
+          "delta": -4845.66,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGDP",
+          "short": "SGDP oranı farklı",
+          "title": "Emekli SGDP oranı farklı",
+          "detail": "Luca emekli için SGDP %7,5 uyguluyor ve işsizlik kesmiyor. DHR %14 SGK + %1 işsizlik kesiyor. Emekli çalışanda doğru olan SGDP'dir; DHR tarafı hatalı."
+        }
+      ]
+    },
+    {
+      "n": 28,
+      "name": "Yasin Firatin",
+      "note": "Yönetici+ikramiye",
+      "netDelta": -4021.25,
+      "severity": "high",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 76700,
+          "luca": 84157.13,
+          "delta": -7457.13,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 10251.36,
+          "luca": 11782,
+          "delta": -1530.64,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 732.24,
+          "luca": 841.57,
+          "delta": -109.33,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 4821.13,
+          "luca": 6518.7,
+          "delta": -1697.57,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 289.71,
+          "luca": 388.05,
+          "delta": -98.34,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 60605.56,
+          "luca": 64626.81,
+          "delta": -4021.25,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "name": "Dilek Kartal",
+      "note": "Emekli SGDP",
+      "netDelta": -3847.85,
+      "severity": "high",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 50700,
+          "luca": 53173.04,
+          "delta": -2473.04,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 6611.36,
+          "luca": 3987.98,
+          "delta": 2623.38,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 472.24,
+          "luca": 0,
+          "delta": 472.24,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 1506.13,
+          "luca": 3166.43,
+          "delta": -1660.3,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 92.37,
+          "luca": 152.88,
+          "delta": -60.51,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 42017.9,
+          "luca": 45865.75,
+          "delta": -3847.85,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGDP",
+          "short": "SGDP oranı farklı",
+          "title": "Emekli SGDP oranı farklı",
+          "detail": "Luca emekli için SGDP %7,5 uyguluyor ve işsizlik kesmiyor. DHR %14 SGK + %1 işsizlik kesiyor. Emekli çalışanda doğru olan SGDP'dir; DHR tarafı hatalı."
+        }
+      ]
+    },
+    {
+      "n": 23,
+      "name": "Riza Altunbas",
+      "note": "Geçmiş GV matrahı",
+      "netDelta": -3612.41,
+      "severity": "high",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 69200,
+          "luca": 72669.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 9201.36,
+          "luca": 10173.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 657.24,
+          "luca": 726.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 6306.95,
+          "luca": 5054.01,
+          "delta": 1252.94,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 232.78,
+          "luca": 300.86,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 52801.67,
+          "luca": 56414.08,
+          "delta": -3612.41,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "GV-KUMULATIF",
+          "short": "Kümülatif matrah yok",
+          "title": "Geçmiş GV kümülatif matrahı Luca'da yok",
+          "detail": "DHR devreden kümülatif matrahla üst vergi diliminden kesiyor, Luca sıfır matrahtan başlıyor. Düzeltme: Luca'da devreden GV matrahını girin."
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "name": "Ersin Lale",
+      "note": "Engelli 1",
+      "netDelta": -2970.34,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 69200,
+          "luca": 72669.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 9201.36,
+          "luca": 10173.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 657.24,
+          "luca": 726.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3864.88,
+          "luca": 3254.01,
+          "delta": 610.87,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 232.78,
+          "luca": 300.86,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 55243.74,
+          "luca": 58214.08,
+          "delta": -2970.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "ENGELLI",
+          "short": "Engelli indirimi farkı",
+          "title": "Engelli indirimi yalnızca Luca'da",
+          "detail": "Luca engellilik indirimini gelir vergisi matrahından düşüyor, DHR düşmüyor. GVK md.31 gereği indirim uygulanmalı; DHR tarafı eksik."
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "name": "Alper Hancer",
+      "note": "Doktora+4691",
+      "netDelta": 2970.07,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 59200,
+          "luca": 60429.07,
+          "delta": -1229.07,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7801.36,
+          "luca": 8460.07,
+          "delta": -658.71,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 557.24,
+          "luca": 604.29,
+          "delta": -47.05,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 3493.38,
+          "delta": -3493.38,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 50841.4,
+          "luca": 47871.33,
+          "delta": 2970.07,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "GV-4691",
+          "short": "4691 GV istisnası yok",
+          "title": "Luca'da 4691 gelir vergisi istisnası yok",
+          "detail": "DHR teknokent (4691) istisnasıyla gelir vergisini 0 hesaplıyor, Luca tam gelir vergisi kesiyor. Düzeltme: Luca'da ilgili personele 4691 GV stopaj terkini tanımlayın."
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "name": "Ilker Pamuk",
+      "note": "Stajyer",
+      "netDelta": -2700,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 2520,
+          "luca": 0,
+          "delta": 2520,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 180,
+          "luca": 0,
+          "delta": 180,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 15300,
+          "luca": 18000,
+          "delta": -2700,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "STAJYER",
+          "short": "Stajyer SGK farkı",
+          "title": "Stajyerde SGK kesintisi farkı",
+          "detail": "Luca stajyerde SGK ve işsizlik kesmiyor (yalnızca iş kazası işveren primi). DHR %14 + %1 kesiyor. DHR tarafı hatalı."
+        }
+      ]
+    },
+    {
+      "n": 19,
+      "name": "Metin Uslu",
+      "note": "Prim",
+      "netDelta": -2595.79,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 69663.23,
+          "delta": -5463.23,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8501.36,
+          "luca": 9752.85,
+          "delta": -1251.49,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 607.24,
+          "luca": 696.63,
+          "delta": -89.39,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3227.38,
+          "luca": 4670.73,
+          "delta": -1443.35,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 278.04,
+          "delta": -83.21,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 51669.19,
+          "luca": 54264.98,
+          "delta": -2595.79,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 29,
+      "name": "Baran Sokmen",
+      "note": "05510%2 + prim (çapraz)",
+      "netDelta": -2453.25,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 65200,
+          "luca": 70463.86,
+          "delta": -5263.86,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8641.36,
+          "luca": 9864.94,
+          "delta": -1223.58,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 617.24,
+          "luca": 704.64,
+          "delta": -87.4,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3354.88,
+          "luca": 4772.81,
+          "delta": -1417.93,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 202.42,
+          "luca": 284.12,
+          "delta": -81.7,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 52384.1,
+          "luca": 54837.35,
+          "delta": -2453.25,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "name": "Fulya Mercan",
+      "note": "Engelli 2",
+      "netDelta": -2220.34,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 56700,
+          "luca": 60169.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7451.36,
+          "luca": 8423.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 532.24,
+          "luca": 601.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2271.13,
+          "luca": 2410.26,
+          "delta": -139.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 137.91,
+          "luca": 205.99,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 46307.36,
+          "luca": 48527.7,
+          "delta": -2220.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "ENGELLI",
+          "short": "Engelli indirimi farkı",
+          "title": "Engelli indirimi yalnızca Luca'da",
+          "detail": "Luca engellilik indirimini gelir vergisi matrahından düşüyor, DHR düşmüyor. GVK md.31 gereği indirim uygulanmalı; DHR tarafı eksik."
+        }
+      ]
+    },
+    {
+      "n": 27,
+      "name": "Vesile Erkan",
+      "note": "Engelli2+kesinti",
+      "netDelta": -2220.34,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 67669.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8501.36,
+          "luca": 9473.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 607.24,
+          "luca": 676.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3227.38,
+          "luca": 3366.51,
+          "delta": -139.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 262.91,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 50869.19,
+          "luca": 53089.53,
+          "delta": -2220.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "ENGELLI",
+          "short": "Engelli indirimi farkı",
+          "title": "Engelli indirimi yalnızca Luca'da",
+          "detail": "Luca engellilik indirimini gelir vergisi matrahından düşüyor, DHR düşmüyor. GVK md.31 gereği indirim uygulanmalı; DHR tarafı eksik."
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "name": "Cemil Jaleoglu",
+      "note": "Destek+4691",
+      "netDelta": 2081.32,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 67541.52,
+          "delta": -3341.52,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8501.36,
+          "luca": 9455.81,
+          "delta": -954.45,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 607.24,
+          "luca": 675.42,
+          "delta": -68.18,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 4400.21,
+          "delta": -4400.21,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 55091.4,
+          "luca": 53010.08,
+          "delta": 2081.32,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "GV-4691",
+          "short": "4691 GV istisnası yok",
+          "title": "Luca'da 4691 gelir vergisi istisnası yok",
+          "detail": "DHR teknokent (4691) istisnasıyla gelir vergisini 0 hesaplıyor, Luca tam gelir vergisi kesiyor. Düzeltme: Luca'da ilgili personele 4691 GV stopaj terkini tanımlayın."
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "name": "Berna Isikli",
+      "note": "Ar-Ge+4691",
+      "netDelta": 1762.57,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 61700,
+          "luca": 65041.52,
+          "delta": -3341.52,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8151.36,
+          "luca": 9105.81,
+          "delta": -954.45,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 582.24,
+          "luca": 650.42,
+          "delta": -68.18,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 4081.46,
+          "delta": -4081.46,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 52966.4,
+          "luca": 51203.83,
+          "delta": 1762.57,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "GV-4691",
+          "short": "4691 GV istisnası yok",
+          "title": "Luca'da 4691 gelir vergisi istisnası yok",
+          "detail": "DHR teknokent (4691) istisnasıyla gelir vergisini 0 hesaplıyor, Luca tam gelir vergisi kesiyor. Düzeltme: Luca'da ilgili personele 4691 GV stopaj terkini tanımlayın."
+        }
+      ]
+    },
+    {
+      "n": 21,
+      "name": "Okan Yildizoglu",
+      "note": "Masraf ödeme talebi",
+      "netDelta": -1706.52,
+      "severity": "medium",
+      "inputMismatchCount": 1,
+      "items": [
+        {
+          "key": "masraf",
+          "label": "Masraf",
+          "group": "kazanc",
+          "dhr": 0,
+          "luca": 750,
+          "delta": -750,
+          "derived": false
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 68419.35,
+          "delta": -4219.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8501.36,
+          "luca": 9578.71,
+          "delta": -1077.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 607.24,
+          "luca": 684.19,
+          "delta": -76.95,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3227.38,
+          "luca": 4512.14,
+          "delta": -1284.76,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 268.6,
+          "delta": -73.77,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 51669.19,
+          "luca": 53375.71,
+          "delta": -1706.52,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "OKAN-MASRAF",
+          "short": "Masraf brüte girmiyor (DHR bug)",
+          "title": "DHR hatası: masraf brüte yansımıyor",
+          "detail": "Onaylı 750 TL masraf ödeme talebi DHR bordrosunda brüte eklenmemiş (ödeme kaydı paymentId=null olarak bordroya bağlanmamış). Luca'da 750 TL brüte dahil. DHR tarafı hatalı."
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "name": "Gokhan Narin",
+      "note": "Engelli 3",
+      "netDelta": -1620.34,
+      "severity": "medium",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 59200,
+          "luca": 62669.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7801.36,
+          "luca": 8773.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 557.24,
+          "luca": 626.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2589.88,
+          "luca": 3329.01,
+          "delta": -739.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 156.88,
+          "luca": 224.96,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 48094.64,
+          "luca": 49714.98,
+          "delta": -1620.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "ENGELLI",
+          "short": "Engelli indirimi farkı",
+          "title": "Engelli indirimi yalnızca Luca'da",
+          "detail": "Luca engellilik indirimini gelir vergisi matrahından düşüyor, DHR düşmüyor. GVK md.31 gereği indirim uygulanmalı; DHR tarafı eksik."
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "name": "Yagiz Findik",
+      "note": "5746 Lisans",
+      "netDelta": -1378.84,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 69200,
+          "luca": 72541.52,
+          "delta": -3341.52,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 9201.36,
+          "luca": 10155.81,
+          "delta": -954.45,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 657.24,
+          "luca": 725.42,
+          "delta": -68.18,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3864.88,
+          "luca": 5037.71,
+          "delta": -1172.83,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 232.78,
+          "luca": 0,
+          "delta": 232.78,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 55243.74,
+          "luca": 56622.58,
+          "delta": -1378.84,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "DAMGA-5746",
+          "short": "Damga terkini farkı",
+          "title": "Damga vergisi terkini yalnızca Luca'da",
+          "detail": "Luca 5746 kapsamında damga vergisini terkin ediyor (0 veya kısmi), DHR damgayı tam kesiyor. Hangisinin doğru olduğu 5746 md.3 kapsamına göre netleştirilmeli."
+        }
+      ]
+    },
+    {
+      "n": 31,
+      "name": "Deniz Ulusoy",
+      "note": "5746-GV stopaj terkin (saf)",
+      "netDelta": -1359.87,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 66700,
+          "luca": 70041.52,
+          "delta": -3341.52,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8851.36,
+          "luca": 9805.81,
+          "delta": -954.45,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 632.24,
+          "luca": 700.42,
+          "delta": -68.18,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3546.13,
+          "luca": 4718.96,
+          "delta": -1172.83,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 213.81,
+          "luca": 0,
+          "delta": 213.81,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 53456.46,
+          "luca": 54816.33,
+          "delta": -1359.87,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "DAMGA-5746",
+          "short": "Damga terkini farkı",
+          "title": "Damga vergisi terkini yalnızca Luca'da",
+          "detail": "Luca 5746 kapsamında damga vergisini terkin ediyor (0 veya kısmi), DHR damgayı tam kesiyor. Hangisinin doğru olduğu 5746 md.3 kapsamına göre netleştirilmeli."
+        }
+      ]
+    },
+    {
+      "n": 25,
+      "name": "Tamer Cakmak",
+      "note": "5746+FM",
+      "netDelta": -1302.95,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 63240,
+          "luca": 66581.52,
+          "delta": -3341.52,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8366.96,
+          "luca": 9321.41,
+          "delta": -954.45,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 597.64,
+          "luca": 665.82,
+          "delta": -68.18,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3104.98,
+          "luca": 4277.81,
+          "delta": -1172.83,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 187.55,
+          "luca": 30.66,
+          "delta": 156.89,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 50982.87,
+          "luca": 52285.82,
+          "delta": -1302.95,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "DAMGA-5746",
+          "short": "Damga terkini farkı",
+          "title": "Damga vergisi terkini yalnızca Luca'da",
+          "detail": "Luca 5746 kapsamında damga vergisini terkin ediyor (0 veya kısmi), DHR damgayı tam kesiyor. Hangisinin doğru olduğu 5746 md.3 kapsamına göre netleştirilmeli."
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "name": "Zeliha Gurbuz",
+      "note": "5746 YL",
+      "netDelta": -1283.97,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 56700,
+          "luca": 60041.52,
+          "delta": -3341.52,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7451.36,
+          "luca": 8405.81,
+          "delta": -954.45,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 532.24,
+          "luca": 600.42,
+          "delta": -68.18,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2271.13,
+          "luca": 3443.96,
+          "delta": -1172.83,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 137.91,
+          "luca": 0,
+          "delta": 137.91,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 46307.36,
+          "luca": 47591.33,
+          "delta": -1283.97,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "DAMGA-5746",
+          "short": "Damga terkini farkı",
+          "title": "Damga vergisi terkini yalnızca Luca'da",
+          "detail": "Luca 5746 kapsamında damga vergisini terkin ediyor (0 veya kısmi), DHR damgayı tam kesiyor. Hangisinin doğru olduğu 5746 md.3 kapsamına göre netleştirilmeli."
+        }
+      ]
+    },
+    {
+      "n": 32,
+      "name": "Emre Varlik",
+      "note": "05510%5 + FM (çapraz)",
+      "netDelta": -1170.35,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 67020,
+          "luca": 70489.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8896.16,
+          "luca": 9868.51,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 635.44,
+          "luca": 704.89,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3586.93,
+          "luca": 4776.06,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 216.24,
+          "luca": 284.31,
+          "delta": -68.07,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 53685.23,
+          "luca": 54855.58,
+          "delta": -1170.35,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 1,
+      "name": "Serra Bindal",
+      "note": "Standart brüt",
+      "netDelta": -1170.34,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 59200,
+          "luca": 62669.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7801.36,
+          "luca": 8773.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 557.24,
+          "luca": 626.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2589.88,
+          "luca": 3779.01,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 156.88,
+          "luca": 224.96,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 48094.64,
+          "luca": 49264.98,
+          "delta": -1170.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "name": "Tolga Civelek",
+      "note": "05510 %2",
+      "netDelta": -1170.34,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 61700,
+          "luca": 65169.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8151.36,
+          "luca": 9123.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 582.24,
+          "luca": 651.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2908.63,
+          "luca": 4097.76,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 175.86,
+          "luca": 243.94,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 49881.91,
+          "luca": 51052.25,
+          "delta": -1170.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "name": "Umut Dagdelen",
+      "note": "05510 %5",
+      "netDelta": -1170.34,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 64200,
+          "luca": 67669.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8501.36,
+          "luca": 9473.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 607.24,
+          "luca": 676.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3227.38,
+          "luca": 4416.51,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 194.83,
+          "luca": 262.91,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 51669.19,
+          "luca": 52839.53,
+          "delta": -1170.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "name": "Jale Ruzgar",
+      "note": "Yabancı",
+      "netDelta": -1170.34,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 66700,
+          "luca": 70169.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8851.36,
+          "luca": 9823.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 632.24,
+          "luca": 701.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3546.13,
+          "luca": 4735.26,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 213.81,
+          "luca": 281.89,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 53456.46,
+          "luca": 54626.8,
+          "delta": -1170.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "name": "Kemal Sahinoglu",
+      "note": "Hafta içi FM",
+      "netDelta": -1170.34,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 74040,
+          "luca": 77509.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 9878.96,
+          "luca": 10851.31,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 705.64,
+          "luca": 775.09,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 4481.98,
+          "luca": 5671.11,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 269.52,
+          "luca": 337.6,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 58703.9,
+          "luca": 59874.24,
+          "delta": -1170.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "name": "Leyla Tuncel",
+      "note": "Maaş avansı",
+      "netDelta": -1170.34,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 56700,
+          "luca": 60169.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 7451.36,
+          "luca": 8423.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 532.24,
+          "luca": 601.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2271.13,
+          "luca": 3460.26,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 137.91,
+          "luca": 205.99,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 39107.36,
+          "luca": 40277.7,
+          "delta": -1170.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "name": "Nilay Varol",
+      "note": "Genel kesinti",
+      "netDelta": -1170.34,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 61700,
+          "luca": 65169.35,
+          "delta": -3469.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8151.36,
+          "luca": 9123.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 582.24,
+          "luca": 651.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2908.63,
+          "luca": 4097.76,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 175.86,
+          "luca": 243.94,
+          "delta": -68.08,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 48681.91,
+          "luca": 49852.25,
+          "delta": -1170.34,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        }
+      ]
+    },
+    {
+      "n": 22,
+      "name": "Pelin Zengin",
+      "note": "BES aktif",
+      "netDelta": -975.26,
+      "severity": "low",
+      "inputMismatchCount": 2,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 68440,
+          "luca": 70169.35,
+          "delta": -1729.35,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8851.36,
+          "luca": 9823.71,
+          "delta": -972.35,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 632.24,
+          "luca": 701.69,
+          "delta": -69.45,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3546.13,
+          "luca": 4735.26,
+          "delta": -1189.13,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 227.01,
+          "luca": 281.89,
+          "delta": -54.88,
+          "derived": true
+        },
+        {
+          "key": "bes",
+          "label": "BES kesintisi",
+          "group": "kesinti",
+          "dhr": 1896.72,
+          "luca": 2105,
+          "delta": -208.28,
+          "derived": false
+        },
+        {
+          "key": "kesinti",
+          "label": "Diger kesinti (icra vb.)",
+          "group": "kesinti",
+          "dhr": 1740,
+          "luca": 0,
+          "delta": 1740,
+          "derived": false
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 51546.54,
+          "luca": 52521.8,
+          "delta": -975.26,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "BES-BASE",
+          "short": "BES matrahı farklı",
+          "title": "BES %3 matrahı farklı",
+          "detail": "DHR BES'i SGK matrahı üzerinden (1.896,72), Luca toplam kazanç üzerinden (2.105) hesaplıyor. Ayrıca DHR 1.740 TL BES katkısını brüte ekleyip aynı tutarı kesinti olarak düşüyor (net-nötr); Luca'da böyle bir kalem yok."
+        }
+      ]
+    },
+    {
+      "n": 24,
+      "name": "Selin Bayraktar",
+      "note": "Asgari ücret civarı",
+      "netDelta": -783.61,
+      "severity": "low",
+      "inputMismatchCount": 0,
+      "items": [
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 34708,
+          "luca": 36850.49,
+          "delta": -2142.49,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 4372.48,
+          "luca": 5159.07,
+          "delta": -786.59,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 312.32,
+          "luca": 368.5,
+          "delta": -56.18,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 487.11,
+          "delta": -487.11,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 0,
+          "luca": 29,
+          "delta": -29,
+          "derived": true
+        },
+        {
+          "key": "net",
+          "label": "Net odenen",
+          "group": "ozet",
+          "dhr": 30023.2,
+          "luca": 30806.81,
+          "delta": -783.61,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "GV-ASGARI",
+          "short": "Asgari ücret istisnası yok",
+          "title": "Luca'da asgari ücret GV/damga istisnası uygulanmamış",
+          "detail": "DHR GVK 23/18 istisnasıyla gelir ve damga vergisini 0'a indiriyor, Luca kesiyor. Düzeltme: Luca'da asgari ücret istisnasını aktive edin."
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "name": "Vildan Ertem",
+      "note": "Net ücret",
+      "netDelta": 0,
+      "severity": "low",
+      "inputMismatchCount": 3,
+      "items": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 51859.52,
+          "luca": 42000,
+          "delta": 9859.52,
+          "derived": false
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 6791.13,
+          "luca": 5500,
+          "delta": 1291.13,
+          "derived": false
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3951.2,
+          "luca": 3200,
+          "delta": 751.2,
+          "derived": false
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 62601.85,
+          "luca": 64676.64,
+          "delta": -2074.79,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8277.62,
+          "luca": 9054.73,
+          "delta": -777.11,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 591.26,
+          "luca": 646.77,
+          "delta": -55.51,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 2858.62,
+          "luca": 4034.94,
+          "delta": -1176.32,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 174.35,
+          "luca": 240.2,
+          "delta": -65.85,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "NET-GROSSUP",
+          "short": "Net→brüt yapılmamış",
+          "title": "Net ücret Luca'da brütleştirilmemiş",
+          "detail": "Net ücretli çalışanda DHR net→brüt gross-up yapıyor, Luca net tutarı brüt ücret alanına yazılmış. Düzeltme: Luca'da ücreti net olarak işaretleyin."
+        }
+      ]
+    },
+    {
+      "n": 30,
+      "name": "Ceren Toprak",
+      "note": "Net + FM (çapraz)",
+      "netDelta": 0,
+      "severity": "low",
+      "inputMismatchCount": 4,
+      "items": [
+        {
+          "key": "salary",
+          "label": "Temel maas / ucret",
+          "group": "kazanc",
+          "dhr": 52287.7,
+          "luca": 42000,
+          "delta": 10287.7,
+          "derived": false
+        },
+        {
+          "key": "meal",
+          "label": "Yemek yardimi",
+          "group": "kazanc",
+          "dhr": 6847.2,
+          "luca": 5500,
+          "delta": 1347.2,
+          "derived": false
+        },
+        {
+          "key": "transport",
+          "label": "Yol yardimi",
+          "group": "kazanc",
+          "dhr": 3983.82,
+          "luca": 3200,
+          "delta": 783.82,
+          "derived": false
+        },
+        {
+          "key": "overtime",
+          "label": "Fazla mesai",
+          "group": "kazanc",
+          "dhr": 4183.02,
+          "luca": 3360,
+          "delta": 823.02,
+          "derived": false
+        },
+        {
+          "key": "gross",
+          "label": "Toplam kazanc",
+          "group": "ozet",
+          "dhr": 67301.74,
+          "luca": 69376.52,
+          "delta": -2074.78,
+          "derived": true
+        },
+        {
+          "key": "sgk",
+          "label": "SGK isci",
+          "group": "kesinti",
+          "dhr": 8935.6,
+          "luca": 9712.71,
+          "delta": -777.11,
+          "derived": true
+        },
+        {
+          "key": "unemployment",
+          "label": "Issizlik isci",
+          "group": "kesinti",
+          "dhr": 638.26,
+          "luca": 693.77,
+          "delta": -55.51,
+          "derived": true
+        },
+        {
+          "key": "gv",
+          "label": "Gelir vergisi",
+          "group": "kesinti",
+          "dhr": 3457.85,
+          "luca": 4634.17,
+          "delta": -1176.32,
+          "derived": true
+        },
+        {
+          "key": "damga",
+          "label": "Damga vergisi",
+          "group": "kesinti",
+          "dhr": 210.03,
+          "luca": 275.87,
+          "delta": -65.84,
+          "derived": true
+        }
+      ],
+      "causes": [
+        {
+          "id": "MEAL-NET",
+          "short": "Yemek/yol NET girilmiş",
+          "title": "Yemek/yol Luca'da NET (N) girilmiş",
+          "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın."
+        },
+        {
+          "id": "SGK-BASE",
+          "short": "SGK istisnası yok",
+          "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+          "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin."
+        },
+        {
+          "id": "NET-GROSSUP",
+          "short": "Net→brüt yapılmamış",
+          "title": "Net ücret Luca'da brütleştirilmemiş",
+          "detail": "Net ücretli çalışanda DHR net→brüt gross-up yapıyor, Luca net tutarı brüt ücret alanına yazılmış. Düzeltme: Luca'da ücreti net olarak işaretleyin."
+        },
+        {
+          "id": "FM-BASE",
+          "short": "FM tabanı farklı",
+          "title": "Fazla mesai saat ücreti tabanı farklı",
+          "detail": "Luca fazla mesaiyi net ücret üzerinden hesapladığı için 3.360 TL çıkıyor, DHR brüt ücret tabanıyla 4.183,02 TL hesaplıyor. Düzeltme: Luca'da FM tutarını brüt tabana göre elle girin."
+        }
+      ]
+    }
+  ],
+  "mismatchSummary": {
+    "totalCompared": 32,
+    "mismatchCount": 32,
+    "fullMatchCount": 0,
+    "netWithin100": 2,
+    "causeTally": [
+      {
+        "id": "MEAL-NET",
+        "short": "Yemek/yol NET girilmiş",
+        "title": "Yemek/yol Luca'da NET (N) girilmiş",
+        "detail": "Luca puantajında Yemek ve Yol satırları N (net) işaretli. Luca bu tutarları brütleştirip toplam kazanca ekliyor, DHR ise brüt olarak işliyor. Düzeltme: Luca'da bu iki satırı B (brüt) yapın.",
+        "count": 31
+      },
+      {
+        "id": "SGK-BASE",
+        "short": "SGK istisnası yok",
+        "title": "Luca'da yemek/yol SGK istisnası tanımsız",
+        "detail": "Luca SGK işçi payını toplam kazancın tamamı üzerinden %14 hesaplıyor. DHR yemek/yol istisnasını SGK matrahından düşüyor. Düzeltme: Luca'da yemek/yol kalemlerine SGK istisna tanımı verin.",
+        "count": 29
+      },
+      {
+        "id": "ENGELLI",
+        "short": "Engelli indirimi farkı",
+        "title": "Engelli indirimi yalnızca Luca'da",
+        "detail": "Luca engellilik indirimini gelir vergisi matrahından düşüyor, DHR düşmüyor. GVK md.31 gereği indirim uygulanmalı; DHR tarafı eksik.",
+        "count": 4
+      },
+      {
+        "id": "DAMGA-5746",
+        "short": "Damga terkini farkı",
+        "title": "Damga vergisi terkini yalnızca Luca'da",
+        "detail": "Luca 5746 kapsamında damga vergisini terkin ediyor (0 veya kısmi), DHR damgayı tam kesiyor. Hangisinin doğru olduğu 5746 md.3 kapsamına göre netleştirilmeli.",
+        "count": 4
+      },
+      {
+        "id": "GV-4691",
+        "short": "4691 GV istisnası yok",
+        "title": "Luca'da 4691 gelir vergisi istisnası yok",
+        "detail": "DHR teknokent (4691) istisnasıyla gelir vergisini 0 hesaplıyor, Luca tam gelir vergisi kesiyor. Düzeltme: Luca'da ilgili personele 4691 GV stopaj terkini tanımlayın.",
+        "count": 3
+      },
+      {
+        "id": "SGDP",
+        "short": "SGDP oranı farklı",
+        "title": "Emekli SGDP oranı farklı",
+        "detail": "Luca emekli için SGDP %7,5 uyguluyor ve işsizlik kesmiyor. DHR %14 SGK + %1 işsizlik kesiyor. Emekli çalışanda doğru olan SGDP'dir; DHR tarafı hatalı.",
+        "count": 2
+      },
+      {
+        "id": "NET-GROSSUP",
+        "short": "Net→brüt yapılmamış",
+        "title": "Net ücret Luca'da brütleştirilmemiş",
+        "detail": "Net ücretli çalışanda DHR net→brüt gross-up yapıyor, Luca net tutarı brüt ücret alanına yazılmış. Düzeltme: Luca'da ücreti net olarak işaretleyin.",
+        "count": 2
+      },
+      {
+        "id": "EKSIK-GUN",
+        "short": "Eksik gün girilmemiş",
+        "title": "Kısmi istihdam eksik günü Luca'da girilmemiş",
+        "detail": "DHR 26 gün çalışma / 4 gün eksik (kısmi istihdam) ile hesaplıyor, Luca 30 gün tam ücret veriyor. Düzeltme: Luca puantajında eksik gün ve nedenini girin.",
+        "count": 1
+      },
+      {
+        "id": "GV-KUMULATIF",
+        "short": "Kümülatif matrah yok",
+        "title": "Geçmiş GV kümülatif matrahı Luca'da yok",
+        "detail": "DHR devreden kümülatif matrahla üst vergi diliminden kesiyor, Luca sıfır matrahtan başlıyor. Düzeltme: Luca'da devreden GV matrahını girin.",
+        "count": 1
+      },
+      {
+        "id": "STAJYER",
+        "short": "Stajyer SGK farkı",
+        "title": "Stajyerde SGK kesintisi farkı",
+        "detail": "Luca stajyerde SGK ve işsizlik kesmiyor (yalnızca iş kazası işveren primi). DHR %14 + %1 kesiyor. DHR tarafı hatalı.",
+        "count": 1
+      },
+      {
+        "id": "OKAN-MASRAF",
+        "short": "Masraf brüte girmiyor (DHR bug)",
+        "title": "DHR hatası: masraf brüte yansımıyor",
+        "detail": "Onaylı 750 TL masraf ödeme talebi DHR bordrosunda brüte eklenmemiş (ödeme kaydı paymentId=null olarak bordroya bağlanmamış). Luca'da 750 TL brüte dahil. DHR tarafı hatalı.",
+        "count": 1
+      },
+      {
+        "id": "BES-BASE",
+        "short": "BES matrahı farklı",
+        "title": "BES %3 matrahı farklı",
+        "detail": "DHR BES'i SGK matrahı üzerinden (1.896,72), Luca toplam kazanç üzerinden (2.105) hesaplıyor. Ayrıca DHR 1.740 TL BES katkısını brüte ekleyip aynı tutarı kesinti olarak düşüyor (net-nötr); Luca'da böyle bir kalem yok.",
+        "count": 1
+      },
+      {
+        "id": "GV-ASGARI",
+        "short": "Asgari ücret istisnası yok",
+        "title": "Luca'da asgari ücret GV/damga istisnası uygulanmamış",
+        "detail": "DHR GVK 23/18 istisnasıyla gelir ve damga vergisini 0'a indiriyor, Luca kesiyor. Düzeltme: Luca'da asgari ücret istisnasını aktive edin.",
+        "count": 1
+      },
+      {
+        "id": "FM-BASE",
+        "short": "FM tabanı farklı",
+        "title": "Fazla mesai saat ücreti tabanı farklı",
+        "detail": "Luca fazla mesaiyi net ücret üzerinden hesapladığı için 3.360 TL çıkıyor, DHR brüt ücret tabanıyla 4.183,02 TL hesaplıyor. Düzeltme: Luca'da FM tutarını brüt tabana göre elle girin.",
+        "count": 1
+      }
+    ],
+    "normalizations": [
+      "Metin Uslu: DHR brütüne gömülü 5.000,00 TL prim kolonuna taşındı (DHR Excel'inde ayrı kolon yok) — tutar Luca ile birebir aynı.",
+      "Ufuk Demirel: DHR brütüne gömülü 3.500,00 TL prim kolonuna taşındı (DHR Excel'inde ayrı kolon yok) — tutar Luca ile birebir aynı.",
+      "Yasin Firatin: DHR brütüne gömülü 10.000,00 TL ikramiye kolonuna taşındı (DHR Excel'inde ayrı kolon yok) — tutar Luca ile birebir aynı.",
+      "Baran Sokmen: DHR brütüne gömülü 4.500,00 TL prim kolonuna taşındı (DHR Excel'inde ayrı kolon yok) — tutar Luca ile birebir aynı.",
+      "32 kişide Luca işsizlik işçi payı net mutabakatından geri hesaplandı: Luca PDF'i bu satırı ayrı basmıyor, tutar nete yansıyor (normal profilde brütün %1'i, emekli/stajyerde 0)."
     ]
   }
 }
