@@ -1,0 +1,102 @@
+{
+  "title": "YZ bordro motoru — 2026 Türkiye mevzuatı",
+  "disclaimer": "Aylık izole hesap (kümülatif dilim yok). 5746/4691 işveren teşviki ve GV terkin oranları kanun tarifesine yazılmaz; işçi SGK+GVK+damga standart uygulanır. Bilgilendirme amaçlıdır.",
+  "monthExemptTax": {
+    "1": 4211.33,
+    "2": 4211.33,
+    "3": 4211.33,
+    "4": 4211.33,
+    "5": 4211.33,
+    "6": 4211.33,
+    "7": 4537.75,
+    "8": 5615.1,
+    "9": 5615.1,
+    "10": 5615.1,
+    "11": 5615.1,
+    "12": 5615.1
+  },
+  "params": {
+    "asgariBrut": 33030,
+    "sgkIsciOran": 0.14,
+    "issizlikIsciOran": 0.01,
+    "sgdpIsciOran": 0.075,
+    "stajyerGssOran": 0.05,
+    "sgkTavanKat": 7.5,
+    "damgaOran": 0.00759
+  },
+  "gvWageBrackets2026": [
+    { "limit": 190000, "rate": 0.15, "fixed": 0 },
+    { "limit": 400000, "rate": 0.2, "fixed": 28500 },
+    { "limit": 1500000, "rate": 0.27, "fixed": 70500 },
+    { "limit": 5300000, "rate": 0.35, "fixed": 367500 },
+    { "limit": null, "rate": 0.4, "fixed": 1697500 }
+  ],
+  "sources": [
+    {
+      "id": "gvk-193",
+      "title": "193 sayılı Gelir Vergisi Kanunu md. 23/18 ve md. 103",
+      "usedFor": "Ücret GV tevkifatı, asgari ücret GV istisnası, 2026 tarife dilimleri (ücretli).",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=193&MevzuatTur=1&MevzuatTertip=5"
+    },
+    {
+      "id": "gv-332",
+      "title": "332 seri nolu Gelir Vergisi Genel Tebliği — 2026 tarife",
+      "usedFor": "190.000 %15; 400.000 %20; 1.500.000 %27; 5.300.000 %35; üzeri %40 (ücret).",
+      "url": "https://www.resmigazete.gov.tr/"
+    },
+    {
+      "id": "gib-2026",
+      "title": "GİB — 2026 yılı ücret gelirlerinde uygulanacak vergi tarifesi",
+      "usedFor": "Resmi dilim tutarları.",
+      "url": "https://www.gib.gov.tr/vergi_daireleri/2026-yili-ucret-gelirlerinde-uygulanacak-vergi-tarifesi"
+    },
+    {
+      "id": "5510",
+      "title": "5510 sayılı Sosyal Sigortalar ve Genel Sağlık Sigortası Kanunu",
+      "usedFor": "İşçi SGK primi %14 (MYÖ+GSS); prime esas kazanç tavanı 7,5 × asgari ücret.",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5510&MevzuatTur=1&MevzuatTertip=5"
+    },
+    {
+      "id": "4447",
+      "title": "4447 sayılı İşsizlik Sigortası Kanunu",
+      "usedFor": "İşçi işsizlik primi %1 (emekli SGDP ve stajyerde 0).",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4447&MevzuatTur=1&MevzuatTertip=5"
+    },
+    {
+      "id": "488",
+      "title": "488 sayılı Damga Vergisi Kanunu",
+      "usedFor": "Ücret damga ‰7,59; asgari ücret damga istisnası (~250,70 TL).",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=488&MevzuatTur=1&MevzuatTertip=5"
+    },
+    {
+      "id": "7352",
+      "title": "7352 sayılı Kanun (2022) — asgari ücret GV istisnası",
+      "usedFor": "İstisna = asgari ücret GV matrahı × ilk dilim. 2026 Ocak–Haz 4.211,33; Temmuz 4.537,75; Ağu–Ara 5.615,10 TL vergi.",
+      "url": "https://www.resmigazete.gov.tr/"
+    },
+    {
+      "id": "asgari-2026",
+      "title": "2026 asgari ücret (33.030 TL brüt)",
+      "usedFor": "SGK taban/tavan ve istisna formülünün brüt girdisi.",
+      "url": "https://www.resmigazete.gov.tr/"
+    },
+    {
+      "id": "4632",
+      "title": "4632 sayılı Bireysel Emeklilik Tasarruf ve Yatırım Sistemi Kanunu",
+      "usedFor": "YZ, BES işçi kesintisini yalnızca sözleşmede/bordroda BES olanlara uygular; otomatik herkese kesmez.",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4632&MevzuatTur=1&MevzuatTertip=5"
+    },
+    {
+      "id": "5746",
+      "title": "5746 sayılı Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun",
+      "usedFor": "Ar-Ge personeli SGK işveren teşviki / GV stopaj terkin — YZ işçi kolonunda standart 5510+GVK; oran uydurulmaz.",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=5746&MevzuatTur=1&MevzuatTertip=5"
+    },
+    {
+      "id": "4691",
+      "title": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu",
+      "usedFor": "Bölge kazancı GV istisnası. Mevcut D1 kanun tarifesine dokunulmaz; YZ işçi neti standart hesaplar.",
+      "url": "https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=4691&MevzuatTur=1&MevzuatTertip=5"
+    }
+  ]
+}

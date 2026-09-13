@@ -1,0 +1,1541 @@
+{
+  "counter15": {
+    "anaEylulCount": 15,
+    "expectedAktif": 15,
+    "pasifShouldBeZero": 0,
+    "labOpen": 2,
+    "op": 3,
+    "kenarSep": 54,
+    "yuvarlama": 100,
+    "sirketB": 1
+  },
+  "periods": {
+    "b-2026-09": {
+      "id": "0fbc3cbc-687a-4640-b386-514fa3d9555c",
+      "year": 2026,
+      "month": 9,
+      "count": 1
+    },
+    "ana-2026-09": {
+      "id": "fe993870-b937-4756-8097-58b358f16a8e",
+      "year": 2026,
+      "month": 9,
+      "count": 15,
+      "ids": [
+        "dcbf5eb8-6b6d-4cae-8713-0a4f8c80e515",
+        "f40701da-56a5-4e08-b7ff-33eb8c410e39",
+        "1c5e4a69-d156-4fd2-9e34-a2bd34f6b10c",
+        "f6aa044c-93c4-4442-ad0e-f7d2a42e13ba",
+        "4cc31536-a542-4524-a6cd-2e8759d09e9b",
+        "66b47d5e-f8b3-4379-8374-2cbedcf92a12",
+        "378416e5-ed8a-4d3a-a412-ca223b242c87",
+        "b3b6678c-95f0-4759-ba0c-7cae8a08742a",
+        "59ab432f-80d1-4c72-9264-3ba13c3a6732",
+        "d627b617-5bc8-4339-8534-898acaa3d23b",
+        "59612862-4a70-4d9f-b754-ab71c0726c1e",
+        "ffef4970-6c07-4e64-bce3-0fee290fe79b",
+        "9aaee7d8-a15a-43ea-b588-3d44ea113694",
+        "692021c0-4375-4ff2-8322-d9589064f08b",
+        "5019b73b-e2ec-4006-9f2a-32a7ffc518ab"
+      ]
+    },
+    "kenar-2026-09": {
+      "id": "12f9269c-a37b-4cb8-a18a-5f65c9cd1ada",
+      "year": 2026,
+      "month": 9,
+      "count": 54,
+      "ids": [
+        "3e590d38-dbd0-48b4-be9a-9d1b8cafcdeb",
+        "5c7e686f-61ab-4061-be42-c8186a76370a",
+        "a5d80594-66d3-43f1-be28-b2bbf9588a5c",
+        "3a5173b7-bb2c-4ff7-bc5a-202e45393ed4",
+        "82d41ffe-c781-4527-8049-ff37a1d43cd9",
+        "ef6d4f48-c5be-4d52-9cdd-f1947b566575",
+        "d239d4a3-e186-46c3-907d-4623e270e582",
+        "2f83f1ef-97d1-4b69-a413-6de626aebc30",
+        "801345ea-ff71-45b7-9600-40313603ccf3",
+        "531bc902-78f3-45f5-a6d2-63636058b7f9",
+        "95b72d92-fb07-44e0-bad2-25b519992850",
+        "cd081730-e7ec-4f02-a3c2-ad2ffc667ddc",
+        "ed63cb36-cc09-447b-b6ad-6db550f0e5ba",
+        "59a72579-20b2-4980-955d-8d86bc832174",
+        "ca5d4950-a37a-4f97-b048-bf1143abeb1a",
+        "bf200b7b-5a76-4317-8bd2-6917ef30db8d",
+        "a39086eb-ac93-444a-b9b2-3d0c874b7f1c",
+        "d400ba64-e154-4581-a8bf-68d3bd814d84",
+        "70b00aac-d5f2-424f-aa22-60432c08616b",
+        "34aec94d-d55b-4faf-b7d8-c9ffffe561f5",
+        "edbed212-856c-4309-826d-9a3f087dc1e3",
+        "cd47e1bd-0837-424e-a51c-dd9b58675798",
+        "03a62433-127f-4641-a4f3-d868a53de42c",
+        "4e652abc-f511-4ef5-a1ae-e5ddec4def7e",
+        "fcedcb9d-d80b-400a-a6d9-7ff30636a453",
+        "586aebc3-21c7-490d-807a-a02b1ef11c01",
+        "5aad32ae-a51b-450a-a709-eeefd434e5f6",
+        "737033fd-d020-4991-a929-9948b13d0890",
+        "40882ef1-e7eb-480d-bb1a-b67063ec25ca",
+        "00018561-aeba-4569-b9f4-fa1a5e5be036",
+        "90dcda2e-d3de-4cf7-bbe6-32baff0c6964",
+        "30805402-5384-410c-8fd0-be957e8663f7",
+        "4a61e87f-aa5b-49d9-9d0e-a4c0dc8a04fb",
+        "89d94817-fdb9-4406-8500-fd629552a18d",
+        "16c2ae0a-8449-44fa-93f0-e782b1283af3",
+        "ce1ba764-12c7-4b02-b311-13dc14b15cc4",
+        "1846af1d-9a18-41dd-91fe-c74e85749934",
+        "5761ec36-2a5e-4e7e-8c14-d030cc9b9c81",
+        "8633d778-26cd-4530-a45b-bcf1d32eca05",
+        "4092f957-41a6-47e9-bf56-41f8fb66bef2"
+      ]
+    },
+    "tak-2027-02": {
+      "id": "44cbd9c8-a0a5-4649-b1a1-80cafe08ef8b",
+      "year": 2027,
+      "month": 2,
+      "count": 1,
+      "ids": [
+        "45eec776-ae1e-4b8f-a2c1-1df2d86a6955"
+      ]
+    },
+    "tak-2028-02": {
+      "id": "100ab975-d4ee-4184-a950-8cb342136194",
+      "year": 2028,
+      "month": 2,
+      "count": 1,
+      "ids": [
+        "45eec776-ae1e-4b8f-a2c1-1df2d86a6955"
+      ]
+    },
+    "blok-2026-09": {
+      "id": "dfdb61b0-766b-4664-870b-8dcf74d2e35c",
+      "year": 2026,
+      "month": 9,
+      "count": 1,
+      "ids": [
+        "8d129b62-b637-4b28-bb3c-11105a4b49e2"
+      ]
+    },
+    "lab-2026-09": {
+      "id": "f3a13bd6-739f-4c9d-a883-e2fdf720e787",
+      "year": 2026,
+      "month": 9,
+      "count": 2,
+      "ids": [
+        "370bf785-5369-452e-a3ea-e946d526b768",
+        "6efaccf0-afe5-403c-9eec-29e905f5426d"
+      ]
+    },
+    "op-2026-09": {
+      "id": "70cb2aae-0203-422f-a86b-c027ec49837a",
+      "year": 2026,
+      "month": 9,
+      "count": 3,
+      "ids": [
+        "4e55ad14-858d-4b66-bf3f-3ca84bd875d6",
+        "77b8d600-4689-4eac-abec-b05103f48c76",
+        "bb983671-0c14-4c8a-ab3d-33217b00d729"
+      ]
+    },
+    "yuv-2026-09": {
+      "id": "bf03dcf0-a61b-4c94-8d25-87bb5614bdf1",
+      "year": 2026,
+      "month": 9,
+      "count": 100,
+      "ids": [
+        "f45de947-cb9d-45f2-85c9-70c9a67baf25",
+        "e7a4f34f-d026-4141-ad0f-5bb3c0826d33",
+        "161f5b6d-3f68-4828-a3e5-b451a75baf38",
+        "d0872f93-d57c-4f08-9678-67a4ef976c54",
+        "f299dd67-a6f1-4d36-9335-3cab2b8dc20c",
+        "29ddddac-13f8-439d-9218-a9b2c0815475",
+        "28a20174-a868-4fbb-b21f-8dc799e9621e",
+        "80b76878-0332-4455-a47f-680d92a94dc9",
+        "b4145e7a-01e1-4ca7-903f-8da32c7fccb7",
+        "2a7b1e99-23e0-4126-a196-2d5172c9c317",
+        "5636698f-38e6-49a1-b8e7-3fb23f741a49",
+        "1edb4e5f-aec9-4d3e-95fd-8dfb7491108c",
+        "05ea0d74-9f33-4cc0-9db4-af4529f17df9",
+        "afe612e3-661d-4438-ae82-8bfb75ebd541",
+        "6f155354-caff-40aa-8141-19e78ada8cea",
+        "a9e37e67-9827-4681-a7f3-c549fbcb2e27",
+        "168f2efa-f58b-4717-bdb2-004fa7640221",
+        "ae403ae3-cd5f-4f1e-a9c0-7eed348d2015",
+        "00ab3d51-e431-4612-8a59-99a786e2e56e",
+        "3993f81e-2249-4456-b8e4-940c6c64c57b",
+        "f2c51401-eb26-459a-b548-fa5ffda410ca",
+        "46188912-7519-4438-b2d8-69f2f160da24",
+        "5d7a9889-ed45-4df1-9bfa-9b960f9c0d8f",
+        "c9e74ae7-41d3-42af-a89e-6a57f2769b09",
+        "9f5f122b-1687-46dd-b896-a2129062aab1",
+        "60550cc4-de9f-4881-85ed-7eb421082365",
+        "f9c919c0-e55d-40f2-a955-31889b9894dd",
+        "8787de8f-b590-418f-aa64-4cdc4e7c22ff",
+        "6afecf35-6f55-4929-b639-fe97f66c121a",
+        "7005a3d6-16a3-462d-a6e3-681c8455664e",
+        "a51c3b57-1dd6-47a7-811d-0ca6a595747c",
+        "56d34035-636a-43e5-8072-42101976fd27",
+        "9ba3865b-5132-4c9a-8ee7-3df96e2443e2",
+        "fd86e07e-025c-478e-bfbc-5510501b42f7",
+        "596089f6-0b49-4ff8-8d28-5da7378da77b",
+        "2a32f59f-9c65-409a-9072-4b48c7bf5c46",
+        "aa332cab-b273-4c5d-8d88-8f039afd5fb8",
+        "b0508331-fbe9-4065-8b0d-b38b0d4b8822",
+        "8c4d7eb4-cff8-45c7-8578-9427b3625283",
+        "fdbf9a2e-26d6-4ea1-b05a-477b51513e68"
+      ]
+    },
+    "ana-2026-08": {
+      "id": "7f86fa31-9c30-404e-aa2f-ebea1aa18085",
+      "year": 2026,
+      "month": 8,
+      "count": 16,
+      "ids": [
+        "b3b6678c-95f0-4759-ba0c-7cae8a08742a",
+        "5019b73b-e2ec-4006-9f2a-32a7ffc518ab",
+        "59612862-4a70-4d9f-b754-ab71c0726c1e",
+        "9aaee7d8-a15a-43ea-b588-3d44ea113694",
+        "4cc31536-a542-4524-a6cd-2e8759d09e9b",
+        "378416e5-ed8a-4d3a-a412-ca223b242c87",
+        "692021c0-4375-4ff2-8322-d9589064f08b",
+        "76773dcb-d76f-4675-8c3b-349fb5973124",
+        "1c5e4a69-d156-4fd2-9e34-a2bd34f6b10c",
+        "dcbf5eb8-6b6d-4cae-8713-0a4f8c80e515",
+        "d627b617-5bc8-4339-8534-898acaa3d23b",
+        "4cd7faf8-06c1-47b0-8eee-15efb193af37",
+        "f40701da-56a5-4e08-b7ff-33eb8c410e39",
+        "59ab432f-80d1-4c72-9264-3ba13c3a6732",
+        "f6aa044c-93c4-4442-ad0e-f7d2a42e13ba",
+        "66b47d5e-f8b3-4379-8374-2cbedcf92a12"
+      ]
+    },
+    "kenar-2026-08": {
+      "id": "c815c3db-f5ef-4d0a-8d27-ce7e18e40aa8",
+      "year": 2026,
+      "month": 8,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 53
+    },
+    "ana-2026-01": {
+      "id": "a112a7bb-5110-476f-8be9-a59f856524c9",
+      "year": 2026,
+      "month": 1,
+      "ou": "537a4836-eba8-4303-9675-a1265cce3819",
+      "count": 16
+    },
+    "op-2026-01": {
+      "id": "2d0829f8-0aa9-4ab3-9bd4-478966e2502f",
+      "year": 2026,
+      "month": 1,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "kenar-2026-01": {
+      "id": "8b73ff17-bc1e-40e7-8fa5-ad0198f1ba12",
+      "year": 2026,
+      "month": 1,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 50
+    },
+    "lab-2026-01": {
+      "id": "5a8fb106-937b-40bf-94ba-3743cfb4130f",
+      "year": 2026,
+      "month": 1,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-01": {
+      "id": "04734f01-331e-492a-8faf-bec30fcb0660",
+      "year": 2026,
+      "month": 1,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "tak-2026-01": {
+      "id": "868a7646-72e8-46a7-aabc-bdcc0695659d",
+      "year": 2026,
+      "month": 1,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "b-2026-01": {
+      "id": "92336143-bc65-42bc-8a2f-b7aeb8bc71a3",
+      "year": 2026,
+      "month": 1,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-01": {
+      "id": "d3bffe56-17a7-42d8-b410-ff7b10430136",
+      "year": 2026,
+      "month": 1,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "ana-2026-02": {
+      "id": "bdfca77a-7c61-4688-be36-d96c27eb2755",
+      "year": 2026,
+      "month": 2,
+      "ou": "537a4836-eba8-4303-9675-a1265cce3819",
+      "count": 16
+    },
+    "op-2026-02": {
+      "id": "c90ad4fd-188f-4cc9-92be-f0a4dbe990ce",
+      "year": 2026,
+      "month": 2,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "kenar-2026-02": {
+      "id": "6b8d14e0-5fe1-4000-aa12-ebbfc9c34f41",
+      "year": 2026,
+      "month": 2,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 50
+    },
+    "lab-2026-02": {
+      "id": "ae2d0102-06fe-4e16-b366-badb119de0f1",
+      "year": 2026,
+      "month": 2,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-02": {
+      "id": "6ea42b2e-b45e-4017-82f5-a6c384bd74d6",
+      "year": 2026,
+      "month": 2,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "tak-2026-02": {
+      "id": "50b867fe-9597-46ab-8c23-516398552181",
+      "year": 2026,
+      "month": 2,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "b-2026-02": {
+      "id": "76ebb4f1-6355-4425-8ae2-a7fe0391aa52",
+      "year": 2026,
+      "month": 2,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-02": {
+      "id": "6081a316-3446-4703-bff8-822eed76b4a1",
+      "year": 2026,
+      "month": 2,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "ana-2026-03": {
+      "id": "e26e807f-38f9-43a2-b05c-d881b03c48f6",
+      "year": 2026,
+      "month": 3,
+      "ou": "537a4836-eba8-4303-9675-a1265cce3819",
+      "count": 16
+    },
+    "op-2026-03": {
+      "id": "5eac91a5-1f05-4dc4-b5e2-6c460e3ea21a",
+      "year": 2026,
+      "month": 3,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "kenar-2026-03": {
+      "id": "ba8ae75e-5090-4d97-8c53-cf69e995b64a",
+      "year": 2026,
+      "month": 3,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 50
+    },
+    "lab-2026-03": {
+      "id": "c06ac9d2-7c3d-4db5-8372-83395ce40c67",
+      "year": 2026,
+      "month": 3,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-03": {
+      "id": "aa534c91-49b8-497d-be20-45749948c608",
+      "year": 2026,
+      "month": 3,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "tak-2026-03": {
+      "id": "44d15ea6-2963-4c43-84fb-f517e7b83dd3",
+      "year": 2026,
+      "month": 3,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "b-2026-03": {
+      "id": "adba7e9f-25ee-4f6b-b80c-5ea28a39a083",
+      "year": 2026,
+      "month": 3,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-03": {
+      "id": "e9121f1d-d1e9-4104-b946-360e0968e4d9",
+      "year": 2026,
+      "month": 3,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "ana-2026-04": {
+      "id": "6972410f-0416-4653-b271-6b4c9b0126ac",
+      "year": 2026,
+      "month": 4,
+      "ou": "537a4836-eba8-4303-9675-a1265cce3819",
+      "count": 16
+    },
+    "op-2026-04": {
+      "id": "72054974-0e10-4350-84e7-1d4652dbdf26",
+      "year": 2026,
+      "month": 4,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "kenar-2026-04": {
+      "id": "bd8be605-1eba-4a63-a0a6-e99b1c21e624",
+      "year": 2026,
+      "month": 4,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 50
+    },
+    "lab-2026-04": {
+      "id": "411309dd-bbd2-4c1a-94f1-328489e433cd",
+      "year": 2026,
+      "month": 4,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-04": {
+      "id": "fa1b0f58-086b-4b7f-831b-c6a7fa0fbd8c",
+      "year": 2026,
+      "month": 4,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "tak-2026-04": {
+      "id": "f492cbc0-e417-4e2a-9821-205167bf35bf",
+      "year": 2026,
+      "month": 4,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "b-2026-04": {
+      "id": "cd5413af-9a40-4925-abc3-8349c8e47e21",
+      "year": 2026,
+      "month": 4,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-04": {
+      "id": "df897a0c-5678-4ec9-b618-1e33ae36d725",
+      "year": 2026,
+      "month": 4,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "ana-2026-05": {
+      "id": "0bf6180a-aec7-4e16-bc24-504728fa7415",
+      "year": 2026,
+      "month": 5,
+      "ou": "537a4836-eba8-4303-9675-a1265cce3819",
+      "count": 16
+    },
+    "op-2026-05": {
+      "id": "f5b93027-5047-481a-be0f-2c82c2781eda",
+      "year": 2026,
+      "month": 5,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "kenar-2026-05": {
+      "id": "1605aa1c-275c-4cd0-9cda-aafd7c314dca",
+      "year": 2026,
+      "month": 5,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 50
+    },
+    "lab-2026-05": {
+      "id": "cefe5faf-2457-4d17-b0f5-0fdd07ece791",
+      "year": 2026,
+      "month": 5,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-05": {
+      "id": "b257276b-b979-46dd-b8e7-5cdb58fe7473",
+      "year": 2026,
+      "month": 5,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "tak-2026-05": {
+      "id": "75eef620-50db-4b87-8ca1-71da85e054db",
+      "year": 2026,
+      "month": 5,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "b-2026-05": {
+      "id": "ef893102-bcd9-47dd-8427-0b033b9b6faa",
+      "year": 2026,
+      "month": 5,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-05": {
+      "id": "f6e4996b-6b5e-47c9-92f4-d7c9a7c9436d",
+      "year": 2026,
+      "month": 5,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "ana-2026-06": {
+      "id": "2c732fe3-3a2f-4386-b605-f92e352097ac",
+      "year": 2026,
+      "month": 6,
+      "ou": "537a4836-eba8-4303-9675-a1265cce3819",
+      "count": 16
+    },
+    "op-2026-06": {
+      "id": "92508b89-50e3-4d1f-b6b0-4e3a83b2569f",
+      "year": 2026,
+      "month": 6,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "kenar-2026-06": {
+      "id": "2af32f49-11bc-4e47-90fc-c0501613dcf6",
+      "year": 2026,
+      "month": 6,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 50
+    },
+    "lab-2026-06": {
+      "id": "e93445f9-6a1a-4ae2-924b-4ae0cdd1f574",
+      "year": 2026,
+      "month": 6,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-06": {
+      "id": "4b251405-a124-45d7-a3cf-6052ef40f5b7",
+      "year": 2026,
+      "month": 6,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "tak-2026-06": {
+      "id": "b37d5a65-01fc-4f5c-aaab-f85678497ce2",
+      "year": 2026,
+      "month": 6,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "b-2026-06": {
+      "id": "86d42bca-385e-439e-9711-42bd63849ef9",
+      "year": 2026,
+      "month": 6,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-06": {
+      "id": "0902dcfc-bb79-41a9-b276-00f0ded2479e",
+      "year": 2026,
+      "month": 6,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "ana-2026-07": {
+      "id": "287d731b-7a32-4987-935b-167161229088",
+      "year": 2026,
+      "month": 7,
+      "ou": "537a4836-eba8-4303-9675-a1265cce3819",
+      "count": 16
+    },
+    "op-2026-07": {
+      "id": "e2ea1e80-0464-43e1-ace7-beb14965b742",
+      "year": 2026,
+      "month": 7,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "kenar-2026-07": {
+      "id": "12f824e5-8f03-4742-8615-bb26d16cc83b",
+      "year": 2026,
+      "month": 7,
+      "ou": "a3f32447-73fb-4b67-8a45-535cd92393ad",
+      "count": 52
+    },
+    "lab-2026-07": {
+      "id": "71df1e94-b0bf-4f75-a18e-5a53918b81bb",
+      "year": 2026,
+      "month": 7,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-07": {
+      "id": "d5f2de59-e42e-4308-ac7c-0460fa2d0a05",
+      "year": 2026,
+      "month": 7,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "tak-2026-07": {
+      "id": "a6b3281c-75cb-40f4-aa39-bf5340044f3f",
+      "year": 2026,
+      "month": 7,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "b-2026-07": {
+      "id": "7b208286-a5a1-4129-be8b-7fd15f5280db",
+      "year": 2026,
+      "month": 7,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-07": {
+      "id": "ca97605d-7c72-4f43-b2cc-e8ec1770f346",
+      "year": 2026,
+      "month": 7,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "op-2026-08": {
+      "id": "225b8b8c-3cf2-49ae-8811-4ea34695ca0f",
+      "year": 2026,
+      "month": 8,
+      "ou": "62829b31-5e96-4a75-bef5-72f4365dfb86",
+      "count": 3
+    },
+    "lab-2026-08": {
+      "id": "4f62fd2e-d27a-4626-a6bc-909d39b1d36e",
+      "year": 2026,
+      "month": 8,
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "count": 2
+    },
+    "blok-2026-08": {
+      "id": "b3f21174-8400-4a9a-967a-a507b0b72f61",
+      "year": 2026,
+      "month": 8,
+      "ou": "b233a86a-4f51-4483-ab16-694b8b1c91e8",
+      "count": 1
+    },
+    "b-2026-08": {
+      "id": "4b5ad664-2db5-4d83-b79e-ad55162fea09",
+      "year": 2026,
+      "month": 8,
+      "ou": "39989942-58b1-4ec8-8a95-435122391aa1",
+      "count": 1
+    },
+    "yuv-2026-08": {
+      "id": "2f1f6b1d-d66d-4d59-aaa5-c15f67a440ac",
+      "year": 2026,
+      "month": 8,
+      "ou": "6b3c6f68-c1b4-4891-85c4-fcda31c26541",
+      "count": 100
+    },
+    "tak-2026-08": {
+      "id": "a259069a-11fe-42ba-9839-7bd7f680af6d",
+      "year": 2026,
+      "month": 8,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "tak-2026-09": {
+      "id": "8d8a7e1c-0c35-43f1-bf1d-86dab470b85a",
+      "year": 2026,
+      "month": 9,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "tak-2026-10": {
+      "id": "4a17e1f6-0b9e-4ee3-a12c-d71c648e9c64",
+      "year": 2026,
+      "month": 10,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "tak-2026-11": {
+      "id": "592a9ce3-ea01-446b-bc0a-8539cb946ce4",
+      "year": 2026,
+      "month": 11,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "tak-2026-12": {
+      "id": "a031722a-e225-4481-b459-aa1279cb87c4",
+      "year": 2026,
+      "month": 12,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "tak-2027-01": {
+      "id": "f47dc815-af38-45e5-a5ba-3f04cfb26d65",
+      "year": 2027,
+      "month": 1,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    },
+    "tak-2028-01": {
+      "id": "cbd706bd-dd44-4241-b909-2a708cfeaa26",
+      "year": 2028,
+      "month": 1,
+      "ou": "45edef21-6fc5-45e2-85be-03f1a330995c",
+      "count": 1
+    }
+  },
+  "logins": [
+    {
+      "label": "ik",
+      "email": "serrabindal@demo.com",
+      "ok": true,
+      "name": null
+    },
+    {
+      "label": "lab-berk",
+      "email": "berkyuce@demo.com",
+      "ok": true,
+      "name": null
+    },
+    {
+      "label": "ana",
+      "email": "ekinsari@demo.com",
+      "ok": true,
+      "name": null
+    },
+    {
+      "label": "yuv",
+      "email": "yuvarlama01@demo.com",
+      "ok": true,
+      "name": null
+    },
+    {
+      "label": "sirket-b",
+      "email": "edamert@demo.com",
+      "ok": true,
+      "name": null
+    },
+    {
+      "label": "kenar",
+      "email": "vildanferhat@demo.com",
+      "ok": true,
+      "name": null
+    }
+  ],
+  "edges": {
+    "017": {
+      "status": 200,
+      "ok": true,
+      "id": "126f9728-5b10-474b-add9-3f9b9de1632e",
+      "note": "İşyeri geçmişi API yok. Şube SGK sicili Kenar’dan farklı. EmployeePosition: Kenar 1–10.09 / Şube 11–30.09.",
+      "cerenOnKenar": true,
+      "subePosId": "126f9728-5b10-474b-add9-3f9b9de1632e",
+      "positions": [
+        {
+          "id": "9fef0bbf-00f5-4869-a1ec-6b677534bf6d",
+          "pos": "609a9494-f55c-43fd-9d4b-863e235294cf",
+          "start": "2026-01-06T00:00:00",
+          "end": "2026-09-10T00:00:00"
+        },
+        {
+          "id": "28e746b3-90fc-4d82-b951-fc03c7595218",
+          "pos": "126f9728-5b10-474b-add9-3f9b9de1632e",
+          "start": "2026-09-11T00:00:00",
+          "end": "2026-09-30T00:00:00"
+        }
+      ]
+    },
+    "018": {
+      "ozanKenarExit": "2026-09-10",
+      "ozanBHire": "2026-09-11",
+      "companyBPeriod": {
+        "id": "0fbc3cbc-687a-4640-b386-514fa3d9555c",
+        "count": 2,
+        "numbers": [
+          "8061",
+          "8062"
+        ]
+      },
+      "kenarSep": {
+        "n": 53,
+        "ozan": false
+      },
+      "note": "Ozan Kenar Eylül’den silindi (DELETE PayrollPeriod/{id}/employees/{peId} 204), Şirket B Eylül’e eklendi."
+    },
+    "019": {
+      "feb2027": {
+        "id": "44cbd9c8-a0a5-4649-b1a1-80cafe08ef8b",
+        "year": 2027,
+        "month": 2,
+        "count": 1,
+        "ids": [
+          "45eec776-ae1e-4b8f-a2c1-1df2d86a6955"
+        ]
+      },
+      "feb2028": {
+        "id": "100ab975-d4ee-4184-a950-8cb342136194",
+        "year": 2028,
+        "month": 2,
+        "count": 1,
+        "ids": [
+          "45eec776-ae1e-4b8f-a2c1-1df2d86a6955"
+        ]
+      }
+    },
+    "037": {
+      "yuvarlamaCount": 100,
+      "period": {
+        "id": "bf03dcf0-a61b-4c94-8d25-87bb5614bdf1",
+        "year": 2026,
+        "month": 9,
+        "count": 100,
+        "ids": [
+          "f45de947-cb9d-45f2-85c9-70c9a67baf25",
+          "e7a4f34f-d026-4141-ad0f-5bb3c0826d33",
+          "161f5b6d-3f68-4828-a3e5-b451a75baf38",
+          "d0872f93-d57c-4f08-9678-67a4ef976c54",
+          "f299dd67-a6f1-4d36-9335-3cab2b8dc20c",
+          "29ddddac-13f8-439d-9218-a9b2c0815475",
+          "28a20174-a868-4fbb-b21f-8dc799e9621e",
+          "80b76878-0332-4455-a47f-680d92a94dc9",
+          "b4145e7a-01e1-4ca7-903f-8da32c7fccb7",
+          "2a7b1e99-23e0-4126-a196-2d5172c9c317",
+          "5636698f-38e6-49a1-b8e7-3fb23f741a49",
+          "1edb4e5f-aec9-4d3e-95fd-8dfb7491108c",
+          "05ea0d74-9f33-4cc0-9db4-af4529f17df9",
+          "afe612e3-661d-4438-ae82-8bfb75ebd541",
+          "6f155354-caff-40aa-8141-19e78ada8cea",
+          "a9e37e67-9827-4681-a7f3-c549fbcb2e27",
+          "168f2efa-f58b-4717-bdb2-004fa7640221",
+          "ae403ae3-cd5f-4f1e-a9c0-7eed348d2015",
+          "00ab3d51-e431-4612-8a59-99a786e2e56e",
+          "3993f81e-2249-4456-b8e4-940c6c64c57b",
+          "f2c51401-eb26-459a-b548-fa5ffda410ca",
+          "46188912-7519-4438-b2d8-69f2f160da24",
+          "5d7a9889-ed45-4df1-9bfa-9b960f9c0d8f",
+          "c9e74ae7-41d3-42af-a89e-6a57f2769b09",
+          "9f5f122b-1687-46dd-b896-a2129062aab1",
+          "60550cc4-de9f-4881-85ed-7eb421082365",
+          "f9c919c0-e55d-40f2-a955-31889b9894dd",
+          "8787de8f-b590-418f-aa64-4cdc4e7c22ff",
+          "6afecf35-6f55-4929-b639-fe97f66c121a",
+          "7005a3d6-16a3-462d-a6e3-681c8455664e",
+          "a51c3b57-1dd6-47a7-811d-0ca6a595747c",
+          "56d34035-636a-43e5-8072-42101976fd27",
+          "9ba3865b-5132-4c9a-8ee7-3df96e2443e2",
+          "fd86e07e-025c-478e-bfbc-5510501b42f7",
+          "596089f6-0b49-4ff8-8d28-5da7378da77b",
+          "2a32f59f-9c65-409a-9072-4b48c7bf5c46",
+          "aa332cab-b273-4c5d-8d88-8f039afd5fb8",
+          "b0508331-fbe9-4065-8b0d-b38b0d4b8822",
+          "8c4d7eb4-cff8-45c7-8578-9427b3625283",
+          "fdbf9a2e-26d6-4ea1-b05a-477b51513e68"
+        ]
+      }
+    },
+    "night": {
+      "status": 200,
+      "ok": true,
+      "templateId": "224bdebb-12a4-400e-bc23-5f27d92fe47f",
+      "instanceId": "736036cf-da5d-4a3e-bc19-71f88597e34c",
+      "assignmentId": "06a695d8-6080-4781-af61-e97aef0ba849",
+      "businessDate": "2026-08-31",
+      "startUtc": "2026-08-31T20:00:00Z",
+      "endUtc": "2026-09-01T04:00:00Z"
+    }
+  },
+  "leaves": [
+    {
+      "sicil": "8006",
+      "kind": "unpaid",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8006",
+      "kind": "report",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8006",
+      "kind": "annual",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8007",
+      "kind": "annual",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8020",
+      "kind": "unpaid",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8021",
+      "kind": "report",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8022",
+      "kind": "annual",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8053",
+      "kind": "unpaid",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8066",
+      "kind": "report",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    },
+    {
+      "sicil": "8066",
+      "kind": "unpaid",
+      "status": 409,
+      "ok": true,
+      "err": "{\"statusCode\":409,\"error\":{\"errors\":[\"You already have an approved leave for Rapor on 23.09.2026 09:00-23.09.2026 18:00 (created on 13.09.2026). If you believe this is an error, please contact your manager.\"],\"isShow\":true,\"code\":null,\"para",
+      "allow": "DELETE, GET, PUT",
+      "note": "EDGE-024: rapor 22–24 onaylı; ücretsiz 23–24 çakışma 409 (beklenen)."
+    },
+    {
+      "sicil": "8071",
+      "kind": "unpaid",
+      "status": 200,
+      "ok": true,
+      "allow": null
+    }
+  ],
+  "checks": {
+    "ekin8003": {
+      "payments": [
+        {
+          "name": "Temel Maaş",
+          "value": 60000,
+          "from": "2026-1"
+        },
+        {
+          "name": "Yemek Yardımı",
+          "value": 5500,
+          "from": "2026-1"
+        },
+        {
+          "name": "Yol Yardımı",
+          "value": 3200,
+          "from": "2026-1"
+        }
+      ],
+      "hasIkramiye": false,
+      "hasBes": false,
+      "maasValues": [
+        60000
+      ]
+    },
+    "taner8078sgk": {
+      "byEmployeeStatus": 200,
+      "byIdStatus": 404,
+      "byEmployeeEmpty": true,
+      "sample": "{\"statusCode\":200}"
+    },
+    "umay8079": [
+      {
+        "name": "Temel Maaş",
+        "value": 60000,
+        "from": "2026-1",
+        "note": "Eylül %10 EDGE-044 koşumunda (Ağustos 60.000 kilit)."
+      },
+      {
+        "name": "Yemek Yardımı",
+        "value": 5500,
+        "from": "2026-1",
+        "note": "Eylül %10 EDGE-044 koşumunda (Ağustos 60.000 kilit)."
+      },
+      {
+        "name": "Yol Yardımı",
+        "value": 3200,
+        "from": "2026-1",
+        "note": "Eylül %10 EDGE-044 koşumunda (Ağustos 60.000 kilit)."
+      }
+    ],
+    "anaAug": {
+      "id": "7f86fa31-9c30-404e-aa2f-ebea1aa18085",
+      "status": 2,
+      "month": 8,
+      "year": 2026
+    }
+  },
+  "berkPositions": [
+    {
+      "id": "0ce88918-5929-4eb9-be00-4496d81b9932",
+      "ou": "05e687d8-3cf9-49ca-90ff-36fd3b7a6d9f",
+      "title": "Bordro Müdürü"
+    }
+  ],
+  "recheckAt": "2026-09-13T12:13:04.135Z",
+  "retries": {
+    "ozanAddB": {
+      "status": 200,
+      "ok": true,
+      "err": "\"{\\\"data\\\":{\\\"id\\\":\\\"0fbc3cbc-687a-4640-b386-514fa3d9555c\\\",\\\"month\\\":9,\\\"year\\\":2026,\\\"organizationalUnitId\\\":\\\"39989942-58b1-4ec8-8a95-435122391aa1\\\",\\\"organizationalUnit\\\":{\\\"id\\\":\\\"39989942-58b1-4ec8-8a95-435122391aa1\\\",\\\"name\\\":\\\"Faz1 Bordro A.Ş.\\\",\\\"parentId\\\":null,\\\"parentName\\\":null,\\\"location\\\":\\\"Pendik\\\",\\\"cr"
+    },
+    "ozanStillKenar": false,
+    "advances": [
+      {
+        "sicil": "8009",
+        "amount": 2000,
+        "logged": true,
+        "status": 200,
+        "ok": true
+      },
+      {
+        "sicil": "8038",
+        "amount": 2500,
+        "logged": true,
+        "status": 200,
+        "ok": true
+      },
+      {
+        "sicil": "8058",
+        "amount": 55000,
+        "logged": true,
+        "status": 200,
+        "ok": true
+      },
+      {
+        "sicil": "8060",
+        "amount": 2000,
+        "logged": true,
+        "status": 200,
+        "ok": true
+      },
+      {
+        "sicil": "8060",
+        "amount": 1500,
+        "logged": true,
+        "status": 200,
+        "ok": true
+      }
+    ],
+    "netOt8008": {
+      "logged": true,
+      "chunks": [
+        {
+          "start": "2026-09-21T18:00:00",
+          "status": 403,
+          "ok": false,
+          "err": "[\"Bu çalışan için düzenleme yetkiniz yok\"]"
+        },
+        {
+          "start": "2026-09-22T18:00:00",
+          "status": 403,
+          "ok": false,
+          "err": "[\"Bu çalışan için düzenleme yetkiniz yok\"]"
+        }
+      ]
+    },
+    "posFlows": [
+      {
+        "kind": "UnitPositionLeaveFlowStep",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "kind": "UnitPositionOvertimeFlowStep",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "kind": "UnitPositionAdvanceFlowStep",
+        "status": 200,
+        "ok": true
+      },
+      {
+        "kind": "UnitPositionPaymentFlowStep",
+        "status": 200,
+        "ok": true
+      }
+    ],
+    "arge": [
+      {
+        "ep": "/api/PayrollArgeCenter",
+        "status": 404,
+        "ok": false
+      },
+      {
+        "ep": "/api/ArgeMerkezi",
+        "status": 404,
+        "ok": false
+      },
+      {
+        "ep": "/api/RdProjectCenter",
+        "status": 404,
+        "ok": false
+      },
+      {
+        "ep": "/api/SupportPersonnelQuota",
+        "status": 404,
+        "ok": false
+      },
+      {
+        "ep": "/api/PayrollSupportQuota",
+        "status": 404,
+        "ok": false
+      },
+      {
+        "ep": "/api/EmployeeRdAssignment",
+        "status": 404,
+        "ok": false
+      }
+    ],
+    "cerenWp": [
+      {
+        "ep": "/api/EmployeeSgkWorkplaceHistory",
+        "status": 404,
+        "err": "404"
+      },
+      {
+        "ep": "/api/SgkWorkplaceAssignment",
+        "status": 404,
+        "err": "404"
+      },
+      {
+        "ep": "/api/EmployeeOrganizationalUnitSgkSetting",
+        "status": 404,
+        "err": "404"
+      },
+      {
+        "ep": "/api/EmployeeWorkplaceHistory",
+        "status": 404,
+        "err": "404"
+      },
+      {
+        "ep": "/api/EmployeeSgkDeclarationWorkplace",
+        "status": 404,
+        "err": "404"
+      }
+    ],
+    "holiday0709": {
+      "op": true,
+      "opCount": 18,
+      "ana": false,
+      "anaCount": 17
+    },
+    "ana15": {
+      "count": 0,
+      "numbers": [],
+      "missingAktif": [
+        "8003",
+        "8004",
+        "8005",
+        "8006",
+        "8007",
+        "8008",
+        "8009",
+        "8010",
+        "8011",
+        "8012",
+        "8013",
+        "8014",
+        "8015",
+        "8016",
+        "8017"
+      ],
+      "pasifIn": []
+    },
+    "yedek": {
+      "id": "ff082aaa-e3e2-4fae-936f-cd54c23278bb",
+      "employeeId": null,
+      "empty": true
+    },
+    "hireExit": {},
+    "loginMy": [
+      {
+        "ep": "/api/Employee/my",
+        "status": 404
+      },
+      {
+        "ep": "/api/Employees/my",
+        "status": 404
+      },
+      {
+        "ep": "/api/User/me",
+        "status": 200,
+        "name": "Ekin"
+      },
+      {
+        "ep": "/api/Auth/me",
+        "status": 405
+      },
+      {
+        "ep": "/api/Account/me",
+        "status": 404
+      }
+    ],
+    "anaDump": {
+      "count": 15,
+      "sampleKeys": [
+        "id",
+        "employeeId",
+        "employee",
+        "payrollPeriodId",
+        "payrollPeriod",
+        "monthlyWorkDays",
+        "workedDays",
+        "salaryType",
+        "salaryBasis",
+        "dailyWorkHours",
+        "calendarDays",
+        "businessDays",
+        "workedBusinessDays",
+        "businessHours",
+        "isPayrollAttendanceSaved",
+        "isPayrollAttendanceManuallyEdited",
+        "payrollAttendanceNotes",
+        "totalMissingDays",
+        "totalMissingHours",
+        "actualWorkDays",
+        "payrollLawVariantId",
+        "payrollLawFieldsJson",
+        "sgkBelgeTuru",
+        "calculationStatus",
+        "lastCalculatedAt",
+        "incentiveCalculationWarning",
+        "anomalyCount",
+        "missingDays",
+        "deductionStructureValues",
+        "payrollItemValues",
+        "paymentPeriodValues",
+        "advancePeriodDeductions",
+        "createdBy",
+        "createdDate",
+        "status",
+        "modifiedDate"
+      ]
+    },
+    "netOtAdmin": [
+      {
+        "start": "2026-09-21T18:00:00",
+        "status": 200,
+        "ok": true,
+        "err": "{\"data\":{\"id\":\"35ccee5d-a9ad-483b-9dce-d00e02fa052b\",\"employeeId\":\"dcbf5eb8-6b6d-4cae-8713-0a4f8c80e515\",\"employee\":{\"id\":\"dcbf5eb8-6b6d-4cae-8713-0a4f8c80e515\",\"profilePicturePath\":null,\"employeeNumber\":\"8008\",\"firstName\":\"Fırat\",\"lastName\":\"Deniz\",\"gender\":\"Male\",\"employeeUserV"
+      },
+      {
+        "start": "2026-09-22T18:00:00",
+        "status": 200,
+        "ok": true,
+        "err": "{\"data\":{\"id\":\"e9b10cec-7785-4eab-b175-22497d24829a\",\"employeeId\":\"dcbf5eb8-6b6d-4cae-8713-0a4f8c80e515\",\"employee\":{\"id\":\"dcbf5eb8-6b6d-4cae-8713-0a4f8c80e515\",\"profilePicturePath\":null,\"employeeNumber\":\"8008\",\"firstName\":\"Fırat\",\"lastName\":\"Deniz\",\"gender\":\"Male\",\"employeeUserV"
+      }
+    ],
+    "ozanTax": {
+      "initialCumulativeTaxBase": null,
+      "year": null
+    },
+    "addB": {
+      "status": 409,
+      "err": "[\"The following employees are already registered in another period:\\nOzan Şeker → Kenar Durumlar (09/2026)\\nPlease view the related period details and remove the employees first.\"]"
+    },
+    "anaNumbers": [
+      "8003",
+      "8004",
+      "8005",
+      "8006",
+      "8007",
+      "8008",
+      "8009",
+      "8010",
+      "8011",
+      "8012",
+      "8013",
+      "8014",
+      "8015",
+      "8016",
+      "8017"
+    ],
+    "anaHasPasif": false,
+    "confirmedAt": "2026-09-13T12:17:53.620Z",
+    "ozanIds": {
+      "peId": "ec3c3d3f-99d1-4264-b1b1-3506ae4a53bc",
+      "nestedKeys": [
+        "id",
+        "employeeId",
+        "employee",
+        "payrollPeriodId",
+        "payrollPeriod",
+        "monthlyWorkDays",
+        "workedDays",
+        "salaryType",
+        "salaryBasis",
+        "dailyWorkHours",
+        "calendarDays",
+        "businessDays",
+        "workedBusinessDays",
+        "businessHours",
+        "isPayrollAttendanceSaved",
+        "isPayrollAttendanceManuallyEdited",
+        "payrollAttendanceNotes",
+        "totalMissingDays",
+        "totalMissingHours",
+        "actualWorkDays",
+        "payrollLawVariantId",
+        "payrollLawFieldsJson",
+        "sgkBelgeTuru",
+        "calculationStatus",
+        "lastCalculatedAt",
+        "incentiveCalculationWarning",
+        "anomalyCount",
+        "missingDays",
+        "deductionStructureValues",
+        "payrollItemValues",
+        "paymentPeriodValues",
+        "advancePeriodDeductions",
+        "createdBy",
+        "createdDate",
+        "status",
+        "modifiedDate"
+      ],
+      "attKeys": [
+        "periodEmployeeId",
+        "employeeId",
+        "employeeName",
+        "employeeNumber",
+        "sgkDays",
+        "normalDays",
+        "businessDays",
+        "workedBusinessDays",
+        "businessHours",
+        "dailyWorkHours",
+        "totalMissingDays",
+        "totalMissingHours",
+        "defaultMissingDays",
+        "defaultMissingDayReasonId",
+        "missingDayReasonId",
+        "missingDayReasonCode",
+        "missingDayReasonName",
+        "payments",
+        "leaves",
+        "overtimes",
+        "overtimeHourlyRate",
+        "overtimePaymentId",
+        "overtimeIsNet",
+        "canToggleOvertimeNetGross",
+        "isPayrollAttendanceSaved",
+        "isPayrollAttendanceManuallyEdited",
+        "payrollAttendanceNotes",
+        "payrollLawVariantId",
+        "payrollLawFieldsJson",
+        "taxExemptionVariantId",
+        "remoteWorkDays",
+        "isSgdp",
+        "isMissingTechnoparkProject",
+        "isTechnoparkQuotaExcluded",
+        "isTechnoparkEmploymentGap",
+        "workStartDate",
+        "workStartMissingDays",
+        "isPartialMonthEntry",
+        "terminationDate",
+        "terminationMissingDays",
+        "isPartialMonthTermination",
+        "requireMissingDayTracking",
+        "allowAbove30DaysInAttendance",
+        "enableIncentiveLaws",
+        "checklist",
+        "pendingItemCount",
+        "conflictItemCount",
+        "assumedItemCount",
+        "isFullyDerived"
+      ],
+      "sumKeys": [
+        "periodEmployeeId",
+        "employeeId",
+        "firstName",
+        "lastName",
+        "employeeNumber",
+        "isPayrollAttendanceSaved",
+        "incentiveCalculationWarning"
+      ]
+    },
+    "ozanRemove": [
+      {
+        "m": "DELETE",
+        "u": "/api/PayrollPeriod/12f9269c-a37b-4cb8-a18a-5f65c9cd1ada/employees/ec3c3d3f-99d1-4264-b1b1-3506ae4a53bc",
+        "status": 204,
+        "ok": true,
+        "err": "204"
+      }
+    ],
+    "cumTax": {
+      "put": 204,
+      "ok": true,
+      "err": "204",
+      "getValue": 1000,
+      "getYear": 2026
+    },
+    "ozanPositions": [
+      {
+        "id": "8ca8092c-d598-4071-8ec2-2480fdb0e62f",
+        "pos": "6d0051bf-c94d-4ad5-8eb7-98f8f67b181b",
+        "start": "2026-01-06T00:00:00",
+        "end": "2026-09-10T00:00:00"
+      },
+      {
+        "id": "decb27b2-2462-460f-b475-c379cefecf0f",
+        "pos": "46231cf7-2bcc-4e8f-9b18-13f10e8483f7",
+        "start": "2026-09-11T00:00:00",
+        "end": "2026-09-10T00:00:00"
+      },
+      {
+        "id": "c7a76d4d-5a6d-435d-bd3d-bde4a4dd2571",
+        "pos": "46231cf7-2bcc-4e8f-9b18-13f10e8483f7",
+        "start": "2026-09-11T00:00:00",
+        "end": null
+      }
+    ],
+    "ozanKenarEnd": {
+      "status": 200,
+      "ok": true,
+      "err": "\"{\\\"data\\\":{\\\"id\\\":\\\"ec7df922-67b5-4107-8b1c-764e3d222d5a\\\",\\\"employeeId\\\":\\\"ee96563f-74a4-410f-b38c-b8d69436b02c\\\",\\\"employee\\\":null,\\\"organizationalUnitPositionId\\\":\\\"6d0051bf-c94d-4ad5-8eb7-98f8f67b181b\\\",\\\"organizationalUnitPosition\\\":null,\\\"terminateEmployeeId\\\":null,\\\"startDate\\\":\\\"2026-09-13T00:00:00\\\",\\\"endDate"
+    },
+    "ozanBStart": {
+      "status": 200,
+      "ok": true,
+      "err": "\"{\\\"data\\\":{\\\"id\\\":\\\"c7a76d4d-5a6d-435d-bd3d-bde4a4dd2571\\\",\\\"employeeId\\\":\\\"ee96563f-74a4-410f-b38c-b8d69436b02c\\\",\\\"employee\\\":null,\\\"organizationalUnitPositionId\\\":\\\"46231cf7-2bcc-4e8f-9b18-13f10e8483f7\\\",\\\"organizationalUnitPosition\\\":null,\\\"terminateEmployeeId\\\":null,\\\"startDate\\\":\\\"2026-09-11T00:00:00\\\",\\\"endDate"
+    },
+    "sgkSicil": {
+      "kenar": "24292090900003010860195000",
+      "sube": "24292090900003010860195001",
+      "different": true
+    },
+    "cerenPositionsBefore": [
+      {
+        "id": "9fef0bbf-00f5-4869-a1ec-6b677534bf6d",
+        "pos": "609a9494-f55c-43fd-9d4b-863e235294cf",
+        "start": "2026-01-06T00:00:00",
+        "end": "2026-09-30T00:00:00"
+      },
+      {
+        "id": "28e746b3-90fc-4d82-b951-fc03c7595218",
+        "pos": "126f9728-5b10-474b-add9-3f9b9de1632e",
+        "start": "2026-09-11T00:00:00",
+        "end": "2026-09-13T00:00:00"
+      },
+      {
+        "id": "da45429c-7887-42ae-b660-118543bb135b",
+        "pos": "609a9494-f55c-43fd-9d4b-863e235294cf",
+        "start": "2026-09-13T00:00:00",
+        "end": null
+      }
+    ],
+    "cerenKenarEpEnd": {
+      "status": 200,
+      "ok": true,
+      "err": "\"{\\\"data\\\":{\\\"id\\\":\\\"da45429c-7887-42ae-b660-118543bb135b\\\",\\\"employeeId\\\":\\\"90dcda2e-d3de-4cf7-bbe6-32baff0c6964\\\",\\\"employee\\\":null,\\\"organizationalUnitPositionId\\\":\\\"609a9494-f55c-43fd-9d4b-863e235294cf\\\",\\\"organizationalUnitPosition\\\":null,\\\"terminateEmployeeId\\\":null,\\\"startDate\\\":\\\"2026-09-13T00:00:00\\\",\\\"endDate"
+    },
+    "argeProfiles8011": {
+      "status": 200,
+      "data": [
+        "ff3b0f6a-314d-43f1-8705-bfb2fd05b105"
+      ]
+    },
+    "ferihaLeaves": {
+      "status": 200,
+      "n": 1,
+      "rows": [
+        {
+          "id": "db945114-a5fb-4bbf-85e4-a9d45a7de6eb",
+          "type": "7133264d-81ca-4cd0-b672-52ecf7e93bc9",
+          "start": "2026-09-22T08:00:00",
+          "end": "2026-09-24T17:00:00",
+          "status": 2
+        }
+      ]
+    },
+    "leave8066mgmt": {
+      "status": 200,
+      "ok": true,
+      "err": "\"{\\\"data\\\":{\\\"results\\\":[{\\\"employeeId\\\":\\\"2f83f1ef-97d1-4b69-a413-6de626aebc30\\\",\\\"employeeName\\\":\\\"Feriha Dal\\\",\\\"isSuccess\\\":false,\\\"errorMessage\\\":\\\"You already have an approved leave for Rapor on 23.09.2026 09:00-23.09.2026 18:00 (created on 13.09.2026). If you believe this is an error, please contact your manager"
+    },
+    "kenarSepAfter": {
+      "n": 53,
+      "ozan": false
+    },
+    "bSepAfter": {
+      "n": 2,
+      "nums": [
+        "8061",
+        "8062"
+      ]
+    },
+    "anaJan": {
+      "n": 16,
+      "has8004": false,
+      "has8018": true
+    },
+    "cerenPositions": [
+      {
+        "id": "9fef0bbf-00f5-4869-a1ec-6b677534bf6d",
+        "pos": "609a9494-f55c-43fd-9d4b-863e235294cf",
+        "start": "2026-01-06T00:00:00",
+        "end": "2026-09-10T00:00:00"
+      },
+      {
+        "id": "28e746b3-90fc-4d82-b951-fc03c7595218",
+        "pos": "126f9728-5b10-474b-add9-3f9b9de1632e",
+        "start": "2026-09-11T00:00:00",
+        "end": "2026-09-30T00:00:00"
+      }
+    ],
+    "technopark": {
+      "get": {
+        "status": 200,
+        "n": 2,
+        "err": "\"{\\\"data\\\":[{\\\"id\\\":\\\"c369d115-9e03-43f3-b9fd-873d59de5201\\\",\\\"organizationalUnitId\\\":\\\"d93d6660-892d-4dcf-8fc2-36bed171017a\\\",\\\"name\\\":\\\"D1-Tech Ar-Ge Merkezi\\\",\\\"projeKodu\\\":\\\"100001\\\",\\\"bolgeKodu\\\":\\\"139\\\",\\\"bolgeAdi\\\":\\\"istanbul Teknopark\\\",\\\"ilIlce\\\":\\\"03420\\\",\\\"aktifCalisan"
+      },
+      "upsert": {
+        "status": 200,
+        "ok": true,
+        "err": "\"{\\\"data\\\":{\\\"id\\\":\\\"a6a12f87-6f58-4574-9126-4ccca9f9a622\\\",\\\"organizationalUnitId\\\":\\\"a3f32447-73fb-4b67-8a45-535cd92393ad\\\",\\\"name\\\":\\\"Faz1 Kenar Ar-Ge / Teknopark\\\",\\\"projeKodu\\\":\\\"FAZ1-ARGE\\\",\\\"bolgeKodu\\\":null,\\\"bolgeAdi\\\":\\\"Pendik\\\",\\\"ilIlce\\\":null,\\\"aktifCalisanSayisi\\\":0}"
+      },
+      "a8025": {
+        "status": 200,
+        "ok": true,
+        "isciTuru": "2",
+        "destekOncelik": 1
+      },
+      "a8026": {
+        "status": 200,
+        "ok": true,
+        "isciTuru": "2",
+        "destekOncelik": 2
+      }
+    }
+  },
+  "notes": [
+    "swager.json içinde RdCenter/ArgeCenter/Quota/Kota path yok; mevcut 5746/4691 kanunlara dokunulmadı"
+  ]
+}

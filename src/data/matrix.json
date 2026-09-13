@@ -1,7 +1,7 @@
 {
-  "period": "Ocak 2026 · dhrtest UI × Luca PDF(11)",
+  "period": "Ocak 2026 · dhrtest UI × Luca PDF bordro_d1_tech (25)",
   "environment": "dhrtest.d1-tech.com.tr · İnsan Kaynakları · dönem 67d5ddbc",
-  "sourceOfTruth": "DHR UI (Ocak 2026) · Luca Ocak PDF bordro_d1_tech (11)",
+  "sourceOfTruth": "DHR UI recalc + Luca Ocak PDF + YZ (2026 Türkiye mevzuatı)",
   "matrixDesign": {
     "layers": [
       {
@@ -24,116 +24,147 @@
   },
   "checkedItems": [
     {
-      "item": "Ocak 2026 DHR bordro (32 kişi, UI)",
+      "item": "Ocak 2026 DHR yeniden hesap (32 kişi)",
       "result": "pass",
-      "note": "Dönem 67d5ddbc Calculated; Excel UI kalemleriyle üretildi"
+      "note": "Dönem calculate 202; Serra/Dilek/İlker kanarya ±0,01 tuttu"
     },
     {
-      "item": "Personel aktarımı (TC, ücret, giriş tarihi)",
-      "result": "pass",
-      "note": "32 kişi Luca’da"
-    },
-    {
-      "item": "Ekim 2026 puantaj N/H/T gün kodları",
-      "result": "pass",
-      "note": "Takvim yüklendi"
-    },
-    {
-      "item": "05510 kanun (Tolga, Umut, Baran, Emre)",
-      "result": "pass",
-      "note": "PDF’de kanun 05510"
-    },
-    {
-      "item": "Net ücret (Vildan, Ceren) → net ödenen 42.000",
-      "result": "pass",
-      "note": "Luca net hedef tuttu"
-    },
-    {
-      "item": "Rıza geçmiş GV matrahı 185.000",
-      "result": "pass",
-      "note": "Kartta kutu + tutar onaylandı"
-    },
-    {
-      "item": "Leyla avans 7.200",
-      "result": "pass",
-      "note": "İyi PDF’de öz kesinti Avans"
-    },
-    {
-      "item": "Nilay icra 1.200 / Vesile icra 800",
-      "result": "pass",
-      "note": "İyi PDF’de öz kesinti"
-    },
-    {
-      "item": "Metin/Ufuk/Baran prim + Yasin ikramiye",
-      "result": "pass",
-      "note": "İyi PDF’de diğer kazanç"
-    },
-    {
-      "item": "Hande kısmi 15 iş günü",
-      "result": "pass",
-      "note": "Ocak: sgk26_miss4_bizFull, brüt 47566.67, net 39777.85"
-    },
-    {
-      "item": "Fazla mesai 12 saat (Kemal, Tamer, Ceren, Emre)",
-      "result": "pass",
-      "note": "PDF(5): 4840 / 4040 / 4200,58 / 4320"
-    },
-    {
-      "item": "Pelin Oto.Kat.BES 1.740",
-      "result": "partial",
-      "note": "Ocak UI: Pelin BES 1.896,72 (hedef 1.740)"
-    },
-    {
-      "item": "Okan masraf 750",
+      "item": "Luca yemek/yol brüt (8.700, brütleştirme yok)",
       "result": "fail",
-      "note": "Puantajda 750 var, brüte yok — ürün bug"
+      "note": "Yemek/yol hâlâ brütleştiriliyor."
     },
     {
-      "item": "Kanun 05746 / 15746 / 4691 kartları",
-      "result": "partial",
-      "note": "Personel listesinde var; bordro PDF hâlâ 00000 (05510 hariç)"
-    },
-    {
-      "item": "Emekli SGDP / stajyer / yabancı / engelli derecesi",
+      "item": "Serra damga 198,63",
       "result": "fail",
-      "note": "Kart alanları; PDF’den net doğrulanamıyor"
+      "note": "DHR 198,63 / Luca 156,88"
     },
     {
-      "item": "DHR GV istisnası (yasal Ekim 5.615,10)",
+      "item": "İlker stajyer SGK 0 / işsizlik 0 / net 18.000",
       "result": "pass",
-      "note": "Ocak UI: GV istisnası 4.211,33 (yasal Ocak bandı) 32/32 uygulandı"
+      "note": "Tam net eşleşme (±0,01)"
     },
     {
-      "item": "Luca GV istisnası Ekim güncelliği",
-      "result": "partial",
-      "note": "Luca ~4211; yasal 5615,10 değil"
-    },
-    {
-      "item": "Yemek 5.500 + yol 3.200 (Luca)",
+      "item": "Dilek SGDP %7,5 / işsizlik 0",
       "result": "pass",
-      "note": "PDF(10): 31 kişi; gross çoğu satırda DHR ile hizalı (59.200)"
+      "note": "DHR oranı tuttu; Luca da %7,5 ve yemek SGK 158 uygulandı (3.541,80)"
     },
     {
-      "item": "DHR otomatik BES %3 (çoğu kişi)",
+      "item": "Selin asgari damga 12,73",
+      "result": "fail",
+      "note": "İki sistem aynı — Luca Ocak'ta asgari damga istisnasını uyguluyor"
+    },
+    {
+      "item": "FM 12s Kemal/Tamer/Emre",
       "result": "pass",
-      "note": "Ocak UI: BES yalnız Pelin (1.896,72)"
+      "note": "4.840,00 / 4.040,00 / 4.320,00"
+    },
+    {
+      "item": "Baran prim + Yasin ikramiye B (brütleştirme yok)",
+      "result": "pass",
+      "note": "Baran: Yol: 3.200,00 N Yemek (22G): 5.500,00 B Prim: 4.500,00 B · Yasin: Yol: 3.200,00 N Yemek (22G): 5.500,00 B İkramiye: 10.000,00 B"
+    },
+    {
+      "item": "Ceren FM brüt saat ücreti",
+      "result": "pass",
+      "note": "Luca 4.281,96 (Fazla Mesai: 4.281,96 N Yol: 3.200,00 N Yemek (22G): 5.500,00 B); DHR 4.281,96"
+    },
+    {
+      "item": "ALPER AKTOLGA Luca listesinden çıksın",
+      "result": "pass",
+      "note": "bordro_d1_tech (25).pdf içinde yok; 32 kişi."
+    },
+    {
+      "item": "Luca açıklamasız Öz.Kesinti (~3.932) kalksın",
+      "result": "pass",
+      "note": "Yemek Kesinti kalktı. Öz.Kesinti yalnız avans/icra/BES."
+    },
+    {
+      "item": "Luca yemek SGK 158 TL/gün",
+      "result": "pass",
+      "note": "Serra SGK 7.801,36 / matrah 55.724 birebir (22×158)"
+    },
+    {
+      "item": "Luca yemek GV 300 TL/gün (kuyruk yok)",
+      "result": "fail",
+      "note": "İstisna işledi ama standartlarda +45,54 TL GV kaldı (Serra 2.635,42 vs 2.589,88)"
+    },
+    {
+      "item": "Yemek damga matrahında (198,63)",
+      "result": "fail",
+      "note": "Luca yemeği damgadan düşüyor (Serra 156,88 vs DHR 198,63)"
+    },
+    {
+      "item": "4691 GV terkini Alper/Berna/Cemil",
+      "result": "fail",
+      "note": "DHR GV=0 damga=0. Luca damga 0 ama GV tam, kanun 00000 — 4691 hâlâ yok"
+    },
+    {
+      "item": "Rıza kümülatif GV 185.000",
+      "result": "fail",
+      "note": "Kartta 185.000 + kutu işaretli. Bordro GV Luca 3.910,42 (sıfır matrah %15); DHR 6.306,95 (%20)."
+    },
+    {
+      "item": "DHR tek seferlik PaymentValue bordroya yazılsın",
+      "result": "fail",
+      "note": "8 kişi: prim/ikramiye/masraf/icra/avans kayıt var, PPV=0"
+    },
+    {
+      "item": "Hande puantaj gün bazını hizala",
+      "result": "known",
+      "note": "DHR: 4 eksik / Kısmi İstihdam / ücret 22 iş günü. Luca: 5 istirahat / 26 gün. Düzeltilmedi."
+    },
+    {
+      "item": "Okan masraf yüz değeri B (N ile brütleştirme yok)",
+      "result": "fail",
+      "note": "Önceki PDF B 750 idi; şimdi Yol: 3.200,00 N Yemek (22G): 5.500,00 B Masraf: 750,00 N. Luca ~299 TL brütleştirdi."
+    },
+    {
+      "item": "Okan 750 masraf tasarım farkı",
+      "result": "known",
+      "note": "Luca brüte yazar; DHR yazmaz. Luca: Yol: 3.200,00 N Yemek (22G): 5.500,00 B Masraf: 750,00 N. Ayrıca PPV düşmüş."
+    },
+    {
+      "item": "5746 damga terkini Yağız/Zeliha/Deniz/Tamer",
+      "result": "known",
+      "note": "Luca 0 (Tamer 30,66); DHR kesiyor. Mevzuat kararı bekliyor."
     }
   ],
   "correctFindings": [
-    "Ocak UI: GV asgari ücret istisnası 4.211,33 TL (32/32).",
-    "Ocak UI: BES otomatik herkese kesilmiyor — yalnız Pelin.",
-    "Ocak UI: İlker (stajyer) GV=0, BES=0, net=15.300.",
-    "Ocak UI: Selin asgari civarı GV=0, damga=0.",
-    "Ocak UI: FM 4 kişide (Kemal 4.840, Tamer 4.040, Ceren, Emre).",
-    "Leyla avans 7.200 netten düşüyor; Nilay icra 1.200 / Vesile 800 netten düşüyor.",
-    "Ocak UI: Hande kısmi gün puantajdan uygulandı (eksik 4 / worked 26 / Kısmi İstihdam; brüt 47.566,67)."
+    "İlker Pamuk net 18.000 / SGK 0 / işsizlik 0 — iki sistem birebir.",
+    "Dilek SGDP %7,5 ve işsizlik 0 (DHR). Luca oranı da %7,5.",
+    "Kemal/Tamer/Emre fazla mesai tutarları B ve DHR ile aynı.",
+    "Ceren FM tutarı hizalandı (4.281,96 TL; önceki 3.360). İşaret hâlâ N basılabilir.",
+    "Baran prim 4.500,00 B ve Yasin ikramiye 10.000,00 B — brütleştirme kapandı.",
+    "ALPER AKTOLGA Luca PDF'den çıkarıldı (32 kişi).",
+    "Alper/Berna/Cemil DHR 4691: GV=0, damga 0. Luca damga 0; GV tam, kanun 00000.",
+    "DHR Ocak GV asgari istisnası 4.211,33 (32/32)."
   ],
   "dhrBugs": [
     {
+      "id": "DHR-PPV-DROP",
+      "title": "Tam hesaplama tek seferlik PaymentValue kalemlerini bordroya yazmıyor",
+      "severity": "Yüksek",
+      "detail": "Ocak 15 tarihli Prim/İkramiye/Masraf/Genel Kesinti kayıtları /api/PaymentValue/all'da status 1 duruyor. calculate(onlyStaleEmployees:false) sonrası PPV=0. Metin 5.000, Ufuk 3.500, Baran 4.500, Yasin 10.000, Nilay 1.200, Vesile 800, Leyla 7.200, Okan 750. Sabit yemek/yol ve onaylı FM korundu."
+    }
+  ],
+  "warnings": [
+    {
       "id": "OKAN-MASRAF",
-      "title": "Okan masraf 750 bordroya yansımıyor",
-      "severity": "Orta",
-      "detail": "Puantajda Masraf=750 görünür; hesap PPV paymentId=null orphan bırakır, Toplam Kazanç’a eklenmez. Ürün/hesap bug’ı — Ocak’ta açık bırakıldı."
+      "severity": "info",
+      "title": "Okan 750 masraf — beklenen tasarım farkı",
+      "detail": "DHR masrafı ücret saymaz (harcama iadesi), Luca brüte yazar. Hata sayılmıyor. Luca işaret: Yol: 3.200,00 N Yemek (22G): 5.500,00 B Masraf: 750,00 N. DHR satırı 0 çünkü PPV de düşmüş."
+    },
+    {
+      "id": "DAMGA-5746",
+      "severity": "info",
+      "title": "5746 damga terkini — mevzuat kararı bekliyor",
+      "detail": "Yağız/Zeliha/Deniz Luca damga 0, Tamer 30,66; DHR tam kesiyor. Hata sayılmıyor."
+    },
+    {
+      "id": "HANDE-GUN-BAZ",
+      "severity": "warn",
+      "title": "Hande gün bazları hizalı değil (düzeltme yok)",
+      "detail": "DHR puantaj: eksik 4, Kısmi İstihdam (06), SGK gün 26, çalışılan iş günü 22, izin kaydı yok, ücret 38.866,67. Luca: 5 gün istirahat, T.Gün 26, normal kazanç 45.933,33, net 43.519,94. Ekim gerekçesi ('Luca 30 gün') Ocak için yanlış."
     }
   ],
   "scenarios": [
@@ -146,8 +177,9 @@
       "law": "00000",
       "input": "—",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Ocak UI: net 48.094,64 · GV 2.589,88 · istisna 4.211,33"
+      "luca": "fail",
+      "verdict": "ΔNet +3,79 · DHR 48.052,89 / Luca 48.049,10 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 2,
@@ -158,8 +190,9 @@
       "law": "05510",
       "input": "—",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Kanun PDF’de 05510"
+      "luca": "fail",
+      "verdict": "ΔNet +3,80 · DHR 49.840,17 / Luca 49.836,37 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 3,
@@ -170,8 +203,9 @@
       "law": "05510",
       "input": "—",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Kanun PDF’de 05510"
+      "luca": "fail",
+      "verdict": "ΔNet +3,79 · DHR 51.627,44 / Luca 51.623,65 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 4,
@@ -182,8 +216,9 @@
       "law": "00000",
       "input": "NET",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Luca net ödenen = 42.000"
+      "luca": "fail",
+      "verdict": "ΔNet +432,29 · DHR 49.916,40 / Luca 49.484,11 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 5,
@@ -195,7 +230,8 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "PDF kanun 00000 — kart eksik"
+      "verdict": "ΔNet -228,99 · DHR 55.201,99 / Luca 55.430,98 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "ai": "pass"
     },
     {
       "n": 6,
@@ -207,7 +243,8 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "PDF kanun 00000 — kart eksik"
+      "verdict": "ΔNet -134,11 · DHR 46.265,62 / Luca 46.399,73 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "ai": "pass"
     },
     {
       "n": 7,
@@ -219,7 +256,8 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "Ocak: atama 01.01.2026 + 4691 → GV=0, teknopark 2.589,88, net 50.841,40"
+      "verdict": "ΔNet +2.635,42 · DHR 50.841,40 / Luca 48.205,98 · 4691 GV terkini yok",
+      "ai": "pass"
     },
     {
       "n": 8,
@@ -231,7 +269,8 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "Ocak: 4691 → GV=0, teknopark 2.908,63, net 52.966,40"
+      "verdict": "ΔNet +2.954,17 · DHR 52.966,40 / Luca 50.012,23 · 4691 GV terkini yok",
+      "ai": "pass"
     },
     {
       "n": 9,
@@ -243,7 +282,8 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "Ocak: 4691 → GV=0, teknopark 3.227,38, net 55.091,40"
+      "verdict": "ΔNet +3.272,92 · DHR 55.091,40 / Luca 51.818,48 · 4691 GV terkini yok",
+      "ai": "pass"
     },
     {
       "n": 10,
@@ -255,7 +295,8 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "SGDP/sigorta kolu ayarlanmadı"
+      "verdict": "ΔNet -18,97 · DHR 44.986,69 / Luca 45.005,66 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 11,
@@ -266,8 +307,9 @@
       "law": "00000",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Sakatlık derecesi Excel’den gelmedi"
+      "luca": "fail",
+      "verdict": "ΔNet +3,79 · DHR 57.001,99 / Luca 56.998,20 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 12,
@@ -278,8 +320,9 @@
       "law": "00000",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Sakatlık derecesi Excel’den gelmedi"
+      "luca": "fail",
+      "verdict": "ΔNet +3,80 · DHR 47.315,62 / Luca 47.311,82 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 13,
@@ -290,8 +333,9 @@
       "law": "00000",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Sakatlık derecesi Excel’den gelmedi"
+      "luca": "fail",
+      "verdict": "ΔNet +3,79 · DHR 48.502,89 / Luca 48.499,10 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 14,
@@ -301,9 +345,10 @@
       "profile": "Kısmi",
       "law": "00000",
       "input": "15 gün",
-      "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Ocak kısmi uygulandı (sgk26_miss4_bizFull): brüt 47566.67, net 39777.85"
+      "dhr": "known",
+      "luca": "known",
+      "verdict": "ΔNet -5.048,23 · DHR 39.736,11 / Luca 44.784,34 · Hande gün bazları farklı",
+      "ai": "pass"
     },
     {
       "n": 15,
@@ -314,8 +359,9 @@
       "law": "STAJ",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Ocak UI: GV=0 BES=0 net 15.300"
+      "luca": "pass",
+      "verdict": "Net ±0,01 geçti (18.000,00).",
+      "ai": "pass"
     },
     {
       "n": 16,
@@ -326,8 +372,9 @@
       "law": "YABANCI",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Özel sigorta kolu kartta net değil"
+      "luca": "fail",
+      "verdict": "ΔNet +3,80 · DHR 53.414,72 / Luca 53.410,92 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 17,
@@ -338,8 +385,9 @@
       "law": "00000",
       "input": "FM",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "PDF(5): FM 4.840; yemek/yol henüz yok"
+      "luca": "fail",
+      "verdict": "ΔNet +3,80 · DHR 58.662,16 / Luca 58.658,36 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 18,
@@ -349,9 +397,10 @@
       "profile": "Standart",
       "law": "00000",
       "input": "Avans",
-      "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Ocak UI: avans 7.200 netten mahsup"
+      "dhr": "fail",
+      "luca": "fail",
+      "verdict": "ΔNet +7.203,80 · DHR 46.265,62 / Luca 39.061,82 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 19,
@@ -361,9 +410,10 @@
       "profile": "Standart",
       "law": "00000",
       "input": "Prim",
-      "dhr": "pass",
-      "luca": "pass",
-      "verdict": "İyi PDF’de prim var"
+      "dhr": "fail",
+      "luca": "fail",
+      "verdict": "ΔNet -3.570,76 · DHR 48.052,89 / Luca 51.623,65 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 20,
@@ -373,9 +423,10 @@
       "profile": "Standart",
       "law": "00000",
       "input": "Kesinti",
-      "dhr": "pass",
-      "luca": "pass",
-      "verdict": "İyi PDF’de icra 1200"
+      "dhr": "fail",
+      "luca": "fail",
+      "verdict": "ΔNet +1.203,80 · DHR 49.840,17 / Luca 48.636,37 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 21,
@@ -387,7 +438,8 @@
       "input": "Masraf",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "Masraf 750 puantajda var, brüte yansımıyor (hesap bug)"
+      "verdict": "ΔNet -746,20 · DHR 51.627,44 / Luca 52.373,64 · Yemek damga matrahında değil · Prim/ikramiye/masraf NET · Masraf tasarım farkı · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 22,
@@ -398,8 +450,9 @@
       "law": "00000",
       "input": "BES 1740",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Ocak UI: yalnız Pelin BES 1.896,72"
+      "luca": "fail",
+      "verdict": "ΔNet -10,13 · DHR 51.504,79 / Luca 51.514,92 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 23,
@@ -410,8 +463,9 @@
       "law": "00000",
       "input": "CumTax",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Kart onaylandı"
+      "luca": "fail",
+      "verdict": "ΔNet -2.438,28 · DHR 52.759,92 / Luca 55.198,20 · Yemek damga matrahında değil · Kümülatif matrah bordroda yok",
+      "ai": "pass"
     },
     {
       "n": 24,
@@ -422,8 +476,9 @@
       "law": "00000",
       "input": "Asgari",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Ocak UI: GV=0 (asgari istisna)"
+      "luca": "fail",
+      "verdict": "ΔNet -12,73 · DHR 30.010,47 / Luca 30.023,20 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 25,
@@ -434,8 +489,9 @@
       "law": "05746",
       "input": "FM",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "PDF(5): FM 4.040 OK; kanun hâlâ 00000"
+      "luca": "fail",
+      "verdict": "ΔNet -153,09 · DHR 50.941,13 / Luca 51.094,22 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "ai": "pass"
     },
     {
       "n": 26,
@@ -445,9 +501,10 @@
       "profile": "Emekli",
       "law": "SGDP",
       "input": "Prim 3500",
-      "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Prim iyi PDF’de; SGDP kartı eksik"
+      "dhr": "fail",
+      "luca": "fail",
+      "verdict": "ΔNet -2.744,28 · DHR 44.986,69 / Luca 47.730,97 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 27,
@@ -457,9 +514,10 @@
       "profile": "Engelli 2",
       "law": "00000",
       "input": "Kesinti 800",
-      "dhr": "pass",
-      "luca": "partial",
-      "verdict": "Kesinti OK; sakatlık kartı eksik"
+      "dhr": "fail",
+      "luca": "fail",
+      "verdict": "ΔNet +803,79 · DHR 52.677,44 / Luca 51.873,65 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 28,
@@ -469,9 +527,10 @@
       "profile": "Yönetici",
       "law": "00000",
       "input": "İkramiye 10k",
-      "dhr": "pass",
+      "dhr": "fail",
       "luca": "pass",
-      "verdict": "İyi PDF’de ikramiye"
+      "verdict": "ΔNet -7.145,30 · DHR 53.414,72 / Luca 60.560,02 · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 29,
@@ -481,9 +540,10 @@
       "profile": "Standart",
       "law": "05510",
       "input": "Prim 4500",
-      "dhr": "pass",
-      "luca": "pass",
-      "verdict": "Kanun+prim OK"
+      "dhr": "fail",
+      "luca": "fail",
+      "verdict": "ΔNet -3.213,30 · DHR 49.125,26 / Luca 52.338,56 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "ai": "pass"
     },
     {
       "n": 30,
@@ -494,8 +554,9 @@
       "law": "00000",
       "input": "NET+FM",
       "dhr": "pass",
-      "luca": "pass",
-      "verdict": "PDF(5): FM 4.200,58 + yemek/yol"
+      "luca": "fail",
+      "verdict": "ΔNet +731,07 · DHR 53.276,40 / Luca 52.545,33 · Yemek damga matrahında değil",
+      "ai": "pass"
     },
     {
       "n": 31,
@@ -507,7 +568,8 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "Luca’da GV terkin ayarı yok"
+      "verdict": "ΔNet -210,01 · DHR 53.414,72 / Luca 53.624,73 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "ai": "pass"
     },
     {
       "n": 32,
@@ -518,22 +580,9 @@
       "law": "05510",
       "input": "FM",
       "dhr": "pass",
-      "luca": "partial",
-      "verdict": "PDF(5): FM 4.320 + kanun 05510; yemek/yol yok"
-    }
-  ],
-  "warnings": [
-    {
-      "id": "OKAN-MASRAF-WARN",
-      "severity": "warn",
-      "title": "Masraf kalemi hesapta bağlanmıyor",
-      "detail": "Okan 6121: puantajda Masraf=750; brüt 64.200 (maaş+yemek+yol). PPV orphan (paymentId=null)."
-    },
-    {
-      "id": "HANDE-PARTIAL-APPLIED",
-      "severity": "info",
-      "title": "Hande kısmi gün uygulandı",
-      "detail": "Puantaj: eksik 4 (Kısmi İstihdam), worked 26. Brüt 47.566,67 · net 39.777,85. Kart monthlyWorkDays etkisiz; günler puantajdan gelir."
+      "luca": "fail",
+      "verdict": "ΔNet +3,80 · DHR 53.643,49 / Luca 53.639,69 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "ai": "pass"
     }
   ]
 }

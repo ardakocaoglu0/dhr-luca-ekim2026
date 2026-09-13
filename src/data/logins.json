@@ -1,0 +1,2158 @@
+{
+  "environment": "https://dhrtest.d1-tech.com.tr",
+  "note": "Public demo. Yalnız @demo.com. Arda/Sude/BT yok.",
+  "groups": [
+    {
+      "id": "ik",
+      "title": "İnsan Kaynakları (6101–6132)",
+      "people": [
+        {
+          "sicil": "6101",
+          "name": "Serra Bindal",
+          "email": "serrabindal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Standart brüt",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6102",
+          "name": "Tolga Civelek",
+          "email": "tolgacivelek@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "05510 %2",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6103",
+          "name": "Umut Dagdelen",
+          "email": "umutdagdelen@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "05510 %5",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6104",
+          "name": "Vildan Ertem",
+          "email": "vildanertem@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Net ücret",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6105",
+          "name": "Yagiz Findik",
+          "email": "yagizfindik@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "5746 Lisans",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6106",
+          "name": "Zeliha Gurbuz",
+          "email": "zelihagurbuz@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Yüksek Lisans / Temel Bilimler Lisans",
+          "note": "5746 YL",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6107",
+          "name": "Alper Hancer",
+          "email": "alperhancer@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Doktora / Temel Bilimler Yüksek Lisans",
+          "note": "Doktora+4691",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6108",
+          "name": "Berna Isikli",
+          "email": "bernaisikli@demo.com",
+          "password": "Bordro123!",
+          "profile": "Ar-Ge Personeli",
+          "note": "Ar-Ge+4691",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6109",
+          "name": "Cemil Jaleoglu",
+          "email": "cemiljaleoglu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Destek Personeli",
+          "note": "Destek+4691",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6110",
+          "name": "Dilek Kartal",
+          "email": "dilekkartal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Emekli",
+          "note": "Emekli SGDP",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6111",
+          "name": "Ersin Lale",
+          "email": "ersinlale@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 1. Derece",
+          "note": "Engelli 1",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6112",
+          "name": "Fulya Mercan",
+          "email": "fulyamercan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 2. Derece",
+          "note": "Engelli 2",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6113",
+          "name": "Gokhan Narin",
+          "email": "gokhannarin@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 3. Derece",
+          "note": "Engelli 3",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6114",
+          "name": "Hande Orhan",
+          "email": "handeorhan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Kısmi Süreli",
+          "note": "Kısmi 15 gün",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6115",
+          "name": "Ilker Pamuk",
+          "email": "ilkerpamuk@demo.com",
+          "password": "Bordro123!",
+          "profile": "Stajyer",
+          "note": "Stajyer",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6116",
+          "name": "Jale Ruzgar",
+          "email": "jaleruzgar@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yabancı Uyruklu",
+          "note": "Yabancı",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6117",
+          "name": "Kemal Sahinoglu",
+          "email": "kemalsahinoglu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Hafta içi FM",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6118",
+          "name": "Leyla Tuncel",
+          "email": "leylatuncel@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Maaş avansı",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6119",
+          "name": "Metin Uslu",
+          "email": "metinuslu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Prim",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6120",
+          "name": "Nilay Varol",
+          "email": "nilayvarol@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Genel kesinti",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6121",
+          "name": "Okan Yildizoglu",
+          "email": "okanyildizoglu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Masraf ödeme talebi",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6122",
+          "name": "Pelin Zengin",
+          "email": "pelinzengin@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "BES aktif",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6123",
+          "name": "Riza Altunbas",
+          "email": "rizaaltunbas@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Geçmiş GV matrahı",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6124",
+          "name": "Selin Bayraktar",
+          "email": "selinbayraktar@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Asgari ücret civarı",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6125",
+          "name": "Tamer Cakmak",
+          "email": "tamercakmak@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "5746+FM",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6126",
+          "name": "Ufuk Demirel",
+          "email": "ufukdemirel@demo.com",
+          "password": "Bordro123!",
+          "profile": "Emekli",
+          "note": "Emekli+prim",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6127",
+          "name": "Vesile Erkan",
+          "email": "vesileerkan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 2. Derece",
+          "note": "Engelli2+kesinti",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6128",
+          "name": "Yasin Firatin",
+          "email": "yasinfiratin@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yönetici / İdari Personel",
+          "note": "Yönetici+ikramiye",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6129",
+          "name": "Baran Sokmen",
+          "email": "baransokmen@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "05510%2 + prim (çapraz)",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6130",
+          "name": "Ceren Toprak",
+          "email": "cerentoprak@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Net + FM (çapraz)",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6131",
+          "name": "Deniz Ulusoy",
+          "email": "denizulusoy@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "5746-GV stopaj terkin (saf)",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        },
+        {
+          "sicil": "6132",
+          "name": "Emre Varlik",
+          "email": "emrevarlik@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "05510%5 + FM (çapraz)",
+          "unit": "İnsan Kaynakları",
+          "group": "ik"
+        }
+      ]
+    },
+    {
+      "id": "lab",
+      "title": "Bordro Laboratuvarı (yöneticiler + Ana + Operasyon)",
+      "people": [
+        {
+          "sicil": "8001",
+          "name": "Berk Yüce",
+          "email": "berkyuce@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yönetici / İdari Personel",
+          "note": "1. adım onay. Ana/Op/Kenar/Yuvarlama/Takvim/Blokaj directManager ve hrManager.",
+          "unit": "Bordro Laboratuvarı",
+          "group": "managers"
+        },
+        {
+          "sicil": "8002",
+          "name": "Nilay Koç",
+          "email": "nilaykoc@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yönetici / İdari Personel",
+          "note": "2. adım yalnız Kenar kopya akışında. D1-Tech UnitPayrollFlowStep silinmez.",
+          "unit": "Bordro Laboratuvarı",
+          "group": "managers"
+        },
+        {
+          "sicil": "8003",
+          "name": "Ekin Sarı",
+          "email": "ekinsari@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Altın referans. Zam/ikramiye/BES yok. Ağustos taslak kalır.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8004",
+          "name": "Baran Ünal",
+          "email": "baranunal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "İşe giriş 19.09.2026 Cumartesi (Excel). 5 sabit kalem. 18.09 mesai denemesi red.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8005",
+          "name": "Cansu Kılıç",
+          "email": "cansukilic@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Çıkış 14.09.2026. 16.09 izin/mesai red.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8006",
+          "name": "Doruk Aslan",
+          "email": "dorukaslan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Ücretsiz 1–2.09, rapor 8–10.09, yıllık 15–16.09. 07.09 Ana’da iş günü.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8007",
+          "name": "Elif Meriç",
+          "email": "elifmeric@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "17.09 aynı gün izin+çalışma. PNT-035’ten sonra çelişki düzeltilir.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8008",
+          "name": "Fırat Deniz",
+          "email": "firatdeniz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "TV-06 birebir: 10 saat brüt + 5 saat net mesai. HSP-007 brüt 10 saat kalemini doğrular.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8009",
+          "name": "Gülce Han",
+          "email": "gulcehan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Prim+masraf+kesinti+avans seed. İkramiye 5.000 koşumda (E2E-005 ve Luca 8009’dan sonra). DHR-PAYROLL-001.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8010",
+          "name": "Hakan Işık",
+          "email": "hakanisik@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Yalnız BES %3 çalışan. İşveren BES yok.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8011",
+          "name": "İrem Palaz",
+          "email": "irempalaz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "05510 %2 varsayıldı (HSP-014). Onay PNT-035’ten sonra.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8012",
+          "name": "Jale Öztürk",
+          "email": "jaleozturk@demo.com",
+          "password": "Bordro123!",
+          "profile": "Emekli",
+          "note": "Emekli / SGDP.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8013",
+          "name": "Korhan Seçkin",
+          "email": "korhanseckin@demo.com",
+          "password": "Bordro123!",
+          "profile": "Kısmi Süreli",
+          "note": "Kısmi; 80 saat / 10 prim günü.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8014",
+          "name": "Lale Tuna",
+          "email": "laletuna@demo.com",
+          "password": "Bordro123!",
+          "profile": "Stajyer",
+          "note": "Stajyer; okul/belge.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8015",
+          "name": "Mert Vural",
+          "email": "mertvural@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "Ar-Ge 5746 Lisans. Teşvik seed’de onaylı.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8016",
+          "name": "Nihan Yıldız",
+          "email": "nihanyildiz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 1. Derece",
+          "note": "Engelli 1. derece.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8017",
+          "name": "Onur Zengin",
+          "email": "onurzengin@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Standart hesaplanabilir. +1 eksik gün reopen Luca Ana 15’ten sonra.",
+          "unit": "Ana Kadro",
+          "group": "ana-aktif"
+        },
+        {
+          "sicil": "8018",
+          "name": "Pınar Adalı",
+          "email": "pinaradali@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Pasif. Çıkış 31.08.2026. Eylül listesine düşmemeli.",
+          "unit": "Ana Kadro",
+          "group": "ana-pasif"
+        },
+        {
+          "sicil": "8019",
+          "name": "Rıza Balcı",
+          "email": "rizabalci@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Pasif. Çıkış 31.08.2026 (ikinci pasif).",
+          "unit": "Ana Kadro",
+          "group": "ana-pasif"
+        },
+        {
+          "sicil": "8020",
+          "name": "Seda Can",
+          "email": "sedacan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "3 gün ücretsiz 8–10.09 Operasyon Eylül. DHR-PAYROLL-002.",
+          "unit": "Operasyon",
+          "group": "operasyon"
+        },
+        {
+          "sicil": "8021",
+          "name": "Tolga Dede",
+          "email": "tolgadede@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "5 gün rapor 14–18.09.",
+          "unit": "Operasyon",
+          "group": "operasyon"
+        },
+        {
+          "sicil": "8022",
+          "name": "Ufuk Eren",
+          "email": "ufukeren@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "04.09 Cuma–08.09 Salı yıllık. 07.09 Pazartesi yalnız Operasyon tatili.",
+          "unit": "Operasyon",
+          "group": "operasyon"
+        }
+      ]
+    },
+    {
+      "id": "kenar",
+      "title": "Kenar Durumlar",
+      "people": [
+        {
+          "sicil": "8023",
+          "name": "Vildan Ferhat",
+          "email": "vildanferhat@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 2. Derece",
+          "note": "Engelli 2. EDGE-027: Kenar hesabı sonrası +1 eksik gün.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8024",
+          "name": "Yasin Güneş",
+          "email": "yasingunes@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 3. Derece",
+          "note": "Engelli 3.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8025",
+          "name": "Zeynep Hacı",
+          "email": "zeynephaci@demo.com",
+          "password": "Bordro123!",
+          "profile": "Destek Personeli",
+          "note": "Destek kota içi. Merkez destek kotası 1.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8026",
+          "name": "Alper İnan",
+          "email": "alperinan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Destek Personeli",
+          "note": "Destek kota dışı (aynı dönem, kota dolu).",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8027",
+          "name": "Banu Jülide",
+          "email": "banujulide@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Yüksek Lisans / Temel Bilimler Lisans",
+          "note": "5746 Yüksek Lisans.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8028",
+          "name": "Cemal Kartal",
+          "email": "cemalkartal@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Doktora / Temel Bilimler Yüksek Lisans",
+          "note": "5746 Doktora.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8029",
+          "name": "Dilek Lale",
+          "email": "dileklale@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "05510 %5.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8030",
+          "name": "Emre Nalçacı",
+          "email": "emrenalcaci@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Net 45.000. HSP-008 5.000 TL net mesai kalemi (saat değil).",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8031",
+          "name": "Funda Okay",
+          "email": "fundaokay@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yabancı Uyruklu",
+          "note": "Yabancı, izin geçerli.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8032",
+          "name": "Gökalp Peker",
+          "email": "gokalppeker@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yönetici / İdari Personel",
+          "note": "Yönetici / İdari, Ar-Ge dışı. Zam 8079’da.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-profil"
+        },
+        {
+          "sicil": "8033",
+          "name": "Hale Rüzgar",
+          "email": "haleruzgar@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "PEK tavan −0,01. Seed’de tavan API’den okunur.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-matrah"
+        },
+        {
+          "sicil": "8034",
+          "name": "İlker Sönmez",
+          "email": "ilkersonmez@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "PEK tavan.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-matrah"
+        },
+        {
+          "sicil": "8035",
+          "name": "Jülide Tan",
+          "email": "julidetan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "PEK tavan +0,01.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-matrah"
+        },
+        {
+          "sicil": "8036",
+          "name": "Kaan Uslu",
+          "email": "kaanuslu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Yüksek ücret + prim tavan üstü.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-matrah"
+        },
+        {
+          "sicil": "8037",
+          "name": "Leyla Varlı",
+          "email": "leylavarli@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Net maaş + brüt prim + net mesai.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-matrah"
+        },
+        {
+          "sicil": "8038",
+          "name": "Murat Yaman",
+          "email": "muratyaman@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "İcra + BES + avans + genel kesinti.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-matrah"
+        },
+        {
+          "sicil": "8039",
+          "name": "Nazan Aksoy",
+          "email": "nazanaksoy@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "1–14 teşvik A, 15–30 B.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8040",
+          "name": "Okan Bilgin",
+          "email": "okanbilgin@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Teşvik 16’sında başlar.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8041",
+          "name": "Pelin Çetin",
+          "email": "pelincetin@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Teşvik 15’inde biter.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8042",
+          "name": "Rüzgar Demir",
+          "email": "ruzgardemir@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "12 Ar-Ge + 18 normal gün.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8043",
+          "name": "Selin Efe",
+          "email": "selinefe@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "16.09 Ar-Ge → Standart.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8044",
+          "name": "Tamer Gül",
+          "email": "tamergul@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "5746 + Engelli 2.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8045",
+          "name": "Ümit Hız",
+          "email": "umithiz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "16.09 Standart → SGDP.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8046",
+          "name": "Veli İnce",
+          "email": "veliince@demo.com",
+          "password": "Bordro123!",
+          "profile": "Stajyer",
+          "note": "1–15 stajyer, 16–30 standart.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8047",
+          "name": "Yağmur Kaya",
+          "email": "yagmurkaya@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Tam → kısmi 20 saat.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8048",
+          "name": "Zeki Limon",
+          "email": "zekilimon@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 3. Derece",
+          "note": "Engelli 3 → 1, 16.09.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8049",
+          "name": "Asya Mutlu",
+          "email": "asyamutlu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yabancı Uyruklu",
+          "note": "Yabancı izin bitiş 20.09.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8050",
+          "name": "Burak Naz",
+          "email": "buraknaz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Seed tek profil Standart. İkinci profil koşumda denenir (red).",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8051",
+          "name": "Ceren Oral",
+          "email": "cerenoral@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "SGK işyeri A 1–10 / B 11–30. D1 şube yoksa Şirket B iki işyeri.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8052",
+          "name": "Deniz Poyraz",
+          "email": "denizpoyraz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Çıkış 10.09, yeniden giriş 20.09.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8053",
+          "name": "Ece Rana",
+          "email": "ecerana@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Ücretsiz 29.08.2026–30.09.2026. DHR-PAYROLL-002.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8054",
+          "name": "Fatih Savaş",
+          "email": "fatihsavas@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "BES %3 → %5, 16.09.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8055",
+          "name": "Gizem Tuna",
+          "email": "gizemtuna@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "BES çıkış 31.08.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8056",
+          "name": "Harun Uçar",
+          "email": "harunucar@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Yol yardımı bitiş 31.08.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8057",
+          "name": "İpek Vural",
+          "email": "ipekvural@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Gece vardiyası 31.08 23:00–01.09 07:00 + 2 saat fazla mesai.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8058",
+          "name": "Kamil Yurt",
+          "email": "kamilyurt@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Avans taksiti neti aşıyor.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8059",
+          "name": "Lara Zorlu",
+          "email": "larazorlu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Çalışan rolü; yeniden açma/tamamlama yetkisi yok.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8060",
+          "name": "Mine Acar",
+          "email": "mineacar@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Eski taksit 2.000 + yeni avans 1.500 + kesinti 750.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tesvik"
+        },
+        {
+          "sicil": "8064",
+          "name": "Demir Boz",
+          "email": "demirboz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "İşe giriş 31.08.2026. Eylül’de tam ay Kenar.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8065",
+          "name": "Eda Canan",
+          "email": "edacanan@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "Aynı 1–30 gün için iki teşvik (05510 + 5746); çifte indirim yok / sistem bloke.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8066",
+          "name": "Feriha Dal",
+          "email": "ferihadal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Rapor 22–24.09, ücretsiz örtüşme 23–24.09.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8067",
+          "name": "Genco Er",
+          "email": "gencoer@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Giriş 21.09 çıkış 30.09 (10 gün); kıst brüt asgari aylık tabanın altında.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8068",
+          "name": "Hicran Feza",
+          "email": "hicranfeza@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Dönem başı kümülatif GV matrahı tarife eşiğinin 0,01 TL altında.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8069",
+          "name": "İlhan Gök",
+          "email": "ilhangok@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Giriş 01.07.2026; önceki işveren kümülatif matrah dolu.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8070",
+          "name": "Yekta Han",
+          "email": "yektahan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Giriş 01.07.2026; önceki matrah boş.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8071",
+          "name": "Koray Işık",
+          "email": "korayisik@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Ücretsiz 11–20.09 + yüksek prim + asgari ücret GV/damga istisnası.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8072",
+          "name": "Leman Can",
+          "email": "lemancan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Net −0,01 sınır.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8073",
+          "name": "Melis Nur",
+          "email": "melisnur@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Net 0,00 sınır.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8074",
+          "name": "Naci Oruç",
+          "email": "nacioruc@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Net +0,01 sınır.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8075",
+          "name": "Oya Pınar",
+          "email": "oyapinar@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Sabit ödeme bitiş 15.09, yeni kayıt 16.09 + aynı gün varyantı.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8076",
+          "name": "Poyraz Su",
+          "email": "poyrazsu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "0 gün / 0 kazanç; geçersiz eksik gün nedeni 07 vs geçerli neden.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8077",
+          "name": "Sera Ünal",
+          "email": "seraunal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Teşvik bitiş 31.08.2026.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        },
+        {
+          "sicil": "8079",
+          "name": "Umay Yurt",
+          "email": "umayyurt@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Ağustos onaylı 60.000; Eylül %10 temel maaş. 8003’e zam yok.",
+          "unit": "Kenar Durumlar",
+          "group": "kenar-tamamlayici"
+        }
+      ]
+    },
+    {
+      "id": "takvim",
+      "title": "Takvim",
+      "people": [
+        {
+          "sicil": "8063",
+          "name": "Cemre Ay",
+          "email": "cemreay@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Yalnız Takvim. Ücret 2026–2028. Şubat 2027 (28) ve Şubat 2028 (29).",
+          "unit": "Takvim",
+          "group": "takvim"
+        }
+      ]
+    },
+    {
+      "id": "blokaj",
+      "title": "Blokaj",
+      "people": [
+        {
+          "sicil": "8078",
+          "name": "Taner Uslu",
+          "email": "taneruslu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Blokaj birimi. SGK profili yok. Kenar toplu hesabına girmez.",
+          "unit": "Blokaj",
+          "group": "blokaj"
+        }
+      ]
+    },
+    {
+      "id": "yuvarlama",
+      "title": "Yuvarlama (8101–8200)",
+      "people": [
+        {
+          "sicil": "8101",
+          "name": "Yuvarlama 01",
+          "email": "yuvarlama01@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8102",
+          "name": "Yuvarlama 02",
+          "email": "yuvarlama02@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8103",
+          "name": "Yuvarlama 03",
+          "email": "yuvarlama03@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8104",
+          "name": "Yuvarlama 04",
+          "email": "yuvarlama04@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8105",
+          "name": "Yuvarlama 05",
+          "email": "yuvarlama05@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8106",
+          "name": "Yuvarlama 06",
+          "email": "yuvarlama06@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8107",
+          "name": "Yuvarlama 07",
+          "email": "yuvarlama07@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8108",
+          "name": "Yuvarlama 08",
+          "email": "yuvarlama08@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8109",
+          "name": "Yuvarlama 09",
+          "email": "yuvarlama09@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8110",
+          "name": "Yuvarlama 10",
+          "email": "yuvarlama10@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8111",
+          "name": "Yuvarlama 11",
+          "email": "yuvarlama11@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8112",
+          "name": "Yuvarlama 12",
+          "email": "yuvarlama12@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8113",
+          "name": "Yuvarlama 13",
+          "email": "yuvarlama13@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8114",
+          "name": "Yuvarlama 14",
+          "email": "yuvarlama14@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8115",
+          "name": "Yuvarlama 15",
+          "email": "yuvarlama15@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8116",
+          "name": "Yuvarlama 16",
+          "email": "yuvarlama16@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8117",
+          "name": "Yuvarlama 17",
+          "email": "yuvarlama17@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8118",
+          "name": "Yuvarlama 18",
+          "email": "yuvarlama18@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8119",
+          "name": "Yuvarlama 19",
+          "email": "yuvarlama19@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8120",
+          "name": "Yuvarlama 20",
+          "email": "yuvarlama20@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8121",
+          "name": "Yuvarlama 21",
+          "email": "yuvarlama21@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8122",
+          "name": "Yuvarlama 22",
+          "email": "yuvarlama22@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8123",
+          "name": "Yuvarlama 23",
+          "email": "yuvarlama23@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8124",
+          "name": "Yuvarlama 24",
+          "email": "yuvarlama24@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8125",
+          "name": "Yuvarlama 25",
+          "email": "yuvarlama25@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8126",
+          "name": "Yuvarlama 26",
+          "email": "yuvarlama26@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8127",
+          "name": "Yuvarlama 27",
+          "email": "yuvarlama27@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8128",
+          "name": "Yuvarlama 28",
+          "email": "yuvarlama28@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8129",
+          "name": "Yuvarlama 29",
+          "email": "yuvarlama29@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8130",
+          "name": "Yuvarlama 30",
+          "email": "yuvarlama30@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8131",
+          "name": "Yuvarlama 31",
+          "email": "yuvarlama31@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8132",
+          "name": "Yuvarlama 32",
+          "email": "yuvarlama32@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8133",
+          "name": "Yuvarlama 33",
+          "email": "yuvarlama33@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8134",
+          "name": "Yuvarlama 34",
+          "email": "yuvarlama34@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8135",
+          "name": "Yuvarlama 35",
+          "email": "yuvarlama35@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8136",
+          "name": "Yuvarlama 36",
+          "email": "yuvarlama36@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8137",
+          "name": "Yuvarlama 37",
+          "email": "yuvarlama37@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8138",
+          "name": "Yuvarlama 38",
+          "email": "yuvarlama38@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8139",
+          "name": "Yuvarlama 39",
+          "email": "yuvarlama39@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8140",
+          "name": "Yuvarlama 40",
+          "email": "yuvarlama40@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8141",
+          "name": "Yuvarlama 41",
+          "email": "yuvarlama41@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8142",
+          "name": "Yuvarlama 42",
+          "email": "yuvarlama42@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8143",
+          "name": "Yuvarlama 43",
+          "email": "yuvarlama43@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8144",
+          "name": "Yuvarlama 44",
+          "email": "yuvarlama44@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8145",
+          "name": "Yuvarlama 45",
+          "email": "yuvarlama45@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8146",
+          "name": "Yuvarlama 46",
+          "email": "yuvarlama46@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8147",
+          "name": "Yuvarlama 47",
+          "email": "yuvarlama47@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8148",
+          "name": "Yuvarlama 48",
+          "email": "yuvarlama48@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8149",
+          "name": "Yuvarlama 49",
+          "email": "yuvarlama49@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8150",
+          "name": "Yuvarlama 50",
+          "email": "yuvarlama50@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8151",
+          "name": "Yuvarlama 51",
+          "email": "yuvarlama51@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8152",
+          "name": "Yuvarlama 52",
+          "email": "yuvarlama52@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8153",
+          "name": "Yuvarlama 53",
+          "email": "yuvarlama53@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8154",
+          "name": "Yuvarlama 54",
+          "email": "yuvarlama54@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8155",
+          "name": "Yuvarlama 55",
+          "email": "yuvarlama55@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8156",
+          "name": "Yuvarlama 56",
+          "email": "yuvarlama56@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8157",
+          "name": "Yuvarlama 57",
+          "email": "yuvarlama57@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8158",
+          "name": "Yuvarlama 58",
+          "email": "yuvarlama58@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8159",
+          "name": "Yuvarlama 59",
+          "email": "yuvarlama59@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8160",
+          "name": "Yuvarlama 60",
+          "email": "yuvarlama60@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8161",
+          "name": "Yuvarlama 61",
+          "email": "yuvarlama61@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8162",
+          "name": "Yuvarlama 62",
+          "email": "yuvarlama62@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8163",
+          "name": "Yuvarlama 63",
+          "email": "yuvarlama63@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8164",
+          "name": "Yuvarlama 64",
+          "email": "yuvarlama64@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8165",
+          "name": "Yuvarlama 65",
+          "email": "yuvarlama65@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8166",
+          "name": "Yuvarlama 66",
+          "email": "yuvarlama66@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8167",
+          "name": "Yuvarlama 67",
+          "email": "yuvarlama67@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8168",
+          "name": "Yuvarlama 68",
+          "email": "yuvarlama68@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8169",
+          "name": "Yuvarlama 69",
+          "email": "yuvarlama69@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8170",
+          "name": "Yuvarlama 70",
+          "email": "yuvarlama70@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8171",
+          "name": "Yuvarlama 71",
+          "email": "yuvarlama71@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8172",
+          "name": "Yuvarlama 72",
+          "email": "yuvarlama72@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8173",
+          "name": "Yuvarlama 73",
+          "email": "yuvarlama73@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8174",
+          "name": "Yuvarlama 74",
+          "email": "yuvarlama74@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8175",
+          "name": "Yuvarlama 75",
+          "email": "yuvarlama75@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8176",
+          "name": "Yuvarlama 76",
+          "email": "yuvarlama76@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8177",
+          "name": "Yuvarlama 77",
+          "email": "yuvarlama77@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8178",
+          "name": "Yuvarlama 78",
+          "email": "yuvarlama78@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8179",
+          "name": "Yuvarlama 79",
+          "email": "yuvarlama79@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8180",
+          "name": "Yuvarlama 80",
+          "email": "yuvarlama80@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8181",
+          "name": "Yuvarlama 81",
+          "email": "yuvarlama81@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8182",
+          "name": "Yuvarlama 82",
+          "email": "yuvarlama82@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8183",
+          "name": "Yuvarlama 83",
+          "email": "yuvarlama83@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8184",
+          "name": "Yuvarlama 84",
+          "email": "yuvarlama84@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8185",
+          "name": "Yuvarlama 85",
+          "email": "yuvarlama85@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8186",
+          "name": "Yuvarlama 86",
+          "email": "yuvarlama86@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8187",
+          "name": "Yuvarlama 87",
+          "email": "yuvarlama87@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8188",
+          "name": "Yuvarlama 88",
+          "email": "yuvarlama88@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8189",
+          "name": "Yuvarlama 89",
+          "email": "yuvarlama89@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8190",
+          "name": "Yuvarlama 90",
+          "email": "yuvarlama90@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8191",
+          "name": "Yuvarlama 91",
+          "email": "yuvarlama91@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8192",
+          "name": "Yuvarlama 92",
+          "email": "yuvarlama92@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8193",
+          "name": "Yuvarlama 93",
+          "email": "yuvarlama93@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8194",
+          "name": "Yuvarlama 94",
+          "email": "yuvarlama94@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8195",
+          "name": "Yuvarlama 95",
+          "email": "yuvarlama95@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8196",
+          "name": "Yuvarlama 96",
+          "email": "yuvarlama96@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8197",
+          "name": "Yuvarlama 97",
+          "email": "yuvarlama97@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8198",
+          "name": "Yuvarlama 98",
+          "email": "yuvarlama98@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8199",
+          "name": "Yuvarlama 99",
+          "email": "yuvarlama99@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        },
+        {
+          "sicil": "8200",
+          "name": "Yuvarlama 100",
+          "email": "yuvarlama100@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+          "unit": "Yuvarlama",
+          "group": "yuvarlama"
+        }
+      ]
+    },
+    {
+      "id": "sirket-b",
+      "title": "Şirket B — Faz1 Bordro A.Ş.",
+      "people": [
+        {
+          "sicil": "8061",
+          "name": "Ozan Şeker",
+          "email": "ozanseker@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Kenar çıkış 10.09, Şirket B giriş 11.09. Kümülatif matrah B’ye bir kez.",
+          "unit": "Faz1 Bordro A.Ş.",
+          "group": "sirket-b"
+        },
+        {
+          "sicil": "8062",
+          "name": "Eda Mert",
+          "email": "edamert@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yönetici / İdari Personel",
+          "note": "Şirket B müdürü / bordro onay.",
+          "unit": "Faz1 Bordro A.Ş.",
+          "group": "sirket-b"
+        }
+      ]
+    }
+  ]
+}

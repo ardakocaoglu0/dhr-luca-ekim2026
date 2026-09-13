@@ -1,0 +1,93 @@
+{
+  "updatedAt": "2026-09-13",
+  "environment": "https://dhrtest.d1-tech.com.tr",
+  "adminHint": "Admin ile gir (Arda). Demo şifre Bordro123! — Sude şifresine dokunma. İK 6101–6132, BT, mevcut 5746/4691 kanun tarifelerine PUT yok.",
+  "ready": [
+    {
+      "id": "donemler",
+      "title": "Bordro dönemleri Ocak’tan açık",
+      "status": "hazır",
+      "now": "Ana/Op/Kenar/Lab/Yuvarlama/Blokaj/Şirket B (Eda) 2026-01… ilgili aya kadar; Takvim 2026-01…12 + 2027-01 + 2028-01 + Şub 27/28. Ana Ocak 16 kişi (8004 yok, 8018 var).",
+      "want": "YTD/kümülatif için Eylül’e kadar boş ay kalmasın."
+    },
+    {
+      "id": "018-split",
+      "title": "EDGE-018 Ozan — iki dönem aynı ay yasak, ayırdık",
+      "status": "hazır",
+      "now": "Kenar Eylül 53 (8061 yok). Şirket B Eylül 8061+8062. Kenar kadro 06.01–10.09, B kadro 11.09–. Kümülatif GV 1000 / 2026.",
+      "want": "İdeal: aynı Eylül’de Kenar’da 1–10 gün + B’de 11–30. Ürün aynı kişiyi aynı ay iki döneme koyunca 409 veriyor."
+    }
+  ],
+  "manual": [
+    {
+      "id": "EDGE-017",
+      "title": "Ceren Oral — iki SGK işyeri, tek Eylül dönemi",
+      "status": "manuel",
+      "sicil": "8051",
+      "login": "cerenoral@demo.com / Bordro123!",
+      "where": "Çalışan kartı → kadro/pozisyon geçmişi; Kenar Eylül bordrosu; D1-Tech Şube boş kadro; birim SGK sicili.",
+      "now": "EmployeePosition: Kenar 06.01–10.09, Şube 11.09–30.09. Şube SGK sicili Kenar’dan farklı (…95000 / …95001). Güncel dolu kadro hâlâ Kenar; Şube slot boş (tek dolu pozisyon).",
+      "want": "Kenar Eylül bordrosunda 1–10 gün işyeri A, 11–30 işyeri B (iki sicil, tek dönem). İki dolu kadro aynı anda değil — tarihli işyeri/kadro geçmişi.",
+      "try": [
+        "Admin: Ceren Oral (8051). Kadro geçmişinin Kenar bitiş 10.09 ve Şube 11–30.09 olduğunu doğrula.",
+        "D1-Tech Şube’deki boş pozisyona Ceren’i Kenar’ı boşaltmadan bağlamayı dene — ürün reddederse not et.",
+        "Çalışan veya birim SGK ekranında ikinci işyeri sicili / tarih aralığı varsa 11.09–30.09 Şube sicilini yaz.",
+        "Kenar Eylül puantaj/bordroda işyeri kırılımı A+B görünüyor mu bak. Görünmüyorsa ürün bu senaryoyu taşımıyor."
+      ],
+      "success": "Eylül Kenar döneminde iki işyeri sicili (A 1–10, B 11–30) hesapta.",
+      "fail": "Yalnız Kenar sicili veya Ceren Şube’ye geçince Kenar’dan düşmesi."
+    },
+    {
+      "id": "EDGE-018-ui",
+      "title": "EDGE-018 Ozan — UI’de aynı ay iki işveren",
+      "status": "manuel",
+      "sicil": "8061",
+      "login": "ozanseker@demo.com / Bordro123!  ·  edamert@demo.com (B müdürü)",
+      "where": "Bordro dönemleri → Kenar Durumlar 09/2026 ve Faz1 Bordro A.Ş. 09/2026 → çalışan ekle/çıkar.",
+      "now": "Ozan B Eylül’de. Kenar Eylül’den silindi. Aynı ay iki döneme eklemek API’de 409.",
+      "want": "Kenar’da 1–10.09 (çıkış 10.09) + B’de 11–30.09 (giriş 11.09), kümülatif matrah B’ye bir kez.",
+      "try": [
+        "Kenar Eylül → çalışan ekle → Ozan Şeker. Beklenen: «başka dönemde kayıtlı / Faz1 Bordro A.Ş. 09/2026». Bu 409 doğru negatif test.",
+        "Dönem ekranında «kısmi ay / işten çıkış günü» varsa Kenar’da 1–10 gün, B’de 11–30 işaretle — asıl hedef bu.",
+        "Çalışan kartında kümülatif GV 2026 = 1000 duruyor mu bak (B’ye taşınmış seed).",
+        "Mevcut 5746/4691 kanun tarifesine dokunma."
+      ],
+      "success": "Aynı Eylül’de iki işveren günleri yan yana, tek kümülatif GV B’de.",
+      "fail": "Ya yalnız B tam ay, ya 409 — şu anki ürün davranışı."
+    },
+    {
+      "id": "ARGE-KOTA",
+      "title": "Ar-Ge / destek kota (Teknopark, kanun değil)",
+      "status": "manuel",
+      "sicil": "8025 / 8026",
+      "login": "zeynephaci@demo.com · alperinan@demo.com  (Bordro123!)",
+      "where": "Teknopark / Ar-Ge projeleri — «Faz1 Kenar Ar-Ge / Teknopark». Kökteki «D1-Tech Ar-Ge Merkezi»ne dokunma.",
+      "now": "RdCenter/Quota API yok. Proje Kenar biriminde. Zeynep 8025 işçi türü 2 öncelik 1; Alper 8026 tür 2 öncelik 2. 5746/4691 tanımları duruyor.",
+      "want": "Merkez destek kotası 1: 8025 kota içi teşvik, 8026 aynı dönemde kota dışı (veya puantajda kota hariç).",
+      "try": [
+        "Projede «destek kotası / kota» alanı varsa 1 yaz. D1-Tech Ar-Ge Merkezi’ni ve kanun oranlarını değiştirme.",
+        "Kenar Eylül puantajında 8025/8026 satırında teknopark kota / hariç tut işareti var mı bak.",
+        "Hesapta 8025 indirim alsın, 8026 almasın (kota dolu)."
+      ],
+      "success": "Aynı dönemde 1 destek kotası dolu, ikincisi dışarıda.",
+      "fail": "İkisi de aynı teşvik veya hiç kota alanı yok."
+    },
+    {
+      "id": "EDGE-024",
+      "title": "Feriha Dal — rapor + ücretsiz örtüşme",
+      "status": "manuel",
+      "sicil": "8066",
+      "login": "ferihadal@demo.com / Bordro123!",
+      "where": "Çalışan veya admin izin: Feriha Dal. Onaylı rapor 22–24.09 duruyor; silme.",
+      "now": "Ücretsiz 23–24 eklenince ürün «23.09 onaylı Rapor var» deyip kaydı yazmıyor (HTTP 200 + isSuccess false). Çakışma bu.",
+      "want": "İki kayıt birden: onaylı rapor 22–24 ve ücretsiz 23–24 — bordro çakışmayı görsün. Ürün ikisini onaylı tutmuyorsa red mesajı da test.",
+      "try": [
+        "Raporu iptal etme. Ücretsiz izin 23.09 08:00 – 24.09 17:00, tam gün. Beklenen: kayıt oluşmaz / çakışma uyarısı.",
+        "İkisini listede yan yana istiyorsan: raporu iptal → ücretsizi yaz → raporu yeniden (bekleyen). İkinci de red yiyebilir.",
+        "Başarı: iki satır veya net «çakışma, ücretsiz yok» — ikisi de EDGE-024."
+      ],
+      "success": "İki izin satırı aynı günleri kesiyor, veya ürün çakışmayı açıkça reddediyor.",
+      "fail": "Raporu silip yalnız ücretsiz bırakmak (çakışma kaybolur)."
+    }
+  ]
+}

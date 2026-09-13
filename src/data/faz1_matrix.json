@@ -1,0 +1,225 @@
+{
+  "period": "Eylül 2026",
+  "environment": "dhrtest.d1-tech.com.tr",
+  "sourceOfTruth": "YZ = 2026 Türkiye mevzuatı (5510, 4447, GVK, 488). Luca kolonu bekliyor. DHR export bekliyor.",
+  "matrixDesign": {
+    "layers": [
+      {
+        "id": "tv",
+        "title": "TV-01…22",
+        "desc": "Tipik vakalar"
+      },
+      {
+        "id": "pay",
+        "title": "PAY 127",
+        "desc": "Excel senaryoları kadroya çevrildi"
+      },
+      {
+        "id": "edge",
+        "title": "EDGE-001…052",
+        "desc": "Kenar / Takvim / Blokaj / Yuvarlama / Şirket B"
+      }
+    ],
+    "notFullCombinatorial": "15’lik dönem yalnız Ana Kadro. Kenar/Yuvarlama Lab çocuğu değil."
+  },
+  "checkedItems": [],
+  "correctFindings": [],
+  "dhrBugs": [],
+  "scenarios": [
+    {
+      "n": 1,
+      "name": "Ekin Sarı",
+      "group": "ana",
+      "scenario": "Altın referans. Zam/ikramiye/BES yok. Ağustos taslak kalır.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 2,
+      "name": "Baran Ünal",
+      "group": "ana",
+      "scenario": "İşe giriş 19.09.2026 Cumartesi (Excel). 5 sabit kalem. 18.09 mesai denemesi red.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "giriş 2026-09-19",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 3,
+      "name": "Cansu Kılıç",
+      "group": "ana",
+      "scenario": "Çıkış 14.09.2026. 16.09 izin/mesai red.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "giriş 2026-01-06 çıkış 2026-09-14",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 4,
+      "name": "Doruk Aslan",
+      "group": "ana",
+      "scenario": "Ücretsiz 1–2.09, rapor 8–10.09, yıllık 15–16.09. 07.09 Ana’da iş günü.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 5,
+      "name": "Elif Meriç",
+      "group": "ana",
+      "scenario": "17.09 aynı gün izin+çalışma. PNT-035’ten sonra çelişki düzeltilir.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 6,
+      "name": "Fırat Deniz",
+      "group": "ana",
+      "scenario": "TV-06 birebir: 10 saat brüt + 5 saat net mesai. HSP-007 brüt 10 saat kalemini doğrular.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 7,
+      "name": "Gülce Han",
+      "group": "ana",
+      "scenario": "Prim+masraf+kesinti+avans seed. İkramiye 5.000 koşumda (E2E-005 ve Luca 8009’dan sonra). DHR-PAYROLL-001.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 59.964,67 TL. Luca bekliyor."
+    },
+    {
+      "n": 8,
+      "name": "Hakan Işık",
+      "group": "ana",
+      "scenario": "Yalnız BES %3 çalışan. İşveren BES yok.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 52.919,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 9,
+      "name": "İrem Palaz",
+      "group": "ana",
+      "scenario": "05510 %2 varsayıldı (HSP-014). Onay PNT-035’ten sonra.",
+      "profile": "Standart",
+      "law": "05510_2",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 10,
+      "name": "Jale Öztürk",
+      "group": "ana",
+      "scenario": "Emekli / SGDP.",
+      "profile": "Emekli",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 59.359,74 TL. Luca bekliyor."
+    },
+    {
+      "n": 11,
+      "name": "Korhan Seçkin",
+      "group": "ana",
+      "scenario": "Kısmi; 80 saat / 10 prim günü.",
+      "profile": "Kısmi Süreli",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 12,
+      "name": "Lale Tuna",
+      "group": "ana",
+      "scenario": "Stajyer; okul/belge.",
+      "profile": "Stajyer",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 17.100 TL. Luca bekliyor."
+    },
+    {
+      "n": 13,
+      "name": "Mert Vural",
+      "group": "ana",
+      "scenario": "Ar-Ge 5746 Lisans. Teşvik seed’de onaylı.",
+      "profile": "5746 Lisans / Diğer Personel",
+      "law": "5746_05746",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 14,
+      "name": "Nihan Yıldız",
+      "group": "ana",
+      "scenario": "Engelli 1. derece.",
+      "profile": "Engelli 1. Derece",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    },
+    {
+      "n": 15,
+      "name": "Onur Zengin",
+      "group": "ana",
+      "scenario": "Standart hesaplanabilir. +1 eksik gün reopen Luca Ana 15’ten sonra.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "YZ net 54.980,12 TL. Luca bekliyor."
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-export type MatrixStatus = "pass" | "fail" | "partial" | "known";
+export type MatrixStatus = "pass" | "fail" | "partial" | "known" | "pending";
 
 export type MatrixData = {
   period: string;
@@ -22,6 +22,7 @@ export type MatrixData = {
     input: string;
     dhr: MatrixStatus;
     luca: MatrixStatus;
+    ai?: MatrixStatus;
     verdict: string;
   }[];
 };

@@ -4,8 +4,12 @@ export type LineItem = {
   group: "kazanc" | "kesinti" | "ozet" | string;
   dhr: number | null;
   luca: number | null;
+  ai?: number | null;
   delta: number | null;
+  deltaDhrAi?: number | null;
+  deltaLucaAi?: number | null;
   match: boolean;
+  matchAi?: boolean;
 };
 
 export type KalemAgg = {
@@ -14,10 +18,15 @@ export type KalemAgg = {
   group: string;
   dhrSum: number;
   lucaSum: number;
-  deltaSum: number;
+  aiSum?: number;
+  deltaSum: number | null;
+  deltaDhrAi?: number | null;
+  deltaLucaAi?: number | null;
   peopleWithValue: number;
   matchCount: number;
   compared: number;
+  matchLucaAi?: number;
+  comparedLucaAi?: number;
 };
 
 export type CompareRow = {
@@ -33,9 +42,9 @@ export type CompareRow = {
     ucret?: number;
     topKaz?: number;
     digKaz?: number;
-    gv: number;
-    damga: number;
-    net: number;
+    gv: number | null;
+    damga: number | null;
+    net: number | null;
     tgun?: number;
     digText?: string;
     ozText?: string;
@@ -72,6 +81,29 @@ export type CompareRow = {
     sgk?: number | null;
     unemployment?: number | null;
   } | null;
+  ai?: {
+    salary?: number;
+    meal?: number;
+    transport?: number;
+    overtime?: number;
+    prim?: number;
+    ikramiye?: number;
+    masraf?: number;
+    gross: number;
+    sgk: number;
+    unemployment: number;
+    gv: number;
+    damga: number;
+    bes: number;
+    advance?: number;
+    kesinti?: number;
+    net: number;
+    gvMatrah?: number;
+    gvExemptApplied?: number;
+    notes?: string[];
+  };
+  lucaPending?: boolean;
+  dhrPending?: boolean;
   delta: {
     net: number;
     gv: number;
@@ -81,6 +113,8 @@ export type CompareRow = {
     transport?: number;
     overtime?: number;
     bes?: number;
+    netAi?: number;
+    gvAi?: number;
   } | null;
   lineItems?: LineItem[];
 };
@@ -90,6 +124,9 @@ export type MismatchCause = {
   short?: string;
   title: string;
   detail: string;
+  whichCorrect?: string;
+  legalBasis?: string;
+  expected?: boolean;
 };
 
 export type MismatchItem = {
@@ -118,6 +155,8 @@ export type MismatchSummary = {
   mismatchCount: number;
   fullMatchCount: number;
   netWithin100: number;
+  netPass001?: number;
+  passTolerance?: number;
   causeTally: (MismatchCause & { count: number })[];
   normalizations: string[];
 };
@@ -134,13 +173,21 @@ export type ComparisonUi = {
   drivers?: { title: string; body: string }[];
 };
 
+export type AiFinding = {
+  id: string;
+  vs: string;
+  result: string;
+  detail: string;
+};
+
 export type ComparisonData = {
   generatedAt: string;
   period: string;
   unit: string;
-  lucaPdfVersion?: string;
+  lucaPdfVersion?: string | null;
+  pending?: { luca?: boolean; dhr?: boolean };
   ui?: ComparisonUi;
-  sources: { lucaPdf: string; dhrExcel: string };
+  sources: { lucaPdf: string; dhrExcel: string; aiMevzuat?: string };
   summary: {
     lucaCount: number;
     dhrCount: number;
@@ -151,6 +198,9 @@ export type ComparisonData = {
     mealOnLuca?: number;
     overtimeOnLuca?: number;
     besOnLuca?: number;
+    aiCount?: number;
+    avgAbsNetDeltaAi?: number | null;
+    netWithin100Ai?: number;
   };
   lineDefs?: { key: string; label: string; group: string }[];
   kalemler?: KalemAgg[];
@@ -161,6 +211,12 @@ export type ComparisonData = {
     gvMonthly2026: { month: string; exempt: number; rate: number }[];
     dhrObserved: { exemptApplied: number; paramFormulaValue: number; allMonthsSame: boolean };
     lucaObserved: { exemptApplied: number; octoberLegal: number };
+  };
+  aiReport?: {
+    month: number;
+    engine: string;
+    disclaimer: string;
+    findings: AiFinding[];
   };
 };
 
