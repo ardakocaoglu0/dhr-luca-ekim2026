@@ -11866,12 +11866,12 @@
       ],
       "causes": [
         {
-          "id": "MEAL-DAMGA",
-          "short": "Yemek damga matrahında değil",
-          "title": "Luca yemeği damga matrahından düşüyor",
-          "detail": "DHR Serra damga 198,63 (59.200 üzerinden asgari damga istisnası). Luca 156,88 = 5.500 × ‰7,59 kadar düşük. Yemek kazancı modülü damgayı da kesmiş. Nakit yemek ücret bordrosunda damgaya tabi kalır.",
-          "whichCorrect": "DHR — nakit yemek damga matrahında; asgari damga istisnası ayrıca uygulanır (198,63).",
-          "legalBasis": "Damga Vergisi Kanunu — ücret bordrosu; GVK md. 23 yemek istisnası damgayı otomatik düşürmez.",
+          "id": "SELIN-DAMGA",
+          "short": "Selin damga 12,73",
+          "title": "Ocak: Luca asgari istisnayı uyguluyor; kalan Δ damga",
+          "detail": "Luca GV 487,11 ve damga 29,00 birebir asgari istisna. ΔNet −12,73 yalnız damga (DHR 12,73 / Luca 0). «Luca istisnayı uygulamıyor» gerekçesi Ocak için yanlış.",
+          "whichCorrect": "Luca — asgari damga istisnası 29,00; kalan Δ damga 12,73 nakit yemek matrahı (488).",
+          "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVK 23/18 asgari ücret istisnası (Ocak GV 487,11 / damga 29,00 Luca’da birebir).",
           "expected": false
         }
       ]
@@ -12567,8 +12567,8 @@
       "31 kişide Luca işsizlik işçi payı net mutabakatından geri hesaplandı (PDF bu satırı ayrı basmıyor).",
       "Yemek (22G) 5.500 B: diğer kazanç 8.700. Serra SGK 7.801,36 birebir (158×22). Alper brüt 59.200 (N brütleşme kapandı).",
       "Dilek SGDP %7,5 / işsizlik 0; İlker SGK 0 / işsizlik 0 / net 18.000 — DHR kanarya kriterleri tuttu.",
-      "Selin damga: DHR 12,73, Luca 0 — yemek damga düşümü asgari damgayı da sıfırlamış.",
-      "Selin Bayraktar: Luca net mutabakat bakiyesi 312,32 TL çözümlenemedi"
+      "Selin: Luca asgari ücret GV/damga istisnasını uyguluyor (487,11 ve 29,00 birebir). Kalan ΔNet −12,73 yalnız damga (DHR 12,73 / Luca 0) — istisna atlama değil.",
+      "Selin işsizlik 312,32: Luca PDF bu satırı ayrı basmıyor; 31 kişide aynı normalizasyon."
     ],
     "passTolerance": 0.01
   },

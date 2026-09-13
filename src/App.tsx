@@ -694,7 +694,7 @@ export default function AppView({ data, matrix }: Props) {
         id="scenarios"
         title={`Test edilen senaryolar (${matrix.scenarios.length})`}
         defaultOpen={false}
-        caption="DHR / Luca / YZ. YZ = 2026 Türkiye mevzuatı. Bekleyen kaynak kolon başlığında bir kez işaretlenir."
+        caption="DHR / Luca / YZ. Geçme ±0,01 TL. Luca referanstır, doğru kabul edilmez. Bekleyen kaynak kolon başlığında bir kez işaretlenir."
       >
         <div className="table-scroll">
           <table className="matrix-table sticky-name">
@@ -704,6 +704,8 @@ export default function AppView({ data, matrix }: Props) {
               <col style={{ width: "11rem" }} />
               <col span={4} />
               <col span={3} />
+              <col />
+              <col style={{ width: "11rem" }} />
               <col />
             </colgroup>
             <thead>
@@ -715,9 +717,11 @@ export default function AppView({ data, matrix }: Props) {
                   Senaryo
                 </th>
                 <th className="center col-sep" colSpan={3}>
-                  Sonuç
+                  Sonuç ±0,01 TL
                 </th>
-                <th className="left col-sep" />
+                <th className="left col-sep" colSpan={3}>
+                  Sapma hakemi
+                </th>
               </tr>
               <tr>
                 <th className="center sticky-col">#</th>
@@ -737,6 +741,8 @@ export default function AppView({ data, matrix }: Props) {
                 </th>
                 <th className="center">YZ</th>
                 <th className="left col-sep">Hüküm</th>
+                <th className="left">Hangisi doğru</th>
+                <th className="left">Mevzuat</th>
               </tr>
             </thead>
             <tbody>
@@ -762,6 +768,10 @@ export default function AppView({ data, matrix }: Props) {
                   </td>
                   <td className="note left clamp2 col-sep">
                     <span title={s.verdict}>{s.verdict}</span>
+                  </td>
+                  <td className="note left">{s.whichCorrect || "—"}</td>
+                  <td className="note left clamp2">
+                    <span title={s.legalBasis || ""}>{s.legalBasis || "—"}</span>
                   </td>
                 </tr>
               ))}
@@ -1073,23 +1083,12 @@ function Stat({ label, value, tone }: { label: string; value: string; tone?: "ok
 function toneOf(s: string): "ok" | "bad" | "warn" | "" {
   if (s === "pass") return "ok";
   if (s === "fail") return "bad";
-  if (s === "known" || s === "partial" || s === "pending") return "warn";
+  if (s === "pending") return "warn";
   return "";
 }
 
 function Badge({ status }: { status: string }) {
-  const label =
-    status === "pass"
-      ? "OK"
-      : status === "fail"
-        ? "FAIL"
-        : status === "partial"
-          ? "KISMİ"
-          : status === "known"
-            ? "BİLİNEN"
-            : status === "pending"
-              ? "BEKLİYOR"
-              : status;
+  const label = status === "pass" ? "OK" : status === "fail" ? "FAIL" : status === "pending" ? "BEKLİYOR" : status;
   return <span className={`badge ${status === "pending" ? "pending" : toneOf(status)}`}>{label}</span>;
 }
 

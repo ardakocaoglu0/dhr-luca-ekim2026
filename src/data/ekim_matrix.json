@@ -55,7 +55,7 @@
     },
     {
       "item": "Net ücret (Vildan, Ceren) → net ödenen 42.000",
-      "result": "partial",
+      "result": "fail",
       "note": "Maaş brütleştirmesi çalışıyor ama yemek/yol artık brütleştirilmiyor; toplam net iki kişide de 480 TL düştü."
     },
     {
@@ -90,7 +90,7 @@
     },
     {
       "item": "Pelin Oto.Kat.BES 1.740",
-      "result": "partial",
+      "result": "fail",
       "note": "DHR 1.836 (PEK 61.200 × %3); hedef 1.740 (maaş bazlı). Luca PDF 2.001."
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "item": "Kanun 05746 / 15746 / 4691 kartları",
-      "result": "partial",
+      "result": "fail",
       "note": "4691 GV+damga terkini işliyor (Alper, Berna, Cemil). 5746 GV/damga terkini hâlâ uygulanmıyor (Yağız, Zeliha, Deniz, Tamer)."
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "item": "Luca GV istisnası Ekim güncelliği",
-      "result": "partial",
+      "result": "fail",
       "note": "Luca ~4211; yasal 5615,10 değil"
     },
     {
@@ -174,7 +174,9 @@
       "dhr": "pass",
       "luca": "pass",
       "verdict": "Baz satır: GV istisnası 5.615,10 uygulanıyor, BES yok. Kalan fark Luca’nın 4.211 bandı ve yemek SGK matrahı.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "",
+      "legalBasis": ""
     },
     {
       "n": 2,
@@ -187,7 +189,9 @@
       "dhr": "pass",
       "luca": "pass",
       "verdict": "Kanun PDF’de 05510",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "",
+      "legalBasis": ""
     },
     {
       "n": 3,
@@ -200,7 +204,9 @@
       "dhr": "pass",
       "luca": "pass",
       "verdict": "Kanun PDF’de 05510",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "",
+      "legalBasis": ""
     },
     {
       "n": 4,
@@ -210,10 +216,12 @@
       "profile": "Standart",
       "law": "00000",
       "input": "NET",
-      "dhr": "partial",
+      "dhr": "fail",
       "luca": "pass",
       "verdict": "Brütleştirme artık yalnız maaşa uygulanıyor, yemek/yol yüz değerinden geçiyor: toplam net 50.700 → 50.220 (−480).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 5,
@@ -223,10 +231,12 @@
       "profile": "5746 Lisans",
       "law": "05746",
       "input": "—",
-      "dhr": "partial",
+      "dhr": "fail",
       "luca": "fail",
       "verdict": "5746 GV terkini uygulanmıyor (GV 2.506,65) ve damga kesiliyor; Luca damga 0. İstisna 5.615,10 doğru.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "karar bekliyor",
+      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
     },
     {
       "n": 6,
@@ -236,10 +246,12 @@
       "profile": "5746 YL",
       "law": "15746",
       "input": "—",
-      "dhr": "partial",
+      "dhr": "fail",
       "luca": "fail",
       "verdict": "5746 YL: GV terkini yok (912,90), damga 179,65 kesiliyor; Luca damga 0.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "karar bekliyor",
+      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
     },
     {
       "n": 7,
@@ -252,7 +264,9 @@
       "dhr": "pass",
       "luca": "fail",
       "verdict": "4691 GV + damga terkini işliyor (GV 0, damga 0). Ocak döneminde de aynı.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "DHR — 4691 GV/damga terkini.",
+      "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
     },
     {
       "n": 8,
@@ -265,7 +279,9 @@
       "dhr": "pass",
       "luca": "fail",
       "verdict": "Ar-Ge 4691 terkini işliyor (GV 0, damga 0).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "DHR — 4691 GV/damga terkini.",
+      "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
     },
     {
       "n": 9,
@@ -278,7 +294,9 @@
       "dhr": "pass",
       "luca": "fail",
       "verdict": "Destek personeli 4691 terkini işliyor (GV 0, damga 0).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "DHR — 4691 GV/damga terkini.",
+      "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
     },
     {
       "n": 10,
@@ -291,7 +309,9 @@
       "dhr": "pass",
       "luca": "fail",
       "verdict": "SGDP %7,5 (PEK 45.200 → SGK 3.390) ve işsizlik muafiyeti uygulanıyor.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 11,
@@ -302,9 +322,11 @@
       "law": "00000",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "Engellilik 1. derece indirimi uygulanıyor: GV 2.506,65 → 706,65 (matrah −12.000).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 12,
@@ -315,9 +337,11 @@
       "law": "00000",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "Engellilik 2. derece indirimi GV’yi sıfırlıyor (912,90 → 0).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 13,
@@ -328,9 +352,11 @@
       "law": "00000",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "Engellilik 3. derece indirimi uygulanıyor: GV 1.231,65 → 781,65 (matrah −3.000).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 14,
@@ -343,7 +369,9 @@
       "dhr": "fail",
       "luca": "pass",
       "verdict": "Ekim puantajında kısmi 15 gün yok: 30 gün / 53.000 hesaplanıyor (Luca kısmi yansıtıyor). Ocak döneminde 26 gün doğru işliyor.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 15,
@@ -354,9 +382,11 @@
       "law": "STAJ",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "Stajyer kesintisiz: SGK 0, işsizlik 0, GV 0, net = brüt 18.000.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 16,
@@ -367,9 +397,11 @@
       "law": "YABANCI",
       "input": "—",
       "dhr": "pass",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "Özel sigorta kolu kartta net değil",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 17,
@@ -382,7 +414,9 @@
       "dhr": "pass",
       "luca": "pass",
       "verdict": "PDF(5): FM 4.840; yemek/yol henüz yok",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "",
+      "legalBasis": ""
     },
     {
       "n": 18,
@@ -395,7 +429,9 @@
       "dhr": "fail",
       "luca": "pass",
       "verdict": "Avans 7.200 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 19,
@@ -408,7 +444,9 @@
       "dhr": "fail",
       "luca": "pass",
       "verdict": "Prim 5.000 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 20,
@@ -421,7 +459,9 @@
       "dhr": "fail",
       "luca": "pass",
       "verdict": "Genel kesinti 1.200 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 21,
@@ -434,7 +474,9 @@
       "dhr": "fail",
       "luca": "fail",
       "verdict": "Masraf 750 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 22,
@@ -444,10 +486,12 @@
       "profile": "Standart",
       "law": "00000",
       "input": "BES 1740",
-      "dhr": "partial",
-      "luca": "partial",
+      "dhr": "fail",
+      "luca": "fail",
       "verdict": "BES yalnız Pelin’den kesiliyor (PEK 61.200 × %3 = 1.836; hedef 1.740). İşveren katkısı 1.740 brütte ama damga matrahında değil.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
       "n": 23,
@@ -460,7 +504,9 @@
       "dhr": "pass",
       "luca": "pass",
       "verdict": "Geçmiş GV matrahı 185.000 üst dilime taşıyor (GV 5.213,90, kümülatif 292.986).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "",
+      "legalBasis": ""
     },
     {
       "n": 24,
@@ -473,7 +519,9 @@
       "dhr": "pass",
       "luca": "pass",
       "verdict": "Asgari ücret istisnası GV’yi sıfırlıyor; damga 12,73 kalıyor.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "",
+      "legalBasis": ""
     },
     {
       "n": 25,
@@ -483,10 +531,12 @@
       "profile": "5746 Lisans",
       "law": "05746",
       "input": "FM",
-      "dhr": "partial",
-      "luca": "partial",
+      "dhr": "fail",
+      "luca": "fail",
       "verdict": "FM 4.040 doğru; 5746 damga terkini yok (229,29 kesiliyor, Luca 30,66).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "karar bekliyor",
+      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
     },
     {
       "n": 26,
@@ -497,9 +547,11 @@
       "law": "SGDP",
       "input": "Prim 3500",
       "dhr": "fail",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "Prim 3.500 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 27,
@@ -510,9 +562,11 @@
       "law": "00000",
       "input": "Kesinti 800",
       "dhr": "fail",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "Genel kesinti 800 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 28,
@@ -525,7 +579,9 @@
       "dhr": "fail",
       "luca": "pass",
       "verdict": "İkramiye 10.000 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 29,
@@ -538,7 +594,9 @@
       "dhr": "fail",
       "luca": "pass",
       "verdict": "Prim 4.500 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
+      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
     },
     {
       "n": 30,
@@ -548,10 +606,12 @@
       "profile": "Standart",
       "law": "00000",
       "input": "NET+FM",
-      "dhr": "partial",
+      "dhr": "fail",
       "luca": "pass",
       "verdict": "Net+FM: brütleştirme kapsamı daraldı, toplam net 54.060 → 53.580 (−480). FM 4.141,23 (Luca 4.200,58).",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 31,
@@ -561,10 +621,12 @@
       "profile": "5746 Lisans",
       "law": "5746_GV",
       "input": "—",
-      "dhr": "partial",
+      "dhr": "fail",
       "luca": "fail",
       "verdict": "5746 GV stopaj terkini DHR’de uygulanmıyor (GV 2.187,90); istisna ve damga standart.",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "karar bekliyor",
+      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
     },
     {
       "n": 32,
@@ -575,9 +637,11 @@
       "law": "05510",
       "input": "FM",
       "dhr": "pass",
-      "luca": "partial",
+      "luca": "fail",
       "verdict": "PDF(5): FM 4.320 + kanun 05510; yemek/yol yok",
-      "ai": "pass"
+      "ai": "pass",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     }
   ]
 }

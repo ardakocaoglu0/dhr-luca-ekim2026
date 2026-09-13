@@ -11,13 +11,15 @@ import ekimMatrix from "./data/ekim_matrix.json";
 import faz1 from "./data/faz1_comparison.json";
 import faz1Matrix from "./data/faz1_matrix.json";
 import faz1Roster from "./data/faz1_roster.json";
+import izole from "./data/izole_comparison.json";
+import izoleMatrix from "./data/izole_matrix.json";
 import logins from "./data/logins.json";
 import type { ComparisonData } from "./types";
 import type { MatrixData } from "./matrixTypes";
 import type { Faz1Roster, LoginsData } from "./faz1Types";
 import type { DashboardData } from "./dashboardTypes";
 
-type Tab = "durum" | "ekim" | "ocak" | "faz1" | "girisler";
+type Tab = "durum" | "ekim" | "ocak" | "izole" | "faz1" | "girisler";
 
 export default function App() {
   const [tab, setTab] = useState<Tab>("durum");
@@ -38,6 +40,9 @@ export default function App() {
             </button>
             <button className={tab === "ocak" ? "active" : ""} onClick={() => setTab("ocak")}>
               Ocak 2026
+            </button>
+            <button className={tab === "izole" ? "active" : ""} onClick={() => setTab("izole")}>
+              Ocak 2026 — Tek Değişken
             </button>
             <button className={tab === "faz1" ? "active" : ""} onClick={() => setTab("faz1")}>
               Eylül 2026 — Faz 1
@@ -65,6 +70,8 @@ export default function App() {
         <AppView data={ekim as ComparisonData} matrix={ekimMatrix as MatrixData} />
       ) : tab === "ocak" ? (
         <AppView data={ocak as ComparisonData} matrix={ocakMatrix as MatrixData} />
+      ) : tab === "izole" ? (
+        <AppView data={izole as ComparisonData} matrix={izoleMatrix as MatrixData} />
       ) : tab === "faz1" ? (
         <Faz1View
           roster={faz1Roster as Faz1Roster}

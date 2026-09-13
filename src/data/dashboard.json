@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T16:10:00.000Z",
+  "generatedAt": "2026-09-13T17:14:10.166Z",
   "environment": "https://dhrtest.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
@@ -26,9 +26,27 @@
       "people": 15,
       "state": "Hesaplandı · Luca PDF bekliyor",
       "compare": "DHR × YZ"
+    },
+    {
+      "id": "izole",
+      "label": "Ocak 2026 — Tek Değişken",
+      "unit": "Tek Değişken",
+      "people": 27,
+      "state": "Hesaplandı · DHR 27/27 · hakem pass 2 · YZ net ±0,01 0 · Luca PDF bekliyor",
+      "compare": "DHR × YZ"
     }
   ],
   "works": [
+    {
+      "id": "W-1VAR",
+      "title": "Bir kişi = bir değişken (Tek Değişken birimi)",
+      "detail": "Ocak 2026 Tek Değişken: 05510, prim, net, FM ayrı sicillerde. İK Grup C çaprazları (Baran/Emre/Ceren) bu birimde yok.",
+      "periods": [
+        "Ocak",
+        "Tek Değişken"
+      ],
+      "area": "Kapsam"
+    },
     {
       "id": "W-GV-BAND",
       "title": "Asgari ücret GV istisnası, dönem ayının bandıyla uygulanıyor",
@@ -184,6 +202,39 @@
     }
   ],
   "bugs": [
+    {
+      "id": "IZ-AVANS",
+      "title": "Tek Değişken: avans mahsubu bordroya yazılmıyor",
+      "severity": "Yüksek",
+      "detail": "Umay Gunes (6220) 7.200 TL avans kaydı duruyor; Ocak neti Ada baseline ile aynı. F1-AVANS ile aynı sınıf.",
+      "periods": [
+        "Tek Değişken"
+      ],
+      "impact": "Tek girdi avans senaryosu ölçülemıyor.",
+      "area": "Puantaj"
+    },
+    {
+      "id": "IZ-FM-SAAT",
+      "title": "Tek Değişken: FM 08:00–11:00 çalışma saatine yazılıyor",
+      "severity": "Orta",
+      "detail": "Tolga Ergin (6219) 4×3s onaylı talep var; puantaj totalHours=0 çünkü aralık mesai değil iş günü içi.",
+      "periods": [
+        "Tek Değişken"
+      ],
+      "impact": "12 saat FM bordroya 0 yansıyor.",
+      "area": "Puantaj"
+    },
+    {
+      "id": "IZ-ENGEL-PUT",
+      "title": "Tek Değişken: engellilik derecesi API PUT ile yazılmıyor",
+      "severity": "Orta",
+      "detail": "Kaan/Leman/Mert Employee.disabilityDegree GET’te null; İK Ersin’de 1. PUT 200 dönüyor ama alan değişmiyor. Net Ada baseline.",
+      "periods": [
+        "Tek Değişken"
+      ],
+      "impact": "1/2/3. derece indirimi bu birimde izolé ölçülemedi.",
+      "area": "Gelir vergisi"
+    },
     {
       "id": "DHR-PPV-DROP",
       "title": "Tam hesaplama tek seferlik kalemleri bordroya yazmıyor",

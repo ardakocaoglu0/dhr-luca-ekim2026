@@ -30,7 +30,7 @@
     },
     {
       "item": "Net = kazanç − kesinti tutarlılığı",
-      "result": "partial",
+      "result": "fail",
       "note": "14/15 kişide DHR’nin kendi kalemleri net ile birebir tutuyor (masraf geri ödemesi eklenerek)."
     },
     {
@@ -60,12 +60,12 @@
     },
     {
       "item": "Fazla mesai kaleminin birimi",
-      "result": "partial",
+      "result": "fail",
       "note": "8008’de 10 saat yerine 10,00 TL işlendi; kalem tutar bekliyor (F1-FM-BIRIM)."
     },
     {
       "item": "Yemek yardımının SGK/GV istisnası",
-      "result": "partial",
+      "result": "fail",
       "note": "DHR 5.500 TL’nin tamamını istisna sayıyor; günlük sınır doğrulanmalı (F1-YEMEK-SGK-GV)."
     }
   ],
@@ -102,7 +102,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 2,
@@ -115,7 +117,9 @@
       "dhr": "fail",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 21.894,55 TL (12 gün). YZ 54.980,12 TL, Δ -33.085,57 TL. Luca bekliyor."
+      "verdict": "DHR net 21.894,55 TL (12 gün). YZ 54.980,12 TL, Δ -33.085,57 TL. Luca bekliyor.",
+      "whichCorrect": "YZ",
+      "legalBasis": "DHR hesap sapması; Luca bu dönemde yok."
     },
     {
       "n": 3,
@@ -128,7 +132,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 34.283,80 TL (18 gün). YZ 54.980,12 TL, Δ -20.696,32 TL. Luca bekliyor."
+      "verdict": "DHR net 34.283,80 TL (18 gün). YZ 54.980,12 TL, Δ -20.696,32 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 4,
@@ -141,7 +147,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 52.942,55 TL (28 gün). YZ 54.980,12 TL, Δ -2.037,57 TL. Luca bekliyor."
+      "verdict": "DHR net 52.942,55 TL (28 gün). YZ 54.980,12 TL, Δ -2.037,57 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 5,
@@ -154,7 +162,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 6,
@@ -167,7 +177,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.513,51 TL (30 gün). YZ 54.980,12 TL, Δ +1.533,39 TL. Luca bekliyor."
+      "verdict": "DHR net 56.513,51 TL (30 gün). YZ 54.980,12 TL, Δ +1.533,39 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 7,
@@ -180,7 +192,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 64.736,19 TL (30 gün). YZ 59.964,67 TL, Δ +4.771,52 TL. Luca bekliyor."
+      "verdict": "DHR net 64.736,19 TL (30 gün). YZ 59.964,67 TL, Δ +4.771,52 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 8,
@@ -193,7 +207,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 54.610,37 TL (30 gün). YZ 52.919,12 TL, Δ +1.691,25 TL. Luca bekliyor."
+      "verdict": "DHR net 54.610,37 TL (30 gün). YZ 52.919,12 TL, Δ +1.691,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 9,
@@ -206,7 +222,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 10,
@@ -219,7 +237,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 60.535,37 TL (30 gün). YZ 59.359,74 TL, Δ +1.175,63 TL. Luca bekliyor."
+      "verdict": "DHR net 60.535,37 TL (30 gün). YZ 59.359,74 TL, Δ +1.175,63 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 11,
@@ -232,7 +252,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 12,
@@ -245,7 +267,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 18.000,00 TL (30 gün). YZ 17.100,00 TL, Δ +900,00 TL. Luca bekliyor."
+      "verdict": "DHR net 18.000,00 TL (30 gün). YZ 17.100,00 TL, Δ +900,00 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 13,
@@ -258,7 +282,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 14,
@@ -271,7 +297,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 15,
@@ -284,7 +312,9 @@
       "dhr": "pass",
       "luca": "pending",
       "ai": "pass",
-      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor.",
+      "whichCorrect": "YZ hakem; Luca referans.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     }
   ]
 }
