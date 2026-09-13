@@ -696,17 +696,22 @@ export default function AppView({ data, matrix }: Props) {
         defaultOpen={false}
         caption="DHR / Luca / YZ. Geçme ±0,01 TL. Luca referanstır, doğru kabul edilmez. Bekleyen kaynak kolon başlığında bir kez işaretlenir."
       >
-        <div className="table-scroll">
-          <table className="matrix-table sticky-name">
+        <div className="table-scroll fit">
+          <table className="matrix-table">
             <colgroup>
-              <col style={{ width: "3.2rem" }} />
-              <col style={{ width: "2.6rem" }} />
-              <col style={{ width: "11rem" }} />
-              <col span={4} />
-              <col span={3} />
-              <col />
-              <col style={{ width: "11rem" }} />
-              <col />
+              <col className="col-n" />
+              <col className="col-g" />
+              <col className="col-name" />
+              <col className="col-scen" />
+              <col className="col-profile" />
+              <col className="col-law" />
+              <col className="col-input" />
+              <col className="col-badge" />
+              <col className="col-badge" />
+              <col className="col-badge" />
+              <col className="col-verdict" />
+              <col className="col-which" />
+              <col className="col-legal" />
             </colgroup>
             <thead>
               <tr className="group-row">

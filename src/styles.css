@@ -96,7 +96,7 @@ code {
 }
 
 .app-shell-inner {
-  max-width: 1280px;
+  max-width: 1680px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
@@ -238,7 +238,7 @@ code {
    Page + hero
    ============================================================ */
 .page {
-  max-width: 1280px;
+  max-width: 1680px;
   margin: 0 auto;
   padding: 0 1rem 4rem;
 }
@@ -253,7 +253,7 @@ code {
 }
 
 .hero-inner {
-  max-width: 1280px;
+  max-width: 1680px;
   margin: 0 auto;
 }
 
@@ -564,6 +564,10 @@ details.panel > summary + * {
   max-height: 80vh;
 }
 
+.table-scroll.fit {
+  overflow-x: auto;
+}
+
 table {
   width: 100%;
   border-collapse: separate;
@@ -819,10 +823,63 @@ tbody tr.group-divider:hover td {
   white-space: nowrap;
 }
 
-.matrix-table td:nth-child(4),
-.matrix-table td:nth-child(11) {
+.matrix-table {
+  width: 100%;
+  table-layout: auto;
+}
+
+.matrix-table th,
+.matrix-table td {
   white-space: normal;
-  max-width: 18rem;
+  overflow-wrap: break-word;
+  vertical-align: top;
+  padding: 0.45rem 0.5rem;
+  text-align: left;
+}
+
+.matrix-table th.center,
+.matrix-table td.center,
+.matrix-table .sticky-col,
+.matrix-table .sticky-col-2 {
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+.matrix-table th.center,
+.matrix-table td.center {
+  text-align: center;
+}
+
+.matrix-table th {
+  letter-spacing: 0.02em;
+}
+
+.matrix-table .badge {
+  white-space: nowrap;
+}
+
+.matrix-table th .th-badge {
+  display: block;
+  margin: 0.15rem auto 0;
+  width: fit-content;
+}
+
+.matrix-table td.note,
+.matrix-table td.clamp2 {
+  max-width: none;
+}
+
+.matrix-table td.clamp2 > span {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+
+.matrix-table td:nth-child(11),
+.matrix-table td:nth-child(12),
+.matrix-table td:nth-child(13) {
+  width: 18%;
 }
 
 /* ============================================================
