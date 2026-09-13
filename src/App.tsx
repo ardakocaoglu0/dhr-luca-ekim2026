@@ -44,24 +44,36 @@ export default function AppView({ data, matrix }: Props) {
     [mismatches, causeFilter],
   );
 
-  const topNet = lucaPending || dhrPending
-    ? [...rows]
-        .sort((a, b) => (b.ai?.net || 0) - (a.ai?.net || 0))
-        .slice(0, 12)
-        .map((r) => ({
-          name: r.name.split(" ")[0],
-          full: r.name,
-          dNet: Math.round(r.ai?.net || 0),
-        }))
-    : [...rows]
-        .filter((r) => r.delta?.net != null)
-        .sort((a, b) => Math.abs(b.delta!.net) - Math.abs(a.delta!.net))
-        .slice(0, 12)
-        .map((r) => ({
-          name: r.name.split(" ")[0],
-          full: r.name,
-          dNet: Math.round(r.delta!.net),
-        }));
+  // With DHR present but Luca still pending the useful chart is Δ DHR−YZ; with
+  // neither comparison available it falls back to the YZ net itself.
+  const netMode: "delta" | "deltaAi" | "ai" = !lucaPending && !dhrPending ? "delta" : dhrPending ? "ai" : "deltaAi";
+  const netKey = netMode === "delta" ? "net" : "netAi";
+  const topNet =
+    netMode === "ai"
+      ? [...rows]
+          .sort((a, b) => (b.ai?.net || 0) - (a.ai?.net || 0))
+          .slice(0, 12)
+          .map((r) => ({
+            name: r.name.split(" ")[0],
+            full: r.name,
+            dNet: Math.round(r.ai?.net || 0),
+          }))
+      : [...rows]
+          .filter((r) => r.delta?.[netKey] != null)
+          .sort((a, b) => Math.abs(b.delta![netKey]!) - Math.abs(a.delta![netKey]!))
+          .slice(0, 12)
+          .map((r) => ({
+            name: r.name.split(" ")[0],
+            full: r.name,
+            dNet: Math.round(r.delta![netKey]!),
+          }));
+  const netChartTitle =
+    netMode === "delta"
+      ? "En büyük |ΔNet DHR−Luca| (TL)"
+      : netMode === "deltaAi"
+        ? "En büyük |ΔNet DHR−YZ| (TL)"
+        : "YZ net (mevzuat, TL)";
+  const netChartLabel = netMode === "ai" ? "YZ net" : netMode === "delta" ? "ΔNet" : "ΔNet DHR−YZ";
 
   const passCount = matrix.checkedItems.filter((c) => c.result === "pass").length;
   const failCount = matrix.checkedItems.filter((c) => c.result === "fail").length;
@@ -800,11 +812,13 @@ export default function AppView({ data, matrix }: Props) {
       </section>
 
       <section className="panel">
-        <h2>{lucaPending || dhrPending ? "YZ net (mevzuat, TL)" : "En büyük |ΔNet DHR−Luca| (TL)"}</h2>
+        <h2>{netChartTitle}</h2>
         <p className="caption">
-          {lucaPending || dhrPending
+          {netMode === "ai"
             ? "Luca ve DHR bekliyor; çubuklar YZ netini gösterir."
-            : ui?.deltaChartCaption || "Pozitif = DHR net daha yüksek"}
+            : netMode === "deltaAi"
+              ? "Luca bekliyor; çubuklar DHR ile YZ mevzuat neti arasındaki farkı gösterir. Pozitif = DHR net daha yüksek."
+              : ui?.deltaChartCaption || "Pozitif = DHR net daha yüksek"}
         </p>
         <div className="chart-wrap">
           <ResponsiveContainer width="100%" height={320}>
@@ -814,22 +828,19 @@ export default function AppView({ data, matrix }: Props) {
               <YAxis tick={{ fill: "#9cabc1", fontSize: 13 }} unit=" TL" />
               <Tooltip
                 contentStyle={{ background: "#0f172a", border: "1px solid #334155" }}
-                formatter={(v: number) => [
-                  `${tr0(v)} TL`,
-                  lucaPending || dhrPending ? "YZ net" : "ΔNet",
-                ]}
+                formatter={(v: number) => [`${tr0(v)} TL`, netChartLabel]}
                 labelFormatter={(_, p) => (p?.[0]?.payload as { full: string })?.full || ""}
               />
-              <Bar dataKey="dNet" name={lucaPending || dhrPending ? "YZ net" : "ΔNet"} radius={[4, 4, 0, 0]}>
+              <Bar dataKey="dNet" name={netChartLabel} radius={[4, 4, 0, 0]}>
                 {topNet.map((e) => (
                   <Cell
                     key={e.full}
                     fill={
-                      lucaPending || dhrPending
+                      netMode === "ai"
                         ? "#38bdf8"
-                        : e.dNet > 4000
+                        : Math.abs(e.dNet) > 4000
                           ? "#ef4444"
-                          : e.dNet > 1500
+                          : Math.abs(e.dNet) > 1500
                             ? "#f59e0b"
                             : "#64748b"
                     }

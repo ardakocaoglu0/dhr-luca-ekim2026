@@ -18,13 +18,15 @@ export type KalemAgg = {
   group: string;
   dhrSum: number;
   lucaSum: number;
-  aiSum?: number;
+  aiSum?: number | null;
   deltaSum: number | null;
   deltaDhrAi?: number | null;
   deltaLucaAi?: number | null;
   peopleWithValue: number;
   matchCount: number;
   compared: number;
+  matchAi?: number;
+  comparedAi?: number;
   matchLucaAi?: number;
   comparedLucaAi?: number;
 };
@@ -80,6 +82,14 @@ export type CompareRow = {
     salary?: number | null;
     sgk?: number | null;
     unemployment?: number | null;
+    saglik?: number | null;
+    besEmployer?: number | null;
+    sgkDays?: number | null;
+    sgkBase?: number | null;
+    gvMatrah?: number | null;
+    gvExemptApplied?: number | null;
+    damgaExemptApplied?: number | null;
+    employerCost?: number | null;
   } | null;
   ai?: {
     salary?: number;
@@ -105,9 +115,9 @@ export type CompareRow = {
   lucaPending?: boolean;
   dhrPending?: boolean;
   delta: {
-    net: number;
-    gv: number;
-    damga: number;
+    net: number | null;
+    gv: number | null;
+    damga: number | null;
     gross?: number;
     meal?: number;
     transport?: number;
