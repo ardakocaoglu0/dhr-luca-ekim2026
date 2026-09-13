@@ -80,6 +80,8 @@ export default function AppView({ data, matrix }: Props) {
   const lucaPass = matrix.scenarios.filter((s) => s.luca === "pass").length;
 
   const ui = data.ui;
+  // DHR values are read from the payroll UI/API; only older snapshots are files.
+  const dhrIsFile = /\.(xlsx|xls|csv)$/i.test(data.sources.dhrExcel || "");
   const gvApplied = data.legal.dhrObserved.exemptApplied;
   const yzExempt = selected?.ai?.gvExemptApplied ?? mevzuat.monthExemptTax[String(data.aiReport?.month || 10) as keyof typeof mevzuat.monthExemptTax];
   const gvCompare = [
@@ -116,21 +118,6 @@ export default function AppView({ data, matrix }: Props) {
     dhrParam: data.legal.dhrObserved.paramFormulaValue,
     dhrApplied: gvApplied,
   }));
-
-  const drivers = ui?.drivers || [
-    {
-      title: "Kapsam farkı",
-      body: `DHR’de yemek+yol neredeyse herkese; Luca PDF’de yalnızca ${data.summary.mealOnLuca ?? "?"} kişide yemek/yol görünüyor.`,
-    },
-    {
-      title: "BES %3",
-      body: `DHR BES (toplam ${tr0(kalemler.find((k) => k.key === "bes")?.dhrSum)} TL); Luca’da BES satırı ${data.summary.besOnLuca ?? 0} kişi.`,
-    },
-    {
-      title: "GV istisnası",
-      body: "DHR ve Luca istisna değerlerini yukarıdaki yasal grafiklerle karşılaştırın.",
-    },
-  ];
 
   const kalemScale = useMemo(
     () =>
@@ -187,15 +174,6 @@ export default function AppView({ data, matrix }: Props) {
             {ui?.lead ||
               "32 kişilik test matrisi: kanun/teşvik profilleri, ek kazanç ve kesintiler."}
           </p>
-          <div className="source-chips" aria-label="Kaynaklar">
-            <span className={`source-chip ${dhrPending ? "wait" : ""}`}>
-              DHR {dhrPending ? "bekliyor" : "export"}
-            </span>
-            <span className={`source-chip ${lucaPending ? "wait" : ""}`}>
-              Luca {lucaPending ? "bekliyor" : "PDF"}
-            </span>
-            <span className="source-chip yz">YZ — Türkiye mevzuatı</span>
-          </div>
           <div className="hero-actions">
             {data.sources.lucaPdf && !lucaPending ? (
               <a className="btn primary" href={data.sources.lucaPdf} download>
@@ -206,16 +184,17 @@ export default function AppView({ data, matrix }: Props) {
                 Luca PDF bekliyor
               </span>
             )}
-            {data.sources.dhrExcel && !dhrPending ? (
+            {dhrPending ? (
+              <span className="btn disabled">DHR bekliyor</span>
+            ) : dhrIsFile ? (
               <a className="btn" href={data.sources.dhrExcel} download>
-                DHR Excel indir
+                DHR dosyası indir
               </a>
             ) : (
-              <span className="btn disabled">DHR Excel bekliyor</span>
+              <span className="btn disabled" title={data.sources.dhrExcel}>
+                DHR: UI / API okuması
+              </span>
             )}
-            <a className="btn yz" href="#mevzuat">
-              YZ mevzuat kaynakları
-            </a>
           </div>
           <p className="meta">
             Üretim: {new Date(data.generatedAt).toLocaleString("tr-TR")}
@@ -224,7 +203,6 @@ export default function AppView({ data, matrix }: Props) {
             {dhrPending || lucaPending
               ? `YZ ${data.summary.aiCount ?? rows.length} kişi`
               : `Eşleşen ${data.summary.matched} kişi`}
-            {data.sources.aiMevzuat ? ` · ${data.sources.aiMevzuat}` : ""}
           </p>
         </div>
       </header>
@@ -672,19 +650,13 @@ export default function AppView({ data, matrix }: Props) {
       </Section>
       )}
 
-      {(matrix.correctFindings.length > 0 || matrix.dhrBugs.length > 0) && (
+      {matrix.dhrBugs.length > 0 && (
       <Section
         id="correct"
-        title="Doğru çalışanlar"
+        title="DHR’de tespit edilen yasal / hesap sorunları"
         hint={`${matrix.dhrBugs.length} bulgu`}
         defaultOpen={false}
       >
-        <ul className="ok-list">
-          {matrix.correctFindings.map((f) => (
-            <li key={f}>{f}</li>
-          ))}
-        </ul>
-        <h3>DHR’de tespit edilen yasal / hesap sorunları</h3>
         <div className="cards bugs">
           {matrix.dhrBugs.map((b) => (
             <article key={b.id} className="card">
@@ -798,18 +770,6 @@ export default function AppView({ data, matrix }: Props) {
         </div>
       </Section>
       )}
-
-      <section className="panel">
-        <h2>Sistematik sürücüler</h2>
-        <div className="cards three">
-          {drivers.map((d) => (
-            <article key={d.title} className="card">
-              <h3>{d.title}</h3>
-              <p>{d.body}</p>
-            </article>
-          ))}
-        </div>
-      </section>
 
       <section className="panel">
         <h2>{netChartTitle}</h2>
@@ -987,9 +947,7 @@ export default function AppView({ data, matrix }: Props) {
           {ui?.footer || `${data.unit} · ${data.period}`}
         </p>
         <p className="footer-note">
-          Bu site bilgilendirme amaçlıdır. YZ kolonu 2026 Türkiye mevzuatına (GVK, 5510, 4447, 488,
-          7352) göre aylık izole hesaptır. Bordro kararı için DHR + Luca + mevzuat birlikte
-          değerlendirilmelidir.
+          Bilgilendirme amaçlıdır; bordro kararı için DHR + Luca + mevzuat birlikte değerlendirilir.
         </p>
       </footer>
     </div>

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-09T10:26:24.072Z",
+  "generatedAt": "2026-09-13T15:33:06.816Z",
   "period": "Ocak 2026 (DHR UI × Luca PDF)",
   "unit": "Insan Kaynaklari — dhrtest UI vs Luca Ocak",
   "lucaPdfVersion": "bordro_d1_tech (25).pdf",
   "sources": {
     "lucaPdf": "downloads/bordro_d1_tech.pdf",
-    "dhrExcel": "downloads/Payroll_Ocak_2026.xlsx",
+    "dhrExcel": "DHR bordro UI/API — /api/PayrollPeriod/67d5ddbc · 13.09.2026 tam hesaplama",
     "aiMevzuat": "mevzuat.json — 193 GVK, 332 GT, 5510, 4447, 488, 7352, 2026 asgari, 5746/4691 (oran yok)"
   },
   "summary": {
@@ -14,7 +14,7 @@
     "matched": 32,
     "netWithin100": 13,
     "netPass001": 1,
-    "avgAbsNetDelta": 1404.56,
+    "avgAbsNetDelta": 1404.34,
     "fmHoursTotalLuca": 0,
     "mealOnLuca": 31,
     "overtimeOnLuca": 4,
@@ -22,7 +22,7 @@
     "lucaHasAktolga": false,
     "ghostKesintiPeople": 0,
     "aiCount": 32,
-    "avgAbsNetDeltaAi": 2248.23,
+    "avgAbsNetDeltaAi": 2248.65,
     "netWithin100Ai": 0
   },
   "lineDefs": [
@@ -122,7 +122,9 @@
       "matchCount": 29,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 29,
+      "comparedAi": 32
     },
     {
       "key": "meal",
@@ -138,7 +140,9 @@
       "matchCount": 32,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 32,
+      "comparedAi": 32
     },
     {
       "key": "transport",
@@ -154,7 +158,9 @@
       "matchCount": 32,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 32,
+      "comparedAi": 32
     },
     {
       "key": "overtime",
@@ -170,7 +176,9 @@
       "matchCount": 32,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 32,
+      "comparedAi": 32
     },
     {
       "key": "prim",
@@ -186,7 +194,9 @@
       "matchCount": 29,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 29,
+      "comparedAi": 32
     },
     {
       "key": "ikramiye",
@@ -202,7 +212,9 @@
       "matchCount": 31,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 31,
+      "comparedAi": 32
     },
     {
       "key": "masraf",
@@ -218,7 +230,9 @@
       "matchCount": 31,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 31,
+      "comparedAi": 32
     },
     {
       "key": "gross",
@@ -234,7 +248,9 @@
       "matchCount": 23,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 23,
+      "comparedAi": 32
     },
     {
       "key": "sgk",
@@ -247,10 +263,12 @@
       "deltaDhrAi": -19436.34,
       "deltaLucaAi": -15533.96,
       "peopleWithValue": 32,
-      "matchCount": 0,
+      "matchCount": 24,
       "compared": 32,
       "matchLucaAi": 0,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 0,
+      "comparedAi": 32
     },
     {
       "key": "unemployment",
@@ -263,10 +281,12 @@
       "deltaDhrAi": -1268.01,
       "deltaLucaAi": -1320.36,
       "peopleWithValue": 29,
-      "matchCount": 3,
-      "compared": 32,
+      "matchCount": 24,
+      "compared": 31,
       "matchLucaAi": 3,
-      "comparedLucaAi": 31
+      "comparedLucaAi": 31,
+      "matchAi": 3,
+      "comparedAi": 32
     },
     {
       "key": "gv",
@@ -279,26 +299,30 @@
       "deltaDhrAi": -37130.2,
       "deltaLucaAi": -25725.19,
       "peopleWithValue": 31,
-      "matchCount": 1,
+      "matchCount": 2,
       "compared": 32,
       "matchLucaAi": 1,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 1,
+      "comparedAi": 32
     },
     {
       "key": "damga",
       "label": "Damga vergisi",
       "group": "kesinti",
-      "dhrSum": 6011.09,
+      "dhrSum": 5997.88,
       "lucaSum": 4340.58,
       "aiSum": 6874.6,
-      "deltaSum": 1670.51,
-      "deltaDhrAi": -863.51,
+      "deltaSum": 1657.3,
+      "deltaDhrAi": -876.72,
       "deltaLucaAi": -2534.02,
       "peopleWithValue": 31,
-      "matchCount": 20,
+      "matchCount": 4,
       "compared": 32,
       "matchLucaAi": 1,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 21,
+      "comparedAi": 32
     },
     {
       "key": "bes",
@@ -314,7 +338,9 @@
       "matchCount": 31,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 31,
+      "comparedAi": 32
     },
     {
       "key": "advance",
@@ -330,7 +356,9 @@
       "matchCount": 31,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 31,
+      "comparedAi": 32
     },
     {
       "key": "kesinti",
@@ -346,23 +374,27 @@
       "matchCount": 30,
       "compared": 32,
       "matchLucaAi": 32,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 30,
+      "comparedAi": 32
     },
     {
       "key": "net",
       "label": "Net odenen",
       "group": "ozet",
-      "dhrSum": 1568965.04,
+      "dhrSum": 1568978.25,
       "lucaSum": 1575368,
       "aiSum": 1530566.79,
-      "deltaSum": -6402.96,
-      "deltaDhrAi": 38398.25,
+      "deltaSum": -6389.75,
+      "deltaDhrAi": 38411.46,
       "deltaLucaAi": 44801.21,
       "peopleWithValue": 32,
-      "matchCount": 0,
+      "matchCount": 1,
       "compared": 32,
       "matchLucaAi": 0,
-      "comparedLucaAi": 32
+      "comparedLucaAi": 32,
+      "matchAi": 0,
+      "comparedAi": 32
     }
   ],
   "rows": [
@@ -426,7 +458,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 45341.4
+        "gvCumBase": 45341.4,
+        "sgkBase": 55724,
+        "gvMatrah": 45341.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.79,
@@ -733,7 +768,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 47466.4
+        "gvCumBase": 47466.4,
+        "sgkBase": 58224,
+        "gvMatrah": 47466.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.8,
@@ -1040,7 +1078,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 49591.4
+        "gvCumBase": 49591.4,
+        "sgkBase": 60724,
+        "gvMatrah": 49591.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.79,
@@ -1347,7 +1388,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 47557.03
+        "gvCumBase": 47557.03,
+        "sgkBase": 58330.63,
+        "gvMatrah": 47557.03,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 432.29,
@@ -1654,7 +1698,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 53841.4
+        "gvCumBase": 53841.4,
+        "sgkBase": 65724,
+        "gvMatrah": 53841.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -228.99,
@@ -1961,7 +2008,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 43216.4
+        "gvCumBase": 43216.4,
+        "sgkBase": 53224,
+        "gvMatrah": 43216.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -134.11,
@@ -2268,7 +2318,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": 2589.88,
-        "gvCumBase": 45341.4
+        "gvCumBase": 45341.4,
+        "sgkBase": 55724,
+        "gvMatrah": 45341.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 2635.42,
@@ -2575,7 +2628,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": 2908.63,
-        "gvCumBase": 47466.4
+        "gvCumBase": 47466.4,
+        "sgkBase": 58224,
+        "gvMatrah": 47466.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 2954.17,
@@ -2882,7 +2938,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": 3227.38,
-        "gvCumBase": 49591.4
+        "gvCumBase": 49591.4,
+        "sgkBase": 60724,
+        "gvMatrah": 49591.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3272.92,
@@ -3189,7 +3248,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 41658.2
+        "gvCumBase": 41658.2,
+        "sgkBase": 47224,
+        "gvMatrah": 41658.2,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -18.97,
@@ -3498,7 +3560,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 41841.4
+        "gvCumBase": 41841.4,
+        "sgkBase": 65724,
+        "gvMatrah": 41841.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.79,
@@ -3805,7 +3870,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 36216.4
+        "gvCumBase": 36216.4,
+        "sgkBase": 53224,
+        "gvMatrah": 36216.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.8,
@@ -4112,7 +4180,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 42341.4
+        "gvCumBase": 42341.4,
+        "sgkBase": 55724,
+        "gvMatrah": 42341.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.79,
@@ -4414,12 +4485,15 @@
         "unemployment": 440.91,
         "damga": 110.33,
         "bes": 0,
-        "sgkDays": 30,
+        "sgkDays": 26,
         "workedDays": 26,
         "missingDays": 4,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 35453.07
+        "gvCumBase": 35453.07,
+        "sgkBase": 44090.67,
+        "gvMatrah": 35453.07,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -5048.23,
@@ -4726,7 +4800,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 18000
+        "gvCumBase": 18000,
+        "sgkBase": 18000,
+        "gvMatrah": 18000,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 0,
@@ -5035,7 +5112,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 51716.4
+        "gvCumBase": 51716.4,
+        "sgkBase": 63224,
+        "gvMatrah": 51716.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.8,
@@ -5342,7 +5422,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 57955.4
+        "gvCumBase": 57955.4,
+        "sgkBase": 70564,
+        "gvMatrah": 57955.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.8,
@@ -5649,7 +5732,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 43216.4
+        "gvCumBase": 43216.4,
+        "sgkBase": 53224,
+        "gvMatrah": 43216.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 7203.8,
@@ -5956,7 +6042,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 45341.4
+        "gvCumBase": 45341.4,
+        "sgkBase": 55724,
+        "gvMatrah": 45341.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -3570.76,
@@ -6263,7 +6352,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 47466.4
+        "gvCumBase": 47466.4,
+        "sgkBase": 58224,
+        "gvMatrah": 47466.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 1203.8,
@@ -6570,7 +6662,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 49591.4
+        "gvCumBase": 49591.4,
+        "sgkBase": 60724,
+        "gvMatrah": 49591.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -746.2,
@@ -6866,29 +6961,32 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 68440,
-        "net": 51504.79,
+        "net": 51518,
         "gv": 3546.13,
         "sgk": 8851.36,
         "unemployment": 632.24,
-        "damga": 268.76,
+        "damga": 255.55,
         "bes": 1896.72,
         "sgkDays": 30,
         "workedDays": 30,
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 51716.4
+        "gvCumBase": 51716.4,
+        "sgkBase": 63224,
+        "gvMatrah": 51716.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
-        "net": -10.13,
+        "net": 3.08,
         "gv": -45.54,
-        "damga": 54.95,
+        "damga": 41.74,
         "gross": 1740,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0.72,
-        "netAi": 1254.26,
+        "netAi": 1267.47,
         "gvAi": -746.79
       },
       "lineItems": [
@@ -7039,14 +7137,14 @@
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 268.76,
+          "dhr": 255.55,
           "luca": 213.81,
-          "delta": 54.95,
+          "delta": 41.74,
           "match": false,
           "ai": 255.55,
-          "deltaDhrAi": 13.21,
+          "deltaDhrAi": 0,
           "deltaLucaAi": -41.74,
-          "matchAi": false
+          "matchAi": true
         },
         {
           "key": "bes",
@@ -7091,12 +7189,12 @@
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 51504.79,
+          "dhr": 51518,
           "luca": 51514.92,
-          "delta": -10.13,
+          "delta": 3.08,
           "match": false,
           "ai": 50250.53,
-          "deltaDhrAi": 1254.26,
+          "deltaDhrAi": 1267.47,
           "deltaLucaAi": 1264.39,
           "matchAi": false
         }
@@ -7184,7 +7282,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 238841.4
+        "gvCumBase": 238841.4,
+        "sgkBase": 65724,
+        "gvMatrah": 53841.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -2438.28,
@@ -7490,7 +7591,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 24523.2
+        "gvCumBase": 24523.2,
+        "sgkBase": 31232,
+        "gvMatrah": 24523.2,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -12.73,
@@ -7797,7 +7901,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 48775.4
+        "gvCumBase": 48775.4,
+        "sgkBase": 59764,
+        "gvMatrah": 48775.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -153.09,
@@ -8104,7 +8211,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 41658.2
+        "gvCumBase": 41658.2,
+        "sgkBase": 47224,
+        "gvMatrah": 41658.2,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -2744.28,
@@ -8413,7 +8523,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 42591.4
+        "gvCumBase": 42591.4,
+        "sgkBase": 60724,
+        "gvMatrah": 42591.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 803.79,
@@ -8720,7 +8833,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 51716.4
+        "gvCumBase": 51716.4,
+        "sgkBase": 63224,
+        "gvMatrah": 51716.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -7145.3,
@@ -9027,7 +9143,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 46616.4
+        "gvCumBase": 46616.4,
+        "sgkBase": 57224,
+        "gvMatrah": 46616.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -3213.3,
@@ -9334,7 +9453,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 51551.94
+        "gvCumBase": 51551.94,
+        "sgkBase": 63030.52,
+        "gvMatrah": 51551.94,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 731.07,
@@ -9641,7 +9763,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 51716.4
+        "gvCumBase": 51716.4,
+        "sgkBase": 63224,
+        "gvMatrah": 51716.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": -210.01,
@@ -9948,7 +10073,10 @@
         "missingDays": 0,
         "gvExemption": 4211.33,
         "gvTechnopark": null,
-        "gvCumBase": 51988.4
+        "gvCumBase": 51988.4,
+        "sgkBase": 63544,
+        "gvMatrah": 51988.4,
+        "gvExemptApplied": 4211.33
       },
       "delta": {
         "net": 3.8,
@@ -10272,7 +10400,7 @@
   "ui": {
     "title": "DHR × Luca — Ocak 2026 Bordro Karşılaştırması",
     "lead": "32 kişilik test matrisi. DHR Ocak yeniden hesap + Luca bordro_d1_tech (25).pdf. Geçme kriteri ±0,01 TL. Üçüncü kolon: YZ (2026 Türk mevzuatı: 5510, 4447, GVK 23/18, 488, 332 GT).",
-    "verdict": "Luca bordro_d1_tech (25).pdf × DHR Ocak recalc. Ort. |ΔNet| 1.404,56 TL · Tam net eşleşen (±0,01): 1/32 · ±100: 13/32. Yemek SGK 158×22 işledi (Serra 7.801,36). Kalan kuyruk: GV +45,54 ve yemek damga (Luca 156,88 / DHR 198,63). ALPER AKTOLGA Luca listesinden çıktı. Beklenen sapma: Okan masraf + 5746 damga.",
+    "verdict": "Luca bordro_d1_tech (25).pdf × DHR Ocak recalc. Ort. |ΔNet| 1.404,56 TL · Tam net eşleşen (±0,01): 1/32 · ±100: 13/32. Yemek SGK 158×22 işledi (Serra 7.801,36). Kalan kuyruk: GV +45,54 ve yemek damga (Luca 156,88 / DHR 198,63). ALPER AKTOLGA Luca listesinden çıktı. Beklenen sapma: Okan masraf + 5746 damga. Yeniden hesaplama (13.09.2026 tam yeniden hesaplama (API)) Ocak dönemini neredeyse aynen doğruladı: tek fark Pelin Zengin damga 268,76 → 255,55 (işveren BES katkısı artık damga matrahında değil).",
     "deltaChartCaption": "Pozitif = DHR net daha yüksek · Kaynak: Ocak 2026 DHR UI × yeni Luca PDF",
     "gvCompareTitle": "Ocak 2026 — istisna karşılaştırması",
     "footer": "D1-Tech · dhrtest İK birimi · Ocak 2026 dönem ID 67d5ddbc-5000-48b3-abac-b89e429cf5c2",
@@ -11752,7 +11880,7 @@
       "n": 22,
       "name": "Pelin Zengin",
       "note": "BES aktif",
-      "netDelta": -10.13,
+      "netDelta": 3.08,
       "severity": "low",
       "inputMismatchCount": 1,
       "items": [
@@ -11778,9 +11906,9 @@
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 268.76,
+          "dhr": 255.55,
           "luca": 213.81,
-          "delta": 54.95,
+          "delta": 41.74,
           "derived": true
         },
         {
@@ -11796,9 +11924,9 @@
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 51504.79,
+          "dhr": 51518,
           "luca": 51514.92,
-          "delta": -10.13,
+          "delta": 3.08,
           "derived": true
         }
       ],

@@ -24,6 +24,11 @@
   },
   "checkedItems": [
     {
+      "item": "Ocak dönemi 13.09.2026 tam yeniden hesaplama ile yeniden doğrulama",
+      "result": "pass",
+      "note": "32 kişinin 31’i birebir aynı çıktı; tek fark Pelin Zengin damga 268,76 → 255,55 (işveren BES katkısı damga matrahından çıktı). Hesap tekrarlanabilir."
+    },
+    {
       "item": "Ocak 2026 DHR yeniden hesap (32 kişi)",
       "result": "pass",
       "note": "Dönem calculate 202; Serra/Dilek/İlker kanarya ±0,01 tuttu"
@@ -129,22 +134,19 @@
       "note": "Luca 0 (Tamer 30,66); DHR kesiyor. Mevzuat kararı bekliyor."
     }
   ],
-  "correctFindings": [
-    "İlker Pamuk net 18.000 / SGK 0 / işsizlik 0 — iki sistem birebir.",
-    "Dilek SGDP %7,5 ve işsizlik 0 (DHR). Luca oranı da %7,5.",
-    "Kemal/Tamer/Emre fazla mesai tutarları B ve DHR ile aynı.",
-    "Ceren FM tutarı hizalandı (4.281,96 TL; önceki 3.360). İşaret hâlâ N basılabilir.",
-    "Baran prim 4.500,00 B ve Yasin ikramiye 10.000,00 B — brütleştirme kapandı.",
-    "ALPER AKTOLGA Luca PDF'den çıkarıldı (32 kişi).",
-    "Alper/Berna/Cemil DHR 4691: GV=0, damga 0. Luca damga 0; GV tam, kanun 00000.",
-    "DHR Ocak GV asgari istisnası 4.211,33 (32/32)."
-  ],
+  "correctFindings": [],
   "dhrBugs": [
     {
       "id": "DHR-PPV-DROP",
       "title": "Tam hesaplama tek seferlik PaymentValue kalemlerini bordroya yazmıyor",
       "severity": "Yüksek",
-      "detail": "Ocak 15 tarihli Prim/İkramiye/Masraf/Genel Kesinti kayıtları /api/PaymentValue/all'da status 1 duruyor. calculate(onlyStaleEmployees:false) sonrası PPV=0. Metin 5.000, Ufuk 3.500, Baran 4.500, Yasin 10.000, Nilay 1.200, Vesile 800, Leyla 7.200, Okan 750. Sabit yemek/yol ve onaylı FM korundu."
+      "detail": "Ocak 15 tarihli Prim/İkramiye/Masraf/Genel Kesinti kayıtları /api/PaymentValue/all'da status 1 duruyor. calculate(onlyStaleEmployees:false) sonrası PPV=0. Metin 5.000, Ufuk 3.500, Baran 4.500, Yasin 10.000, Nilay 1.200, Vesile 800, Leyla 7.200, Okan 750. Sabit yemek/yol ve onaylı FM korundu. Ekim döneminde de tazelendi (13.09.2026 tam yeniden hesaplama): 2026-10-15 tarihli kayıtlar status 1 duruyor, hesaplama sonrası bordroda 0."
+    },
+    {
+      "id": "DHR-YEMEK-SGK",
+      "title": "Yemek SGK istisnası Ekim döneminde farklı uygulanıyor",
+      "severity": "Yüksek",
+      "detail": "Ocak’ta 158 TL/gün × 22 = 3.476 TL istisna (Luca ile uyumlu, PEK 55.724). Aynı çalışan Ekim döneminde yemeğin tamamı istisna sayılıyor (PEK 53.700)."
     }
   ],
   "warnings": [

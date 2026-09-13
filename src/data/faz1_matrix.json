@@ -1,297 +1,290 @@
 {
- "period": "Eylül 2026",
- "environment": "dhrtest.d1-tech.com.tr",
- "sourceOfTruth": "YZ = 2026 Türkiye mevzuatı (5510, 4447, GVK, 488). DHR kolonu Eylül 2026 Ana Kadro hesaplamasından geldi. Luca kolonu bekliyor.",
- "matrixDesign": {
-  "layers": [
-   {
-    "id": "tv",
-    "title": "TV-01…22",
-    "desc": "Tipik vakalar"
-   },
-   {
-    "id": "pay",
-    "title": "PAY 127",
-    "desc": "Excel senaryoları kadroya çevrildi"
-   },
-   {
-    "id": "edge",
-    "title": "EDGE-001…052",
-    "desc": "Kenar / Takvim / Blokaj / Yuvarlama / Şirket B"
-   }
+  "period": "Eylül 2026",
+  "environment": "dhrtest.d1-tech.com.tr",
+  "sourceOfTruth": "YZ = 2026 Türkiye mevzuatı (5510, 4447, GVK, 488). DHR kolonu Eylül 2026 Ana Kadro hesaplamasından geldi. Luca kolonu bekliyor.",
+  "matrixDesign": {
+    "layers": [
+      {
+        "id": "tv",
+        "title": "TV-01…22",
+        "desc": "Tipik vakalar"
+      },
+      {
+        "id": "pay",
+        "title": "PAY 127",
+        "desc": "Excel senaryoları kadroya çevrildi"
+      },
+      {
+        "id": "edge",
+        "title": "EDGE-001…052",
+        "desc": "Kenar / Takvim / Blokaj / Yuvarlama / Şirket B"
+      }
+    ],
+    "notFullCombinatorial": "15’lik dönem yalnız Ana Kadro. Kenar/Yuvarlama Lab çocuğu değil."
+  },
+  "checkedItems": [
+    {
+      "item": "Dönem hesaplaması tamamlandı",
+      "result": "pass",
+      "note": "Puantaj 15/15 kaydedildi, hesaplama işi 15 çalışanı hatasız bitirdi (failedCount 0), dönem Hesaplandı durumuna geçti."
+    },
+    {
+      "item": "Net = kazanç − kesinti tutarlılığı",
+      "result": "partial",
+      "note": "14/15 kişide DHR’nin kendi kalemleri net ile birebir tutuyor (masraf geri ödemesi eklenerek)."
+    },
+    {
+      "item": "GV istisnası (Eylül 2026)",
+      "result": "pass",
+      "note": "DHR 5.615,10 TL uyguladı; yasal Ağu–Ara bandı ile aynı."
+    },
+    {
+      "item": "Kısmi ay gün orantısı",
+      "result": "pass",
+      "note": "8004 12 gün, 8005 18 gün, 8006 28 gün — maaş, yemek ve yol gün oranıyla düştü, damga/GV eşiklerine yansıdı."
+    },
+    {
+      "item": "Emekli (SGDP) ve stajyer profilleri",
+      "result": "pass",
+      "note": "8012’de SGK %7,5 ve işsizlik yok; 8014’te kesinti yok."
+    },
+    {
+      "item": "BES oran alanı doğrulaması",
+      "result": "fail",
+      "note": "Oran 3 girildiğinde %300 uygulanıp negatif net üretildi, hesaplama engellenmedi (F1-BES-ORAN)."
+    },
+    {
+      "item": "Avans kesintisinin bordroya yansıması",
+      "result": "fail",
+      "note": "8009’daki 2.000 TL avans Eylül bordrosunda kesilmedi (F1-AVANS)."
+    },
+    {
+      "item": "Fazla mesai kaleminin birimi",
+      "result": "partial",
+      "note": "8008’de 10 saat yerine 10,00 TL işlendi; kalem tutar bekliyor (F1-FM-BIRIM)."
+    },
+    {
+      "item": "Yemek yardımının SGK/GV istisnası",
+      "result": "partial",
+      "note": "DHR 5.500 TL’nin tamamını istisna sayıyor; günlük sınır doğrulanmalı (F1-YEMEK-SGK-GV)."
+    }
   ],
-  "notFullCombinatorial": "15’lik dönem yalnız Ana Kadro. Kenar/Yuvarlama Lab çocuğu değil."
- },
- "checkedItems": [
-  {
-   "item": "Dönem hesaplaması tamamlandı",
-   "result": "pass",
-   "note": "Puantaj 15/15 kaydedildi, hesaplama işi 15 çalışanı hatasız bitirdi (failedCount 0), dönem Hesaplandı durumuna geçti."
-  },
-  {
-   "item": "Net = kazanç − kesinti tutarlılığı",
-   "result": "partial",
-   "note": "14/15 kişide DHR’nin kendi kalemleri net ile birebir tutuyor (masraf geri ödemesi eklenerek)."
-  },
-  {
-   "item": "GV istisnası (Eylül 2026)",
-   "result": "pass",
-   "note": "DHR 5.615,10 TL uyguladı; yasal Ağu–Ara bandı ile aynı."
-  },
-  {
-   "item": "Kısmi ay gün orantısı",
-   "result": "pass",
-   "note": "8004 12 gün, 8005 18 gün, 8006 28 gün — maaş, yemek ve yol gün oranıyla düştü, damga/GV eşiklerine yansıdı."
-  },
-  {
-   "item": "Emekli (SGDP) ve stajyer profilleri",
-   "result": "pass",
-   "note": "8012’de SGK %7,5 ve işsizlik yok; 8014’te kesinti yok."
-  },
-  {
-   "item": "BES oran alanı doğrulaması",
-   "result": "fail",
-   "note": "Oran 3 girildiğinde %300 uygulanıp negatif net üretildi, hesaplama engellenmedi (F1-BES-ORAN)."
-  },
-  {
-   "item": "Avans kesintisinin bordroya yansıması",
-   "result": "fail",
-   "note": "8009’daki 2.000 TL avans Eylül bordrosunda kesilmedi (F1-AVANS)."
-  },
-  {
-   "item": "Fazla mesai kaleminin birimi",
-   "result": "partial",
-   "note": "8008’de 10 saat yerine 10,00 TL işlendi; kalem tutar bekliyor (F1-FM-BIRIM)."
-  },
-  {
-   "item": "Yemek yardımının SGK/GV istisnası",
-   "result": "partial",
-   "note": "DHR 5.500 TL’nin tamamını istisna sayıyor; günlük sınır doğrulanmalı (F1-YEMEK-SGK-GV)."
-  }
- ],
- "correctFindings": [
-  "DHR Eylül dönemini 15/15 hesapladı, hata veren çalışan yok.",
-  "GV istisnası 5.615,10 TL ve damga istisnası 250,70 TL yasal değerlerle aynı.",
-  "Kısmi ay (giriş/çıkış/ücretsiz izin) maaş, yemek ve yol kalemlerine gün oranıyla yansıdı.",
-  "Emekli SGDP %7,5 ve işsizlik muafiyeti; stajyerde kesinti yok.",
-  "Prim, masraf geri ödemesi ve genel kesinti 8009’da doğru işlendi.",
-  "SGK işveren payı, işsizlik işveren hissesi ve işveren maliyeti her kişide üretildi."
- ],
- "dhrBugs": [
-  {
-   "id": "F1-BES-ORAN",
-   "title": "BES çalışan oranı %300 olarak uygulandı, net negatife düştü",
-   "severity": "high",
-   "detail": "EmployeeOksEnrollment.contributionRateOverride oran (0,03) bekliyor ama 3 değeri reddedilmedi: 8010’da 63.200 × 3 = 189.600 TL kesinti, net −133.093,63 TL. Hesaplama tamamlandı, yalnız 1 anomali işareti bırakıldı. Alan için üst sınır ve negatif net kontrolü gerekiyor."
-  },
-  {
-   "id": "F1-AVANS",
-   "title": "Tanımlı avans bordroda kesilmedi",
-   "severity": "medium",
-   "detail": "8009 Gülce Han’da 2.000 TL avans kadroda tanımlı; dönem bordrosunda avans kesintisi satırı boş kaldı."
-  },
-  {
-   "id": "F1-FM-BIRIM",
-   "title": "Fazla mesai kalemi saat girişini tutar sayıyor",
-   "severity": "low",
-   "detail": "8008’de 10 saat brüt mesai beklenirken kalem 10,00 TL olarak hesaplandı; saatlik ücretle çarpım yapılmadı."
-  }
- ],
- "scenarios": [
-  {
-   "n": 1,
-   "name": "Ekin Sarı",
-   "group": "ana",
-   "scenario": "Altın referans. Zam/ikramiye/BES yok. Ağustos taslak kalır.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
-  },
-  {
-   "n": 2,
-   "name": "Baran Ünal",
-   "group": "ana",
-   "scenario": "İşe giriş 19.09.2026 Cumartesi (Excel). 5 sabit kalem. 18.09 mesai denemesi red.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "giriş 2026-09-19",
-   "dhr": "fail",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 21.894,55 TL (12 gün). YZ 54.980,12 TL, Δ -33.085,57 TL. Luca bekliyor."
-  },
-  {
-   "n": 3,
-   "name": "Cansu Kılıç",
-   "group": "ana",
-   "scenario": "Çıkış 14.09.2026. 16.09 izin/mesai red.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "giriş 2026-01-06 çıkış 2026-09-14",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 34.283,80 TL (18 gün). YZ 54.980,12 TL, Δ -20.696,32 TL. Luca bekliyor."
-  },
-  {
-   "n": 4,
-   "name": "Doruk Aslan",
-   "group": "ana",
-   "scenario": "Ücretsiz 1–2.09, rapor 8–10.09, yıllık 15–16.09. 07.09 Ana’da iş günü.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 52.942,55 TL (28 gün). YZ 54.980,12 TL, Δ -2.037,57 TL. Luca bekliyor."
-  },
-  {
-   "n": 5,
-   "name": "Elif Meriç",
-   "group": "ana",
-   "scenario": "17.09 aynı gün izin+çalışma. PNT-035’ten sonra çelişki düzeltilir.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
-  },
-  {
-   "n": 6,
-   "name": "Fırat Deniz",
-   "group": "ana",
-   "scenario": "TV-06 birebir: 10 saat brüt + 5 saat net mesai. HSP-007 brüt 10 saat kalemini doğrular.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.513,51 TL (30 gün). YZ 54.980,12 TL, Δ +1.533,39 TL. Luca bekliyor."
-  },
-  {
-   "n": 7,
-   "name": "Gülce Han",
-   "group": "ana",
-   "scenario": "Prim+masraf+kesinti+avans seed. İkramiye 5.000 koşumda (E2E-005 ve Luca 8009’dan sonra). DHR-PAYROLL-001.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 64.736,19 TL (30 gün). YZ 59.964,67 TL, Δ +4.771,52 TL. Luca bekliyor."
-  },
-  {
-   "n": 8,
-   "name": "Hakan Işık",
-   "group": "ana",
-   "scenario": "Yalnız BES %3 çalışan. İşveren BES yok.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 54.610,37 TL (30 gün). YZ 52.919,12 TL, Δ +1.691,25 TL. Luca bekliyor."
-  },
-  {
-   "n": 9,
-   "name": "İrem Palaz",
-   "group": "ana",
-   "scenario": "05510 %2 varsayıldı (HSP-014). Onay PNT-035’ten sonra.",
-   "profile": "Standart",
-   "law": "05510_2",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
-  },
-  {
-   "n": 10,
-   "name": "Jale Öztürk",
-   "group": "ana",
-   "scenario": "Emekli / SGDP.",
-   "profile": "Emekli",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 60.535,37 TL (30 gün). YZ 59.359,74 TL, Δ +1.175,63 TL. Luca bekliyor."
-  },
-  {
-   "n": 11,
-   "name": "Korhan Seçkin",
-   "group": "ana",
-   "scenario": "Kısmi; 80 saat / 10 prim günü.",
-   "profile": "Kısmi Süreli",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
-  },
-  {
-   "n": 12,
-   "name": "Lale Tuna",
-   "group": "ana",
-   "scenario": "Stajyer; okul/belge.",
-   "profile": "Stajyer",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 18.000,00 TL (30 gün). YZ 17.100,00 TL, Δ +900,00 TL. Luca bekliyor."
-  },
-  {
-   "n": 13,
-   "name": "Mert Vural",
-   "group": "ana",
-   "scenario": "Ar-Ge 5746 Lisans. Teşvik seed’de onaylı.",
-   "profile": "5746 Lisans / Diğer Personel",
-   "law": "5746_05746",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
-  },
-  {
-   "n": 14,
-   "name": "Nihan Yıldız",
-   "group": "ana",
-   "scenario": "Engelli 1. derece.",
-   "profile": "Engelli 1. Derece",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
-  },
-  {
-   "n": 15,
-   "name": "Onur Zengin",
-   "group": "ana",
-   "scenario": "Standart hesaplanabilir. +1 eksik gün reopen Luca Ana 15’ten sonra.",
-   "profile": "Standart",
-   "law": "00000",
-   "input": "—",
-   "dhr": "pass",
-   "luca": "pending",
-   "ai": "pass",
-   "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
-  }
- ]
+  "correctFindings": [],
+  "dhrBugs": [
+    {
+      "id": "F1-BES-ORAN",
+      "title": "BES çalışan oranı %300 olarak uygulandı, net negatife düştü",
+      "severity": "Yüksek",
+      "detail": "EmployeeOksEnrollment.contributionRateOverride oran (0,03) bekliyor ama 3 değeri reddedilmedi: 8010’da 63.200 × 3 = 189.600 TL kesinti, net −133.093,63 TL. Hesaplama tamamlandı, yalnız 1 anomali işareti bırakıldı. Alan için üst sınır ve negatif net kontrolü gerekiyor."
+    },
+    {
+      "id": "F1-AVANS",
+      "title": "Tanımlı avans bordroda kesilmedi",
+      "severity": "Orta",
+      "detail": "8009 Gülce Han’da 2.000 TL avans kadroda tanımlı; dönem bordrosunda avans kesintisi satırı boş kaldı."
+    },
+    {
+      "id": "F1-FM-BIRIM",
+      "title": "Fazla mesai kalemi saat girişini tutar sayıyor",
+      "severity": "Düşük",
+      "detail": "8008’de 10 saat brüt mesai beklenirken kalem 10,00 TL olarak hesaplandı; saatlik ücretle çarpım yapılmadı."
+    }
+  ],
+  "scenarios": [
+    {
+      "n": 1,
+      "name": "Ekin Sarı",
+      "group": "ana",
+      "scenario": "Altın referans. Zam/ikramiye/BES yok. Ağustos taslak kalır.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+    },
+    {
+      "n": 2,
+      "name": "Baran Ünal",
+      "group": "ana",
+      "scenario": "İşe giriş 19.09.2026 Cumartesi (Excel). 5 sabit kalem. 18.09 mesai denemesi red.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "giriş 2026-09-19",
+      "dhr": "fail",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 21.894,55 TL (12 gün). YZ 54.980,12 TL, Δ -33.085,57 TL. Luca bekliyor."
+    },
+    {
+      "n": 3,
+      "name": "Cansu Kılıç",
+      "group": "ana",
+      "scenario": "Çıkış 14.09.2026. 16.09 izin/mesai red.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "giriş 2026-01-06 çıkış 2026-09-14",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 34.283,80 TL (18 gün). YZ 54.980,12 TL, Δ -20.696,32 TL. Luca bekliyor."
+    },
+    {
+      "n": 4,
+      "name": "Doruk Aslan",
+      "group": "ana",
+      "scenario": "Ücretsiz 1–2.09, rapor 8–10.09, yıllık 15–16.09. 07.09 Ana’da iş günü.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 52.942,55 TL (28 gün). YZ 54.980,12 TL, Δ -2.037,57 TL. Luca bekliyor."
+    },
+    {
+      "n": 5,
+      "name": "Elif Meriç",
+      "group": "ana",
+      "scenario": "17.09 aynı gün izin+çalışma. PNT-035’ten sonra çelişki düzeltilir.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+    },
+    {
+      "n": 6,
+      "name": "Fırat Deniz",
+      "group": "ana",
+      "scenario": "TV-06 birebir: 10 saat brüt + 5 saat net mesai. HSP-007 brüt 10 saat kalemini doğrular.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.513,51 TL (30 gün). YZ 54.980,12 TL, Δ +1.533,39 TL. Luca bekliyor."
+    },
+    {
+      "n": 7,
+      "name": "Gülce Han",
+      "group": "ana",
+      "scenario": "Prim+masraf+kesinti+avans seed. İkramiye 5.000 koşumda (E2E-005 ve Luca 8009’dan sonra). DHR-PAYROLL-001.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 64.736,19 TL (30 gün). YZ 59.964,67 TL, Δ +4.771,52 TL. Luca bekliyor."
+    },
+    {
+      "n": 8,
+      "name": "Hakan Işık",
+      "group": "ana",
+      "scenario": "Yalnız BES %3 çalışan. İşveren BES yok.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 54.610,37 TL (30 gün). YZ 52.919,12 TL, Δ +1.691,25 TL. Luca bekliyor."
+    },
+    {
+      "n": 9,
+      "name": "İrem Palaz",
+      "group": "ana",
+      "scenario": "05510 %2 varsayıldı (HSP-014). Onay PNT-035’ten sonra.",
+      "profile": "Standart",
+      "law": "05510_2",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+    },
+    {
+      "n": 10,
+      "name": "Jale Öztürk",
+      "group": "ana",
+      "scenario": "Emekli / SGDP.",
+      "profile": "Emekli",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 60.535,37 TL (30 gün). YZ 59.359,74 TL, Δ +1.175,63 TL. Luca bekliyor."
+    },
+    {
+      "n": 11,
+      "name": "Korhan Seçkin",
+      "group": "ana",
+      "scenario": "Kısmi; 80 saat / 10 prim günü.",
+      "profile": "Kısmi Süreli",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+    },
+    {
+      "n": 12,
+      "name": "Lale Tuna",
+      "group": "ana",
+      "scenario": "Stajyer; okul/belge.",
+      "profile": "Stajyer",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 18.000,00 TL (30 gün). YZ 17.100,00 TL, Δ +900,00 TL. Luca bekliyor."
+    },
+    {
+      "n": 13,
+      "name": "Mert Vural",
+      "group": "ana",
+      "scenario": "Ar-Ge 5746 Lisans. Teşvik seed’de onaylı.",
+      "profile": "5746 Lisans / Diğer Personel",
+      "law": "5746_05746",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+    },
+    {
+      "n": 14,
+      "name": "Nihan Yıldız",
+      "group": "ana",
+      "scenario": "Engelli 1. derece.",
+      "profile": "Engelli 1. Derece",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+    },
+    {
+      "n": 15,
+      "name": "Onur Zengin",
+      "group": "ana",
+      "scenario": "Standart hesaplanabilir. +1 eksik gün reopen Luca Ana 15’ten sonra.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pass",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.506,37 TL (30 gün). YZ 54.980,12 TL, Δ +1.526,25 TL. Luca bekliyor."
+    }
+  ]
 }

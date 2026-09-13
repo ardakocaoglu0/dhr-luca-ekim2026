@@ -106,7 +106,7 @@ function PersonRow({ p }: { p: Faz1Person }) {
 export default function Faz1View({ roster, comparison, matrix }: Props) {
   const [unit, setUnit] = useState("all");
   const [q, setQ] = useState("");
-  const [tab, setTab] = useState<SubTab>("manuel");
+  const [tab, setTab] = useState<SubTab>("yz");
   const hasCompare = (comparison.rows || []).length > 0;
 
   const unitCounts = useMemo(() => {
@@ -132,51 +132,51 @@ export default function Faz1View({ roster, comparison, matrix }: Props) {
   const lab = dhrLab as Faz1DhrLab;
 
   const subTabs: { id: SubTab; label: string; count?: number }[] = [
+    { id: "yz", label: "YZ karşılaştırma", count: hasCompare ? comparison.rows.length : undefined },
     { id: "manuel", label: "Manuel dene", count: lab.ready.length + lab.manual.length },
     { id: "kadro", label: "Kadro", count: roster.people.length },
     { id: "eslemeler", label: "Eşlemeler", count: tvEntries.length + edgeEntries.length },
     { id: "kosum", label: "Koşum", count: roster.kosumOrder.length },
-    { id: "yz", label: "YZ karşılaştırma", count: hasCompare ? comparison.rows.length : undefined },
   ];
+
+  // The YZ tab renders its own hero and stats; the lab header would only repeat it.
+  const showLabHeader = tab !== "yz";
 
   return (
     <div className="page">
-      <header className="hero">
-        <div className="hero-inner">
-          <p className="eyebrow">dhrtest · Faz 1 Bordro Laboratuvarı</p>
-          <h1>{comparison.ui?.title || "Eylül 2026 — Faz 1"}</h1>
-          <p className="lead">
-            {comparison.ui?.lead ||
-              "Ana Kadro 15+2, Operasyon, Kenar, Takvim, Blokaj, Yuvarlama 100 ve Şirket B. İK Ekim/Ocak verisi bu sekmede yok."}
-          </p>
-          <p className="meta">
-            Ortam: {roster.environment} · Şifre: <code>{roster.password}</code> · Login {roster.counts.totalLogins} kişi · BT yok
-          </p>
-        </div>
-      </header>
+      {showLabHeader && (
+        <>
+          <header className="hero">
+            <div className="hero-inner">
+              <p className="eyebrow">dhrtest · Faz 1 Bordro Laboratuvarı</p>
+              <h1>{comparison.ui?.title || "Eylül 2026 — Faz 1"}</h1>
+              <p className="meta">
+                Ortam: {roster.environment} · Şifre: <code>{roster.password}</code> · Login{" "}
+                {roster.counts.totalLogins} kişi
+              </p>
+            </div>
+          </header>
 
-      <section className="stats" aria-label="Faz 1 sayılar">
-        <div className="stat ok">
-          <div className="stat-value">{roster.counts.anaAktif}</div>
-          <div className="stat-label">Ana aktif (15’lik)</div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">{roster.counts.anaPasif}</div>
-          <div className="stat-label">Ana pasif</div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">{roster.counts.kenar}</div>
-          <div className="stat-label">Kenar</div>
-        </div>
-        <div className="stat">
-          <div className="stat-value">{roster.counts.yuvarlama}</div>
-          <div className="stat-label">Yuvarlama</div>
-        </div>
-      </section>
-
-      <p className="muted small isolation-note">
-        {roster.isolation.ik} · {roster.isolation.bt} · {roster.isolation.laws}
-      </p>
+          <section className="stats" aria-label="Faz 1 sayılar">
+            <div className="stat ok">
+              <div className="stat-value">{roster.counts.anaAktif}</div>
+              <div className="stat-label">Ana aktif (15’lik)</div>
+            </div>
+            <div className="stat">
+              <div className="stat-value">{roster.counts.anaPasif}</div>
+              <div className="stat-label">Ana pasif</div>
+            </div>
+            <div className="stat">
+              <div className="stat-value">{roster.counts.kenar}</div>
+              <div className="stat-label">Kenar</div>
+            </div>
+            <div className="stat">
+              <div className="stat-value">{roster.counts.yuvarlama}</div>
+              <div className="stat-label">Yuvarlama</div>
+            </div>
+          </section>
+        </>
+      )}
 
       <nav className="subtabs" aria-label="Faz 1 bölümleri">
         {subTabs.map((t) => (
@@ -198,6 +198,9 @@ export default function Faz1View({ roster, comparison, matrix }: Props) {
         <h2>DHR’de ne var / manuel ne denemelisin</h2>
         <p className="muted small">
           {lab.adminHint} Ortam: <code>{lab.environment}</code>
+        </p>
+        <p className="muted small isolation-note">
+          {roster.isolation.ik} · {roster.isolation.bt} · {roster.isolation.laws}
         </p>
         <h3 className="lab-sub">Hazır (tekrar seed etme)</h3>
         <div className="lab-grid">

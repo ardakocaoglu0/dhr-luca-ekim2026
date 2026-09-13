@@ -334,37 +334,6 @@ code {
   border-style: dashed;
 }
 
-.source-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin: 0 0 0.9rem;
-}
-
-.source-chip {
-  font-size: 0.73rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 0.22rem 0.6rem;
-  border-radius: 999px;
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  color: var(--muted);
-}
-
-.source-chip.yz {
-  background: rgba(56, 189, 248, 0.14);
-  border-color: rgba(56, 189, 248, 0.45);
-  color: #7dd3fc;
-}
-
-.source-chip.wait {
-  background: rgba(251, 191, 36, 0.12);
-  border-color: rgba(251, 191, 36, 0.45);
-  color: #fcd34d;
-}
-
 /* ============================================================
    Stats
    ============================================================ */
@@ -1609,4 +1578,17 @@ tr:hover .copy-btn,
   a {
     color: #0f172a;
   }
+}
+
+/* ============================================================
+   Durum panosu — uzun açıklama hücreleri sarar
+   ============================================================ */
+.dash-table td {
+  white-space: normal;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.dash-table td.note {
+  color: var(--muted);
 }

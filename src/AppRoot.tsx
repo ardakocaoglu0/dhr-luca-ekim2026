@@ -1,7 +1,9 @@
 import { useState } from "react";
 import AppView from "./App";
+import DashboardView from "./DashboardView";
 import Faz1View from "./Faz1View";
 import LoginsView from "./LoginsView";
+import dashboard from "./data/dashboard.json";
 import ocak from "./data/comparison.json";
 import ocakMatrix from "./data/matrix.json";
 import ekim from "./data/ekim_comparison.json";
@@ -13,11 +15,12 @@ import logins from "./data/logins.json";
 import type { ComparisonData } from "./types";
 import type { MatrixData } from "./matrixTypes";
 import type { Faz1Roster, LoginsData } from "./faz1Types";
+import type { DashboardData } from "./dashboardTypes";
 
-type Tab = "ekim" | "ocak" | "faz1" | "girisler";
+type Tab = "durum" | "ekim" | "ocak" | "faz1" | "girisler";
 
 export default function App() {
-  const [tab, setTab] = useState<Tab>("faz1");
+  const [tab, setTab] = useState<Tab>("durum");
 
   return (
     <>
@@ -27,6 +30,9 @@ export default function App() {
             <strong>dhrtest</strong> Bordro karşılaştırma
           </p>
           <nav className="tab-bar" aria-label="Dönem">
+            <button className={tab === "durum" ? "active" : ""} onClick={() => setTab("durum")}>
+              Durum panosu
+            </button>
             <button className={tab === "ekim" ? "active" : ""} onClick={() => setTab("ekim")}>
               Ekim 2026
             </button>
@@ -53,7 +59,9 @@ export default function App() {
           </p>
         </div>
       </div>
-      {tab === "ekim" ? (
+      {tab === "durum" ? (
+        <DashboardView data={dashboard as DashboardData} />
+      ) : tab === "ekim" ? (
         <AppView data={ekim as ComparisonData} matrix={ekimMatrix as MatrixData} />
       ) : tab === "ocak" ? (
         <AppView data={ocak as ComparisonData} matrix={ocakMatrix as MatrixData} />

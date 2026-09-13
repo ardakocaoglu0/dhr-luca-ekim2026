@@ -1,0 +1,382 @@
+{
+  "generatedAt": "2026-09-13T16:10:00.000Z",
+  "environment": "https://dhrtest.d1-tech.com.tr",
+  "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
+  "periods": [
+    {
+      "id": "ekim",
+      "label": "Ekim 2026",
+      "unit": "İnsan Kaynakları",
+      "people": 32,
+      "state": "Hesaplandı · 13.09.2026 tam yeniden hesaplama",
+      "compare": "DHR × Luca × YZ"
+    },
+    {
+      "id": "ocak",
+      "label": "Ocak 2026",
+      "unit": "İnsan Kaynakları",
+      "people": 32,
+      "state": "Hesaplandı · 13.09.2026 yeniden doğrulama (31/32 birebir aynı)",
+      "compare": "DHR × Luca × YZ"
+    },
+    {
+      "id": "faz1",
+      "label": "Eylül 2026 — Faz 1",
+      "unit": "Ana Kadro",
+      "people": 15,
+      "state": "Hesaplandı · Luca PDF bekliyor",
+      "compare": "DHR × YZ"
+    }
+  ],
+  "works": [
+    {
+      "id": "W-GV-BAND",
+      "title": "Asgari ücret GV istisnası, dönem ayının bandıyla uygulanıyor",
+      "detail": "Ekim döneminde 5.615,10 TL, Ocak döneminde 4.211,33 TL, Eylül Faz 1’de 5.615,10 TL. 32+32+15 satırda tutarlı.",
+      "periods": [
+        "Ekim",
+        "Ocak",
+        "Eylül"
+      ],
+      "area": "Gelir vergisi"
+    },
+    {
+      "id": "W-BES",
+      "title": "BES yalnız OKS kaydı olan çalışandan kesiliyor",
+      "detail": "Pelin Zengin: PEK 61.200 × %3 = 1.836 TL (Ocak 1.896,72). Kaydı olmayan 31 kişide 0. Oran alanı boş olsa da varsayılan %3 doğru işliyor.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "BES"
+    },
+    {
+      "id": "W-4691",
+      "title": "4691 GV ve damga terkini",
+      "detail": "Alper Hançer (doktora), Berna Işıklı (Ar-Ge), Cemil Jaleoğlu (destek): GV 0 ve damga 0. Her iki dönemde aynı.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Teşvik"
+    },
+    {
+      "id": "W-SGDP",
+      "title": "Emekli SGDP %7,5 ve işsizlik muafiyeti",
+      "detail": "Dilek Kartal ve Ufuk Demirel: PEK 45.200 → SGK 3.390, işsizlik 0.",
+      "periods": [
+        "Ekim",
+        "Ocak",
+        "Eylül"
+      ],
+      "area": "SGK"
+    },
+    {
+      "id": "W-STAJ",
+      "title": "Stajyer kesintisiz hesaplanıyor",
+      "detail": "İlker Pamuk: SGK 0, işsizlik 0, GV 0, damga 0 → net = brüt 18.000 TL.",
+      "periods": [
+        "Ekim",
+        "Ocak",
+        "Eylül"
+      ],
+      "area": "Profil"
+    },
+    {
+      "id": "W-ENGELLI",
+      "title": "Engellilik indirimi 1., 2. ve 3. derece",
+      "detail": "Ersin Lale matrahtan −12.000, Vesile Erkan −7.000, Gökhan Narin −3.000; Fulya Mercan’da GV tamamen sıfırlanıyor.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Gelir vergisi"
+    },
+    {
+      "id": "W-ASGARI",
+      "title": "Asgari ücret civarında GV sıfır, damga istisna bakiyesi doğru",
+      "detail": "Selin Bayraktar: GV 0, damga 12,73 TL (istisna sonrası kalan).",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Gelir vergisi"
+    },
+    {
+      "id": "W-KUM-GV",
+      "title": "Devreden kümülatif GV matrahı üst dilime taşıyor",
+      "detail": "Rıza Altunbaş: 185.000 TL geçmiş matrah karttan uygulanıyor, kümülatif 292.986 TL, GV 5.213,90 TL.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Gelir vergisi"
+    },
+    {
+      "id": "W-FM",
+      "title": "Fazla mesai tutarları bordroya doğru yansıyor",
+      "detail": "12 saat FM: Kemal 4.840, Tamer 4.040, Emre 4.320, Ceren 4.141,23 TL (brüt saat ücreti üzerinden).",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Puantaj"
+    },
+    {
+      "id": "W-KISMI",
+      "title": "Kısmi ay gün orantısı",
+      "detail": "Ocak döneminde Hande Orhan 26 gün / 38.866,67 TL; Faz 1’de kısmi ay girişleri orantılı düşüyor. (Ekim dönemi için bkz. bug DHR-KISMI-EKIM.)",
+      "periods": [
+        "Ocak",
+        "Eylül"
+      ],
+      "area": "Puantaj"
+    },
+    {
+      "id": "W-05510",
+      "title": "05510 teşvik kanun numarası bordroya işliyor",
+      "detail": "Tolga, Umut, Baran, Emre satırlarında kanun numarası ve %2/%5 indirim ayrımı görünüyor.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Teşvik"
+    },
+    {
+      "id": "W-NET-TUTARLILIK",
+      "title": "Brüt − kesintiler = net aritmetiği",
+      "detail": "32/32 satırda tutuyor. Tek sapma Pelin’de 1.740 TL: işveren BES katkısı brütte, nete geçmiyor — doğru davranış.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Motor"
+    },
+    {
+      "id": "W-TEKRAR",
+      "title": "Hesaplama tekrarlanabilir",
+      "detail": "Ocak dönemi yeniden hesaplandığında 32 kişinin 31’i birebir aynı çıktı; tek fark işveren BES katkısının damga matrahından çıkması.",
+      "periods": [
+        "Ocak"
+      ],
+      "area": "Motor"
+    },
+    {
+      "id": "W-ZINCIR",
+      "title": "Puantaj kaydı → tam hesaplama zinciri",
+      "detail": "onlyStaleEmployees:false ile arka plan işi 32/32 ve 15/15 hesaplandı, failedCount 0. Sabit yemek/yol kalemleri her koşumda korunuyor.",
+      "periods": [
+        "Ekim",
+        "Ocak",
+        "Eylül"
+      ],
+      "area": "Motor"
+    },
+    {
+      "id": "W-DAMGA",
+      "title": "Damga vergisi ‰7,59 ve asgari ücret damga istisnası",
+      "detail": "Ekim ve Ocak dönemleri aynı matrah kuralını uyguluyor (yemek dahil, 198,63 TL bandı) — Luca ile aradaki fark mevzuat kararı bekliyor.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "area": "Damga"
+    }
+  ],
+  "bugs": [
+    {
+      "id": "DHR-PPV-DROP",
+      "title": "Tam hesaplama tek seferlik kalemleri bordroya yazmıyor",
+      "severity": "Yüksek",
+      "detail": "Prim / ikramiye / masraf / genel kesinti / avans kayıtları /api/PaymentValue/all’da status 1 duruyor, hesaplama öncesi bordroda görünüyor; calculate(onlyStaleEmployees:false) sonrası hepsi 0 oluyor. Ekim: Baran 4.500, Metin 5.000, Ufuk 3.500, Yasin 10.000, Nilay 1.200, Vesile 800, Okan 750, Leyla avans 7.200. Ocak’ta aynı kayıtlar da düşüyor.",
+      "periods": [
+        "Ekim",
+        "Ocak",
+        "Eylül"
+      ],
+      "impact": "8 çalışanın neti hatalı; ek kazanç/kesinti akışı bordroya hiç ulaşmıyor.",
+      "area": "Puantaj"
+    },
+    {
+      "id": "DHR-YEMEK-SGK",
+      "title": "Yemek yardımının SGK matrahı dönemler arasında tutarsız",
+      "severity": "Yüksek",
+      "detail": "Aynı çalışan, aynı 5.500 TL yemek: Ekim döneminde tamamı prime esas kazançtan çıkıyor (PEK 53.700), Ocak döneminde 158 TL/gün × 22 = 3.476 TL istisna uygulanıyor (PEK 55.724). 5510 md. 80 kapsamında ikisi birlikte doğru olamaz; Luca ile uyumlu olan Ocak uygulaması.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "impact": "Kişi başı ~283 TL işçi SGK, dolayısıyla GV matrahı ve net sapması.",
+      "area": "SGK"
+    },
+    {
+      "id": "DHR-KISMI-EKIM",
+      "title": "Kısmi ay puantajı Ekim döneminde yansımıyor",
+      "severity": "Orta",
+      "detail": "Hande Orhan Ekim döneminde 30 gün / 53.000 TL hesaplanıyor; kısmi 15 iş günü senaryosu bordroya girmiyor. Ocak döneminde aynı kişi 26 gün / 38.866,67 TL ile doğru.",
+      "periods": [
+        "Ekim"
+      ],
+      "impact": "Kısmi istihdamda brüt ve tüm kesintiler yanlış.",
+      "area": "Puantaj"
+    },
+    {
+      "id": "DHR-NET-GROSSUP",
+      "title": "Net ücret brütleştirmesi yemek/yol kalemlerini kapsamıyor",
+      "severity": "Orta",
+      "detail": "Vildan Ertem ve Ceren Toprak (net hedef 42.000): brütleştirme yalnız maaşa uygulanıyor, yemek 5.500 ve yol 3.200 yüz değerinden bordroya giriyor. Toplam net iki kişide de 480 TL düşüyor.",
+      "periods": [
+        "Ekim"
+      ],
+      "impact": "Net sözleşmeli çalışanın eline geçen tutar hedefin altında.",
+      "area": "Motor"
+    },
+    {
+      "id": "DHR-5746-TERKIN",
+      "title": "5746 GV / damga terkini uygulanmıyor",
+      "severity": "Orta",
+      "detail": "4691 profillerinde terkin işlerken 5746 profillerinde (Yağız, Zeliha, Deniz, Tamer) GV ve damga standart kesiliyor. Luca damga 0 yazıyor.",
+      "periods": [
+        "Ekim",
+        "Ocak"
+      ],
+      "impact": "Ar-Ge personelinde teşvik eksik uygulanıyor (mevzuat kararı ile birlikte değerlendirilecek).",
+      "area": "Teşvik"
+    },
+    {
+      "id": "F1-BES-ORAN",
+      "title": "BES oran alanı %3 yerine 3 (=%300) kabul ediyor",
+      "severity": "Yüksek",
+      "detail": "Hakan Işık (8010): contributionRateOverride 3 girildiğinde BES kesintisi 189.600 TL oldu ve net negatife düştü. Alan 0,03 olarak yazıldığında 1.896 TL doğru hesaplandı. Ürün ne birim gösteriyor ne de üst sınır doğrulaması yapıyor.",
+      "periods": [
+        "Eylül"
+      ],
+      "impact": "Tek karakterlik veri girişi neti negatife çeviriyor; uyarı yok.",
+      "area": "BES"
+    },
+    {
+      "id": "F1-AVANS",
+      "title": "Tanımlı avans bordroda kesilmiyor",
+      "severity": "Orta",
+      "detail": "Gülce Han (8009) kadrosunda 2.000 TL avans tanımlı, Eylül bordrosunda avans kesintisi satırı boş. Aynı kök neden Ekim’de Leyla Tunçel’in 7.200 TL avansında da görülüyor (DHR-PPV-DROP).",
+      "periods": [
+        "Eylül",
+        "Ekim"
+      ],
+      "impact": "Avans mahsubu yapılmıyor, çalışana fazla ödeme.",
+      "area": "Puantaj"
+    },
+    {
+      "id": "F1-FM-BIRIM",
+      "title": "Fazla mesai kalemi saat girişini tutar sayıyor",
+      "severity": "Düşük",
+      "detail": "Fırat Deniz (8008): FM alanına saat girildiğinde tutar gibi işlendi. Ekim/Ocak dönemlerinde FM tutar olarak girildiği için sorun görünmüyor.",
+      "periods": [
+        "Eylül"
+      ],
+      "impact": "Saat bazlı FM girişi yapan kullanıcıda brüt hatalı.",
+      "area": "Puantaj"
+    }
+  ],
+  "disputes": [
+    {
+      "id": "D-YEMEK-DAMGA",
+      "title": "Yemek yardımı damga matrahında mı?",
+      "detail": "DHR nakit yemeği damga matrahına alıyor (Serra 198,63), Luca almıyor (156,88). 488 sayılı Kanun açısından nakdi ödemenin ücret sayılması DHR’yi destekliyor; nihai karar bekleniyor."
+    },
+    {
+      "id": "D-5746-DAMGA",
+      "title": "5746 damga terkini kapsamı",
+      "detail": "Luca Yağız/Zeliha/Deniz’de damgayı 0 yazıyor (Tamer 30,66), DHR standart kesiyor. Terkinin damgayı kapsayıp kapsamadığı mevzuat kararı bekliyor."
+    },
+    {
+      "id": "D-MASRAF",
+      "title": "Masraf geri ödemesi ücret mi?",
+      "detail": "DHR masrafı ücret saymıyor (harcama iadesi), Luca brüte yazıyor. Tasarım farkı; hata sayılmıyor."
+    },
+    {
+      "id": "D-LUCA-GV",
+      "title": "Luca’nın istisna bandı güncel değil",
+      "detail": "Luca Ekim’de ~4.211,33 TL (Ocak bandı) uyguluyor; yasal Ağustos–Aralık 2026 bandı 5.615,10 TL. Bu bir DHR hatası değil, Luca tarafında güncelleme ihtiyacı."
+    }
+  ],
+  "untested": [
+    {
+      "id": "U-COKLU-ISYERI",
+      "title": "Aynı ay içinde iki SGK işyeri (tek dönem)",
+      "detail": "Ceren Oral (8051): Kenar 1–10.09 işyeri A, 11–30.09 işyeri B. Kadro geçmişi hazır ama bordroda işyeri kırılımı denenmedi.",
+      "blocker": "Ürün aynı anda iki dolu kadro tutmuyor; UI’de tarihli işyeri kırılımı bulunamadı.",
+      "area": "SGK"
+    },
+    {
+      "id": "U-AYNI-AY-IKI-ISVEREN",
+      "title": "Aynı ayda iki işveren (dönem geçişi)",
+      "detail": "Ozan Şeker (EDGE-018): Kenar’da 1–10.09 çıkış + Şirket B’de 11–30.09 giriş, kümülatif matrahın bir kez taşınması.",
+      "blocker": "Aynı çalışanı aynı ay iki döneme eklemek API’de 409 veriyor; senaryo bölünerek bırakıldı.",
+      "area": "Kapsam"
+    },
+    {
+      "id": "U-ARGE-KOTA",
+      "title": "Ar-Ge / destek personeli kotası",
+      "detail": "Teknopark destek kotası 1 iken 8025 kota içi teşvik alsın, 8026 aynı dönemde kota dışı kalsın.",
+      "blocker": "RdCenter/Quota API’si yok; UI’de kota alanı doğrulanmadı.",
+      "area": "Teşvik"
+    },
+    {
+      "id": "U-IZIN-CAKISMA",
+      "title": "Onaylı rapor ile ücretsiz izin çakışması",
+      "detail": "Feriha Dal: 22–24.09 onaylı rapor + 23–24.09 ücretsiz izin aynı anda; bordronun çakışmayı nasıl işlediği.",
+      "blocker": "Ürün ikinci kaydı yazmıyor (HTTP 200 + isSuccess false); bordro etkisi ölçülemedi.",
+      "area": "Puantaj"
+    },
+    {
+      "id": "U-FAZ1-LUCA",
+      "title": "Eylül Faz 1 için Luca karşılaştırması",
+      "detail": "Ana Kadro 15 kişilik dönem DHR’de hesaplandı, YZ kolonu hazır; Luca PDF’i alınmadığı için üçlü karşılaştırma eksik.",
+      "blocker": "Luca çıktısı bekleniyor.",
+      "area": "Kapsam"
+    },
+    {
+      "id": "U-DIGER-BIRIMLER",
+      "title": "Faz 1’in diğer birimleri hesaplanmadı",
+      "detail": "Operasyon (3), Kenar Durumlar (53), Yuvarlama (100), Takvim (1), Blokaj (1), Şirket B (2) dönemleri açık ama bordro koşulmadı; yuvarlama farkı ve blokaj/icra sırası test edilmedi.",
+      "blocker": "Koşum sırası: yalnız Ana Kadro Eylül tamamlandı.",
+      "area": "Kapsam"
+    },
+    {
+      "id": "U-YABANCI",
+      "title": "Yabancı çalışan sigorta kolu",
+      "detail": "Jale Rüzgar profilinde yabancı statüsü var; hangi sigorta kollarının uygulandığı bordro çıktısından doğrulanamadı.",
+      "blocker": "Kart alanları PDF/API çıktısına yansımıyor.",
+      "area": "SGK"
+    },
+    {
+      "id": "U-CIKIS",
+      "title": "İşten çıkış bordrosu: kıdem, ihbar, kullanılmayan izin",
+      "detail": "Kısmi ay çıkışı, kıdem/ihbar tazminatı ve izin bakiyesi ödemesi hiç hesaplanmadı.",
+      "blocker": "Senaryo kurulmadı.",
+      "area": "Kapsam"
+    },
+    {
+      "id": "U-TAVAN",
+      "title": "PEK tavanı ve tavan üstü prim",
+      "detail": "Tavan üstü prim (EDGE-031, 40.000 TL) ve 7,5 × asgari ücret tavanının kesme davranışı doğrulanmadı.",
+      "blocker": "İlgili dönem hesaplanmadı.",
+      "area": "SGK"
+    },
+    {
+      "id": "U-KUMULATIF",
+      "title": "Yıl içi kümülatif dilim geçişleri",
+      "detail": "Ocak–Aralık boyunca kümülatif matrahın dilim atlama davranışı yalnız tek ay bazında görüldü; YZ kolonu da aylık izole hesaplıyor.",
+      "blocker": "Çok aylı koşum yapılmadı.",
+      "area": "Gelir vergisi"
+    },
+    {
+      "id": "U-BEYAN",
+      "title": "SGK APHB / muhtasar beyan çıktıları",
+      "detail": "Bordro sonrası e-bildirge ve muhtasar beyan dosyaları hiç üretilmedi, tutarlarla karşılaştırılmadı.",
+      "blocker": "Senaryo kurulmadı.",
+      "area": "Kapsam"
+    }
+  ]
+}
