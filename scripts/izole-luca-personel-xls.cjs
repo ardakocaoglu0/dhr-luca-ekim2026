@@ -71,9 +71,10 @@ function meslekSigorta(p) {
   return `${meslek}/${sig}`;
 }
 
-function sakatlik(p) {
-  const d = p.seedFlags?.disabilityDegree;
-  if (d === 1 || d === 2 || d === 3) return String(d);
+function sakatlik() {
+  // İK32 çalışan dosyasında bu kolon boştu. Luca "2"/"3" kodunu
+  // Sakatlık Durumu listesinde bulamayınca Leman/Mert "verileri hatalı"
+  // verdi; "1" (Kaan) geçti. Derece kartta: Sakatlık İnd. Uyg.
   return "";
 }
 
@@ -113,7 +114,7 @@ const rows = people.map((p) => {
   row[16] = meslekSigorta(p);
   row[17] = kanunNo(p);
   row[18] = "01";
-  row[19] = sakatlik(p);
+  row[19] = sakatlik();
   row[21] = String(p.sicil);
   row[24] = "İstanbul";
   row[25] = birthSlash(n);
@@ -156,6 +157,27 @@ XLSX.utils.book_append_sheet(outWb, XLSX.utils.aoa_to_sheet([]), "Sheet3");
 
 for (const p of OUTS) XLSX.writeFile(outWb, p, { bookType: "xls" });
 
+const retryIdx = people
+  .map((p, i) => (/^Leman$|^Mert$/i.test(p.firstName) ? i : -1))
+  .filter((i) => i >= 0);
+const retryWs = XLSX.utils.aoa_to_sheet([...header, ...retryIdx.map((i) => rows[i])]);
+retryIdx.forEach((src, j) => {
+  const p = people[src];
+  const r = 3 + j;
+  retryWs[XLSX.utils.encode_cell({ r, c: 3 })] = { t: "n", v: Number(p.maas), z: "#,##0.00" };
+  retryWs[XLSX.utils.encode_cell({ r, c: 8 })] = { t: "s", v: dateSlash(hireIso(p)), z: "@" };
+  retryWs[XLSX.utils.encode_cell({ r, c: 25 })] = { t: "s", v: birthSlash(parseInt(p.sicil, 10)), z: "@" };
+});
+const retryWb = XLSX.utils.book_new();
+XLSX.utils.book_append_sheet(retryWb, retryWs, "Sheet1");
+XLSX.utils.book_append_sheet(retryWb, XLSX.utils.aoa_to_sheet([]), "Sheet2");
+XLSX.utils.book_append_sheet(retryWb, XLSX.utils.aoa_to_sheet([]), "Sheet3");
+const retryOuts = [
+  "C:/Users/ardak/Downloads/personel_giris_excel_TekDegisken_LemanMert.xls",
+  path.join(process.env.USERPROFILE, "Desktop", "personel_giris_excel_TekDegisken_LemanMert.xls"),
+];
+for (const p of retryOuts) XLSX.writeFile(retryWb, p, { bookType: "xls" });
+
 const kanunDist = {};
 for (const r of rows) kanunDist[r[17]] = (kanunDist[r[17]] || 0) + 1;
 
@@ -180,6 +202,8 @@ console.log(
       defne: rows.find((r) => r[0] === "Defne")?.slice(0, 9),
       cemilGv: rows.find((r) => r[0] === "Cemil")?.[37],
       kaanSak: rows.find((r) => r[0] === "Kaan")?.[19],
+      retry: retryOuts,
+      retryNames: retryIdx.map((i) => `${people[i].firstName} ${people[i].lastName}`),
     },
     null,
     2

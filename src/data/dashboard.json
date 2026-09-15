@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T17:14:10.166Z",
+  "generatedAt": "2026-09-13T19:08:45.543Z",
   "environment": "https://dhrtest.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
@@ -32,8 +32,8 @@
       "label": "Ocak 2026 — Tek Değişken",
       "unit": "Tek Değişken",
       "people": 27,
-      "state": "Hesaplandı · DHR 27/27 · hakem pass 2 · YZ net ±0,01 0 · Luca PDF bekliyor",
-      "compare": "DHR × YZ"
+      "state": "Hesaplandı · DHR 27/27 · Luca 27/27 · ±0,01 0 · girdi pass 24",
+      "compare": "DHR × Luca × YZ"
     }
   ],
   "works": [
@@ -203,10 +203,21 @@
   ],
   "bugs": [
     {
+      "id": "IZ-LUCA-4691",
+      "title": "Tek Değişken: Luca 4691 terkin uygulamıyor",
+      "severity": "Yüksek",
+      "detail": "Hakan/Işık Luca net Ada zemini (GV 2.635,42). DHR GV 0 / net 50.841,40.",
+      "periods": [
+        "Tek Değişken"
+      ],
+      "impact": "Teknopark GV/damga terkini Luca kartında yok.",
+      "area": "Teşvik"
+    },
+    {
       "id": "IZ-AVANS",
       "title": "Tek Değişken: avans mahsubu bordroya yazılmıyor",
       "severity": "Yüksek",
-      "detail": "Umay Gunes (6220) 7.200 TL avans kaydı duruyor; Ocak neti Ada baseline ile aynı. F1-AVANS ile aynı sınıf.",
+      "detail": "Umay Gunes (6220): DHR Ocak neti Ada baseline (avans 0). Luca PDF avans 7.200 kesti (net 40.849,10). F1-AVANS ile aynı DHR sınıfı.",
       "periods": [
         "Tek Değişken"
       ],

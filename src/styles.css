@@ -568,6 +568,25 @@ details.panel > summary + * {
   overflow-x: auto;
 }
 
+.table-scroll.flow {
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.page.compare .cards.bugs,
+.page.compare .cards.three {
+  grid-template-columns: 1fr;
+}
+
+.page.compare .card {
+  overflow: visible;
+}
+
+section.panel > .sec-head {
+  margin-bottom: 0.6rem;
+}
+
 table {
   width: 100%;
   border-collapse: separate;

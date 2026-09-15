@@ -1,13 +1,14 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { tr } from "./types";
 
-/** Katlanabilir panel. Uzun sayfalarda ikincil bölümler kapalı başlar. */
+/** Panel. `collapsible` kapalıysa başlık her zaman açık, caret yok. */
 export function Section({
   id,
   title,
   hint,
   caption,
   defaultOpen = true,
+  collapsible = true,
   className = "",
   children,
 }: {
@@ -16,22 +17,39 @@ export function Section({
   hint?: string;
   caption?: ReactNode;
   defaultOpen?: boolean;
+  collapsible?: boolean;
   className?: string;
   children: ReactNode;
 }) {
-  return (
-    <details className={`panel ${className}`.trim()} id={id} open={defaultOpen}>
-      <summary>
-        <div className="sec-head">
-          <span className="sec-caret" aria-hidden="true">
-            ▶
-          </span>
-          <h2>{title}</h2>
-          {hint ? <span className="sec-hint">{hint}</span> : null}
-        </div>
-      </summary>
+  const head = (
+    <div className="sec-head">
+      {collapsible ? (
+        <span className="sec-caret" aria-hidden="true">
+          ▶
+        </span>
+      ) : null}
+      <h2>{title}</h2>
+      {hint ? <span className="sec-hint">{hint}</span> : null}
+    </div>
+  );
+  const body = (
+    <>
       {caption ? <p className="caption">{caption}</p> : null}
       {children}
+    </>
+  );
+  if (!collapsible) {
+    return (
+      <section className={`panel ${className}`.trim()} id={id}>
+        {head}
+        {body}
+      </section>
+    );
+  }
+  return (
+    <details className={`panel ${className}`.trim()} id={id} open={defaultOpen}>
+      <summary>{head}</summary>
+      {body}
     </details>
   );
 }

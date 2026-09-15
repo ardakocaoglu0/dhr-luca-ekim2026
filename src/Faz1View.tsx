@@ -132,7 +132,7 @@ export default function Faz1View({ roster, comparison, matrix }: Props) {
   const lab = dhrLab as Faz1DhrLab;
 
   const subTabs: { id: SubTab; label: string; count?: number }[] = [
-    { id: "yz", label: "YZ karşılaştırma", count: hasCompare ? comparison.rows.length : undefined },
+    { id: "yz", label: "Luca YZ DHR karşılaştırma", count: hasCompare ? comparison.rows.length : undefined },
     { id: "manuel", label: "Manuel dene", count: lab.ready.length + lab.manual.length },
     { id: "kadro", label: "Kadro", count: roster.people.length },
     { id: "eslemeler", label: "Eşlemeler", count: tvEntries.length + edgeEntries.length },

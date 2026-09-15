@@ -1,7 +1,10 @@
 # build output
 dist
 node_modules
+.vite
 
 # local
 .DS_Store
 *.local
+/downloads
+
