@@ -124,17 +124,17 @@ for (const row of cmp.rows) {
     employerCost: src.employerCost,
   };
   row.delta = {
-    net: null,
-    gv: null,
-    damga: null,
+    net: row.luca?.net == null ? null : d(src.net, row.luca.net),
+    gv: row.luca?.gv == null ? null : d(src.gv, row.luca.gv),
+    damga: row.luca?.damga == null ? null : d(src.damga, row.luca.damga),
     netAi: d(src.net, row.ai?.net),
     gvAi: d(src.gv, row.ai?.gv),
   };
   for (const li of row.lineItems || []) {
     if (!KEYS.includes(li.key)) continue;
     li.dhr = src[li.key] ?? null;
-    li.delta = null;
-    li.match = false;
+    li.delta = li.dhr == null || li.luca == null ? null : d(li.dhr, li.luca);
+    li.match = li.delta != null && Math.abs(li.delta) <= 0.01;
     li.deltaDhrAi = d(li.dhr, li.ai);
     li.matchAi = li.deltaDhrAi != null && Math.abs(li.deltaDhrAi) <= 0.01;
   }
@@ -155,7 +155,7 @@ const netDeltas = cmp.rows.map((r) => r.delta?.netAi).filter((v) => v != null);
 cmp.summary.dhrCount = filled;
 cmp.summary.netWithin100Ai = netDeltas.filter((v) => Math.abs(v) <= 100).length;
 cmp.summary.avgAbsNetDeltaAi = netDeltas.length ? r2(netDeltas.reduce((a, v) => a + Math.abs(v), 0) / netDeltas.length) : null;
-cmp.pending = { luca: true, dhr: false };
+cmp.pending = { luca: !cmp.rows.some((r) => r.luca?.net != null), dhr: false };
 cmp.sources.dhrExcel = `dhrtest.d1-tech.com.tr — Eylül 2026 Ana Kadro dönemi, 15/15 hesaplandı (${runAt.slice(0, 10)})`;
 cmp.generatedAt = runAt;
 
@@ -220,13 +220,6 @@ cmp.aiReport = {
       vs: "DHR ↔ YZ",
       result: "uyumlu",
       detail: `Eylül GV istisnası iki tarafta da ${fmt(cmp.legal.dhrObserved.exemptApplied)} TL; damga istisnası DHR’de 250,70 TL. Ekim sekmesindeki istisna sapması Faz 1 Eylül koşumunda tekrarlamadı.`,
-    },
-    {
-      id: "F1-BES-ORAN",
-      vs: "DHR doğrulaması",
-      result: "hata",
-      detail:
-        "8010 Hakan Işık’ta BES çalışan oranı 3 olarak kaydedildiğinde DHR bunu %300 uygulayıp 189.600 TL kesinti ve −133.093,63 TL net üretti; hesaplama hata vermeden tamamlandı, yalnız 1 anomali işareti kaldı. Oran 0,03’e çekilince kesinti 1.896 TL, net 54.610,37 TL. Oran alanı için üst sınır/negatif net doğrulaması yok.",
     },
     {
       id: "F1-AVANS",
@@ -304,9 +297,9 @@ mtx.checkedItems = [
     note: "8012’de SGK %7,5 ve işsizlik yok; 8014’te kesinti yok.",
   },
   {
-    item: "BES oran alanı doğrulaması",
-    result: "fail",
-    note: "Oran 3 girildiğinde %300 uygulanıp negatif net üretildi, hesaplama engellenmedi (F1-BES-ORAN).",
+    item: "BES çalışan oranı %3",
+    result: "pass",
+    note: "8010 Hakan Işık Özel Katkı Oranı %3 (API 0,03). Eylül kesinti 1.896 TL, net 54.610,37 TL.",
   },
   {
     item: "Avans kesintisinin bordroya yansıması",
@@ -333,13 +326,6 @@ mtx.correctFindings = [
   "SGK işveren payı, işsizlik işveren hissesi ve işveren maliyeti her kişide üretildi.",
 ];
 mtx.dhrBugs = [
-  {
-    id: "F1-BES-ORAN",
-    title: "BES çalışan oranı %300 olarak uygulandı, net negatife düştü",
-    severity: "high",
-    detail:
-      "EmployeeOksEnrollment.contributionRateOverride oran (0,03) bekliyor ama 3 değeri reddedilmedi: 8010’da 63.200 × 3 = 189.600 TL kesinti, net −133.093,63 TL. Hesaplama tamamlandı, yalnız 1 anomali işareti bırakıldı. Alan için üst sınır ve negatif net kontrolü gerekiyor.",
-  },
   {
     id: "F1-AVANS",
     title: "Tanımlı avans bordroda kesilmedi",

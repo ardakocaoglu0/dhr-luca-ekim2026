@@ -35,6 +35,7 @@ export type CompareRow = {
   n?: number;
   name: string;
   tc: string;
+  sicil?: string;
   note: string;
   profile: string;
   input?: string;

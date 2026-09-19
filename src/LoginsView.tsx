@@ -92,7 +92,7 @@ export default function LoginsView({ data }: Props) {
     <div className="page">
       <header className="hero">
         <div className="hero-inner">
-          <p className="eyebrow">dhrtest girişleri</p>
+          <p className="eyebrow">dhrtest2 girişleri</p>
           <h1>Girişler</h1>
           <p className="lead">
             {data.note} Ortam: <code>{data.environment}</code>. {total} hesap. BT, Arda ve Sude listede yok.

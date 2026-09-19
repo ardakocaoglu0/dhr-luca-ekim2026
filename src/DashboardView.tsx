@@ -32,7 +32,7 @@ export default function DashboardView({ data }: { data: DashboardData }) {
     <div className="page">
       <header className="hero">
         <div className="hero-inner">
-          <p className="eyebrow">dhrtest · DHR bordro durum panosu</p>
+          <p className="eyebrow">dhrtest2 · DHR bordro durum panosu</p>
           <h1>DHR bordro: ne çalışıyor, ne bozuk, ne test edilmedi</h1>
           <p className="lead">{data.sourceNote}</p>
           <p className="meta">

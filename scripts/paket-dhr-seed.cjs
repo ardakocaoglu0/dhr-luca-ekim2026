@@ -1,12 +1,12 @@
 /**
- * Tek Değişken birimi: Ocak 2026, her kişide tek sapma.
- * İK 6101–6132, Faz 1 80xx, BT, Sude'ye dokunmaz.
+ * Bordro Paket birimi: Ocak 2026, her kişide tek sapma (6300–6330).
+ * Yalnız dhrtest2. İK 6101–6132, Faz 1 80xx, BT, Sude, Faz1 Bordro A.Ş. yok.
  */
 const { chromium } = require(require("path").join(process.env.TEMP, "node_modules", "playwright"));
 const fs = require("fs");
 const path = require("path");
 
-const BASE = process.env.DHR_URL || "https://dhrtest.d1-tech.com.tr";
+const BASE = process.env.DHR_URL || "https://dhrtest2.d1-tech.com.tr";
 const EMAIL = process.env.DHR_EMAIL || "arda.kocaoglu@d1-tech.com";
 const ADMIN_PASS = process.env.DHR_PASSWORD;
 const DEMO_PASS = "Bordro123!";
@@ -17,10 +17,10 @@ if (!ADMIN_PASS) {
 
 const { oksFraction } = require("./oks-rate.cjs");
 const ROOT_DIR = path.join(__dirname, "..");
-const ROSTER = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, "src", "data", "izole_roster.json"), "utf8"));
-const STATE_PATH = path.join(process.env.TEMP, "izole_seed_state.json");
-const LOG_PATH = path.join(process.env.TEMP, "izole_seed.log");
-const DUMP_PATH = path.join(process.env.TEMP, "izole_ocak_period.json");
+const ROSTER = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, "src", "data", "paket_roster.json"), "utf8"));
+const STATE_PATH = path.join(process.env.TEMP, "paket_seed_state.json");
+const LOG_PATH = path.join(process.env.TEMP, "paket_seed.log");
+const DUMP_PATH = path.join(process.env.TEMP, "paket_ocak_period.json");
 
 const ROOT = "d93d6660-892d-4dcf-8fc2-36bed171017a";
 const IK = "6e473120-9b10-48d1-81df-08b4f798e4dd";
@@ -226,14 +226,63 @@ function makeTckn(seed) {
   }
 
   log("PHASE unit");
-  const ou = await ensureUnit("izole", "Tek Değişken", ROOT);
+  const ou = await ensureUnit("paket", "Bordro Paket", ROOT);
   log("UNIT", ou.id, ou.name);
 
   log("PHASE payments");
   let payments = arr(unwrap(await api("GET", "/api/Payment/filteredByUnitAbilities")));
-  for (const n of ["Temel Maaş", "Yemek Yardımı", "Yol Yardımı", "Prim", "İkramiye", "Genel Kesinti", "Masraf", "Fazla Mesai"]) {
-    const hit = payments.find((p) => eqName(p.name, n) && (p.organizationalUnitId === ROOT || p.organizationalUnitId === ou.id));
-    if (hit) state.payments[n] = hit.id;
+  async function ensurePayment(name, kind) {
+    let hit =
+      payments.find((p) => eqName(p.name, name) && p.organizationalUnitId === ROOT) ||
+      payments.find((p) => eqName(p.name, name));
+    if (hit) {
+      state.payments[name] = hit.id;
+      return hit;
+    }
+    const tpl = payments.find((p) => eqName(p.name, "Prim")) || payments.find((p) => eqName(p.name, "Temel Maaş"));
+    const body = {
+      name,
+      organizationalUnitId: ROOT,
+      paymentKind: kind ?? tpl?.paymentKind ?? 0,
+      paymentCategory: kind ? "Deduction" : tpl?.paymentCategory || "Earning",
+      isDeduction: !!kind,
+      includeInSgk: true,
+      includeInIncomeTax: true,
+      includeInStampTax: true,
+      isFixed: false,
+      isOptional: true,
+    };
+    const r = await api("POST", "/api/Payment", body);
+    log("PAY_CREATE", name, r.status, ok(r) ? unwrap(r)?.id : errText(r));
+    if (ok(r) && unwrap(r)?.id) {
+      hit = unwrap(r);
+      payments.push(hit);
+      state.payments[name] = hit.id;
+      return hit;
+    }
+    return null;
+  }
+  for (const n of [
+    "Temel Maaş",
+    "Yemek Yardımı",
+    "Yol Yardımı",
+    "Prim",
+    "İkramiye",
+    "Genel Kesinti",
+    "Masraf",
+    "Fazla Mesai",
+    "Çocuk Yardımı",
+    "Eş Yardımı",
+    "Yan Hak Vergi Farkı",
+    "Özel Sağlık Sigortası (İşveren)",
+    "İzin Harçlığı",
+    "Nafaka",
+    "İcra",
+    "Sendika Aidatı",
+    "İşveren Alacağı",
+    "Ücret Kesme Cezası",
+  ]) {
+    await ensurePayment(n);
   }
   saveState(state);
 
@@ -251,6 +300,18 @@ function makeTckn(seed) {
     }
     if (/Destek/i.test(name)) {
       const d = rootProfiles.find((p) => /destek/i.test(p.name || ""));
+      if (d) return d.id;
+    }
+    if (/Çırak|Cirak/i.test(name)) {
+      const d = rootProfiles.find((p) => /çırak|cirak/i.test(p.name || ""));
+      if (d) return d.id;
+    }
+    if (/İntörn|Intern/i.test(name)) {
+      const d = rootProfiles.find((p) => /int[öo]rn|intern/i.test(p.name || ""));
+      if (d) return d.id;
+    }
+    if (/Stajyer/i.test(name)) {
+      const d = rootProfiles.find((p) => /stajyer/i.test(p.name || ""));
       if (d) return d.id;
     }
     return state.profiles["Standart"];
@@ -347,7 +408,7 @@ function makeTckn(seed) {
       if (hit) return hit;
       const r = await api("POST", "/api/LeaveType", {
         name,
-        description: "Tek Değişken " + name,
+        description: "Bordro Paket " + name,
         isPaidLeave: paid,
         isVisibleInEmployeePage: true,
         isPublicHolidayIncluded: false,
@@ -443,6 +504,7 @@ function makeTckn(seed) {
     const n = parseInt(p.sicil, 10);
     if (n >= 6101 && n <= 6132) throw new Error("protected sicil " + p.sicil);
     if (n >= 8001 && n <= 8200) throw new Error("faz1 sicil " + p.sicil);
+    if (n >= 6200 && n <= 6227) throw new Error("izole sicil " + p.sicil);
     const existing = emps.find((e) => String(e.employeeNumber) === String(p.sicil)) || emps.find((e) => String(e.email || "").toLowerCase() === p.email);
     const roleId = isMgr ? rs.yonetici || rs.ik : rs.calisan;
     const flags = p.seedFlags || {};
@@ -461,7 +523,7 @@ function makeTckn(seed) {
         lastName: p.lastName,
         email: p.email,
         gender: p.gender,
-        phoneNumber: `+90539${String(6200000 + n).slice(-7)}`,
+        phoneNumber: `+90539${String(6300000 + n).slice(-7)}`,
         birthDate: `${1978 + (n % 20)}-${String((n % 12) + 1).padStart(2, "0")}-${String(5 + (n % 20)).padStart(2, "0")}T00:00:00`,
       });
       empId = unwrap(createEmp)?.id;
@@ -483,9 +545,9 @@ function makeTckn(seed) {
         hrManagerPositionId: dm,
         directManagerPositionId: dm,
         startDate: hire,
-        endDate: null,
+        endDate: flags.exit || null,
         reminderEnabled: false,
-        isTerminated: false,
+        isTerminated: !!flags.exit,
       });
       posId = unwrap(createPos)?.id;
       if (!ok(createPos) || !posId) throw new Error("pos " + p.sicil + " " + errText(createPos));
@@ -508,15 +570,57 @@ function makeTckn(seed) {
     const fps = [];
     if (PAY_MAAS) fps.push({ paymentId: PAY_MAAS, value: p.maas, wageValue: p.maas, validFromYear: vfYear, validFromMonth: vfMonth });
     if (p.yemek && PAY_YEMEK) fps.push({ paymentId: PAY_YEMEK, value: p.yemek, wageValue: p.yemek, validFromYear: vfYear, validFromMonth: vfMonth });
-    if (p.yol && PAY_YOL) fps.push({ paymentId: PAY_YOL, value: p.yol, wageValue: p.yol, validFromYear: vfYear, validFromMonth: vfMonth });
+    if (p.yol && PAY_YOL) {
+      const end = flags.paymentEnd?.yol;
+      const row = { paymentId: PAY_YOL, value: p.yol, wageValue: p.yol, validFromYear: 2025, validFromMonth: 6 };
+      if (end) {
+        const [ey, em] = String(end).split("-");
+        row.validToYear = Number(ey);
+        row.validToMonth = Number(em);
+      }
+      fps.push(row);
+    }
     if (fps.length) {
       let fp = await api("PUT", `/api/Employee/${empId}/fixedPayments`, { fixedPayments: fps });
+      if (!ok(fp)) {
+        fp = await api("PUT", `/api/Employee/${empId}/fixedPayments`, {
+          fixedPayments: fps.map((x) => ({
+            paymentId: x.paymentId,
+            value: x.value,
+            wageValue: x.wageValue ?? x.value,
+            validFromYear: x.validFromYear,
+            validFromMonth: x.validFromMonth,
+            validToYear: x.validToYear ?? null,
+            validToMonth: x.validToMonth ?? null,
+          })),
+        });
+      }
       if (!ok(fp)) {
         fp = await api("PUT", `/api/Employee/${empId}/fixedPayments`, {
           fixedPayments: fps.map((x) => ({ paymentId: x.paymentId, value: x.value })),
         });
       }
       if (!ok(fp)) log("WARN fp", p.sicil, errText(fp));
+      if (flags.paymentEnd?.yol) {
+        const cur = unwrap(await api("GET", `/api/Employee/${empId}/fixedPayments`));
+        const list = arr(cur).concat(arr(cur?.fixedPayments));
+        const [ey, em] = String(flags.paymentEnd.yol).split("-");
+        const endedBeforePeriod = Number(ey) < 2026 || (Number(ey) === 2026 && Number(em) < 1);
+        const next = list.map((x) => {
+          const row = { ...x };
+          if (x.paymentId === PAY_YOL) {
+            row.validToYear = Number(ey);
+            row.validToMonth = Number(em);
+            if (endedBeforePeriod) {
+              row.value = 0;
+              row.wageValue = 0;
+            }
+          }
+          return row;
+        });
+        const endPut = await api("PUT", `/api/Employee/${empId}/fixedPayments`, { fixedPayments: next });
+        log("FP_END", p.sicil, "yol", flags.paymentEnd.yol, endPut.status, ok(endPut) ? "ok" : errText(endPut));
+      }
     }
     await api("PUT", `/api/Employee/${empId}/salaryType/${p.salaryType ?? 0}`, {});
     const profName = p.profile || "Standart";
@@ -538,7 +642,7 @@ function makeTckn(seed) {
       birthDate: full.birthDate ? String(full.birthDate).slice(0, 10) : undefined,
       companyStartDate: hire,
       defaultPayrollLawVariantId: lawId,
-      defaultPayrollLawFieldsJson: null,
+      defaultPayrollLawFieldsJson: flags.stopajTerkin ? JSON.stringify({ stopajTerkin: true, gvStopajTerkini: true }) : null,
       defaultTaxExemptionVariantId: taxId,
       disabilityDegree: flags.disabilityDegree || null,
     });
@@ -554,7 +658,19 @@ function makeTckn(seed) {
         pauseStartDate: null,
         pauseEndDate: null,
         pensionCompany: "Anadolu Hayat Emeklilik",
-        certificateNumber: `AH-IZ-${p.sicil}`,
+        certificateNumber: `AH-PK-${p.sicil}`,
+      });
+    } else if (flags.oksOptOut) {
+      await api("POST", "/api/EmployeeOksEnrollment/upsert", {
+        employeeId: empId,
+        oksStatus: 0,
+        contributionRateOverride: null,
+        enrollmentDate: null,
+        withdrawalDate: null,
+        pauseStartDate: null,
+        pauseEndDate: null,
+        pensionCompany: null,
+        certificateNumber: null,
       });
     } else if (flags.emekli) {
       await api("POST", "/api/EmployeeOksEnrollment/upsert", {
@@ -573,7 +689,7 @@ function makeTckn(seed) {
       await api("PUT", `/api/Employee/${empId}/initialCumulativeTaxBase`, { value: 185000, year: 2026 });
     }
     if (tcField) {
-      const tc = makeTckn(620000 + n);
+      const tc = makeTckn(630000 + n);
       const fv = (full.employeeFieldValues || []).find((v) => v.employeeFieldId === tcField.id);
       if (fv?.id) {
         await api("PUT", `/api/EmployeeFieldValue/${fv.id}`, { id: fv.id, value: tc, employeeFieldId: tcField.id, employeeId: empId });
@@ -583,11 +699,11 @@ function makeTckn(seed) {
     }
     await api("POST", "/api/EmployeeSgkProfile/upsert", {
       employeeId: empId,
-      meslekKodu: flags.stajyer ? "9999.01" : isMgr ? "1211.01" : "2421.03",
+      meslekKodu: flags.stajyer || flags.cirak || flags.intern ? "9999.01" : isMgr ? "1211.01" : "2421.03",
       csgbIskolu: "07",
       gorevKodu: isMgr ? "01" : "02",
-      sigortaliTuru: flags.emekli ? "2" : flags.stajyer ? "7" : flags.foreign ? "4" : "0",
-      belgeTuru: flags.stajyer ? "02" : null,
+      sigortaliTuru: flags.emekli ? "2" : flags.stajyer || flags.cirak || flags.intern ? "7" : flags.foreign ? "4" : "0",
+      belgeTuru: flags.stajyer ? "07" : flags.cirak ? "02" : flags.intern ? "02" : null,
       eskiHukumlu: false,
       kismiSureliCalisiyor: part,
       ogrenimKodu: /Doktora/.test(profName) ? "7" : /Yüksek/.test(profName) ? "6" : flags.stajyer ? "3" : "5",
@@ -629,11 +745,7 @@ function makeTckn(seed) {
   log("PEOPLE", Object.keys(state.people).length, "failed", state.failed.length);
 
   log("PHASE extras");
-  const overtimeTypes = arr(unwrap(await api("GET", "/api/OvertimeType/all")));
-  const otGross =
-    overtimeTypes.find((t) => /hafta i[cç]i/i.test(t.name || "") && t.organizationalUnitId === ROOT) || overtimeTypes[0];
-
-  async function addPv(sicil, payName, value, desc) {
+  async function addPv(sicil, payName, value, desc, date) {
     const row = state.people[sicil];
     const paymentId = state.payments[payName];
     if (!row || !paymentId || !value) return;
@@ -641,60 +753,28 @@ function makeTckn(seed) {
       paymentId,
       employeeId: row.employeeId,
       value,
-      date: "2026-01-15",
+      date: date || "2026-01-15",
       description: desc,
     });
     log("PV", sicil, payName, value, r.status, ok(r) ? unwrap(r)?.id : errText(r));
+    return r;
   }
-  await addPv("6221", "Prim", 5000, "Tek değişken prim");
-  await addPv("6222", "İkramiye", 10000, "Tek değişken ikramiye");
-  await addPv("6223", "Genel Kesinti", 1200, "Tek değişken kesinti");
-  await addPv("6224", "Masraf", 750, "Tek değişken masraf");
+  await addPv("6327", "Prim", 80000, "Paket tavan prim");
+  await addPv("6319", "Prim", 2500, "Paket yinelenen ek ödeme");
+  await addPv("6316", "Özel Sağlık Sigortası (İşveren)", 1500, "Paket sağlık çalışan yükü");
+  await addPv("6317", "Özel Sağlık Sigortası (İşveren)", 1500, "Paket sağlık işveren yükü");
+  await addPv("6317", "Yan Hak Vergi Farkı", 1, "Paket yan hak placeholder");
+  await addPv("6320", "İzin Harçlığı", 2500, "Paket izin harçlığı");
+  await addPv("6324", "Sendika Aidatı", 450, "Paket sendika");
+  await addPv("6321", "Nafaka", 8000, "Paket nafaka");
+  await addPv("6322", "İcra", 20000, "Paket icra");
+  await addPv("6323", "Nafaka", 6000, "Paket nafaka+icra nafaka");
+  await addPv("6323", "İcra", 15000, "Paket nafaka+icra icra");
+  await addPv("6325", "İşveren Alacağı", 25000, "Paket işveren alacağı");
+  await addPv("6330", "Ücret Kesme Cezası", 3366.67, "Paket 2 gündelik ceza");
 
   {
-    const row = state.people["6219"];
-    if (row) {
-      // Günlük FM tavanı 3 saat — 12 saati 4 güne böl.
-      const otDays = [
-        ["2026-01-08T18:00:00", "2026-01-08T21:00:00"],
-        ["2026-01-09T18:00:00", "2026-01-09T21:00:00"],
-        ["2026-01-12T18:00:00", "2026-01-12T21:00:00"],
-        ["2026-01-13T18:00:00", "2026-01-13T21:00:00"],
-      ];
-      for (const [startDate, endDate] of otDays) {
-        const r = await api("POST", "/api/EmployeeOvertimeRequest/assign", {
-          title: "Tek değişken FM 3s",
-          description: "12 saat brüt (günlük 3s × 4 gün)",
-          startDate,
-          endDate,
-          targetEmployeeId: row.employeeId,
-          overtimeTypeId: otGross?.id,
-          compensationMode: 0,
-        });
-        log("OT 6219", startDate.slice(0, 10), r.status, ok(r) ? unwrap(r)?.id : errText(r));
-      }
-    }
-  }
-  {
-    const techno = arr(unwrap(await api("GET", `/api/TechnoparkProject/by-unit?unitId=${ROOT}`)))[0];
-    async function assignTechno(sicil, isciTuru) {
-      const row = state.people[sicil];
-      if (!row || !techno?.id) return;
-      const r = await api("POST", "/api/TechnoparkProject/assign", {
-        employeeId: row.employeeId,
-        technoparkProjectId: techno.id,
-        startDate: "2026-01-01T00:00:00",
-        isciTuru,
-        destekOncelik: isciTuru === "2" ? 1 : null,
-        acikAtamayiKapat: false,
-      });
-      log("TECHNO", sicil, isciTuru, r.status, ok(r) ? "ok" : errText(r));
-    }
-    await assignTechno("6208", "1");
-    await assignTechno("6209", "2");
-  }
-  {
-    const row = state.people["6220"];
+    const row = state.people["6326"];
     if (row) {
       const r = await api("POST", "/api/AdvanceRequest/assign", {
         targetEmployeeId: row.employeeId,
@@ -703,55 +783,178 @@ function makeTckn(seed) {
         requestedAmount: 7200,
         numberOfInstallments: 1,
         expectedRepaymentStartDate: "2026-01-01",
-        purpose: "Tek değişken avans",
+        purpose: "Bordro Paket maaş avansı",
       });
-      log("ADV 6220", r.status, ok(r) ? unwrap(r)?.id : errText(r));
+      log("ADV 6326", r.status, ok(r) ? unwrap(r)?.id : errText(r));
       if (!ok(r)) {
         const r2 = await api("POST", "/api/AdvanceRequest", {
           advanceType: 1,
           requestedAmount: 7200,
           numberOfInstallments: 1,
           expectedRepaymentStartDate: "2026-01-01",
-          purpose: "Tek değişken avans",
+          purpose: "Bordro Paket maaş avansı",
           employeeId: row.employeeId,
         });
-        log("ADV2 6220", r2.status, ok(r2) ? unwrap(r2)?.id : errText(r2));
+        log("ADV2 6326", r2.status, ok(r2) ? unwrap(r2)?.id : errText(r2));
       }
     }
   }
 
-  log("PHASE period");
-  const empIds = ROSTER.people.map((p) => state.people[p.sicil]?.employeeId).filter(Boolean);
-  let periods = arr(unwrap(await api("GET", "/api/PayrollPeriod/filteredByUnitAbilities")));
-  let period = periods.find(
-    (p) => p.year === 2026 && p.month === 1 && (p.organizationalUnitId === ou.id || p.organizationalUnit?.id === ou.id)
+  async function tryMany(label, calls) {
+    for (const [method, url, body] of calls) {
+      const r = await api(method, url, body);
+      log(label, method, url, r.status, ok(r) ? "ok" : errText(r));
+      if (ok(r)) return unwrap(r) || true;
+    }
+    return null;
+  }
+
+  const deductions = arr(unwrap(await api("GET", "/api/Deduction/filteredByUnitAbilities"))).concat(
+    arr(unwrap(await api("GET", "/api/Deduction/all")))
   );
-  if (!period?.id) {
-    const c = await api("POST", "/api/PayrollPeriod/create-async", {
-      month: 1,
-      year: 2026,
+  async function ensureDeduction(name, cls) {
+    let hit = deductions.find((d) => eqName(d.name, name));
+    if (hit) return hit;
+    const r = await api("POST", "/api/Deduction", {
+      name,
       organizationalUnitId: ou.id,
-      hasSgkDebt: false,
-      employeeIds: empIds,
+      deductionClass: cls,
+      isActive: true,
     });
-    const d = unwrap(c);
-    log("PERIOD_CREATE", c.status, JSON.stringify(d).slice(0, 240), errText(c));
-    if (d?.jobId) await waitJob(d.jobId, 180000);
-    const periodId = d?.periodId || d?.id;
-    if (periodId) period = unwrap(await api("GET", `/api/PayrollPeriod/${periodId}`)) || { id: periodId };
-    else {
-      periods = arr(unwrap(await api("GET", "/api/PayrollPeriod/filteredByUnitAbilities")));
-      period = periods.find(
-        (p) => p.year === 2026 && p.month === 1 && (p.organizationalUnitId === ou.id || p.organizationalUnit?.id === ou.id)
-      );
+    log("DED_CREATE", name, r.status, ok(r) ? unwrap(r)?.id : errText(r));
+    if (ok(r) && unwrap(r)?.id) {
+      const created = unwrap(r);
+      deductions.push(created);
+      return created;
+    }
+    return null;
+  }
+  const dNafaka = await ensureDeduction("Nafaka", 1);
+  const dIcra = await ensureDeduction("İcra", 2);
+  const dSendika = await ensureDeduction("Sendika Aidatı", 4);
+  const dAlacak = await ensureDeduction("İşveren Alacağı", 6);
+  const dCeza = await ensureDeduction("Ücret Kesme Cezası", 3);
+
+  async function assignDed(sicil, ded, amount) {
+    const row = state.people[sicil];
+    if (!row || !ded?.id || !amount) return;
+    const bodies = [
+      ["POST", "/api/DeductionEmployee", { employeeId: row.employeeId, deductionId: ded.id, amount, value: amount, startDate: "2026-01-01", description: "Bordro Paket" }],
+      ["POST", "/api/DeductionEmployee/upsert", { employeeId: row.employeeId, deductionId: ded.id, amount, startDate: "2026-01-01" }],
+    ];
+    await tryMany("DED_EMP " + sicil, bodies);
+  }
+  await assignDed("6321", dNafaka, 8000);
+  await assignDed("6322", dIcra, 20000);
+  await assignDed("6323", dNafaka, 6000);
+  await assignDed("6323", dIcra, 15000);
+  await assignDed("6324", dSendika, 450);
+  await assignDed("6325", dAlacak, 25000);
+  await assignDed("6330", dCeza, 3366.67);
+
+  for (const p of ROSTER.people) {
+    const flags = p.seedFlags || {};
+    const row = state.people[p.sicil];
+    if (!row) continue;
+    if (flags.children) {
+      for (const ch of flags.children) {
+        await tryMany("CHILD " + p.sicil, [
+          ["POST", "/api/EmployeeFamilyMember", { employeeId: row.employeeId, relationType: 2, firstName: ch.name, birthDate: ch.birth, isDependent: true }],
+          ["POST", "/api/EmployeeDependent", { employeeId: row.employeeId, type: "child", name: ch.name, birthDate: ch.birth }],
+          ["POST", `/api/Employee/${row.employeeId}/family`, { relation: "child", name: ch.name, birthDate: ch.birth }],
+        ]);
+      }
+    }
+    if (flags.spouse) {
+      await tryMany("SPOUSE " + p.sicil, [
+        ["POST", "/api/EmployeeFamilyMember", { employeeId: row.employeeId, relationType: 1, firstName: flags.spouse.name, isWorking: !!flags.spouse.working, isDependent: !flags.spouse.working }],
+        ["POST", `/api/Employee/${row.employeeId}/family`, { relation: "spouse", name: flags.spouse.name, working: flags.spouse.working }],
+      ]);
+    }
+    if (flags.costCenters) {
+      const dist = flags.costCenters.map((c) => ({ code: c.code, percentage: c.pct, validFrom: "2026-01-01" }));
+      await tryMany("CC " + p.sicil, [
+        ["PUT", `/api/Employee/${row.employeeId}/cost-center-distribution`, { items: dist }],
+        ["POST", "/api/EmployeeCostCenterDistribution", { employeeId: row.employeeId, items: dist }],
+        ["POST", "/api/CostCenterAssignment", { employeeId: row.employeeId, allocations: dist }],
+      ]);
+    }
+    if (flags.exit) {
+      await tryMany("EXIT " + p.sicil, [
+        ["POST", "/api/TerminateEmployee", { employeeId: row.employeeId, terminationDate: flags.exit, reason: "Bordro Paket kıdem testi" }],
+        ["POST", `/api/Employee/${row.employeeId}/terminate`, { terminationDate: flags.exit }],
+      ]);
     }
   }
-  if (period?.id && empIds.length) {
-    const add = await api("POST", `/api/PayrollPeriod/${period.id}/employees`, { employeeIds: empIds });
-    log("PERIOD_ADD", empIds.length, add.status, ok(add) ? "ok" : errText(add));
+
+  await tryMany("CC_UNIT", [
+    ["POST", "/api/CostCenter", { name: "Genel Yönetim", code: "GY", type: 770, organizationalUnitId: ou.id }],
+    ["POST", "/api/OrganizationalUnitCostCenter", { name: "Genel Yönetim", code: "GY", organizationalUnitId: ou.id }],
+  ]);
+  await tryMany("CC_UNIT2", [
+    ["POST", "/api/CostCenter", { name: "Üretim", code: "URT", type: 720, organizationalUnitId: ou.id }],
+  ]);
+
+  log("PHASE period");
+  const empIds = ROSTER.people.map((p) => state.people[p.sicil]?.employeeId).filter(Boolean);
+  async function ensurePeriod(month, ids, key) {
+    let periods = arr(unwrap(await api("GET", "/api/PayrollPeriod/filteredByUnitAbilities")));
+    let period = periods.find(
+      (p) => p.year === 2026 && p.month === month && (p.organizationalUnitId === ou.id || p.organizationalUnit?.id === ou.id)
+    );
+    if (!period?.id) {
+      const c = await api("POST", "/api/PayrollPeriod/create-async", {
+        month,
+        year: 2026,
+        organizationalUnitId: ou.id,
+        hasSgkDebt: false,
+        employeeIds: ids,
+      });
+      const d = unwrap(c);
+      log("PERIOD_CREATE", month, c.status, JSON.stringify(d).slice(0, 240), errText(c));
+      if (d?.jobId) await waitJob(d.jobId, 180000);
+      const periodId = d?.periodId || d?.id;
+      if (periodId) period = unwrap(await api("GET", `/api/PayrollPeriod/${periodId}`)) || { id: periodId };
+      else {
+        periods = arr(unwrap(await api("GET", "/api/PayrollPeriod/filteredByUnitAbilities")));
+        period = periods.find(
+          (p) => p.year === 2026 && p.month === month && (p.organizationalUnitId === ou.id || p.organizationalUnit?.id === ou.id)
+        );
+      }
+    }
+    if (period?.id && ids.length) {
+      const add = await api("POST", `/api/PayrollPeriod/${period.id}/employees`, { employeeIds: ids });
+      log("PERIOD_ADD", month, ids.length, add.status, ok(add) ? "ok" : errText(add));
+    }
+    if (period?.id) state.periods[key] = { id: period.id, year: 2026, month, ou: ou.id, count: ids.length };
+    saveState(state);
+    return period;
   }
-  if (period?.id) state.periods.ocak = { id: period.id, year: 2026, month: 1, ou: ou.id, count: empIds.length };
-  saveState(state);
+
+  async function saveAndCalc(period, label) {
+    if (!period?.id) return null;
+    const auto = await api("POST", `/api/PayrollPeriod/${period.id}/attendance/bulk-save-auto`, {
+      filter: null,
+      search: null,
+      onlyFullyDerived: false,
+    });
+    log("ATT_AUTO", label, auto.status, JSON.stringify(unwrap(auto) || auto.data).slice(0, 200));
+    const calc = await api("POST", `/api/PayrollPeriod/${period.id}/calculate`, { onlyStaleEmployees: false });
+    const jobId = unwrap(calc.data)?.jobId;
+    log("CALC", label, calc.status, jobId, errText(calc));
+    for (let i = 0; i < 48; i++) {
+      await sleep(5000);
+      const job = jobId ? unwrap(await api("GET", `/api/background-jobs/${jobId}`)) : null;
+      const p = unwrap(await api("GET", `/api/PayrollPeriod/${period.id}`));
+      const pes = p?.periodEmployees || [];
+      const withItems = pes.filter((e) => (e.payrollItemValues || []).length).length;
+      log(`POLL ${label} ${i} job=${job?.jobStatus} pct=${job?.progressPercent} items=${withItems}/${pes.length}`);
+      if (job && job.jobStatus !== 0 && job.jobStatus !== 1 && i >= 1) break;
+    }
+    return unwrap(await api("GET", `/api/PayrollPeriod/${period.id}`));
+  }
+
+  const period = await ensurePeriod(1, empIds, "ocak");
   log("PERIOD", period?.id, "people", empIds.length);
 
   if (period?.id) {
@@ -762,7 +965,7 @@ function makeTckn(seed) {
     await page.waitForTimeout(4000);
     const card = await page.evaluate(() => {
       const leaves = [...document.querySelectorAll("span, div")].filter(
-        (el) => el.children.length === 0 && /Tek De[gğ]i[sş]ken/i.test((el.textContent || "").trim())
+        (el) => el.children.length === 0 && /Bordro Paket/i.test((el.textContent || "").trim())
       );
       for (const leaf of leaves) {
         let c = leaf;
@@ -804,36 +1007,29 @@ function makeTckn(seed) {
         await page.waitForTimeout(8000);
       }
     }
-
-    let p = unwrap(await api("GET", `/api/PayrollPeriod/${period.id}`));
-    const attSaved = (p?.periodEmployees || []).filter((e) => e.isPayrollAttendanceSaved).length;
-    log("ATT_SAVED", attSaved, "/", (p?.periodEmployees || []).length, "status", p?.payrollStatus);
-    if (attSaved < (p?.periodEmployees || []).length) {
-      const auto = await api("POST", `/api/PayrollPeriod/${period.id}/attendance/bulk-save-auto`, {
-        filter: null,
-        search: null,
-        onlyFullyDerived: false,
-      });
-      log("ATT_AUTO", auto.status, JSON.stringify(unwrap(auto) || auto.data).slice(0, 200));
-      p = unwrap(await api("GET", `/api/PayrollPeriod/${period.id}`));
-    }
-
-    const calc = await api("POST", `/api/PayrollPeriod/${period.id}/calculate`, { onlyStaleEmployees: false });
-    const jobId = unwrap(calc.data)?.jobId;
-    log("CALC", calc.status, jobId, errText(calc));
-    for (let i = 0; i < 48; i++) {
-      await sleep(5000);
-      const job = jobId ? unwrap(await api("GET", `/api/background-jobs/${jobId}`)) : null;
-      p = unwrap(await api("GET", `/api/PayrollPeriod/${period.id}`));
+    const p = await saveAndCalc(period, "ocak");
+    if (p) {
+      fs.writeFileSync(DUMP_PATH, JSON.stringify(p, null, 1));
       const pes = p?.periodEmployees || [];
-      const withItems = pes.filter((e) => (e.payrollItemValues || []).length).length;
-      log(`POLL ${i} job=${job?.jobStatus} pct=${job?.progressPercent} items=${withItems}/${pes.length}`);
-      if (job && job.jobStatus !== 0 && job.jobStatus !== 1 && i >= 1) break;
+      log("DUMP", DUMP_PATH, "employees", pes.length, "withItems", pes.filter((e) => (e.payrollItemValues || []).length).length);
     }
-    p = unwrap(await api("GET", `/api/PayrollPeriod/${period.id}`));
-    fs.writeFileSync(DUMP_PATH, JSON.stringify(p, null, 1));
-    const pes = p?.periodEmployees || [];
-    log("DUMP", DUMP_PATH, "employees", pes.length, "withItems", pes.filter((e) => (e.payrollItemValues || []).length).length);
+  }
+
+  const carryIds = ["6325", "6327"].map((s) => state.people[s]?.employeeId).filter(Boolean);
+  if (carryIds.length) {
+    const sub = await ensurePeriod(2, carryIds, "subat");
+    const subDump = await saveAndCalc(sub, "subat");
+    if (subDump) fs.writeFileSync(path.join(process.env.TEMP, "paket_subat_period.json"), JSON.stringify(subDump, null, 1));
+    const mar = await ensurePeriod(3, carryIds, "mart");
+    const marDump = await saveAndCalc(mar, "mart");
+    if (marDump) fs.writeFileSync(path.join(process.env.TEMP, "paket_mart_period.json"), JSON.stringify(marDump, null, 1));
+  }
+
+  if (period?.id) {
+    await tryMany("EK_BORDRO", [
+      ["POST", `/api/PayrollPeriod/${period.id}/create-supplement`, { kind: "ek", description: "Paket ek bordro" }],
+      ["POST", "/api/PayrollPeriod/create-async", { month: 1, year: 2026, organizationalUnitId: ou.id, hasSgkDebt: false, employeeIds: [state.people["6301"]?.employeeId].filter(Boolean), periodKind: 1 }],
+    ]);
   }
 
   log("DONE failed", state.failed.length);

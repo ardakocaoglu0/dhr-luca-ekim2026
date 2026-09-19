@@ -158,7 +158,7 @@ const PEOPLE = [
   }),
   person({
     sicil: 8010, firstName: "Hakan", lastName: "Işık", gender: "Male", title: "Bordro Uzmanı",
-    unit: "ana", group: "ana-aktif", besEmployeePct: 3,
+    unit: "ana", group: "ana-aktif", besEmployeePct: 0.03,
     tv: ["TV-09"], pay: ["PAY-HSP-012", "PAY-E2E-007"],
     pnt035: "kanitli",
     note: "Yalnız BES %3 çalışan. İşveren BES yok.",
@@ -354,7 +354,7 @@ const PEOPLE = [
   }),
   person({
     sicil: 8038, firstName: "Murat", lastName: "Yaman", gender: "Male", title: "Kenar Uzmanı",
-    unit: "kenar", group: "kenar-matrah", besEmployeePct: 3, avans: 2500, kesinti: 1200, icra: 1800,
+    unit: "kenar", group: "kenar-matrah", besEmployeePct: 0.03, avans: 2500, kesinti: 1200, icra: 1800,
     edge: ["EDGE-045"],
     note: "İcra + BES + avans + genel kesinti.",
   }),
@@ -449,7 +449,7 @@ const PEOPLE = [
   }),
   person({
     sicil: 8053, firstName: "Ece", lastName: "Rana", gender: "Female", title: "Kenar Uzmanı",
-    unit: "kenar", group: "kenar-tesvik", besEmployeePct: 3,
+    unit: "kenar", group: "kenar-tesvik", besEmployeePct: 0.03,
     leaves: [{ type: "unpaid", start: "2026-08-29", end: "2026-09-30" }],
     edge: ["EDGE-023", "EDGE-028", "EDGE-039"],
     note: "Ücretsiz 29.08.2026–30.09.2026. DHR-PAYROLL-002.",
@@ -457,13 +457,13 @@ const PEOPLE = [
   }),
   person({
     sicil: 8054, firstName: "Fatih", lastName: "Savaş", gender: "Male", title: "Kenar Uzmanı",
-    unit: "kenar", group: "kenar-tesvik", besEmployeePct: 3, edge: ["EDGE-038"],
+    unit: "kenar", group: "kenar-tesvik", besEmployeePct: 0.03, edge: ["EDGE-038"],
     note: "BES %3 → %5, 16.09.",
     seedFlags: { besSwitch: { from: 3, to: 5, date: "2026-09-16" } },
   }),
   person({
     sicil: 8055, firstName: "Gizem", lastName: "Tuna", gender: "Female", title: "Kenar Uzmanı",
-    unit: "kenar", group: "kenar-tesvik", besEmployeePct: 3, besExit: "2026-08-31",
+    unit: "kenar", group: "kenar-tesvik", besEmployeePct: 0.03, besExit: "2026-08-31",
     pay: ["PAY-PNT-031"],
     note: "BES çıkış 31.08.",
   }),

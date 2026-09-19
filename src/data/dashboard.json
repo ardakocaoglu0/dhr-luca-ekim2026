@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T19:08:45.543Z",
-  "environment": "https://dhrtest.d1-tech.com.tr",
+  "generatedAt": "2026-09-18T23:06:57.954Z",
+  "environment": "https://dhrtest2.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
     {
@@ -8,7 +8,7 @@
       "label": "Ekim 2026",
       "unit": "İnsan Kaynakları",
       "people": 32,
-      "state": "Hesaplandı · 13.09.2026 tam yeniden hesaplama",
+      "state": "Hesaplandı · 18.09.2026 dhrtest2 yeniden hesap · ort. |ΔNet| 3.536,67 TL",
       "compare": "DHR × Luca × YZ"
     },
     {
@@ -16,7 +16,7 @@
       "label": "Ocak 2026",
       "unit": "İnsan Kaynakları",
       "people": 32,
-      "state": "Hesaplandı · 13.09.2026 yeniden doğrulama (31/32 birebir aynı)",
+      "state": "Hesaplandı · 18.09.2026 dhrtest2 yeniden hesap · damga 156,88 · ±0,01 1/32",
       "compare": "DHR × Luca × YZ"
     },
     {
@@ -24,19 +24,120 @@
       "label": "Eylül 2026 — Faz 1",
       "unit": "Ana Kadro",
       "people": 15,
-      "state": "Hesaplandı · Luca PDF bekliyor",
-      "compare": "DHR × YZ"
+      "state": "Hesaplandı · DHR 15/15 · Luca 15/15 · ±0,01 1/15",
+      "compare": "DHR × Luca × YZ"
     },
     {
       "id": "izole",
       "label": "Ocak 2026 — Tek Değişken",
       "unit": "Tek Değişken",
       "people": 27,
-      "state": "Hesaplandı · DHR 27/27 · Luca 27/27 · ±0,01 0 · girdi pass 24",
+      "state": "Hesaplandı · DHR 27/27 · Luca 27/27 · ±0,01 0 · FM Tolga 4.040,00",
       "compare": "DHR × Luca × YZ"
+    },
+    {
+      "id": "paket",
+      "label": "Ocak 2026 — Bordro Paket",
+      "unit": "Bordro Paket",
+      "people": 30,
+      "state": "Hesaplandı · DHR 30/30 · hakem ±0,01 21 · Luca BEKLİYOR",
+      "compare": "DHR × YZ"
     }
   ],
   "works": [
+    {
+      "id": "W-IZOLE-PRIM",
+      "title": "Tek Değişken Volkan prim bordroda duruyor",
+      "detail": "6221 Prim 5.000 Ocak dump’ta. Bu birimde PPV-DROP kapanmış görünüyor.",
+      "periods": [
+        "Tek Değişken"
+      ],
+      "area": "Puantaj"
+    },
+    {
+      "id": "W-FAZA-NAZLI",
+      "title": "Ay içi giriş 18 güne ezilmiyor",
+      "detail": "Nazlı 6214 Ocak workedDays 27 (18 değil). Elle puantaj yok.",
+      "periods": [
+        "Tek Değişken"
+      ],
+      "area": "Puantaj"
+    },
+    {
+      "id": "W-FAZA-STAJ-SGDP",
+      "title": "Stajyer işveren 0 ve emekli SGDP %24,75",
+      "detail": "Oya/İlker işveren maliyeti = net, damga 0. Jale işveren SGK 13.830,80 / PEK 55.882 = %24,75; işçi işsizlik 0.",
+      "periods": [
+        "Ocak",
+        "Tek Değişken"
+      ],
+      "area": "SGK"
+    },
+    {
+      "id": "W-FAZA-OKS",
+      "title": "OKS kuruş tabanı ve BES varsayılan kapalı",
+      "detail": "Bora/Pelin OKS tam TL (1.676 / 1.901). Ada OKS kaydı yok → BES 0.",
+      "periods": [
+        "Ocak",
+        "Tek Değişken"
+      ],
+      "area": "BES"
+    },
+    {
+      "id": "W-FAZA-DAMGA",
+      "title": "Yemek damga GVGT 322 — Serra/Ada Ocak 156,88",
+      "detail": "Faz A dhrtest2: İK Serra ve Tek Değişken Ada Ocak damga 156,88 (Luca ile aynı). Paket düzeltmesi kapandı.",
+      "periods": [
+        "Ocak",
+        "Tek Değişken"
+      ],
+      "area": "Damga"
+    },
+    {
+      "id": "W-PAKET-OC",
+      "title": "Bordro Paket Ocak 2026 hesaplandı (30/30)",
+      "detail": "dhrtest2 birim 6301–6330. DHR dump 30/30. YZ net ±0,01 21/30. Luca yok (BEKLİYOR). Baseline Mine damga 156,88; stajyer Poyraz işveren maliyeti 12.000.",
+      "periods": [
+        "Bordro Paket"
+      ],
+      "area": "Kapsam"
+    },
+    {
+      "id": "W-FAZ1-LUCA",
+      "title": "Faz 1 Eylül Luca PDF 15/15 işlendi",
+      "detail": "bordro_d1_tech (5).pdf. Ort. |ΔNet DHR−Luca| 2.220,43 TL. Luca Eylül GV bandı 4.211,33 (DHR 5.615,10). Hakan BES DHR=Luca 1.896,00 TL.",
+      "periods": [
+        "Eylül"
+      ],
+      "area": "Kapsam"
+    },
+    {
+      "id": "W-FM-FAZ1",
+      "title": "Faz 1 Fırat FM saat×ücret işliyor",
+      "detail": "8008 DHR 4.000,00 (eski 10,00 TL). Luca 6.000,00. F1-FM-BIRIM kapandı.",
+      "periods": [
+        "Eylül"
+      ],
+      "area": "Puantaj"
+    },
+    {
+      "id": "W-FM-IZOLE",
+      "title": "Tek Değişken Tolga FM bordroya yazıldı",
+      "detail": "6219 DHR fazla mesai 4.040,00 TL (önce 0). IZ-FM-SAAT bu ortamda kapanmış görünüyor.",
+      "periods": [
+        "Tek Değişken"
+      ],
+      "area": "Puantaj"
+    },
+    {
+      "id": "W-BES-FAZ1",
+      "title": "Ana Kadro BES %3 (Hakan) DHR ve Luca aynı",
+      "detail": "8010 contributionRateOverride 0,03. Kesinti 1.896 TL her iki motorda. Eski 3→%300 koşumu düzeltildi.",
+      "periods": [
+        "Eylül"
+      ],
+      "area": "BES"
+    },
     {
       "id": "W-1VAR",
       "title": "Bir kişi = bir değişken (Tek Değişken birimi)",
@@ -143,7 +244,7 @@
     {
       "id": "W-KISMI",
       "title": "Kısmi ay gün orantısı",
-      "detail": "Ocak döneminde Hande Orhan 26 gün / 38.866,67 TL; Faz 1’de kısmi ay girişleri orantılı düşüyor. (Ekim dönemi için bkz. bug DHR-KISMI-EKIM.)",
+      "detail": "Ocak Hande 26 gün. Faz 1: Cansu 14 gün, Korhan 10 gün, Baran 12 gün. (Ekim Hande için bkz. DHR-KISMI-EKIM.)",
       "periods": [
         "Ocak",
         "Eylül"
@@ -173,9 +274,12 @@
     {
       "id": "W-TEKRAR",
       "title": "Hesaplama tekrarlanabilir",
-      "detail": "Ocak dönemi yeniden hesaplandığında 32 kişinin 31’i birebir aynı çıktı; tek fark işveren BES katkısının damga matrahından çıkması.",
+      "detail": "18.09.2026 dhrtest2 yeniden hesap: dört dönem yeniden hesaplandı (failedCount 0). Ana kayma damga −41,75 / net +41,75 (yemek matrahtan çıktı).",
       "periods": [
-        "Ocak"
+        "Ekim",
+        "Ocak",
+        "Eylül",
+        "Tek Değişken"
       ],
       "area": "Motor"
     },
@@ -193,7 +297,7 @@
     {
       "id": "W-DAMGA",
       "title": "Damga vergisi ‰7,59 ve asgari ücret damga istisnası",
-      "detail": "Ekim ve Ocak dönemleri aynı matrah kuralını uyguluyor (yemek dahil, 198,63 TL bandı) — Luca ile aradaki fark mevzuat kararı bekliyor.",
+      "detail": "DHR 18.09.2026 dhrtest2 yeniden hesap: nakit yemek damga matrahında değil. Ocak Serra 156,88 = Luca; Ada 156,88; Ekin 228,99. Ekim Luca PDF hâlâ 198,63 basıyor.",
       "periods": [
         "Ekim",
         "Ocak"
@@ -206,7 +310,7 @@
       "id": "IZ-LUCA-4691",
       "title": "Tek Değişken: Luca 4691 terkin uygulamıyor",
       "severity": "Yüksek",
-      "detail": "Hakan/Işık Luca net Ada zemini (GV 2.635,42). DHR GV 0 / net 50.841,40.",
+      "detail": "Hakan/Işık Luca net Ada zemini (GV 2.635,42). DHR GV 0 / net 50.817,70.",
       "periods": [
         "Tek Değişken"
       ],
@@ -215,42 +319,33 @@
     },
     {
       "id": "IZ-AVANS",
-      "title": "Tek Değişken: avans mahsubu bordroya yazılmıyor",
+      "title": "Tek Değişken / Paket: avans mahsubu bordroya yazılmıyor",
       "severity": "Yüksek",
-      "detail": "Umay Gunes (6220): DHR Ocak neti Ada baseline (avans 0). Luca PDF avans 7.200 kesti (net 40.849,10). F1-AVANS ile aynı DHR sınıfı.",
+      "detail": "Umay 6220 ve Paket Onur 6326: DHR avans 0. Luca/YZ 7.200 bekler.",
       "periods": [
-        "Tek Değişken"
+        "Tek Değişken",
+        "Bordro Paket"
       ],
-      "impact": "Tek girdi avans senaryosu ölçülemıyor.",
-      "area": "Puantaj"
-    },
-    {
-      "id": "IZ-FM-SAAT",
-      "title": "Tek Değişken: FM 08:00–11:00 çalışma saatine yazılıyor",
-      "severity": "Orta",
-      "detail": "Tolga Ergin (6219) 4×3s onaylı talep var; puantaj totalHours=0 çünkü aralık mesai değil iş günü içi.",
-      "periods": [
-        "Tek Değişken"
-      ],
-      "impact": "12 saat FM bordroya 0 yansıyor.",
+      "impact": "Maaş avansı senaryosu ölçülemüyor.",
       "area": "Puantaj"
     },
     {
       "id": "IZ-ENGEL-PUT",
-      "title": "Tek Değişken: engellilik derecesi API PUT ile yazılmıyor",
+      "title": "Engellilik derecesi API PUT ile yazılmıyor",
       "severity": "Orta",
-      "detail": "Kaan/Leman/Mert Employee.disabilityDegree GET’te null; İK Ersin’de 1. PUT 200 dönüyor ama alan değişmiyor. Net Ada baseline.",
+      "detail": "Kaan 6211 disabilityDegree GET null, net Ada baseline. Paket 6313 aynı sınıf.",
       "periods": [
-        "Tek Değişken"
+        "Tek Değişken",
+        "Bordro Paket"
       ],
-      "impact": "1/2/3. derece indirimi bu birimde izolé ölçülemedi.",
+      "impact": "1. derece indirimi izolé ölçülemedi.",
       "area": "Gelir vergisi"
     },
     {
       "id": "DHR-PPV-DROP",
       "title": "Tam hesaplama tek seferlik kalemleri bordroya yazmıyor",
       "severity": "Yüksek",
-      "detail": "Prim / ikramiye / masraf / genel kesinti / avans kayıtları /api/PaymentValue/all’da status 1 duruyor, hesaplama öncesi bordroda görünüyor; calculate(onlyStaleEmployees:false) sonrası hepsi 0 oluyor. Ekim: Baran 4.500, Metin 5.000, Ufuk 3.500, Yasin 10.000, Nilay 1.200, Vesile 800, Okan 750, Leyla avans 7.200. Ocak’ta aynı kayıtlar da düşüyor.",
+      "detail": "İK Ekim tek seferlik kalemler calculate sonrası 0 olabiliyor. Tek Değişken Volkan prim 5.000 ve Bordro Paket prim/nafaka/çocuk Ocak’ta duruyor — birim bazlı.",
       "periods": [
         "Ekim",
         "Ocak",
@@ -263,12 +358,13 @@
       "id": "DHR-YEMEK-SGK",
       "title": "Yemek yardımının SGK matrahı dönemler arasında tutarsız",
       "severity": "Yüksek",
-      "detail": "Aynı çalışan, aynı 5.500 TL yemek: Ekim döneminde tamamı prime esas kazançtan çıkıyor (PEK 53.700), Ocak döneminde 158 TL/gün × 22 = 3.476 TL istisna uygulanıyor (PEK 55.724). 5510 md. 80 kapsamında ikisi birlikte doğru olamaz; Luca ile uyumlu olan Ocak uygulaması.",
+      "detail": "Serra PEK Ocak 55.882 (21×158 istisna) vs Ekim 53.700 (yemek tamamen hariç). Paket Ocak businessDays 21; Mine PEK 55.882.",
       "periods": [
         "Ekim",
-        "Ocak"
+        "Ocak",
+        "Bordro Paket"
       ],
-      "impact": "Kişi başı ~283 TL işçi SGK, dolayısıyla GV matrahı ve net sapması.",
+      "impact": "İşçi SGK / GV / net sapması.",
       "area": "SGK"
     },
     {
@@ -297,46 +393,24 @@
       "id": "DHR-5746-TERKIN",
       "title": "5746 GV / damga terkini uygulanmıyor",
       "severity": "Orta",
-      "detail": "4691 profillerinde terkin işlerken 5746 profillerinde (Yağız, Zeliha, Deniz, Tamer) GV ve damga standart kesiliyor. Luca damga 0 yazıyor.",
+      "detail": "Derya 6227 GV 2.586,33 damga 156,88; Yağız damga 232,78. Paket Ahu 6312 stopaj terkin kutusu işaretli, terkin yok.",
       "periods": [
-        "Ekim",
-        "Ocak"
+        "Ocak",
+        "Bordro Paket"
       ],
-      "impact": "Ar-Ge personelinde teşvik eksik uygulanıyor (mevzuat kararı ile birlikte değerlendirilecek).",
+      "impact": "Ar-Ge teşviki eksik.",
       "area": "Teşvik"
-    },
-    {
-      "id": "F1-BES-ORAN",
-      "title": "BES oran alanı %3 yerine 3 (=%300) kabul ediyor",
-      "severity": "Yüksek",
-      "detail": "Hakan Işık (8010): contributionRateOverride 3 girildiğinde BES kesintisi 189.600 TL oldu ve net negatife düştü. Alan 0,03 olarak yazıldığında 1.896 TL doğru hesaplandı. Ürün ne birim gösteriyor ne de üst sınır doğrulaması yapıyor.",
-      "periods": [
-        "Eylül"
-      ],
-      "impact": "Tek karakterlik veri girişi neti negatife çeviriyor; uyarı yok.",
-      "area": "BES"
     },
     {
       "id": "F1-AVANS",
       "title": "Tanımlı avans bordroda kesilmiyor",
       "severity": "Orta",
-      "detail": "Gülce Han (8009) kadrosunda 2.000 TL avans tanımlı, Eylül bordrosunda avans kesintisi satırı boş. Aynı kök neden Ekim’de Leyla Tunçel’in 7.200 TL avansında da görülüyor (DHR-PPV-DROP).",
+      "detail": "Gülce Han (8009) kadrosunda 2.000 TL avans tanımlı, Eylül bordrosunda avans 0,00. Umay (6220) DHR avans 0,00.",
       "periods": [
         "Eylül",
         "Ekim"
       ],
       "impact": "Avans mahsubu yapılmıyor, çalışana fazla ödeme.",
-      "area": "Puantaj"
-    },
-    {
-      "id": "F1-FM-BIRIM",
-      "title": "Fazla mesai kalemi saat girişini tutar sayıyor",
-      "severity": "Düşük",
-      "detail": "Fırat Deniz (8008): FM alanına saat girildiğinde tutar gibi işlendi. Ekim/Ocak dönemlerinde FM tutar olarak girildiği için sorun görünmüyor.",
-      "periods": [
-        "Eylül"
-      ],
-      "impact": "Saat bazlı FM girişi yapan kullanıcıda brüt hatalı.",
       "area": "Puantaj"
     }
   ],
@@ -344,7 +418,7 @@
     {
       "id": "D-YEMEK-DAMGA",
       "title": "Yemek yardımı damga matrahında mı?",
-      "detail": "DHR nakit yemeği damga matrahına alıyor (Serra 198,63), Luca almıyor (156,88). 488 sayılı Kanun açısından nakdi ödemenin ücret sayılması DHR’yi destekliyor; nihai karar bekleniyor."
+      "detail": "DHR 18.09.2026 dhrtest2 yeniden hesap nakit yemeği damga matrahından çıkardı: Ocak Serra 156,88 = Luca 156,88; Ada ve Ekin damga da Luca ile aynı. Ekim Luca PDF hâlâ 198,63 basıyor — fark Ekim PDF tarafında."
     },
     {
       "id": "D-5746-DAMGA",
@@ -390,13 +464,6 @@
       "detail": "Feriha Dal: 22–24.09 onaylı rapor + 23–24.09 ücretsiz izin aynı anda; bordronun çakışmayı nasıl işlediği.",
       "blocker": "Ürün ikinci kaydı yazmıyor (HTTP 200 + isSuccess false); bordro etkisi ölçülemedi.",
       "area": "Puantaj"
-    },
-    {
-      "id": "U-FAZ1-LUCA",
-      "title": "Eylül Faz 1 için Luca karşılaştırması",
-      "detail": "Ana Kadro 15 kişilik dönem DHR’de hesaplandı, YZ kolonu hazır; Luca PDF’i alınmadığı için üçlü karşılaştırma eksik.",
-      "blocker": "Luca çıktısı bekleniyor.",
-      "area": "Kapsam"
     },
     {
       "id": "U-DIGER-BIRIMLER",

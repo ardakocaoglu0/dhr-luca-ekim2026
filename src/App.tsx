@@ -62,7 +62,7 @@ export default function AppView({ data, matrix }: Props) {
     <div className="page compare">
       <header className="hero">
         <div className="hero-inner">
-          <p className="eyebrow">dhrtest · {data.unit} · DHR × Luca × YZ</p>
+          <p className="eyebrow">dhrtest2 · {data.unit} · DHR × Luca × YZ</p>
           <h1>{ui?.title || "DHR × Luca — Bordro Karşılaştırması"}</h1>
           <p className="lead">
             {ui?.lead ||

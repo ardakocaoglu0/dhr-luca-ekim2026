@@ -1,7 +1,7 @@
 {
   "period": "Ocak 2026 · dhrtest UI × Luca PDF bordro_d1_tech (25)",
-  "environment": "dhrtest.d1-tech.com.tr · İnsan Kaynakları · dönem 67d5ddbc",
-  "sourceOfTruth": "DHR UI recalc + Luca Ocak PDF + YZ (2026 Türkiye mevzuatı)",
+  "environment": "dhrtest2.d1-tech.com.tr · İnsan Kaynakları · dönem 67d5ddbc",
+  "sourceOfTruth": "DHR 18.09.2026 dhrtest2 yeniden hesap + Luca Ocak PDF + YZ (2026 Türkiye mevzuatı)",
   "matrixDesign": {
     "layers": [
       {
@@ -24,9 +24,9 @@
   },
   "checkedItems": [
     {
-      "item": "Ocak dönemi 13.09.2026 tam yeniden hesaplama ile yeniden doğrulama",
+      "item": "Ocak dönemi 18.09.2026 dhrtest2 yeniden hesap",
       "result": "pass",
-      "note": "32 kişinin 31’i birebir aynı çıktı; tek fark Pelin Zengin damga 268,76 → 255,55 (işveren BES katkısı damga matrahından çıktı). Hesap tekrarlanabilir."
+      "note": "32/32 hesaplandı. Serra damga 156,88 (Luca 156,88). Ort. |ΔNet| 1.401,64 TL."
     },
     {
       "item": "Ocak 2026 DHR yeniden hesap (32 kişi)",
@@ -39,9 +39,9 @@
       "note": "Yemek/yol hâlâ brütleştiriliyor."
     },
     {
-      "item": "Serra damga 198,63",
-      "result": "fail",
-      "note": "DHR 198,63 / Luca 156,88"
+      "item": "Serra damga 156,88",
+      "result": "pass",
+      "note": "DHR 156,88 / Luca 156,88"
     },
     {
       "item": "İlker stajyer SGK 0 / işsizlik 0 / net 18.000",
@@ -94,9 +94,9 @@
       "note": "İstisna işledi ama standartlarda +45,54 TL GV kaldı (Serra 2.635,42 vs 2.589,88)"
     },
     {
-      "item": "Yemek damga matrahında (198,63)",
-      "result": "fail",
-      "note": "Luca yemeği damgadan düşüyor (Serra 156,88 vs DHR 198,63)"
+      "item": "Yemek damga matrahında değil (156,88)",
+      "result": "pass",
+      "note": "DHR ve Luca nakit yemeği damgadan düşüyor (Serra 156,88)"
     },
     {
       "item": "4691 GV terkini Alper/Berna/Cemil",
@@ -180,9 +180,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,79 · DHR 48.052,89 / Luca 48.049,10 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 48.074,49 / Luca 48.049,10",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -195,9 +195,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,80 · DHR 49.840,17 / Luca 49.836,37 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 49.861,76 / Luca 49.836,37",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -210,9 +210,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,79 · DHR 51.627,44 / Luca 51.623,65 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 51.649,04 / Luca 51.623,65",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -225,9 +225,9 @@
       "input": "NET",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +432,29 · DHR 49.916,40 / Luca 49.484,11 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +408,59 · DHR 49.892,70 / Luca 49.484,11",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -240,7 +240,7 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet -228,99 · DHR 55.201,99 / Luca 55.430,98 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "verdict": "ΔNet -207,39 · DHR 55.223,59 / Luca 55.430,98",
       "ai": "pass",
       "whichCorrect": "karar bekliyor",
       "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
@@ -255,7 +255,7 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet -134,11 · DHR 46.265,62 / Luca 46.399,73 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "verdict": "ΔNet -112,52 · DHR 46.287,21 / Luca 46.399,73",
       "ai": "pass",
       "whichCorrect": "karar bekliyor",
       "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
@@ -270,7 +270,7 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +2.635,42 · DHR 50.841,40 / Luca 48.205,98 · 4691 GV terkini yok",
+      "verdict": "ΔNet +2.611,72 · DHR 50.817,70 / Luca 48.205,98",
       "ai": "pass",
       "whichCorrect": "DHR — 4691 GV/damga terkini.",
       "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
@@ -285,7 +285,7 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +2.954,17 · DHR 52.966,40 / Luca 50.012,23 · 4691 GV terkini yok",
+      "verdict": "ΔNet +2.930,47 · DHR 52.942,70 / Luca 50.012,23",
       "ai": "pass",
       "whichCorrect": "DHR — 4691 GV/damga terkini.",
       "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
@@ -300,7 +300,7 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3.272,92 · DHR 55.091,40 / Luca 51.818,48 · 4691 GV terkini yok",
+      "verdict": "ΔNet +3.249,22 · DHR 55.067,70 / Luca 51.818,48",
       "ai": "pass",
       "whichCorrect": "DHR — 4691 GV/damga terkini.",
       "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
@@ -315,9 +315,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet -18,97 · DHR 44.986,69 / Luca 45.005,66 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +12,70 · DHR 45.018,36 / Luca 45.005,66",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -330,9 +330,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,79 · DHR 57.001,99 / Luca 56.998,20 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 57.023,59 / Luca 56.998,20",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -345,9 +345,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,80 · DHR 47.315,62 / Luca 47.311,82 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 47.337,21 / Luca 47.311,82",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -360,9 +360,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,79 · DHR 48.502,89 / Luca 48.499,10 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 48.524,49 / Luca 48.499,10",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -375,7 +375,7 @@
       "input": "15 gün",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "Ocak: Luca T.Gün 26 (5 istirahat), DHR SGK 26 ama ücret 22 iş günü / 38.866,67 (ΔNet -5.048,23). Ekim 'Luca 30 gün' gerekçesi Ocak için yanlış.",
+      "verdict": "ΔNet -5.026,64 · DHR 39.757,70 / Luca 44.784,34",
       "ai": "pass",
       "whichCorrect": "karar bekliyor",
       "legalBasis": "Kısmi ay gün bazları (SGK gün vs iş günü) hizalı değil; 30 gün varsayımı Ocak Luca çıktısında yok."
@@ -405,9 +405,9 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,80 · DHR 53.414,72 / Luca 53.410,92 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 53.436,31 / Luca 53.410,92",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -420,9 +420,9 @@
       "input": "FM",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,80 · DHR 58.662,16 / Luca 58.658,36 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 58.683,75 / Luca 58.658,36",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -435,9 +435,9 @@
       "input": "Avans",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "ΔNet +7.203,80 · DHR 46.265,62 / Luca 39.061,82 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet +7.225,39 · DHR 46.287,21 / Luca 39.061,82",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -450,9 +450,9 @@
       "input": "Prim",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "ΔNet -3.570,76 · DHR 48.052,89 / Luca 51.623,65 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet -3.549,16 · DHR 48.074,49 / Luca 51.623,65",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -465,9 +465,9 @@
       "input": "Kesinti",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "ΔNet +1.203,80 · DHR 49.840,17 / Luca 48.636,37 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet +1.225,39 · DHR 49.861,76 / Luca 48.636,37",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -480,9 +480,9 @@
       "input": "Masraf",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "ΔNet -746,20 · DHR 51.627,44 / Luca 52.373,64 · Yemek damga matrahında değil · Prim/ikramiye/masraf NET · Masraf tasarım farkı · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet -724,60 · DHR 51.649,04 / Luca 52.373,64",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -495,9 +495,9 @@
       "input": "BES 1740",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet -10,13 · DHR 51.504,79 / Luca 51.514,92 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +20,39 · DHR 51.535,31 / Luca 51.514,92",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -510,9 +510,9 @@
       "input": "CumTax",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet -2.438,28 · DHR 52.759,92 / Luca 55.198,20 · Yemek damga matrahında değil · Kümülatif matrah bordroda yok",
+      "verdict": "ΔNet -2.415,49 · DHR 52.782,71 / Luca 55.198,20",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -525,9 +525,9 @@
       "input": "Asgari",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "Ocak: Luca asgari istisnayı uyguluyor (GV 487,11 / damga 29,00 birebir). ΔNet -12,73 yalnız damga (DHR 12,73 / Luca 0) — yemek damga matrahı, istisna atlama değil.",
+      "verdict": "ΔNet -23,70 · DHR 29.999,50 / Luca 30.023,20",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil (Ocak PDF).",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu; asgari damga istisnası ayrıca. GV istisnası GVK md. 23/18 her iki tarafta var."
     },
     {
@@ -540,7 +540,7 @@
       "input": "FM",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet -153,09 · DHR 50.941,13 / Luca 51.094,22 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "verdict": "ΔNet -131,50 · DHR 50.962,72 / Luca 51.094,22",
       "ai": "pass",
       "whichCorrect": "karar bekliyor",
       "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
@@ -555,9 +555,9 @@
       "input": "Prim 3500",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "ΔNet -2.744,28 · DHR 44.986,69 / Luca 47.730,97 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet -2.712,61 · DHR 45.018,36 / Luca 47.730,97",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -570,9 +570,9 @@
       "input": "Kesinti 800",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "ΔNet +803,79 · DHR 52.677,44 / Luca 51.873,65 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet +825,39 · DHR 52.699,04 / Luca 51.873,65",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -585,7 +585,7 @@
       "input": "İkramiye 10k",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "ΔNet -7.145,30 · DHR 53.414,72 / Luca 60.560,02 · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet -7.123,71 · DHR 53.436,31 / Luca 60.560,02",
       "ai": "pass",
       "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
       "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
@@ -600,9 +600,9 @@
       "input": "Prim 4500",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "ΔNet -3.213,30 · DHR 49.125,26 / Luca 52.338,56 · Yemek damga matrahında değil · DHR tek seferlik kalem düştü",
+      "verdict": "ΔNet -3.191,71 · DHR 49.146,85 / Luca 52.338,56",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -615,9 +615,9 @@
       "input": "NET+FM",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +731,07 · DHR 53.276,40 / Luca 52.545,33 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +707,37 · DHR 53.252,70 / Luca 52.545,33",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     },
     {
@@ -630,7 +630,7 @@
       "input": "—",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet -210,01 · DHR 53.414,72 / Luca 53.624,73 · Yemek GV kuyruğu +45,54 · 5746 damga terkini",
+      "verdict": "ΔNet -188,42 · DHR 53.436,31 / Luca 53.624,73",
       "ai": "pass",
       "whichCorrect": "karar bekliyor",
       "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
@@ -645,9 +645,9 @@
       "input": "FM",
       "dhr": "pass",
       "luca": "fail",
-      "verdict": "ΔNet +3,80 · DHR 53.643,49 / Luca 53.639,69 · Yemek GV kuyruğu +45,54 · Yemek damga matrahında değil",
+      "verdict": "ΔNet +25,39 · DHR 53.665,08 / Luca 53.639,69",
       "ai": "pass",
-      "whichCorrect": "Luca — nakit yemek damga matrahında değil.",
+      "whichCorrect": "Damga hizalı (nakit yemek matrahta değil). Kalan Δ SGK/GV PEK. YZ hakem; Luca referans.",
       "legalBasis": "488 sayılı Damga Vergisi Kanunu."
     }
   ]

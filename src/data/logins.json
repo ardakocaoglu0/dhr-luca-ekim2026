@@ -1,5 +1,5 @@
 {
-  "environment": "https://dhrtest.d1-tech.com.tr",
+  "environment": "https://dhrtest2.d1-tech.com.tr",
   "note": "Public demo. Yalnız @demo.com. Arda/Sude/BT yok.",
   "groups": [
     {
@@ -611,6 +611,322 @@
           "note": "Yalnız 5746 GV stopaj terkin kartı. FM yok.",
           "unit": "Tek Değişken",
           "group": "izole"
+        }
+      ]
+    },
+    {
+      "id": "paket",
+      "title": "Bordro Paket (6300–6330)",
+      "people": [
+        {
+          "sicil": "6300",
+          "name": "Yaman Efe",
+          "email": "yamanefe@demo.com",
+          "password": "Bordro123!",
+          "profile": "Yönetici / İdari Personel",
+          "note": "Test dışı yönetici — onay akışı. Karşılaştırmada yok.",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6301",
+          "name": "Mine Aras",
+          "email": "minearas@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Standart brüt",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6302",
+          "name": "Nuri Bal",
+          "email": "nuribal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Yemek yok",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6303",
+          "name": "Oya Can",
+          "email": "oyacan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Yemek istisna üstü",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6304",
+          "name": "Poyraz Dal",
+          "email": "poyrazdal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Stajyer",
+          "note": "Stajyer 12.000",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6305",
+          "name": "Rana El",
+          "email": "ranael@demo.com",
+          "password": "Bordro123!",
+          "profile": "Stajyer",
+          "note": "Stajyer 40.000",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6306",
+          "name": "Sarp Firat",
+          "email": "sarpfirat@demo.com",
+          "password": "Bordro123!",
+          "profile": "Çırak",
+          "note": "Çırak PEK tabanı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6307",
+          "name": "Tuna Genc",
+          "email": "tunagenc@demo.com",
+          "password": "Bordro123!",
+          "profile": "İntörn",
+          "note": "İntörn günlük taban",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6308",
+          "name": "Ufuk Han",
+          "email": "ufukhan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Emekli",
+          "note": "Emekli işveren %24,75",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6309",
+          "name": "Veda Il",
+          "email": "vedail@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "BES Dahil Değil",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6310",
+          "name": "Yagmur Koc",
+          "email": "yagmurkoc@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "OKS %3 kuruş tabanı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6311",
+          "name": "Zeki Lal",
+          "email": "zekilal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Asgari altı uyarı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6312",
+          "name": "Ahu Mor",
+          "email": "ahumor@demo.com",
+          "password": "Bordro123!",
+          "profile": "5746 Lisans / Diğer Personel",
+          "note": "5746 stopaj terkini işaretli",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6313",
+          "name": "Baris Nur",
+          "email": "barisnur@demo.com",
+          "password": "Bordro123!",
+          "profile": "Engelli 1. Derece",
+          "note": "Engelli 1. derece",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6314",
+          "name": "Cemre Oz",
+          "email": "cemreoz@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Çocuk yardımı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6315",
+          "name": "Dicle Pal",
+          "email": "diclepal@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Eş yardımı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6316",
+          "name": "Ekin Re",
+          "email": "ekinre@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Özel sağlık — vergi çalışanda",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6317",
+          "name": "Firat Su",
+          "email": "firatsu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Özel sağlık — işveren + Yan Hak",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6318",
+          "name": "Gizem Tan",
+          "email": "gizemtan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Sabit ödeme bitiş ayı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6319",
+          "name": "Hale Ulu",
+          "email": "haleulu@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Yinelenen ek ödeme",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6320",
+          "name": "Ilker Var",
+          "email": "ilkervar@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "İzin harçlığı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6321",
+          "name": "Jale Yurt",
+          "email": "jaleyurt@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Nafaka",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6322",
+          "name": "Koray Zan",
+          "email": "korayzan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "İcra 1/4",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6323",
+          "name": "Lale Ada",
+          "email": "laleada@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Nafaka + icra sıra",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6324",
+          "name": "Mert Bey",
+          "email": "mertbey@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Sendika aidatı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6325",
+          "name": "Nehir Can",
+          "email": "nehircan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "İşveren alacağı + devir",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6326",
+          "name": "Onur Dem",
+          "email": "onurdem@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Maaş avansı",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6327",
+          "name": "Pinar Er",
+          "email": "pinarer@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "SGK tavan + prim 2 ay devri",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6328",
+          "name": "Ruya Fen",
+          "email": "ruyafen@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Kıdem/ihbar/izin çıkış",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6329",
+          "name": "Sena Gol",
+          "email": "senagol@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Masraf yeri %60/%40",
+          "unit": "Bordro Paket",
+          "group": "paket"
+        },
+        {
+          "sicil": "6330",
+          "name": "Tamer Han",
+          "email": "tamerhan@demo.com",
+          "password": "Bordro123!",
+          "profile": "Standart",
+          "note": "Ücret kesme cezası",
+          "unit": "Bordro Paket",
+          "group": "paket"
         }
       ]
     },

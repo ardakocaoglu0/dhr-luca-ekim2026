@@ -5,6 +5,7 @@
 const fs = require("fs");
 const path = require("path");
 
+const { oksFraction } = require("./oks-rate.cjs");
 const ROOT = path.join(__dirname, "..");
 const MEVZUAT = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "data", "mevzuat.json"), "utf8"));
 const ROSTER = JSON.parse(fs.readFileSync(path.join(ROOT, "src", "data", "faz1_roster.json"), "utf8"));
@@ -368,7 +369,7 @@ function buildFaz1() {
     const kesinti = (p.kesinti || 0) + (p.icra || 0);
     const advance = p.avans || 0;
     const gross = salary + meal + transport + overtime + prim + masraf;
-    const bes = p.besEmployeePct > 0 ? round2(gross * (p.besEmployeePct / 100)) : 0;
+    const bes = p.besEmployeePct > 0 ? round2(gross * oksFraction(p.besEmployeePct)) : 0;
     const ai = computeAi({
       month,
       gross,

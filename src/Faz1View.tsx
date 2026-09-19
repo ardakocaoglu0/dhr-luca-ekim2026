@@ -148,7 +148,7 @@ export default function Faz1View({ roster, comparison, matrix }: Props) {
         <>
           <header className="hero">
             <div className="hero-inner">
-              <p className="eyebrow">dhrtest · Faz 1 Bordro Laboratuvarı</p>
+              <p className="eyebrow">dhrtest2 · Faz 1 Bordro Laboratuvarı</p>
               <h1>{comparison.ui?.title || "Eylül 2026 — Faz 1"}</h1>
               <p className="meta">
                 Ortam: {roster.environment} · Şifre: <code>{roster.password}</code> · Login{" "}

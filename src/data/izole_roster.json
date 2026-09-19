@@ -1,7 +1,7 @@
 {
   "period": "Ocak 2026",
   "unit": "Tek Değişken",
-  "environment": "https://dhrtest.d1-tech.com.tr",
+  "environment": "https://dhrtest2.d1-tech.com.tr",
   "password": "Bordro123!",
   "baseline": {
     "maas": 50500,

@@ -136,13 +136,29 @@ Dokunulmayan (zaten ölçülen) örnekler: Ada baseline, Berk/Canan 05510, Efe/F
 
 Masraf EK KAZANÇ: GV/Damga/SGK/İşsizlik boş, AYLIK, puantaj ÜCRET, Net, Diğer, Son Bordro.
 
-## 10. Bu arşivin sınırı
+## 10. Bordro Paket + dhrtest2 (18–19 Eylül 2026)
+
+**İstek:** Mevcut plandaki düzeltilen hataları doğrula; sonra her çalışanda tek değişkenle yeni özellikleri test etmek için yeni birim. Hepsi **dhrtest2**. İK 6101–6132 / BT / Sude’ye dokunma. Faz1 Bordro A.Ş. yok. Luca referans, hakem değil. ±0,01. Canlı site + Girişler (Paket sekmesine login tablosu koyma).
+
+**Yapılan:**
+
+- Birim Bordro Paket, yönetici 6300 Yaman, karşılaştırma 6301–6330. `paket_*` JSON, site sekmesi, Girişler grubu.
+- Seed / dump / apply: `paket-dhr-seed.cjs`, `paket-apply-dhr.cjs`, `generate-paket-site.cjs`.
+- Kurulum düzeltmeleri: Ocak puantaj **21 iş günü** (önce 22 kalmıştı); çırak/intörn **Stajyer** profili; Gizem yol tutarı 0 (`validTo` API yazılmıyor).
+- ~861 TL’lik yığın sapma YZ formülüydü, Paket yemek bayrağı değil. YZ: PEK 21×158, GV/damga 21×300 (GVK 23/8). Mine PEK 55.882, damga 156,88 = Serra/Ada.
+- DHR−YZ net **21/30** geçti. Kalan ürün: avans (Onur onaylı 7200 bordroda 0), icra/alacak 1/4, engellilik PUT, 5746 terkin, kıdem `reason` zorunlu, Pınar tavan.
+- Luca personel XLS: `paket-luca-personel-xls.cjs` → `personel_giris_excel_BordroPaket.xls`. Aktarım 30/30 Bordro Paket / TEKNOPARK doğrulandı. PDF yok → Durum BEKLİYOR.
+- Canlı `gh-pages` güncellendi. `main` bu turda commit + push.
+
+LT_Offboard / LT_Offboard2 bu işin parçası değil (15–17 Eylül changelog QA artığı).
+
+## 11. Bu arşivin sınırı
 
 Alınan:
 
 - Bu repoyu doğuran ve geliştiren kullanıcı istekleri
-- Git `main` commit omurgası (`c732d4f` … `7a24ded` ve sonrası)
-- Canlı sitede görülen kararlar (YZ kolonları, Durum = DHR−Luca, sade kart listesi)
+- Git `main` commit omurgası (`c732d4f` … ve sonrası, Bordro Paket dahil)
+- Canlı sitede görülen kararlar (YZ kolonları, Durum = DHR−Luca, Bordro Paket DHR−YZ, sade kart listesi)
 
 Alınmayan:
 

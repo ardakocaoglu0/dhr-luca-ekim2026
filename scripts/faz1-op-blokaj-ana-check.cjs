@@ -26,7 +26,7 @@ const ANA_EXPECT = {
   8005: { days: 18, note: "çıkış 14.09" },
   8008: { fm: true, note: "FM 10 saat → 10 TL bug" },
   8009: { avans: 2000, note: "avans 2000 kesilmeli" },
-  8010: { besBug: true, note: "BES oran 3 = %300" },
+  8010: { bes: true, note: "BES %3 (API 0,03)" },
   8012: { sgdp: true, note: "emekli SGDP" },
   8014: { stajyer: true, note: "stajyer kesinti 0" },
 };
@@ -337,7 +337,7 @@ function d10(s) {
     if (exp.days != null) bits.push(`days ${p.sgkDays} (beklenen ${exp.days})`);
     if (exp.avans) bits.push(`avans ${p.advance} (beklenen ${exp.avans})`);
     if (exp.fm) bits.push(`FM ${p.overtime}`);
-    if (exp.besBug) bits.push(`BES ${p.bes} net ${p.net}`);
+    if (exp.bes) bits.push(`BES ${p.bes} net ${p.net}`);
     if (exp.sgdp) bits.push(`SGK ${p.sgk} issizlik ${p.unemployment}`);
     if (exp.stajyer) bits.push(`SGK ${p.sgk} net ${p.net}`);
     bits.push(`net ${p.net}`);

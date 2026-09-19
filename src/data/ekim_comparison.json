@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-13T15:33:06.808Z",
+  "generatedAt": "2026-09-18T09:33:10.665Z",
   "period": "Ekim 2026",
   "unit": "Insan Kaynaklari — dhrtest vs Luca",
   "lucaPdfVersion": "bordro_d1_tech (10).pdf",
   "sources": {
     "lucaPdf": "downloads/bordro_d1_tech.pdf",
-    "dhrExcel": "DHR bordro UI/API — /api/PayrollPeriod/9d85c4e1 · 13.09.2026 tam hesaplama",
+    "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 18.09.2026 dhrtest2 yeniden hesap · 32/32 hesaplandı",
     "aiMevzuat": "mevzuat.json — 193 GVK, 332 GT, 5510, 4447, 488, 7352, 2026 asgari, 5746/4691 (oran yok)"
   },
   "summary": {
@@ -13,14 +13,15 @@
     "dhrCount": 32,
     "matched": 32,
     "netWithin100": 0,
-    "avgAbsNetDelta": 3511.49,
+    "avgAbsNetDelta": 3536.67,
     "fmHoursTotalLuca": 0,
     "mealOnLuca": 31,
     "overtimeOnLuca": 4,
     "besOnLuca": 1,
     "aiCount": 32,
-    "avgAbsNetDeltaAi": 2471.22,
-    "netWithin100Ai": 0
+    "avgAbsNetDeltaAi": 2491.19,
+    "netWithin100Ai": 0,
+    "netPass001": 0
   },
   "lineDefs": [
     {
@@ -109,11 +110,11 @@
       "key": "salary",
       "label": "Temel maas / ucret",
       "group": "kazanc",
-      "dhrSum": 1641480.21,
+      "dhrSum": 1641367.73,
       "lucaSum": 1622508,
       "aiSum": 1622508,
-      "deltaSum": 18972.21,
-      "deltaDhrAi": 18972.21,
+      "deltaSum": 18859.73,
+      "deltaDhrAi": 18859.73,
       "deltaLucaAi": 0,
       "peopleWithValue": 32,
       "matchCount": 30,
@@ -163,11 +164,11 @@
       "key": "overtime",
       "label": "Fazla mesai",
       "group": "kazanc",
-      "dhrSum": 17341.23,
+      "dhrSum": 17336.91,
       "lucaSum": 17400.58,
       "aiSum": 17400.58,
-      "deltaSum": -59.35,
-      "deltaDhrAi": -59.35,
+      "deltaSum": -63.67,
+      "deltaDhrAi": -63.67,
       "deltaLucaAi": 0,
       "peopleWithValue": 4,
       "matchCount": 31,
@@ -235,11 +236,11 @@
       "key": "gross",
       "label": "Toplam kazanc",
       "group": "ozet",
-      "dhrSum": 1930261.44,
+      "dhrSum": 1930144.64,
       "lucaSum": 1958679.53,
       "aiSum": 1958679.53,
-      "deltaSum": -28418.09,
-      "deltaDhrAi": -28418.09,
+      "deltaSum": -28534.89,
+      "deltaDhrAi": -28534.89,
       "deltaLucaAi": 0,
       "peopleWithValue": 32,
       "matchCount": 23,
@@ -253,11 +254,11 @@
       "key": "sgk",
       "label": "SGK isci",
       "group": "kesinti",
-      "dhrSum": 237727,
+      "dhrSum": 237710.65,
       "lucaSum": 274215.13,
       "aiSum": 265685.91,
-      "deltaSum": -36488.13,
-      "deltaDhrAi": -27958.91,
+      "deltaSum": -36504.48,
+      "deltaDhrAi": -27975.26,
       "deltaLucaAi": 8529.22,
       "peopleWithValue": 32,
       "matchCount": 0,
@@ -271,11 +272,11 @@
       "key": "unemployment",
       "label": "Issizlik isci",
       "group": "kesinti",
-      "dhrSum": 16496.22,
+      "dhrSum": 16495.04,
       "lucaSum": 0,
       "aiSum": 18343.84,
-      "deltaSum": 16496.22,
-      "deltaDhrAi": -1847.62,
+      "deltaSum": 16495.04,
+      "deltaDhrAi": -1848.8,
       "deltaLucaAi": -18343.84,
       "peopleWithValue": 29,
       "matchCount": 0,
@@ -289,11 +290,11 @@
       "key": "gv",
       "label": "Gelir vergisi",
       "group": "kesinti",
-      "dhrSum": 44535.87,
+      "dhrSum": 44520.97,
       "lucaSum": 116885.41,
       "aiSum": 75754.21,
-      "deltaSum": -72349.54,
-      "deltaDhrAi": -31218.34,
+      "deltaSum": -72364.44,
+      "deltaDhrAi": -31233.24,
       "deltaLucaAi": 41131.2,
       "peopleWithValue": 31,
       "matchCount": 1,
@@ -307,18 +308,18 @@
       "key": "damga",
       "label": "Damga vergisi",
       "group": "kesinti",
-      "dhrSum": 6076.31,
+      "dhrSum": 4935.62,
       "lucaSum": 5888.99,
       "aiSum": 6958.03,
-      "deltaSum": 187.32,
-      "deltaDhrAi": -881.72,
+      "deltaSum": -953.37,
+      "deltaDhrAi": -2022.41,
       "deltaLucaAi": -1069.04,
       "peopleWithValue": 31,
-      "matchCount": 20,
+      "matchCount": 3,
       "compared": 32,
       "matchLucaAi": 27,
       "comparedLucaAi": 32,
-      "matchAi": 21,
+      "matchAi": 1,
       "comparedAi": 32
     },
     {
@@ -379,11 +380,11 @@
       "key": "net",
       "label": "Net odenen",
       "group": "ozet",
-      "dhrSum": 1621850.04,
+      "dhrSum": 1622906.36,
       "lucaSum": 1530902.2,
       "aiSum": 1580736.54,
-      "deltaSum": 90947.84,
-      "deltaDhrAi": 41113.5,
+      "deltaSum": 92004.16,
+      "deltaDhrAi": 42169.82,
       "deltaLucaAi": -49834.34,
       "peopleWithValue": 32,
       "matchCount": 0,
@@ -440,28 +441,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 59200,
-        "net": 49714.72,
+        "net": 49756.47,
         "gv": 1231.65,
         "sgk": 7518,
         "unemployment": 537,
-        "damga": 198.63,
+        "damga": 156.88,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 53700,
         "gvMatrah": 45645,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.77,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.75,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1568,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -475,7 +479,8 @@
           "ai": 50500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -488,7 +493,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -501,7 +507,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -514,7 +521,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -527,7 +535,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -540,7 +549,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -553,7 +563,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -566,7 +577,8 @@
           "ai": 59200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -579,7 +591,8 @@
           "ai": 8288,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -592,7 +605,8 @@
           "ai": 592,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -605,20 +619,22 @@
           "ai": 1932.9,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 198.63,
+          "dhr": 156.88,
           "luca": 198.63,
-          "delta": 0,
-          "match": true,
+          "delta": -41.75,
+          "match": false,
           "ai": 198.63,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.75,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -631,7 +647,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -644,7 +661,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -657,20 +675,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 49714.72,
+          "dhr": 49756.47,
           "luca": 46784.7,
-          "delta": 2930.02,
+          "delta": 2971.77,
           "match": false,
           "ai": 48188.47,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1568,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -693,7 +713,8 @@
         "gvMatrah": 50320,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 2,
@@ -740,28 +761,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 61700,
-        "net": 51502,
+        "net": 51543.74,
         "gv": 1550.4,
         "sgk": 7868,
         "unemployment": 562,
-        "damga": 217.6,
+        "damga": 175.86,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 56200,
         "gvMatrah": 47770,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1567.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -775,7 +799,8 @@
           "ai": 53000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -788,7 +813,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -801,7 +827,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -814,7 +841,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -827,7 +855,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -840,7 +869,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -853,7 +883,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -866,7 +897,8 @@
           "ai": 61700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -879,7 +911,8 @@
           "ai": 8638,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -892,7 +925,8 @@
           "ai": 617,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -905,20 +939,22 @@
           "ai": 2251.65,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 217.6,
+          "dhr": 175.86,
           "luca": 217.6,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 217.6,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -931,7 +967,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -944,7 +981,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -957,20 +995,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 51502,
+          "dhr": 51543.74,
           "luca": 48571.98,
-          "delta": 2930.02,
+          "delta": 2971.76,
           "match": false,
           "ai": 49975.75,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1567.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -993,7 +1033,8 @@
         "gvMatrah": 52445,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 3,
@@ -1040,28 +1081,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 64200,
-        "net": 53289.27,
+        "net": 53331.02,
         "gv": 1869.15,
         "sgk": 8218,
         "unemployment": 587,
-        "damga": 236.58,
+        "damga": 194.83,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 58700,
         "gvMatrah": 49895,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.77,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.75,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1568,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -1075,7 +1119,8 @@
           "ai": 55500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -1088,7 +1133,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -1101,7 +1147,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -1114,7 +1161,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -1127,7 +1175,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -1140,7 +1189,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -1153,7 +1203,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -1166,7 +1217,8 @@
           "ai": 64200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -1179,7 +1231,8 @@
           "ai": 8988,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -1192,7 +1245,8 @@
           "ai": 642,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -1205,20 +1259,22 @@
           "ai": 2570.4,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 236.58,
+          "dhr": 194.83,
           "luca": 236.58,
-          "delta": 0,
-          "match": true,
+          "delta": -41.75,
+          "match": false,
           "ai": 236.58,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.75,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -1231,7 +1287,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -1244,7 +1301,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -1257,20 +1315,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 53289.27,
+          "dhr": 53331.02,
           "luca": 50359.25,
-          "delta": 2930.02,
+          "delta": 2971.77,
           "match": false,
           "ai": 51763.02,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1568,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -1293,7 +1353,8 @@
         "gvMatrah": 54570,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 4,
@@ -1330,7 +1391,7 @@
         "gs": "G"
       },
       "dhr": {
-        "salary": 51206.78,
+        "salary": 51148.37,
         "meal": 5500,
         "transport": 3200,
         "overtime": 0,
@@ -1339,43 +1400,47 @@
         "masraf": 0,
         "kesinti": 0,
         "advance": 0,
-        "gross": 59906.78,
+        "gross": 59848.37,
         "net": 50220,
-        "gv": 1321.77,
-        "sgk": 7616.95,
-        "unemployment": 544.07,
-        "damga": 203.99,
+        "gv": 1314.32,
+        "sgk": 7608.77,
+        "unemployment": 543.48,
+        "damga": 161.8,
         "bes": 0,
         "sgkDays": 30,
-        "sgkBase": 54406.78,
-        "gvMatrah": 46245.76,
-        "gvExemptApplied": 5615.1
+        "sgkBase": 54348.37,
+        "gvMatrah": 46196.12,
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
         "net": 2000.28,
-        "gv": -2270.83,
-        "damga": -9.87,
-        "gross": -1300.49,
+        "gv": -2278.28,
+        "damga": -52.06,
+        "gross": -1358.9,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
         "netAi": 596.51,
-        "gvAi": -867.06
+        "gvAi": -874.51,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
           "key": "salary",
           "label": "Temel maas / ucret",
           "group": "kazanc",
-          "dhr": 51206.78,
+          "dhr": 51148.37,
           "luca": 42000,
-          "delta": 9206.78,
+          "delta": 9148.37,
           "match": false,
           "ai": 42000,
-          "deltaDhrAi": 9206.78,
+          "deltaDhrAi": 9148.37,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -1388,7 +1453,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -1401,7 +1467,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -1414,7 +1481,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -1427,7 +1495,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -1440,7 +1509,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -1453,72 +1523,78 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
           "label": "Toplam kazanc",
           "group": "ozet",
-          "dhr": 59906.78,
+          "dhr": 59848.37,
           "luca": 61207.27,
-          "delta": -1300.49,
+          "delta": -1358.9,
           "match": false,
           "ai": 61207.27,
-          "deltaDhrAi": -1300.49,
+          "deltaDhrAi": -1358.9,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
           "label": "SGK isci",
           "group": "kesinti",
-          "dhr": 7616.95,
+          "dhr": 7608.77,
           "luca": 8569.02,
-          "delta": -952.07,
+          "delta": -960.25,
           "match": false,
           "ai": 8569.02,
-          "deltaDhrAi": -952.07,
+          "deltaDhrAi": -960.25,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
           "label": "Issizlik isci",
           "group": "kesinti",
-          "dhr": 544.07,
+          "dhr": 543.48,
           "luca": null,
-          "delta": 544.07,
+          "delta": 543.48,
           "match": false,
           "ai": 612.07,
-          "deltaDhrAi": -68,
+          "deltaDhrAi": -68.59,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
           "label": "Gelir vergisi",
           "group": "kesinti",
-          "dhr": 1321.77,
+          "dhr": 1314.32,
           "luca": 3592.6,
-          "delta": -2270.83,
+          "delta": -2278.28,
           "match": false,
           "ai": 2188.83,
-          "deltaDhrAi": -867.06,
+          "deltaDhrAi": -874.51,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 203.99,
+          "dhr": 161.8,
           "luca": 213.86,
-          "delta": -9.87,
+          "delta": -52.06,
           "match": false,
           "ai": 213.86,
-          "deltaDhrAi": -9.87,
+          "deltaDhrAi": -52.06,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -1531,7 +1607,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -1544,7 +1621,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -1557,7 +1635,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
@@ -1570,7 +1649,8 @@
           "ai": 49623.49,
           "deltaDhrAi": 596.51,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -1593,7 +1673,8 @@
         "gvMatrah": 52026.18,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 5,
@@ -1640,28 +1721,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 69200,
-        "net": 56863.82,
+        "net": 56905.57,
         "gv": 2506.65,
         "sgk": 8918,
         "unemployment": 637,
-        "damga": 274.53,
+        "damga": 232.78,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 63700,
         "gvMatrah": 54145,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2655.49,
+        "net": 2697.24,
         "gv": -2105.02,
-        "damga": 274.53,
+        "damga": 232.78,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1568,
+        "gvAi": -701.25,
+        "netLucaAi": -1129.24
       },
       "lineItems": [
         {
@@ -1675,7 +1759,8 @@
           "ai": 60500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -1688,7 +1773,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -1701,7 +1787,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -1714,7 +1801,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -1727,7 +1815,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -1740,7 +1829,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -1753,7 +1843,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -1766,7 +1857,8 @@
           "ai": 69200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -1779,7 +1871,8 @@
           "ai": 9688,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -1792,7 +1885,8 @@
           "ai": 692,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -1805,20 +1899,22 @@
           "ai": 3207.9,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 274.53,
+          "dhr": 232.78,
           "luca": 0,
-          "delta": 274.53,
+          "delta": 232.78,
           "match": false,
           "ai": 274.53,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.75,
           "deltaLucaAi": -274.53,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "bes",
@@ -1831,7 +1927,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -1844,7 +1941,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -1857,20 +1955,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 56863.82,
+          "dhr": 56905.57,
           "luca": 54208.33,
-          "delta": 2655.49,
+          "delta": 2697.24,
           "match": false,
           "ai": 55337.57,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1568,
           "deltaLucaAi": -1129.24,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -1893,7 +1993,8 @@
         "gvMatrah": 58820,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 6,
@@ -1940,28 +2041,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 56700,
-        "net": 47927.45,
+        "net": 47969.19,
         "gv": 912.9,
         "sgk": 7168,
         "unemployment": 512,
-        "damga": 179.65,
+        "damga": 137.91,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 51200,
         "gvMatrah": 43520,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2750.37,
+        "net": 2792.11,
         "gv": -2105.02,
-        "damga": 179.65,
+        "damga": 137.91,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1567.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1224.12
       },
       "lineItems": [
         {
@@ -1975,7 +2079,8 @@
           "ai": 48000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -1988,7 +2093,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -2001,7 +2107,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -2014,7 +2121,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -2027,7 +2135,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -2040,7 +2149,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -2053,7 +2163,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -2066,7 +2177,8 @@
           "ai": 56700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -2079,7 +2191,8 @@
           "ai": 7938,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -2092,7 +2205,8 @@
           "ai": 567,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -2105,20 +2219,22 @@
           "ai": 1614.15,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 179.65,
+          "dhr": 137.91,
           "luca": 0,
-          "delta": 179.65,
+          "delta": 137.91,
           "match": false,
           "ai": 179.65,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": -179.65,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "bes",
@@ -2131,7 +2247,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -2144,7 +2261,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -2157,20 +2275,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 47927.45,
+          "dhr": 47969.19,
           "luca": 45177.08,
-          "delta": 2750.37,
+          "delta": 2792.11,
           "match": false,
           "ai": 46401.2,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1567.99,
           "deltaLucaAi": -1224.12,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -2193,7 +2313,8 @@
         "gvMatrah": 48195,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 7,
@@ -2249,7 +2370,9 @@
         "sgkDays": 30,
         "sgkBase": 53700,
         "gvMatrah": 45645,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
         "net": 4161.67,
@@ -2261,7 +2384,8 @@
         "overtime": 0,
         "bes": 0,
         "netAi": 2956.53,
-        "gvAi": -1932.9
+        "gvAi": -1932.9,
+        "netLucaAi": -1205.14
       },
       "lineItems": [
         {
@@ -2275,7 +2399,8 @@
           "ai": 50500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -2288,7 +2413,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -2301,7 +2427,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -2314,7 +2441,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -2327,7 +2455,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -2340,7 +2469,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -2353,7 +2483,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -2366,7 +2497,8 @@
           "ai": 59200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -2379,7 +2511,8 @@
           "ai": 8288,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -2392,7 +2525,8 @@
           "ai": 592,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -2405,7 +2539,8 @@
           "ai": 1932.9,
           "deltaDhrAi": -1932.9,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
@@ -2418,7 +2553,8 @@
           "ai": 198.63,
           "deltaDhrAi": -198.63,
           "deltaLucaAi": -198.63,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "bes",
@@ -2431,7 +2567,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -2444,7 +2581,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -2457,7 +2595,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
@@ -2470,7 +2609,8 @@
           "ai": 48188.47,
           "deltaDhrAi": 2956.53,
           "deltaLucaAi": -1205.14,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -2493,7 +2633,8 @@
         "gvMatrah": 50320,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 8,
@@ -2549,7 +2690,9 @@
         "sgkDays": 30,
         "sgkBase": 56200,
         "gvMatrah": 47770,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
         "net": 4480.42,
@@ -2561,7 +2704,8 @@
         "overtime": 0,
         "bes": 0,
         "netAi": 3294.25,
-        "gvAi": -2251.65
+        "gvAi": -2251.65,
+        "netLucaAi": -1186.17
       },
       "lineItems": [
         {
@@ -2575,7 +2719,8 @@
           "ai": 53000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -2588,7 +2733,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -2601,7 +2747,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -2614,7 +2761,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -2627,7 +2775,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -2640,7 +2789,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -2653,7 +2803,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -2666,7 +2817,8 @@
           "ai": 61700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -2679,7 +2831,8 @@
           "ai": 8638,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -2692,7 +2845,8 @@
           "ai": 617,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -2705,7 +2859,8 @@
           "ai": 2251.65,
           "deltaDhrAi": -2251.65,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
@@ -2718,7 +2873,8 @@
           "ai": 217.6,
           "deltaDhrAi": -217.6,
           "deltaLucaAi": -217.6,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "bes",
@@ -2731,7 +2887,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -2744,7 +2901,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -2757,7 +2915,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
@@ -2770,7 +2929,8 @@
           "ai": 49975.75,
           "deltaDhrAi": 3294.25,
           "deltaLucaAi": -1186.17,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -2793,7 +2953,8 @@
         "gvMatrah": 52445,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 9,
@@ -2849,7 +3010,9 @@
         "sgkDays": 30,
         "sgkBase": 58700,
         "gvMatrah": 49895,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
         "net": 5035.75,
@@ -2861,7 +3024,8 @@
         "overtime": 0,
         "bes": 0,
         "netAi": 3631.98,
-        "gvAi": -2570.4
+        "gvAi": -2570.4,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -2875,7 +3039,8 @@
           "ai": 55500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -2888,7 +3053,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -2901,7 +3067,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -2914,7 +3081,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -2927,7 +3095,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -2940,7 +3109,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -2953,7 +3123,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -2966,7 +3137,8 @@
           "ai": 64200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -2979,7 +3151,8 @@
           "ai": 8988,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -2992,7 +3165,8 @@
           "ai": 642,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -3005,7 +3179,8 @@
           "ai": 2570.4,
           "deltaDhrAi": -2570.4,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
@@ -3018,7 +3193,8 @@
           "ai": 236.58,
           "deltaDhrAi": -236.58,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -3031,7 +3207,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -3044,7 +3221,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -3057,7 +3235,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
@@ -3070,7 +3249,8 @@
           "ai": 51763.02,
           "deltaDhrAi": 3631.98,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -3093,7 +3273,8 @@
         "gvMatrah": 54570,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 10,
@@ -3140,28 +3321,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 50700,
-        "net": 46519.49,
+        "net": 46561.23,
         "gv": 656.4,
         "sgk": 3390,
         "unemployment": 0,
-        "damga": 134.11,
+        "damga": 92.37,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 45200,
         "gvMatrah": 41810,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 5811.52,
+        "net": 5853.26,
         "gv": -1596.52,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1175.63,
-        "gvAi": -763.13
+        "netAi": 1217.37,
+        "gvAi": -763.13,
+        "netLucaAi": -4635.89
       },
       "lineItems": [
         {
@@ -3175,7 +3359,8 @@
           "ai": 42000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -3188,7 +3373,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -3201,7 +3387,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -3214,7 +3401,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -3227,7 +3415,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -3240,7 +3429,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -3253,7 +3443,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -3266,7 +3457,8 @@
           "ai": 50700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -3279,7 +3471,8 @@
           "ai": 3802.5,
           "deltaDhrAi": -412.5,
           "deltaLucaAi": 3295.5,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "unemployment",
@@ -3292,7 +3485,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": null,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -3305,20 +3499,22 @@
           "ai": 1419.53,
           "deltaDhrAi": -763.13,
           "deltaLucaAi": 833.39,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 134.11,
+          "dhr": 92.37,
           "luca": 134.11,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 134.11,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -3331,7 +3527,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -3344,7 +3541,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -3357,20 +3555,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 46519.49,
+          "dhr": 46561.23,
           "luca": 40707.97,
-          "delta": 5811.52,
+          "delta": 5853.26,
           "match": false,
           "ai": 45343.86,
-          "deltaDhrAi": 1175.63,
+          "deltaDhrAi": 1217.37,
           "deltaLucaAi": -4635.89,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -3395,7 +3595,8 @@
         "notes": [
           "Emekli: SGDP işçi %7,5; işsizlik 0 (5510/SGDP)."
         ]
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 11,
@@ -3442,28 +3643,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 69200,
-        "net": 58663.82,
+        "net": 58705.57,
         "gv": 706.65,
         "sgk": 8918,
         "unemployment": 637,
-        "damga": 274.53,
+        "damga": 232.78,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 63700,
         "gvMatrah": 42145,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 4730.02,
+        "net": 4771.77,
         "gv": -3905.02,
-        "damga": 0,
+        "damga": -41.75,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 3326.25,
-        "gvAi": -2501.25
+        "netAi": 3368,
+        "gvAi": -2501.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -3477,7 +3681,8 @@
           "ai": 60500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -3490,7 +3695,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -3503,7 +3709,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -3516,7 +3723,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -3529,7 +3737,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -3542,7 +3751,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -3555,7 +3765,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -3568,7 +3779,8 @@
           "ai": 69200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -3581,7 +3793,8 @@
           "ai": 9688,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -3594,7 +3807,8 @@
           "ai": 692,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -3607,20 +3821,22 @@
           "ai": 3207.9,
           "deltaDhrAi": -2501.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 274.53,
+          "dhr": 232.78,
           "luca": 274.53,
-          "delta": 0,
-          "match": true,
+          "delta": -41.75,
+          "match": false,
           "ai": 274.53,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.75,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -3633,7 +3849,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -3646,7 +3863,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -3659,20 +3877,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 58663.82,
+          "dhr": 58705.57,
           "luca": 53933.8,
-          "delta": 4730.02,
+          "delta": 4771.77,
           "match": false,
           "ai": 55337.57,
-          "deltaDhrAi": 3326.25,
+          "deltaDhrAi": 3368,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -3695,7 +3915,8 @@
         "gvMatrah": 58820,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 12,
@@ -3742,28 +3963,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 56700,
-        "net": 48840.35,
+        "net": 48882.09,
         "gv": 0,
         "sgk": 7168,
         "unemployment": 512,
-        "damga": 179.65,
+        "damga": 137.91,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 51200,
         "gvMatrah": 36520,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 3842.92,
+        "net": 3884.66,
         "gv": -3017.92,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 2439.15,
-        "gvAi": -1614.15
+        "netAi": 2480.89,
+        "gvAi": -1614.15,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -3777,7 +4001,8 @@
           "ai": 48000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -3790,7 +4015,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -3803,7 +4029,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -3816,7 +4043,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -3829,7 +4057,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -3842,7 +4071,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -3855,7 +4085,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -3868,7 +4099,8 @@
           "ai": 56700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -3881,7 +4113,8 @@
           "ai": 7938,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -3894,7 +4127,8 @@
           "ai": 567,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -3907,20 +4141,22 @@
           "ai": 1614.15,
           "deltaDhrAi": -1614.15,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 179.65,
+          "dhr": 137.91,
           "luca": 179.65,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 179.65,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -3933,7 +4169,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -3946,7 +4183,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -3959,20 +4197,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 48840.35,
+          "dhr": 48882.09,
           "luca": 44997.43,
-          "delta": 3842.92,
+          "delta": 3884.66,
           "match": false,
           "ai": 46401.2,
-          "deltaDhrAi": 2439.15,
+          "deltaDhrAi": 2480.89,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -3995,7 +4235,8 @@
         "gvMatrah": 48195,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 13,
@@ -4042,28 +4283,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 59200,
-        "net": 50164.72,
+        "net": 50206.47,
         "gv": 781.65,
         "sgk": 7518,
         "unemployment": 537,
-        "damga": 198.63,
+        "damga": 156.88,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 53700,
         "gvMatrah": 42645,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2467.73,
+        "net": 2509.48,
         "gv": -2717.72,
-        "damga": -9.68,
+        "damga": -51.43,
         "gross": -1276.08,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1063.96,
-        "gvAi": -1313.95
+        "netAi": 1105.71,
+        "gvAi": -1313.95,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -4077,7 +4321,8 @@
           "ai": 50500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -4090,7 +4335,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -4103,7 +4349,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -4116,7 +4363,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -4129,7 +4377,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -4142,7 +4391,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -4155,7 +4405,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -4168,7 +4419,8 @@
           "ai": 60476.08,
           "deltaDhrAi": -1276.08,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -4181,7 +4433,8 @@
           "ai": 8466.65,
           "deltaDhrAi": -948.65,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -4194,7 +4447,8 @@
           "ai": 604.76,
           "deltaDhrAi": -67.76,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -4207,20 +4461,22 @@
           "ai": 2095.6,
           "deltaDhrAi": -1313.95,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 198.63,
+          "dhr": 156.88,
           "luca": 208.31,
-          "delta": -9.68,
+          "delta": -51.43,
           "match": false,
           "ai": 208.31,
-          "deltaDhrAi": -9.68,
+          "deltaDhrAi": -51.43,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -4233,7 +4489,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -4246,7 +4503,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -4259,20 +4517,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 50164.72,
+          "dhr": 50206.47,
           "luca": 47696.99,
-          "delta": 2467.73,
+          "delta": 2509.48,
           "match": false,
           "ai": 49100.76,
-          "deltaDhrAi": 1063.96,
+          "deltaDhrAi": 1105.71,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -4295,7 +4555,8 @@
         "gvMatrah": 51404.67,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 14,
@@ -4342,28 +4603,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 61700,
-        "net": 51502,
+        "net": 51543.74,
         "gv": 1550.4,
         "sgk": 7868,
         "unemployment": 562,
-        "damga": 217.6,
+        "damga": 175.86,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 56200,
         "gvMatrah": 47770,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 7982.06,
+        "net": 8023.8,
         "gv": -1204.02,
-        "damga": 53.63,
+        "damga": 11.89,
         "gross": 7066.67,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 6578.29,
-        "gvAi": 199.75
+        "netAi": 6620.03,
+        "gvAi": 199.75,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -4377,7 +4641,8 @@
           "ai": 53000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -4390,7 +4655,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -4403,7 +4669,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -4416,7 +4683,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -4429,7 +4697,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -4442,7 +4711,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -4455,7 +4725,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -4468,7 +4739,8 @@
           "ai": 54633.33,
           "deltaDhrAi": 7066.67,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -4481,7 +4753,8 @@
           "ai": 7648.67,
           "deltaDhrAi": 219.33,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -4494,7 +4767,8 @@
           "ai": 546.33,
           "deltaDhrAi": 15.67,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -4507,20 +4781,22 @@
           "ai": 1350.65,
           "deltaDhrAi": 199.75,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 217.6,
+          "dhr": 175.86,
           "luca": 163.97,
-          "delta": 53.63,
+          "delta": 11.89,
           "match": false,
           "ai": 163.97,
-          "deltaDhrAi": 53.63,
+          "deltaDhrAi": 11.89,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -4533,7 +4809,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -4546,7 +4823,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -4559,20 +4837,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 51502,
+          "dhr": 51543.74,
           "luca": 43519.94,
-          "delta": 7982.06,
+          "delta": 8023.8,
           "match": false,
           "ai": 44923.71,
-          "deltaDhrAi": 6578.29,
+          "deltaDhrAi": 6620.03,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -4595,7 +4875,8 @@
         "gvMatrah": 46438.33,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 15,
@@ -4651,7 +4932,9 @@
         "sgkDays": 30,
         "sgkBase": 18000,
         "gvMatrah": 18000,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
         "net": 2700,
@@ -4663,7 +4946,8 @@
         "overtime": 0,
         "bes": 0,
         "netAi": 900,
-        "gvAi": 0
+        "gvAi": 0,
+        "netLucaAi": -1800
       },
       "lineItems": [
         {
@@ -4677,7 +4961,8 @@
           "ai": 18000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -4690,7 +4975,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -4703,7 +4989,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -4716,7 +5003,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -4729,7 +5017,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -4742,7 +5031,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -4755,7 +5045,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -4768,7 +5059,8 @@
           "ai": 18000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -4781,7 +5073,8 @@
           "ai": 900,
           "deltaDhrAi": -900,
           "deltaLucaAi": 1620,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "unemployment",
@@ -4794,7 +5087,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": null,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -4807,7 +5101,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "damga",
@@ -4820,7 +5115,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -4833,7 +5129,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -4846,7 +5143,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -4859,7 +5157,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
@@ -4872,7 +5171,8 @@
           "ai": 17100,
           "deltaDhrAi": 900,
           "deltaLucaAi": -1800,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -4897,7 +5197,8 @@
         "notes": [
           "Stajyer: GV ve damga 0; GSS %5 (5510 öğrenci/staj uygulaması sadeleştirildi)."
         ]
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 16,
@@ -4944,28 +5245,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 66700,
-        "net": 55076.55,
+        "net": 55118.29,
         "gv": 2187.9,
         "sgk": 8568,
         "unemployment": 612,
-        "damga": 255.55,
+        "damga": 213.81,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 61200,
         "gvMatrah": 52020,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1567.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -4979,7 +5283,8 @@
           "ai": 58000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -4992,7 +5297,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -5005,7 +5311,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -5018,7 +5325,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -5031,7 +5339,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -5044,7 +5353,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -5057,7 +5367,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -5070,7 +5381,8 @@
           "ai": 66700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -5083,7 +5395,8 @@
           "ai": 9338,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -5096,7 +5409,8 @@
           "ai": 667,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -5109,20 +5423,22 @@
           "ai": 2889.15,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 255.55,
+          "dhr": 213.81,
           "luca": 255.55,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 255.55,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -5135,7 +5451,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -5148,7 +5465,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -5161,20 +5479,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 55076.55,
+          "dhr": 55118.29,
           "luca": 52146.53,
-          "delta": 2930.02,
+          "delta": 2971.76,
           "match": false,
           "ai": 53550.3,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1567.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -5197,7 +5517,8 @@
         "gvMatrah": 56695,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 17,
@@ -5244,28 +5565,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 74040,
-        "net": 60323.99,
+        "net": 60365.73,
         "gv": 3123.75,
         "sgk": 9595.6,
         "unemployment": 685.4,
-        "damga": 311.26,
+        "damga": 269.52,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 68540,
         "gvMatrah": 58259,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1567.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -5279,7 +5603,8 @@
           "ai": 60500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -5292,7 +5617,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -5305,7 +5631,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -5318,7 +5645,8 @@
           "ai": 4840,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -5331,7 +5659,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -5344,7 +5673,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -5357,7 +5687,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -5370,7 +5701,8 @@
           "ai": 74040,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -5383,7 +5715,8 @@
           "ai": 10365.6,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -5396,7 +5729,8 @@
           "ai": 740.4,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -5409,20 +5743,22 @@
           "ai": 3825,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 311.26,
+          "dhr": 269.52,
           "luca": 311.26,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 311.26,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -5435,7 +5771,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -5448,7 +5785,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -5461,20 +5799,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 60323.99,
+          "dhr": 60365.73,
           "luca": 57393.97,
-          "delta": 2930.02,
+          "delta": 2971.76,
           "match": false,
           "ai": 58797.74,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1567.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -5497,7 +5837,8 @@
         "gvMatrah": 62934,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 18,
@@ -5544,28 +5885,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 56700,
-        "net": 47927.45,
+        "net": 47969.19,
         "gv": 912.9,
         "sgk": 7168,
         "unemployment": 512,
-        "damga": 179.65,
+        "damga": 137.91,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 51200,
         "gvMatrah": 43520,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 10130.02,
+        "net": 10171.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 8726.25,
-        "gvAi": -701.25
+        "netAi": 8767.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -5579,7 +5923,8 @@
           "ai": 48000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -5592,7 +5937,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -5605,7 +5951,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -5618,7 +5965,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -5631,7 +5979,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -5644,7 +5993,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -5657,7 +6007,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -5670,7 +6021,8 @@
           "ai": 56700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -5683,7 +6035,8 @@
           "ai": 7938,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -5696,7 +6049,8 @@
           "ai": 567,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -5709,20 +6063,22 @@
           "ai": 1614.15,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 179.65,
+          "dhr": 137.91,
           "luca": 179.65,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 179.65,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -5735,7 +6091,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -5748,7 +6105,8 @@
           "ai": 7200,
           "deltaDhrAi": -7200,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -5761,20 +6119,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 47927.45,
+          "dhr": 47969.19,
           "luca": 37797.43,
-          "delta": 10130.02,
+          "delta": 10171.76,
           "match": false,
           "ai": 39201.2,
-          "deltaDhrAi": 8726.25,
+          "deltaDhrAi": 8767.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -5797,7 +6157,8 @@
         "gvMatrah": 48195,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 19,
@@ -5844,28 +6205,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 59200,
-        "net": 49714.72,
+        "net": 49756.47,
         "gv": 1231.65,
         "sgk": 7518,
         "unemployment": 537,
-        "damga": 198.63,
+        "damga": 156.88,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 53700,
         "gvMatrah": 45645,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": -2069.98,
+        "net": -2028.23,
         "gv": -2996.74,
-        "damga": -53.08,
+        "damga": -94.83,
         "gross": -6993.88,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": -3473.75,
-        "gvAi": -1592.97
+        "netAi": -3432,
+        "gvAi": -1592.97,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -5879,7 +6243,8 @@
           "ai": 50500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -5892,7 +6257,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -5905,7 +6271,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -5918,7 +6285,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -5931,7 +6299,8 @@
           "ai": 5000,
           "deltaDhrAi": -5000,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -5944,7 +6313,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -5957,7 +6327,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -5970,7 +6341,8 @@
           "ai": 66193.88,
           "deltaDhrAi": -6993.88,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -5983,7 +6355,8 @@
           "ai": 9267.14,
           "deltaDhrAi": -1749.14,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -5996,7 +6369,8 @@
           "ai": 661.94,
           "deltaDhrAi": -124.94,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -6009,20 +6383,22 @@
           "ai": 2824.62,
           "deltaDhrAi": -1592.97,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 198.63,
+          "dhr": 156.88,
           "luca": 251.71,
-          "delta": -53.08,
+          "delta": -94.83,
           "match": false,
           "ai": 251.71,
-          "deltaDhrAi": -53.08,
+          "deltaDhrAi": -94.83,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -6035,7 +6411,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -6048,7 +6425,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -6061,20 +6439,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 49714.72,
+          "dhr": 49756.47,
           "luca": 51784.7,
-          "delta": -2069.98,
+          "delta": -2028.23,
           "match": false,
           "ai": 53188.47,
-          "deltaDhrAi": -3473.75,
+          "deltaDhrAi": -3432,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -6097,7 +6477,8 @@
         "gvMatrah": 56264.8,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 20,
@@ -6144,28 +6525,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 61700,
-        "net": 51502,
+        "net": 51543.74,
         "gv": 1550.4,
         "sgk": 7868,
         "unemployment": 562,
-        "damga": 217.6,
+        "damga": 175.86,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 56200,
         "gvMatrah": 47770,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 4130.02,
+        "net": 4171.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 2726.25,
-        "gvAi": -701.25
+        "netAi": 2767.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -6179,7 +6563,8 @@
           "ai": 53000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -6192,7 +6577,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -6205,7 +6591,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -6218,7 +6605,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -6231,7 +6619,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -6244,7 +6633,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -6257,7 +6647,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -6270,7 +6661,8 @@
           "ai": 61700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -6283,7 +6675,8 @@
           "ai": 8638,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -6296,7 +6689,8 @@
           "ai": 617,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -6309,20 +6703,22 @@
           "ai": 2251.65,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 217.6,
+          "dhr": 175.86,
           "luca": 217.6,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 217.6,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -6335,7 +6731,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -6348,7 +6745,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -6361,20 +6759,22 @@
           "ai": 1200,
           "deltaDhrAi": -1200,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 51502,
+          "dhr": 51543.74,
           "luca": 47371.98,
-          "delta": 4130.02,
+          "delta": 4171.76,
           "match": false,
           "ai": 48775.75,
-          "deltaDhrAi": 2726.25,
+          "deltaDhrAi": 2767.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -6397,7 +6797,8 @@
         "gvMatrah": 52445,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 21,
@@ -6444,28 +6845,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 64200,
-        "net": 53289.27,
+        "net": 53331.02,
         "gv": 1869.15,
         "sgk": 8218,
         "unemployment": 587,
-        "damga": 236.58,
+        "damga": 194.83,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 58700,
         "gvMatrah": 49895,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.77,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.75,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1568,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -6479,7 +6883,8 @@
           "ai": 55500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -6492,7 +6897,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -6505,7 +6911,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -6518,7 +6925,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -6531,7 +6939,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -6544,7 +6953,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -6557,7 +6967,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -6570,7 +6981,8 @@
           "ai": 64200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -6583,7 +6995,8 @@
           "ai": 8988,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -6596,7 +7009,8 @@
           "ai": 642,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -6609,20 +7023,22 @@
           "ai": 2570.4,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 236.58,
+          "dhr": 194.83,
           "luca": 236.58,
-          "delta": 0,
-          "match": true,
+          "delta": -41.75,
+          "match": false,
           "ai": 236.58,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.75,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -6635,7 +7051,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -6648,7 +7065,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -6661,20 +7079,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 53289.27,
+          "dhr": 53331.02,
           "luca": 50359.25,
-          "delta": 2930.02,
+          "delta": 2971.77,
           "match": false,
           "ai": 51763.02,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1568,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -6697,7 +7117,8 @@
         "gvMatrah": 54570,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 22,
@@ -6744,28 +7165,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 68440,
-        "net": 53240.55,
+        "net": 53282.29,
         "gv": 2187.9,
         "sgk": 8568,
         "unemployment": 612,
-        "damga": 255.55,
+        "damga": 213.81,
         "bes": 1836,
         "sgkDays": 30,
         "sgkBase": 61200,
         "gvMatrah": 52020,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 1740
       },
       "delta": {
-        "net": 3095.02,
+        "net": 3136.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 1740,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": -165,
-        "netAi": 1691.25,
-        "gvAi": -701.25
+        "netAi": 1732.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -6779,7 +7203,8 @@
           "ai": 58000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -6792,7 +7217,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -6805,7 +7231,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -6818,7 +7245,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -6831,7 +7259,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -6844,7 +7273,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -6857,7 +7287,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -6870,7 +7301,8 @@
           "ai": 66700,
           "deltaDhrAi": 1740,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -6883,7 +7315,8 @@
           "ai": 9338,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -6896,7 +7329,8 @@
           "ai": 667,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -6909,20 +7343,22 @@
           "ai": 2889.15,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 255.55,
+          "dhr": 213.81,
           "luca": 255.55,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 255.55,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -6935,7 +7371,8 @@
           "ai": 2001,
           "deltaDhrAi": -165,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -6948,7 +7385,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -6961,20 +7399,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 53240.55,
+          "dhr": 53282.29,
           "luca": 50145.53,
-          "delta": 3095.02,
+          "delta": 3136.76,
           "match": false,
           "ai": 51549.3,
-          "deltaDhrAi": 1691.25,
+          "deltaDhrAi": 1732.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -6997,7 +7437,8 @@
         "gvMatrah": 56695,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 23,
@@ -7044,28 +7485,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 69200,
-        "net": 54156.57,
+        "net": 54198.32,
         "gv": 5213.9,
         "sgk": 8918,
         "unemployment": 637,
-        "damga": 274.53,
+        "damga": 232.78,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 63700,
         "gvMatrah": 54145,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 222.77,
+        "net": 264.52,
         "gv": 602.23,
-        "damga": 0,
+        "damga": -41.75,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": -1181,
-        "gvAi": 2006
+        "netAi": -1139.25,
+        "gvAi": 2006,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -7079,7 +7523,8 @@
           "ai": 60500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -7092,7 +7537,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -7105,7 +7551,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -7118,7 +7565,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -7131,7 +7579,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -7144,7 +7593,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -7157,7 +7607,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -7170,7 +7621,8 @@
           "ai": 69200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -7183,7 +7635,8 @@
           "ai": 9688,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -7196,7 +7649,8 @@
           "ai": 692,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -7209,20 +7663,22 @@
           "ai": 3207.9,
           "deltaDhrAi": 2006,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 274.53,
+          "dhr": 232.78,
           "luca": 274.53,
-          "delta": 0,
-          "match": true,
+          "delta": -41.75,
+          "match": false,
           "ai": 274.53,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.75,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -7235,7 +7691,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -7248,7 +7705,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -7261,20 +7719,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 54156.57,
+          "dhr": 54198.32,
           "luca": 53933.8,
-          "delta": 222.77,
+          "delta": 264.52,
           "match": false,
           "ai": 55337.57,
-          "deltaDhrAi": -1181,
+          "deltaDhrAi": -1139.25,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -7297,7 +7757,8 @@
         "gvMatrah": 58820,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 24,
@@ -7344,28 +7805,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 34708,
-        "net": 30314.07,
+        "net": 30326.8,
         "gv": 0,
         "sgk": 4089.12,
         "unemployment": 292.08,
-        "damga": 12.73,
+        "damga": 0,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 29208,
         "gvMatrah": 24826.8,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 1038.94,
+        "net": 1051.67,
         "gv": -213.94,
-        "damga": 0,
+        "damga": -12.73,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 825,
-        "gvAi": 0
+        "netAi": 837.73,
+        "gvAi": 0,
+        "netLucaAi": -213.94
       },
       "lineItems": [
         {
@@ -7379,7 +7843,8 @@
           "ai": 26008,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -7392,7 +7857,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -7405,7 +7871,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -7418,7 +7885,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -7431,7 +7899,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -7444,7 +7913,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -7457,7 +7927,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -7470,7 +7941,8 @@
           "ai": 34708,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -7483,7 +7955,8 @@
           "ai": 4859.12,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -7496,7 +7969,8 @@
           "ai": 347.08,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -7509,20 +7983,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 213.94,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 12.73,
+          "dhr": 0,
           "luca": 12.73,
-          "delta": 0,
-          "match": true,
+          "delta": -12.73,
+          "match": false,
           "ai": 12.73,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -12.73,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -7535,7 +8011,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -7548,7 +8025,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -7561,20 +8039,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 30314.07,
+          "dhr": 30326.8,
           "luca": 29275.13,
-          "delta": 1038.94,
+          "delta": 1051.67,
           "match": false,
           "ai": 29489.07,
-          "deltaDhrAi": 825,
+          "deltaDhrAi": 837.73,
           "deltaLucaAi": -213.94,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -7597,7 +8077,8 @@
         "gvMatrah": 29501.8,
         "gvExemptApplied": 4425.27,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 25,
@@ -7644,28 +8125,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 63240,
-        "net": 52602.96,
+        "net": 52644.7,
         "gv": 1746.75,
         "sgk": 8083.6,
         "unemployment": 577.4,
-        "damga": 229.29,
+        "damga": 187.55,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 57740,
         "gvMatrah": 49079,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2731.39,
+        "net": 2773.13,
         "gv": -2105.02,
-        "damga": 198.63,
+        "damga": 156.89,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1567.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1205.14
       },
       "lineItems": [
         {
@@ -7679,7 +8163,8 @@
           "ai": 50500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -7692,7 +8177,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -7705,7 +8191,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -7718,7 +8205,8 @@
           "ai": 4040,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -7731,7 +8219,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -7744,7 +8233,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -7757,7 +8247,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -7770,7 +8261,8 @@
           "ai": 63240,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -7783,7 +8275,8 @@
           "ai": 8853.6,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -7796,7 +8289,8 @@
           "ai": 632.4,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -7809,20 +8303,22 @@
           "ai": 2448,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 229.29,
+          "dhr": 187.55,
           "luca": 30.66,
-          "delta": 198.63,
+          "delta": 156.89,
           "match": false,
           "ai": 229.29,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": -198.63,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "bes",
@@ -7835,7 +8331,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -7848,7 +8345,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -7861,20 +8359,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 52602.96,
+          "dhr": 52644.7,
           "luca": 49871.57,
-          "delta": 2731.39,
+          "delta": 2773.13,
           "match": false,
           "ai": 51076.71,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1567.99,
           "deltaLucaAi": -1205.14,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -7897,7 +8397,8 @@
         "gvMatrah": 53754,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 26,
@@ -7944,28 +8445,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 50700,
-        "net": 46519.49,
+        "net": 46561.23,
         "gv": 656.4,
         "sgk": 3390,
         "unemployment": 0,
-        "damga": 134.11,
+        "damga": 92.37,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 45200,
         "gvMatrah": 41810,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2311.52,
+        "net": 2353.26,
         "gv": -2220.72,
-        "damga": -37.16,
+        "damga": -78.9,
         "gross": -4895.72,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": -2636.47,
-        "gvAi": -1442.41
+        "netAi": -2594.73,
+        "gvAi": -1442.41,
+        "netLucaAi": -4947.99
       },
       "lineItems": [
         {
@@ -7979,7 +8483,8 @@
           "ai": 42000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -7992,7 +8497,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -8005,7 +8511,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -8018,7 +8525,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -8031,7 +8539,8 @@
           "ai": 3500,
           "deltaDhrAi": -3500,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -8044,7 +8553,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -8057,7 +8567,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -8070,7 +8581,8 @@
           "ai": 55595.72,
           "deltaDhrAi": -4895.72,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -8083,7 +8595,8 @@
           "ai": 4169.68,
           "deltaDhrAi": -779.68,
           "deltaLucaAi": 3613.72,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "unemployment",
@@ -8096,7 +8609,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": null,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -8109,20 +8623,22 @@
           "ai": 2098.81,
           "deltaDhrAi": -1442.41,
           "deltaLucaAi": 778.31,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 134.11,
+          "dhr": 92.37,
           "luca": 171.27,
-          "delta": -37.16,
+          "delta": -78.9,
           "match": false,
           "ai": 171.27,
-          "deltaDhrAi": -37.16,
+          "deltaDhrAi": -78.9,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -8135,7 +8651,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -8148,7 +8665,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -8161,20 +8679,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 46519.49,
+          "dhr": 46561.23,
           "luca": 44207.97,
-          "delta": 2311.52,
+          "delta": 2353.26,
           "match": false,
           "ai": 49155.96,
-          "deltaDhrAi": -2636.47,
+          "deltaDhrAi": -2594.73,
           "deltaLucaAi": -4947.99,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -8199,7 +8719,8 @@
         "notes": [
           "Emekli: SGDP işçi %7,5; işsizlik 0 (5510/SGDP)."
         ]
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 27,
@@ -8246,28 +8767,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 64200,
-        "net": 54339.27,
+        "net": 54381.02,
         "gv": 819.15,
         "sgk": 8218,
         "unemployment": 587,
-        "damga": 236.58,
+        "damga": 194.83,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 58700,
         "gvMatrah": 42895,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 4780.02,
+        "net": 4821.77,
         "gv": -3155.02,
-        "damga": 0,
+        "damga": -41.75,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 3376.25,
-        "gvAi": -1751.25
+        "netAi": 3418,
+        "gvAi": -1751.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -8281,7 +8805,8 @@
           "ai": 55500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -8294,7 +8819,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -8307,7 +8833,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -8320,7 +8847,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -8333,7 +8861,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -8346,7 +8875,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -8359,7 +8889,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -8372,7 +8903,8 @@
           "ai": 64200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -8385,7 +8917,8 @@
           "ai": 8988,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -8398,7 +8931,8 @@
           "ai": 642,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -8411,20 +8945,22 @@
           "ai": 2570.4,
           "deltaDhrAi": -1751.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 236.58,
+          "dhr": 194.83,
           "luca": 236.58,
-          "delta": 0,
-          "match": true,
+          "delta": -41.75,
+          "match": false,
           "ai": 236.58,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.75,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -8437,7 +8973,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -8450,7 +8987,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -8463,20 +9001,22 @@
           "ai": 800,
           "deltaDhrAi": -800,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 54339.27,
+          "dhr": 54381.02,
           "luca": 49559.25,
-          "delta": 4780.02,
+          "delta": 4821.77,
           "match": false,
           "ai": 50963.02,
-          "deltaDhrAi": 3376.25,
+          "deltaDhrAi": 3418,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -8499,7 +9039,8 @@
         "gvMatrah": 54570,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 28,
@@ -8546,28 +9087,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 66700,
-        "net": 55076.55,
+        "net": 55118.29,
         "gv": 2187.9,
         "sgk": 8568,
         "unemployment": 612,
-        "damga": 255.55,
+        "damga": 213.81,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 61200,
         "gvMatrah": 52020,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": -7069.98,
+        "net": -7028.24,
         "gv": -3888.46,
-        "damga": -106.17,
+        "damga": -147.91,
         "gross": -13987.78,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": -8473.75,
-        "gvAi": -2484.69
+        "netAi": -8432.01,
+        "gvAi": -2484.69,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -8581,7 +9125,8 @@
           "ai": 58000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -8594,7 +9139,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -8607,7 +9153,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -8620,7 +9167,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -8633,7 +9181,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -8646,7 +9195,8 @@
           "ai": 10000,
           "deltaDhrAi": -10000,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -8659,7 +9209,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -8672,7 +9223,8 @@
           "ai": 80687.78,
           "deltaDhrAi": -13987.78,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -8685,7 +9237,8 @@
           "ai": 11296.29,
           "deltaDhrAi": -2728.29,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -8698,7 +9251,8 @@
           "ai": 806.88,
           "deltaDhrAi": -194.88,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -8711,20 +9265,22 @@
           "ai": 4672.59,
           "deltaDhrAi": -2484.69,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 255.55,
+          "dhr": 213.81,
           "luca": 361.72,
-          "delta": -106.17,
+          "delta": -147.91,
           "match": false,
           "ai": 361.72,
-          "deltaDhrAi": -106.17,
+          "deltaDhrAi": -147.91,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -8737,7 +9293,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -8750,7 +9307,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -8763,20 +9321,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 55076.55,
+          "dhr": 55118.29,
           "luca": 62146.53,
-          "delta": -7069.98,
+          "delta": -7028.24,
           "match": false,
           "ai": 63550.3,
-          "deltaDhrAi": -8473.75,
+          "deltaDhrAi": -8432.01,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -8799,7 +9359,8 @@
         "gvMatrah": 68584.61,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 29,
@@ -8846,28 +9407,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 60700,
-        "net": 50787.09,
+        "net": 50828.83,
         "gv": 1422.9,
         "sgk": 7728,
         "unemployment": 552,
-        "damga": 210.01,
+        "damga": 168.27,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 55200,
         "gvMatrah": 46920,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": -1569.98,
+        "net": -1528.24,
         "gv": -2907.57,
-        "damga": -47.78,
+        "damga": -89.52,
         "gross": -6294.51,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": -2973.75,
-        "gvAi": -1503.8
+        "netAi": -2932.01,
+        "gvAi": -1503.8,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -8881,7 +9445,8 @@
           "ai": 52000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -8894,7 +9459,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -8907,7 +9473,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -8920,7 +9487,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -8933,7 +9501,8 @@
           "ai": 4500,
           "deltaDhrAi": -4500,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -8946,7 +9515,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -8959,7 +9529,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -8972,7 +9543,8 @@
           "ai": 66994.51,
           "deltaDhrAi": -6294.51,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -8985,7 +9557,8 @@
           "ai": 9379.23,
           "deltaDhrAi": -1651.23,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -8998,7 +9571,8 @@
           "ai": 669.95,
           "deltaDhrAi": -117.95,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -9011,20 +9585,22 @@
           "ai": 2926.7,
           "deltaDhrAi": -1503.8,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 210.01,
+          "dhr": 168.27,
           "luca": 257.79,
-          "delta": -47.78,
+          "delta": -89.52,
           "match": false,
           "ai": 257.79,
-          "deltaDhrAi": -47.78,
+          "deltaDhrAi": -89.52,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -9037,7 +9613,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -9050,7 +9627,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -9063,20 +9641,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 50787.09,
+          "dhr": 50828.83,
           "luca": 52357.07,
-          "delta": -1569.98,
+          "delta": -1528.24,
           "match": false,
           "ai": 53760.84,
-          "deltaDhrAi": -2973.75,
+          "deltaDhrAi": -2932.01,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -9099,7 +9679,8 @@
         "gvMatrah": 56945.33,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 30,
@@ -9136,52 +9717,56 @@
         "gs": "G"
       },
       "dhr": {
-        "salary": 51765.43,
+        "salary": 51711.36,
         "meal": 5500,
         "transport": 3200,
-        "overtime": 4141.23,
+        "overtime": 4136.91,
         "prim": 0,
         "ikramiye": 0,
         "masraf": 0,
         "kesinti": 0,
         "advance": 0,
-        "gross": 64606.66,
+        "gross": 64548.27,
         "net": 53580,
-        "gv": 1921,
-        "sgk": 8274.93,
-        "unemployment": 591.07,
-        "damga": 239.66,
+        "gv": 1913.55,
+        "sgk": 8266.76,
+        "unemployment": 590.48,
+        "damga": 197.48,
         "bes": 0,
         "sgkDays": 30,
-        "sgkBase": 59106.66,
-        "gvMatrah": 50240.66,
-        "gvExemptApplied": 5615.1
+        "sgkBase": 59048.27,
+        "gvMatrah": 50191.03,
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
         "net": 1159.69,
-        "gv": -2420.75,
-        "damga": -18.8,
-        "gross": -2476.3,
+        "gv": -2428.2,
+        "damga": -60.98,
+        "gross": -2534.69,
         "meal": 0,
         "transport": 0,
-        "overtime": -59.35,
+        "overtime": -63.67,
         "bes": 0,
         "netAi": -244.08,
-        "gvAi": -1016.98
+        "gvAi": -1024.43,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
           "key": "salary",
           "label": "Temel maas / ucret",
           "group": "kazanc",
-          "dhr": 51765.43,
+          "dhr": 51711.36,
           "luca": 42000,
-          "delta": 9765.43,
+          "delta": 9711.36,
           "match": false,
           "ai": 42000,
-          "deltaDhrAi": 9765.43,
+          "deltaDhrAi": 9711.36,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -9194,7 +9779,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -9207,20 +9793,22 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
           "label": "Fazla mesai",
           "group": "kazanc",
-          "dhr": 4141.23,
+          "dhr": 4136.91,
           "luca": 4200.58,
-          "delta": -59.35,
+          "delta": -63.67,
           "match": false,
           "ai": 4200.58,
-          "deltaDhrAi": -59.35,
+          "deltaDhrAi": -63.67,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -9233,7 +9821,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -9246,7 +9835,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -9259,72 +9849,78 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
           "label": "Toplam kazanc",
           "group": "ozet",
-          "dhr": 64606.66,
+          "dhr": 64548.27,
           "luca": 67082.96,
-          "delta": -2476.3,
+          "delta": -2534.69,
           "match": false,
           "ai": 67082.96,
-          "deltaDhrAi": -2476.3,
+          "deltaDhrAi": -2534.69,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
           "label": "SGK isci",
           "group": "kesinti",
-          "dhr": 8274.93,
+          "dhr": 8266.76,
           "luca": 9391.61,
-          "delta": -1116.68,
+          "delta": -1124.85,
           "match": false,
           "ai": 9391.61,
-          "deltaDhrAi": -1116.68,
+          "deltaDhrAi": -1124.85,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
           "label": "Issizlik isci",
           "group": "kesinti",
-          "dhr": 591.07,
+          "dhr": 590.48,
           "luca": null,
-          "delta": 591.07,
+          "delta": 590.48,
           "match": false,
           "ai": 670.83,
-          "deltaDhrAi": -79.76,
+          "deltaDhrAi": -80.35,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
           "label": "Gelir vergisi",
           "group": "kesinti",
-          "dhr": 1921,
+          "dhr": 1913.55,
           "luca": 4341.75,
-          "delta": -2420.75,
+          "delta": -2428.2,
           "match": false,
           "ai": 2937.98,
-          "deltaDhrAi": -1016.98,
+          "deltaDhrAi": -1024.43,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 239.66,
+          "dhr": 197.48,
           "luca": 258.46,
-          "delta": -18.8,
+          "delta": -60.98,
           "match": false,
           "ai": 258.46,
-          "deltaDhrAi": -18.8,
+          "deltaDhrAi": -60.98,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -9337,7 +9933,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -9350,7 +9947,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -9363,7 +9961,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
@@ -9376,7 +9975,8 @@
           "ai": 53824.08,
           "deltaDhrAi": -244.08,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -9399,7 +9999,8 @@
         "gvMatrah": 57020.52,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 31,
@@ -9446,28 +10047,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 66700,
-        "net": 55076.55,
+        "net": 55118.29,
         "gv": 2187.9,
         "sgk": 8568,
         "unemployment": 612,
-        "damga": 255.55,
+        "damga": 213.81,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 61200,
         "gvMatrah": 52020,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1567.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -9481,7 +10085,8 @@
           "ai": 58000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -9494,7 +10099,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -9507,7 +10113,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -9520,7 +10127,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -9533,7 +10141,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -9546,7 +10155,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -9559,7 +10169,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -9572,7 +10183,8 @@
           "ai": 66700,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -9585,7 +10197,8 @@
           "ai": 9338,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -9598,7 +10211,8 @@
           "ai": 667,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -9611,20 +10225,22 @@
           "ai": 2889.15,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 255.55,
+          "dhr": 213.81,
           "luca": 255.55,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 255.55,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -9637,7 +10253,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -9650,7 +10267,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -9663,20 +10281,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 55076.55,
+          "dhr": 55118.29,
           "luca": 52146.53,
-          "delta": 2930.02,
+          "delta": 2971.76,
           "match": false,
           "ai": 53550.3,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1567.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -9699,7 +10319,8 @@
         "gvMatrah": 56695,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     },
     {
       "n": 32,
@@ -9746,28 +10367,31 @@
         "kesinti": 0,
         "advance": 0,
         "gross": 67020,
-        "net": 55305.32,
+        "net": 55347.06,
         "gv": 2228.7,
         "sgk": 8612.8,
         "unemployment": 615.2,
-        "damga": 257.98,
+        "damga": 216.24,
         "bes": 0,
         "sgkDays": 30,
         "sgkBase": 61520,
         "gvMatrah": 52292,
-        "gvExemptApplied": 5615.1
+        "gvExemptApplied": 5615.1,
+        "saglik": 0,
+        "besEmployer": 0
       },
       "delta": {
-        "net": 2930.02,
+        "net": 2971.76,
         "gv": -2105.02,
-        "damga": 0,
+        "damga": -41.74,
         "gross": 0,
         "meal": 0,
         "transport": 0,
         "overtime": 0,
         "bes": 0,
-        "netAi": 1526.25,
-        "gvAi": -701.25
+        "netAi": 1567.99,
+        "gvAi": -701.25,
+        "netLucaAi": -1403.77
       },
       "lineItems": [
         {
@@ -9781,7 +10405,8 @@
           "ai": 54000,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "meal",
@@ -9794,7 +10419,8 @@
           "ai": 5500,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "transport",
@@ -9807,7 +10433,8 @@
           "ai": 3200,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "overtime",
@@ -9820,7 +10447,8 @@
           "ai": 4320,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "prim",
@@ -9833,7 +10461,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "ikramiye",
@@ -9846,7 +10475,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "masraf",
@@ -9859,7 +10489,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "gross",
@@ -9872,7 +10503,8 @@
           "ai": 67020,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "sgk",
@@ -9885,7 +10517,8 @@
           "ai": 9382.8,
           "deltaDhrAi": -770,
           "deltaLucaAi": 0,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "unemployment",
@@ -9898,7 +10531,8 @@
           "ai": 670.2,
           "deltaDhrAi": -55,
           "deltaLucaAi": null,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "gv",
@@ -9911,20 +10545,22 @@
           "ai": 2929.95,
           "deltaDhrAi": -701.25,
           "deltaLucaAi": 1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         },
         {
           "key": "damga",
           "label": "Damga vergisi",
           "group": "kesinti",
-          "dhr": 257.98,
+          "dhr": 216.24,
           "luca": 257.98,
-          "delta": 0,
-          "match": true,
+          "delta": -41.74,
+          "match": false,
           "ai": 257.98,
-          "deltaDhrAi": 0,
+          "deltaDhrAi": -41.74,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": false,
+          "matchLucaAi": true
         },
         {
           "key": "bes",
@@ -9937,7 +10573,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "advance",
@@ -9950,7 +10587,8 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "kesinti",
@@ -9963,20 +10601,22 @@
           "ai": 0,
           "deltaDhrAi": 0,
           "deltaLucaAi": 0,
-          "matchAi": true
+          "matchAi": true,
+          "matchLucaAi": true
         },
         {
           "key": "net",
           "label": "Net odenen",
           "group": "ozet",
-          "dhr": 55305.32,
+          "dhr": 55347.06,
           "luca": 52375.3,
-          "delta": 2930.02,
+          "delta": 2971.76,
           "match": false,
           "ai": 53779.07,
-          "deltaDhrAi": 1526.25,
+          "deltaDhrAi": 1567.99,
           "deltaLucaAi": -1403.77,
-          "matchAi": false
+          "matchAi": false,
+          "matchLucaAi": false
         }
       ],
       "ai": {
@@ -9999,7 +10639,8 @@
         "gvMatrah": 56967,
         "gvExemptApplied": 5615.1,
         "notes": []
-      }
+      },
+      "dhrPending": false
     }
   ],
   "legal": {
@@ -10078,7 +10719,7 @@
   "ui": {
     "title": "DHR × Luca — Ekim 2026 Bordro Karşılaştırması",
     "lead": "32 kişilik test matrisi: kanun/teşvik profilleri, ek kazanç ve kesintiler. Luca referans; DHR sapmaları yasal kaynaklarla birlikte görselleştirildi. Üçüncü kolon: YZ (2026 Türk mevzuatı: 5510, 4447, GVK 23/18, 488, 332 GT).",
-    "verdict": "Ekim 2026 · DHR değerleri 13.09.2026 tam yeniden hesaplamasından, bordro UI/API okumasıyla alındı. DHR GV istisnasını 5.615,10 TL uyguluyor, BES yalnız OKS kaydı olan Pelin’den kesiliyor (1.836 TL), 4691 terkini ve engellilik indirimi işliyor. Ort. |ΔNet DHR−Luca| 3.511,49 TL; kalan farkların ana kaynakları Luca’nın 4.211 TL istisna bandı ile bordroya yazılmayan tek seferlik kalemler (8 kişi).",
+    "verdict": "18.09.2026 dhrtest2 yeniden hesap: nakit yemek damga matrahından çıktı (Serra damga 156,88; Luca PDF hâlâ 198,63). Ort. |ΔNet DHR−Luca| 3.536,67 TL. Kalan ana sürücü: PPV-DROP (8 kişi) ve Luca Ekim GV bandı 4.211.",
     "deltaChartCaption": "Pozitif = DHR net daha yüksek · Kaynak: Ekim 2026 karşılaştırma",
     "gvCompareTitle": "Ekim 2026 — istisna karşılaştırması",
     "footer": "D1-Tech · dhrtest İK birimi · Ekim 2026 dönem ID 9d85c4e1-d469-4f35-8eb4-4f1cd6dabe2a",
@@ -10086,6 +10727,20 @@
       "DHR Ekim döneminde 5.615,10 TL, Ocak döneminde 4.211,33 TL istisna uyguluyor.",
       "Luca ~4.211 TL (Ocak bandı) kullanıyor; Ekim farkı 1.403,77 TL → net etki ~210,57 TL/kişi.",
       "Yasal Ağustos–Aralık 2026 bandı 5.615,10 TL."
+    ],
+    "drivers": [
+      {
+        "title": "Damga / nakit yemek",
+        "body": "DHR yemeği damgadan düşüyor (Serra 156,88). Ekim Luca PDF 198,63 basıyor. Ocak Luca ile aynı kural."
+      },
+      {
+        "title": "Tek seferlik kalemler",
+        "body": "Prim/ikramiye/masraf/kesinti kayıtları PaymentValue’da duruyor ama tam hesaplama bordroya yazmıyor: Baran 4.500, Metin 5.000, Ufuk 3.500, Yasin 10.000, Nilay 1.200, Vesile 800, Okan 750."
+      },
+      {
+        "title": "GV istisnası",
+        "body": "DHR 5.615,10 TL uyguluyor (yasal Ekim). Luca ~4.211 TL’de kalıyor."
+      }
     ]
   },
   "pending": {

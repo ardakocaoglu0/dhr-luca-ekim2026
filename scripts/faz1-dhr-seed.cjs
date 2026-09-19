@@ -17,6 +17,7 @@ if (!ADMIN_PASS) {
   process.exit(1);
 }
 
+const { oksFraction } = require("./oks-rate.cjs");
 const ROOT_DIR = path.join(__dirname, "..");
 const ROSTER = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, "src", "data", "faz1_roster.json"), "utf8"));
 const STATE_PATH = path.join(process.env.TEMP, "faz1_seed_state.json");
@@ -871,7 +872,7 @@ function assertNotProtected(unitId, label) {
       await api("POST", "/api/EmployeeOksEnrollment/upsert", {
         employeeId: empId,
         oksStatus: 1,
-        contributionRateOverride: p.besEmployeePct,
+        contributionRateOverride: oksFraction(p.besEmployeePct),
         enrollmentDate: "2026-01-06",
         withdrawalDate: p.besExit || null,
         pauseStartDate: null,

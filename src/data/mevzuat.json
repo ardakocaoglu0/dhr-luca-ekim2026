@@ -22,6 +22,11 @@
     "sgdpIsciOran": 0.075,
     "stajyerGssOran": 0.05,
     "sgkTavanKat": 7.5,
+    "dailyMealExempt": 158,
+    "dailyMealExemptGv": 300,
+    "workDaysJanuary": 21,
+    "disabilityExempt": { "1": 12000, "2": 7000, "3": 3000 },
+    "sgdpEmployerOran": 0.2475,
     "damgaOran": 0.00759
   },
   "gvWageBrackets2026": [

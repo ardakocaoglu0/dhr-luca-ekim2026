@@ -1,6 +1,6 @@
 # DHR × Luca × YZ — Bordro karşılaştırması
 
-`dhrtest` ortamındaki DHR bordro motorunu **Luca PDF** ve **2026 Türkiye mevzuatı (YZ)** ile yan yana gösteren statik sitedir. Amaç DHR’nin doğru hesapladığı yerleri, Luca’dan sapmaları ve mevzuat kararı bekleyen farkları tek ekranda görmektir.
+`dhrtest2` ortamındaki DHR bordro motorunu **Luca PDF** ve **2026 Türkiye mevzuatı (YZ)** ile yan yana gösteren statik sitedir. Amaç DHR’nin doğru hesapladığı yerleri, Luca’dan sapmaları ve mevzuat kararı bekleyen farkları tek ekranda görmektir.
 
 Luca **referanstır, hakem değildir**. Damga matrahında Luca’nın haklı çıktığı satırlar olduğu gibi 4691 terkiminde DHR’nin haklı çıktığı satırlar da vardır. Geçme eşiği **±0,01 TL**.
 
@@ -14,9 +14,9 @@ Kaynak dal: `main`. Yayın: `gh-pages` (aşağıda).
 
 | Kolon | Kaynak | Not |
 | --- | --- | --- |
-| **DHR** | `https://dhrtest.d1-tech.com.tr` bordro API’si | `/api/PayrollPeriod/{id}`, puantaj, `/api/PaymentValue/all`. Excel export kullanılmıyor. |
-| **Luca** | Bordro PDF | İK Ekim/Ocak: `public/downloads/bordro_d1_tech.pdf`. Tek Değişken: `public/downloads/bordro_tek_degisken.pdf`. |
-| **YZ** | `src/data/mevzuat.json` | 2026 GVK dilimleri, asgari GV istisna bandı (aylık), SGK %14 / işsizlik %1 / SGDP %7,5, damga ‰7,59. Aylık izole hesap; kümülatif dilim yok. |
+| **DHR** | `https://dhrtest2.d1-tech.com.tr` bordro API’si | `/api/PayrollPeriod/{id}`, puantaj, `/api/PaymentValue/all`. Excel export kullanılmıyor. |
+| **Luca** | Bordro PDF | İK Ekim/Ocak: `public/downloads/bordro_d1_tech.pdf`. Tek Değişken: `public/downloads/bordro_tek_degisken.pdf`. Bordro Paket PDF henüz yok. |
+| **YZ** | `src/data/mevzuat.json` | 2026 GVK dilimleri, asgari GV istisna bandı (aylık), SGK %14 / işsizlik %1 / SGDP %7,5, damga ‰7,59, yemek PEK 21×158 / GV-damga 21×300. Aylık izole hesap; kümülatif dilim yok. |
 
 Tablolarda gösterilen farklar:
 
@@ -33,6 +33,7 @@ Tablolarda gösterilen farklar:
 | **Ekim 2026** | İK 32 kişi · DHR × Luca × YZ |
 | **Ocak 2026** | Aynı İK 32’liği, Ocak girdileri · DHR × Luca × YZ |
 | **Ocak 2026 — Tek Değişken** | Yeni birim, 27 kişi, satırda tek sapma · DHR × Luca × YZ |
+| **Ocak 2026 — Bordro Paket** | Paket motor düzeltmeleri + tek sapma 30 kişi (6301–6330) · DHR × YZ (Luca BEKLİYOR) |
 | **Eylül 2026 — Faz 1** | Laboratuvar kadrosu. Karşılaştırma alt sekmesi Ana 15 (Luca PDF henüz yok) |
 | **Girişler** | Yalnız `@demo.com` hesapları. Arda / Sude / BT yok |
 
@@ -48,7 +49,7 @@ Faz 1 ek alt sekmeler: **Luca YZ DHR karşılaştırma**, Manuel dene, Kadro, E�
 
 ## Dönemler ve birimler
 
-Ortam: `https://dhrtest.d1-tech.com.tr`.
+Ortam: `https://dhrtest2.d1-tech.com.tr` (eski `dhrtest` kullanılmaz).
 
 ### İnsan Kaynakları (6101–6132) — dokunulmaz
 
@@ -92,6 +93,51 @@ Son Luca PDF: `bordro_d1_tech (27).pdf` → `public/downloads/bordro_tek_degiske
 
 Luca’da hâlâ Ada zemininde kalan (kart düzeltmesi + Ocak Hesapla + yeni PDF beklenir): **Hakan 6208**, **Işık 6209**, **Cemil 6226**. Derya 6227 damga 0 (5746 damga terkin); GV hâlâ Ada.
 
+### Bordro Paket — Ocak 2026
+
+İK ve Tek Değişken kartlarına dokunulmaz. Faz1 Bordro A.Ş. kullanılmaz. Birim **Bordro Paket**. Yönetici (test dışı): **6300 Yaman Efe**. Karşılaştırma: **6301–6330**. Zemin: Mine/Ada/Serra 50.500 + yemek 5.500 + yol 3.200, işe giriş `2025-06-02`, Ocak **21 iş günü**.
+
+DHR 30/30 hesaplı. Hakem YZ ±0,01 **21/30**. Luca personel XLS aktarıldı; Luca PDF yok → Durum **BEKLİYOR**.
+
+| Sicil | Kişi | Tek sapma |
+| --- | --- | --- |
+| 6301 | Mine Aras | Baseline |
+| 6302 | Nuri Bal | Yemek 0 |
+| 6303 | Oya Can | Yemek 12.000 |
+| 6304 | Poyraz Dal | Stajyer 12.000 |
+| 6305 | Rana El | Stajyer 40.000 |
+| 6306 | Sarp Firat | Çırak |
+| 6307 | Tuna Genc | İntörn |
+| 6308 | Ufuk Han | Emekli SGDP |
+| 6309 | Veda Il | BES Dahil Değil |
+| 6310 | Yagmur Koc | OKS %3 |
+| 6311 | Zeki Lal | Asgari altı |
+| 6312 | Ahu Mor | 5746 stopaj terkin |
+| 6313 | Baris Nur | Engelli 1 |
+| 6314 | Cemre Oz | Çocuk yardımı |
+| 6315 | Dicle Pal | Eş yardımı |
+| 6316 | Ekin Re | Özel sağlık çalışanda |
+| 6317 | Firat Su | Özel sağlık işveren |
+| 6318 | Gizem Tan | Yol bitiş 2025-12 |
+| 6319 | Hale Ulu | Yinelenen ek 2.500 |
+| 6320 | Ilker Var | İzin harçlığı |
+| 6321 | Jale Yurt | Nafaka 8.000 |
+| 6322 | Koray Zan | İcra 20.000 |
+| 6323 | Lale Ada | Nafaka + icra |
+| 6324 | Mert Bey | Sendika 450 |
+| 6325 | Nehir Can | İşveren alacağı |
+| 6326 | Onur Dem | Avans 7.200 |
+| 6327 | Pinar Er | SGK tavan + prim |
+| 6328 | Ruya Fen | Kıdem/ihbar çıkış |
+| 6329 | Sena Gol | Masraf yeri %60/%40 |
+| 6330 | Tamer Han | Ücret kesme 2 gün |
+
+Luca içe aktarma: `scripts/paket-luca-personel-xls.cjs` → `personel_giris_excel_BordroPaket.xls` (Masaüstü / İndirilenler). Aynı işyeri, bölüm **Bordro Paket**.
+
+YZ yemek: PEK `21×158` (SGK); GV ve damga `21×300` (GVK 23/8). Mine PEK 55.882, damga 156,88.
+
+Kalan DHR ürün sapması (kurulum değil): avans mahsubu (Onur onaylı 7200 bordroda 0), icra/alacak 1/4 yok, engellilik PUT yazılmıyor, 5746 terkin yok, kıdem API `reason` zorunlu.
+
 ### Faz 1 — Eylül 2026
 
 İK ve BT’ye dokunulmaz. Yeni birimler: Bordro Laboratuvarı, Ana Kadro, Operasyon, Kenar, Yuvarlama, Takvim, Blokaj, Faz1 Bordro A.Ş.
@@ -128,6 +174,7 @@ src/
     ekim_comparison.json + ekim_matrix.json
     comparison.json + matrix.json          ← Ocak İK
     izole_comparison.json + izole_matrix.json + izole_roster.json
+    paket_comparison.json + paket_matrix.json + paket_roster.json
     faz1_*.json
     mevzuat.json
     logins.json
@@ -145,12 +192,16 @@ docs/sohbet-gecmisi.md bu işin Cursor sohbet özeti
 | `scripts/add-ai-compare.cjs` | YZ kolonunu JSON’a basar |
 | `scripts/merge-izole-pdf.cjs` | Tek Değişken Luca PDF’ini `public/downloads/` altına kopyalar |
 | `scripts/izole-luca-personel-xls.cjs` | Luca İK personel içe aktarma XLS (Tek Değişken kadrosu) |
+| `scripts/paket-luca-personel-xls.cjs` | Luca personel içe aktarma XLS (Bordro Paket 6301–6330) |
+| `scripts/generate-paket-site.cjs` | `paket_comparison.json` + `paket_matrix.json` (YZ) |
+| `scripts/paket-apply-dhr.cjs` | `%TEMP%/paket_ocak_period.json` → DHR kolonları, Δ DHR−YZ |
+| `scripts/paket-dhr-seed.cjs` | dhrtest2 Bordro Paket seed (İK kartına dokunmaz) |
 | `scripts/izole-dhr-seed.cjs` / `izole-run-full.cjs` | Tek Değişken DHR seed + hesap |
 | `scripts/faz1-dhr-seed.cjs` / `faz1-run-full.cjs` | Faz 1 seed / koşum |
 | `scripts/faz1-op-blokaj-ana-check.cjs` | Ana / Op / Blokaj dönem durumu (Playwright + CSRF) |
 | `scripts/generate-izole-site.cjs` / `generate-faz1-data.cjs` | Site JSON yenileme |
 
-Ham DHR sayısı için Excel değil API kullanılır. Seed scriptleri `dhrtest`’e yazar; rastgele çalıştırma.
+Ham DHR sayısı için Excel değil API kullanılır. Seed scriptleri `dhrtest2`’ye yazar; rastgele çalıştırma.
 
 ## Yerel çalıştırma
 
@@ -182,8 +233,8 @@ npx --yes gh-pages -d dist -m "site guncellemesi"
 
 Durum panosundaki güncel metin esas alınır. Özet:
 
-- Yemek yardımı damga matrahına girer mi? (DHR evet, Luca hayır)
-- 5746 damga terkini
+- Ocak yemek damga: DHR Serra/Ada/Mine 156,88 = Luca; Ekim Luca PDF hâlâ eski basabiliyor
+- 5746 damga / stopaj terkini (Paket Ahu kutusu açık, tutar Mine)
 - Masraf iadesi ücret midir?
 - Luca Ekim’de hâlâ Ocak GV istisna bandı (~4.211) uyguluyor; yasal Ağustos–Aralık 2026 bandı 5.615,10 TL
 

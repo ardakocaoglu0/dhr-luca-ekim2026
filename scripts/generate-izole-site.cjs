@@ -5,6 +5,7 @@
 const fs = require("fs");
 const path = require("path");
 
+const { oksFraction } = require("./oks-rate.cjs");
 const ROOT = path.join(__dirname, "..");
 const DATA = path.join(ROOT, "src", "data");
 const roster = JSON.parse(fs.readFileSync(path.join(DATA, "izole_roster.json"), "utf8"));
@@ -136,7 +137,7 @@ const rows = roster.people.map((p, i) => {
   const masraf = nz(p.masraf);
   const overtime = 0;
   const gross = r2(salary + meal + transport + overtime + prim + ikramiye + masraf);
-  const bes = p.besEmployeePct ? r2(gross * p.besEmployeePct) : 0;
+  const bes = p.besEmployeePct ? r2(gross * oksFraction(p.besEmployeePct)) : 0;
   const advance = nz(p.avans);
   const kesinti = nz(p.kesinti);
   const ai = computeAi({

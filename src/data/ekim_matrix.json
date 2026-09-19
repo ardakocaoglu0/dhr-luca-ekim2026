@@ -1,7 +1,7 @@
 {
   "period": "Ekim 2026",
-  "environment": "dhrtest.d1-tech.com.tr · İnsan Kaynakları · dönem 9d85c4e1",
-  "sourceOfTruth": "Luca + DHR + YZ (2026 Türkiye mevzuatı: 5510, 4447, GVK 23/18, 488, 332 GT) · DHR kolonu 13.09.2026 tam yeniden hesaplama API dump’ı ile tazelendi.",
+  "environment": "dhrtest2.d1-tech.com.tr · İnsan Kaynakları · dönem 9d85c4e1",
+  "sourceOfTruth": "Luca + DHR + YZ · DHR kolonu 18.09.2026 dhrtest2 yeniden hesap API dump’ı ile tazelendi.",
   "matrixDesign": {
     "layers": [
       {
@@ -24,14 +24,14 @@
   },
   "checkedItems": [
     {
-      "item": "Ekim dönemi 13.09.2026 tam yeniden hesaplama (32 kişi)",
+      "item": "Ekim dönemi 18.09.2026 dhrtest2 yeniden hesap (32 kişi)",
       "result": "pass",
-      "note": "onlyStaleEmployees:false ile 32/32 hesaplandı, failedCount 0. Brüt−kesinti=net tutarlılığı 32/32 (Pelin’de fark = işveren BES katkısı 1.740)."
+      "note": "onlyStaleEmployees:false ile 32/32 hesaplandı, failedCount 0. Serra damga 156,88 (Luca PDF 198,63)."
     },
     {
       "item": "Ocak dönemi yeniden hesaplama tekrarlanabilirliği",
       "result": "pass",
-      "note": "32 kişinin 31’i birebir aynı. Tek fark: Pelin damga 268,76 → 255,55 (işveren BES katkısı damga matrahından çıktı)."
+      "note": "18.09.2026 dhrtest2 yeniden hesap: Ocak Serra damga 156,88 (Luca 156,88)."
     },
     {
       "item": "Yemek SGK istisnası dönemler arası tutarlılık",
@@ -173,7 +173,7 @@
       "input": "—",
       "dhr": "pass",
       "luca": "pass",
-      "verdict": "Baz satır: GV istisnası 5.615,10 uygulanıyor, BES yok. Kalan fark Luca’nın 4.211 bandı ve yemek SGK matrahı.",
+      "verdict": "Baz satır: GV 5.615,10. Damga DHR 156,88 / Luca PDF 198,63. Kalan net fark Luca GV bandı + yemek SGK.",
       "ai": "pass",
       "whichCorrect": "",
       "legalBasis": ""
