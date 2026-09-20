@@ -171,3 +171,94 @@ export function SectionNav({ items }: { items: { id: string; label: string }[] }
     </nav>
   );
 }
+
+const tabIconProps = {
+  width: 16,
+  height: 16,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.8,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  "aria-hidden": true as const,
+  className: "tab-ico",
+  focusable: "false" as const,
+};
+
+/** Üst dönem sekmeleri — metinle birlikte küçük çizgi ikon. */
+export function TabIcon({ id }: { id: string }) {
+  switch (id) {
+    case "durum":
+      return (
+        <svg {...tabIconProps}>
+          <rect width="7" height="9" x="3" y="3" rx="1" />
+          <rect width="7" height="5" x="14" y="3" rx="1" />
+          <rect width="7" height="9" x="14" y="12" rx="1" />
+          <rect width="7" height="5" x="3" y="16" rx="1" />
+        </svg>
+      );
+    case "ekim":
+      return (
+        <svg {...tabIconProps}>
+          <path d="M8 2v4" />
+          <path d="M16 2v4" />
+          <rect width="18" height="18" x="3" y="4" rx="2" />
+          <path d="M3 10h18" />
+          <path d="M8 14h.01" />
+          <path d="M12 14h.01" />
+          <path d="M16 14h.01" />
+          <path d="M8 18h.01" />
+          <path d="M12 18h.01" />
+        </svg>
+      );
+    case "ocak":
+      return (
+        <svg {...tabIconProps}>
+          <path d="M12 2v4" />
+          <path d="M12 18v4" />
+          <path d="m4.93 4.93 2.83 2.83" />
+          <path d="m16.24 16.24 2.83 2.83" />
+          <path d="M2 12h4" />
+          <path d="M18 12h4" />
+          <path d="m4.93 19.07 2.83-2.83" />
+          <path d="m16.24 7.76 2.83-2.83" />
+        </svg>
+      );
+    case "izole":
+      return (
+        <svg {...tabIconProps}>
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+        </svg>
+      );
+    case "paket":
+      return (
+        <svg {...tabIconProps}>
+          <path d="m7.5 4.27 9 5.15" />
+          <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+          <path d="m3.3 7 8.7 5 8.7-5" />
+          <path d="M12 22V12" />
+        </svg>
+      );
+    case "faz1":
+      return (
+        <svg {...tabIconProps}>
+          <path d="M10 2v7.31" />
+          <path d="M14 9.3V2" />
+          <path d="M8.5 2h7" />
+          <path d="M14 9.3a6.5 6.5 0 1 1-4 0" />
+        </svg>
+      );
+    case "girisler":
+      return (
+        <svg {...tabIconProps}>
+          <circle cx="7.5" cy="15.5" r="5.5" />
+          <path d="m21 2-9.6 9.6" />
+          <path d="m15.5 7.5 3 3L22 7l-3-3" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}

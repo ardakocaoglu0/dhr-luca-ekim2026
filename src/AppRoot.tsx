@@ -20,6 +20,7 @@ import type { ComparisonData } from "./types";
 import type { MatrixData } from "./matrixTypes";
 import type { Faz1Roster, LoginsData } from "./faz1Types";
 import type { DashboardData } from "./dashboardTypes";
+import { TabIcon } from "./ui";
 
 type Tab = "durum" | "ekim" | "ocak" | "izole" | "faz1" | "paket" | "girisler";
 
@@ -35,24 +36,31 @@ export default function App() {
           </p>
           <nav className="tab-bar" aria-label="Dönem">
             <button className={tab === "durum" ? "active" : ""} onClick={() => setTab("durum")}>
+              <TabIcon id="durum" />
               Durum panosu
             </button>
             <button className={tab === "ekim" ? "active" : ""} onClick={() => setTab("ekim")}>
+              <TabIcon id="ekim" />
               Ekim 2026
             </button>
             <button className={tab === "ocak" ? "active" : ""} onClick={() => setTab("ocak")}>
+              <TabIcon id="ocak" />
               Ocak 2026
             </button>
             <button className={tab === "izole" ? "active" : ""} onClick={() => setTab("izole")}>
+              <TabIcon id="izole" />
               Ocak 2026 — Tek Değişken
             </button>
             <button className={tab === "paket" ? "active" : ""} onClick={() => setTab("paket")}>
+              <TabIcon id="paket" />
               Ocak 2026 — Bordro Paket
             </button>
             <button className={tab === "faz1" ? "active" : ""} onClick={() => setTab("faz1")}>
+              <TabIcon id="faz1" />
               Eylül 2026 — Faz 1
             </button>
             <button className={tab === "girisler" ? "active" : ""} onClick={() => setTab("girisler")}>
+              <TabIcon id="girisler" />
               Girişler
             </button>
           </nav>

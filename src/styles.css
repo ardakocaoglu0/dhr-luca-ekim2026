@@ -132,6 +132,9 @@ code {
 }
 
 .tab-bar button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   background: none;
   border: 1px solid transparent;
   border-radius: 999px;
@@ -141,6 +144,16 @@ code {
   padding: 0.4rem 0.9rem;
   cursor: pointer;
   transition: color 0.15s, background 0.15s, border-color 0.15s;
+}
+
+.tab-bar .tab-ico {
+  flex: 0 0 auto;
+  opacity: 0.75;
+}
+
+.tab-bar button:hover .tab-ico,
+.tab-bar button.active .tab-ico {
+  opacity: 1;
 }
 
 .tab-bar button:hover {
