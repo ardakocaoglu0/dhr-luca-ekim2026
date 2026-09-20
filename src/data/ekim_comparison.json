@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-18T09:33:10.665Z",
+  "generatedAt": "2026-09-20T13:51:45.020Z",
   "period": "Ekim 2026",
   "unit": "Insan Kaynaklari — dhrtest vs Luca",
   "lucaPdfVersion": "bordro_d1_tech (10).pdf",
   "sources": {
     "lucaPdf": "downloads/bordro_d1_tech.pdf",
-    "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 18.09.2026 dhrtest2 yeniden hesap · 32/32 hesaplandı",
+    "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 20.09.2026 dhrtest2 yeniden hesap · 32/32 hesaplandı",
     "aiMevzuat": "mevzuat.json — 193 GVK, 332 GT, 5510, 4447, 488, 7352, 2026 asgari, 5746/4691 (oran yok)"
   },
   "summary": {
@@ -10719,7 +10719,7 @@
   "ui": {
     "title": "DHR × Luca — Ekim 2026 Bordro Karşılaştırması",
     "lead": "32 kişilik test matrisi: kanun/teşvik profilleri, ek kazanç ve kesintiler. Luca referans; DHR sapmaları yasal kaynaklarla birlikte görselleştirildi. Üçüncü kolon: YZ (2026 Türk mevzuatı: 5510, 4447, GVK 23/18, 488, 332 GT).",
-    "verdict": "18.09.2026 dhrtest2 yeniden hesap: nakit yemek damga matrahından çıktı (Serra damga 156,88; Luca PDF hâlâ 198,63). Ort. |ΔNet DHR−Luca| 3.536,67 TL. Kalan ana sürücü: PPV-DROP (8 kişi) ve Luca Ekim GV bandı 4.211.",
+    "verdict": "20.09.2026 dhrtest2 yeniden hesap: nakit yemek damga matrahından çıktı (Serra damga 156,88; Luca PDF hâlâ 198,63). Ort. |ΔNet DHR−Luca| 3.536,67 TL. Kalan ana sürücü: PPV-DROP (8 kişi) ve Luca Ekim GV bandı 4.211.",
     "deltaChartCaption": "Pozitif = DHR net daha yüksek · Kaynak: Ekim 2026 karşılaştırma",
     "gvCompareTitle": "Ekim 2026 — istisna karşılaştırması",
     "footer": "D1-Tech · dhrtest İK birimi · Ekim 2026 dönem ID 9d85c4e1-d469-4f35-8eb4-4f1cd6dabe2a",

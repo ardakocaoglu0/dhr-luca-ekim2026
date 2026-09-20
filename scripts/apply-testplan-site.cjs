@@ -8,7 +8,7 @@ const path = require("path");
 
 const DATA = path.join(__dirname, "..", "src", "data");
 const DUMPS = process.env.TESTPLAN_DUMP || path.join(process.env.TEMP, "testplan_recalc");
-const RUN = "18.09.2026 dhrtest2 yeniden hesap";
+const RUN = "20.09.2026 dhrtest2 yeniden hesap";
 const ENV = "https://dhrtest2.d1-tech.com.tr";
 const PASS = 0.01;
 
@@ -583,6 +583,7 @@ setPeriod("ekim", `Hesaplandı · ${RUN} · ort. |ΔNet| ${tr(ekim.summary.avgAb
 setPeriod("ocak", `Hesaplandı · ${RUN} · damga ${tr(serraOcak?.dhr?.damga)} · ±0,01 ${ocak.summary.netPass001}/32`);
 setPeriod("faz1", `Hesaplandı · DHR 15/15 · Luca 15/15 · ±0,01 ${faz1.summary.netPass001}/15`);
 setPeriod("izole", `Hesaplandı · DHR 27/27 · Luca 27/27 · ±0,01 ${izole.summary.netPass001} · FM Tolga ${tr(tolga?.dhr?.overtime)}`);
+setPeriod("paket", dash.periods.find((x) => x.id === "paket")?.state || "Hesaplandı", "DHR × YZ");
 
 const wDamga = dash.works.find((w) => w.id === "W-DAMGA");
 if (wDamga) {
@@ -590,8 +591,8 @@ if (wDamga) {
 }
 const wTekrar = dash.works.find((w) => w.id === "W-TEKRAR");
 if (wTekrar) {
-  wTekrar.detail = `${RUN}: dört dönem yeniden hesaplandı (failedCount 0). Ana kayma damga −41,75 / net +41,75 (yemek matrahtan çıktı).`;
-  wTekrar.periods = ["Ekim", "Ocak", "Eylül", "Tek Değişken"];
+  wTekrar.detail = `${RUN}: beş dönem yeniden hesaplandı (failedCount 0). Ana kayma damga −41,75 / net +41,75 (yemek matrahtan çıktı).`;
+  wTekrar.periods = ["Ekim", "Ocak", "Eylül", "Tek Değişken", "Bordro Paket"];
 }
 const wFaz1 = dash.works.find((w) => w.id === "W-FAZ1-LUCA");
 if (wFaz1) {

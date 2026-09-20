@@ -211,7 +211,9 @@
       "maas": 50500,
       "yemek": 5500,
       "yol": 3200,
-      "seedFlags": { "emekli": true },
+      "seedFlags": {
+        "emekli": true
+      },
       "note": "Yalnız emekli SGDP. Prim yok."
     },
     {
@@ -231,7 +233,9 @@
       "maas": 50500,
       "yemek": 5500,
       "yol": 3200,
-      "seedFlags": { "disabilityDegree": 1 },
+      "seedFlags": {
+        "disabilityDegree": 1
+      },
       "note": "Yalnız engelli 1. derece. Kesinti yok."
     },
     {
@@ -251,7 +255,9 @@
       "maas": 50500,
       "yemek": 5500,
       "yol": 3200,
-      "seedFlags": { "disabilityDegree": 2 },
+      "seedFlags": {
+        "disabilityDegree": 2
+      },
       "note": "Yalnız engelli 2. derece. Kesinti yok."
     },
     {
@@ -271,7 +277,9 @@
       "maas": 50500,
       "yemek": 5500,
       "yol": 3200,
-      "seedFlags": { "disabilityDegree": 3 },
+      "seedFlags": {
+        "disabilityDegree": 3
+      },
       "note": "Yalnız engelli 3. derece."
     },
     {
@@ -292,7 +300,9 @@
       "yemek": 5500,
       "yol": 3200,
       "hire": "2026-01-05",
-      "seedFlags": { "partTime": true },
+      "seedFlags": {
+        "partTime": true
+      },
       "note": "Yalnız kısmi ay. Ocak zemini 26 SGK günü; 30 gün varsayımı yok."
     },
     {
@@ -312,7 +322,9 @@
       "maas": 18000,
       "yemek": 0,
       "yol": 0,
-      "seedFlags": { "stajyer": true },
+      "seedFlags": {
+        "stajyer": true
+      },
       "note": "Yalnız stajyer. Yemek/yol yok — kesintisizlik stajyerin kendisi."
     },
     {
@@ -332,7 +344,9 @@
       "maas": 50500,
       "yemek": 5500,
       "yol": 3200,
-      "seedFlags": { "foreign": true },
+      "seedFlags": {
+        "foreign": true
+      },
       "note": "Yalnız yabancı uyruklu."
     },
     {
@@ -530,7 +544,9 @@
       "maas": 50500,
       "yemek": 5500,
       "yol": 3200,
-      "seedFlags": { "priorTaxFilled": true },
+      "seedFlags": {
+        "priorTaxFilled": true
+      },
       "note": "Yalnız devreden kümülatif GV 185.000."
     },
     {

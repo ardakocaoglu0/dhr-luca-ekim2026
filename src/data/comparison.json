@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-18T09:33:10.745Z",
+  "generatedAt": "2026-09-20T13:51:45.045Z",
   "period": "Ocak 2026 (DHR UI × Luca PDF)",
   "unit": "Insan Kaynaklari — dhrtest UI vs Luca Ocak",
   "lucaPdfVersion": "bordro_d1_tech (25).pdf",
   "sources": {
     "lucaPdf": "downloads/bordro_d1_tech.pdf",
-    "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 18.09.2026 dhrtest2 yeniden hesap · 32/32 hesaplandı",
+    "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 20.09.2026 dhrtest2 yeniden hesap · 32/32 hesaplandı",
     "aiMevzuat": "mevzuat.json — 193 GVK, 332 GT, 5510, 4447, 488, 7352, 2026 asgari, 5746/4691 (oran yok)"
   },
   "summary": {
@@ -11040,7 +11040,7 @@
   "ui": {
     "title": "DHR × Luca — Ocak 2026 Bordro Karşılaştırması",
     "lead": "32 kişilik test matrisi. DHR Ocak yeniden hesap + Luca bordro_d1_tech (25).pdf. Geçme kriteri ±0,01 TL. Üçüncü kolon: YZ (2026 Türk mevzuatı: 5510, 4447, GVK 23/18, 488, 332 GT).",
-    "verdict": "18.09.2026 dhrtest2 yeniden hesap: Serra damga DHR 156,88 / Luca 156,88 (±0,01 hizalı). Ort. |ΔNet DHR−Luca| 1.401,64 TL · ±0,01 1/32.",
+    "verdict": "20.09.2026 dhrtest2 yeniden hesap: Serra damga DHR 156,88 / Luca 156,88 (±0,01 hizalı). Ort. |ΔNet DHR−Luca| 1.401,64 TL · ±0,01 1/32.",
     "deltaChartCaption": "Pozitif = DHR net daha yüksek · Kaynak: Ocak 2026 DHR UI × yeni Luca PDF",
     "gvCompareTitle": "Ocak 2026 — istisna karşılaştırması",
     "footer": "D1-Tech · dhrtest İK birimi · Ocak 2026 dönem ID 67d5ddbc-5000-48b3-abac-b89e429cf5c2",

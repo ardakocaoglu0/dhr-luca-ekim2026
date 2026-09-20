@@ -1,7 +1,7 @@
 {
  "period": "Eylül 2026 · Ana Kadro · DHR × Luca × YZ",
  "environment": "https://dhrtest2.d1-tech.com.tr",
- "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (5).pdf, 15/15). DHR https://dhrtest2.d1-tech.com.tr 18.09.2026 dhrtest2 yeniden hesap 15/15. Geçme ±0,01 TL. Durum = DHR−Luca.",
+ "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (5).pdf, 15/15). DHR https://dhrtest2.d1-tech.com.tr 20.09.2026 dhrtest2 yeniden hesap 15/15. Geçme ±0,01 TL. Durum = DHR−Luca.",
  "matrixDesign": {
   "layers": [
    {

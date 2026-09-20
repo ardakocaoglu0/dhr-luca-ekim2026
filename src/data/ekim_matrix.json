@@ -1,7 +1,7 @@
 {
   "period": "Ekim 2026",
   "environment": "dhrtest2.d1-tech.com.tr · İnsan Kaynakları · dönem 9d85c4e1",
-  "sourceOfTruth": "Luca + DHR + YZ · DHR kolonu 18.09.2026 dhrtest2 yeniden hesap API dump’ı ile tazelendi.",
+  "sourceOfTruth": "Luca + DHR + YZ · DHR kolonu 20.09.2026 dhrtest2 yeniden hesap API dump’ı ile tazelendi.",
   "matrixDesign": {
     "layers": [
       {
@@ -31,7 +31,7 @@
     {
       "item": "Ocak dönemi yeniden hesaplama tekrarlanabilirliği",
       "result": "pass",
-      "note": "18.09.2026 dhrtest2 yeniden hesap: Ocak Serra damga 156,88 (Luca 156,88)."
+      "note": "20.09.2026 dhrtest2 yeniden hesap: Ocak Serra damga 156,88 (Luca 156,88)."
     },
     {
       "item": "Yemek SGK istisnası dönemler arası tutarlılık",

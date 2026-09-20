@@ -1,7 +1,7 @@
 {
-  "period": "Ocak 2026 · Bordro Paket · DHR × YZ (Luca bekliyor)",
+  "period": "Ocak 2026 · Bordro Paket · DHR × Luca × YZ",
   "environment": "dhrtest2.d1-tech.com.tr · Bordro Paket",
-  "sourceOfTruth": "YZ hakem. Luca yok (BEKLİYOR). DHR test2 dump 30/30. Geçme ±0,01 TL.",
+  "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech.pdf, 30/30). DHR dump 30/30. Geçme ±0,01 TL. Durum = DHR−Luca.",
   "matrixDesign": {
     "layers": [
       {
@@ -26,7 +26,7 @@
     {
       "item": "Geçme eşiği ±0,01 TL",
       "result": "pass",
-      "note": "Durum yalnız DHR−Luca; Luca yoksa BEKLİYOR."
+      "note": "Durum = DHR−Luca. Luca doldu."
     },
     {
       "item": "Luca hakem değil",
@@ -36,12 +36,12 @@
     {
       "item": "DHR Ocak 2026 hesap",
       "result": "pass",
-      "note": "30/30 kişi hesaplandı. YZ net ±0,01: 21/30. Hakem pass: 21/30."
+      "note": "30/30 kişi hesaplandı. YZ net ±0,01: 22/30. Hakem pass: 22/30."
     },
     {
       "item": "Luca PDF",
-      "result": "pending",
-      "note": "Bu birim için Luca çıktısı yok."
+      "result": "pass",
+      "note": "bordro_d1_tech.pdf: 30/30. DHR net ±0,01: 5/30. Senaryo girdi pass 25/30."
     }
   ],
   "correctFindings": [
@@ -82,14 +82,7 @@
       "detail": "Rüya 6328 TerminateEmployee 400 reason required; kıdem/ihbar 0."
     }
   ],
-  "warnings": [
-    {
-      "id": "PK-LUCA",
-      "title": "Luca PDF yok",
-      "detail": "Durum rozeti BEKLİYOR. Hakem YZ ±0,01.",
-      "severity": "info"
-    }
-  ],
+  "warnings": [],
   "scenarios": [
     {
       "n": 1,
@@ -100,11 +93,11 @@
       "law": "00000",
       "input": "Standart brüt",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Standart brüt: DHR net 48074.49 = YZ 48074.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Standart brüt: DHR 48.074,49 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 1.289,79). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 2,
@@ -115,11 +108,11 @@
       "law": "00000",
       "input": "Yemek yok",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Yemek yok: DHR net 42852.7 = YZ 42852.7 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Yemek yok: DHR 42.852,70 / Luca 42.852,70 / YZ 42.852,70 (ΔDHR−Luca 0,00). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR ve Luca aynı (±0,01)",
+      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 4447; 488."
     },
     {
       "n": 3,
@@ -129,12 +122,12 @@
       "profile": "Standart",
       "law": "00000",
       "input": "Yemek istisna üstü",
-      "dhr": "fail",
-      "luca": "pending",
+      "dhr": "pass",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Yemek istisna üstü: DHR net 52847.47 / YZ 52847.48 (Δ -0.01).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket Yemek istisna üstü: DHR 52.847,47 / Luca 51.431,62 / YZ 52.847,48 (ΔDHR−Luca 1.415,85). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 4,
@@ -145,11 +138,11 @@
       "law": "STAJ",
       "input": "Stajyer 12.000",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Stajyer 12.000: DHR net 12000 = YZ 12000 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Stajyer 12.000: DHR 12.000,00 / Luca 10.200,00 / YZ 12.000,00 (ΔDHR−Luca 1.800,00). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 5,
@@ -160,11 +153,11 @@
       "law": "STAJ",
       "input": "Stajyer 40.000",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Stajyer 40.000: DHR net 40000 = YZ 40000 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Stajyer 40.000: DHR 40.000,00 / Luca 38.158,43 / YZ 40.000,00 (ΔDHR−Luca 1.841,57). stajyer damga 52,90",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 6,
@@ -175,11 +168,11 @@
       "law": "ÇIRAK",
       "input": "Çırak PEK tabanı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Çırak PEK tabanı: DHR net 16515 = YZ 16515 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Çırak PEK tabanı: DHR 16.515,00 / Luca 16.515,00 / YZ 16.515,00 (ΔDHR−Luca 0,00). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR ve Luca aynı (±0,01)",
+      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 4447; 488."
     },
     {
       "n": 7,
@@ -190,11 +183,11 @@
       "law": "INTÖRN",
       "input": "İntörn günlük taban",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket İntörn günlük taban: DHR net 18000 = YZ 18000 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket İntörn günlük taban: DHR 18.000,00 / Luca 18.000,00 / YZ 18.000,00 (ΔDHR−Luca 0,00). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR ve Luca aynı (±0,01)",
+      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 4447; 488."
     },
     {
       "n": 8,
@@ -205,11 +198,11 @@
       "law": "SGDP",
       "input": "Emekli işveren %24,75",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Emekli işveren %24,75: DHR net 51636.97 = YZ 51636.97 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Emekli işveren %24,75: DHR 51.636,97 / Luca 50.558,70 / YZ 51.636,97 (ΔDHR−Luca 1.078,27). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 9,
@@ -220,11 +213,11 @@
       "law": "00000",
       "input": "BES Dahil Değil",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket BES Dahil Değil: DHR net 48074.49 = YZ 48074.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket BES Dahil Değil: DHR 48.074,49 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 1.289,79). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 10,
@@ -235,11 +228,11 @@
       "law": "00000",
       "input": "OKS %3 kuruş tabanı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket OKS %3 kuruş tabanı: DHR net 46398.49 = YZ 46398.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket OKS %3 kuruş tabanı: DHR 46.398,49 / Luca 45.008,70 / YZ 46.398,49 (ΔDHR−Luca 1.389,79). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 11,
@@ -250,11 +243,11 @@
       "law": "00000",
       "input": "Asgari altı uyarı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Asgari altı uyarı: DHR net 21250 = YZ 21250 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Asgari altı uyarı: DHR 21.250,00 / Luca 21.250,00 / YZ 21.250,00 (ΔDHR−Luca 0,00). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR ve Luca aynı (±0,01)",
+      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 4447; 488."
     },
     {
       "n": 12,
@@ -265,11 +258,11 @@
       "law": "5746 GV terkin",
       "input": "5746 stopaj terkini işaretli",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket 5746 stopaj terkini işaretli: DHR net 48074.49 = YZ 48074.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket 5746 stopaj terkini işaretli: DHR 48.074,49 / Luca 46.983,33 / YZ 48.074,49 (ΔDHR−Luca 1.091,16). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 13,
@@ -280,11 +273,11 @@
       "law": "00000",
       "input": "Engelli 1. derece",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Engelli 1. derece: DHR net 48074.49 / YZ 49874.49 (Δ -1800).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket Engelli 1. derece: DHR 48.074,49 / Luca 48.584,70 / YZ 49.874,49 (ΔDHR−Luca -510,21). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 14,
@@ -295,11 +288,11 @@
       "law": "00000",
       "input": "Çocuk yardımı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Çocuk yardımı: DHR net 49146.85 = YZ 49146.85 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Çocuk yardımı: DHR 49.146,85 / Luca 46.784,70 / YZ 49.146,85 (ΔDHR−Luca 2.362,15). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 15,
@@ -310,11 +303,11 @@
       "law": "00000",
       "input": "Eş yardımı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Eş yardımı: DHR net 48789.4 = YZ 48789.4 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Eş yardımı: DHR 48.789,40 / Luca 46.784,70 / YZ 48.789,40 (ΔDHR−Luca 2.004,70). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 16,
@@ -325,11 +318,11 @@
       "law": "00000",
       "input": "Özel sağlık — vergi çalışanda",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Özel sağlık — vergi çalışanda: DHR net 48074.49 = YZ 48074.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Özel sağlık — vergi çalışanda: DHR 48.074,49 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 1.289,79). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 17,
@@ -340,11 +333,11 @@
       "law": "00000",
       "input": "Özel sağlık — işveren + Yan Hak",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Özel sağlık — işveren + Yan Hak: DHR net 48075.21 / YZ 48074.49 (Δ 0.72).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket Özel sağlık — işveren + Yan Hak: DHR 48.075,21 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 1.290,51). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 18,
@@ -355,11 +348,11 @@
       "law": "00000",
       "input": "Sabit ödeme bitiş ayı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Sabit ödeme bitiş ayı: DHR net 45786.77 = YZ 45786.77 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Sabit ödeme bitiş ayı: DHR 45.786,77 / Luca 44.496,99 / YZ 45.786,77 (ΔDHR−Luca 1.289,78). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 19,
@@ -370,11 +363,11 @@
       "law": "00000",
       "input": "Yinelenen ek ödeme",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Yinelenen ek ödeme: DHR net 49861.76 = YZ 49861.76 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Yinelenen ek ödeme: DHR 49.861,76 / Luca 46.784,70 / YZ 49.861,76 (ΔDHR−Luca 3.077,06). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 20,
@@ -385,11 +378,11 @@
       "law": "00000",
       "input": "İzin harçlığı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket İzin harçlığı: DHR net 49861.76 = YZ 49861.76 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket İzin harçlığı: DHR 49.861,76 / Luca 46.784,70 / YZ 49.861,76 (ΔDHR−Luca 3.077,06). Girdi PDF’de görünüyor.",
+      "whichCorrect": "YZ hakem. Luca referans.",
+      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
     {
       "n": 21,
@@ -400,11 +393,11 @@
       "law": "00000",
       "input": "Nafaka",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "Paket Nafaka: DHR net 40074.49 = YZ 40074.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Nafaka: DHR 40.074,49 / Luca 46.784,70 / YZ 40.074,49 (ΔDHR−Luca -6.710,21). nafaka 8.000,00 yok",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 22,
@@ -415,11 +408,11 @@
       "law": "00000",
       "input": "İcra 1/4",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket İcra 1/4: DHR net 28074.49 / YZ 36055.87 (Δ -7981.38).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket İcra 1/4: DHR 28.074,49 / Luca 26.784,70 / YZ 36.055,87 (ΔDHR−Luca 1.289,79). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 23,
@@ -430,11 +423,11 @@
       "law": "00000",
       "input": "Nafaka + icra sıra",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "Paket Nafaka + icra sıra: DHR net 27074.49 / YZ 30055.87 (Δ -2981.38).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket Nafaka + icra sıra: DHR 27.074,49 / Luca 46.784,70 / YZ 30.055,87 (ΔDHR−Luca -19.710,21). icra 15.000,00 yok · nafaka 6.000,00 yok",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 24,
@@ -445,11 +438,11 @@
       "law": "00000",
       "input": "Sendika aidatı",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "Paket Sendika aidatı: DHR net 47624.49 = YZ 47624.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Sendika aidatı: DHR 47.624,49 / Luca 46.784,70 / YZ 47.624,49 (ΔDHR−Luca 839,79). sendika 450 yok",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 25,
@@ -460,11 +453,11 @@
       "law": "00000",
       "input": "İşveren alacağı + devir",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "Paket İşveren alacağı + devir: DHR net 23074.49 / YZ 36055.87 (Δ -12981.38).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket İşveren alacağı + devir: DHR 23.074,49 / Luca 39.584,70 / YZ 36.055,87 (ΔDHR−Luca -16.510,21). işveren alacağı yok; avans 7.200,00 yazılmış",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 26,
@@ -475,11 +468,11 @@
       "law": "00000",
       "input": "Maaş avansı",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "Paket Maaş avansı: DHR net 48074.49 / YZ 40874.49 (Δ 7200).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket Maaş avansı: DHR 48.074,49 / Luca 46.784,70 / YZ 40.874,49 (ΔDHR−Luca 1.289,79). avans 7.200 yok",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 27,
@@ -490,11 +483,11 @@
       "law": "00000",
       "input": "SGK tavan + prim 2 ay devri",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket SGK tavan + prim 2 ay devri: DHR net 216012.63 / YZ 221958.03 (Δ -5945.4).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket SGK tavan + prim 2 ay devri: DHR 216.012,63 / Luca 216.012,63 / YZ 221.958,03 (ΔDHR−Luca 0,00). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR ve Luca aynı (±0,01)",
+      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 4447; 488."
     },
     {
       "n": 28,
@@ -505,11 +498,11 @@
       "law": "00000",
       "input": "Kıdem/ihbar/izin çıkış",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Kıdem/ihbar/izin çıkış: DHR net 48076.32 / YZ 48074.49 (Δ 1.83).",
-      "whichCorrect": "YZ hakem (Luca yok)",
-      "legalBasis": "Sapma YZ ile ±0,01 dışında. Luca bu birimde yok; Durum BEKLİYOR."
+      "verdict": "Paket Kıdem/ihbar/izin çıkış: DHR 48.076,32 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 1.291,62). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 29,
@@ -520,11 +513,11 @@
       "law": "00000",
       "input": "Masraf yeri %60/%40",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Masraf yeri %60/%40: DHR net 48074.49 = YZ 48074.49 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Masraf yeri %60/%40: DHR 48.074,49 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 1.289,79). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     },
     {
       "n": 30,
@@ -535,11 +528,11 @@
       "law": "00000",
       "input": "Ücret kesme cezası",
       "dhr": "pass",
-      "luca": "pending",
+      "luca": "pass",
       "ai": "pass",
-      "verdict": "Paket Ücret kesme cezası: DHR net 44707.82 = YZ 44707.82 (±0,01).",
-      "whichCorrect": "YZ ve DHR aynı (±0,01)",
-      "legalBasis": "Ocak 2026 GVK 23/18; 5510; 488; GVGT 322 yemek damga."
+      "verdict": "Paket Ücret kesme cezası: DHR 44.707,82 / Luca 46.784,70 / YZ 44.707,82 (ΔDHR−Luca -2.076,88). Girdi PDF’de görünüyor.",
+      "whichCorrect": "DHR / YZ — nakit yemek damga matrahında değil (GVGT 322). Luca 198,63 basıyor.",
+      "legalBasis": "488 sayılı Damga Vergisi Kanunu; GVGT 322. Luca referans, doğru kabul edilmez."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-18T09:33:10.794Z",
+ "generatedAt": "2026-09-20T13:51:45.079Z",
  "period": "Eylül 2026",
  "unit": "Bordro Laboratuvarı — Ana Kadro (15’lik)",
  "lucaPdfVersion": "bordro_d1_tech (5).pdf",
@@ -36,7 +36,7 @@
  },
  "sources": {
   "lucaPdf": "downloads/bordro_faz1_eylul.pdf",
-  "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 18.09.2026 dhrtest2 yeniden hesap · 15/15 hesaplandı",
+  "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 20.09.2026 dhrtest2 yeniden hesap · 15/15 hesaplandı",
   "aiMevzuat": "mevzuat.json — 193 GVK, 332 GT, 5510, 4447, 488, 7352, 2026 asgari"
  },
  "summary": {
@@ -5921,7 +5921,7 @@
  "aiReport": {
   "month": 9,
   "engine": "YZ — 2026 Türkiye bordro mevzuatı (mevzuat.json)",
-  "disclaimer": "YZ kolonu mevzuat metninden hesaplandı; DHR kolonu https://dhrtest2.d1-tech.com.tr Eylül 2026 Ana Kadro koşumundan geldi (18.09.2026 dhrtest2 yeniden hesap). Luca referanstır, hakem değildir. Durum yalnız Δ DHR−Luca.",
+  "disclaimer": "YZ kolonu mevzuat metninden hesaplandı; DHR kolonu https://dhrtest2.d1-tech.com.tr Eylül 2026 Ana Kadro koşumundan geldi (20.09.2026 dhrtest2 yeniden hesap). Luca referanstır, hakem değildir. Durum yalnız Δ DHR−Luca.",
   "findings": [
    {
     "id": "F1-BES-OK",

@@ -37,7 +37,7 @@ const DED = {
 const ITEM = { gross: "Toplam Kazanç", net: "Net Maaş", gvMatrah: "Gelir Vergisine Tabi Kazanç", sgkBase: "Prime Esas Kazanç" };
 const r2 = (n) => Math.round((Number(n) || 0) * 100) / 100;
 const nz = (v) => (v == null || !Number.isFinite(Number(v)) ? 0 : Number(v));
-const pass = (a, b) => a != null && b != null && Math.abs(a - b) <= 0.01;
+const pass = (a, b) => a != null && b != null && Math.abs(r2((Number(a) || 0) - (Number(b) || 0))) <= 0.01;
 
 function extract(period) {
   const out = {};
@@ -149,23 +149,27 @@ for (const row of cmp.rows) {
   };
   row.lineItems = (row.lineItems || []).map((it) => {
     const dhr = src[it.key] == null ? null : r2(src[it.key]);
+    const lucaVal = it.luca;
     const aiVal = it.ai;
+    const delta = dhr == null || lucaVal == null ? null : r2(dhr - lucaVal);
     const deltaDhrAi = dhr == null || aiVal == null ? null : r2(dhr - aiVal);
+    const deltaLucaAi = lucaVal == null || aiVal == null ? null : r2(lucaVal - aiVal);
     return {
       ...it,
       dhr,
-      luca: null,
-      delta: null,
+      luca: lucaVal,
+      delta,
       deltaDhrAi,
-      deltaLucaAi: null,
-      match: false,
-      matchAi: deltaDhrAi != null && Math.abs(deltaDhrAi) <= 0.01,
+      deltaLucaAi,
+      match: delta != null && Math.abs(delta) <= 0.01,
+      matchAi: deltaDhrAi != null && Math.abs(r2(deltaDhrAi)) <= 0.01,
+      matchLucaAi: deltaLucaAi != null && Math.abs(deltaLucaAi) <= 0.01,
     };
   });
   row.delta = {
-    net: null,
-    gv: null,
-    damga: null,
+    net: row.luca?.net == null ? null : r2(src.net - nz(row.luca.net)),
+    gv: row.luca ? r2(nz(src.gv) - nz(row.luca.gv)) : null,
+    damga: row.luca ? r2(nz(src.damga) - nz(row.luca.damga)) : null,
     netAi: r2(src.net - nz(row.ai?.net)),
     gvAi: r2(nz(src.gv) - nz(row.ai?.gv)),
   };
@@ -206,16 +210,27 @@ cmp.summary.avgAbsNetDeltaAi = withDhr.length
   : null;
 cmp.generatedAt = new Date().toISOString();
 cmp.sources.dhrExcel = `https://dhrtest2.d1-tech.com.tr — Bordro Paket Ocak dump · ${filled}/30 hesaplandı`;
-cmp.ui.lead = `30 kişi, Ada/Serra zemininden yalnız bir sapma. DHR ${filled}/30. Luca yok; hakem YZ. Geçme ±0,01 TL.`;
-cmp.ui.verdict = `Bordro Paket Ocak 2026: DHR ${filled}/30. Ort. |ΔNet DHR−YZ| ${cmp.summary.avgAbsNetDeltaAi ?? "—"} TL. Luca BEKLİYOR.`;
-cmp.ui.personCaption = "Çalışan seç → DHR hesap ve YZ mevzuat neti; Luca yok.";
-
+const lucaLive = cmp.rows.filter((r) => r.luca?.net != null).length;
+cmp.pending.luca = lucaLive === 0;
 const passN = withDhr.filter((r) => pass(r.dhr.net, r.ai?.net)).length;
+if (!lucaLive) {
+  cmp.ui.lead = `30 kişi, Ada/Serra zemininden yalnız bir sapma. DHR ${filled}/30. Luca yok; hakem YZ. Geçme ±0,01 TL.`;
+  cmp.ui.verdict = `Bordro Paket Ocak 2026: DHR ${filled}/30. Ort. |ΔNet DHR−YZ| ${cmp.summary.avgAbsNetDeltaAi ?? "—"} TL. Luca BEKLİYOR.`;
+  cmp.ui.personCaption = "Çalışan seç → DHR hesap ve YZ mevzuat neti; Luca yok.";
+}
 mtx.scenarios = mtx.scenarios.map((s) => {
   const p = roster.people.find((x) => x.name === s.name);
   const row = cmp.rows.find((r) => r.name === s.name);
   const h = hakem(p || { scenario: s.scenario }, row?.dhr, row?.ai);
-  return { ...s, dhr: h.dhr, luca: "pending", ai: "pass", verdict: h.verdict, whichCorrect: h.whichCorrect, legalBasis: h.legalBasis };
+  return {
+    ...s,
+    dhr: h.dhr,
+    luca: lucaLive ? s.luca : "pending",
+    ai: "pass",
+    verdict: lucaLive ? s.verdict : h.verdict,
+    whichCorrect: lucaLive ? s.whichCorrect : h.whichCorrect,
+    legalBasis: lucaLive ? s.legalBasis : h.legalBasis,
+  };
 });
 const hakemPass = mtx.scenarios.filter((s) => s.dhr === "pass").length;
 mtx.checkedItems = mtx.checkedItems.map((c) => {
@@ -227,7 +242,7 @@ mtx.checkedItems = mtx.checkedItems.map((c) => {
     };
   }
   if (c.item === "Luca PDF") {
-    return { ...c, result: "pending", note: "Bu birim için Luca çıktısı yok." };
+    return c;
   }
   return c;
 });
@@ -269,20 +284,24 @@ mtx.correctFindings = [
   "Gizem yol 0 (sabit ödeme tutarı 0; validTo API yok sayılıyor).",
   "Yemek: PEK 21×158, GV/damga 21×300 (GVK 23/8) — DHR ile YZ aynı.",
 ];
-mtx.warnings = [
-  {
-    id: "PK-LUCA",
-    title: "Luca PDF yok",
-    detail: "Durum rozeti BEKLİYOR. Hakem YZ ±0,01.",
-    severity: "info",
-  },
-];
-mtx.sourceOfTruth = `YZ hakem. Luca yok (BEKLİYOR). DHR test2 dump ${filled}/30. Geçme ±0,01 TL.`;
+if (!lucaLive) {
+  mtx.warnings = [
+    {
+      id: "PK-LUCA",
+      title: "Luca PDF yok",
+      detail: "Durum rozeti BEKLİYOR. Hakem YZ ±0,01.",
+      severity: "info",
+    },
+  ];
+  mtx.sourceOfTruth = `YZ hakem. Luca yok (BEKLİYOR). DHR test2 dump ${filled}/30. Geçme ±0,01 TL.`;
+}
 
 const dashPath = path.join(DATA, "dashboard.json");
 const dash = JSON.parse(fs.readFileSync(dashPath, "utf8"));
 let paketPeriod = dash.periods.find((p) => p.id === "paket");
-const paketState = `Hesaplandı · DHR ${filled}/30 · hakem ±0,01 ${passN} · Luca BEKLİYOR`;
+const paketState = lucaLive
+  ? paketPeriod?.state || `Hesaplandı · DHR ${filled}/30 · Luca ${lucaLive}/30`
+  : `Hesaplandı · DHR ${filled}/30 · hakem ±0,01 ${passN} · Luca BEKLİYOR`;
 if (!paketPeriod) {
   dash.periods.push({
     id: "paket",
@@ -306,8 +325,10 @@ function upsert(list, item) {
 
 upsert(dash.works, {
   id: "W-PAKET-OC",
-  title: "Bordro Paket Ocak 2026 hesaplandı (30/30)",
-  detail: `dhrtest2 birim 6301–6330. DHR dump ${filled}/30. YZ net ±0,01 ${passN}/30. Luca yok (BEKLİYOR). Baseline Mine damga 156,88; stajyer Poyraz işveren maliyeti 12.000.`,
+  title: lucaLive ? "Bordro Paket Ocak 2026 DHR + Luca PDF" : "Bordro Paket Ocak 2026 hesaplandı (30/30)",
+  detail: lucaLive
+    ? `dhrtest2 birim 6301–6330. DHR dump ${filled}/30. Luca PDF ${lucaLive}/30.`
+    : `dhrtest2 birim 6301–6330. DHR dump ${filled}/30. YZ net ±0,01 ${passN}/30. Luca yok (BEKLİYOR). Baseline Mine damga 156,88; stajyer Poyraz işveren maliyeti 12.000.`,
   periods: ["Bordro Paket"],
   area: "Kapsam",
 });

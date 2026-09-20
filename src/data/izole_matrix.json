@@ -1,7 +1,7 @@
 {
   "period": "Ocak 2026 · Tek Değişken · DHR × Luca × YZ",
   "environment": "dhrtest2.d1-tech.com.tr · Tek Değişken",
-  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (bordro_d1_tech (27).pdf, 27/27). DHR 18.09.2026 dhrtest2 yeniden hesap 27/27. Geçme ±0,01 TL.",
+  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (bordro_d1_tech (27).pdf, 27/27). DHR 20.09.2026 dhrtest2 yeniden hesap 27/27. Geçme ±0,01 TL.",
   "matrixDesign": {
     "layers": [
       {
@@ -57,6 +57,8 @@
     "Kaan/Leman/Mert sakatlık GV Luca 835,42 / Leman 1.585,42 / Mert 2.185,42.",
     "Seda asgari net 30.010,47 = İK Selin Ocak DHR.",
     "Defne net ücret, Jale SGDP, Nazli kısmi, Oya stajyer, Volkan prim, Yelda ikramiye, Zafer kesinti, Asya masraf, Bora BES, Cemil 185k — her biri Ada’dan ayrı net.",
+    "Ada Korkmaz DHR net 48.074,49 / damga 156,88 (Luca damga 156,88).",
+    "Tolga FM DHR 4.040,00 (IZ-FM-SAAT bu koşumda kapandı).",
     "Ada Korkmaz DHR net 48.074,49 / damga 156,88 (Luca damga 156,88).",
     "Hakan/Isik 4691: GV 0,00, net 50.817,70.",
     "Tolga FM DHR 4.040,00 (IZ-FM-SAAT bu koşumda kapandı)."

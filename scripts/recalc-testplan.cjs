@@ -16,10 +16,16 @@ const ADMIN_PASS = process.env.DHR_PASSWORD;
 const OUT_DIR = path.join(process.env.TEMP, "testplan_recalc");
 const DATA = path.join(__dirname, "..", "src", "data");
 
+const ONLY = (process.env.RECALC_ONLY || "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+
 const TARGETS = [
   { key: "ekim", year: 2026, month: 10, unitNeedles: ["insan kaynak", "ik"], expect: 32, site: "ekim_comparison.json", label: "İK Ekim 2026" },
   { key: "ocak", year: 2026, month: 1, unitNeedles: ["insan kaynak", "ik"], expect: 32, site: "comparison.json", label: "İK Ocak 2026" },
   { key: "izole", year: 2026, month: 1, unitNeedles: ["tek degisken", "tek değişken"], expect: 27, site: "izole_comparison.json", label: "Tek Değişken Ocak 2026" },
+  { key: "paket", year: 2026, month: 1, unitNeedles: ["bordro paket"], expect: 30, site: "paket_comparison.json", label: "Bordro Paket Ocak 2026" },
   { key: "faz1", year: 2026, month: 9, unitNeedles: ["ana kadro"], expect: 15, site: "faz1_comparison.json", label: "Faz 1 Ana Eylül 2026" },
 ];
 
@@ -204,7 +210,7 @@ function diffMaps(before, after, site, label) {
   if (!ADMIN_PASS) throw new Error("DHR_PASSWORD required");
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const browser = await chromium.launch({ headless: true });
-  const page = await (await browser.newContext()).newPage();
+  const page = await (await browser.newContext({ acceptDownloads: true })).newPage();
   await page.goto(BASE + "/login", { waitUntil: "commit", timeout: 60000 });
   await page.waitForSelector("#login_email", { timeout: 30000 });
   await page.fill("#login_email", EMAIL);
@@ -241,7 +247,47 @@ function diffMaps(before, after, site, label) {
     );
   }
 
-  let periods = arr((await api("GET", "/api/PayrollPeriod/list?page=1&pageSize=400")).data);
+  async function getPeriod(id) {
+    const tmp = path.join(OUT_DIR, `_period_${id}.json`);
+    let lastErr;
+    for (let attempt = 0; attempt < 5; attempt++) {
+      try {
+        const [download] = await Promise.all([
+          page.waitForEvent("download", { timeout: 180000 }),
+          page.evaluate(async (periodId) => {
+            await fetch("/api/antiforgery/token", { credentials: "include" }).catch(() => {});
+            const res = await fetch(`/api/PayrollPeriod/${periodId}`, { credentials: "include" });
+            if (!res.ok) throw new Error("HTTP " + res.status);
+            const blob = await res.blob();
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "period.json";
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            setTimeout(() => URL.revokeObjectURL(url), 5000);
+          }, id),
+        ]);
+        await download.saveAs(tmp);
+        const parsed = JSON.parse(fs.readFileSync(tmp, "utf8"));
+        const full = unwrap(parsed);
+        const n = (full?.periodEmployees || []).length;
+        console.log(" GET period", id, "people", n, "bytes", fs.statSync(tmp).size, "try", attempt);
+        if (n > 0) return full;
+        lastErr = new Error("empty periodEmployees");
+      } catch (e) {
+        lastErr = e;
+        console.log(" GET period fail", id, "try", attempt, e.message);
+      }
+      await sleep(8000);
+    }
+    throw lastErr || new Error("getPeriod failed " + id);
+  }
+
+  const list1 = await api("GET", "/api/PayrollPeriod/list?page=1&pageSize=400");
+  let periods = arr(list1.data);
+  console.log("LIST", list1.status, periods.length, String(list1.text).slice(0, 180));
   if (!periods.length) periods = arr((await api("GET", "/api/PayrollPeriod/filteredByUnitAbilities")).data);
   if (!periods.length) periods = arr((await api("GET", "/api/PayrollPeriod/all")).data);
   const slim = periods.map((p) => ({
@@ -259,8 +305,10 @@ function diffMaps(before, after, site, label) {
   for (const p of slim) console.log(" ", p.year, p.month, p.status, p.unit || "-", p.name || "", p.id, "n", p.people);
 
   const report = { runAt: new Date().toISOString(), base: BASE, periods: {} };
+  const runTargets = ONLY.length ? TARGETS.filter((t) => ONLY.includes(t.key)) : TARGETS;
+  console.log("TARGETS", runTargets.map((t) => t.key).join(","));
 
-  for (const t of TARGETS) {
+  for (const t of runTargets) {
     const hits = periods.filter((p) => p.year === t.year && p.month === t.month && t.unitNeedles.some((n) => unitBlob(p).includes(fold(n))));
     const hit = hits.sort((a, b) => (b.periodEmployees?.length || b.employeeCount || 0) - (a.periodEmployees?.length || a.employeeCount || 0))[0];
     if (!hit) {
@@ -269,24 +317,39 @@ function diffMaps(before, after, site, label) {
       continue;
     }
     console.log(`\n=== ${t.label} id=${hit.id} status=${hit.payrollStatus} unit=${hit.organizationalUnitName || hit.organizationalUnit?.name || hit.name}`);
-    const beforeFull = unwrap((await api("GET", `/api/PayrollPeriod/${hit.id}`)).data);
+    const beforeFull = await getPeriod(hit.id);
     const before = extract(beforeFull);
     fs.writeFileSync(path.join(OUT_DIR, `${t.key}_before.json`), JSON.stringify(before, null, 1));
     console.log("people before", Object.keys(before).length, "expect", t.expect);
 
-    const calc = await api("POST", `/api/PayrollPeriod/${hit.id}/calculate`, { onlyStaleEmployees: false });
-    const jobId = unwrap(calc.data)?.jobId;
-    console.log("CALC", calc.status, jobId, String(calc.text).slice(0, 180));
-    let job = null;
-    for (let i = 0; i < 72; i++) {
-      await sleep(5000);
-      job = jobId ? unwrap((await api("GET", `/api/background-jobs/${jobId}`)).data) : null;
-      console.log(" POLL", t.key, i, job?.jobStatus, job?.progressPercent, job?.failedCount);
-      if (job && job.jobStatus > 1) break;
+    let calc = { status: 0, data: null, text: "" };
+    let jobId = null;
+    for (let attempt = 0; attempt < 4 && !jobId; attempt++) {
+      calc = await api("POST", `/api/PayrollPeriod/${hit.id}/calculate`, { onlyStaleEmployees: false });
+      jobId = unwrap(calc.data)?.jobId || null;
+      console.log("CALC", t.key, "try", attempt, calc.status, jobId, String(calc.text).slice(0, 180));
+      if (!jobId) await sleep(15000);
     }
-    const afterFull = unwrap((await api("GET", `/api/PayrollPeriod/${hit.id}`)).data);
+    let job = null;
+    if (jobId) {
+      for (let i = 0; i < 72; i++) {
+        await sleep(5000);
+        try {
+          job = unwrap((await api("GET", `/api/background-jobs/${jobId}`)).data);
+        } catch (e) {
+          console.log(" POLL err", t.key, i, e.message);
+          continue;
+        }
+        console.log(" POLL", t.key, i, job?.jobStatus, job?.progressPercent, job?.failedCount);
+        if (job && job.jobStatus > 1) break;
+      }
+    } else {
+      console.log(" CALC no jobId, skip poll");
+    }
+    const afterFull = await getPeriod(hit.id);
     const after = extract(afterFull);
     fs.writeFileSync(path.join(OUT_DIR, `${t.key}_after.json`), JSON.stringify(after, null, 1));
+    fs.writeFileSync(path.join(OUT_DIR, `${t.key}_full.json`), JSON.stringify(afterFull));
     const site = siteMap(t.site);
     const diffs = diffMaps(before, after, site, t.label);
     report.periods[t.key] = {
@@ -296,6 +359,7 @@ function diffMaps(before, after, site, label) {
       people: Object.keys(after).length,
       jobStatus: job?.jobStatus,
       failedCount: job?.failedCount,
+      calcStatus: calc.status,
       changedVsBefore: diffs.vsBefore.filter((x) => x.fields).length,
       changedVsSite: diffs.vsSite.filter((x) => x.fields).length,
       vsBefore: diffs.vsBefore,

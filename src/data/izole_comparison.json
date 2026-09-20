@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T09:33:10.776Z",
+  "generatedAt": "2026-09-20T13:51:45.067Z",
   "period": "Ocak 2026",
   "unit": "Tek Değişken",
   "lucaPdfVersion": "bordro_d1_tech (27).pdf",
@@ -23,7 +23,7 @@
   },
   "sources": {
     "lucaPdf": "downloads/bordro_tek_degisken.pdf",
-    "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 18.09.2026 dhrtest2 yeniden hesap · 27/27 hesaplandı",
+    "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 20.09.2026 dhrtest2 yeniden hesap · 27/27 hesaplandı",
     "aiMevzuat": "mevzuat.json — 193 GVK, 332 GT, 5510, 4447, 488, 7352, 2026 asgari, 5746/4691"
   },
   "summary": {
