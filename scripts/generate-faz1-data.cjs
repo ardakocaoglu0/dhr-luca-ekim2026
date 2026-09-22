@@ -624,7 +624,7 @@ const PEOPLE = [
 for (let i = 1; i <= 100; i++) {
   const n = String(i).padStart(2, "0");
   const sicil = 8100 + i;
-  const addon = Number((0.005 + ((i - 1) % 5) * 0.001).toFixed(3));
+  const addon = Number((0.05 + ((i - 1) % 5) * 0.01).toFixed(2));
   PEOPLE.push(
     person({
       sicil,
@@ -638,7 +638,7 @@ for (let i = 1; i <= 100; i++) {
       roundingAddon: addon,
       edge: i === 1 ? ["EDGE-037", "EDGE-048"] : i === 2 ? ["EDGE-037", "EDGE-047"] : ["EDGE-037"],
       pay: i <= 5 ? ["PAY-HSP-021"] : [],
-      note: `Aynı brüt + ${addon.toFixed(3)} TL kırılımlı kalem. Luca 5 örnek + HSP-021.`,
+      note: `Aynı brüt + ${addon.toFixed(2)} TL (Luca 2 hane). Luca 5 örnek + HSP-021.`,
       seedFlags: {
         roundingSample: i <= 5,
         bulkSwitchSgdp: i === 2,

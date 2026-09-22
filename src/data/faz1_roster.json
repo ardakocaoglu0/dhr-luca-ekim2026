@@ -4314,7 +4314,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4328,7 +4328,7 @@
         "EDGE-037",
         "EDGE-048"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": true,
         "bulkSwitchSgdp": false,
@@ -4370,7 +4370,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4384,7 +4384,7 @@
         "EDGE-037",
         "EDGE-047"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": true,
         "bulkSwitchSgdp": true,
@@ -4426,7 +4426,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4439,7 +4439,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": true,
         "bulkSwitchSgdp": false,
@@ -4481,7 +4481,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4494,7 +4494,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": true,
         "bulkSwitchSgdp": false,
@@ -4536,7 +4536,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4549,7 +4549,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": true,
         "bulkSwitchSgdp": false,
@@ -4591,7 +4591,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4602,7 +4602,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -4644,7 +4644,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4655,7 +4655,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -4697,7 +4697,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4708,7 +4708,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -4750,7 +4750,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4761,7 +4761,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -4803,7 +4803,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4814,7 +4814,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -4856,7 +4856,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4867,7 +4867,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -4909,7 +4909,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4920,7 +4920,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -4962,7 +4962,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -4973,7 +4973,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5015,7 +5015,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5026,7 +5026,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5068,7 +5068,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5079,7 +5079,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5121,7 +5121,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5132,7 +5132,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5174,7 +5174,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5185,7 +5185,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5227,7 +5227,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5238,7 +5238,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5280,7 +5280,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5291,7 +5291,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5333,7 +5333,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5344,7 +5344,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5386,7 +5386,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5397,7 +5397,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5439,7 +5439,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5450,7 +5450,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5492,7 +5492,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5503,7 +5503,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5545,7 +5545,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5556,7 +5556,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5598,7 +5598,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5609,7 +5609,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5651,7 +5651,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5662,7 +5662,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5704,7 +5704,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5715,7 +5715,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5757,7 +5757,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5768,7 +5768,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5810,7 +5810,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5821,7 +5821,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5863,7 +5863,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5874,7 +5874,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5916,7 +5916,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5927,7 +5927,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -5969,7 +5969,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -5980,7 +5980,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6022,7 +6022,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6033,7 +6033,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6075,7 +6075,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6086,7 +6086,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6128,7 +6128,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6139,7 +6139,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6181,7 +6181,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6192,7 +6192,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6234,7 +6234,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6245,7 +6245,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6287,7 +6287,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6298,7 +6298,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6340,7 +6340,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6351,7 +6351,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6393,7 +6393,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6404,7 +6404,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6446,7 +6446,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6457,7 +6457,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6499,7 +6499,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6510,7 +6510,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6552,7 +6552,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6563,7 +6563,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6605,7 +6605,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6616,7 +6616,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6658,7 +6658,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6669,7 +6669,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6711,7 +6711,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6722,7 +6722,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6764,7 +6764,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6775,7 +6775,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6817,7 +6817,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6828,7 +6828,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6870,7 +6870,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6881,7 +6881,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6923,7 +6923,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6934,7 +6934,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -6976,7 +6976,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -6987,7 +6987,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7029,7 +7029,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7040,7 +7040,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7082,7 +7082,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7093,7 +7093,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7135,7 +7135,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7146,7 +7146,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7188,7 +7188,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7199,7 +7199,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7241,7 +7241,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7252,7 +7252,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7294,7 +7294,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7305,7 +7305,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7347,7 +7347,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7358,7 +7358,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7400,7 +7400,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7411,7 +7411,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7453,7 +7453,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7464,7 +7464,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7506,7 +7506,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7517,7 +7517,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7559,7 +7559,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7570,7 +7570,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7612,7 +7612,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7623,7 +7623,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7665,7 +7665,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7676,7 +7676,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7718,7 +7718,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7729,7 +7729,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7771,7 +7771,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7782,7 +7782,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7824,7 +7824,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7835,7 +7835,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7877,7 +7877,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7888,7 +7888,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7930,7 +7930,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7941,7 +7941,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -7983,7 +7983,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -7994,7 +7994,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8036,7 +8036,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8047,7 +8047,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8089,7 +8089,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8100,7 +8100,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8142,7 +8142,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8153,7 +8153,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8195,7 +8195,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8206,7 +8206,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8248,7 +8248,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8259,7 +8259,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8301,7 +8301,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8312,7 +8312,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8354,7 +8354,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8365,7 +8365,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8407,7 +8407,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8418,7 +8418,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8460,7 +8460,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8471,7 +8471,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8513,7 +8513,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8524,7 +8524,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8566,7 +8566,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8577,7 +8577,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8619,7 +8619,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8630,7 +8630,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8672,7 +8672,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8683,7 +8683,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8725,7 +8725,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8736,7 +8736,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8778,7 +8778,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8789,7 +8789,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8831,7 +8831,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8842,7 +8842,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8884,7 +8884,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8895,7 +8895,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8937,7 +8937,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -8948,7 +8948,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -8990,7 +8990,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9001,7 +9001,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9043,7 +9043,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9054,7 +9054,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9096,7 +9096,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9107,7 +9107,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9149,7 +9149,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9160,7 +9160,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9202,7 +9202,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9213,7 +9213,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9255,7 +9255,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9266,7 +9266,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9308,7 +9308,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9319,7 +9319,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9361,7 +9361,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.005,
+      "roundingAddon": 0.05,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9372,7 +9372,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.005 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.05 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9414,7 +9414,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.006,
+      "roundingAddon": 0.06,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9425,7 +9425,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.006 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.06 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9467,7 +9467,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.007,
+      "roundingAddon": 0.07,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9478,7 +9478,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.007 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.07 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9520,7 +9520,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.008,
+      "roundingAddon": 0.08,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9531,7 +9531,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.008 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.08 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
@@ -9573,7 +9573,7 @@
       "overtimeGrossHours": 0,
       "overtimeNetHours": 0,
       "overtimeNetTl": 0,
-      "roundingAddon": 0.009,
+      "roundingAddon": 0.09,
       "leaves": [],
       "overtimeAttempts": [],
       "skipSgk": false,
@@ -9584,7 +9584,7 @@
       "edge": [
         "EDGE-037"
       ],
-      "note": "Aynı brüt + 0.009 TL kırılımlı kalem. Luca 5 örnek + HSP-021.",
+      "note": "Aynı brüt + 0.09 TL (Luca 2 hane). Luca 5 örnek + HSP-021.",
       "seedFlags": {
         "roundingSample": false,
         "bulkSwitchSgdp": false,
