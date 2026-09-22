@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#080d18"/>
+  <rect x="1" y="1" width="30" height="30" rx="6" fill="none" stroke="#2a3852"/>
+  <text x="16" y="22" text-anchor="middle" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#38bdf8">B</text>
+  <rect x="7" y="25" width="5" height="2" rx="1" fill="#34d399"/>
+  <rect x="13.5" y="25" width="5" height="2" rx="1" fill="#9cabc1"/>
+  <rect x="20" y="25" width="5" height="2" rx="1" fill="#38bdf8"/>
+</svg>
