@@ -126,6 +126,7 @@ export type CompareRow = {
     bes?: number;
     netAi?: number;
     gvAi?: number;
+    netLucaAi?: number | null;
   } | null;
   lineItems?: LineItem[];
 };

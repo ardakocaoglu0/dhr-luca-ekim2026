@@ -11,6 +11,8 @@ import ekimMatrix from "./data/ekim_matrix.json";
 import faz1 from "./data/faz1_comparison.json";
 import faz1Matrix from "./data/faz1_matrix.json";
 import faz1Roster from "./data/faz1_roster.json";
+import yuvarlama from "./data/yuvarlama_comparison.json";
+import yuvarlamaMatrix from "./data/yuvarlama_matrix.json";
 import izole from "./data/izole_comparison.json";
 import izoleMatrix from "./data/izole_matrix.json";
 import paket from "./data/paket_comparison.json";
@@ -92,6 +94,8 @@ export default function App() {
           roster={faz1Roster as Faz1Roster}
           comparison={faz1 as ComparisonData}
           matrix={faz1Matrix as MatrixData}
+          yuvarlamaComparison={yuvarlama as ComparisonData}
+          yuvarlamaMatrix={yuvarlamaMatrix as MatrixData}
         />
       ) : (
         <LoginsView data={logins as LoginsData} />

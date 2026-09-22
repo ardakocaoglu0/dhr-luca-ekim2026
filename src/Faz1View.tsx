@@ -7,12 +7,14 @@ import type { Faz1DhrLab, Faz1LabCard, Faz1Person, Faz1Roster } from "./faz1Type
 import dhrLab from "./data/faz1_dhr_lab.json";
 import { Section, Tags } from "./ui";
 
-type SubTab = "manuel" | "kadro" | "eslemeler" | "kosum" | "yz";
+type SubTab = "manuel" | "kadro" | "eslemeler" | "kosum" | "yz" | "yuv";
 
 type Props = {
   roster: Faz1Roster;
   comparison: ComparisonData;
   matrix: MatrixData;
+  yuvarlamaComparison: ComparisonData;
+  yuvarlamaMatrix: MatrixData;
 };
 
 const UNIT_LABEL: Record<string, string> = {
@@ -103,11 +105,12 @@ function PersonRow({ p }: { p: Faz1Person }) {
   );
 }
 
-export default function Faz1View({ roster, comparison, matrix }: Props) {
+export default function Faz1View({ roster, comparison, matrix, yuvarlamaComparison, yuvarlamaMatrix }: Props) {
   const [unit, setUnit] = useState("all");
   const [q, setQ] = useState("");
   const [tab, setTab] = useState<SubTab>("yz");
   const hasCompare = (comparison.rows || []).length > 0;
+  const hasYuv = (yuvarlamaComparison.rows || []).length > 0;
 
   const unitCounts = useMemo(() => {
     const map = new Map<string, number>();
@@ -133,6 +136,7 @@ export default function Faz1View({ roster, comparison, matrix }: Props) {
 
   const subTabs: { id: SubTab; label: string; count?: number }[] = [
     { id: "yz", label: "Luca YZ DHR karşılaştırma", count: hasCompare ? comparison.rows.length : undefined },
+    { id: "yuv", label: "Yuvarlama Luca YZ DHR", count: hasYuv ? yuvarlamaComparison.rows.length : roster.counts.yuvarlama },
     { id: "manuel", label: "Manuel dene", count: lab.ready.length + lab.manual.length },
     { id: "kadro", label: "Kadro", count: roster.people.length },
     { id: "eslemeler", label: "Eşlemeler", count: tvEntries.length + edgeEntries.length },
@@ -140,7 +144,7 @@ export default function Faz1View({ roster, comparison, matrix }: Props) {
   ];
 
   // The YZ tab renders its own hero and stats; the lab header would only repeat it.
-  const showLabHeader = tab !== "yz";
+  const showLabHeader = tab !== "yz" && tab !== "yuv";
 
   return (
     <div className="page">
@@ -352,6 +356,18 @@ export default function Faz1View({ roster, comparison, matrix }: Props) {
               {comparison.ui?.verdict || "Export henüz yok."} İK karşılaştırması Ekim ve Ocak
               sekmelerinde kalır.
             </p>
+          </section>
+        ))}
+
+      {tab === "yuv" &&
+        (hasYuv ? (
+          <div id="yuv-karsilastirma">
+            <AppView data={yuvarlamaComparison} matrix={yuvarlamaMatrix} />
+          </div>
+        ) : (
+          <section className="panel">
+            <h2>Yuvarlama — DHR × Luca × YZ</h2>
+            <p className="muted">Yuvarlama 100 karşılaştırma verisi henüz yok.</p>
           </section>
         ))}
     </div>
