@@ -908,9 +908,9 @@ tbody tr.group-divider:hover td {
   overflow: visible;
 }
 
+.matrix-table td:nth-child(10),
 .matrix-table td:nth-child(11),
-.matrix-table td:nth-child(12),
-.matrix-table td:nth-child(13) {
+.matrix-table td:nth-child(12) {
   width: 18%;
 }
 

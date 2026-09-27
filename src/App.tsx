@@ -6,6 +6,22 @@ import { Delta, Money, PendingTag, Section, SectionNav } from "./ui";
 
 type Props = { data: ComparisonData; matrix: MatrixData };
 
+const PASS = 0.01;
+
+function netStatus(
+  dhrNet: number | null | undefined,
+  otherNet: number | null | undefined,
+  otherMissing = false,
+): "pass" | "fail" | "pending" {
+  if (otherMissing || otherNet == null || !Number.isFinite(Number(otherNet))) return "pending";
+  if (dhrNet == null || !Number.isFinite(Number(dhrNet))) return "pending";
+  return Math.abs(Number(dhrNet) - Number(otherNet)) <= PASS ? "pass" : "fail";
+}
+
+function scenarioCompare(rows: CompareRow[], s: { n: number; name: string }) {
+  return rows.find((r) => r.name === s.name) || rows.find((r) => r.n === s.n);
+}
+
 export default function AppView({ data, matrix }: Props) {
   const lucaPending = !!data.pending?.luca;
   const dhrPending = !!data.pending?.dhr;
@@ -108,7 +124,7 @@ export default function AppView({ data, matrix }: Props) {
           id="scenarios"
           collapsible={false}
           title={`Test edilen senaryolar (${matrix.scenarios.length})`}
-          caption="DHR / Luca / YZ. Geçme ±0,01 TL. Luca referanstır, doğru kabul edilmez. Bekleyen kaynak kolon başlığında bir kez işaretlenir."
+          caption="Luca ve YZ, DHR neti ile ±0,01 TL. Eşleşirse OK, saparsa FAIL. Luca yoksa BEKLİYOR. Luca referanstır, doğru kabul edilmez."
         >
           <div className="table-scroll flow">
             <table className="matrix-table">
@@ -120,7 +136,6 @@ export default function AppView({ data, matrix }: Props) {
                 <col className="col-profile" />
                 <col className="col-law" />
                 <col className="col-input" />
-                <col className="col-badge" />
                 <col className="col-badge" />
                 <col className="col-badge" />
                 <col className="col-verdict" />
@@ -135,8 +150,8 @@ export default function AppView({ data, matrix }: Props) {
                   <th className="left" colSpan={4}>
                     Senaryo
                   </th>
-                  <th className="center col-sep" colSpan={3}>
-                    Sonuç ±0,01 TL
+                  <th className="center col-sep" colSpan={2}>
+                    Sonuç ±0,01 TL (vs DHR)
                   </th>
                   <th className="left col-sep" colSpan={3}>
                     Sapma hakemi
@@ -151,10 +166,6 @@ export default function AppView({ data, matrix }: Props) {
                   <th className="center">Kanun</th>
                   <th className="center">Girdi</th>
                   <th className="center col-sep">
-                    DHR
-                    <PendingTag show={dhrPending} />
-                  </th>
-                  <th className="center">
                     Luca
                     <PendingTag show={lucaPending} label="Luca bilgisi bekleniyor" />
                   </th>
@@ -165,8 +176,13 @@ export default function AppView({ data, matrix }: Props) {
                 </tr>
               </thead>
               <tbody>
-                {matrix.scenarios.map((s) => (
-                  <tr key={s.n} className={toneOf(lucaPending ? s.ai || "pending" : s.luca)}>
+                {matrix.scenarios.map((s) => {
+                  const row = scenarioCompare(rows, s);
+                  const lucaSt = netStatus(row?.dhr?.net, row?.luca?.net, lucaPending || !!row?.lucaPending);
+                  const yzSt = netStatus(row?.dhr?.net, row?.ai?.net);
+                  const rowTone = lucaSt === "fail" || yzSt === "fail" ? "fail" : lucaSt === "pending" && yzSt === "pending" ? "pending" : "pass";
+                  return (
+                  <tr key={s.n} className={toneOf(rowTone)}>
                     <td className="center sticky-col">{s.n}</td>
                     <td className="center sticky-col-2">{s.group}</td>
                     <td className="left sticky-col-3 sticky-edge">{s.name}</td>
@@ -175,19 +191,17 @@ export default function AppView({ data, matrix }: Props) {
                     <td className="center">{s.law}</td>
                     <td className="center">{s.input}</td>
                     <td className="center col-sep">
-                      <Badge status={dhrPending ? "pending" : s.dhr} />
+                      <Badge status={lucaSt} pendingLabel="Luca bilgisi bekleniyor" />
                     </td>
                     <td className="center">
-                      <Badge status={lucaPending ? "pending" : s.luca} pendingLabel="Luca bilgisi bekleniyor" />
-                    </td>
-                    <td className="center">
-                      <Badge status={s.ai || "pass"} />
+                      <Badge status={yzSt} />
                     </td>
                     <td className="note left col-sep">{s.verdict}</td>
                     <td className="note left">{s.whichCorrect || "—"}</td>
                     <td className="note left">{s.legalBasis || "—"}</td>
                   </tr>
-                ))}
+                  );
+                })}
               </tbody>
             </table>
           </div>

@@ -289,9 +289,9 @@ function patchMatrix(file, data, lucaWait) {
   for (const s of mtx.scenarios || []) {
     const row = data.rows.find((r) => r.name === s.name || String(r.tc) === String(s.n) || String(r.sicil) === String(s.n));
     const dhrReady = row?.dhr?.net != null;
-    s.dhr = dhrReady ? (Math.abs(nz(row.delta?.netAi)) <= PASS ? "pass" : "fail") : "pending";
-    if (lucaWait) s.luca = "pending";
-    s.ai = "pass";
+    s.dhr = dhrReady ? "pass" : "pending";
+    s.luca = lucaWait || row?.luca?.net == null ? "pending" : Math.abs(nz(row.delta?.net)) <= PASS ? "pass" : "fail";
+    s.ai = dhrReady && row?.ai?.net != null ? (Math.abs(nz(row.delta?.netAi)) <= PASS ? "pass" : "fail") : "pending";
     if (lucaWait) {
       s.verdict = dhrReady
         ? `DHR net ${tr(row.dhr.net)} · Luca bilgisi bekleniyor · YZ ${tr(row.ai?.net)} · ΔDHR−YZ ${tr(row.delta?.netAi)}`
