@@ -267,6 +267,11 @@ function netPassAi(data) {
 }
 
 function stampWaitingLuca(data, file, indent) {
+  const lucaLive = data.rows.filter((r) => r.luca?.net != null).length;
+  if (lucaLive > 0) {
+    writeJson(path.join(DATA, file), data, indent);
+    return;
+  }
   data.pending = { luca: true, dhr: !!data.pending?.dhr };
   for (const row of data.rows) row.lucaPending = true;
   const n = data.rows.length;
@@ -656,10 +661,10 @@ stampWaitingLuca(operasyon, "operasyon_comparison.json", 2);
 stampWaitingLuca(kenar, "kenar_comparison.json", 2);
 stampWaitingLuca(takvim, "takvim_comparison.json", 2);
 stampWaitingLuca(blokaj, "blokaj_comparison.json", 2);
-patchMatrix("operasyon_matrix.json", operasyon, true);
-patchMatrix("kenar_matrix.json", kenar, true);
-patchMatrix("takvim_matrix.json", takvim, true);
-patchMatrix("blokaj_matrix.json", blokaj, true);
+patchMatrix("operasyon_matrix.json", operasyon, !(operasyon.summary.lucaCount > 0));
+patchMatrix("kenar_matrix.json", kenar, !(kenar.summary.lucaCount > 0));
+patchMatrix("takvim_matrix.json", takvim, !(takvim.summary.lucaCount > 0));
+patchMatrix("blokaj_matrix.json", blokaj, !(blokaj.summary.lucaCount > 0));
 
 // ---- dashboard -------------------------------------------------------------
 const dash = readJson(path.join(DATA, "dashboard.json"));
@@ -703,8 +708,11 @@ upsertPeriod("kenar", {
   label: "Eylül 2026 — Kenar",
   unit: "Kenar Durumlar",
   people: kenar.rows.length,
-  state: `DHR ${kenar.summary.dhrCount}/${kenar.rows.length} · Luca bilgisi bekleniyor · YZ ${kenar.summary.aiCount}`,
-  compare: "DHR × YZ (Luca bilgisi bekleniyor)",
+  state:
+    (kenar.summary.lucaCount || 0) > 0
+      ? `Hesaplandı · DHR ${kenar.summary.dhrCount}/${kenar.rows.length} · Luca ${kenar.summary.lucaCount}/${kenar.rows.length} · ±0,01 ${kenar.summary.netPass001 || 0}/${kenar.summary.matched || kenar.rows.length}`
+      : `DHR ${kenar.summary.dhrCount}/${kenar.rows.length} · Luca bilgisi bekleniyor · YZ ${kenar.summary.aiCount}`,
+  compare: (kenar.summary.lucaCount || 0) > 0 ? "DHR × Luca × YZ" : "DHR × YZ (Luca bilgisi bekleniyor)",
 });
 upsertPeriod("takvim", {
   label: "Eylül 2026 — Takvim",

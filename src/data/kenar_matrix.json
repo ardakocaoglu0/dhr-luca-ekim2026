@@ -1,7 +1,7 @@
 {
-  "period": "Eylül 2026 · Kenar Durumlar · DHR × YZ (Luca bilgisi bekleniyor)",
+  "period": "Eylül 2026 · Kenar Durumlar · DHR × Luca × YZ",
   "environment": "dhrtest2.d1-tech.com.tr · Kenar Durumlar",
-  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (PDF yok — Luca bilgisi bekleniyor). DHR UI/API. Geçme ±0,01 TL.",
+  "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (2).pdf, 53/53). DHR 53/53. Geçme ±0,01 TL. Durum = DHR−Luca.",
   "matrixDesign": {
     "layers": [
       {
@@ -15,7 +15,7 @@
         "desc": "Eylül 2026 asgari GV istisnası 5.615,10. Aylık izole."
       }
     ],
-    "notFullCombinatorial": "Luca PDF yok. Durum kolonu Luca gelene kadar BEKLİYOR."
+    "notFullCombinatorial": "Luca PDF bordro_d1_tech (2).pdf 53/53. Durum = DHR−Luca."
   },
   "checkedItems": [
     {
@@ -26,7 +26,7 @@
     {
       "item": "Luca hakem değil",
       "result": "pass",
-      "note": "Luca bilgisi bekleniyor; hakem YZ."
+      "note": "Luca referans, hakem YZ."
     },
     {
       "item": "DHR Eylül 2026 hesap",
@@ -35,11 +35,14 @@
     },
     {
       "item": "Luca PDF",
-      "result": "fail",
-      "note": "Luca bilgisi bekleniyor."
+      "result": "pass",
+      "note": "bordro_d1_tech (2).pdf: 53/53. DHR net ±0,01: 0/53."
     }
   ],
-  "correctFindings": [],
+  "correctFindings": [
+    "Luca PDF bordro_d1_tech (2).pdf 53/53 işlendi.",
+    "DHR×Luca ±0,01 0/53. Ort. |ΔNet| 3.365,21."
+  ],
   "dhrBugs": [],
   "warnings": [],
   "scenarios": [
@@ -52,10 +55,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 57.598,11 · Luca bilgisi bekleniyor · YZ 56.030,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 57.598,11 / Luca 56.194,34 / YZ 56.030,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -67,10 +70,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.998,11 · Luca bilgisi bekleniyor · YZ 55.430,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.998,11 / Luca 55.594,34 / YZ 55.430,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -82,10 +85,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -97,10 +100,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -112,10 +115,10 @@
       "law": "15746",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -127,10 +130,10 @@
       "law": "05746",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -142,10 +145,10 @@
       "law": "05510 %5",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -157,10 +160,10 @@
       "law": "00000",
       "input": "Net FM 5000",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 53.745,50 · Luca bilgisi bekleniyor · YZ 47.831,02 · ΔDHR−YZ 5.914,48",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 53.745,50 / Luca 52.787,71 / YZ 47.831,02 (ΔDHR−Luca 957,79)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -172,10 +175,10 @@
       "law": "YABANCI",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -187,10 +190,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -202,10 +205,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -217,10 +220,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -232,10 +235,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -247,10 +250,10 @@
       "law": "00000",
       "input": "Prim 40000",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 170.933,71 · Luca bilgisi bekleniyor · YZ 169.145,97 · ΔDHR−YZ 1.787,74",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 170.933,71 / Luca 169.529,94 / YZ 169.145,97 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -262,10 +265,10 @@
       "law": "00000",
       "input": "Net FM 1500",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 61.245,50 · Luca bilgisi bekleniyor · YZ 53.192,84 · ΔDHR−YZ 8.052,66",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 61.245,50 / Luca 63.007,00 / YZ 53.192,84 (ΔDHR−Luca -1.761,50)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -277,10 +280,10 @@
       "law": "00000",
       "input": "Avans 2500",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 51.652,11 · Luca bilgisi bekleniyor · YZ 47.419,12 · ΔDHR−YZ 4.232,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 51.652,11 / Luca 50.844,34 / YZ 47.419,12 (ΔDHR−Luca 807,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -292,10 +295,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -307,10 +310,10 @@
       "law": "05510 %2",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -322,10 +325,10 @@
       "law": "05510 %2",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -337,10 +340,10 @@
       "law": "05746",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -352,10 +355,10 @@
       "law": "05746",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -367,10 +370,10 @@
       "law": "05746",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 57.598,11 · Luca bilgisi bekleniyor · YZ 56.030,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 57.598,11 / Luca 107.173,33 / YZ 56.030,12 (ΔDHR−Luca -49.575,22)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -382,10 +385,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -397,10 +400,10 @@
       "law": "STAJ",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 18.000,00 · Luca bilgisi bekleniyor · YZ 17.100,00 · ΔDHR−YZ 900,00",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 18.000,00 / Luca 23.520,00 / YZ 17.100,00 (ΔDHR−Luca -5.520,00)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -412,10 +415,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -427,10 +430,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.998,11 · Luca bilgisi bekleniyor · YZ 55.430,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.998,11 / Luca 55.144,34 / YZ 55.430,12 (ΔDHR−Luca 1.853,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -442,10 +445,10 @@
       "law": "YABANCI",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -457,10 +460,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -472,10 +475,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -487,10 +490,10 @@
       "law": "00000",
       "input": "Çıkış 10.09",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -502,10 +505,10 @@
       "law": "00000",
       "input": "BES %3",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 15.129,64 · Luca bilgisi bekleniyor · YZ 52.919,12 · ΔDHR−YZ -37.789,48",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 15.129,64 / Luca 47.356,63 / YZ 52.919,12 (ΔDHR−Luca -32.226,99)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -517,10 +520,10 @@
       "law": "00000",
       "input": "BES %3",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 54.652,11 · Luca bilgisi bekleniyor · YZ 52.919,12 · ΔDHR−YZ 1.732,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 54.652,11 / Luca 55.144,34 / YZ 52.919,12 (ΔDHR−Luca -492,23)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -532,10 +535,10 @@
       "law": "00000",
       "input": "BES %3",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 52.919,12 · ΔDHR−YZ 3.628,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 52.919,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -547,10 +550,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 52.856,63 / YZ 54.980,12 (ΔDHR−Luca 3.691,48)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -562,10 +565,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 57.120,04 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 2.139,92",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 57.120,04 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.975,70)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -577,10 +580,10 @@
       "law": "00000",
       "input": "Avans 55000",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ -19,88 · ΔDHR−YZ 56.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ -19,88 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -592,10 +595,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -607,10 +610,10 @@
       "law": "00000",
       "input": "Avans 1500",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 55.798,11 · Luca bilgisi bekleniyor · YZ 52.730,12 · ΔDHR−YZ 3.067,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 55.798,11 / Luca 55.144,34 / YZ 52.730,12 (ΔDHR−Luca 653,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -622,10 +625,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -637,10 +640,10 @@
       "law": "05746",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -652,10 +655,10 @@
       "law": "00000",
       "input": "report",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -667,10 +670,10 @@
       "law": "00000",
       "input": "Giriş 21.09",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 17.747,27 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ -37.232,85",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 17.747,27 / Luca 25.220,00 / YZ 54.980,12 (ΔDHR−Luca -7.472,73)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -682,10 +685,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -697,10 +700,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 54.112,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ -868,01",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 54.112,11 / Luca 52.708,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -712,10 +715,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -727,10 +730,10 @@
       "law": "00000",
       "input": "Prim 25000",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 63.718,02 · Luca bilgisi bekleniyor · YZ 72.852,87 · ΔDHR−YZ -9.134,85",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 63.718,02 / Luca 55.144,34 / YZ 72.852,87 (ΔDHR−Luca 8.573,68)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -742,10 +745,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -757,10 +760,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -772,10 +775,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -787,10 +790,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -802,10 +805,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 47.356,63 / YZ 54.980,12 (ΔDHR−Luca 9.191,48)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -817,10 +820,10 @@
       "law": "05510 %2",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -832,10 +835,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     }
   ]

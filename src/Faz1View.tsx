@@ -1,13 +1,11 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import AppView from "./App";
 import type { ComparisonData } from "./types";
-import { tr0 } from "./types";
 import type { MatrixData } from "./matrixTypes";
-import type { Faz1DhrLab, Faz1LabCard, Faz1Person, Faz1Roster } from "./faz1Types";
+import type { Faz1DhrLab, Faz1LabCard, Faz1Roster } from "./faz1Types";
 import dhrLab from "./data/faz1_dhr_lab.json";
-import { Section, Tags } from "./ui";
 
-type SubTab = "manuel" | "kadro" | "eslemeler" | "kosum" | "yz" | "yuv" | "op" | "kenar" | "takvim" | "blokaj";
+type SubTab = "manuel" | "yz" | "yuv" | "op" | "kenar" | "takvim" | "blokaj";
 
 type Props = {
   roster: Faz1Roster;
@@ -23,17 +21,6 @@ type Props = {
   takvimMatrix: MatrixData;
   blokajComparison: ComparisonData;
   blokajMatrix: MatrixData;
-};
-
-const UNIT_LABEL: Record<string, string> = {
-  lab: "Laboratuvar",
-  ana: "Ana Kadro",
-  operasyon: "Operasyon",
-  kenar: "Kenar",
-  yuvarlama: "Yuvarlama",
-  takvim: "Takvim",
-  blokaj: "Blokaj",
-  "sirket-b": "Şirket B",
 };
 
 function LabCard({ card }: { card: Faz1LabCard }) {
@@ -86,33 +73,6 @@ function LabCard({ card }: { card: Faz1LabCard }) {
   );
 }
 
-function PersonRow({ p }: { p: Faz1Person }) {
-  return (
-    <tr>
-      <td className="mono sticky-col sticky-edge">{p.sicil}</td>
-      <td className="left">
-        <div>{p.name}</div>
-        <div className="muted small">{p.email}</div>
-      </td>
-      <td>{UNIT_LABEL[p.unit] || p.unit}</td>
-      <td>{p.profile}</td>
-      <td className="num mono">{tr0(p.maas)}</td>
-      <td className="small">
-        <Tags items={p.tv} />
-      </td>
-      <td className="small">
-        <Tags items={p.pay} />
-      </td>
-      <td className="small">
-        <Tags items={p.edge} />
-      </td>
-      <td className="small clamp2">
-        <span title={p.note}>{p.note}</span>
-      </td>
-    </tr>
-  );
-}
-
 export default function Faz1View({
   roster,
   comparison,
@@ -128,8 +88,6 @@ export default function Faz1View({
   blokajComparison,
   blokajMatrix,
 }: Props) {
-  const [unit, setUnit] = useState("all");
-  const [q, setQ] = useState("");
   const [tab, setTab] = useState<SubTab>("yz");
   const hasCompare = (comparison.rows || []).length > 0;
   const hasYuv = (yuvarlamaComparison.rows || []).length > 0;
@@ -137,40 +95,16 @@ export default function Faz1View({
   const hasKenar = (kenarComparison.rows || []).length > 0;
   const hasTakvim = (takvimComparison.rows || []).length > 0;
   const hasBlokaj = (blokajComparison.rows || []).length > 0;
-
-  const unitCounts = useMemo(() => {
-    const map = new Map<string, number>();
-    roster.people.forEach((p) => map.set(p.unit, (map.get(p.unit) || 0) + 1));
-    return map;
-  }, [roster.people]);
-
-  const people = useMemo(() => {
-    const needle = q.trim().toLocaleLowerCase("tr");
-    return roster.people.filter((p) => {
-      if (unit !== "all" && p.unit !== unit) return false;
-      if (!needle) return true;
-      const hay = [p.sicil, p.name, p.email, p.profile, p.note, ...(p.tv || []), ...(p.pay || []), ...(p.edge || [])]
-        .join(" ")
-        .toLocaleLowerCase("tr");
-      return hay.includes(needle);
-    });
-  }, [roster.people, unit, q]);
-
-  const tvEntries = Object.entries(roster.tvMap).sort(([a], [b]) => a.localeCompare(b, "tr"));
-  const edgeEntries = Object.entries(roster.edgeMap).sort(([a], [b]) => a.localeCompare(b, "tr"));
   const lab = dhrLab as Faz1DhrLab;
 
   const subTabs: { id: SubTab; label: string; count?: number }[] = [
     { id: "yz", label: "Ana Kadro DHR × Luca × YZ", count: hasCompare ? comparison.rows.length : undefined },
     { id: "yuv", label: "Yuvarlama DHR × Luca × YZ", count: hasYuv ? yuvarlamaComparison.rows.length : roster.counts.yuvarlama },
     { id: "op", label: "Operasyon DHR × YZ", count: hasOp ? operasyonComparison.rows.length : roster.counts.operasyon },
-    { id: "kenar", label: "Kenar DHR × YZ", count: hasKenar ? kenarComparison.rows.length : roster.counts.kenar },
+    { id: "kenar", label: "Kenar DHR × Luca × YZ", count: hasKenar ? kenarComparison.rows.length : roster.counts.kenar },
     { id: "takvim", label: "Takvim DHR × YZ", count: hasTakvim ? takvimComparison.rows.length : roster.counts.takvim },
     { id: "blokaj", label: "Blokaj DHR × YZ", count: hasBlokaj ? blokajComparison.rows.length : roster.counts.blokaj },
     { id: "manuel", label: "Manuel dene", count: lab.ready.length + lab.manual.length },
-    { id: "kadro", label: "Kadro", count: roster.people.length },
-    { id: "eslemeler", label: "Eşlemeler", count: tvEntries.length + edgeEntries.length },
-    { id: "kosum", label: "Koşum", count: roster.kosumOrder.length },
   ];
 
   const compareTabs: SubTab[] = ["yz", "yuv", "op", "kenar", "takvim", "blokaj"];
@@ -251,129 +185,6 @@ export default function Faz1View({
       </section>
       )}
 
-      {tab === "kadro" && (
-      <section id="kadro" className="panel">
-        <div className="card-head">
-          <h2>Kadro</h2>
-          <div className="faz1-filters">
-            <label>
-              Birim
-              <select value={unit} onChange={(e) => setUnit(e.target.value)}>
-                <option value="all">Tümü</option>
-                {roster.units.map((u) => (
-                  <option key={u.id} value={u.id}>
-                    {u.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label>
-              Ara
-              <input
-                value={q}
-                onChange={(e) => setQ(e.target.value)}
-                placeholder="sicil, ad, TV-06, EDGE-037…"
-              />
-            </label>
-          </div>
-        </div>
-        <div className="filter-chips" role="group" aria-label="Birim filtresi">
-          <button
-            type="button"
-            className={`filter-chip ${unit === "all" ? "active" : ""}`}
-            onClick={() => setUnit("all")}
-          >
-            Tümü <b>{roster.people.length}</b>
-          </button>
-          {roster.units.map((u) => (
-            <button
-              key={u.id}
-              type="button"
-              className={`filter-chip ${unit === u.id ? "active" : ""}`}
-              onClick={() => setUnit(u.id)}
-            >
-              {u.name} <b>{unitCounts.get(u.id) || 0}</b>
-            </button>
-          ))}
-        </div>
-        <p className="muted small">
-          {people.length} kişi · birim ağacı: Lab → Ana + Operasyon; Kenar / Yuvarlama / Takvim / Blokaj D1 kardeşi.
-        </p>
-        <div className="table-scroll tall">
-          <table className="faz1-table sticky-name">
-            <colgroup>
-              <col style={{ width: "5.5rem" }} />
-              <col style={{ width: "13rem" }} />
-              <col style={{ width: "7rem" }} />
-              <col style={{ width: "9rem" }} />
-              <col style={{ width: "6rem" }} />
-              <col span={3} />
-              <col />
-            </colgroup>
-            <thead>
-              <tr>
-                <th className="sticky-col sticky-edge">Sicil</th>
-                <th className="left">Ad</th>
-                <th>Birim</th>
-                <th>Profil</th>
-                <th className="num">Brüt</th>
-                <th>TV</th>
-                <th>PAY</th>
-                <th>EDGE</th>
-                <th>Not</th>
-              </tr>
-            </thead>
-            <tbody>
-              {people.map((p) => (
-                <PersonRow key={p.sicil} p={p} />
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-      )}
-
-      {tab === "eslemeler" && (
-        <>
-          <Section id="tv" title="TV-01…22" hint={`${tvEntries.length} eşleme`} defaultOpen={false}>
-            <div className="map-grid">
-              {tvEntries.map(([k, sicils]) => (
-                <div key={k} className="map-item">
-                  <strong>{k}</strong>
-                  <span title={sicils.join(", ")}>{sicils.join(", ")}</span>
-                </div>
-              ))}
-            </div>
-          </Section>
-          <Section
-            id="edge"
-            title="EDGE eşlemesi"
-            hint={`${edgeEntries.length} eşleme`}
-            defaultOpen={false}
-          >
-            <div className="map-grid">
-              {edgeEntries.map(([k, sicils]) => (
-                <div key={k} className="map-item">
-                  <strong>{k}</strong>
-                  <span title={sicils.join(", ")}>{sicils.join(", ")}</span>
-                </div>
-              ))}
-            </div>
-          </Section>
-        </>
-      )}
-
-      {tab === "kosum" && (
-      <section id="kosum" className="panel">
-        <h2>Koşum sırası</h2>
-        <ol className="kosum-list">
-          {roster.kosumOrder.map((step) => (
-            <li key={step}>{step}</li>
-          ))}
-        </ol>
-      </section>
-      )}
-
       {tab === "yz" &&
         (hasCompare ? (
           <div id="yz-karsilastirma">
@@ -420,8 +231,8 @@ export default function Faz1View({
           </div>
         ) : (
           <section className="panel">
-            <h2>Kenar — DHR × YZ</h2>
-            <p className="muted">Kenar karşılaştırma verisi henüz yok. Luca bilgisi bekleniyor.</p>
+            <h2>Kenar — DHR × Luca × YZ</h2>
+            <p className="muted">Kenar karşılaştırma verisi henüz yok.</p>
           </section>
         ))}
 
