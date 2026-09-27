@@ -7,7 +7,7 @@ import type { Faz1DhrLab, Faz1LabCard, Faz1Person, Faz1Roster } from "./faz1Type
 import dhrLab from "./data/faz1_dhr_lab.json";
 import { Section, Tags } from "./ui";
 
-type SubTab = "manuel" | "kadro" | "eslemeler" | "kosum" | "yz" | "yuv";
+type SubTab = "manuel" | "kadro" | "eslemeler" | "kosum" | "yz" | "yuv" | "op" | "kenar" | "takvim" | "blokaj";
 
 type Props = {
   roster: Faz1Roster;
@@ -15,6 +15,14 @@ type Props = {
   matrix: MatrixData;
   yuvarlamaComparison: ComparisonData;
   yuvarlamaMatrix: MatrixData;
+  operasyonComparison: ComparisonData;
+  operasyonMatrix: MatrixData;
+  kenarComparison: ComparisonData;
+  kenarMatrix: MatrixData;
+  takvimComparison: ComparisonData;
+  takvimMatrix: MatrixData;
+  blokajComparison: ComparisonData;
+  blokajMatrix: MatrixData;
 };
 
 const UNIT_LABEL: Record<string, string> = {
@@ -105,12 +113,30 @@ function PersonRow({ p }: { p: Faz1Person }) {
   );
 }
 
-export default function Faz1View({ roster, comparison, matrix, yuvarlamaComparison, yuvarlamaMatrix }: Props) {
+export default function Faz1View({
+  roster,
+  comparison,
+  matrix,
+  yuvarlamaComparison,
+  yuvarlamaMatrix,
+  operasyonComparison,
+  operasyonMatrix,
+  kenarComparison,
+  kenarMatrix,
+  takvimComparison,
+  takvimMatrix,
+  blokajComparison,
+  blokajMatrix,
+}: Props) {
   const [unit, setUnit] = useState("all");
   const [q, setQ] = useState("");
   const [tab, setTab] = useState<SubTab>("yz");
   const hasCompare = (comparison.rows || []).length > 0;
   const hasYuv = (yuvarlamaComparison.rows || []).length > 0;
+  const hasOp = (operasyonComparison.rows || []).length > 0;
+  const hasKenar = (kenarComparison.rows || []).length > 0;
+  const hasTakvim = (takvimComparison.rows || []).length > 0;
+  const hasBlokaj = (blokajComparison.rows || []).length > 0;
 
   const unitCounts = useMemo(() => {
     const map = new Map<string, number>();
@@ -135,16 +161,20 @@ export default function Faz1View({ roster, comparison, matrix, yuvarlamaComparis
   const lab = dhrLab as Faz1DhrLab;
 
   const subTabs: { id: SubTab; label: string; count?: number }[] = [
-    { id: "yz", label: "Luca YZ DHR karşılaştırma", count: hasCompare ? comparison.rows.length : undefined },
-    { id: "yuv", label: "Yuvarlama Luca YZ DHR", count: hasYuv ? yuvarlamaComparison.rows.length : roster.counts.yuvarlama },
+    { id: "yz", label: "Ana Kadro DHR × Luca × YZ", count: hasCompare ? comparison.rows.length : undefined },
+    { id: "yuv", label: "Yuvarlama DHR × Luca × YZ", count: hasYuv ? yuvarlamaComparison.rows.length : roster.counts.yuvarlama },
+    { id: "op", label: "Operasyon DHR × YZ", count: hasOp ? operasyonComparison.rows.length : roster.counts.operasyon },
+    { id: "kenar", label: "Kenar DHR × YZ", count: hasKenar ? kenarComparison.rows.length : roster.counts.kenar },
+    { id: "takvim", label: "Takvim DHR × YZ", count: hasTakvim ? takvimComparison.rows.length : roster.counts.takvim },
+    { id: "blokaj", label: "Blokaj DHR × YZ", count: hasBlokaj ? blokajComparison.rows.length : roster.counts.blokaj },
     { id: "manuel", label: "Manuel dene", count: lab.ready.length + lab.manual.length },
     { id: "kadro", label: "Kadro", count: roster.people.length },
     { id: "eslemeler", label: "Eşlemeler", count: tvEntries.length + edgeEntries.length },
     { id: "kosum", label: "Koşum", count: roster.kosumOrder.length },
   ];
 
-  // The YZ tab renders its own hero and stats; the lab header would only repeat it.
-  const showLabHeader = tab !== "yz" && tab !== "yuv";
+  const compareTabs: SubTab[] = ["yz", "yuv", "op", "kenar", "takvim", "blokaj"];
+  const showLabHeader = !compareTabs.includes(tab);
 
   return (
     <div className="page">
@@ -368,6 +398,54 @@ export default function Faz1View({ roster, comparison, matrix, yuvarlamaComparis
           <section className="panel">
             <h2>Yuvarlama — DHR × Luca × YZ</h2>
             <p className="muted">Yuvarlama 100 karşılaştırma verisi henüz yok.</p>
+          </section>
+        ))}
+
+      {tab === "op" &&
+        (hasOp ? (
+          <div id="op-karsilastirma">
+            <AppView data={operasyonComparison} matrix={operasyonMatrix} />
+          </div>
+        ) : (
+          <section className="panel">
+            <h2>Operasyon — DHR × YZ</h2>
+            <p className="muted">Operasyon karşılaştırma verisi henüz yok. Luca bilgisi bekleniyor.</p>
+          </section>
+        ))}
+
+      {tab === "kenar" &&
+        (hasKenar ? (
+          <div id="kenar-karsilastirma">
+            <AppView data={kenarComparison} matrix={kenarMatrix} />
+          </div>
+        ) : (
+          <section className="panel">
+            <h2>Kenar — DHR × YZ</h2>
+            <p className="muted">Kenar karşılaştırma verisi henüz yok. Luca bilgisi bekleniyor.</p>
+          </section>
+        ))}
+
+      {tab === "takvim" &&
+        (hasTakvim ? (
+          <div id="takvim-karsilastirma">
+            <AppView data={takvimComparison} matrix={takvimMatrix} />
+          </div>
+        ) : (
+          <section className="panel">
+            <h2>Takvim — DHR × YZ</h2>
+            <p className="muted">Takvim karşılaştırma verisi henüz yok. Luca bilgisi bekleniyor.</p>
+          </section>
+        ))}
+
+      {tab === "blokaj" &&
+        (hasBlokaj ? (
+          <div id="blokaj-karsilastirma">
+            <AppView data={blokajComparison} matrix={blokajMatrix} />
+          </div>
+        ) : (
+          <section className="panel">
+            <h2>Blokaj — DHR × YZ</h2>
+            <p className="muted">Blokaj karşılaştırma verisi henüz yok. Luca bilgisi bekleniyor.</p>
           </section>
         ))}
     </div>

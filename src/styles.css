@@ -957,7 +957,9 @@ tbody tr.group-divider:hover td {
   border-radius: 999px;
   background: rgba(251, 191, 36, 0.18);
   color: #fcd34d;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 .pill {
@@ -1254,7 +1256,7 @@ tr:hover .copy-btn,
    ============================================================ */
 .subtabs {
   position: sticky;
-  top: calc(var(--tabbar-h) + 0.5rem);
+  top: 6.5rem;
   z-index: 25;
   display: flex;
   flex-wrap: wrap;

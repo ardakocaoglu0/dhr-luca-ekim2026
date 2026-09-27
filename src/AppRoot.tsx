@@ -13,6 +13,14 @@ import faz1Matrix from "./data/faz1_matrix.json";
 import faz1Roster from "./data/faz1_roster.json";
 import yuvarlama from "./data/yuvarlama_comparison.json";
 import yuvarlamaMatrix from "./data/yuvarlama_matrix.json";
+import operasyon from "./data/operasyon_comparison.json";
+import operasyonMatrix from "./data/operasyon_matrix.json";
+import kenar from "./data/kenar_comparison.json";
+import kenarMatrix from "./data/kenar_matrix.json";
+import takvim from "./data/takvim_comparison.json";
+import takvimMatrix from "./data/takvim_matrix.json";
+import blokaj from "./data/blokaj_comparison.json";
+import blokajMatrix from "./data/blokaj_matrix.json";
 import izole from "./data/izole_comparison.json";
 import izoleMatrix from "./data/izole_matrix.json";
 import paket from "./data/paket_comparison.json";
@@ -96,6 +104,14 @@ export default function App() {
           matrix={faz1Matrix as MatrixData}
           yuvarlamaComparison={yuvarlama as ComparisonData}
           yuvarlamaMatrix={yuvarlamaMatrix as MatrixData}
+          operasyonComparison={operasyon as ComparisonData}
+          operasyonMatrix={operasyonMatrix as MatrixData}
+          kenarComparison={kenar as ComparisonData}
+          kenarMatrix={kenarMatrix as MatrixData}
+          takvimComparison={takvim as ComparisonData}
+          takvimMatrix={takvimMatrix as MatrixData}
+          blokajComparison={blokaj as ComparisonData}
+          blokajMatrix={blokajMatrix as MatrixData}
         />
       ) : (
         <LoginsView data={logins as LoginsData} />

@@ -1,0 +1,62 @@
+{
+  "period": "Eylül 2026 · Blokaj · DHR × YZ (Luca bilgisi bekleniyor)",
+  "environment": "dhrtest2.d1-tech.com.tr · Blokaj",
+  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (PDF yok — Luca bilgisi bekleniyor). DHR UI/API. Geçme ±0,01 TL.",
+  "matrixDesign": {
+    "layers": [
+      {
+        "id": "A",
+        "title": "Blokaj",
+        "desc": "Faz 1 laboratuvar birimi. Bordro A.Ş. yok."
+      },
+      {
+        "id": "B",
+        "title": "YZ",
+        "desc": "Eylül 2026 asgari GV istisnası 5.615,10. Aylık izole."
+      }
+    ],
+    "notFullCombinatorial": "Luca PDF yok. Durum kolonu Luca gelene kadar BEKLİYOR."
+  },
+  "checkedItems": [
+    {
+      "item": "Geçme eşiği ±0,01 TL",
+      "result": "pass",
+      "note": "partial/known/kısmen geçti yok."
+    },
+    {
+      "item": "Luca hakem değil",
+      "result": "pass",
+      "note": "Luca bilgisi bekleniyor; hakem YZ."
+    },
+    {
+      "item": "DHR Eylül 2026 hesap",
+      "result": "pass",
+      "note": "27.09.2026 dhrtest2 yeniden hesap: DHR 1/1"
+    },
+    {
+      "item": "Luca PDF",
+      "result": "fail",
+      "note": "Luca bilgisi bekleniyor."
+    }
+  ],
+  "correctFindings": [],
+  "dhrBugs": [],
+  "warnings": [],
+  "scenarios": [
+    {
+      "n": 1,
+      "name": "Taner Uslu",
+      "group": "blokaj",
+      "scenario": "Blokaj birimi. SGK profili yok. Kenar toplu hesabına girmez.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "—",
+      "dhr": "fail",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
+      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+    }
+  ]
+}

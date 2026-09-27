@@ -27,6 +27,11 @@ const TARGETS = [
   { key: "izole", year: 2026, month: 1, unitNeedles: ["tek degisken", "tek değişken"], expect: 27, site: "izole_comparison.json", label: "Tek Değişken Ocak 2026" },
   { key: "paket", year: 2026, month: 1, unitNeedles: ["bordro paket"], expect: 30, site: "paket_comparison.json", label: "Bordro Paket Ocak 2026" },
   { key: "faz1", year: 2026, month: 9, unitNeedles: ["ana kadro"], expect: 15, site: "faz1_comparison.json", label: "Faz 1 Ana Eylül 2026" },
+  { key: "yuvarlama", year: 2026, month: 9, unitNeedles: ["yuvarlama"], excludeNeedles: ["bordro a"], expect: 100, site: "yuvarlama_comparison.json", label: "Yuvarlama Eylül 2026" },
+  { key: "operasyon", year: 2026, month: 9, unitNeedles: ["operasyon"], excludeNeedles: ["bordro a"], expect: 3, site: "operasyon_comparison.json", label: "Faz 1 Operasyon Eylül 2026" },
+  { key: "kenar", year: 2026, month: 9, unitNeedles: ["kenar durum"], excludeNeedles: ["bordro a", "ana kadro"], expect: 53, site: "kenar_comparison.json", label: "Faz 1 Kenar Eylül 2026" },
+  { key: "takvim", year: 2026, month: 9, unitNeedles: ["takvim"], excludeNeedles: ["bordro a"], expect: 1, site: "takvim_comparison.json", label: "Faz 1 Takvim Eylül 2026" },
+  { key: "blokaj", year: 2026, month: 9, unitNeedles: ["blokaj"], excludeNeedles: ["bordro a"], expect: 1, site: "blokaj_comparison.json", label: "Faz 1 Blokaj Eylül 2026" },
 ];
 
 const PAY = {
@@ -37,9 +42,15 @@ const PAY = {
   prim: ["Prim"],
   ikramiye: ["İkramiye"],
   masraf: ["Masraf"],
-  kesinti: ["Genel Kesinti", "İcra"],
-  saglik: ["Özel Sağlık Sigortası (İşveren)"],
+  kesinti: ["Genel Kesinti", "Sendika Aidatı", "İşveren Alacağı", "Ücret Kesme Cezası"],
+  saglik: ["Özel Sağlık Sigortası (İşveren)", "Özel Sağlık Sigortası (İşveren Üstlenir)"],
+  health: ["Özel Sağlık Sigortası (İşveren)", "Özel Sağlık Sigortası (İşveren Üstlenir)"],
   besEmployer: ["BES İşveren Katkısı"],
+  childAid: ["Çocuk Yardımı"],
+  spouseAid: ["Eş Yardımı"],
+  leaveAllowance: ["İzin Harçlığı"],
+  nafaka: ["Nafaka"],
+  icra: ["İcra"],
 };
 const DED = {
   sgk: "SGK Primi İşçi Payı",
@@ -143,13 +154,18 @@ function extract(period) {
 }
 
 function siteMap(file) {
-  const site = JSON.parse(fs.readFileSync(path.join(DATA, file), "utf8"));
+  const empty = { bySicil: {}, byName: {} };
+  if (!file) return empty;
+  const p = path.join(DATA, file);
+  if (!fs.existsSync(p)) return empty;
+  const site = JSON.parse(fs.readFileSync(p, "utf8"));
   const bySicil = {};
   const byName = {};
   for (const r of site.rows || []) {
     if (!r.dhr) continue;
     if (r.tc) bySicil[String(r.tc)] = { ...r.dhr, name: r.name, sicil: String(r.tc) };
-    if (r.name) byName[fold(r.name)] = { ...r.dhr, name: r.name, sicil: String(r.tc || "") };
+    if (r.sicil) bySicil[String(r.sicil)] = { ...r.dhr, name: r.name, sicil: String(r.sicil) };
+    if (r.name) byName[fold(r.name)] = { ...r.dhr, name: r.name, sicil: String(r.tc || r.sicil || "") };
   }
   return { bySicil, byName };
 }
@@ -253,7 +269,7 @@ function diffMaps(before, after, site, label) {
     for (let attempt = 0; attempt < 5; attempt++) {
       try {
         const [download] = await Promise.all([
-          page.waitForEvent("download", { timeout: 180000 }),
+          page.waitForEvent("download", { timeout: 300000 }),
           page.evaluate(async (periodId) => {
             await fetch("/api/antiforgery/token", { credentials: "include" }).catch(() => {});
             const res = await fetch(`/api/PayrollPeriod/${periodId}`, { credentials: "include" });
@@ -285,9 +301,15 @@ function diffMaps(before, after, site, label) {
     throw lastErr || new Error("getPeriod failed " + id);
   }
 
-  const list1 = await api("GET", "/api/PayrollPeriod/list?page=1&pageSize=400");
-  let periods = arr(list1.data);
-  console.log("LIST", list1.status, periods.length, String(list1.text).slice(0, 180));
+  let periods = [];
+  for (let page = 1; page <= 10; page++) {
+    const list = await api("GET", `/api/PayrollPeriod/list?page=${page}&pageSize=400`);
+    const batch = arr(list.data);
+    console.log("LIST", page, list.status, batch.length, String(list.text).slice(0, 120));
+    if (!batch.length) break;
+    periods.push(...batch);
+    if (batch.length < 100) break;
+  }
   if (!periods.length) periods = arr((await api("GET", "/api/PayrollPeriod/filteredByUnitAbilities")).data);
   if (!periods.length) periods = arr((await api("GET", "/api/PayrollPeriod/all")).data);
   const slim = periods.map((p) => ({
@@ -309,7 +331,11 @@ function diffMaps(before, after, site, label) {
   console.log("TARGETS", runTargets.map((t) => t.key).join(","));
 
   for (const t of runTargets) {
-    const hits = periods.filter((p) => p.year === t.year && p.month === t.month && t.unitNeedles.some((n) => unitBlob(p).includes(fold(n))));
+    const hits = periods.filter((p) => {
+      const blob = unitBlob(p);
+      if ((t.excludeNeedles || []).some((n) => blob.includes(fold(n)))) return false;
+      return p.year === t.year && p.month === t.month && t.unitNeedles.some((n) => blob.includes(fold(n)));
+    });
     const hit = hits.sort((a, b) => (b.periodEmployees?.length || b.employeeCount || 0) - (a.periodEmployees?.length || a.employeeCount || 0))[0];
     if (!hit) {
       console.log(`\n=== ${t.label}: DÖNEM YOK`);
@@ -332,7 +358,7 @@ function diffMaps(before, after, site, label) {
     }
     let job = null;
     if (jobId) {
-      for (let i = 0; i < 72; i++) {
+      for (let i = 0; i < 180; i++) {
         await sleep(5000);
         try {
           job = unwrap((await api("GET", `/api/background-jobs/${jobId}`)).data);

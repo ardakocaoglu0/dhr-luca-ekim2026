@@ -1,0 +1,92 @@
+{
+  "period": "Eylül 2026 · Operasyon · DHR × YZ (Luca bilgisi bekleniyor)",
+  "environment": "dhrtest2.d1-tech.com.tr · Operasyon",
+  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (PDF yok — Luca bilgisi bekleniyor). DHR UI/API. Geçme ±0,01 TL.",
+  "matrixDesign": {
+    "layers": [
+      {
+        "id": "A",
+        "title": "Operasyon",
+        "desc": "Faz 1 laboratuvar birimi. Bordro A.Ş. yok."
+      },
+      {
+        "id": "B",
+        "title": "YZ",
+        "desc": "Eylül 2026 asgari GV istisnası 5.615,10. Aylık izole."
+      }
+    ],
+    "notFullCombinatorial": "Luca PDF yok. Durum kolonu Luca gelene kadar BEKLİYOR."
+  },
+  "checkedItems": [
+    {
+      "item": "Geçme eşiği ±0,01 TL",
+      "result": "pass",
+      "note": "partial/known/kısmen geçti yok."
+    },
+    {
+      "item": "Luca hakem değil",
+      "result": "pass",
+      "note": "Luca bilgisi bekleniyor; hakem YZ."
+    },
+    {
+      "item": "DHR Eylül 2026 hesap",
+      "result": "pass",
+      "note": "27.09.2026 dhrtest2 yeniden hesap: DHR 3/3"
+    },
+    {
+      "item": "Luca PDF",
+      "result": "fail",
+      "note": "Luca bilgisi bekleniyor."
+    }
+  ],
+  "correctFindings": [],
+  "dhrBugs": [],
+  "warnings": [],
+  "scenarios": [
+    {
+      "n": 1,
+      "name": "Seda Can",
+      "group": "operasyon",
+      "scenario": "3 gün ücretsiz 8–10.09 Operasyon Eylül. DHR-PAYROLL-002.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "unpaid",
+      "dhr": "fail",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 51.196,69 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ -3.783,43",
+      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+    },
+    {
+      "n": 2,
+      "name": "Tolga Dede",
+      "group": "operasyon",
+      "scenario": "5 gün rapor 14–18.09.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "report",
+      "dhr": "fail",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
+      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+    },
+    {
+      "n": 3,
+      "name": "Ufuk Eren",
+      "group": "operasyon",
+      "scenario": "04.09 Cuma–08.09 Salı yıllık. 07.09 Pazartesi yalnız Operasyon tatili.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "annual",
+      "dhr": "fail",
+      "luca": "pending",
+      "ai": "pass",
+      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
+      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+    }
+  ]
+}

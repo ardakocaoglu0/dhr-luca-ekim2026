@@ -156,7 +156,7 @@ export default function AppView({ data, matrix }: Props) {
                   </th>
                   <th className="center">
                     Luca
-                    <PendingTag show={lucaPending} />
+                    <PendingTag show={lucaPending} label="Luca bilgisi bekleniyor" />
                   </th>
                   <th className="center">YZ</th>
                   <th className="left col-sep">Hüküm</th>
@@ -178,7 +178,7 @@ export default function AppView({ data, matrix }: Props) {
                       <Badge status={dhrPending ? "pending" : s.dhr} />
                     </td>
                     <td className="center">
-                      <Badge status={lucaPending ? "pending" : s.luca} />
+                      <Badge status={lucaPending ? "pending" : s.luca} pendingLabel="Luca bilgisi bekleniyor" />
                     </td>
                     <td className="center">
                       <Badge status={s.ai || "pass"} />
@@ -219,7 +219,7 @@ export default function AppView({ data, matrix }: Props) {
               />
               <Stat
                 label="Luca net"
-                value={lucaPending || selected.luca.net == null ? "bekliyor" : `${tr(selected.luca.net)} TL`}
+                value={lucaPending || selected.luca.net == null ? "Luca bilgisi bekleniyor" : `${tr(selected.luca.net)} TL`}
               />
               <Stat
                 label="YZ net"
@@ -280,7 +280,7 @@ export default function AppView({ data, matrix }: Props) {
                     </th>
                     <th className="num">
                       Luca
-                      <PendingTag show={lucaPending} />
+                      <PendingTag show={lucaPending} label="Luca bilgisi bekleniyor" />
                     </th>
                     <th className="num">YZ</th>
                     <th className="num col-sep">Δ DHR−Luca</th>
@@ -341,7 +341,7 @@ export default function AppView({ data, matrix }: Props) {
                 </th>
                 <th className="num">
                   Luca
-                  <PendingTag show={lucaPending} />
+                    <PendingTag show={lucaPending} label="Luca bilgisi bekleniyor" />
                 </th>
                 <th className="num">YZ</th>
                 <th className="num col-sep">Δ DHR−Luca</th>
@@ -368,7 +368,7 @@ export default function AppView({ data, matrix }: Props) {
                         <Money value={k.dhrSum} pending={dhrPending} />
                       </td>
                       <td className="num">
-                        <Money value={k.lucaSum} pending={lucaPending} />
+                        <Money value={k.lucaSum} pending={lucaPending} pendingTitle="Luca bilgisi bekleniyor" />
                       </td>
                       <td className="num">
                         <Money value={k.aiSum ?? 0} yz />
@@ -465,7 +465,7 @@ export default function AppView({ data, matrix }: Props) {
                 </th>
                 <th className="num">
                   Luca
-                  <PendingTag show={lucaPending} />
+                    <PendingTag show={lucaPending} label="Luca bilgisi bekleniyor" />
                 </th>
                 <th className="num">YZ</th>
                 <th className="num col-sep">Δ DHR−Luca</th>
@@ -528,7 +528,7 @@ function LineItemRow({
   const vsLuca = item.delta;
   const pending = dhrPending || lucaPending;
   const matchLuca = item.match;
-  const status = pending ? "BEKLİYOR" : matchLuca ? "OK" : "FARK";
+  const status = lucaPending ? "Luca bilgisi bekleniyor" : pending ? "BEKLİYOR" : matchLuca ? "OK" : "FARK";
   return (
     <tr className={pending ? "" : matchLuca ? "ok" : "warn"}>
       <td className="left" data-label="Kalem">
@@ -538,7 +538,7 @@ function LineItemRow({
         <Money value={item.dhr} pending={dhrPending} />
       </td>
       <td className="num" data-label="Luca">
-        <Money value={item.luca} pending={lucaPending} />
+        <Money value={item.luca} pending={lucaPending} pendingTitle="Luca bilgisi bekleniyor" />
       </td>
       <td className="num" data-label="YZ">
         <Money value={item.ai} yz />
@@ -550,7 +550,7 @@ function LineItemRow({
         <Delta value={vsAi} scale={scale} />
       </td>
       <td className="center col-sep" data-label="Durum">
-        <span className={`badge ${status === "OK" ? "ok" : status === "BEKLİYOR" ? "pending" : "bad"}`}>
+        <span className={`badge ${status === "OK" ? "ok" : status === "FARK" ? "bad" : "pending"}`}>
           {status}
         </span>
       </td>
@@ -574,8 +574,8 @@ function toneOf(s: string): "ok" | "bad" | "warn" | "" {
   return "";
 }
 
-function Badge({ status }: { status: string }) {
-  const label = status === "pass" ? "OK" : status === "fail" ? "FAIL" : status === "pending" ? "BEKLİYOR" : status;
+function Badge({ status, pendingLabel = "BEKLİYOR" }: { status: string; pendingLabel?: string }) {
+  const label = status === "pass" ? "OK" : status === "fail" ? "FAIL" : status === "pending" ? pendingLabel : status;
   return <span className={`badge ${status === "pending" ? "pending" : toneOf(status)}`}>{label}</span>;
 }
 
@@ -612,7 +612,7 @@ function RowLine({
         <Money value={r.dhr?.net} pending={dhrPending} />
       </td>
       <td className="num">
-        <Money value={r.luca.net} pending={lucaPending} />
+        <Money value={r.luca.net} pending={lucaPending} pendingTitle="Luca bilgisi bekleniyor" />
       </td>
       <td className="num">
         <Money value={r.ai?.net} yz />

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-20T13:51:45.079Z",
+ "generatedAt": "2026-09-27T16:05:33.290Z",
  "period": "Eylül 2026",
  "unit": "Bordro Laboratuvarı — Ana Kadro (15’lik)",
  "lucaPdfVersion": "bordro_d1_tech (5).pdf",
@@ -10,7 +10,7 @@
  "ui": {
   "title": "Eylül 2026 — Faz 1 Bordro Laboratuvarı",
   "lead": "Ana Kadro 15 kişi. DHR 15/15 · Luca PDF 15/15 (bordro_d1_tech (5).pdf). YZ 2026 mevzuatı. İK Ekim/Ocak karışmaz.",
-  "verdict": "DHR×Luca 15/15. Ort. |ΔNet DHR−Luca| 2.220,43 TL · ±0,01 1/15. Hakan BES her iki tarafta 1.896,00 TL (%3). Luca Eylül’de Ocak GV bandı (4.211,33) kullanıyor.",
+  "verdict": "DHR×Luca 15/15. Ort. |ΔNet DHR−Luca| 2.154,27 TL · ±0,01 1/15. Hakan BES her iki tarafta 1.896,00 TL (%3). Luca Eylül’de Ocak GV bandı (4.211,33) kullanıyor.",
   "footer": "İK Ekim/Ocak verisi bu sekmeye karışmaz. BT kapsam dışı. Luca kanun kolonu Mert’te 00000; damga 0 işyeri TEKNOPARK.",
   "personCaption": "Çalışan seç → DHR, Luca PDF ve YZ mevzuat neti yan yana. Eşleşme ±0,01 TL.",
   "gvCompareTitle": "Eylül 2026 — GV istisnası: DHR uyguladığı vs Luca vs yasal (YZ)",
@@ -36,7 +36,7 @@
  },
  "sources": {
   "lucaPdf": "downloads/bordro_faz1_eylul.pdf",
-  "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 20.09.2026 dhrtest2 yeniden hesap · 15/15 hesaplandı",
+  "dhrExcel": "https://dhrtest2.d1-tech.com.tr — 27.09.2026 dhrtest2 yeniden hesap · 15/15 hesaplandı",
   "aiMevzuat": "mevzuat.json — 193 GVK, 332 GT, 5510, 4447, 488, 7352, 2026 asgari"
  },
  "summary": {
@@ -44,10 +44,10 @@
   "dhrCount": 15,
   "matched": 15,
   "netWithin100": 1,
-  "avgAbsNetDelta": 2220.43,
+  "avgAbsNetDelta": 2154.27,
   "fmHoursTotalLuca": null,
   "aiCount": 15,
-  "avgAbsNetDeltaAi": 8346.59,
+  "avgAbsNetDeltaAi": 8333.26,
   "netWithin100Ai": 0,
   "netPass001": 1
  },
@@ -211,7 +211,13 @@
     "gvMatrah": 53720,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83710
+    "employerCost": 83710,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 1403.77,
@@ -569,7 +575,13 @@
     "gvMatrah": 20982.28,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 35720.01
+    "employerCost": 35720.01,
+    "health": 2500,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": -6725.45,
@@ -927,7 +939,13 @@
     "gvMatrah": 24541.82,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 48850
+    "employerCost": 48850,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": -5978.18,
@@ -1285,7 +1303,13 @@
     "gvMatrah": 50072.73,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 77900
+    "employerCost": 77900,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 2125.62,
@@ -1643,7 +1667,13 @@
     "gvMatrah": 54740,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83710
+    "employerCost": 83710,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 1403.77,
@@ -2001,7 +2031,13 @@
     "gvMatrah": 57120,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83722.38
+    "employerCost": 83722.38,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": -596.23,
@@ -2351,7 +2387,7 @@
     "bes": 0,
     "advance": 0,
     "kesinti": 1500,
-    "net": 68352.49,
+    "net": 66352.49,
     "saglik": 0,
     "besEmployer": 0,
     "sgkDays": 30,
@@ -2359,10 +2395,16 @@
     "gvMatrah": 64345,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 97359.25
+    "employerCost": 97359.25,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
-    "net": 3403.77,
+    "net": 1403.77,
     "gv": -1403.77,
     "damga": 0,
     "gross": -4368,
@@ -2370,7 +2412,7 @@
     "transport": 0,
     "overtime": 0,
     "bes": 0,
-    "netAi": 8387.82,
+    "netAi": 6387.82,
     "gvAi": -620.67,
     "netLucaAi": 4984.05
    },
@@ -2638,12 +2680,12 @@
      "key": "net",
      "label": "Net ödenen",
      "group": "ozet",
-     "dhr": 68352.49,
+     "dhr": 66352.49,
      "luca": 64948.72,
-     "delta": 3403.77,
+     "delta": 1403.77,
      "match": false,
      "ai": 59964.67,
-     "deltaDhrAi": 8387.82,
+     "deltaDhrAi": 6387.82,
      "deltaLucaAi": 4984.05,
      "matchAi": false,
      "matchLucaAi": false
@@ -2717,7 +2759,13 @@
     "gvMatrah": 53720,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83710
+    "employerCost": 83710,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 1403.77,
@@ -3075,7 +3123,13 @@
     "gvMatrah": 53720,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 82446
+    "employerCost": 82446,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 1403.77,
@@ -3433,7 +3487,13 @@
     "gvMatrah": 58460,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83710
+    "employerCost": 83710,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 1403.77,
@@ -3793,7 +3853,13 @@
     "gvMatrah": 18236.36,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83710
+    "employerCost": 83710,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": -4483.64,
@@ -4147,11 +4213,17 @@
     "saglik": 0,
     "besEmployer": 0,
     "sgkDays": 30,
-    "sgkBase": 18000,
+    "sgkBase": 33030,
     "gvMatrah": 18000,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 22275
+    "employerCost": 22275,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 0,
@@ -4511,7 +4583,13 @@
     "gvMatrah": 53720,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 76521
+    "employerCost": 76521,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 1174.78,
@@ -4856,32 +4934,38 @@
     "gross": 68700,
     "sgk": 8848,
     "unemployment": 632,
-    "gv": 2442.9,
+    "gv": 642.9,
     "damga": 228.99,
     "bes": 0,
     "advance": 0,
     "kesinti": 0,
-    "net": 56548.11,
+    "net": 58348.11,
     "saglik": 0,
     "besEmployer": 0,
     "sgkDays": 30,
     "sgkBase": 63200,
-    "gvMatrah": 53720,
+    "gvMatrah": 41720,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83710
+    "employerCost": 83710,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
-    "net": -396.23,
-    "gv": 396.23,
+    "net": 1403.77,
+    "gv": -1403.77,
     "damga": 0,
     "gross": 0,
     "meal": 0,
     "transport": 0,
     "overtime": 0,
     "bes": 0,
-    "netAi": 1567.99,
-    "gvAi": -701.25,
+    "netAi": 3367.99,
+    "gvAi": -2501.25,
     "netLucaAi": 1964.22
    },
    "ai": {
@@ -5078,12 +5162,12 @@
      "key": "gv",
      "label": "Gelir vergisi",
      "group": "kesinti",
-     "dhr": 2442.9,
+     "dhr": 642.9,
      "luca": 2046.67,
-     "delta": 396.23,
+     "delta": -1403.77,
      "match": false,
      "ai": 3144.15,
-     "deltaDhrAi": -701.25,
+     "deltaDhrAi": -2501.25,
      "deltaLucaAi": -1097.48,
      "matchAi": false,
      "matchLucaAi": false
@@ -5148,12 +5232,12 @@
      "key": "net",
      "label": "Net ödenen",
      "group": "ozet",
-     "dhr": 56548.11,
+     "dhr": 58348.11,
      "luca": 56944.34,
-     "delta": -396.23,
+     "delta": 1403.77,
      "match": false,
      "ai": 54980.12,
-     "deltaDhrAi": 1567.99,
+     "deltaDhrAi": 3367.99,
      "deltaLucaAi": 1964.22,
      "matchAi": false,
      "matchLucaAi": false
@@ -5227,7 +5311,13 @@
     "gvMatrah": 53720,
     "gvExemptApplied": 5615.1,
     "damgaExemptApplied": 250.7,
-    "employerCost": 83710
+    "employerCost": 83710,
+    "health": 0,
+    "childAid": 0,
+    "spouseAid": 0,
+    "leaveAllowance": 0,
+    "nafaka": 0,
+    "icra": 0
    },
    "delta": {
     "net": 1403.77,
@@ -5740,11 +5830,11 @@
    "key": "gv",
    "label": "Gelir vergisi",
    "group": "kesinti",
-   "dhrSum": 29292.56,
+   "dhrSum": 27492.56,
    "lucaSum": 43072.81,
    "aiSum": 46304.15,
-   "deltaSum": -13780.25,
-   "deltaDhrAi": -17011.59,
+   "deltaSum": -15580.25,
+   "deltaDhrAi": -18811.59,
    "deltaLucaAi": -3231.34,
    "peopleWithValue": 14,
    "matchCount": 4,
@@ -5830,11 +5920,11 @@
    "key": "net",
    "label": "Net ödenen",
    "group": "ozet",
-   "dhrSum": 722789.24,
+   "dhrSum": 722589.24,
    "lucaSum": 725842.18,
    "aiSum": 794124.85,
-   "deltaSum": -3052.94,
-   "deltaDhrAi": -71335.61,
+   "deltaSum": -3252.94,
+   "deltaDhrAi": -71535.61,
    "deltaLucaAi": -68282.67,
    "peopleWithValue": 15,
    "matchCount": 1,
@@ -5921,7 +6011,7 @@
  "aiReport": {
   "month": 9,
   "engine": "YZ — 2026 Türkiye bordro mevzuatı (mevzuat.json)",
-  "disclaimer": "YZ kolonu mevzuat metninden hesaplandı; DHR kolonu https://dhrtest2.d1-tech.com.tr Eylül 2026 Ana Kadro koşumundan geldi (20.09.2026 dhrtest2 yeniden hesap). Luca referanstır, hakem değildir. Durum yalnız Δ DHR−Luca.",
+  "disclaimer": "YZ kolonu mevzuat metninden hesaplandı; DHR kolonu https://dhrtest2.d1-tech.com.tr Eylül 2026 Ana Kadro koşumundan geldi (27.09.2026 dhrtest2 yeniden hesap). Luca referanstır, hakem değildir. Durum yalnız Δ DHR−Luca.",
   "findings": [
    {
     "id": "F1-BES-OK",
@@ -5939,7 +6029,7 @@
     "id": "F1-AVANS",
     "vs": "DHR ↔ Luca",
     "result": "hata",
-    "detail": "8009 Gülce Han Luca avans 2.000,00 kesti (net 64.948,72); DHR avans 0,00 (net 68.352,49). İkramiye DHR 5.000,00 / Luca 5.000,00."
+    "detail": "8009 Gülce Han Luca avans 2.000,00 kesti (net 64.948,72); DHR avans 0,00 (net 66.352,49). İkramiye DHR 5.000,00 / Luca 5.000,00."
    },
    {
     "id": "F1-FM-TUTAR",

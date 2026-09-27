@@ -60,15 +60,17 @@ export function Money({
   pending = false,
   yz = false,
   digits = 2,
+  pendingTitle,
 }: {
   value: number | null | undefined;
   pending?: boolean;
   yz?: boolean;
   digits?: number;
+  pendingTitle?: string;
 }) {
   if (pending) {
     return (
-      <span className="wait-cell" title="Bu kaynak henüz yok">
+      <span className="wait-cell" title={pendingTitle || "Bu kaynak henüz yok"}>
         ·
       </span>
     );
@@ -113,9 +115,9 @@ export function Delta({ value, scale }: { value: number | null | undefined; scal
 }
 
 /** Kolon başlığında bir kez gösterilen bekleme rozeti. */
-export function PendingTag({ show }: { show: boolean }) {
+export function PendingTag({ show, label = "BEKLİYOR" }: { show: boolean; label?: string }) {
   if (!show) return null;
-  return <span className="th-badge">BEKLİYOR</span>;
+  return <span className="th-badge">{label}</span>;
 }
 
 /** İlk `max` etiketi gösterir, kalanını "+N" olarak toplar. */

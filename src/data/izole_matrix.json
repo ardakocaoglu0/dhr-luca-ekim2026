@@ -1,7 +1,7 @@
 {
   "period": "Ocak 2026 · Tek Değişken · DHR × Luca × YZ",
   "environment": "dhrtest2.d1-tech.com.tr · Tek Değişken",
-  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (bordro_d1_tech (27).pdf, 27/27). DHR 20.09.2026 dhrtest2 yeniden hesap 27/27. Geçme ±0,01 TL.",
+  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (bordro_d1_tech (27).pdf, 27/27). DHR 27.09.2026 dhrtest2 yeniden hesap 27/27. Geçme ±0,01 TL.",
   "matrixDesign": {
     "layers": [
       {
@@ -57,6 +57,10 @@
     "Kaan/Leman/Mert sakatlık GV Luca 835,42 / Leman 1.585,42 / Mert 2.185,42.",
     "Seda asgari net 30.010,47 = İK Selin Ocak DHR.",
     "Defne net ücret, Jale SGDP, Nazli kısmi, Oya stajyer, Volkan prim, Yelda ikramiye, Zafer kesinti, Asya masraf, Bora BES, Cemil 185k — her biri Ada’dan ayrı net.",
+    "Ada Korkmaz DHR net 48.074,49 / damga 156,88 (Luca damga 156,88).",
+    "Tolga FM DHR 4.040,00 (IZ-FM-SAAT bu koşumda kapandı).",
+    "Ada Korkmaz DHR net 48.074,49 / damga 156,88 (Luca damga 156,88).",
+    "Tolga FM DHR 4.040,00 (IZ-FM-SAAT bu koşumda kapandı).",
     "Ada Korkmaz DHR net 48.074,49 / damga 156,88 (Luca damga 156,88).",
     "Tolga FM DHR 4.040,00 (IZ-FM-SAAT bu koşumda kapandı).",
     "Ada Korkmaz DHR net 48.074,49 / damga 156,88 (Luca damga 156,88).",
@@ -142,7 +146,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Net ücret: DHR 50.700,00 / Luca 49.484,11 / YZ 40.707,97 (ΔDHR−Luca 1.215,89).",
+      "verdict": "Tek değişken Net ücret: DHR 45.745,50 / Luca 49.484,11 / YZ 40.707,97 (ΔDHR−Luca -3.738,61).",
       "whichCorrect": "YZ hakem. Luca referans.",
       "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
@@ -157,7 +161,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 lisans: DHR 48.074,49 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca -131,49).",
+      "verdict": "Tek değişken 5746 lisans: DHR 50.300,43 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.094,45).",
       "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
       "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
     },
@@ -172,7 +176,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 YL: DHR 48.074,49 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca -131,49).",
+      "verdict": "Tek değişken 5746 YL: DHR 50.559,07 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.353,09).",
       "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
       "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
     },
@@ -187,7 +191,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 doktora: DHR 48.074,49 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca -131,49).",
+      "verdict": "Tek değişken 5746 doktora: DHR 50.688,38 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.482,40).",
       "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
       "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
     },
@@ -247,7 +251,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Engelli 1: DHR 48.074,49 / Luca 49.849,10 / YZ 46.784,70 (ΔDHR−Luca -1.774,61).",
+      "verdict": "Tek değişken Engelli 1: DHR 49.874,49 / Luca 49.849,10 / YZ 46.784,70 (ΔDHR−Luca 25,39).",
       "whichCorrect": "YZ",
       "legalBasis": "GVK md. 31 sakatlık indirimi."
     },
@@ -262,7 +266,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Engelli 2: DHR 48.074,49 / Luca 49.099,10 / YZ 46.784,70 (ΔDHR−Luca -1.024,61).",
+      "verdict": "Tek değişken Engelli 2: DHR 49.124,49 / Luca 49.099,10 / YZ 46.784,70 (ΔDHR−Luca 25,39).",
       "whichCorrect": "YZ",
       "legalBasis": "GVK md. 31 sakatlık indirimi."
     },
@@ -277,7 +281,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Engelli 3: DHR 48.074,49 / Luca 48.499,10 / YZ 46.784,70 (ΔDHR−Luca -424,61).",
+      "verdict": "Tek değişken Engelli 3: DHR 48.524,49 / Luca 48.499,10 / YZ 46.784,70 (ΔDHR−Luca 25,39).",
       "whichCorrect": "YZ",
       "legalBasis": "GVK md. 31 sakatlık indirimi."
     },
@@ -352,7 +356,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Asgari ücret: DHR 29.999,50 / Luca 30.023,20 / YZ 29.275,13 (ΔDHR−Luca -23,70).",
+      "verdict": "Tek değişken Asgari ücret: DHR 29.753,50 / Luca 30.023,20 / YZ 29.275,13 (ΔDHR−Luca -269,70).",
       "whichCorrect": "YZ hakem. Luca referans.",
       "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
     },
@@ -382,7 +386,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Avans 7200: DHR 48.074,49 / Luca 40.849,10 / YZ 39.584,70 (ΔDHR−Luca 7.225,39).",
+      "verdict": "Tek değişken Avans 7200: DHR 40.874,49 / Luca 40.849,10 / YZ 39.584,70 (ΔDHR−Luca 25,39).",
       "whichCorrect": "Luca",
       "legalBasis": "Maaş avansı mahsubu netten düşülmeli."
     },
@@ -487,7 +491,7 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 GV stopaj terkin: DHR 48.074,49 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca -131,49).",
+      "verdict": "Tek değişken 5746 GV stopaj terkin: DHR 50.300,43 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.094,45).",
       "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
       "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
     }

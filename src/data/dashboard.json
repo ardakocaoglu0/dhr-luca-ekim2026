@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T14:14:00.345Z",
+  "generatedAt": "2026-09-27T16:05:33.391Z",
   "environment": "https://dhrtest2.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
@@ -8,7 +8,7 @@
       "label": "Ekim 2026",
       "unit": "İnsan Kaynakları",
       "people": 32,
-      "state": "Hesaplandı · 20.09.2026 dhrtest2 yeniden hesap · ort. |ΔNet| 3.536,67 TL",
+      "state": "Hesaplandı · 27.09.2026 dhrtest2 yeniden hesap · ort. |ΔNet| 3.862,17 TL",
       "compare": "DHR × Luca × YZ"
     },
     {
@@ -16,7 +16,7 @@
       "label": "Ocak 2026",
       "unit": "İnsan Kaynakları",
       "people": 32,
-      "state": "Hesaplandı · 20.09.2026 dhrtest2 yeniden hesap · damga 156,88 · ±0,01 1/32",
+      "state": "Hesaplandı · 27.09.2026 dhrtest2 yeniden hesap · damga 156,88 · ±0,01 1/32",
       "compare": "DHR × Luca × YZ"
     },
     {
@@ -40,11 +40,62 @@
       "label": "Ocak 2026 — Bordro Paket",
       "unit": "Bordro Paket",
       "people": 30,
-      "state": "Hesaplandı · DHR 30/30 · Luca 30/30 · ±0,01 5/30",
+      "state": "Hesaplandı · DHR 30/30 · Luca 30/30 · ±0,01 4/30",
       "compare": "DHR × Luca × YZ"
+    },
+    {
+      "id": "yuvarlama",
+      "label": "Eylül 2026 — Yuvarlama",
+      "unit": "Yuvarlama",
+      "people": 100,
+      "state": "Hesaplandı · DHR 100/100 · Luca 100/100 · ±0,01 0/100",
+      "compare": "DHR × Luca × YZ"
+    },
+    {
+      "id": "operasyon",
+      "label": "Eylül 2026 — Operasyon",
+      "unit": "Operasyon",
+      "people": 3,
+      "state": "DHR 3/3 · Luca bilgisi bekleniyor · YZ 3",
+      "compare": "DHR × YZ (Luca bilgisi bekleniyor)"
+    },
+    {
+      "id": "kenar",
+      "label": "Eylül 2026 — Kenar",
+      "unit": "Kenar Durumlar",
+      "people": 53,
+      "state": "DHR 53/53 · Luca bilgisi bekleniyor · YZ 53",
+      "compare": "DHR × YZ (Luca bilgisi bekleniyor)"
+    },
+    {
+      "id": "takvim",
+      "label": "Eylül 2026 — Takvim",
+      "unit": "Takvim",
+      "people": 1,
+      "state": "DHR 1/1 · Luca bilgisi bekleniyor · YZ 1",
+      "compare": "DHR × YZ (Luca bilgisi bekleniyor)"
+    },
+    {
+      "id": "blokaj",
+      "label": "Eylül 2026 — Blokaj",
+      "unit": "Blokaj",
+      "people": 1,
+      "state": "DHR 1/1 · Luca bilgisi bekleniyor · YZ 1",
+      "compare": "DHR × YZ (Luca bilgisi bekleniyor)"
     }
   ],
   "works": [
+    {
+      "id": "W-ENGEL",
+      "title": "Engellilik derecesi 1–3 GV indirimi uygulandı",
+      "detail": "Leman 2. derece GV 1.536,33 / net 49.124,49; Mert 3. derece GV 2.136,33. Nihan (Ana) GV 642,90; Vildan (Kenar) GV 1.392,90. Eski GET null / Ada zemini kapandı.",
+      "periods": [
+        "Tek Değişken",
+        "Eylül",
+        "Kenar Durumlar"
+      ],
+      "area": "Gelir vergisi"
+    },
     {
       "id": "W-IZOLE-PRIM",
       "title": "Tek Değişken Volkan prim bordroda duruyor",
@@ -105,7 +156,7 @@
     {
       "id": "W-FAZ1-LUCA",
       "title": "Faz 1 Eylül Luca PDF 15/15 işlendi",
-      "detail": "bordro_d1_tech (5).pdf. Ort. |ΔNet DHR−Luca| 2.220,43 TL. Luca Eylül GV bandı 4.211,33 (DHR 5.615,10). Hakan BES DHR=Luca 1.896,00 TL.",
+      "detail": "bordro_d1_tech (5).pdf. Ort. |ΔNet DHR−Luca| 2.154,27 TL. Luca Eylül GV bandı 4.211,33 (DHR 5.615,10). Hakan BES DHR=Luca 1.896,00 TL.",
       "periods": [
         "Eylül"
       ],
@@ -274,13 +325,18 @@
     {
       "id": "W-TEKRAR",
       "title": "Hesaplama tekrarlanabilir",
-      "detail": "20.09.2026 dhrtest2 yeniden hesap: beş dönem yeniden hesaplandı (failedCount 0). Ana kayma damga −41,75 / net +41,75 (yemek matrahtan çıktı).",
+      "detail": "27.09.2026 dhrtest2 yeniden hesap: on dönem yeniden hesaplandı (İnsan Kaynakları Ekim/Ocak, Tek Değişken, Paket, Ana, Yuvarlama, Operasyon, Kenar, Takvim, Blokaj). Bordro A.Ş. yok.",
       "periods": [
         "Ekim",
         "Ocak",
         "Eylül",
         "Tek Değişken",
-        "Bordro Paket"
+        "Bordro Paket",
+        "Yuvarlama",
+        "Operasyon",
+        "Kenar",
+        "Takvim",
+        "Blokaj"
       ],
       "area": "Motor"
     },
@@ -298,7 +354,7 @@
     {
       "id": "W-DAMGA",
       "title": "Damga vergisi ‰7,59 ve asgari ücret damga istisnası",
-      "detail": "DHR 20.09.2026 dhrtest2 yeniden hesap: nakit yemek damga matrahında değil. Ocak Serra 156,88 = Luca; Ada 156,88; Ekin 228,99. Ekim Luca PDF hâlâ 198,63 basıyor.",
+      "detail": "DHR 27.09.2026 dhrtest2 yeniden hesap: nakit yemek damga matrahında değil. Ocak Serra 156,88 = Luca; Ada 156,88; Ekin 228,99. Ekim Luca PDF hâlâ 198,63 basıyor.",
       "periods": [
         "Ekim",
         "Ocak"
@@ -322,25 +378,13 @@
       "id": "IZ-AVANS",
       "title": "Tek Değişken / Paket: avans mahsubu bordroya yazılmıyor",
       "severity": "Yüksek",
-      "detail": "Umay 6220 ve Paket Onur 6326: DHR avans 0. Luca/YZ 7.200 bekler.",
+      "detail": "Umay Gunes (6220): DHR avans 0,00, net 40.874,49. Luca PDF avans 7.200 kesti. F1-AVANS ile aynı DHR sınıfı.",
       "periods": [
         "Tek Değişken",
         "Bordro Paket"
       ],
       "impact": "Maaş avansı senaryosu ölçülemüyor.",
       "area": "Puantaj"
-    },
-    {
-      "id": "IZ-ENGEL-PUT",
-      "title": "Engellilik derecesi API PUT ile yazılmıyor",
-      "severity": "Orta",
-      "detail": "Kaan 6211 disabilityDegree GET null, net Ada baseline. Paket 6313 aynı sınıf.",
-      "periods": [
-        "Tek Değişken",
-        "Bordro Paket"
-      ],
-      "impact": "1. derece indirimi izolé ölçülemedi.",
-      "area": "Gelir vergisi"
     },
     {
       "id": "DHR-PPV-DROP",
@@ -419,7 +463,7 @@
     {
       "id": "D-YEMEK-DAMGA",
       "title": "Yemek yardımı damga matrahında mı?",
-      "detail": "DHR 20.09.2026 dhrtest2 yeniden hesap nakit yemeği damga matrahından çıkardı: Ocak Serra 156,88 = Luca 156,88; Ada ve Ekin damga da Luca ile aynı. Ekim Luca PDF hâlâ 198,63 basıyor — fark Ekim PDF tarafında."
+      "detail": "DHR 27.09.2026 dhrtest2 yeniden hesap nakit yemeği damga matrahından çıkardı: Ocak Serra 156,88 = Luca 156,88; Ada ve Ekin damga da Luca ile aynı. Ekim Luca PDF hâlâ 198,63 basıyor — fark Ekim PDF tarafında."
     },
     {
       "id": "D-5746-DAMGA",
@@ -468,9 +512,9 @@
     },
     {
       "id": "U-DIGER-BIRIMLER",
-      "title": "Faz 1’in diğer birimleri hesaplanmadı",
-      "detail": "Operasyon (3), Kenar Durumlar (53), Yuvarlama (100), Takvim (1), Blokaj (1), Şirket B (2) dönemleri açık ama bordro koşulmadı; yuvarlama farkı ve blokaj/icra sırası test edilmedi.",
-      "blocker": "Koşum sırası: yalnız Ana Kadro Eylül tamamlandı.",
+      "title": "Faz1 Bordro A.Ş. hesaplanmadı",
+      "detail": "Şirket B (2) kapsam dışı. Operasyon 3/3, Kenar 53/53, Yuvarlama 100/100, Blokaj 1/1 27.09.2026 dhrtest2 API dump’ı ile doldu. Takvim Eylül hesap üretmedi (dönem status 0, net boş). Luca PDF yok birimlerde Luca bilgisi bekleniyor; hakem YZ.",
+      "blocker": "Bordro A.Ş. bu koşumda yok. Takvim Eylül bordro kalemi yazılmadı.",
       "area": "Kapsam"
     },
     {

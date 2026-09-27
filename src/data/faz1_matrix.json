@@ -1,7 +1,7 @@
 {
  "period": "Eylül 2026 · Ana Kadro · DHR × Luca × YZ",
  "environment": "https://dhrtest2.d1-tech.com.tr",
- "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (5).pdf, 15/15). DHR https://dhrtest2.d1-tech.com.tr 20.09.2026 dhrtest2 yeniden hesap 15/15. Geçme ±0,01 TL. Durum = DHR−Luca.",
+ "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (5).pdf, 15/15). DHR https://dhrtest2.d1-tech.com.tr 27.09.2026 dhrtest2 yeniden hesap 15/15. Geçme ±0,01 TL. Durum = DHR−Luca.",
  "matrixDesign": {
   "layers": [
    {
@@ -198,7 +198,7 @@
    "dhr": "pass",
    "luca": "fail",
    "ai": "pass",
-   "verdict": "DHR 68.352,49 / Luca 64.948,72 / YZ 59.964,67 (ΔDHR−Luca 3.403,77).",
+   "verdict": "DHR 66.352,49 / Luca 64.948,72 / YZ 59.964,67 (ΔDHR−Luca 1.403,77).",
    "whichCorrect": "YZ hakem; Luca referans.",
    "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
   },
@@ -303,7 +303,7 @@
    "dhr": "pass",
    "luca": "fail",
    "ai": "pass",
-   "verdict": "DHR 56.548,11 / Luca 56.944,34 / YZ 54.980,12 (ΔDHR−Luca -396,23).",
+   "verdict": "DHR 58.348,11 / Luca 56.944,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77).",
    "whichCorrect": "YZ hakem; Luca referans.",
    "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
   },
