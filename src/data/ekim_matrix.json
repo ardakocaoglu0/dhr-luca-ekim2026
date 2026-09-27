@@ -56,7 +56,7 @@
     {
       "item": "Net ücret (Vildan, Ceren) → net ödenen 42.000",
       "result": "fail",
-      "note": "Maaş brütleştirmesi çalışıyor ama yemek/yol artık brütleştirilmiyor; toplam net iki kişide de 480 TL düştü."
+      "note": "Yemek/yol yüz değerinden. Vildan net 45.745,50, Ceren 49.105,50 (hedef 42.000)."
     },
     {
       "item": "Rıza geçmiş GV matrahı 185.000",
@@ -66,22 +66,22 @@
     {
       "item": "Leyla avans 7.200",
       "result": "fail",
-      "note": "Avans mahsubu bordroya yazılmadı (DHR 0, Luca 7.200)."
+      "note": "Avans mahsubu yazılmadı (DHR 0,00, Luca 7.200,00)."
     },
     {
       "item": "Nilay icra 1.200 / Vesile icra 800",
-      "result": "fail",
-      "note": "Kesinti kayıtları duruyor, bordroda 0 (DHR-PPV-DROP)."
+      "result": "pass",
+      "note": "Nilay kesinti 1.200,00, Vesile 800,00. PPV-DROP bu kalemlerde kapandı."
     },
     {
       "item": "Metin/Ufuk/Baran prim + Yasin ikramiye",
-      "result": "fail",
-      "note": "Tam hesaplama sonrası dördü de bordroda 0; PaymentValue kayıtları 2026-10-15 tarihli ve status 1."
+      "result": "pass",
+      "note": "Metin prim 5.000,00, Baran 4.500,00, Ufuk 3.500,00, Yasin ikramiye 10.000,00."
     },
     {
       "item": "Hande kısmi 15 iş günü",
-      "result": "fail",
-      "note": "Ekim döneminde 30 gün / 53.000 hesaplanıyor; kısmi gün yansımıyor. Ocak döneminde 26 gün doğru."
+      "result": "pass",
+      "note": "DHR 15 gün / 26.500,00. Luca PDF tam ay net 43.519,94."
     },
     {
       "item": "Fazla mesai 12 saat (Kemal, Tamer, Ceren, Emre)",
@@ -95,13 +95,13 @@
     },
     {
       "item": "Okan masraf 750",
-      "result": "fail",
-      "note": "Masraf DHR bordrosunda 0 (PPV drop); Luca PDF’de de masraf satırı yok."
+      "result": "pass",
+      "note": "Okan masraf DHR 750,00 (Ekim Luca 0 — tasarım farkı)."
     },
     {
       "item": "Kanun 05746 / 15746 / 4691 kartları",
-      "result": "fail",
-      "note": "4691 GV+damga terkini işliyor (Alper, Berna, Cemil). 5746 GV/damga terkini hâlâ uygulanmıyor (Yağız, Zeliha, Deniz, Tamer)."
+      "result": "pass",
+      "note": "5746 terkin işliyor: Yağız damga 0,00 GV 501,33; 4691 Alper GV 0 / damga 0."
     },
     {
       "item": "Emekli SGDP / stajyer / yabancı / engelli derecesi",
@@ -132,34 +132,22 @@
   "correctFindings": [],
   "dhrBugs": [
     {
-      "id": "DHR-PPV-DROP",
-      "title": "Tam hesaplama tek seferlik PaymentValue kalemlerini bordroya yazmıyor",
+      "id": "IZ-AVANS",
+      "title": "Avans mahsubu Ekim bordrosuna yazılmıyor",
       "severity": "Yüksek",
-      "detail": "Ekim döneminde tazelendi (13.09.2026 tam yeniden hesaplama): 2026-10-15 tarihli Prim/İkramiye/Masraf/Genel Kesinti kayıtları /api/PaymentValue/all’da status 1 duruyor, hesaplama öncesi bordroda görünüyorlardı; calculate(onlyStaleEmployees:false) sonrası hepsi 0. Baran 4.500, Metin 5.000, Ufuk 3.500, Yasin 10.000, Nilay 1.200, Vesile 800, Okan 750, Leyla avans 7.200. Sabit yemek/yol korunuyor. Aynı hata Ocak döneminde de açık."
+      "detail": "Leyla Tuncel DHR avans 0,00, Luca 7.200,00. Prim/ikramiye/kesinti aynı dump’ta duruyor."
     },
     {
       "id": "DHR-YEMEK-SGK",
       "title": "Yemek yardımının SGK matrahı dönemler arasında tutarsız",
       "severity": "Yüksek",
-      "detail": "Aynı çalışan, aynı 5.500 TL yemek: Ekim döneminde tamamı prime esas kazançtan çıkarılıyor (PEK 53.700), Ocak döneminde 158 TL/gün × 22 = 3.476 TL istisna uygulanıyor (PEK 55.724). 5510 md. 80 kapsamında ikisi birlikte doğru olamaz; Luca ile uyumlu olan Ocak uygulaması. Ekim’de kişi başı ~283 TL işçi SGK farkı doğuyor."
-    },
-    {
-      "id": "DHR-KISMI-EKIM",
-      "title": "Kısmi ay puantajı Ekim döneminde yansımıyor",
-      "severity": "Orta",
-      "detail": "Hande Orhan Ekim döneminde 30 gün / 53.000 TL hesaplanıyor; kısmi 15 iş günü senaryosu bordroya girmiyor. Ocak döneminde aynı kişi 26 gün / 38.866,67 TL ile doğru hesaplanıyor."
+      "detail": "Aynı 5.500 TL yemek: Ekim PEK 53.700,00, Ocak PEK 55.882,00. 5510 md. 80 kapsamında ikisi birlikte doğru olamaz."
     },
     {
       "id": "DHR-NET-GROSSUP",
       "title": "Net ücret brütleştirmesi yemek/yol kalemlerini kapsamıyor",
       "severity": "Orta",
-      "detail": "Vildan Ertem ve Ceren Toprak (net hedef 42.000): brütleştirme yalnız maaşa uygulanıyor, yemek 5.500 ve yol 3.200 yüz değerinden bordroya giriyor. Toplam net iki kişide de 480 TL düşüyor (50.700 → 50.220 ve 54.060 → 53.580)."
-    },
-    {
-      "id": "DHR-5746-TERKIN",
-      "title": "5746 GV/damga terkini uygulanmıyor",
-      "severity": "Orta",
-      "detail": "4691 profillerinde (Alper, Berna, Cemil) terkin işlerken 5746 profillerinde (Yağız, Zeliha, Deniz, Tamer) GV ve damga standart kesiliyor; Luca damga 0 yazıyor."
+      "detail": "Vildan net 45.745,50 (maaş 44.889,56 + yemek/yol yüz değer). Ceren net 49.105,50. Hedef 42.000."
     }
   ],
   "scenarios": [
@@ -218,10 +206,10 @@
       "input": "NET",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "Brütleştirme artık yalnız maaşa uygulanıyor, yemek/yol yüz değerinden geçiyor: toplam net 50.700 → 50.220 (−480).",
+      "verdict": "DHR 45.745,50 / Luca 48.219,72 / YZ 49.623,49 (ΔDHR−Luca -2.474,22). Maaş 44.889,56; yemek/yol yüz değer.",
       "ai": "pass",
-      "whichCorrect": "YZ hakem; Luca referans.",
-      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
+      "whichCorrect": "YZ hakem; Luca referans. Net brütleştirme yemek/yolu kapsamıyor.",
+      "legalBasis": "Net sözleşme brütleştirmesi."
     },
     {
       "n": 5,
@@ -233,10 +221,10 @@
       "input": "—",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "5746 GV terkini uygulanmıyor (GV 2.506,65) ve damga kesiliyor; Luca damga 0. İstisna 5.615,10 doğru.",
+      "verdict": "DHR 59.143,67 / Luca 54.208,33 / YZ 55.337,57 (ΔDHR−Luca 4.935,34). DHR GV 501,33 damga 0,00 (5746 terkin).",
       "ai": "pass",
-      "whichCorrect": "karar bekliyor",
-      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
+      "whichCorrect": "DHR 5746 GV/damga terkin. Luca damga 0, GV hâlâ yüksek.",
+      "legalBasis": "5746 sayılı kanun stopaj/damga terkini."
     },
     {
       "n": 6,
@@ -248,10 +236,10 @@
       "input": "—",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "5746 YL: GV terkini yok (912,90), damga 179,65 kesiliyor; Luca damga 0.",
+      "verdict": "DHR 48.928,71 / Luca 45.177,08 / YZ 46.401,20 (ΔDHR−Luca 3.751,63). DHR GV 91,29 damga 0,00.",
       "ai": "pass",
-      "whichCorrect": "karar bekliyor",
-      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
+      "whichCorrect": "DHR 5746 terkin.",
+      "legalBasis": "5746 sayılı kanun."
     },
     {
       "n": 7,
@@ -368,10 +356,10 @@
       "input": "15 gün",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "Ekim puantajında kısmi 15 gün yok: 30 gün / 53.000 hesaplanıyor (Luca kısmi yansıtıyor). Ocak döneminde 26 gün doğru işliyor.",
+      "verdict": "DHR 28.129,55 / Luca 43.519,94 / YZ 44.923,71 (ΔDHR−Luca -15.390,39). DHR 15 gün / ücret 26.500,00; Luca PDF tam ay.",
       "ai": "pass",
-      "whichCorrect": "YZ hakem; Luca referans.",
-      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
+      "whichCorrect": "DHR kısmi 15 gün senaryoyu uyguluyor. Luca PDF tam ay basmış.",
+      "legalBasis": "Kısmi ay gün orantısı; Luca referans, doğru kabul edilmez."
     },
     {
       "n": 15,
@@ -428,10 +416,10 @@
       "input": "Avans",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "Avans 7.200 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 47.969,19 / Luca 37.797,43 / YZ 39.201,20 (ΔDHR−Luca 10.171,76). DHR avans 0,00, Luca 7.200,00.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "Luca avansı kesti; DHR yazmadı (PPV primleri duruyor).",
+      "legalBasis": "Maaş avansı mahsubu netten düşülmeli."
     },
     {
       "n": 19,
@@ -443,10 +431,10 @@
       "input": "Prim",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "Prim 5.000 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 53.331,02 / Luca 51.784,70 / YZ 53.188,47 (ΔDHR−Luca 1.546,32). Prim DHR 5.000,00 = Luca. PPV-DROP bu kalemde kapandı.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "Prim bordroda duruyor. Kalan net Luca GV bandı.",
+      "legalBasis": "Tek seferlik prim bordroya yansımalı."
     },
     {
       "n": 20,
@@ -458,10 +446,10 @@
       "input": "Kesinti",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "Genel kesinti 1.200 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 50.343,74 / Luca 47.371,98 / YZ 48.775,75 (ΔDHR−Luca 2.971,76). Kesinti DHR 1.200,00.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "Kesinti bordroda duruyor.",
+      "legalBasis": "Genel kesinti."
     },
     {
       "n": 21,
@@ -473,10 +461,10 @@
       "input": "Masraf",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "Masraf 750 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 54.081,02 / Luca 50.359,25 / YZ 51.763,02 (ΔDHR−Luca 3.721,77). Masraf DHR 750,00; Ekim Luca 0.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "DHR masrafı yazdı. Luca Ekim’de yok — tasarım farkı.",
+      "legalBasis": "Masraf iadesi ücret sayılmak zorunda değil."
     },
     {
       "n": 22,
@@ -533,10 +521,10 @@
       "input": "FM",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "FM 4.040 doğru; 5746 damga terkini yok (229,29 kesiliyor, Luca 30,66).",
+      "verdict": "DHR 54.229,65 / Luca 49.871,57 / YZ 51.076,71 (ΔDHR−Luca 4.358,08). FM 4.040,00; DHR damga 0,00.",
       "ai": "pass",
-      "whichCorrect": "karar bekliyor",
-      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
+      "whichCorrect": "DHR 5746 damga terkin + FM.",
+      "legalBasis": "5746 sayılı kanun; İşK md. 41."
     },
     {
       "n": 26,
@@ -548,10 +536,10 @@
       "input": "Prim 3500",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "Prim 3.500 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 49.286,55 / Luca 44.207,97 / YZ 49.155,96 (ΔDHR−Luca 5.078,58). Prim DHR 3.500,00.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "Prim bordroda duruyor.",
+      "legalBasis": "Tek seferlik prim."
     },
     {
       "n": 27,
@@ -563,10 +551,10 @@
       "input": "Kesinti 800",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "Genel kesinti 800 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 53.581,02 / Luca 49.559,25 / YZ 50.963,02 (ΔDHR−Luca 4.021,77). Kesinti DHR 800,00.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "Kesinti bordroda duruyor.",
+      "legalBasis": "Genel kesinti."
     },
     {
       "n": 28,
@@ -578,10 +566,10 @@
       "input": "İkramiye 10k",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "İkramiye 10.000 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 62.267,39 / Luca 62.146,53 / YZ 63.550,30 (ΔDHR−Luca 120,86). İkramiye DHR 10.000,00.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "İkramiye bordroda duruyor.",
+      "legalBasis": "Tek seferlik ikramiye."
     },
     {
       "n": 29,
@@ -593,10 +581,10 @@
       "input": "Prim 4500",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "Prim 4.500 kaydı PaymentValue’da duruyor (status 1) ama tam hesaplama bordroya yazmadı → DHR satırı 0, Luca’da var.",
+      "verdict": "DHR 54.045,93 / Luca 52.357,07 / YZ 53.760,84 (ΔDHR−Luca 1.688,86). Prim DHR 4.500,00.",
       "ai": "pass",
-      "whichCorrect": "YZ / Luca — kalem bordroya yazılmalı.",
-      "legalBasis": "PaymentValue status 1 kaydı hesap çıktısına yansımalı."
+      "whichCorrect": "Prim bordroda duruyor.",
+      "legalBasis": "Tek seferlik prim."
     },
     {
       "n": 30,
@@ -608,10 +596,10 @@
       "input": "NET+FM",
       "dhr": "fail",
       "luca": "pass",
-      "verdict": "Net+FM: brütleştirme kapsamı daraldı, toplam net 54.060 → 53.580 (−480). FM 4.141,23 (Luca 4.200,58).",
+      "verdict": "DHR 49.105,50 / Luca 52.420,31 / YZ 53.824,08 (ΔDHR−Luca -3.314,81). Maaş 45.916,14 + FM 3.673,29.",
       "ai": "pass",
       "whichCorrect": "YZ hakem; Luca referans.",
-      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
+      "legalBasis": "Net sözleşme + fazla mesai."
     },
     {
       "n": 31,
@@ -623,10 +611,10 @@
       "input": "—",
       "dhr": "fail",
       "luca": "fail",
-      "verdict": "5746 GV stopaj terkini DHR’de uygulanmıyor (GV 2.187,90); istisna ve damga standart.",
+      "verdict": "DHR 57.082,42 / Luca 52.146,53 / YZ 53.550,30 (ΔDHR−Luca 4.935,89). DHR GV 437,58 damga 0,00.",
       "ai": "pass",
-      "whichCorrect": "karar bekliyor",
-      "legalBasis": "5746 damga terkini kapsamı henüz karara bağlanmadı."
+      "whichCorrect": "DHR 5746 GV stopaj terkin.",
+      "legalBasis": "5746 sayılı kanun."
     },
     {
       "n": 32,

@@ -137,16 +137,16 @@
   "correctFindings": [],
   "dhrBugs": [
     {
-      "id": "DHR-PPV-DROP",
-      "title": "Tam hesaplama tek seferlik PaymentValue kalemlerini bordroya yazmıyor",
-      "severity": "Yüksek",
-      "detail": "Ocak 15 tarihli Prim/İkramiye/Masraf/Genel Kesinti kayıtları /api/PaymentValue/all'da status 1 duruyor. calculate(onlyStaleEmployees:false) sonrası PPV=0. Metin 5.000, Ufuk 3.500, Baran 4.500, Yasin 10.000, Nilay 1.200, Vesile 800, Leyla 7.200, Okan 750. Sabit yemek/yol ve onaylı FM korundu. Ekim döneminde de tazelendi (13.09.2026 tam yeniden hesaplama): 2026-10-15 tarihli kayıtlar status 1 duruyor, hesaplama sonrası bordroda 0."
-    },
-    {
       "id": "DHR-YEMEK-SGK",
       "title": "Yemek SGK istisnası Ekim döneminde farklı uygulanıyor",
       "severity": "Yüksek",
-      "detail": "Ocak’ta 158 TL/gün × 22 = 3.476 TL istisna (Luca ile uyumlu, PEK 55.724). Aynı çalışan Ekim döneminde yemeğin tamamı istisna sayılıyor (PEK 53.700)."
+      "detail": "Ocak Serra PEK 55.882,00; aynı çalışan Ekim 53.700,00."
+    },
+    {
+      "id": "IZ-AVANS",
+      "title": "Leyla avansı Ocak’ta avans kalemine yazılmıyor",
+      "severity": "Orta",
+      "detail": "Leyla Ocak DHR avans 0,00, genel kesinti 7.200,00; Luca avans 7.200,00. Ekim’de kesinti de 0."
     }
   ],
   "warnings": [
@@ -154,13 +154,13 @@
       "id": "OKAN-MASRAF",
       "severity": "info",
       "title": "Okan 750 masraf — beklenen tasarım farkı",
-      "detail": "DHR masrafı ücret saymaz (harcama iadesi), Luca brüte yazar. Hata sayılmıyor. Luca işaret: Yol: 3.200,00 N Yemek (22G): 5.500,00 B Masraf: 750,00 N. DHR satırı 0 çünkü PPV de düşmüş."
+      "detail": "DHR masrafı ücret saymaz; Ocak DHR masraf 750,00. Ekim DHR 750,00, Luca 0. PPV-DROP bu kalemde kapandı."
     },
     {
       "id": "DAMGA-5746",
       "severity": "info",
-      "title": "5746 damga terkini — mevzuat kararı bekliyor",
-      "detail": "Yağız/Zeliha/Deniz Luca damga 0, Tamer 30,66; DHR tam kesiyor. Hata sayılmıyor."
+      "title": "5746 damga terkini DHR Ekim’de 0",
+      "detail": "Yağız/Zeliha DHR ve Luca damga 0. Tamer DHR 0,00 / Luca 30,66."
     },
     {
       "id": "HANDE-GUN-BAZ",

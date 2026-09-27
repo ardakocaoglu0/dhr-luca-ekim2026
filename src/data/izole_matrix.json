@@ -69,16 +69,10 @@
   ],
   "dhrBugs": [
     {
-      "id": "IZ-ENGEL-PUT",
-      "title": "Engellilik derecesi Employee PUT ile yazılmıyor",
-      "severity": "Orta",
-      "detail": "Kaan/Leman/Mert disabilityDegree GET’te null kalıyor; İK Ersin’de 1. Kart alanı API DTO’da var ama PUT yok sayıyor. Net Ada baseline."
-    },
-    {
       "id": "IZ-AVANS",
       "title": "Avans mahsubu bordroya yazılmıyor",
       "severity": "Yüksek",
-      "detail": "Umay 6220 avans 7.200 kaydı var, net Ada ile aynı (F1-AVANS)."
+      "detail": "Umay 6220 Luca avans 7.200,00, DHR 0,00, net 40.874,49 (F1-AVANS ile aynı sınıf)."
     }
   ],
   "warnings": [
@@ -161,9 +155,9 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 lisans: DHR 50.300,43 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.094,45).",
-      "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
-      "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
+      "verdict": "DHR 50.300,43 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.094,45). DHR GV 517,27 damga 0,00.",
+      "whichCorrect": "DHR 5746 GV/damga terkin. Luca damga 0, GV hâlâ Ada zemini.",
+      "legalBasis": "5746 sayılı kanun stopaj/damga terkini."
     },
     {
       "n": 6,
@@ -176,9 +170,9 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 YL: DHR 50.559,07 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.353,09).",
-      "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
-      "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
+      "verdict": "DHR 50.559,07 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.353,09). DHR GV 258,63 damga 0,00.",
+      "whichCorrect": "DHR 5746 GV/damga terkin. Luca damga 0, GV hâlâ Ada zemini.",
+      "legalBasis": "5746 sayılı kanun stopaj/damga terkini."
     },
     {
       "n": 7,
@@ -191,9 +185,9 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 doktora: DHR 50.688,38 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.482,40).",
-      "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
-      "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
+      "verdict": "DHR 50.688,38 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.482,40). DHR GV 129,32 damga 0,00.",
+      "whichCorrect": "DHR 5746 GV/damga terkin. Luca damga 0, GV hâlâ Ada zemini.",
+      "legalBasis": "5746 sayılı kanun stopaj/damga terkini."
     },
     {
       "n": 8,
@@ -206,9 +200,9 @@
       "dhr": "pass",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "Tek değişken 4691 Ar-Ge: DHR 50.817,70 / Luca 48.049,10 / YZ 46.784,70 (ΔDHR−Luca 2.768,60).",
-      "whichCorrect": "DHR",
-      "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu — GV/damga terkini."
+      "verdict": "DHR 50.817,70 / Luca 48.049,10 / YZ 46.784,70 (ΔDHR−Luca 2.768,60). DHR 4691 GV/damga 0.",
+      "whichCorrect": "DHR 4691 terkin. Luca Ada zemini — Luca kartı eksik.",
+      "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
     },
     {
       "n": 9,
@@ -221,9 +215,9 @@
       "dhr": "pass",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "Tek değişken 4691 destek: DHR 50.817,70 / Luca 48.049,10 / YZ 46.784,70 (ΔDHR−Luca 2.768,60).",
-      "whichCorrect": "DHR",
-      "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu — GV/damga terkini."
+      "verdict": "DHR 50.817,70 / Luca 48.049,10 / YZ 46.784,70 (ΔDHR−Luca 2.768,60). DHR 4691 GV/damga 0.",
+      "whichCorrect": "DHR 4691 terkin. Luca Ada zemini — Luca kartı eksik.",
+      "legalBasis": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu."
     },
     {
       "n": 10,
@@ -251,8 +245,8 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Engelli 1: DHR 49.874,49 / Luca 49.849,10 / YZ 46.784,70 (ΔDHR−Luca 25,39).",
-      "whichCorrect": "YZ",
+      "verdict": "DHR 49.874,49 / Luca 49.849,10 / YZ 46.784,70 (ΔDHR−Luca 25,39). Engellilik indirimi karttan işliyor.",
+      "whichCorrect": "DHR GVK md. 31. YZ bu birimde Ada zeminini kullanıyor.",
       "legalBasis": "GVK md. 31 sakatlık indirimi."
     },
     {
@@ -266,8 +260,8 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Engelli 2: DHR 49.124,49 / Luca 49.099,10 / YZ 46.784,70 (ΔDHR−Luca 25,39).",
-      "whichCorrect": "YZ",
+      "verdict": "DHR 49.124,49 / Luca 49.099,10 / YZ 46.784,70 (ΔDHR−Luca 25,39). Engellilik indirimi karttan işliyor.",
+      "whichCorrect": "DHR GVK md. 31. YZ bu birimde Ada zeminini kullanıyor.",
       "legalBasis": "GVK md. 31 sakatlık indirimi."
     },
     {
@@ -281,8 +275,8 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Engelli 3: DHR 48.524,49 / Luca 48.499,10 / YZ 46.784,70 (ΔDHR−Luca 25,39).",
-      "whichCorrect": "YZ",
+      "verdict": "DHR 48.524,49 / Luca 48.499,10 / YZ 46.784,70 (ΔDHR−Luca 25,39). Engellilik indirimi karttan işliyor.",
+      "whichCorrect": "DHR GVK md. 31. YZ bu birimde Ada zeminini kullanıyor.",
       "legalBasis": "GVK md. 31 sakatlık indirimi."
     },
     {
@@ -386,8 +380,8 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken Avans 7200: DHR 40.874,49 / Luca 40.849,10 / YZ 39.584,70 (ΔDHR−Luca 25,39).",
-      "whichCorrect": "Luca",
+      "verdict": "DHR 40.874,49 / Luca 40.849,10 / YZ 39.584,70 (ΔDHR−Luca 25,39). DHR avans 0,00, Luca 7.200,00.",
+      "whichCorrect": "Luca avansı kesti; DHR yazmadı.",
       "legalBasis": "Maaş avansı mahsubu netten düşülmeli."
     },
     {
@@ -491,9 +485,9 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "Tek değişken 5746 GV stopaj terkin: DHR 50.300,43 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.094,45).",
-      "whichCorrect": "Luca — 5746 damga terkin (PDF kanun 00000).",
-      "legalBasis": "5746 sayılı kanun damga terkini; GV stopaj terkin bu slip’te yok (GV Ada ile aynı)."
+      "verdict": "DHR 50.300,43 / Luca 48.205,98 / YZ 46.784,70 (ΔDHR−Luca 2.094,45). DHR GV 517,27 damga 0,00.",
+      "whichCorrect": "DHR 5746 GV/damga terkin. Luca damga 0, GV hâlâ Ada zemini.",
+      "legalBasis": "5746 sayılı kanun stopaj/damga terkini."
     }
   ]
 }

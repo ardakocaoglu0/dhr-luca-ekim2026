@@ -87,13 +87,7 @@
    "id": "F1-AVANS",
    "title": "Tanımlı avans bordroda kesilmedi",
    "severity": "Orta",
-   "detail": "8009 Gülce Han’da 2.000 TL avans kadroda tanımlı; dönem bordrosunda avans kesintisi satırı boş kaldı."
-  },
-  {
-   "id": "F1-FM-TUTAR",
-   "title": "Fazla mesai tutarı Luca’dan farklı (birim hatası kapandı)",
-   "severity": "Düşük",
-   "detail": "8008 Fırat DHR 4.000,00, Luca 6.000,00 (10s). 10 TL olarak işleme kapandı."
+   "detail": "8009 Gülce Han Luca avans 2.000,00; DHR 0,00."
   }
  ],
  "scenarios": [

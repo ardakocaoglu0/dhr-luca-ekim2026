@@ -45,7 +45,7 @@
     }
   ],
   "correctFindings": [
-    "Koray icra 20.000, Luca net 26.784,70.",
+    "Koray DHR icra 12.018,62 (1/4 tavanı); Luca 20.000,00.",
     "Pinar prim 80.000 B görünüyor.",
     "30/30 kişi PDF’de. Hale/Ilker Prim 2.500 B. Ort. |ΔNet DHR−Luca| 1.315,94 TL · ±0,01 5/30."
   ],
@@ -54,44 +54,32 @@
       "id": "PK-AVANS",
       "title": "Avans mahsubu bordroya yazılmıyor",
       "severity": "Yüksek",
-      "detail": "Onur 6326 avans onaylandı (7200, status=2) ama Ocak advancePeriodDeductions boş. IZ-AVANS."
-    },
-    {
-      "id": "PK-ICRA",
-      "title": "İcra / işveren alacağı 1/4 tavanı yok",
-      "severity": "Yüksek",
-      "detail": "ROOT İcra ve İşveren Alacağı deductionClass=0; Net Decrease bağından 6322 20.000, 6325 25.000 tam kesildi."
-    },
-    {
-      "id": "PK-ENGEL",
-      "title": "Engellilik derecesi karta yazılmıyor",
-      "severity": "Orta",
-      "detail": "Barış 6313 Employee PUT 200 ama disabilityDegree GET null, net Mine ile aynı. IZ-ENGEL-PUT."
-    },
-    {
-      "id": "PK-5746",
-      "title": "5746 stopaj terkini uygulanmıyor",
-      "severity": "Orta",
-      "detail": "Ahu 6312 lawFields stopajTerkin true; GV/damga Mine baseline."
+      "detail": "Onur 6326 Luca avans 7.200,00, DHR 0,00. IZ-AVANS."
     },
     {
       "id": "PK-KIDEM",
-      "title": "Kıdem/ihbar çıkış API reason zorunlu, yazılamadı",
-      "severity": "Orta",
-      "detail": "Rüya 6328 TerminateEmployee 400 reason required; kıdem/ihbar 0."
+      "title": "Çıkış bordrosu neti şişiyor, kıdem kalemi eşlenmiyor",
+      "severity": "Yüksek",
+      "detail": "Rüya 6328 brüt 59.200,00, net 496.406,78; kıdem/ihbar/izin 0."
     }
   ],
   "warnings": [
     {
       "id": "PK-RUYA-CIKIS",
       "title": "Rüya çıkış tarihi yok",
-      "detail": "ÖZET Personel Bilgisi çıkış 31.01.2026 boş; kıdem/ihbar yok.",
-      "severity": "warning"
+      "detail": "Çıkış 31.01 Luca’da yok. DHR net 496.406,78 (brüt 59.200,00).",
+      "severity": "error"
     },
     {
       "id": "PK-YEMEK-N",
       "title": "Yemek/yol N",
       "detail": "23 kişide N. Repo kuralı B.",
+      "severity": "info"
+    },
+    {
+      "id": "PK-ICRA-MAP",
+      "title": "İcra 1/4 tavanı var; Nehir kesinti satırında",
+      "detail": "Koray icra 12.018,62. Nehir aynı tavan 12.018,62 genel kesintide, icra alanı 0. Luca tam tutar kesiyor.",
       "severity": "info"
     }
   ],
@@ -272,9 +260,9 @@
       "dhr": "pass",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "DHR 48.074,49 / Luca 46.983,33 / YZ 48.074,49 (ΔDHR−Luca 1.091,16). kanun 00000; damga 0",
-      "whichCorrect": "YZ hakem. Luca referans.",
-      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
+      "verdict": "DHR 50.300,43 / Luca 46.983,33 / YZ 48.074,49 (ΔDHR−Luca 3.317,10). GV 517,27 damga 0,00 (5746 terkin).",
+      "whichCorrect": "DHR 5746 stopaj/damga terkin.",
+      "legalBasis": "5746 sayılı kanun."
     },
     {
       "n": 13,
@@ -287,9 +275,9 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "DHR 48.074,49 / Luca 48.584,70 / YZ 49.874,49 (ΔDHR−Luca -510,21). Girdi PDF’de görünüyor.",
-      "whichCorrect": "YZ hakem. Luca referans.",
-      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
+      "verdict": "DHR 49.874,49 / Luca 48.584,70 / YZ 49.874,49 (ΔDHR−Luca 1.289,79). GV 786,33 vs Mine 2.586,33.",
+      "whichCorrect": "DHR 1. derece engellilik indirimi.",
+      "legalBasis": "GVK md. 31."
     },
     {
       "n": 14,
@@ -422,9 +410,9 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "DHR 28.074,49 / Luca 26.784,70 / YZ 36.055,87 (ΔDHR−Luca 1.289,79). Girdi PDF’de görünüyor.",
-      "whichCorrect": "Luca icra 20.000 kesilmiş; YZ 1/4 tavanı ayrı.",
-      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
+      "verdict": "DHR 36.055,87 / Luca 26.784,70 / YZ 36.055,87 (ΔDHR−Luca 9.271,17). DHR icra 12.018,62 (1/4); Luca 20.000,00.",
+      "whichCorrect": "DHR 1/4 tavanı. Luca tam kesti.",
+      "legalBasis": "İİK md. 83 icra kesintisi tavanı."
     },
     {
       "n": 23,
@@ -437,9 +425,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 27.074,49 / Luca 25.784,70 / YZ 30.055,87 (ΔDHR−Luca 1.289,79). nafaka 6.000 yok · icra 15.000 yok",
-      "whichCorrect": "YZ hakem. Luca referans.",
-      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
+      "verdict": "DHR 30.055,87 / Luca 25.784,70 / YZ 30.055,87 (ΔDHR−Luca 4.271,17). Nafaka 6.000,00 + icra 12.018,62.",
+      "whichCorrect": "DHR nafaka sonra icra tavanı.",
+      "legalBasis": "Nafaka önceliği + İİK md. 83."
     },
     {
       "n": 24,
@@ -467,9 +455,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 23.074,49 / Luca 21.784,70 / YZ 36.055,87 (ΔDHR−Luca 1.289,79). işveren alacağı yok",
-      "whichCorrect": "Luca avansı yanlış kişiye yazmış. Beklenen işveren alacağı 25.000.",
-      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
+      "verdict": "DHR 36.055,87 / Luca 21.784,70 / YZ 36.055,87 (ΔDHR−Luca 14.271,17). İşveren alacağı tavanı kesinti 12.018,62; icra alanı 0.",
+      "whichCorrect": "DHR 1/4’ü genel kesintiye yazdı. Luca 25.000 tam kesti.",
+      "legalBasis": "İşveren alacağı tavanı."
     },
     {
       "n": 26,
@@ -482,9 +470,9 @@
       "dhr": "fail",
       "luca": "pass",
       "ai": "pass",
-      "verdict": "DHR 48.074,49 / Luca 39.584,70 / YZ 40.874,49 (ΔDHR−Luca 8.489,79). Girdi PDF’de görünüyor.",
-      "whichCorrect": "Avans 7.200 Onur’da yok; Nehir’de duruyor.",
-      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
+      "verdict": "DHR 40.874,49 / Luca 39.584,70 / YZ 40.874,49 (ΔDHR−Luca 1.289,79). DHR avans 0,00, Luca 7.200,00.",
+      "whichCorrect": "Luca avansı kesti; DHR yazmadı.",
+      "legalBasis": "Maaş avansı mahsubu."
     },
     {
       "n": 27,
@@ -512,9 +500,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 48.076,32 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 1.291,62). çıkış 31.01 yok",
-      "whichCorrect": "YZ hakem. Luca referans.",
-      "legalBasis": "Sapma 2026 GVK/5510/488 ile bakılır. Luca doğru kabul edilmez."
+      "verdict": "DHR 496.406,78 / Luca 46.784,70 / YZ 48.074,49 (ΔDHR−Luca 449.622,08). Kıdem/ihbar/izin satırı 0; net brütün çok üzerinde.",
+      "whichCorrect": "DHR çıkış neti hatalı. Luca çıkış basmamış.",
+      "legalBasis": "1475/4857 kıdem-ihbar; kalem kırılımı gerekir."
     },
     {
       "n": 29,

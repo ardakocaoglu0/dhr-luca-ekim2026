@@ -507,7 +507,7 @@ patchItem(faz1Mtx.checkedItems, /Avans/, {
 patchItem(faz1Mtx.checkedItems, /Fazla mesai/, {
   result: fmFixed ? "pass" : "fail",
   note: fmFixed
-    ? `8008 DHR ${tr(firat?.dhr?.overtime)} (saat×ücret). Eski 10,00 TL birim hatası kapandı. Luca ${tr(firat?.luca?.overtime)} — tutar farkı F1-FM-TUTAR.`
+    ? `8008 DHR ${tr(firat?.dhr?.overtime)} (saat×ücret). Eski 10,00 TL birim hatası kapandı. Luca ${tr(firat?.luca?.overtime)} — net FM tipi yok (U-FM-NET).`
     : `8008’de 10 saat yerine ${tr(firat?.dhr?.overtime)} TL işlendi (F1-FM-BIRIM).`,
 });
 patchItem(faz1Mtx.checkedItems, /Luca PDF/, {
@@ -523,15 +523,7 @@ if (!faz1Mtx.dhrBugs.some((b) => b.id === "F1-AVANS")) {
     detail: `8009 Gülce Han Luca avans ${tr(gulce?.luca?.advance)}; DHR ${tr(gulce?.dhr?.advance)}.`,
   });
 }
-if (fmFixed && !near(firat?.dhr?.overtime, firat?.luca?.overtime, 1)) {
-  faz1Mtx.dhrBugs = faz1Mtx.dhrBugs.filter((b) => b.id !== "F1-FM-TUTAR");
-  faz1Mtx.dhrBugs.push({
-    id: "F1-FM-TUTAR",
-    title: "Fazla mesai tutarı Luca’dan farklı (birim hatası kapandı)",
-    severity: "Düşük",
-    detail: `8008 Fırat DHR ${tr(firat?.dhr?.overtime)}, Luca ${tr(firat?.luca?.overtime)} (${firat?.luca?.fmHours || 10}s). 10 TL olarak işleme kapandı.`,
-  });
-}
+faz1Mtx.dhrBugs = (faz1Mtx.dhrBugs || []).filter((b) => b.id !== "F1-FM-TUTAR");
 faz1Mtx.correctFindings = [
   `Luca PDF ${faz1.lucaPdfVersion} 15/15 işlendi.`,
   `Hakan Işık BES %3: DHR ${tr(hakan?.dhr?.bes)} = Luca ${tr(hakan?.luca?.bes)}.`,
@@ -560,7 +552,9 @@ for (const s of izoleMtx.scenarios || []) {
     s.legalBasis = "İşK md. 41 — fazla mesai bordroya yansımalı.";
   }
 }
-izoleMtx.dhrBugs = (izoleMtx.dhrBugs || []).filter((b) => b.id !== "IZ-FM-SAAT" || nz(tolga?.dhr?.overtime) <= 1);
+izoleMtx.dhrBugs = (izoleMtx.dhrBugs || []).filter(
+  (b) => b.id !== "IZ-ENGEL-PUT" && (b.id !== "IZ-FM-SAAT" || nz(tolga?.dhr?.overtime) <= 1)
+);
 if (nz(tolga?.dhr?.overtime) > 1) {
   izoleMtx.correctFindings = [
     ...(izoleMtx.correctFindings || []).filter((x) => !/Ada Korkmaz net 48/i.test(x) && !/Hakan\/Isik 4691/i.test(x)),
@@ -744,7 +738,7 @@ if (wFaz1) {
 }
 const wKismi = dash.works.find((w) => w.id === "W-KISMI");
 if (wKismi) {
-  wKismi.detail = `Ocak Hande 26 gün. Faz 1: Cansu ${cansu?.dhr?.sgkDays} gün, Korhan ${korhan?.dhr?.sgkDays} gün, Baran ${baran?.dhr?.sgkDays} gün. (Ekim Hande için bkz. DHR-KISMI-EKIM.)`;
+  wKismi.detail = `Ocak Hande ${handeOcak?.dhr?.sgkDays ?? 26} gün. Faz 1: Cansu ${cansu?.dhr?.sgkDays} gün, Korhan ${korhan?.dhr?.sgkDays} gün, Baran ${baran?.dhr?.sgkDays} gün. Ekim Hande için sync-dhr-bugs.`;
 }
 
 dash.bugs = (dash.bugs || []).filter((b) => b.id !== "F1-BES-ORAN");
@@ -804,6 +798,7 @@ if (fmFixed && !dash.works.some((w) => w.id === "W-FM-FAZ1")) {
   });
 }
 writeJson(path.join(DATA, "dashboard.json"), dash, 2);
+require("./sync-dhr-bugs.cjs").sync();
 
 const rosterPatch = (file) => {
   const p = path.join(DATA, file);
