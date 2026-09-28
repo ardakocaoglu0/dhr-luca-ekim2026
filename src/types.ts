@@ -65,6 +65,14 @@ export type CompareRow = {
     sgk?: number | null;
     unemployment?: number | null;
     gross?: number | null;
+    saglik?: number | null;
+    besEmployer?: number | null;
+    sskMat?: number | null;
+    fmHours?: number | null;
+    hire?: string | null;
+    exit?: string | null;
+    tc?: string;
+    name?: string;
   };
   dhr: {
     gross: number;

@@ -1,7 +1,7 @@
 {
-  "period": "Eylül 2026 · Operasyon · DHR × YZ (Luca bilgisi bekleniyor)",
+  "period": "Eylül 2026 · Operasyon · DHR × Luca × YZ",
   "environment": "dhrtest2.d1-tech.com.tr · Operasyon",
-  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (PDF yok — Luca bilgisi bekleniyor). DHR UI/API. Geçme ±0,01 TL.",
+  "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (35).pdf, 3/3). DHR 3/3. Geçme ±0,01 TL. Durum = DHR−Luca.",
   "matrixDesign": {
     "layers": [
       {
@@ -15,7 +15,7 @@
         "desc": "Eylül 2026 asgari GV istisnası 5.615,10. Aylık izole."
       }
     ],
-    "notFullCombinatorial": "Luca PDF yok. Durum kolonu Luca gelene kadar BEKLİYOR."
+    "notFullCombinatorial": "Luca PDF bordro_d1_tech (35).pdf 3/3. Durum = DHR−Luca."
   },
   "checkedItems": [
     {
@@ -26,7 +26,7 @@
     {
       "item": "Luca hakem değil",
       "result": "pass",
-      "note": "Luca bilgisi bekleniyor; hakem YZ."
+      "note": "Luca referans, hakem YZ."
     },
     {
       "item": "DHR Eylül 2026 hesap",
@@ -35,11 +35,15 @@
     },
     {
       "item": "Luca PDF",
-      "result": "fail",
-      "note": "Luca bilgisi bekleniyor."
+      "result": "pass",
+      "note": "bordro_d1_tech (35).pdf: 3/3. DHR net ±0,01: 0/3."
     }
   ],
-  "correctFindings": [],
+  "correctFindings": [
+    "Luca PDF bordro_d1_tech (35).pdf 3/3 işlendi.",
+    "DHR×Luca ±0,01 0/3. Ort. |ΔNet| 3.432,82.",
+    "Seda 8–10.09 ücretsiz (21), Tolga 14–18.09 rapor (01 İstirahat), Ufuk 4–8.09 ücretli izin."
+  ],
   "dhrBugs": [],
   "warnings": [],
   "scenarios": [
@@ -52,10 +56,10 @@
       "law": "00000",
       "input": "unpaid",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 51.196,69 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ -3.783,43",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 51.196,69 / Luca 50.854,88 / YZ 54.980,12 (ΔDHR−Luca 341,81)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -67,10 +71,10 @@
       "law": "00000",
       "input": "report",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 47.995,24 / YZ 54.980,12 (ΔDHR−Luca 8.552,87)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     },
     {
@@ -82,10 +86,10 @@
       "law": "00000",
       "input": "annual",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     }
   ]

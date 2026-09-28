@@ -100,7 +100,7 @@ export default function Faz1View({
   const subTabs: { id: SubTab; label: string; count?: number }[] = [
     { id: "yz", label: "Ana Kadro DHR × Luca × YZ", count: hasCompare ? comparison.rows.length : undefined },
     { id: "yuv", label: "Yuvarlama DHR × Luca × YZ", count: hasYuv ? yuvarlamaComparison.rows.length : roster.counts.yuvarlama },
-    { id: "op", label: "Operasyon DHR × YZ", count: hasOp ? operasyonComparison.rows.length : roster.counts.operasyon },
+    { id: "op", label: "Operasyon DHR × Luca × YZ", count: hasOp ? operasyonComparison.rows.length : roster.counts.operasyon },
     { id: "kenar", label: "Kenar DHR × Luca × YZ", count: hasKenar ? kenarComparison.rows.length : roster.counts.kenar },
     { id: "takvim", label: "Takvim DHR × YZ", count: hasTakvim ? takvimComparison.rows.length : roster.counts.takvim },
     { id: "blokaj", label: "Blokaj DHR × YZ", count: hasBlokaj ? blokajComparison.rows.length : roster.counts.blokaj },

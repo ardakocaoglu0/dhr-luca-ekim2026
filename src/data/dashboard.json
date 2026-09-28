@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:49:16.508Z",
+  "generatedAt": "2026-09-28T13:30:43.857Z",
   "environment": "https://dhrtest2.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
@@ -56,8 +56,8 @@
       "label": "Eylül 2026 — Operasyon",
       "unit": "Operasyon",
       "people": 3,
-      "state": "DHR 3/3 · Luca bilgisi bekleniyor · YZ 3",
-      "compare": "DHR × YZ (Luca bilgisi bekleniyor)"
+      "state": "Hesaplandı · DHR 3/3 · Luca 3/3 · ±0,01 0/3",
+      "compare": "DHR × Luca × YZ"
     },
     {
       "id": "kenar",
@@ -85,6 +85,15 @@
     }
   ],
   "works": [
+    {
+      "id": "W-OP-LUCA",
+      "title": "Operasyon Eylül Luca PDF (35) + DHR 3/3",
+      "detail": "bordro_d1_tech (35).pdf: 3/3. Ort. |ΔNet DHR−Luca| 3.432,82 TL · ±0,01 0/3. Seda DHR 51.196,69 / Luca 50.854,88. Tolga DHR 56.548,11 / Luca 47.995,24. Ufuk DHR 56.548,11 / Luca 55.144,34.",
+      "periods": [
+        "Eylül"
+      ],
+      "area": "Kapsam"
+    },
     {
       "id": "W-KENAR-LUCA",
       "title": "Kenar Eylül Luca PDF (31) + DHR 53/53",
@@ -533,7 +542,7 @@
     {
       "id": "U-DIGER-BIRIMLER",
       "title": "Faz1 Bordro A.Ş. hesaplanmadı",
-      "detail": "Şirket B (2) kapsam dışı. Operasyon 3/3, Kenar 53/53 + Luca bordro_d1_tech (31).pdf 53/53, Yuvarlama 100/100, Blokaj 1/1. Takvim/Operasyon/Blokaj Luca bilgisi bekleniyor; hakem YZ.",
+      "detail": "Şirket B (2) kapsam dışı. Operasyon 3/3 + Luca bordro_d1_tech (35).pdf 3/3, Kenar 53/53 + Luca (31), Yuvarlama 100/100, Blokaj 1/1. Takvim/Blokaj Luca bilgisi bekleniyor; hakem YZ.",
       "blocker": "Bordro A.Ş. bu koşumda yok. Takvim Eylül Cemre net 56.548,11.",
       "area": "Kapsam"
     },
