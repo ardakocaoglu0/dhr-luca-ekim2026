@@ -1,7 +1,7 @@
 {
   "period": "Eylül 2026 · Kenar Durumlar · DHR × Luca × YZ",
   "environment": "dhrtest2.d1-tech.com.tr · Kenar Durumlar",
-  "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (2).pdf, 53/53). DHR 53/53. Geçme ±0,01 TL. Durum = DHR−Luca.",
+  "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (31).pdf, 53/53). DHR 53/53. Geçme ±0,01 TL. Durum = DHR−Luca.",
   "matrixDesign": {
     "layers": [
       {
@@ -15,7 +15,7 @@
         "desc": "Eylül 2026 asgari GV istisnası 5.615,10. Aylık izole."
       }
     ],
-    "notFullCombinatorial": "Luca PDF bordro_d1_tech (2).pdf 53/53. Durum = DHR−Luca."
+    "notFullCombinatorial": "Luca PDF bordro_d1_tech (31).pdf 53/53. Durum = DHR−Luca."
   },
   "checkedItems": [
     {
@@ -31,17 +31,17 @@
     {
       "item": "DHR Eylül 2026 hesap",
       "result": "pass",
-      "note": "27.09.2026 dhrtest2 yeniden hesap: DHR 53/53"
+      "note": "https://dhrtest2.d1-tech.com.tr · 53/53"
     },
     {
       "item": "Luca PDF",
       "result": "pass",
-      "note": "bordro_d1_tech (2).pdf: 53/53. DHR net ±0,01: 0/53."
+      "note": "bordro_d1_tech (31).pdf: 53/53. DHR net ±0,01: 0/53."
     }
   ],
   "correctFindings": [
-    "Luca PDF bordro_d1_tech (2).pdf 53/53 işlendi.",
-    "DHR×Luca ±0,01 0/53. Ort. |ΔNet| 3.365,21."
+    "Luca PDF bordro_d1_tech (31).pdf 53/53 işlendi.",
+    "DHR×Luca ±0,01 0/53. Ort. |ΔNet| 3.747,77."
   ],
   "dhrBugs": [],
   "warnings": [],
@@ -59,7 +59,7 @@
       "ai": "pass",
       "verdict": "DHR 57.598,11 / Luca 56.194,34 / YZ 56.030,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 2,
@@ -74,7 +74,7 @@
       "ai": "pass",
       "verdict": "DHR 56.998,11 / Luca 55.594,34 / YZ 55.430,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 3,
@@ -89,7 +89,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 4,
@@ -104,7 +104,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 5,
@@ -119,7 +119,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 6,
@@ -134,7 +134,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 7,
@@ -149,7 +149,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 8,
@@ -162,9 +162,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 53.745,50 / Luca 52.787,71 / YZ 47.831,02 (ΔDHR−Luca 957,79)",
+      "verdict": "DHR 53.745,50 / Luca 57.787,72 / YZ 47.831,02 (ΔDHR−Luca -4.042,22)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 9,
@@ -179,7 +179,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 10,
@@ -194,7 +194,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 11,
@@ -209,7 +209,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 12,
@@ -224,7 +224,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 13,
@@ -239,7 +239,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 14,
@@ -254,7 +254,7 @@
       "ai": "pass",
       "verdict": "DHR 170.933,71 / Luca 169.529,94 / YZ 169.145,97 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 15,
@@ -269,7 +269,7 @@
       "ai": "pass",
       "verdict": "DHR 61.245,50 / Luca 63.007,00 / YZ 53.192,84 (ΔDHR−Luca -1.761,50)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 16,
@@ -282,9 +282,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 51.652,11 / Luca 50.844,34 / YZ 47.419,12 (ΔDHR−Luca 807,77)",
+      "verdict": "DHR 51.652,11 / Luca 47.748,34 / YZ 47.419,12 (ΔDHR−Luca 3.903,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 17,
@@ -299,7 +299,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 18,
@@ -314,7 +314,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 19,
@@ -329,7 +329,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 20,
@@ -342,9 +342,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
+      "verdict": "DHR 56.548,11 / Luca 55.235,94 / YZ 54.980,12 (ΔDHR−Luca 1.312,17)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 21,
@@ -359,7 +359,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 22,
@@ -372,9 +372,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 57.598,11 / Luca 107.173,33 / YZ 56.030,12 (ΔDHR−Luca -49.575,22)",
+      "verdict": "DHR 57.598,11 / Luca 56.423,33 / YZ 56.030,12 (ΔDHR−Luca 1.174,78)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 23,
@@ -389,7 +389,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 24,
@@ -404,7 +404,7 @@
       "ai": "pass",
       "verdict": "DHR 18.000,00 / Luca 23.520,00 / YZ 17.100,00 (ΔDHR−Luca -5.520,00)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 25,
@@ -419,7 +419,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 26,
@@ -434,7 +434,7 @@
       "ai": "pass",
       "verdict": "DHR 56.998,11 / Luca 55.144,34 / YZ 55.430,12 (ΔDHR−Luca 1.853,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 27,
@@ -449,7 +449,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 28,
@@ -464,7 +464,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 29,
@@ -479,7 +479,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 30,
@@ -494,7 +494,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 31,
@@ -509,7 +509,7 @@
       "ai": "pass",
       "verdict": "DHR 15.129,64 / Luca 47.356,63 / YZ 52.919,12 (ΔDHR−Luca -32.226,99)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 32,
@@ -522,9 +522,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 54.652,11 / Luca 55.144,34 / YZ 52.919,12 (ΔDHR−Luca -492,23)",
+      "verdict": "DHR 54.652,11 / Luca 53.248,34 / YZ 52.919,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 33,
@@ -539,7 +539,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 52.919,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 34,
@@ -554,7 +554,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 52.856,63 / YZ 54.980,12 (ΔDHR−Luca 3.691,48)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 35,
@@ -569,7 +569,7 @@
       "ai": "pass",
       "verdict": "DHR 57.120,04 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.975,70)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 36,
@@ -582,9 +582,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ -19,88 (ΔDHR−Luca 1.403,77)",
+      "verdict": "DHR 56.548,11 / Luca 144,34 / YZ -19,88 (ΔDHR−Luca 56.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 37,
@@ -599,7 +599,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 38,
@@ -612,9 +612,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 55.798,11 / Luca 55.144,34 / YZ 52.730,12 (ΔDHR−Luca 653,77)",
+      "verdict": "DHR 55.798,11 / Luca 50.894,34 / YZ 52.730,12 (ΔDHR−Luca 4.903,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 39,
@@ -629,7 +629,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 40,
@@ -644,7 +644,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.373,33 / YZ 54.980,12 (ΔDHR−Luca 1.174,78)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 41,
@@ -657,9 +657,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "verdict": "DHR 56.548,11 / Luca 50.854,88 / YZ 54.980,12 (ΔDHR−Luca 5.693,23)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 42,
@@ -674,7 +674,7 @@
       "ai": "pass",
       "verdict": "DHR 17.747,27 / Luca 25.220,00 / YZ 54.980,12 (ΔDHR−Luca -7.472,73)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 43,
@@ -689,7 +689,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 44,
@@ -704,7 +704,7 @@
       "ai": "pass",
       "verdict": "DHR 54.112,11 / Luca 52.708,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 45,
@@ -719,7 +719,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 46,
@@ -732,9 +732,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 63.718,02 / Luca 55.144,34 / YZ 72.852,87 (ΔDHR−Luca 8.573,68)",
+      "verdict": "DHR 63.718,02 / Luca 58.718,89 / YZ 72.852,87 (ΔDHR−Luca 4.999,13)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 47,
@@ -749,7 +749,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 48,
@@ -764,7 +764,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 49,
@@ -779,7 +779,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 50,
@@ -794,7 +794,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 51,
@@ -809,7 +809,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 47.356,63 / YZ 54.980,12 (ΔDHR−Luca 9.191,48)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 52,
@@ -824,7 +824,7 @@
       "ai": "pass",
       "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     },
     {
       "n": 53,
@@ -837,9 +837,9 @@
       "dhr": "fail",
       "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "verdict": "DHR 56.548,11 / Luca 59.433,80 / YZ 54.980,12 (ΔDHR−Luca -2.885,69)",
       "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
-      "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
     }
   ]
 }

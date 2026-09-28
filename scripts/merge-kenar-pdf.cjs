@@ -8,10 +8,10 @@ const { PDFParse } = require("pdf-parse");
 
 const ROOT = path.join(__dirname, "..");
 const DATA = path.join(ROOT, "src", "data");
-const LUCA_PDF = process.argv[2] || path.join(process.env.USERPROFILE || "", "Downloads", "bordro_d1_tech (2).pdf");
+const LUCA_PDF = process.argv[2] || path.join(process.env.USERPROFILE || "", "Downloads", "bordro_d1_tech (31).pdf");
 const PUBLIC_PDF = path.join(ROOT, "public", "downloads", "bordro_kenar_eylul.pdf");
 const PASS = 0.01;
-const PDF_VERSION = "bordro_d1_tech (2).pdf";
+const PDF_VERSION = path.basename(LUCA_PDF);
 
 const cmp = JSON.parse(fs.readFileSync(path.join(DATA, "kenar_comparison.json"), "utf8"));
 const mtx = JSON.parse(fs.readFileSync(path.join(DATA, "kenar_matrix.json"), "utf8"));
@@ -68,7 +68,11 @@ function parseLucaExtras(slice) {
     prim: pickLabeled(blob, [/\bPrim[^:\n]*:\s*([\d.]+,\d{2})/i]),
     ikramiye: pickLabeled(blob, [/[Iİ]kramiye[^:\n]*:\s*([\d.]+,\d{2})/i]),
     advance: pickLabeled(blob, [/Avans[^:\n]*:\s*([\d.]+,\d{2})/i]),
-    kesinti: pickLabeled(blob, [/\bicra[^:\n]*:\s*([\d.]+,\d{2})/i, /Genel Kesinti[^:\n]*:\s*([\d.]+,\d{2})/i]),
+    kesinti: r2(
+      nz(pickLabeled(blob, [/\bicra[^:\n]*:\s*([\d.]+,\d{2})/i])) +
+        nz(pickLabeled(blob, [/Genel Kesinti[^:\n]*:\s*([\d.]+,\d{2})/i])) +
+        nz(pickLabeled(blob, [/[Iİ]şveren Alaca[gğ][ıi][^:\n]*:\s*([\d.]+,\d{2})/i]))
+    ),
     bes: pickLabeled(blob, [/Oto\.?\s*Kat\.?\s*BES[^:\n]*:\s*([\d.]+,\d{2})/i, /\bBES[^:\n]*:\s*([\d.]+,\d{2})/i]),
     masraf: pickLabeled(blob, [/Masraf[^:\n]*:\s*([\d.]+,\d{2})/i]),
     saglik: pickLabeled(blob, [/Özel Sigorta[^:\n]*:\s*([\d.]+,\d{2})/i, /Ozel Sigorta[^:\n]*:\s*([\d.]+,\d{2})/i]),
@@ -130,7 +134,7 @@ async function extractLuca(pdfPath) {
   const { text } = await parser.getText();
   const rows = [];
   const re =
-    /(\d+)\s+([A-Za-z ]+?)\s+(\d{11})(?:\s+\d+\s+G[uü]n(?:\s+\d+\s+[^\n\d]{0,40})?)?\s+(\d{2}\/\d{2}\/\d{4})(?:\s+(\d{2}\/\d{2}\/\d{4}))?\s+(\d+)\s+([\d.]+,\d{2})([GN])\s+(\d+)\s+(\d+)\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s*\r?\n\s*([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})/g;
+    /(\d+)\s+([A-Za-z0-9\u00C7\u00E7\u011E\u011F\u0130\u0131\u00D6\u00F6\u015E\u015F\u00DC\u00FC ]+?)\s+((?:43|45)\d{9})(?:\s+\d+\s+G[uü]n(?:\s+\d+\s+[^\n\d]{0,48})?)?\s+(\d{2}\/\d{2}\/\d{4})(?:\s+(\d{2}\/\d{2}\/\d{4}))?\s+(\d+)\s+([\d.]+,\d{2})([GN])\s+(\d+)\s+(\d+)\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s*\r?\n\s*([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})\s+([\d.]+,\d{2})/g;
   let m;
   while ((m = re.exec(text))) rows.push(rowFromMatch(m, text));
   return { rows, textLen: text.length };
@@ -172,6 +176,19 @@ function slimLuca(L) {
   };
 }
 
+function makeTckn45(sicil) {
+  const n = Number(sicil);
+  const body = 452800000 + (n - 8000);
+  const d = String(body).padStart(9, "0").split("").map(Number);
+  d[0] = 4;
+  d[1] = 5;
+  const odd = d[0] + d[2] + d[4] + d[6] + d[8];
+  const even = d[1] + d[3] + d[5] + d[7];
+  const d10 = (((odd * 7 - even) % 10) + 10) % 10;
+  const d11 = (d.reduce((a, b) => a + b, 0) + d10) % 10;
+  return d.join("") + d10 + d11;
+}
+
 (async () => {
   if (!fs.existsSync(LUCA_PDF)) throw new Error("PDF yok: " + LUCA_PDF);
   const luca = await extractLuca(LUCA_PDF);
@@ -182,10 +199,11 @@ function slimLuca(L) {
   }
 
   const byName = Object.fromEntries(luca.rows.map((r) => [normName(r.name), r]));
+  const byTc = Object.fromEntries(luca.rows.map((r) => [String(r.tc), r]));
   const used = new Set();
   const missing = [];
   for (const row of cmp.rows) {
-    const Lraw = byName[normName(row.name)];
+    const Lraw = byTc[makeTckn45(row.sicil)] || byName[normName(row.name)];
     if (!Lraw) {
       missing.push(row.name);
       row.lucaPending = true;
@@ -284,7 +302,7 @@ function slimLuca(L) {
 
   cmp.generatedAt = new Date().toISOString();
   cmp.lucaPdfVersion = PDF_VERSION;
-  cmp.pending = { luca: withLuca.length === 0, dhr: false };
+  cmp.pending = { luca: withLuca.length === 0, dhr: (cmp.summary.dhrCount || 0) === 0 };
   cmp.sources.lucaPdf = "downloads/bordro_kenar_eylul.pdf";
   cmp.summary.lucaCount = withLuca.length;
   cmp.summary.matched = matched.length;
@@ -346,15 +364,16 @@ function slimLuca(L) {
       detail: `Şirket B (2) kapsam dışı. Operasyon 3/3, Kenar 53/53 + Luca ${PDF_VERSION} ${withLuca.length}/${cmp.rows.length}, Yuvarlama 100/100, Blokaj 1/1. Takvim/Operasyon/Blokaj Luca bilgisi bekleniyor; hakem YZ.`,
     };
   });
-  if (!dash.works.some((w) => w.id === "W-KENAR-LUCA")) {
-    dash.works.unshift({
-      id: "W-KENAR-LUCA",
-      title: "Kenar Eylül Luca PDF işlendi",
-      detail: `${PDF_VERSION}: ${withLuca.length}/${cmp.rows.length}. Ort. |ΔNet DHR−Luca| ${tr(avgAbs)} TL · ±0,01 ${netPass}/${matched.length}. Vildan DHR ${tr(vildan?.dhr?.net)} / Luca ${tr(vildan?.luca?.net)}.`,
-      periods: ["Eylül"],
-      area: "Kapsam",
-    });
-  }
+  const kenarWork = {
+    id: "W-KENAR-LUCA",
+    title: "Kenar Eylül Luca PDF (31) + DHR 53/53",
+    detail: `${PDF_VERSION}: ${withLuca.length}/${cmp.rows.length}. Ort. |ΔNet DHR−Luca| ${tr(avgAbs)} TL · ±0,01 ${netPass}/${matched.length}. Vildan DHR ${tr(vildan?.dhr?.net)} / Luca ${tr(vildan?.luca?.net)}.`,
+    periods: ["Eylül"],
+    area: "Kapsam",
+  };
+  const wi = dash.works.findIndex((w) => w.id === "W-KENAR-LUCA");
+  if (wi >= 0) dash.works[wi] = kenarWork;
+  else dash.works.unshift(kenarWork);
   fs.writeFileSync(path.join(DATA, "dashboard.json"), JSON.stringify(dash, null, 2) + "\n");
 
   console.log("OK luca", withLuca.length, "matched", matched.length, "pass", netPass, "missing", missing.length);
