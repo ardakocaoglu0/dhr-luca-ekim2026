@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:35:00.000Z",
+  "generatedAt": "2026-09-28T12:49:16.508Z",
   "environment": "https://dhrtest2.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [

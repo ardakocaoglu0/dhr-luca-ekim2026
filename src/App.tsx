@@ -124,7 +124,7 @@ export default function AppView({ data, matrix }: Props) {
           id="scenarios"
           collapsible={false}
           title={`Test edilen senaryolar (${matrix.scenarios.length})`}
-          caption="Luca ve YZ, DHR neti ile ±0,01 TL. Eşleşirse OK, saparsa FAIL. Luca yoksa BEKLİYOR. Luca referanstır, doğru kabul edilmez."
+          caption="DHR neti dhrtest2’den. Luca ve YZ aynı satırda net + ±0,01 OK/FAIL. Luca yoksa BEKLİYOR. Luca referanstır, doğru kabul edilmez."
         >
           <div className="table-scroll flow">
             <table className="matrix-table">
@@ -136,8 +136,9 @@ export default function AppView({ data, matrix }: Props) {
                 <col className="col-profile" />
                 <col className="col-law" />
                 <col className="col-input" />
-                <col className="col-badge" />
-                <col className="col-badge" />
+                <col className="col-net" />
+                <col className="col-net" />
+                <col className="col-net" />
                 <col className="col-verdict" />
                 <col className="col-which" />
                 <col className="col-legal" />
@@ -150,8 +151,8 @@ export default function AppView({ data, matrix }: Props) {
                   <th className="left" colSpan={4}>
                     Senaryo
                   </th>
-                  <th className="center col-sep" colSpan={2}>
-                    Sonuç ±0,01 TL (vs DHR)
+                  <th className="center col-sep" colSpan={3}>
+                    Net TL — DHR × Luca × YZ
                   </th>
                   <th className="left col-sep" colSpan={3}>
                     Sapma hakemi
@@ -165,11 +166,15 @@ export default function AppView({ data, matrix }: Props) {
                   <th className="left">Profil</th>
                   <th className="center">Kanun</th>
                   <th className="center">Girdi</th>
-                  <th className="center col-sep">
+                  <th className="num col-sep">
+                    DHR
+                    <PendingTag show={dhrPending} />
+                  </th>
+                  <th className="num">
                     Luca
                     <PendingTag show={lucaPending} label="Luca bilgisi bekleniyor" />
                   </th>
-                  <th className="center">YZ</th>
+                  <th className="num">YZ</th>
                   <th className="left col-sep">Hüküm</th>
                   <th className="left">Hangisi doğru</th>
                   <th className="left">Mevzuat</th>
@@ -190,10 +195,19 @@ export default function AppView({ data, matrix }: Props) {
                     <td className="left note">{s.profile}</td>
                     <td className="center">{s.law}</td>
                     <td className="center">{s.input}</td>
-                    <td className="center col-sep">
+                    <td className="num col-sep score-cell">
+                      <Money value={row?.dhr?.net} pending={dhrPending} />
+                    </td>
+                    <td className="num score-cell">
+                      <Money
+                        value={row?.luca?.net}
+                        pending={lucaPending || !!row?.lucaPending}
+                        pendingTitle="Luca bilgisi bekleniyor"
+                      />
                       <Badge status={lucaSt} pendingLabel="Luca bilgisi bekleniyor" />
                     </td>
-                    <td className="center">
+                    <td className="num score-cell">
+                      <Money value={row?.ai?.net} yz />
                       <Badge status={yzSt} />
                     </td>
                     <td className="note left col-sep">{s.verdict}</td>
