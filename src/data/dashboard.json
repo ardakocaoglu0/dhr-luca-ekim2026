@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T05:48:13.247Z",
+  "generatedAt": "2026-09-29T08:52:00.000Z",
   "environment": "https://dhrtest2.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
@@ -101,6 +101,34 @@
         "Eylül"
       ],
       "area": "Kapsam"
+    },
+    {
+      "id": "W-018-PICKER",
+      "title": "Kenar Çalışan Seç yalnız Kenar kadrosu (EDGE-018 kapatıldı)",
+      "detail": "29.09: Kenar Eylül picker 53 kişi. Ozan Şeker Bordro A.Ş.’de, listede yok. Aynı ay iki döneme eklemek 409. Bu bir picker bug’ı değil.",
+      "periods": [
+        "Kenar Durumlar",
+        "Eylül"
+      ],
+      "area": "Kapsam"
+    },
+    {
+      "id": "W-024-CAKISMA",
+      "title": "İzin çakışması önizlemede reddediliyor",
+      "detail": "29.09 Feriha Dal (8066): İzin Hesaplama Önizlemesi «İzin Çakışması Tespit Edildi» 23.09 Rapor. Düzenle/Gönder yok. Onaylı rapor 22–24.09 duruyor.",
+      "periods": [
+        "Kenar Durumlar"
+      ],
+      "area": "Puantaj"
+    },
+    {
+      "id": "W-ARGE-YOK",
+      "title": "Bordro’da Ar-Ge / destek kotası yok",
+      "detail": "29.09: RdCenter/Quota API yok, Bordro menüsünde Ar-Ge yok. D1-Tech Ar-Ge Merkezi açılmadı. 5746/4691 tarifesine dokunulmadı.",
+      "periods": [
+        "Kenar Durumlar"
+      ],
+      "area": "Teşvik"
     },
     {
       "id": "W-BL-LUCA",
@@ -458,6 +486,17 @@
   ],
   "bugs": [
     {
+      "id": "EDGE-017",
+      "title": "Aynı Eylül döneminde iki SGK işyeri kırılımı yok",
+      "severity": "Orta",
+      "detail": "29.09 Ceren Oral (8051) Kenar Eylül 30/30 · 56.548,11 zemin. A+B sicil / 1–10 Kenar + 11–30 Şube yok. Kadro geçmişi duruyor; ürün tek dönemde iki işyeri taşımıyor.",
+      "periods": [
+        "Kenar Durumlar"
+      ],
+      "impact": "Ay içi işyeri değişimi tek SGK sicili ve tam ay zemin neti basıyor.",
+      "area": "SGK"
+    },
+    {
       "id": "IZ-AVANS",
       "title": "Avans mahsubu bordroya yazılmıyor",
       "severity": "Yüksek",
@@ -547,32 +586,11 @@
   ],
   "untested": [
     {
-      "id": "U-COKLU-ISYERI",
-      "title": "Aynı ay içinde iki SGK işyeri (tek dönem)",
-      "detail": "Ceren Oral (8051): Kenar 1–10.09 işyeri A, 11–30.09 işyeri B. Kadro geçmişi hazır ama bordroda işyeri kırılımı denenmedi.",
-      "blocker": "Ürün aynı anda iki dolu kadro tutmuyor; UI’de tarihli işyeri kırılımı bulunamadı.",
-      "area": "SGK"
-    },
-    {
-      "id": "U-AYNI-AY-IKI-ISVEREN",
-      "title": "Aynı ayda iki işveren (dönem geçişi)",
-      "detail": "Ozan Şeker (EDGE-018): Kenar’da 1–10.09 çıkış + Şirket B’de 11–30.09 giriş, kümülatif matrahın bir kez taşınması.",
-      "blocker": "Aynı çalışanı aynı ay iki döneme eklemek API’de 409 veriyor; senaryo bölünerek bırakıldı.",
+      "id": "U-TAKVIM-2027",
+      "title": "Cemre Şubat 2027 / 2028 (EDGE-019)",
+      "detail": "DHR 02/2027 puantaj var: Takvim günü 28, Prim günü 30. Luca D1 TECH dönem listesinde yalnız 2026. 2027 Yönetici (Yetkili) hesapla açılacak; sonra Takvim Şubat T.Gün 28, yemek 5.500 B, yol 3.200 B.",
+      "blocker": "Luca 2027 mali dönemi. Personel ekranındaki 2026 kutusuna yazılmaz. İK 2026’ya dokunma.",
       "area": "Kapsam"
-    },
-    {
-      "id": "U-ARGE-KOTA",
-      "title": "Ar-Ge / destek personeli kotası",
-      "detail": "Teknopark destek kotası 1 iken 8025 kota içi teşvik alsın, 8026 aynı dönemde kota dışı kalsın.",
-      "blocker": "RdCenter/Quota API’si yok; UI’de kota alanı doğrulanmadı.",
-      "area": "Teşvik"
-    },
-    {
-      "id": "U-IZIN-CAKISMA",
-      "title": "Onaylı rapor ile ücretsiz izin çakışması",
-      "detail": "Feriha Dal: 22–24.09 onaylı rapor + 23–24.09 ücretsiz izin aynı anda; bordronun çakışmayı nasıl işlediği.",
-      "blocker": "Ürün ikinci kaydı yazmıyor (HTTP 200 + isSuccess false); bordro etkisi ölçülemedi.",
-      "area": "Puantaj"
     },
     {
       "id": "U-DIGER-BIRIMLER",

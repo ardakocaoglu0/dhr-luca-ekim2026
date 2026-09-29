@@ -25,12 +25,29 @@ type Props = {
   sirketbMatrix: MatrixData;
 };
 
+function labKind(status: string): "ready" | "manual" | "pass" | "fail" | "closed" {
+  if (status === "hazır") return "ready";
+  if (status === "pass") return "pass";
+  if (status === "fail") return "fail";
+  if (status === "kapalı") return "closed";
+  return "manual";
+}
+
+function labBadge(status: string): string {
+  if (status === "hazır") return "DHR’de hazır";
+  if (status === "pass") return "Doğrulandı";
+  if (status === "fail") return "Ürün taşımıyor";
+  if (status === "kapalı") return "Kapandı";
+  return "Manuel dene";
+}
+
 function LabCard({ card }: { card: Faz1LabCard }) {
-  const kind = card.status === "hazır" ? "ready" : "manual";
+  const kind = labKind(card.status);
+  const pending = kind === "manual";
   return (
     <article className={`lab-card lab-${kind}`}>
       <div className="lab-card-head">
-        <span className={`lab-badge lab-badge-${kind}`}>{card.status === "hazır" ? "DHR’de hazır" : "Manuel dene"}</span>
+        <span className={`lab-badge lab-badge-${kind}`}>{labBadge(card.status)}</span>
         {card.sicil ? <span className="mono small">{card.sicil}</span> : null}
       </div>
       <h3>{card.title}</h3>
@@ -57,18 +74,27 @@ function LabCard({ card }: { card: Faz1LabCard }) {
       ) : null}
       {card.success || card.fail ? (
         <p className="small lab-verdict">
-          {card.success ? (
+          {pending ? (
             <>
-              <strong>Olursa: </strong>
-              {card.success}{" "}
+              {card.success ? (
+                <>
+                  <strong>Olursa: </strong>
+                  {card.success}{" "}
+                </>
+              ) : null}
+              {card.fail ? (
+                <>
+                  <strong>Olmazsa: </strong>
+                  {card.fail}
+                </>
+              ) : null}
             </>
-          ) : null}
-          {card.fail ? (
+          ) : (
             <>
-              <strong>Olmazsa: </strong>
-              {card.fail}
+              <strong>Sonuç: </strong>
+              {card.status === "fail" ? card.fail : card.success || card.fail}
             </>
-          ) : null}
+          )}
         </p>
       ) : null}
     </article>
@@ -178,11 +204,21 @@ export default function Faz1View({
         </p>
         <h3 className="lab-sub">Hazır (tekrar seed etme)</h3>
         <div className="lab-grid">
-          {lab.ready.map((card) => (
-            <LabCard key={card.id} card={card} />
-          ))}
+          {lab.ready
+            .filter((card) => card.status === "hazır")
+            .map((card) => (
+              <LabCard key={card.id} card={card} />
+            ))}
         </div>
-        <h3 className="lab-sub">Bunları UI’den dene</h3>
+        <h3 className="lab-sub">29.09 UI sonuçları</h3>
+        <div className="lab-grid lab-grid-wide">
+          {lab.ready
+            .filter((card) => card.status !== "hazır")
+            .map((card) => (
+              <LabCard key={card.id} card={card} />
+            ))}
+        </div>
+        <h3 className="lab-sub">Kalan</h3>
         <div className="lab-grid lab-grid-wide">
           {lab.manual.map((card) => (
             <LabCard key={card.id} card={card} />
