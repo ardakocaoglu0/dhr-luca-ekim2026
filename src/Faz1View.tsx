@@ -103,7 +103,7 @@ export default function Faz1View({
     { id: "op", label: "Operasyon DHR × Luca × YZ", count: hasOp ? operasyonComparison.rows.length : roster.counts.operasyon },
     { id: "kenar", label: "Kenar DHR × Luca × YZ", count: hasKenar ? kenarComparison.rows.length : roster.counts.kenar },
     { id: "takvim", label: "Takvim DHR × Luca × YZ", count: hasTakvim ? takvimComparison.rows.length : roster.counts.takvim },
-    { id: "blokaj", label: "Blokaj DHR × YZ", count: hasBlokaj ? blokajComparison.rows.length : roster.counts.blokaj },
+    { id: "blokaj", label: "Blokaj DHR × Luca × YZ", count: hasBlokaj ? blokajComparison.rows.length : roster.counts.blokaj },
     { id: "manuel", label: "Manuel dene", count: lab.ready.length + lab.manual.length },
   ];
 

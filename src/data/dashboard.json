@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T05:26:08.827Z",
+  "generatedAt": "2026-09-29T05:33:59.765Z",
   "environment": "https://dhrtest2.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
@@ -80,11 +80,20 @@
       "label": "Eylül 2026 — Blokaj",
       "unit": "Blokaj",
       "people": 1,
-      "state": "DHR 1/1 · Luca bilgisi bekleniyor · YZ 1",
-      "compare": "DHR × YZ (Luca bilgisi bekleniyor)"
+      "state": "Hesaplandı · DHR 1/1 · Luca 1/1 · ±0,01 0/1",
+      "compare": "DHR × Luca × YZ"
     }
   ],
   "works": [
+    {
+      "id": "W-BL-LUCA",
+      "title": "Blokaj Eylül Luca PDF (37) + DHR 1/1",
+      "detail": "bordro_d1_tech (37).pdf: 1/1. Ort. |ΔNet DHR−Luca| 1.403,77 TL · ±0,01 0/1. Taner DHR 56.548,11 / Luca 55.144,34.",
+      "periods": [
+        "Eylül"
+      ],
+      "area": "Kapsam"
+    },
     {
       "id": "W-TK-LUCA",
       "title": "Takvim Eylül Luca PDF (36) + DHR 1/1",
@@ -551,8 +560,8 @@
     {
       "id": "U-DIGER-BIRIMLER",
       "title": "Faz1 Bordro A.Ş. hesaplanmadı",
-      "detail": "Şirket B (2) kapsam dışı. Operasyon 3/3 + Luca (35), Takvim 1/1 + Luca bordro_d1_tech (36).pdf 1/1, Kenar 53/53 + Luca (31), Yuvarlama 100/100, Blokaj 1/1. Blokaj Luca bilgisi bekleniyor; hakem YZ.",
-      "blocker": "Bordro A.Ş. bu koşumda yok. Blokaj Eylül Taner net 56.548,11.",
+      "detail": "Şirket B (2) hâlâ Luca/DHR sitede yok. Operasyon 3/3 + Luca (35), Takvim 1/1 + Luca (36), Blokaj 1/1 + Luca bordro_d1_tech (37).pdf 1/1, Kenar 53/53 + Luca (31), Yuvarlama 100/100. Hakem YZ.",
+      "blocker": "Bordro A.Ş. Eylül (Ozan 8061 + Eda 8062) Luca PDF ve DHR dump yok.",
       "area": "Kapsam"
     },
     {
