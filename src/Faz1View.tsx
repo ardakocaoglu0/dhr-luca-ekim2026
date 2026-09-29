@@ -5,7 +5,7 @@ import type { MatrixData } from "./matrixTypes";
 import type { Faz1DhrLab, Faz1LabCard, Faz1Roster } from "./faz1Types";
 import dhrLab from "./data/faz1_dhr_lab.json";
 
-type SubTab = "manuel" | "yz" | "yuv" | "op" | "kenar" | "takvim" | "blokaj";
+type SubTab = "manuel" | "yz" | "yuv" | "op" | "kenar" | "takvim" | "blokaj" | "sirketb";
 
 type Props = {
   roster: Faz1Roster;
@@ -21,6 +21,8 @@ type Props = {
   takvimMatrix: MatrixData;
   blokajComparison: ComparisonData;
   blokajMatrix: MatrixData;
+  sirketbComparison: ComparisonData;
+  sirketbMatrix: MatrixData;
 };
 
 function LabCard({ card }: { card: Faz1LabCard }) {
@@ -87,6 +89,8 @@ export default function Faz1View({
   takvimMatrix,
   blokajComparison,
   blokajMatrix,
+  sirketbComparison,
+  sirketbMatrix,
 }: Props) {
   const [tab, setTab] = useState<SubTab>("yz");
   const hasCompare = (comparison.rows || []).length > 0;
@@ -95,6 +99,7 @@ export default function Faz1View({
   const hasKenar = (kenarComparison.rows || []).length > 0;
   const hasTakvim = (takvimComparison.rows || []).length > 0;
   const hasBlokaj = (blokajComparison.rows || []).length > 0;
+  const hasSirketb = (sirketbComparison.rows || []).length > 0;
   const lab = dhrLab as Faz1DhrLab;
 
   const subTabs: { id: SubTab; label: string; count?: number }[] = [
@@ -104,10 +109,11 @@ export default function Faz1View({
     { id: "kenar", label: "Kenar DHR × Luca × YZ", count: hasKenar ? kenarComparison.rows.length : roster.counts.kenar },
     { id: "takvim", label: "Takvim DHR × Luca × YZ", count: hasTakvim ? takvimComparison.rows.length : roster.counts.takvim },
     { id: "blokaj", label: "Blokaj DHR × Luca × YZ", count: hasBlokaj ? blokajComparison.rows.length : roster.counts.blokaj },
+    { id: "sirketb", label: "Bordro A.Ş. DHR × Luca × YZ", count: hasSirketb ? sirketbComparison.rows.length : roster.counts.sirketB },
     { id: "manuel", label: "Manuel dene", count: lab.ready.length + lab.manual.length },
   ];
 
-  const compareTabs: SubTab[] = ["yz", "yuv", "op", "kenar", "takvim", "blokaj"];
+  const compareTabs: SubTab[] = ["yz", "yuv", "op", "kenar", "takvim", "blokaj", "sirketb"];
   const showLabHeader = !compareTabs.includes(tab);
 
   return (
@@ -257,6 +263,18 @@ export default function Faz1View({
           <section className="panel">
             <h2>Blokaj — DHR × YZ</h2>
             <p className="muted">Blokaj karşılaştırma verisi henüz yok. Luca bilgisi bekleniyor.</p>
+          </section>
+        ))}
+
+      {tab === "sirketb" &&
+        (hasSirketb ? (
+          <div id="sirketb-karsilastirma">
+            <AppView data={sirketbComparison} matrix={sirketbMatrix} />
+          </div>
+        ) : (
+          <section className="panel">
+            <h2>Bordro A.Ş. — DHR × Luca × YZ</h2>
+            <p className="muted">Bordro A.Ş. karşılaştırma verisi henüz yok. Luca bilgisi bekleniyor.</p>
           </section>
         ))}
     </div>

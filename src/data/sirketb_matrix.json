@@ -1,0 +1,75 @@
+{
+  "period": "Eylül 2026 · Faz1 Bordro A.Ş. · Luca × YZ (DHR bekleniyor)",
+  "environment": "https://dhrtest2.d1-tech.com.tr",
+  "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (39).pdf, 2/2). DHR yok. Geçme ±0,01 TL.",
+  "matrixDesign": {
+    "layers": [
+      {
+        "id": "sirket-b",
+        "title": "Faz1 Bordro A.Ş. (8061–8062)",
+        "desc": "Ozan Şeker (Kenar 1–10 / B 11–30) ve Eda Mert (müdür)."
+      }
+    ],
+    "notFullCombinatorial": "Luca PDF bordro_d1_tech (39).pdf 2/2. DHR dump yok."
+  },
+  "checkedItems": [
+    {
+      "item": "Geçme eşiği ±0,01 TL",
+      "result": "pass",
+      "note": "partial/known/kısmen geçti yok."
+    },
+    {
+      "item": "Luca hakem değil",
+      "result": "pass",
+      "note": "Luca referans, hakem YZ."
+    },
+    {
+      "item": "DHR Eylül 2026 hesap",
+      "result": "pending",
+      "note": "Bordro A.Ş. DHR dump yok."
+    },
+    {
+      "item": "Luca PDF",
+      "result": "pass",
+      "note": "bordro_d1_tech (39).pdf: 2/2."
+    }
+  ],
+  "correctFindings": [
+    "Luca PDF bordro_d1_tech (39).pdf 2/2 işlendi.",
+    "Eda T.Gün 30 zemin. Ozan giriş 11/09 T.Gün 20, yemek/yol tam 5.500/3.200."
+  ],
+  "dhrBugs": [],
+  "warnings": [],
+  "scenarios": [
+    {
+      "n": 1,
+      "name": "Ozan Şeker",
+      "group": "sirket-b",
+      "scenario": "Kenar çıkış 10.09, B giriş 11.09. Kenar Eylül’den çıkarıldı, B Eylül’de (8062 ile). Aynı ay iki döneme ek 409 — UI’de kısmi gün dene.",
+      "profile": "Standart",
+      "law": "00000",
+      "input": "EDGE-018",
+      "dhr": "pending",
+      "luca": "pass",
+      "ai": "pending",
+      "verdict": "Luca 40.846,14 · DHR bekleniyor · YZ 40.681,92",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
+    },
+    {
+      "n": 2,
+      "name": "Eda Mert",
+      "group": "sirket-b",
+      "scenario": "Şirket B müdürü / bordro onay.",
+      "profile": "Yönetici / İdari Personel",
+      "law": "00000",
+      "input": "—",
+      "dhr": "pending",
+      "luca": "pass",
+      "ai": "pending",
+      "verdict": "Luca 55.144,34 · DHR bekleniyor · YZ 54.980,12",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
+      "legalBasis": "2026 GVK 23/18, 5510, 4447, 488."
+    }
+  ]
+}

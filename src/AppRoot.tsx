@@ -21,6 +21,8 @@ import takvim from "./data/takvim_comparison.json";
 import takvimMatrix from "./data/takvim_matrix.json";
 import blokaj from "./data/blokaj_comparison.json";
 import blokajMatrix from "./data/blokaj_matrix.json";
+import sirketb from "./data/sirketb_comparison.json";
+import sirketbMatrix from "./data/sirketb_matrix.json";
 import izole from "./data/izole_comparison.json";
 import izoleMatrix from "./data/izole_matrix.json";
 import paket from "./data/paket_comparison.json";
@@ -112,6 +114,8 @@ export default function App() {
           takvimMatrix={takvimMatrix as MatrixData}
           blokajComparison={blokaj as ComparisonData}
           blokajMatrix={blokajMatrix as MatrixData}
+          sirketbComparison={sirketb as ComparisonData}
+          sirketbMatrix={sirketbMatrix as MatrixData}
         />
       ) : (
         <LoginsView data={logins as LoginsData} />

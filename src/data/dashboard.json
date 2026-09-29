@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T05:33:59.765Z",
+  "generatedAt": "2026-09-29T05:48:13.247Z",
   "environment": "https://dhrtest2.d1-tech.com.tr",
   "sourceNote": "DHR sayıları bordro ekranının kendi API’sinden okunur (/api/PayrollPeriod/{id}, /api/PayrollPeriod/{id}/payroll-attendance, /api/PaymentValue/all) — Excel export kullanılmıyor. Luca kolonu Luca bordro PDF’inden, YZ kolonu 2026 Türkiye mevzuatından hesaplanır.",
   "periods": [
@@ -82,9 +82,26 @@
       "people": 1,
       "state": "Hesaplandı · DHR 1/1 · Luca 1/1 · ±0,01 0/1",
       "compare": "DHR × Luca × YZ"
+    },
+    {
+      "id": "sirketb",
+      "label": "Eylül 2026 — Faz1 Bordro A.Ş.",
+      "unit": "Faz1 Bordro A.Ş.",
+      "people": 2,
+      "state": "Luca 2/2 · DHR bekleniyor · YZ 2",
+      "compare": "Luca × YZ (DHR bekleniyor)"
     }
   ],
   "works": [
+    {
+      "id": "W-SB-LUCA",
+      "title": "Bordro A.Ş. Eylül Luca PDF (39)",
+      "detail": "bordro_d1_tech (39).pdf: 2/2. Eda Luca 55.144,34. Ozan Luca 40.846,14 (20 gün). DHR yok.",
+      "periods": [
+        "Eylül"
+      ],
+      "area": "Kapsam"
+    },
     {
       "id": "W-BL-LUCA",
       "title": "Blokaj Eylül Luca PDF (37) + DHR 1/1",
@@ -559,9 +576,9 @@
     },
     {
       "id": "U-DIGER-BIRIMLER",
-      "title": "Faz1 Bordro A.Ş. hesaplanmadı",
-      "detail": "Şirket B (2) hâlâ Luca/DHR sitede yok. Operasyon 3/3 + Luca (35), Takvim 1/1 + Luca (36), Blokaj 1/1 + Luca bordro_d1_tech (37).pdf 1/1, Kenar 53/53 + Luca (31), Yuvarlama 100/100. Hakem YZ.",
-      "blocker": "Bordro A.Ş. Eylül (Ozan 8061 + Eda 8062) Luca PDF ve DHR dump yok.",
+      "title": "Faz1 Bordro A.Ş. DHR dump yok",
+      "detail": "Bordro A.Ş. Luca bordro_d1_tech (39).pdf 2/2 sitede. DHR henüz yok. Operasyon (35), Takvim (36), Blokaj (37), Kenar (31) Luca duruyor.",
+      "blocker": "dhrtest2 Bordro A.Ş. Eylül onlyStale dump; full recalc yok.",
       "area": "Kapsam"
     },
     {

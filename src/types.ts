@@ -132,8 +132,8 @@ export type CompareRow = {
     transport?: number;
     overtime?: number;
     bes?: number;
-    netAi?: number;
-    gvAi?: number;
+    netAi?: number | null;
+    gvAi?: number | null;
     netLucaAi?: number | null;
   } | null;
   lineItems?: LineItem[];
