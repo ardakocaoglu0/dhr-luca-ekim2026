@@ -1,7 +1,7 @@
 {
-  "period": "Eylül 2026 · Takvim · DHR × YZ (Luca bilgisi bekleniyor)",
+  "period": "Eylül 2026 · Takvim · DHR × Luca × YZ",
   "environment": "dhrtest2.d1-tech.com.tr · Takvim",
-  "sourceOfTruth": "YZ = 2026 TR mevzuatı hakem. Luca referans (PDF yok — Luca bilgisi bekleniyor). DHR UI/API. Geçme ±0,01 TL.",
+  "sourceOfTruth": "YZ hakem. Luca referans (bordro_d1_tech (36).pdf, 1/1). DHR 1/1. Geçme ±0,01 TL. Durum = DHR−Luca.",
   "matrixDesign": {
     "layers": [
       {
@@ -15,7 +15,7 @@
         "desc": "Eylül 2026 asgari GV istisnası 5.615,10. Aylık izole."
       }
     ],
-    "notFullCombinatorial": "Luca PDF yok. Durum kolonu Luca gelene kadar BEKLİYOR."
+    "notFullCombinatorial": "Luca PDF bordro_d1_tech (36).pdf 1/1. Durum = DHR−Luca."
   },
   "checkedItems": [
     {
@@ -26,7 +26,7 @@
     {
       "item": "Luca hakem değil",
       "result": "pass",
-      "note": "Luca bilgisi bekleniyor; hakem YZ."
+      "note": "Luca referans, hakem YZ."
     },
     {
       "item": "DHR Eylül 2026 hesap",
@@ -35,11 +35,15 @@
     },
     {
       "item": "Luca PDF",
-      "result": "fail",
-      "note": "Luca bilgisi bekleniyor."
+      "result": "pass",
+      "note": "bordro_d1_tech (36).pdf: 1/1. DHR net ±0,01: 0/1."
     }
   ],
-  "correctFindings": [],
+  "correctFindings": [
+    "Luca PDF bordro_d1_tech (36).pdf 1/1 işlendi.",
+    "DHR×Luca ±0,01 0/1. Ort. |ΔNet| 1.403,77.",
+    "Cemre Ay Eylül zemin: T.Gün 30, izin/rapor yok. Şubat 2027/2028 ayrı tur."
+  ],
   "dhrBugs": [],
   "warnings": [],
   "scenarios": [
@@ -52,10 +56,10 @@
       "law": "00000",
       "input": "—",
       "dhr": "fail",
-      "luca": "pending",
+      "luca": "fail",
       "ai": "pass",
-      "verdict": "DHR net 56.548,11 · Luca bilgisi bekleniyor · YZ 54.980,12 · ΔDHR−YZ 1.567,99",
-      "whichCorrect": "Hakem YZ. Luca referans, henüz yok.",
+      "verdict": "DHR 56.548,11 / Luca 55.144,34 / YZ 54.980,12 (ΔDHR−Luca 1.403,77)",
+      "whichCorrect": "Hakem YZ. Luca referans, doğru kabul edilmez.",
       "legalBasis": "GVK 23, 332 GT, 5510, 488; Eylül GV istisnası 5.615,10."
     }
   ]
