@@ -92,7 +92,9 @@ function LabCard({ card }: { card: Faz1LabCard }) {
           ) : (
             <>
               <strong>Sonuç: </strong>
-              {card.status === "fail" ? card.fail : card.success || card.fail}
+              {card.status === "fail" || card.status === "kapalı"
+                ? card.fail || card.success
+                : card.success || card.fail}
             </>
           )}
         </p>
