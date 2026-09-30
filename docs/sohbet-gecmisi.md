@@ -167,3 +167,23 @@ Alınmayan:
 - Demo seed / changelog UI test sohbetleri (ayrı iş)
 
 Yeni bir tur sohbet birikir ve “arşivi güncelle” dersen aynı kuralla bu dosyaya eklenir: istek + sonuç, sır yok.
+
+---
+
+## 12. İK Luca YTD (Ocak–Mart) — 30 Eylül 2026
+
+**İstek:** DHR’de kurulan İnsan Kaynakları 32’liği (6101–6132) Luca’ya Ocak–Aralık ay ay eklensin. PDF doğrulansın.
+
+**Kadro:** Her ay aynı 32 kişi. İşe giriş/çıkış yok. **ALPER AKTOLGA** İK paketinde olmaz (kart silinmez, ücret değişmez; o ayın İnsan Kaynakları paketinden çıkarılır). Çıkış tarihi yazılmaz.
+
+**Zemin (her ay):** 31 kişi yemek **5.500 B** + yol **3.200 N**. İlker Pamuk (stajyer) yemek/yol **0**, net **18.000**. Hande Orhan Şubat’tan itibaren tam ay **T.Gün 30** (Ekim’deki 15 gün kopyalanmaz). Yemek tutarı iş gününe göre küçülmez: Şubat 20 iş günü olsa da **5.500**; `(22G)`/`(20G)` Luca etiketidir.
+
+**Aylık ekstra (Ocak şablonu; Şubat/Mart tekrar):** Kemal FM 4.840 B, Tamer FM 4.040 B, Emre FM 4.320 B, Ceren FM 4.281,96 N, Metin prim 5.000 B, Baran prim 4.500 B, Ufuk prim 3.500 B, Yasin ikramiye **10.000 B** (kart değil, o ayın Diğer kazançlar / ek kazanç satırı, brüt), Leyla avans 7.200, Nilay icra 1.200, Vesile icra 800. Okan masraf 750 bu turda Şubat/Mart’a yazılmadı. Pelin BES ve Rıza geçmiş GV kartta, aya tekrar girilmez. **Yemek Kesinti** kalemi kullanılmaz.
+
+**Ocak PDF:** İlk dosyada 32 kişi; Cemil yemek N + 5.500 özel kesinti, net 46.622,08 (kayıtlı Luca 51.818,48). Sonraki Ocak’ta Cemil yemek B oldu, kesinti durdu. Üçüncü Ocak’ta Yemek Kesinti herkese yayıldı ve Aktolga girdi; yalnız İlker neti tuttu.
+
+**Şubat PDF:** Yemek/yol önce yoktu, sonra kesintiyle birlikte herkese yazıldı. Kesinti kalkınca Tamer FM geldi; İlker 18.000 oldu. Son kontrolde (dosya 8) İK kalemleri tamam, listede hâlâ Aktolga vardı.
+
+**Mart PDF (dosya 9):** Mart 2026, 33 kişi (Aktolga duruyor). İlker 18.000, Yasin ikramiye 10.000 B, yemek 5.500 / yol 3.200, Yemek Kesinti yok. Tamer FM yok (özet 24 saat; 36 olmalı). Diğer kazanç kolonu ~9.976 (etiket 8.700) — Şubat’taki 8.700’e göre ~1.276 etiketsiz fark.
+
+Sıradaki: Aktolga’yı Mart paketinden çıkar, Tamer’e FM yaz, yeni PDF. Nisan aynı 32 + aynı ekstra şablon.
