@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import AppView from "./App";
 import DashboardView from "./DashboardView";
 import Faz1View from "./Faz1View";
@@ -34,7 +34,9 @@ import type { Faz1Roster, LoginsData } from "./faz1Types";
 import type { DashboardData } from "./dashboardTypes";
 import { TabIcon } from "./ui";
 
-type Tab = "durum" | "ekim" | "ocak" | "izole" | "faz1" | "paket" | "girisler";
+const YillikView = lazy(() => import("./YillikView"));
+
+type Tab = "durum" | "ekim" | "ocak" | "yillik" | "izole" | "faz1" | "paket" | "girisler";
 
 export default function App() {
   const [tab, setTab] = useState<Tab>("durum");
@@ -59,6 +61,10 @@ export default function App() {
               <TabIcon id="ocak" />
               Ocak 2026
             </button>
+            <button className={tab === "yillik" ? "active" : ""} onClick={() => setTab("yillik")}>
+              <TabIcon id="yillik" />
+              Yıllık Bordro
+            </button>
             <button className={tab === "izole" ? "active" : ""} onClick={() => setTab("izole")}>
               <TabIcon id="izole" />
               Ocak 2026 — Tek Değişken
@@ -76,17 +82,25 @@ export default function App() {
               Girişler
             </button>
           </nav>
-          <p className="source-key" aria-label="Kaynak renk anahtarı">
-            <span className="key-dhr">
-              <i /> DHR
-            </span>
-            <span className="key-luca">
-              <i /> Luca
-            </span>
-            <span className="key-yz">
-              <i /> YZ — 2026 TR mevzuatı
-            </span>
-          </p>
+          {tab === "yillik" ? (
+            <p className="source-key" aria-label="Kaynak">
+              <span className="key-dhr">
+                <i /> DHR — İnsan Kaynakları 2026 (12 ay)
+              </span>
+            </p>
+          ) : (
+            <p className="source-key" aria-label="Kaynak renk anahtarı">
+              <span className="key-dhr">
+                <i /> DHR
+              </span>
+              <span className="key-luca">
+                <i /> Luca
+              </span>
+              <span className="key-yz">
+                <i /> YZ — 2026 TR mevzuatı
+              </span>
+            </p>
+          )}
         </div>
       </div>
       {tab === "durum" ? (
@@ -95,6 +109,10 @@ export default function App() {
         <AppView data={ekim as ComparisonData} matrix={ekimMatrix as MatrixData} />
       ) : tab === "ocak" ? (
         <AppView data={ocak as ComparisonData} matrix={ocakMatrix as MatrixData} />
+      ) : tab === "yillik" ? (
+        <Suspense fallback={<p className="muted year-loading">Yıllık bordro yükleniyor…</p>}>
+          <YillikView />
+        </Suspense>
       ) : tab === "izole" ? (
         <AppView data={izole as ComparisonData} matrix={izoleMatrix as MatrixData} />
       ) : tab === "paket" ? (

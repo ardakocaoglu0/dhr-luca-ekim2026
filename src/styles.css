@@ -1722,3 +1722,87 @@ tr:hover .copy-btn,
 .dash-table td.note {
   color: var(--muted);
 }
+
+/* ============================================================
+   Yıllık bordro
+   ============================================================ */
+.year-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 0.7rem;
+}
+
+.year-toolbar .filter-chips {
+  margin: 0;
+}
+
+.year-search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.year-search input,
+.year-search select {
+  min-width: 16rem;
+}
+
+button.linkish {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+button.linkish:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.year-heat td {
+  cursor: pointer;
+}
+
+.year-heat tbody tr.selected td,
+.year-heat tbody tr.selected td.sticky-col,
+.year-heat tbody tr.selected td.sticky-col-2 {
+  background: var(--row-hover);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.year-sum {
+  font-weight: 600;
+}
+
+.year-kalem tr.year-emph td {
+  font-weight: 600;
+}
+
+.year-heat td.sticky-col-2,
+.year-heat th.sticky-col-2 {
+  min-width: 12.5rem;
+}
+
+.subtabs.year-months {
+  top: var(--tabbar-h);
+  border-radius: var(--radius-lg);
+  margin-top: 0.75rem;
+}
+
+.year-loading {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.year-row-link {
+  cursor: pointer;
+}

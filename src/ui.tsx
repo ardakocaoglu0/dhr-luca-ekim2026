@@ -227,6 +227,19 @@ export function TabIcon({ id }: { id: string }) {
           <path d="m16.24 7.76 2.83-2.83" />
         </svg>
       );
+    case "yillik":
+      return (
+        <svg {...tabIconProps}>
+          <path d="M8 2v4" />
+          <path d="M16 2v4" />
+          <rect width="18" height="18" x="3" y="4" rx="2" />
+          <path d="M3 10h18" />
+          <path d="M8 14h2" />
+          <path d="M14 14h2" />
+          <path d="M8 18h2" />
+          <path d="M14 18h2" />
+        </svg>
+      );
     case "izole":
       return (
         <svg {...tabIconProps}>

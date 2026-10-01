@@ -20,6 +20,14 @@
       "compare": "DHR × Luca × YZ"
     },
     {
+      "id": "yillik",
+      "label": "2026 Yıllık Bordro",
+      "unit": "İnsan Kaynakları",
+      "people": 32,
+      "state": "DHR 12/12 ay hesaplandı · 32 kişi · yıl net 18.591.014,70 TL",
+      "compare": "DHR (Ocak–Aralık 2026)"
+    },
+    {
       "id": "faz1",
       "label": "Eylül 2026 — Faz 1",
       "unit": "Ana Kadro",
