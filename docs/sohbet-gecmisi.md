@@ -186,4 +186,45 @@ Yeni bir tur sohbet birikir ve “arşivi güncelle” dersen aynı kuralla bu d
 
 **Mart PDF (dosya 9):** Mart 2026, 33 kişi (Aktolga duruyor). İlker 18.000, Yasin ikramiye 10.000 B, yemek 5.500 / yol 3.200, Yemek Kesinti yok. Tamer FM yok (özet 24 saat; 36 olmalı). Diğer kazanç kolonu ~9.976 (etiket 8.700) — Şubat’taki 8.700’e göre ~1.276 etiketsiz fark.
 
-Sıradaki: Aktolga’yı Mart paketinden çıkar, Tamer’e FM yaz, yeni PDF. Nisan aynı 32 + aynı ekstra şablon.
+Sıradaki (30 Eylül, değiştirilmedi): Aktolga’yı Mart paketinden çıkar, Tamer’e FM yaz, yeni PDF. Nisan aynı 32 + aynı ekstra şablon.
+
+1 Ekim notu: Şubat için ayrı bir PDF `(42)` DHR dump’ına göre okundu (siteye konmadı). Aşağıdaki §13 o denetim + yıllık sekme UI’sidir; bu maddenin Ocak–Mart Luca şablonunu iptal etmez.
+
+---
+
+## 13. Yıllık Bordro sekmesi + Şubat Luca `(42)` denetimi — 1 Ekim 2026
+
+**İstekler (sıra):**
+
+1. Yıllık Bordro’da her ayın içi diğer test sekmeleri gibi olsun (DHR × Luca × YZ, aynı `AppView`).
+2. `bordro_d1_tech (42).pdf` Şubat Luca; **siteye eklemeden** DHR Şubat dump’ına bak, doğru mu.
+3. Alper Aktolga’yı görmezden gel.
+4. Çalışan çalışan ne düzelecek.
+5. Canlıda bu düzen yoktu; `main` + `gh-pages` son hali.
+
+**Yapılan (site, önceki DHR-only ay tabloları duruyor, üzerine bindirilmedi):**
+
+- dhrtest2 İK 12 ay dump: `src/data/yillik/m01.json`–`m12.json`, indeks `yillik_ik.json`. Üretim scripti `scripts/generate-yillik-ik.cjs`.
+- Ay içi: `YillikView` → aynı `AppView`. Ocak = `comparison.json`, Ekim = `ekim_comparison.json`. Diğer aylar `src/yillikCompare.ts` (DHR + YZ; Luca **BEKLİYOR**). YZ aylık izole, `mevzuat.json` istisna bandı (Ağu–Ara 5.615,10).
+- Durum panosu yıllık satır: `DHR × Luca × YZ (Luca Ocak/Ekim, diğer aylar bekliyor)`.
+- Canlı: https://ardakocaoglu0.github.io/dhr-luca-ekim2026/ — Yıllık Bordro, `Ocak Luca` / `Ekim Luca` rozetleri, Şubat başlığı `DHR × Luca × YZ`. `(42)` PDF `public/downloads`’a konmadı.
+
+**Şubat PDF `(42)` vs DHR `m02` (salt okuma, Aktolga yok):** ŞUBAT / 2026, İnsan Kaynakları, 32/32 İK TC. 05510 (Tolga, Umut, Baran, Emre) duruyor. FM eşleşenler duruyor. İlker net 18.000. Vildan/Ceren yemek 5.500 / yol 3.200 Luca’da doğru (DHR net brütleştirme). Pelin BES Luca 1.940 / DHR 2.001 — elle 2.001 yazılmaz (Ocak’taki PEK/%3 farkı).
+
+Bu liste **DHR Şubat dump’ına** hizalar. §12’deki Luca YTD ekstra şablonu (Leyla avans 7.200, Metin prim 5.000, Yasin ikramiye 10.000, …) ayrı plandır; `(42)` onu taşımaz.
+
+**Luca Şubat `(42)` düzeltme (Aktolga yok):**
+
+Avans sil (DHR Şubat avans 0): Serra, Zeliha, Ersin, Jale, Okan, Ufuk, Deniz **4.500**; Leyla **7.200**.
+
+Genel kesinti **800 → 1.600:** Umut, Berna, Gökhan, Leyla, Rıza, Yasin.
+
+Masraf **600 → 1.200:** Vildan, Cemil, Hande, Metin, Selin, Baran.
+
+Gün **30:** Yağız 28, Dilek 28, Hande **26**, İlker 28, Nilay 28, Tamer 28, Ceren 28.
+
+Kanun (vergi kartı; Ocak Luca PDF’de de çoğu 00000 kalmıştı): Yağız/Tamer **05746**, Zeliha **15746**, Alper Hançer/Berna **05746+4691**, Cemil **4691**, Dilek/Ufuk **SGDP**.
+
+Dokunma: Tolga, Fulya, Kemal (FM 3.630), Vesile, Emre (05510+FM 3.240). Okan’a masraf ekleme, Nilay’a kesinti ekleme (Şubat DHR 0).
+
+**Bilerek yapılmayan:** `(42)` siteye merge yok. Aktolga kart/ücret değişmez; İK paketinden sayılmaz.

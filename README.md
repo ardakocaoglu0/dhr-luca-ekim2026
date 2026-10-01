@@ -15,7 +15,7 @@ Kaynak dal: `main`. Yayın: `gh-pages` (aşağıda).
 | Kolon | Kaynak | Not |
 | --- | --- | --- |
 | **DHR** | `https://dhrtest2.d1-tech.com.tr` bordro API’si | `/api/PayrollPeriod/{id}`, puantaj, `/api/PaymentValue/all`. Excel export kullanılmıyor. |
-| **Luca** | Bordro PDF | İK Ekim/Ocak: `public/downloads/bordro_d1_tech.pdf`. Tek Değişken: `public/downloads/bordro_tek_degisken.pdf`. Bordro Paket PDF henüz yok. |
+| **Luca** | Bordro PDF | İK Ekim/Ocak: `public/downloads/bordro_d1_tech.pdf`. Yıllık sekmede Ocak/Ekim aynı PDF’ler; diğer 10 ay **BEKLİYOR**. Tek Değişken: `public/downloads/bordro_tek_degisken.pdf`. Bordro Paket PDF henüz yok. |
 | **YZ** | `src/data/mevzuat.json` | 2026 GVK dilimleri, asgari GV istisna bandı (aylık), SGK %14 / işsizlik %1 / SGDP %7,5, damga ‰7,59, yemek PEK 21×158 / GV-damga 21×300. Aylık izole hesap; kümülatif dilim yok. |
 
 Tablolarda gösterilen farklar:
@@ -32,6 +32,7 @@ Tablolarda gösterilen farklar:
 | **Durum panosu** | Çalışan özellikler, açık buglar, test edilmeyenler, mevzuat ihtilafları, dönem özeti |
 | **Ekim 2026** | İK 32 kişi · DHR × Luca × YZ |
 | **Ocak 2026** | Aynı İK 32’liği, Ocak girdileri · DHR × Luca × YZ |
+| **Yıllık Bordro** | Aynı İK 32’liği, 2026 12 ay. Alt sekmeler diğer testlerle aynı `AppView` (DHR × Luca × YZ). Luca PDF yalnız Ocak ve Ekim; diğer aylar BEKLİYOR + YZ |
 | **Ocak 2026 — Tek Değişken** | Yeni birim, 27 kişi, satırda tek sapma · DHR × Luca × YZ |
 | **Ocak 2026 — Bordro Paket** | Paket motor düzeltmeleri + tek sapma 30 kişi (6301–6330) · DHR × YZ (Luca BEKLİYOR) |
 | **Eylül 2026 — Faz 1** | Laboratuvar kadrosu. Karşılaştırma alt sekmesi Ana 15 (Luca PDF henüz yok) |
@@ -53,7 +54,7 @@ Ortam: `https://dhrtest2.d1-tech.com.tr` (eski `dhrtest` kullanılmaz).
 
 ### İnsan Kaynakları (6101–6132) — dokunulmaz
 
-Ekim ve Ocak sekmeleri bu 32’liktir. Çapraz senaryolar var (ör. 05510+prim aynı kişide). Tarihsel kayıt; Tek Değişken bu yüzden açıldı.
+Ekim ve Ocak sekmeleri bu 32’liktir. **Yıllık Bordro** aynı kadronun dhrtest2’de hesaplanmış 12 ayını gösterir (`src/data/yillik/m01.json`–`m12.json`, `yillik_ik.json`). Çapraz senaryolar var (ör. 05510+prim aynı kişide). Tarihsel kayıt; Tek Değişken bu yüzden açıldı. Luca YTD şablonu (Ocak–Mart ekstra listesi, Aktolga İK paketinde olmaz) `docs/sohbet-gecmisi.md` §12’de durur; siteye henüz Şubat+ Luca PDF işlenmedi.
 
 ### Tek Değişken — Ocak 2026
 
@@ -165,7 +166,9 @@ Koşum sırası: Ana 15 → Op 3 → Blokaj → Yuvarlama 100 → Luca 5 (8101�
 ```
 src/
   AppRoot.tsx          sekmeler
-  App.tsx              Ekim / Ocak / Tek Değişken / Faz 1 karşılaştırma
+  App.tsx              Ekim / Ocak / Tek Değişken / Paket / yıllık ay içi karşılaştırma
+  YillikView.tsx       2026 12 ay alt sekme + özet
+  yillikCompare.ts     Şubat–Eylül / Kasım–Aralık DHR+YZ (Luca overlay yok)
   DashboardView.tsx    durum panosu
   Faz1View.tsx         laboratuvar
   LoginsView.tsx       demo girişler
@@ -173,6 +176,7 @@ src/
     dashboard.json
     ekim_comparison.json + ekim_matrix.json
     comparison.json + matrix.json          ← Ocak İK
+    yillik_ik.json + yillik/m01.json–m12.json
     izole_comparison.json + izole_matrix.json + izole_roster.json
     paket_comparison.json + paket_matrix.json + paket_roster.json
     faz1_*.json
@@ -200,6 +204,7 @@ docs/sohbet-gecmisi.md bu işin Cursor sohbet özeti
 | `scripts/faz1-dhr-seed.cjs` / `faz1-run-full.cjs` | Faz 1 seed / koşum |
 | `scripts/faz1-op-blokaj-ana-check.cjs` | Ana / Op / Blokaj dönem durumu (Playwright + CSRF) |
 | `scripts/generate-izole-site.cjs` / `generate-faz1-data.cjs` | Site JSON yenileme |
+| `scripts/generate-yillik-ik.cjs` | dhrtest2 12 ay dump → `yillik_ik.json` + `yillik/mNN.json` |
 
 Ham DHR sayısı için Excel değil API kullanılır. Seed scriptleri `dhrtest2`’ye yazar; rastgele çalıştırma.
 
