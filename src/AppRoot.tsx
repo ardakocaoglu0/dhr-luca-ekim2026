@@ -82,25 +82,17 @@ export default function App() {
               Girişler
             </button>
           </nav>
-          {tab === "yillik" ? (
-            <p className="source-key" aria-label="Kaynak">
-              <span className="key-dhr">
-                <i /> DHR — İnsan Kaynakları 2026 (12 ay)
-              </span>
-            </p>
-          ) : (
-            <p className="source-key" aria-label="Kaynak renk anahtarı">
-              <span className="key-dhr">
-                <i /> DHR
-              </span>
-              <span className="key-luca">
-                <i /> Luca
-              </span>
-              <span className="key-yz">
-                <i /> YZ — 2026 TR mevzuatı
-              </span>
-            </p>
-          )}
+          <p className="source-key" aria-label="Kaynak renk anahtarı">
+            <span className="key-dhr">
+              <i /> DHR
+            </span>
+            <span className="key-luca">
+              <i /> Luca
+            </span>
+            <span className="key-yz">
+              <i /> YZ — 2026 TR mevzuatı
+            </span>
+          </p>
         </div>
       </div>
       {tab === "durum" ? (
@@ -111,7 +103,12 @@ export default function App() {
         <AppView data={ocak as ComparisonData} matrix={ocakMatrix as MatrixData} />
       ) : tab === "yillik" ? (
         <Suspense fallback={<p className="muted year-loading">Yıllık bordro yükleniyor…</p>}>
-          <YillikView />
+          <YillikView
+            ocak={ocak as ComparisonData}
+            ocakMatrix={ocakMatrix as MatrixData}
+            ekim={ekim as ComparisonData}
+            ekimMatrix={ekimMatrix as MatrixData}
+          />
         </Suspense>
       ) : tab === "izole" ? (
         <AppView data={izole as ComparisonData} matrix={izoleMatrix as MatrixData} />

@@ -1793,9 +1793,25 @@ button.linkish:hover {
 }
 
 .subtabs.year-months {
-  top: var(--tabbar-h);
+  position: sticky;
+  top: 6.5rem;
+  z-index: 26;
   border-radius: var(--radius-lg);
-  margin-top: 0.75rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.page.yillik-page {
+  padding-bottom: 0;
+}
+
+.page.yillik-page > .page {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+}
+
+.page.year-subnav {
+  padding-bottom: 0;
 }
 
 .year-loading {

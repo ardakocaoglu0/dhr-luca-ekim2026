@@ -289,14 +289,14 @@ console.log(`yazıldı ${path.relative(ROOT, OUT)} ${(fs.statSync(OUT).size / 10
 const dashPath = path.join(DATA, "dashboard.json");
 if (fs.existsSync(dashPath)) {
   const dash = JSON.parse(fs.readFileSync(dashPath, "utf8"));
-  const state = `DHR 12/12 ay hesaplandı · ${people.length} kişi · yıl net ${totalsYear.net.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} TL`;
+  const state = `DHR 12/12 ay · Luca Ocak/Ekim · YZ 12 ay · yıl net ${totalsYear.net.toLocaleString("tr-TR", { minimumFractionDigits: 2, maximumFractionDigits: 2 })} TL`;
   const entry = {
     id: "yillik",
     label: "2026 Yıllık Bordro",
     unit: "İnsan Kaynakları",
     people: people.length,
     state,
-    compare: "DHR (Ocak–Aralık 2026)",
+    compare: "DHR × Luca × YZ (Luca Ocak/Ekim, diğer aylar bekliyor)",
   };
   const idx = (dash.periods || []).findIndex((p) => p.id === "yillik");
   if (idx >= 0) dash.periods[idx] = entry;
