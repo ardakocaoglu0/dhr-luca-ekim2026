@@ -177,7 +177,7 @@ export default function YillikView({ ocak, ocakMatrix, ekim, ekimMatrix }: Props
           <p className="eyebrow">dhrtest2 · {data.unit} · DHR × Luca × YZ</p>
           <h1>2026 yıllık bordro — özet</h1>
           <p className="lead">
-            12 ay ayrı sekmelerde; her ay Ocak/Ekim test sekmeleriyle aynı DHR × Luca × YZ yapısı. Luca PDF yalnız
+            12 ay ayrı sekmelerde; Ocak ve Ekim diğer testlerle aynı DHR × Luca × YZ JSON’u. Luca PDF yalnız
             Ocak ve Ekim’de var, diğer aylarda Luca bekliyor. Hakem YZ (aylık izole 2026 mevzuatı).
           </p>
           <p className="meta">

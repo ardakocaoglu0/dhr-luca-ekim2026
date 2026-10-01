@@ -36,7 +36,7 @@ import { TabIcon } from "./ui";
 
 const YillikView = lazy(() => import("./YillikView"));
 
-type Tab = "durum" | "ekim" | "ocak" | "yillik" | "izole" | "faz1" | "paket" | "girisler";
+type Tab = "durum" | "yillik" | "izole" | "faz1" | "paket" | "girisler";
 
 export default function App() {
   const [tab, setTab] = useState<Tab>("durum");
@@ -52,14 +52,6 @@ export default function App() {
             <button className={tab === "durum" ? "active" : ""} onClick={() => setTab("durum")}>
               <TabIcon id="durum" />
               Durum panosu
-            </button>
-            <button className={tab === "ekim" ? "active" : ""} onClick={() => setTab("ekim")}>
-              <TabIcon id="ekim" />
-              Ekim 2026
-            </button>
-            <button className={tab === "ocak" ? "active" : ""} onClick={() => setTab("ocak")}>
-              <TabIcon id="ocak" />
-              Ocak 2026
             </button>
             <button className={tab === "yillik" ? "active" : ""} onClick={() => setTab("yillik")}>
               <TabIcon id="yillik" />
@@ -97,10 +89,6 @@ export default function App() {
       </div>
       {tab === "durum" ? (
         <DashboardView data={dashboard as DashboardData} />
-      ) : tab === "ekim" ? (
-        <AppView data={ekim as ComparisonData} matrix={ekimMatrix as MatrixData} />
-      ) : tab === "ocak" ? (
-        <AppView data={ocak as ComparisonData} matrix={ocakMatrix as MatrixData} />
       ) : tab === "yillik" ? (
         <Suspense fallback={<p className="muted year-loading">Yıllık bordro yükleniyor…</p>}>
           <YillikView

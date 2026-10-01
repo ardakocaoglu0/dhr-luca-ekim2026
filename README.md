@@ -30,9 +30,7 @@ Tablolarda gösterilen farklar:
 | Sekme | Ne var |
 | --- | --- |
 | **Durum panosu** | Çalışan özellikler, açık buglar, test edilmeyenler, mevzuat ihtilafları, dönem özeti |
-| **Ekim 2026** | İK 32 kişi · DHR × Luca × YZ |
-| **Ocak 2026** | Aynı İK 32’liği, Ocak girdileri · DHR × Luca × YZ |
-| **Yıllık Bordro** | Aynı İK 32’liği, 2026 12 ay. Alt sekmeler diğer testlerle aynı `AppView` (DHR × Luca × YZ). Luca PDF yalnız Ocak ve Ekim; diğer aylar BEKLİYOR + YZ |
+| **Yıllık Bordro** | İK 32 kişi, 2026 12 ay. Ocak ve Ekim = eski bağımsız sekmelerin aynı JSON/PDF’i. Diğer aylar DHR × YZ, Luca BEKLİYOR |
 | **Ocak 2026 — Tek Değişken** | Yeni birim, 27 kişi, satırda tek sapma · DHR × Luca × YZ |
 | **Ocak 2026 — Bordro Paket** | Paket motor düzeltmeleri + tek sapma 30 kişi (6301–6330) · DHR × YZ (Luca BEKLİYOR) |
 | **Eylül 2026 — Faz 1** | Laboratuvar kadrosu. Karşılaştırma alt sekmesi Ana 15 (Luca PDF henüz yok) |
@@ -54,7 +52,7 @@ Ortam: `https://dhrtest2.d1-tech.com.tr` (eski `dhrtest` kullanılmaz).
 
 ### İnsan Kaynakları (6101–6132) — dokunulmaz
 
-Ekim ve Ocak sekmeleri bu 32’liktir. **Yıllık Bordro** aynı kadronun dhrtest2’de hesaplanmış 12 ayını gösterir (`src/data/yillik/m01.json`–`m12.json`, `yillik_ik.json`). Çapraz senaryolar var (ör. 05510+prim aynı kişide). Tarihsel kayıt; Tek Değişken bu yüzden açıldı. Luca YTD şablonu (Ocak–Mart ekstra listesi, Aktolga İK paketinde olmaz) `docs/sohbet-gecmisi.md` §12’de durur; siteye henüz Şubat+ Luca PDF işlenmedi.
+Karşılaştırma **Yıllık Bordro** sekmesinde: Ocak ve Ekim alt sekmeleri `comparison.json` / `ekim_comparison.json` (eski bağımsız sekmelerin aynı dosyaları). Diğer 10 ay `src/data/yillik/mNN.json`. Çapraz senaryolar var (ör. 05510+prim aynı kişide). Tarihsel kayıt; Tek Değişken bu yüzden açıldı. Luca YTD şablonu (Ocak–Mart ekstra listesi, Aktolga İK paketinde olmaz) `docs/sohbet-gecmisi.md` §12’de durur; siteye henüz Şubat+ Luca PDF işlenmedi.
 
 ### Tek Değişken — Ocak 2026
 
